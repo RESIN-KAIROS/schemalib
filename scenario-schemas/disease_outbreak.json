@@ -896,11 +896,11 @@
           ]
         },
         {
-          "child":"resin:Events/10105/Steps_kairos:Primitives_Events_Contaminate_Substance",
+          "child": "resin:Events/10105/Steps_kairos:Primitives_Events_Contaminate_Substance",
           "comment": "Contaminate Substance",
           "optional": true,
           "importance": 0.7,
-          "outlinks":[
+          "outlinks": [
             "resin:Events/10085/Steps_kairos:Primitives_Events_Consume"
           ]
         },
@@ -1075,7 +1075,7 @@
           ]
         },
         {
-          "child":"resin:Events/10098/Steps_kairos:Container:102",
+          "child": "resin:Events/10098/Steps_kairos:Container:102",
           "comment": "Quarantine outlinks",
           "optional": true,
           "importance": 1,
@@ -3150,12 +3150,12 @@
       "qnode": "Q60528603",
       "participants": [
         {
-          "@id": "resin:Participants/20116/kairos:Primitives_Events_Contamination_Causer",
+          "@id": "resin:Participants/20117/kairos:Primitives_Events_Contamination_Causer",
           "roleName": "A0-pag_agent_causer_of_contamination",
           "entity": "resin:Entities/00004/"
         },
         {
-          "@id": "resin:Participants/20082/kairos:Primitives_Events_Contamination_Destination",
+          "@id": "resin:Participants/20118/kairos:Primitives_Events_Contamination_Destination",
           "roleName": "A1-gol_destination_thing_becoming_contaminated",
           "entity": "resin:Entities/00001/"
         }
