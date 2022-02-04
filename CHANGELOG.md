@@ -3,7 +3,6 @@
 ## [Unreleased]
 ### Added 
 - [Disaster Rescue] new schema 
-- [International Conflict] new schema 
 ## [Quizlet9, 0.2] - 2022-02-03
 ### Added 
 - [Disease Outbreak] "partially coincident with" relations between entities 
@@ -15,6 +14,7 @@
 - [Election] new schema + hrf 
 - [Sports] new schema + hrf 
 - [Mass Shooting] new schema + hrf 
+- [International Conflict] new schema + hrf 
 - [Combined] new multiscenario schema library `resin-schemalib.json`
 
 ### Changed 
