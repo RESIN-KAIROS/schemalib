@@ -14,7 +14,7 @@ User manual: https://chrysographes.notion.site/Schema-Curation-Manual-c17f79c745
   1. Every event must have the "name", "@id", "qnode", "qlabel", "ta1explanation" field. The "ta1explanation" field can come from the XPO overlay event description, or you can also explain why this event belongs in the schema.
   2. The participant "roleName" should come from the XPO overlay. If the event is not in the xpo, you can try to find similar role names.
   3. The participant "entity" field should be cross-referred in the "entities" list.
-  4. All "@id" fields contain an UNIQUE 5 digit id. Our convention is that events use "2XXXX", relations use "3XXXXX", entities use "0XXXX" and participants use "1XXXX". There is no relation between the participant id and the entity id.
+  4. All "@id" fields contain an UNIQUE 5 digit id. Our convention is that events use "1XXXX", relations use "3XXXXX", entities use "0XXXX" and participants use "2XXXX". There is no relation between the participant id and the entity id.
   5. Temporal links are represented by "outlinks". "outlinks" are specified within the "child" construct. 
   6. Logical gates should be added sparingly. If you need to add a logical gate (for example XOR(A, B)) , you will need to first create a virtual container node C which has children A and B, then set the "children_gate" to "xor". The default value for "children_gate" is "or".
   7. The schema for each scenario should only have 1 root node (node without parent).
