@@ -16,7 +16,7 @@
             "@id": "resin:Events/10000/resin:Events_kidnapping",
             "name": "Resin:events_kidnapping",
             "description": "Event complex for Resin:events_kidnapping",
-            "qnode": "Q318296",
+            "qnode": "wd:Q318296",
             "qlabel": "kidnapping",
             "minDuration": "P1D",
             "maxDuration": "P10Y",
@@ -28,23 +28,7 @@
                     "repeatable": false,
                     "importance": 1
                 },
-            "participants": [
-                {
-                    "@id": "resin:Participants/20092/kairos:Primitives_Events_Kidnapping:1:kidnapper",
-                    "roleName": "A0_pag_kidnapper",
-                    "entity": "resin:Entities/00093/"
-                },
-                {
-                    "@id": "resin:Participants/20093/kairos:Primitives_Events_Kidnapping:1:person_kidnapped",
-                    "roleName": "A1_ppt_person_kidnapped",
-                    "entity": "resin:Entities/00094/"
-                },
-                {
-                    "@id": "resin:Participants/20094/kairos:Primitives_Events_Kidnapping:1:location",
-                    "roleName": "AM_loc",
-                    "entity": "resin:Entities/00095/"
-                }
-            ],
+            "participants": [],
             "children": [
                 {
                     "child": "resin:Events/10001/Steps_kairos:Container:1",
@@ -116,7 +100,7 @@
             "@id": "resin:Events/10001/Steps_kairos:Container:1",
             "name": "Contributory factors",
             "description": "Episode for Steps_kairos:container:1",
-            "qnode": "Q18603648",
+            "qnode": "wd:Q18603648",
             "qlabel": "contributing factor",
             "minDuration": "",
             "maxDuration": "",
@@ -165,7 +149,7 @@
             "@id": "resin:Events/10002/Steps_kairos:Container:2",
             "name": "Planning",
             "description": "Episode for Steps_kairos:container:2",
-            "qnode": "Q1371819",
+            "qnode": "wd:Q1371819",
             "qlabel": "plan",
             "minDuration": "",
             "maxDuration": "",
@@ -259,7 +243,7 @@
             "@id": "resin:Events/10003/Steps_kairos:Container:3",
             "name": "Scrutiny",
             "description": "Episode for Steps_kairos:container:3",
-            "qnode": "Q334401",
+            "qnode": "wd:Q334401",
             "qlabel": "surveillance",
             "minDuration": "",
             "maxDuration": "",
@@ -317,7 +301,7 @@
             "@id": "resin:Events/10004/Steps_kairos:Container:4",
             "name": "Committing crime",
             "description": "Episode for Steps_kairos:container:4",
-            "qnode": "Q83267",
+            "qnode": "wd:Q83267",
             "qlabel": "crime",
             "minDuration": "",
             "maxDuration": "",
@@ -440,7 +424,7 @@
             "@id": "resin:Events/10005/Steps_kairos:Container:5",
             "name": "Authority response",
             "description": "Episode for Steps_kairos:container:5",
-            "qnode": "Q174834",
+            "qnode": "wd:Q174834",
             "qlabel": "authority",
             "minDuration": "",
             "maxDuration": "",
@@ -580,7 +564,7 @@
             "@id": "resin:Events/10006/Steps_kairos:Container:6",
             "name": "Non authority response",
             "description": "Episode for Steps_kairos:container:6",
-            "qnode": "Q2995644",
+            "qnode": "wd:Q2995644",
             "qlabel": "result",
             "minDuration": "",
             "maxDuration": "",
@@ -643,7 +627,7 @@
             "@id": "resin:Events/10007/Steps_kairos:Container:7",
             "name": "Legality",
             "description": "Episode for Steps_kairos:container:7",
-            "qnode": "Q7748",
+            "qnode": "wd:Q7748",
             "qlabel": "law",
             "minDuration": "",
             "maxDuration": "",
@@ -689,7 +673,7 @@
             "@id": "resin:Events/10010/Steps_kairos:Primitives_Events_Earnings_and_losses:1",
             "name": "Earnings_and_losses",
             "comment": "",
-            "qnode": "Q1527264",
+            "qnode": "wd:Q1527264",
             "qlabel": "income",
             "aka": "earn.01",
             "participants": [
@@ -714,7 +698,7 @@
             "@id": "resin:Events/10011/Steps_kairos:Primitives_Events_Quarreling:1",
             "name": "Quarreling",
             "comment": "",
-            "qnode": "Q2672648",
+            "qnode": "wd:Q2672648",
             "qlabel": "social_conflict",
             "aka": "conflict.01",
             "participants": [
@@ -739,7 +723,7 @@
             "@id": "resin:Events/10012/Steps_kairos:Primitives_Events_Revenge:1",
             "name": "Revenge",
             "comment": "",
-            "qnode": "Q1712140",
+            "qnode": "wd:Q1712140",
             "qlabel": "revenge",
             "aka": "retribute.01",
             "participants": [
@@ -764,7 +748,7 @@
             "@id": "resin:Events/10013/Steps_kairos:Primitives_Events_Warning:1",
             "name": "Warning",
             "comment": "",
-            "qnode": "Q21010924",
+            "qnode": "wd:Q21010924",
             "qlabel": "safety_precaution",
             "aka": "precaution.01",
             "participants": [
@@ -789,7 +773,7 @@
             "@id": "resin:Events/10014/Steps_kairos:Primitives_Events_Choosing_victim:1",
             "name": "Choosing_victim",
             "comment": "",
-            "qnode": "Q12888920",
+            "qnode": "wd:Q12888920",
             "qlabel": "choice",
             "aka": "choose.01",
             "participants": [
@@ -819,7 +803,7 @@
             "@id": "resin:Events/10015/Steps_kairos:Primitives_Events_Choosing_location:1",
             "name": "Choosing_location",
             "comment": "",
-            "qnode": "Q12888920",
+            "qnode": "wd:Q12888920",
             "qlabel": "choice",
             "aka": "choose.01",
             "participants": [
@@ -849,7 +833,7 @@
             "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Choosing_method:1",
             "name": "Choosing_method",
             "comment": "",
-            "qnode": "Q12888920",
+            "qnode": "wd:Q12888920",
             "qlabel": "choice",
             "aka": "choose.01",
             "participants": [
@@ -874,7 +858,7 @@
             "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Deciding_communication_protocols:1",
             "name": "Deciding_communication_protocols",
             "comment": "",
-            "qnode": "Q16513426",
+            "qnode": "wd:Q16513426",
             "qlabel": "decision",
             "aka": "decide.01",
             "participants": [
@@ -899,7 +883,7 @@
             "@id": "resin:Events/10018/Steps_kairos:Primitives_Events_Getting_tools:1",
             "name": "Getting_tools",
             "comment": "",
-            "qnode": "Q12887029",
+            "qnode": "wd:Q12887029",
             "qlabel": "buy",
             "aka": "buy.01",
             "participants": [
@@ -924,7 +908,7 @@
             "@id": "resin:Events/10019/Steps_kairos:Primitives_Events_Getting_vehicle:1",
             "name": "Getting_vehicle",
             "comment": "",
-            "qnode": "Q12887029",
+            "qnode": "wd:Q12887029",
             "qlabel": "buy",
             "aka": "buy.01",
             "participants": [
@@ -932,11 +916,6 @@
                     "@id": "resin:Participants/20046/kairos:Primitives_Events_Getting_vehicle:1:buyer",
                     "roleName": "A0_pag_buyer",
                     "entity": "resin:Entities/00093/"
-                },
-                {
-                    "@id": "resin:Participants/20047/kairos:Primitives_Events_Getting_vehicle:1:thing_bought",
-                    "roleName": "A1_ppt_thing_bought",
-                    "entity": "resin:Entities/00048/"
                 }
             ],
             "minDuration": "P1D",
@@ -954,7 +933,7 @@
             "@id": "resin:Events/10020/Steps_kairos:Primitives_Events_Getting_weapons:1",
             "name": "Getting_weapons",
             "comment": "",
-            "qnode": "Q12887029",
+            "qnode": "wd:Q12887029",
             "qlabel": "buy",
             "aka": "buy.01",
             "participants": [
@@ -962,11 +941,6 @@
                     "@id": "resin:Participants/20052/kairos:Primitives_Events_Getting_weapons:1:buyer",
                     "roleName": "A0_pag_buyer",
                     "entity": "resin:Entities/00093/"
-                },
-                {
-                    "@id": "resin:Participants/20053/kairos:Primitives_Events_Getting_weapons:1:thing_bought",
-                    "roleName": "A1_ppt_thing_bought",
-                    "entity": "resin:Entities/00054/"
                 }
             ],
             "minDuration": "P1D",
@@ -984,7 +958,7 @@
             "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_Getting_place_to_keep_victim:1",
             "name": "Getting_place_to_keep_victim",
             "comment": "",
-            "qnode": "Q12887029",
+            "qnode": "wd:Q12887029",
             "qlabel": "buy",
             "aka": "buy.01",
             "participants": [
@@ -1014,7 +988,7 @@
             "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_Cause_to_be_included_guards:1",
             "name": "Cause_to_be_included_guards",
             "comment": "",
-            "qnode": "Q3149923",
+            "qnode": "wd:Q3149923",
             "qlabel": "social_inclusion",
             "aka": "include.01",
             "participants": [
@@ -1039,7 +1013,7 @@
             "@id": "resin:Events/10023/Steps_kairos:Primitives_Events_Physical_surveillance:1",
             "name": "Physical_surveillance",
             "comment": "",
-            "qnode": "Q334401",
+            "qnode": "wd:Q334401",
             "qlabel": "surveillance",
             "aka": "monitor.01",
             "participants": [
@@ -1069,7 +1043,7 @@
             "@id": "resin:Events/10024/Steps_kairos:Primitives_Events_Know_perception_active:1",
             "name": "Know_perception_active",
             "comment": "",
-            "qnode": "Q21142755",
+            "qnode": "wd:Q21142755",
             "qlabel": "recognition",
             "aka": "perceive.01",
             "participants": [
@@ -1099,7 +1073,7 @@
             "@id": "resin:Events/10025/Steps_kairos:Primitives_Events_Cyber_surveillance:1",
             "name": "Cyber_surveillance",
             "comment": "",
-            "qnode": "Q165950",
+            "qnode": "wd:Q165950",
             "qlabel": "espionage",
             "aka": "spy.01",
             "participants": [
@@ -1129,7 +1103,7 @@
             "@id": "resin:Events/10026/Steps_kairos:Primitives_Events_Communication:1",
             "name": "Communication",
             "comment": "",
-            "qnode": "Q11024",
+            "qnode": "wd:Q11024",
             "qlabel": "communication",
             "aka": "communicate.01",
             "participants": [
@@ -1154,7 +1128,7 @@
             "@id": "resin:Events/10027/Steps_kairos:Primitives_Events_Motion_traveling:1",
             "name": "Motion_traveling",
             "comment": "",
-            "qnode": "Q19279529",
+            "qnode": "wd:Q19279529",
             "qlabel": "go",
             "aka": "move.01",
             "participants": [
@@ -1184,7 +1158,7 @@
             "@id": "resin:Events/10028/Steps_kairos:Primitives_Events_Violence_attack:1",
             "name": "Violence_attack",
             "comment": "",
-            "qnode": "Q252000",
+            "qnode": "wd:Q252000",
             "qlabel": "oppression",
             "aka": "oppress.01",
             "participants": [
@@ -1219,10 +1193,26 @@
             "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_Kidnapping:1",
             "name": "Kidnapping",
             "comment": "",
-            "qnode": "Q318296",
+            "qnode": "wd:Q318296",
             "qlabel": "kidnapping",
             "aka": "kidnap.01",
-            "participants": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20092/kairos:Primitives_Events_Kidnapping:1:kidnapper",
+                    "roleName": "A0_pag_kidnapper",
+                    "entity": "resin:Entities/00093/"
+                },
+                {
+                    "@id": "resin:Participants/20093/kairos:Primitives_Events_Kidnapping:1:person_kidnapped",
+                    "roleName": "A1_ppt_person_kidnapped",
+                    "entity": "resin:Entities/00094/"
+                },
+                {
+                    "@id": "resin:Participants/20094/kairos:Primitives_Events_Kidnapping:1:location",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00095/"
+                }
+            ],
             "minDuration": "P1D",
             "maxDuration": "P10Y",
             "description": "taking away or transportation of a person against that person's will",
@@ -1238,7 +1228,7 @@
             "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_Spatial_removing_victim:1",
             "name": "Spatial_removing_victim",
             "comment": "",
-            "qnode": "Q23009442",
+            "qnode": "wd:Q23009442",
             "qlabel": "removal",
             "aka": "eliminate.01",
             "participants": [
@@ -1273,7 +1263,7 @@
             "@id": "resin:Events/10031/Steps_kairos:Primitives_Events_Spatial_placing_victim:1",
             "name": "Spatial_placing_victim",
             "comment": "",
-            "qnode": "Q909534",
+            "qnode": "wd:Q909534",
             "qlabel": "mass_transfer",
             "aka": "transfer.01",
             "participants": [
@@ -1313,7 +1303,7 @@
             "@id": "resin:Events/10032/Steps_kairos:Primitives_Events_Communication:2",
             "name": "Communication",
             "comment": "",
-            "qnode": "Q11024",
+            "qnode": "wd:Q11024",
             "qlabel": "communication",
             "aka": "communicate.01",
             "participants": [
@@ -1338,7 +1328,7 @@
             "@id": "resin:Events/10033/Steps_kairos:Primitives_Events_Request:1",
             "name": "Request",
             "comment": "",
-            "qnode": "Q22445448",
+            "qnode": "wd:Q22445448",
             "qlabel": "request",
             "aka": "request.01",
             "participants": [
@@ -1346,11 +1336,6 @@
                     "@id": "resin:Participants/20108/kairos:Primitives_Events_Request:1:agent_asker",
                     "roleName": "A0_pag_agent_asker",
                     "entity": "resin:Entities/00093/"
-                },
-                {
-                    "@id": "resin:Participants/20109/kairos:Primitives_Events_Request:1:recipient_hearer",
-                    "roleName": "A2_gol_recipient_hearer",
-                    "entity": "resin:Entities/00110/"
                 }
             ],
             "minDuration": "P1D",
@@ -1368,7 +1353,7 @@
             "@id": "resin:Events/10034/Steps_kairos:Primitives_Events_Motion_temporary_stay:1",
             "name": "Motion_temporary_stay",
             "comment": "",
-            "qnode": "Q2641256",
+            "qnode": "wd:Q2641256",
             "qlabel": "domicile",
             "aka": "reside.01",
             "participants": [
@@ -1398,39 +1383,19 @@
             "@id": "resin:Events/10035/Steps_kairos:Primitives_Events_Ransom:1",
             "name": "Ransom",
             "comment": "",
-            "qnode": "Q1414572",
+            "qnode": "wd:Q1414572",
             "qlabel": "ransom",
             "aka": "ransom.01",
             "participants": [
-                {
-                    "@id": "resin:Participants/20116/kairos:Primitives_Events_Ransom:1:entity_paying_for_the_release_of_the_captive",
-                    "roleName": "A0_pag_entity_paying_for_the_release_of_the_captive",
-                    "entity": "resin:Entities/00117/"
-                },
                 {
                     "@id": "resin:Participants/20117/kairos:Primitives_Events_Ransom:1:the_captive",
                     "roleName": "A1_ppt_the_captive",
                     "entity": "resin:Entities/00094/"
                 },
                 {
-                    "@id": "resin:Participants/20118/kairos:Primitives_Events_Ransom:1:money_demanded_paid",
-                    "roleName": "A2_vsp_money_demanded_paid",
-                    "entity": "resin:Entities/00119/"
-                },
-                {
                     "@id": "resin:Participants/20119/kairos:Primitives_Events_Ransom:1:kidnapper",
                     "roleName": "A3_dir_kidnapper",
                     "entity": "resin:Entities/00093/"
-                },
-                {
-                    "@id": "resin:Participants/20120/kairos:Primitives_Events_Ransom:1:terrible_fate_arg1_avoids_via_ransom",
-                    "roleName": "A4_vsp_terrible_fate_arg1_avoids_via_ransom",
-                    "entity": "resin:Entities/00121/"
-                },
-                {
-                    "@id": "resin:Participants/20121/kairos:Primitives_Events_Ransom:1:location",
-                    "roleName": "AM_loc",
-                    "entity": "resin:Entities/00122/"
                 }
             ],
             "minDuration": "P1D",
@@ -1448,7 +1413,7 @@
             "@id": "resin:Events/10036/Steps_kairos:Primitives_Events_GiveUp:1",
             "name": "GiveUp",
             "comment": "",
-            "qnode": "Q217901",
+            "qnode": "wd:Q217901",
             "qlabel": "capitulation",
             "aka": "capitulate.01",
             "participants": [
@@ -1478,7 +1443,7 @@
             "@id": "resin:Events/10037/Steps_kairos:Primitives_Events_Agree_or_refuse_to_act:1",
             "name": "Agree_or_refuse_to_act",
             "comment": "",
-            "qnode": "Q2006324",
+            "qnode": "wd:Q2006324",
             "qlabel": "agreement",
             "aka": "agree.01",
             "participants": [
@@ -1508,7 +1473,7 @@
             "@id": "resin:Events/10038/Steps_kairos:Primitives_Events_Violence_attack_killing:1",
             "name": "Violence_attack_killing",
             "comment": "",
-            "qnode": "Q252000",
+            "qnode": "wd:Q252000",
             "qlabel": "oppression",
             "aka": "oppress.01",
             "participants": [
@@ -1543,7 +1508,7 @@
             "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Physical_surveillance:2",
             "name": "Physical_surveillance",
             "comment": "",
-            "qnode": "Q334401",
+            "qnode": "wd:Q334401",
             "qlabel": "surveillance",
             "aka": "monitor.01",
             "participants": [
@@ -1578,7 +1543,7 @@
             "@id": "resin:Events/10040/Steps_kairos:Primitives_Events_Motion_traveling:2",
             "name": "Motion_traveling",
             "comment": "",
-            "qnode": "Q19279529",
+            "qnode": "wd:Q19279529",
             "qlabel": "go",
             "aka": "move.01",
             "participants": [
@@ -1608,7 +1573,7 @@
             "@id": "resin:Events/10041/Steps_kairos:Primitives_Events_Finding:1",
             "name": "Finding",
             "comment": "physical finding",
-            "qnode": "Q69034079",
+            "qnode": "wd:Q69034079",
             "qlabel": "find",
             "aka": "find.01",
             "participants": [
@@ -1643,7 +1608,7 @@
             "@id": "resin:Events/10042/Steps_kairos:Primitives_Events_Communication:3",
             "name": "Communication",
             "comment": "",
-            "qnode": "Q11024",
+            "qnode": "wd:Q11024",
             "qlabel": "communication",
             "aka": "communicate.01",
             "participants": [
@@ -1668,7 +1633,7 @@
             "@id": "resin:Events/10043/Steps_kairos:Primitives_Events_Communication_expressing_publicly:1",
             "name": "Communication_expressing_publicly",
             "comment": "",
-            "qnode": "Q67123584",
+            "qnode": "wd:Q67123584",
             "qlabel": "disclosure",
             "aka": "reveal.01",
             "participants": [
@@ -1693,7 +1658,7 @@
             "@id": "resin:Events/10044/Steps_kairos:Primitives_Events_Request:2",
             "name": "Request",
             "comment": "",
-            "qnode": "Q22445448",
+            "qnode": "wd:Q22445448",
             "qlabel": "request",
             "aka": "request.01",
             "participants": [
@@ -1723,7 +1688,7 @@
             "@id": "resin:Events/10045/Steps_kairos:Primitives_Events_Suasion_negotiation:1",
             "name": "Suasion_negotiation",
             "comment": "",
-            "qnode": "Q3400581",
+            "qnode": "wd:Q3400581",
             "qlabel": "parley",
             "aka": "negotiate.01",
             "participants": [
@@ -1753,7 +1718,7 @@
             "@id": "resin:Events/10046/Steps_kairos:Primitives_Events_Influence:1",
             "name": "Influence",
             "comment": "",
-            "qnode": "Q1231428",
+            "qnode": "wd:Q1231428",
             "qlabel": "persuasion",
             "aka": "persuade.01",
             "participants": [
@@ -1783,19 +1748,14 @@
             "@id": "resin:Events/10047/Steps_kairos:Primitives_Events_Getting_ransom:1",
             "name": "Getting_ransom",
             "comment": "",
-            "qnode": "Q25392373",
+            "qnode": "wd:Q25392373",
             "qlabel": "fund",
             "aka": "fund.01",
             "participants": [
                 {
-                    "@id": "resin:Participants/20168/kairos:Primitives_Events_Getting_ransom:1:financier",
-                    "roleName": "A0_pag_financier",
-                    "entity": "resin:Entities/00169/"
-                },
-                {
                     "@id": "resin:Participants/20170/kairos:Primitives_Events_Getting_ransom:1:funds",
                     "roleName": "A2_ppt_funds",
-                    "entity": "resin:Entities/00171/"
+                    "entity": "resin:Entities/00199/"
                 }
             ],
             "minDuration": "P1D",
@@ -1813,7 +1773,7 @@
             "@id": "resin:Events/10048/Steps_kairos:Primitives_Events_Defending:1",
             "name": "Defending",
             "comment": "",
-            "qnode": "Q38118448",
+            "qnode": "wd:Q38118448",
             "qlabel": "defending",
             "aka": "defend.01",
             "participants": [
@@ -1853,7 +1813,7 @@
             "@id": "resin:Events/10049/Steps_kairos:Primitives_Events_Helping:1",
             "name": "Helping",
             "comment": "",
-            "qnode": "Q1643184",
+            "qnode": "wd:Q1643184",
             "qlabel": "help",
             "aka": "help.01",
             "participants": [
@@ -1888,7 +1848,7 @@
             "@id": "resin:Events/10050/Steps_kairos:Primitives_Events_Violence_attack:2",
             "name": "Violence_attack",
             "comment": "",
-            "qnode": "Q252000",
+            "qnode": "wd:Q252000",
             "qlabel": "oppression",
             "aka": "oppress.01",
             "participants": [
@@ -1923,7 +1883,7 @@
             "@id": "resin:Events/10051/Steps_kairos:Primitives_Events_Violence_attack_killing:2",
             "name": "Violence_attack_killing",
             "comment": "",
-            "qnode": "Q844482",
+            "qnode": "wd:Q844482",
             "qlabel": "killing",
             "aka": "kill.01",
             "participants": [
@@ -1958,7 +1918,7 @@
             "@id": "resin:Events/10052/Steps_kairos:Primitives_Events_Exchange_victim:1",
             "name": "Exchange_victim",
             "comment": "",
-            "qnode": "Q766238",
+            "qnode": "wd:Q766238",
             "qlabel": "mutual_aid",
             "aka": "exchange.01",
             "participants": [
@@ -1998,7 +1958,7 @@
             "@id": "resin:Events/10053/Steps_kairos:Primitives_Events_Suasion_negotiation:2",
             "name": "Suasion_negotiation",
             "comment": "",
-            "qnode": "Q3400581",
+            "qnode": "wd:Q3400581",
             "qlabel": "parley",
             "aka": "negotiate.01",
             "participants": [
@@ -2028,15 +1988,10 @@
             "@id": "resin:Events/10054/Steps_kairos:Primitives_Events_Getting_ransom:2",
             "name": "Getting_ransom",
             "comment": "",
-            "qnode": "Q25392373",
+            "qnode": "wd:Q25392373",
             "qlabel": "fund",
             "aka": "fund.01",
             "participants": [
-                {
-                    "@id": "resin:Participants/20196/kairos:Primitives_Events_Getting_ransom:2:financier",
-                    "roleName": "A0_pag_financier",
-                    "entity": "resin:Entities/00197/"
-                },
                 {
                     "@id": "resin:Participants/20198/kairos:Primitives_Events_Getting_ransom:2:funds",
                     "roleName": "A2_ppt_funds",
@@ -2058,7 +2013,7 @@
             "@id": "resin:Events/10055/Steps_kairos:Primitives_Events_Giving_ransom:1",
             "name": "Giving_ransom",
             "comment": "",
-            "qnode": "Q1414572",
+            "qnode": "wd:Q1414572",
             "qlabel": "ransom",
             "aka": "ransom.01",
             "participants": [
@@ -2098,7 +2053,7 @@
             "@id": "resin:Events/10056/Steps_kairos:Primitives_Events_Motion_traveling:3",
             "name": "Motion_traveling",
             "comment": "",
-            "qnode": "Q19279529",
+            "qnode": "wd:Q19279529",
             "qlabel": "go",
             "aka": "move.01",
             "participants": [
@@ -2123,7 +2078,7 @@
             "@id": "resin:Events/10057/Steps_kairos:Primitives_Events_Communication:4",
             "name": "Communication",
             "comment": "",
-            "qnode": "Q11024",
+            "qnode": "wd:Q11024",
             "qlabel": "communication",
             "aka": "communicate.01",
             "participants": [
@@ -2153,7 +2108,7 @@
             "@id": "resin:Events/10058/Steps_kairos:Primitives_Events_Legality_investigation:1",
             "name": "Investigation",
             "comment": "",
-            "qnode": "Q12407601",
+            "qnode": "wd:Q12407601",
             "qlabel": "police_investigation",
             "aka": "investigate.01",
             "participants": [
@@ -2183,7 +2138,7 @@
             "@id": "resin:Events/10059/Steps_kairos:Primitives_Events_Legality_legal_rulings:1",
             "name": "Legal_rulings",
             "comment": "",
-            "qnode": "Q1301203",
+            "qnode": "wd:Q1301203",
             "qlabel": "legal_proceeding",
             "aka": "try.02",
             "participants": [
@@ -2208,7 +2163,7 @@
             "@id": "resin:Events/10060/Steps_kairos:Primitives_Events_Legality_judgment_communication:1",
             "name": "Judgment_communication",
             "comment": "",
-            "qnode": "Q567696",
+            "qnode": "wd:Q567696",
             "qlabel": "order",
             "aka": "order.01",
             "participants": [
@@ -2232,117 +2187,57 @@
     ],
     "entities": [
         {
-            "@id": "resin:Entities/00048/",
-            "name": "A1_ppt_thing_bought in event Getting_vehicle",
-            "qnode": "Q42889",
-            "qlabel": "vehicle"
-        },
-        {
-            "@id": "resin:Entities/00054/",
-            "name": "A1_ppt_thing_bought in event Getting_weapons",
-            "qnode": "Q728",
-            "qlabel": "weapon"
-        },
-        {
             "@id": "resin:Entities/00060/",
             "name": "A1_ppt_thing_bought in event Getting_place_to_keep_victim",
-            "qnode": "Q64576680",
+            "qnode": "wd:Q64576680",
             "qlabel": "accommodation"
         },
         {
             "@id": "resin:Entities/00092/",
             "name": "AM_loc in event Violence_attack",
-            "qnode": "Q1360677",
+            "qnode": "wd:Q1360677",
             "qlabel": "crime scene"
         },
         {
             "@id": "resin:Entities/00093/",
             "name": "A0_pag_kidnapper in event Kidnapping",
-            "qnode": "Q65622885",
+            "qnode": "wd:Q65622885",
             "qlabel": "kidnapper"
         },
         {
             "@id": "resin:Entities/00094/",
             "name": "A1_ppt_person_kidnapped in event Kidnapping",
-            "qnode": "Q1851760",
+            "qnode": "wd:Q1851760",
             "qlabel": "victim"
         },
         {
             "@id": "resin:Entities/00095/",
             "name": "AM_loc in event Kidnapping",
-            "qnode": "Q1360677",
+            "qnode": "wd:Q1360677",
             "qlabel": "crime scene"
         },
         {
             "@id": "resin:Entities/00102/",
             "name": "A2_gol_sent-to in event Spatial_placing_victim",
-            "qnode": "Q1360677",
+            "qnode": "wd:Q1360677",
             "qlabel": "crime scene"
-        },
-        {
-            "@id": "resin:Entities/00110/",
-            "name": "A2_gol_recipient_hearer in event Request",
-            "qnode": "Q18029574",
-            "qlabel": "colleague"
-        },
-        {
-            "@id": "resin:Entities/00117/",
-            "name": "A0_pag_entity_paying_for_the_release_of_the_captive in event Ransom",
-            "qnode": "Q106905641",
-            "qlabel": "funder"
-        },
-        {
-            "@id": "resin:Entities/00119/",
-            "name": "A2_vsp_money_demanded_paid in event Ransom",
-            "qnode": "Q6055890",
-            "qlabel": "funding"
-        },
-        {
-            "@id": "resin:Entities/00121/",
-            "name": "A4_vsp_terrible_fate_arg1_avoids_via_ransom in event Ransom",
-            "qnode": "Q926230",
-            "qlabel": "effect"
-        },
-        {
-            "@id": "resin:Entities/00122/",
-            "name": "AM_loc in event Ransom",
-            "qnode": "Q2221906",
-            "qlabel": "geographic location"
         },
         {
             "@id": "resin:Entities/00124/",
             "name": "A1_ppt_to_whom_what in event GiveUp",
-            "qnode": "Q35535",
+            "qnode": "wd:Q35535",
             "qlabel": "police"
-        },
-        {
-            "@id": "resin:Entities/00169/",
-            "name": "A0_pag_financier in event Getting_ransom",
-            "qnode": "Q106905641",
-            "qlabel": "funder"
-        },
-        {
-            "@id": "resin:Entities/00171/",
-            "name": "A2_ppt_funds in event Getting_ransom",
-            "qnode": "Q6055890",
-            "qlabel": "funding"
-        },
-        {
-            "@id": "resin:Entities/00197/",
-            "name": "A0_pag_financier in event Getting_ransom",
-            "qnode": "Q106905641",
-            "qlabel": "funder"
         },
         {
             "@id": "resin:Entities/00199/",
             "name": "A2_ppt_funds in event Getting_ransom",
-            "qnode": "Q6055890",
+            "qnode": "wd:Q6055890",
             "qlabel": "funding"
         },
         {
             "@id": "resin:Entities/00201/",
             "name": "A0_pag_entity_paying_for_the_release_of_the_captive in event Giving_ransom",
-            "qnode": "Q106905641",
+            "qnode": "wd:Q106905641",
             "qlabel": "funder"
         }
     ],
