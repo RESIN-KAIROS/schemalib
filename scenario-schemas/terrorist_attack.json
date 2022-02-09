@@ -16,7 +16,7 @@
       "@id": "resin:Events/10000/resin:Events_terrorist_attacks",
       "name": "Terrorist attacks",
       "description": "terrorist attacks",
-      "qnode": "Q2223653",
+      "qnode": "wd:Q2223653",
       "qlabel": "terrorist attack",
       "minDuration": "",
       "maxDuration": "",
@@ -89,16 +89,11 @@
       "@id": "resin:Events/10001/Steps_kairos:Container:1",
       "name": "Motivation",
       "comment": "container node",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "kairos:Container",
         "template": "",
         "repeatable": false
       },
-      "ta1explanation": "",
       "children_gate": "or",
       "children": [
         {
@@ -155,16 +150,11 @@
       "@id": "resin:Events/10002/Steps_kairos:Container:2",
       "name": "Preparation",
       "comment": "container node",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "kairos:Container",
         "template": "",
         "repeatable": false
       },
-      "ta1explanation": "",
       "children_gate": "or",
       "children": [
         {
@@ -203,16 +193,11 @@
       "@id": "resin:Events/10003/Steps_kairos:Container:3",
       "name": "Fundraising",
       "comment": "container node",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "kairos:Container",
         "template": "",
         "repeatable": false
       },
-      "ta1explanation": "",
       "children_gate": "or",
       "children": [
         {
@@ -235,16 +220,11 @@
       "@id": "resin:Events/10004/Steps_kairos:Container:4",
       "name": "Crime",
       "comment": "container node",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "kairos:Container",
         "template": "",
         "repeatable": false
       },
-      "ta1explanation": "",
       "children_gate": "or",
       "children": [
         {
@@ -277,12 +257,8 @@
       "@id": "resin:Events/10005/Steps_kairos:Container:5",
       "name": "Counter-Terrorism",
       "comment": "container node",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
       "qlabel": "counter-terrorism",
-      "qnode": "Q909459",
-      "goal": "",
+      "qnode": "wd:Q909459",
       "privateData": {
         "@type": "kairos:Container",
         "template": "",
@@ -359,16 +335,11 @@
       "@id": "resin:Events/10006/Steps_kairos:Container:6",
       "name": "Society Response",
       "comment": "container node",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "kairos:Container",
         "template": "",
         "repeatable": false
       },
-      "ta1explanation": "",
       "children_gate": "or",
       "children": [
         {
@@ -405,10 +376,8 @@
     {
       "@id": "resin:Events/10007/Steps_kairos:Primitives_Events_Injustice",
       "name": "Injustice",
-      "comment": "",
-      "qnode": "Q180684",
+      "qnode": "wd:Q180684",
       "qlabel": "conflict",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20000/Steps_kairos:Primitives_Events_Injustice_Agentive_Clasher",
@@ -431,10 +400,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "",
         "template": "",
@@ -445,8 +410,6 @@
     {
       "@id": "resin:Events/10008/Steps_kairos:Primitives_Events_Propaganda",
       "name": "Propaganda",
-      "comment": "",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20004/Steps_kairos:Primitives_Events_Propaganda_Campaigner",
@@ -464,11 +427,8 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "form of communication intended to sway the audience through presenting only one side of the argument",
-      "goal": "",
-      "qnode": "Q7281",
+      "qnode": "wd:Q7281",
       "qlabel": "propaganda",
       "privateData": {
         "@type": "",
@@ -480,8 +440,6 @@
     {
       "@id": "resin:Events/10009/Steps_kairos:Primitives_Events_Awareness_Campaign",
       "name": "Awareness Campaign",
-      "comment": "",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20007/Steps_kairos:Primitives_Events_Awareness_Campaign_Campaigner",
@@ -499,11 +457,8 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "media campaign to raise awareness in the public for an issue",
-      "goal": "",
-      "qnode": "Q99748589",
+      "qnode": "wd:Q99748589",
       "qlabel": "awareness campaign",
       "privateData": {
         "@type": "",
@@ -515,9 +470,6 @@
     {
       "@id": "resin:Events/10010/Steps_kairos:Primitives_Events_Terrorism",
       "name": "Terrorism",
-      "comment": "",
-      "qnode": "Q7283",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20010/Steps_kairos:Primitives_Events_Terrorism_Intentional_Agent_of_Scaring",
@@ -535,10 +487,8 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "use of violence as a form of political, economic and religious coercion",
-      "goal": "",
+      "qnode": "wd:Q7283",
       "qlabel": "terrorism",
       "privateData": {
         "@type": "",
@@ -550,9 +500,6 @@
     {
       "@id": "resin:Events/10011/Steps_kairos:Primitives_Events_Recruitment",
       "name": "Recruitment",
-      "comment": "",
-      "aka": "",
-      "qnode": "Q899277",
       "participants": [
         {
           "@id": "resin:Participants/20013/Steps_kairos:Primitives_Events_Recruitment_Employer",
@@ -565,10 +512,8 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "process of attracting, selecting and appointing candidates to a job or other organization",
-      "goal": "",
+      "qnode": "wd:Q899277",
       "qlabel": "recruitment",
       "privateData": {
         "@type": "",
@@ -580,9 +525,6 @@
     {
       "@id": "resin:Events/10012/Steps_kairos:Primitives_Events_Belief",
       "name": "Personal Beliefs",
-      "comment": "",
-      "aka": "",
-      "qnode": "Q34394",
       "participants": [
         {
           "@id": "resin:Participants/20015/Steps_kairos:Primitives_Events_Belief_Speaker",
@@ -590,10 +532,8 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "psychological state in which an individual holds a proposition or premise to be true",
-      "goal": "",
+      "qnode": "wd:Q34394",
       "qlabel": "belief",
       "privateData": {
         "@type": "",
@@ -605,9 +545,6 @@
     {
       "@id": "resin:Events/10013/Steps_kairos:Primitives_Events_Plan",
       "name": "Plan Attack",
-      "comment": "",
-      "aka": "",
-      "qnode": "Q1371819",
       "participants": [
         {
           "@id": "resin:Participants/20016/Steps_kairos:Primitives_Events_Plan_Planner",
@@ -615,10 +552,8 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "outline of a strategy for achievement of an objective",
-      "goal": "",
+      "qnode": "wd:Q1371819",
       "qlabel": "plan",
       "privateData": {
         "@type": "",
@@ -630,9 +565,6 @@
     {
       "@id": "resin:Events/10014/Steps_kairos:Primitives_Events_Training",
       "name": "Train Participants",
-      "comment": "",
-      "qnode": "Q918385",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20017/Steps_kairos:Primitives_Events_Training_Trainer",
@@ -645,10 +577,8 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "acquisition of knowledge, skills, and competencies as a result of teaching",
-      "goal": "",
+      "qnode": "wd:Q918385",
       "qlabel": "training",
       "privateData": {
         "@type": "",
@@ -660,9 +590,6 @@
     {
       "@id": "resin:Events/10015/Steps_kairos:Primitives_Events_Plant_Undercover_Agents",
       "name": "Plant Undercover Agents",
-      "comment": "",
-      "qnode": "Q165950",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20019/Steps_kairos:Primitives_Events_Plant_Undercover_Agents_Secret_Agent",
@@ -680,10 +607,8 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "clandestine acquisition of confidential information",
-      "goal": "",
+      "qnode": "wd:Q165950",
       "qlabel": "espionage",
       "privateData": {
         "@type": "",
@@ -695,9 +620,6 @@
     {
       "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Purchase_Weapons",
       "name": "Purchase Weapons",
-      "qnode": "Q1369832",
-      "comment": "",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20022/Steps_kairos:Primitives_Events_Purchase_Weapons_Purchaser",
@@ -715,10 +637,8 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "acquisition of goods or services by fiduciary exchange",
-      "goal": "",
+      "qnode": "wd:Q1369832",
       "qlabel": "purchasing",
       "privateData": {
         "@type": "",
@@ -730,9 +650,6 @@
     {
       "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Donation",
       "name": "Donation",
-      "qnode": "Q1124860",
-      "comment": "",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20025/Steps_kairos:Primitives_Events_Donation_Giver",
@@ -745,10 +662,8 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
-      "goal": "",
+      "qnode": "wd:Q1124860",
       "qlabel": "donation",
       "privateData": {
         "@type": "",
@@ -760,9 +675,6 @@
     {
       "@id": "resin:Events/10018/Steps_kairos:Primitives_Events_Organized_Crime",
       "name": "Organized Crime",
-      "qnode": "Q46952",
-      "comment": "",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20027/Steps_kairos:Primitives_Events_Organized_Crime_Agent",
@@ -775,10 +687,8 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "groupings of highly centralized criminal enterprises",
-      "goal": "",
+      "qnode": "wd:Q46952",
       "qlabel": "organized crime",
       "privateData": {
         "@type": "",
@@ -790,15 +700,25 @@
     {
       "@id": "resin:Events/10019/Steps_kairos:Primitives_Events_Attack",
       "name": "Attack",
-      "qnode": "Q1174599",
-      "comment": "",
-      "aka": "",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
+      "participants": [
+        {
+          "@id": "resin:Participants/20069/Steps_kairos:Primitives_Events_Attack_Agent",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": "resin:Entities/00005/"
+        },
+        {
+          "@id": "resin:Participants/20070/Steps_kairos:Primitives_Events_Attack_Entity_Assaulted",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20071/Steps_kairos:Primitives_Events_Attack_Location",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "qnode": "wd:Q1174599",
       "qlabel": "attack",
-      "children_gate": "or",
       "children": [
         {
           "child": "resin:Events/10022/Steps_kairos:Primitives_Events_Bombing",
@@ -815,6 +735,7 @@
           "outlinks": []
         }
       ],
+      "children_gate": "or",
       "privateData": {
         "@type": "",
         "template": "",
@@ -825,9 +746,6 @@
     {
       "@id": "resin:Events/10020/Steps_kairos:Primitives_Events_Injure",
       "name": "Injure",
-      "qnode": "Q193078",
-      "comment": "",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20029/Steps_kairos:Primitives_Events_Injure_Stimulus_of_Injury",
@@ -850,10 +768,8 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "physiological wound caused by an external source",
-      "goal": "",
+      "qnode": "wd:Q193078",
       "qlabel": "injure",
       "privateData": {
         "@type": "",
@@ -865,9 +781,6 @@
     {
       "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_Kill",
       "name": "Kill",
-      "comment": "",
-      "qnode": "Q844482",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20033/Steps_kairos:Primitives_Events_Kill_Killer",
@@ -890,10 +803,8 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
       "description": "act of killing a living being",
-      "goal": "",
+      "qnode": "wd:Q844482",
       "qlabel": "killing",
       "privateData": {
         "@type": "",
@@ -905,10 +816,6 @@
     {
       "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_Bombing",
       "name": "Bombing",
-      "comment": "",
-      "qnode": "Q891854",
-      "qlabel": "bomb attack",
-      "aka": "",
       "participants": [
         {
           "@id": "resin:Participants/20037/Steps_kairos:Primitives_Events_Bombing_Attacker",
@@ -926,10 +833,8 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
+      "qnode": "wd:Q891854",
+      "qlabel": "bomb attack",
       "privateData": {
         "@type": "",
         "template": "",
@@ -940,18 +845,12 @@
     {
       "@id": "resin:Events/10023/Steps_kairos:Primitives_Events_Shooting",
       "name": "Shooting",
-      "comment": "",
-      "aka": "",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "",
         "template": "",
         "repeatable": false
       },
-      "qnode": "Q2252077",
+      "qnode": "wd:Q2252077",
       "qlabel": "shooting",
       "participants": [
         {
@@ -980,18 +879,12 @@
     {
       "@id": "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
       "name": "Social Media",
-      "comment": "",
-      "aka": "",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "",
         "template": "",
         "repeatable": false
       },
-      "qnode": "Q202833",
+      "qnode": "wd:Q202833",
       "qlabel": "social media",
       "participants": [
         {
@@ -1015,18 +908,12 @@
     {
       "@id": "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism",
       "name": "Journalism",
-      "comment": "",
-      "aka": "",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "",
         "template": "",
         "repeatable": false
       },
-      "qnode": "Q11030",
+      "qnode": "wd:Q11030",
       "qlabel": "journalism",
       "participants": [
         {
@@ -1050,33 +937,49 @@
     {
       "@id": "resin:Events/10027/Steps_kairos:Primitives_Events_Military_Action",
       "name": "Military Action",
-      "comment": "",
-      "aka": "",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "privateData": {
         "@type": "",
         "template": "",
         "repeatable": false
       },
-      "qnode": "Q252000",
+      "qnode": "wd:Q252000",
       "qlabel": "oppression",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20072/Steps_kairos:Primitives_Events_Military_Action_Entity_Oppressing",
+          "roleName": "A0_pag_entity_oppressing",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20073/Steps_kairos:Primitives_Events_Military_Action_Entity_Oppressed",
+          "roleName": "A1_ppt_entity_oppressed",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
       "ta1explanation": "control of people by others through violence"
     },
     {
       "@id": "resin:Events/10028/Steps_kairos:Primitives_Events_Deportation",
       "name": "Deportation",
-      "comment": "",
-      "qnode": "Q379693",
+      "qnode": "wd:Q379693",
       "qlabel": "deportation",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
+      "participants": [
+        {
+          "@id": "resin:Participants/20074/Steps_kairos:Primitives_Events_Deportation_Causer",
+          "roleName": "A0_pag_causer",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20075/Steps_kairos:Primitives_Events_Deportation_Entity_Deported",
+          "roleName": "A1_ppt_entity_deported",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20076/Steps_kairos:Primitives_Events_Deportation_Country_Deported_From",
+          "roleName": "A2_dir_country_deported_from",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
       "ta1explanation": "expulsion of the people from a place or country",
       "privateData": {
         "@type": "",
@@ -1087,8 +990,7 @@
     {
       "@id": "resin:Events/10026/Steps_kairos:Primitives_Events_Legislation",
       "name": "Legislation",
-      "comment": "",
-      "qnode": "Q574759",
+      "qnode": "wd:Q574759",
       "qlabel": "anti-terrorism legislation",
       "participants": [
         {
@@ -1107,10 +1009,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "ta1explanation": "Laws enacted against terrorism",
       "privateData": {
         "@type": "",
@@ -1121,8 +1019,7 @@
     {
       "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_Detention",
       "name": "Detention",
-      "comment": "",
-      "qnode": "Q1071447",
+      "qnode": "wd:Q1071447",
       "qlabel": "detention",
       "participants": [
         {
@@ -1141,10 +1038,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "ta1explanation": "removal of the freedom of liberty by a state",
       "privateData": {
         "@type": "",
@@ -1155,8 +1048,7 @@
     {
       "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_Interrogation",
       "name": "Interrogation",
-      "comment": "",
-      "qnode": "Q327018",
+      "qnode": "wd:Q327018",
       "qlabel": "interrogation",
       "participants": [
         {
@@ -1175,10 +1067,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "ta1explanation": "interviewing employed by lawenforcement officers, military personnel, and intelligence agencieswith the goal of eliciting useful information",
       "privateData": {
         "@type": "",
@@ -1189,8 +1077,7 @@
     {
       "@id": "resin:Events/10031/Steps_kairos:Primitives_Events_Target_Hardening",
       "name": "Target Hardening",
-      "comment": "",
-      "qnode": "Q978423",
+      "qnode": "wd:Q978423",
       "qlabel": "hardening",
       "participants": [
         {
@@ -1204,10 +1091,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "ta1explanation": "process of securing a systemby reducing its surface of vulnerability, which is larger when a systemperforms more functions; in principle a single-function system is moresecure than a multipurpose one",
       "privateData": {
         "@type": "",
@@ -1218,8 +1101,7 @@
     {
       "@id": "resin:Events/10032/Steps_kairos:Primitives_Events_Terrorism_Research",
       "name": "Terrorism Research",
-      "comment": "",
-      "qnode": "Q42240",
+      "qnode": "wd:Q42240",
       "qlabel": "scientific research",
       "participants": [
         {
@@ -1233,10 +1115,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "ta1explanation": "systematic study undertaken to increase knowledge of the cause of terrorism and its impact as well as preventative measures",
       "privateData": {
         "@type": "",
@@ -1247,8 +1125,6 @@
     {
       "@id": "resin:Events/10033/Steps_kairos:Primitives_Events_Surveillance",
       "name": "Surveillance",
-      "comment": "",
-      "qnode": "Q334401",
       "participants": [
         {
           "@id": "resin:Participants/20063/kairos:Primitives_Events_Surveillance_Observer",
@@ -1266,10 +1142,7 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
+      "qnode": "wd:Q334401",
       "qlabel": "surveillance",
       "privateData": {
         "@type": "",
@@ -1281,8 +1154,7 @@
     {
       "@id": "resin:Events/10034/Steps_kairos:Primitives_Events_Protest",
       "name": "Protest",
-      "comment": "",
-      "qnode": "Q175331",
+      "qnode": "wd:Q175331",
       "qlabel": "demonstration",
       "participants": [
         {
@@ -1301,10 +1173,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
       "ta1explanation": "collective action by people to protest the terrorist attack and injustice",
       "privateData": {
         "@type": "",
@@ -1317,77 +1185,77 @@
     {
       "@id": "resin:Entities/00000/",
       "name": "target group",
-      "qnode": "Q16334295",
+      "qnode": "wd:Q16334295",
       "qlabel": "group of humans",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00001/",
       "name": "terrorist group",
-      "qnode": "Q4456236",
+      "qnode": "wd:Q4456236",
       "qlabel": "terrorist group",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00002/",
       "name": "target location",
-      "qnode": "Q2221906",
+      "qnode": "wd:Q2221906",
       "qlabel": "geographic location",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00003/",
       "name": "cause for the terrorist group",
-      "qnode": "Q2574811",
+      "qnode": "wd:Q2574811",
       "qlabel": "cause",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00004/",
       "name": "person",
-      "qnode": "Q215627",
+      "qnode": "wd:Q215627",
       "qlabel": "person",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00005/",
       "name": "terrorist",
-      "qnode": "Q215627",
+      "qnode": "wd:Q215627",
       "qlabel": "person",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00006/",
       "name": "benefactor group",
-      "qnode": "Q16334295",
+      "qnode": "wd:Q16334295",
       "qlabel": "group of humans",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00007/",
       "name": "weapon",
-      "qnode": "Q728",
+      "qnode": "wd:Q728",
       "qlabel": "weapon",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00008/",
       "name": "general population",
-      "qnode": "Q16334295",
+      "qnode": "wd:Q16334295",
       "qlabel": "group of humans",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00009/",
       "name": "government",
-      "qnode": "Q7188",
+      "qnode": "wd:Q7188",
       "qlabel": "government",
       "centrality": 1
     },
     {
       "@id": "resin:Entities/00010/",
       "name": "government facility",
-      "qnode": "Q2221906",
+      "qnode": "wd:Q2221906",
       "qlabel": "geographic location",
       "centrality": 1
     }
