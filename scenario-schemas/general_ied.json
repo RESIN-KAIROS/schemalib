@@ -1005,11 +1005,33 @@
       ]
     },
     {
-      "@id": "resin:Events/00001/General-IED",
-      "name": "General IED",
-      "description": "",
-      "ta1explanation": "",
-      "children_gate": "and",
+      "@id": "resin:Events/21001/Steps_kairos:Container:Contributory_Factors",
+      "name": "Contributory Factors",
+      "comment": "container node",
+      "description": "The contributory factor container.",
+      "ta1explanation": "The contributory factors that shows motives and backgrounds.",
+      "children_gate": "or",
+      "children": [
+        {
+          "child": "resin:Events/00026/Conflict-Demonstrate-Unspecified",
+          "outlinks": [
+            "resin:Events/00014/Conflict-Attack-DetonateExplode"
+          ]
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": true
+      }
+    },
+    {
+      "@id": "resin:Events/21002/Steps_kairos:Container:Planning",
+      "name": "Planning",
+      "comment": "container node",
+      "description": "The Planning container.",
+      "ta1explanation": "The bomb making procedure.",
+      "children_gate": "or",
       "children": [
         {
           "child": "resin:Events/00002/Cognitive-TeachingTrainingLearning-Unspecified",
@@ -1042,7 +1064,22 @@
             "resin:Events/00008/Contact-ThreatenCoerce-Broadcast",
             "resin:Events/00009/Movement-Transportation-Unspecified"
           ]
-        },
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/21003/Steps_kairos:Container:Execution",
+      "name": "Execution",
+      "comment": "container node",
+      "description": "The Execution container.",
+      "ta1explanation": "The execution procedure to detonate the bomb.",
+      "children_gate": "or",
+      "children": [
         {
           "child": "resin:Events/00008/Contact-ThreatenCoerce-Broadcast",
           "outlinks": [
@@ -1057,6 +1094,10 @@
             "resin:Events/00011/ArtifactExistence-DamageDestroyDisableDismantle-DisableDefuse",
             "resin:Events/00014/Conflict-Attack-DetonateExplode"
           ]
+        },
+        {
+          "child": "resin:Events/00011/ArtifactExistence-DamageDestroyDisableDismantle-DisableDefuse",
+          "outlinks": []
         },
         {
           "child": "resin:Events/00009/Movement-Transportation-Unspecified",
@@ -1088,6 +1129,30 @@
             "resin:Events/00019/Movement-Transportation-Evacuation"
           ]
         },
+        {
+          "child": "resin:Events/00016/ArtifactExistence-DamageDestroyDisableDismantle-Damage",
+          "outlinks": []
+        },
+        {
+          "child": "resin:Events/00015/ArtifactExistence-DamageDestroyDisableDismantle-Destroy",
+          "outlinks": []
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/21004/Steps_kairos:Container:Aftermath",
+      "name": "Aftermath",
+      "comment": "container node",
+      "description": "The Aftermath container.",
+      "ta1explanation": "The investigations, legal proceedings, and other events happened after the bombing.",
+      "participants": [],
+      "children_gate": "or",
+      "children": [
         {
           "child": "resin:Events/00019/Movement-Transportation-Evacuation",
           "outlinks": [
@@ -1162,12 +1227,7 @@
             "resin:Events/00033/Justice-ReleaseParole-Unspecified"
           ]
         },
-        {
-          "child": "resin:Events/00026/Conflict-Demonstrate-Unspecified",
-          "outlinks": [
-            "resin:Events/00014/Conflict-Attack-DetonateExplode"
-          ]
-        },
+        
         {
           "child": "resin:Events/00013/Conflict-Attack-Unspecified",
           "outlinks": [
@@ -1191,10 +1251,6 @@
           "outlinks": []
         },
         {
-          "child": "resin:Events/00011/ArtifactExistence-DamageDestroyDisableDismantle-DisableDefuse",
-          "outlinks": []
-        },
-        {
           "child": "resin:Events/00015/ArtifactExistence-DamageDestroyDisableDismantle-Destroy",
           "outlinks": []
         },
@@ -1209,6 +1265,55 @@
         {
           "child": "resin:Events/00023/Control-ImpedeInterfereWith-Unspecified",
           "outlinks": []
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/00001/General-IED",
+      "name": "General IED",
+      "description": "",
+      "ta1explanation": "",
+      "children_gate": "or",
+      "children": [
+        {
+          "child": "resin:Events/21001/Steps_kairos:Container:Contributory_Factors",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.8,
+          "outlinks": [
+            "resin:Events/21002/Steps_kairos:Container:Planning"
+          ]
+        },
+        {
+          "child": "resin:Events/21002/Steps_kairos:Container:Planning",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.9,
+          "outlinks": [
+            "resin:Events/21003/Steps_kairos:Container:Execution"
+          ]
+        },
+        {
+          "child": "resin:Events/21003/Steps_kairos:Container:Execution",
+          "comment": "Container",
+          "optional": true,
+          "importance": 1.0,
+          "outlinks": [
+            "resin:Events/21004/Steps_kairos:Container:Aftermath"
+          ]
+        },
+        {
+          "child": "resin:Events/21004/Steps_kairos:Container:Aftermath",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.9,
+          "outlinks": [
+          ]
         }
       ]
     }
