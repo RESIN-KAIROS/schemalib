@@ -199,6 +199,13 @@
           ]
         },
         {
+          "child": "resin:Events/10615/Steps_kairos:Container:3",
+          "comment": "treatment outlinks",
+          "optional": false,
+          "importance": 1,
+          "outlinks": []
+        },
+        {
           "child": "resin:Events/10633/Steps_kairos:Primitives_Events_Recover",
           "comment": "recover",
           "optional": false,
@@ -352,6 +359,13 @@
           "outlinks": [
             "resin:Events/10627/Steps_kairos:Container:104"
           ]
+        },
+        {
+          "child": "resin:Events/10627/Steps_kairos:Container:104",
+          "comment": "motion outlinks",
+          "optional": true,
+          "importance": 1,
+          "outlinks": []
         },
         {
           "child": "resin:Events/10628/Steps_kairos:Primitives_Events_Mediation",
@@ -1357,8 +1371,8 @@
     },
     {
       "@id": "resin:Entities/00926",
-      "qnode": "victim",
-      "qlabel": "Q1851760",
+      "qnode": "wd:Q1851760",
+      "qlabel": "victim",
       "centrality": 1,
       "name": "victim"
     },
@@ -1371,7 +1385,7 @@
     },
     {
       "@id": "resin:Entities/00928",
-      "qnode": "DWD7188",
+      "qnode": "wd:Q7188",
       "qlabel": "government",
       "centrality": 1,
       "name": "government / authorities"

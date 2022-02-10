@@ -174,6 +174,18 @@
                     "outlinks": [
                     ],
 					"comment": ""
+                },
+                {
+                    "child": "kairos:Events/00005/PersonnelChange",
+                    "outlinks": [
+                    ],
+					"comment": ""
+                },
+                {
+                    "child": "kairos:Events/00013/Corruption",
+                    "outlinks": [
+                    ],
+					"comment": ""
                 }
             ]
         },
@@ -492,6 +504,21 @@
             "qnode": "wd:Q10858400",
             "qlabel": "political corruption",
             "participants": [
+                {
+                    "@id": "kairos:Participants/00090/Government",
+                    "roleName": "government",
+                    "entity": "kairos:Entities/00006/Government"
+                },
+                {
+                    "@id": "kairos:Participants/00091/Company",
+                    "roleName": "company",
+                    "entity": "kairos:Entities/00004/Company"
+                },
+                {
+                    "@id": "kairos:Participants/00092/Politician",
+                    "roleName": "politician",
+                    "entity": "kairos:Entities/00018/Politician"
+                }
             ],
             "description": false,
             "children_gate": "or"
@@ -503,6 +530,11 @@
             "qnode": "wd:Q366",
             "qlabel": "corruption",
             "participants": [
+                {
+                    "@id": "kairos:Participants/00093/Company",
+                    "roleName": "company",
+                    "entity": "kairos:Entities/00004/Company"
+                }
             ],
             "description": false,
             "children_gate": "or"
@@ -1757,6 +1789,16 @@
           "entity": "resin:Entities/00135/"
         }
       ],
+	  "children": [
+        {
+          "child": "resin:Events/10089/Steps_kairos:Container:104",
+          "comment": "Added this to avoid multiple roots.",
+          "optional": true,
+          "importance": 0.2,
+          "outlinks": []
+        }
+	  ],
+      "children_gate": "or",
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2245,6 +2287,13 @@
             "qlabel": "personnel",
             "centrality": 1,
             "name": "personnel for events with more than 1"
+        },
+        {
+            "@id": "kairos:Entities/00018/Politician",
+            "qnode": "wd:Q82955",
+            "qlabel": "politician",
+            "centrality": 1,
+            "name": "politician"
         },
     {
       "@id": "resin:Entities/00135/",
