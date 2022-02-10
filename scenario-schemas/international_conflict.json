@@ -446,8 +446,6 @@
             "@id": "resin:Events/20012",
             "name": "negotiation_result",
             "ta1explanation":"",
-            "qnode": "",
-            "qlabel": "",
             "description": "constainer for negotiation result",
             "children_gate": "xor",
             "children": [
@@ -561,7 +559,14 @@
                     ],
                     "comment": "negotiation"
                 },   
-              
+                {
+                    "child": "resin:Events/20012",
+                    "outlinks": [
+                        "resin:Events/20013",
+                        "resin:Events/20014"
+                    ],
+                    "comment": "negotiation_result"
+                },   
                 {
                     "child": "resin:Events/20016",
                     "outlinks": [
