@@ -231,6 +231,13 @@
           ]
         },
         {
+          "child": "resin:Events/10041/Steps_kairos:Container:100",
+          "comment": "injury outlinks",
+          "optional": true,
+          "importance": 0.5,
+          "outlinks": []
+        },
+        {
           "child": "resin:Events/10023/Steps_kairos:Primitives_Events_survival:1",
           "comment": "survival:1",
           "optional": true,
@@ -379,6 +386,13 @@
           "outlinks": [
             "resin:Events/10042/Steps_kairos:Container:101"
           ]
+        },
+        {
+          "child": "resin:Events/10042/Steps_kairos:Container:101",
+          "comment": "court decision outcome",
+          "optional": false,
+          "importance": 0.5,
+          "outlinks": []
         },
         {
           "child": "resin:Events/10037/Steps_kairos:Primitives_Events_sentence:1",
