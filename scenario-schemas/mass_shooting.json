@@ -16,7 +16,7 @@
             "@id": "resin:Events/10000/resin:Events_mass_shooting",
             "name": "Mass Shooting",
             "description": "Event complex for Resin:events_mass_shooting",
-            "qnode": "Q21480300",
+            "qnode": "wd:Q21480300",
             "qlabel": "mass_shooting",
             "minDuration": "",
             "maxDuration": "",
@@ -77,13 +77,6 @@
         {
             "@id": "resin:Events/10001/Steps_kairos:Container:1",
             "name": "Motive",
-            "qnode": "Q4583280",
-            "minDuration": "",
-            "maxDuration": "",
-            "description": "Episode for Steps_kairos:container:1",
-            "goal": "",
-            "ta1explanation": "",
-            "qlabel": "motive",
             "privateData": {
                 "template": "",
                 "repeatable": false,
@@ -114,18 +107,18 @@
                     "outlinks": []
                 }
             ],
-            "children_gate": "or"
+            "children_gate": "or",
+            "qnode": "wd:Q4583280",
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "Episode for Steps_kairos:container:1",
+            "goal": "",
+            "ta1explanation": "",
+            "qlabel": "motive"
         },
         {
             "@id": "resin:Events/10002/Steps_kairos:Container:2",
             "name": "Planning",
-            "qnode": "Q309100",
-            "minDuration": "",
-            "maxDuration": "",
-            "description": "Episode for Steps_kairos:container:2",
-            "goal": "",
-            "ta1explanation": "",
-            "qlabel": "planning",
             "privateData": {
                 "template": "",
                 "repeatable": false,
@@ -167,18 +160,18 @@
                     "outlinks": []
                 }
             ],
-            "children_gate": "or"
+            "children_gate": "or",
+            "qnode": "wd:Q309100",
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "Episode for Steps_kairos:container:2",
+            "goal": "",
+            "ta1explanation": "",
+            "qlabel": "planning"
         },
         {
             "@id": "resin:Events/10003/Steps_kairos:Container:3",
             "name": "Attack",
-            "qnode": "Q1174599",
-            "minDuration": "",
-            "maxDuration": "",
-            "description": "Episode for Steps_kairos:container:3",
-            "goal": "",
-            "ta1explanation": "",
-            "qlabel": "attack",
             "privateData": {
                 "template": "",
                 "repeatable": false,
@@ -236,24 +229,31 @@
                     "optional": true,
                     "importance": 0,
                     "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10041/Steps_kairos:Container:100",
+                    "comment": "Injury outlinks",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": []
                 }
             ],
-            "children_gate": "or"
+            "children_gate": "or",
+            "qnode": "wd:Q1174599",
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "Episode for Steps_kairos:container:3",
+            "goal": "",
+            "ta1explanation": "",
+            "qlabel": "attack"
         },
         {
             "@id": "resin:Events/10004/Steps_kairos:Container:4",
             "name": "Medical response",
-            "qnode": "",
-            "minDuration": "",
-            "maxDuration": "",
-            "description": "Episode for Steps_kairos:container:4",
-            "goal": "",
-            "ta1explanation": "",
-            "qlabel": "",
+            "comment": "container node",
             "privateData": {
                 "template": "",
-                "repeatable": false,
-                "importance": 1
+                "repeatable": false
             },
             "children": [
                 {
@@ -291,16 +291,13 @@
                     "outlinks": []
                 }
             ],
-            "children_gate": "or"
+            "children_gate": "or",
+            "description": "Episode for Steps_kairos:container:4"
         },
         {
             "@id": "resin:Events/10005/Steps_kairos:Container:5",
             "name": "Criminal investigation",
-            "qnode": "Q1415338",
-            "minDuration": "",
-            "maxDuration": "",
-            "description": "Episode for Steps_kairos:container:5",
-            "goal": "",
+            "qnode": "wd:Q1415338",
             "ta1explanation": "",
             "qlabel": "criminal_investigation",
             "privateData": {
@@ -412,15 +409,31 @@
                     "optional": true,
                     "importance": 0,
                     "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10042/Steps_kairos:Container:101",
+                    "comment": "Court Decision outlinks",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": []
                 }
             ],
-            "children_gate": "or"
+            "children_gate": "or",
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "Episode for Steps_kairos:container:5",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10010/Steps_kairos:Primitives_Events_social_conflict:1",
             "name": "social_conflict",
             "comment": "",
-            "qnode": "Q2672648",
+            "privateData": {
+                "@type": "resin:Events/10010/Steps_kairos:Primitives_Events_social_conflict:1",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q2672648",
             "aka": "conflict.01",
             "participants": [
                 {
@@ -439,19 +452,12 @@
             "description": "",
             "goal": "",
             "ta1explanation": "struggle for agency or power in society, when two or more actors oppose each other in social interaction",
-            "qlabel": "social_conflict",
-            "privateData": {
-                "@type": "resin:Events/10010/Steps_kairos:Primitives_Events_social_conflict:1",
-                "template": "",
-                "repeatable": false
-            }
+            "qlabel": "social_conflict"
         },
         {
             "@id": "resin:Events/10011/Steps_kairos:Primitives_Events_revenge:1",
             "name": "revenge",
-            "comment": "",
-            "qnode": "Q1712140",
-            "aka": "retribute.01",
+            "qnode": "wd:Q1712140",
             "participants": [
                 {
                     "@id": "resin:Participants/20004/kairos:Primitives_Events_revenge:1:vengeant_one",
@@ -469,24 +475,24 @@
                     "entity": "resin:Entities/00005/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "harmful action in response to a grievance",
             "qlabel": "revenge",
             "privateData": {
                 "@type": "resin:Events/10011/Steps_kairos:Primitives_Events_revenge:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "retribute.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10012/Steps_kairos:Primitives_Events_failure:1",
             "name": "failure",
-            "comment": "",
-            "qnode": "Q1121708",
-            "aka": "fail.01",
+            "qnode": "wd:Q1121708",
             "participants": [
                 {
                     "@id": "resin:Participants/20009/kairos:Primitives_Events_failure:1:thing_failing",
@@ -494,23 +500,23 @@
                     "entity": "resin:Entities/00001/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "state or event of not meeting a desirable or intended objective, relative to a particular observer or belief system",
             "qlabel": "failure",
             "privateData": {
                 "@type": "resin:Events/10012/Steps_kairos:Primitives_Events_failure:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "fail.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10013/Steps_kairos:Primitives_Events_intentional_human_activity:1",
             "name": "intentional_human_activity",
-            "comment": "",
-            "aka": "act.02",
             "participants": [
                 {
                     "@id": "resin:Participants/20013/kairos:Primitives_Events_intentional_human_activity:1:actor",
@@ -523,24 +529,24 @@
                     "entity": "resin:Entities/00005/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "human activity driven by purposeful motives",
-            "qnode": "Q451967",
+            "qnode": "wd:Q451967",
             "qlabel": "intentional human activity",
             "privateData": {
                 "@type": "resin:Events/10013/Steps_kairos:Primitives_Events_intentional_human_activity:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "act.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10014/Steps_kairos:Primitives_Events_decision:1",
             "name": "decision",
-            "comment": "",
-            "aka": "decide.01",
             "participants": [
                 {
                     "@id": "resin:Participants/20018/kairos:Primitives_Events_decision:1:decider",
@@ -553,25 +559,25 @@
                     "entity": "resin:Entities/00013/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "result of deliberation",
-            "qnode": "Q16513426",
+            "qnode": "wd:Q16513426",
             "qlabel": "decision",
             "privateData": {
                 "@type": "resin:Events/10014/Steps_kairos:Primitives_Events_decision:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "decide.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10015/Steps_kairos:Primitives_Events_buy:1",
             "name": "buy",
-            "comment": "",
-            "qnode": "Q12887029",
-            "aka": "buy.01",
+            "qnode": "wd:Q12887029",
             "participants": [
                 {
                     "@id": "resin:Participants/20023/kairos:Primitives_Events_buy:1:buyer",
@@ -584,24 +590,24 @@
                     "entity": "resin:Entities/00006/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "None",
-            "goal": "",
             "ta1explanation": "purchase weapon for crime",
             "qlabel": "buy",
             "privateData": {
                 "@type": "resin:Events/10015/Steps_kairos:Primitives_Events_buy:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "buy.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_announcement:1",
             "name": "announcement",
-            "comment": "",
-            "aka": "announce.01",
-            "qnode": "Q567303",
+            "qnode": "wd:Q567303",
             "participants": [
                 {
                     "@id": "resin:Participants/20029/kairos:Primitives_Events_announcement:1:announcer",
@@ -619,24 +625,24 @@
                     "entity": "resin:Entities/00011/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "printed, spoken, or published statement or notice of intent of mass shooting",
             "qlabel": "announcement",
             "privateData": {
                 "@type": "resin:Events/10016/Steps_kairos:Primitives_Events_announcement:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "announce.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_motion:1",
             "name": "motion",
-            "comment": "",
-            "aka": "move.01",
-            "qnode": "Q79782",
+            "qnode": "wd:Q79782",
             "participants": [
                 {
                     "@id": "resin:Participants/20034/kairos:Primitives_Events_motion:1:mover",
@@ -649,24 +655,24 @@
                     "entity": "resin:Entities/00003/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "change in position of an object over time; a body is said to be inmotion if it changes its position with respect to its immediatesurroundings",
             "qlabel": "motion",
             "privateData": {
                 "@type": "resin:Events/10017/Steps_kairos:Primitives_Events_motion:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "move.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10019/Steps_kairos:Primitives_Events_gun_violence:1",
             "name": "gun_violence",
-            "comment": "",
-            "aka": "commit.02",
-            "qnode": "Q5618454",
+            "qnode": "wd:Q5618454",
             "participants": [
                 {
                     "@id": "resin:Participants/20043/kairos:Primitives_Events_gun_violence:1:criminal",
@@ -679,24 +685,24 @@
                     "entity": "resin:Entities/00013/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "broadly defined as violence committed with the use of a gun",
             "qlabel": "gun_violence",
             "privateData": {
                 "@type": "resin:Events/10019/Steps_kairos:Primitives_Events_gun_violence:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "commit.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10020/Steps_kairos:Primitives_Events_violent_death:1",
             "name": "violent_death",
-            "comment": "",
-            "qnode": "Q74948922",
-            "aka": "kill.01",
+            "qnode": "wd:Q74948922",
             "participants": [
                 {
                     "@id": "resin:Participants/20046/kairos:Primitives_Events_violent_death:1:killer",
@@ -709,24 +715,24 @@
                     "entity": "resin:Entities/00012/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "death caused by violence through the shooting",
             "qlabel": "violent_death",
             "privateData": {
                 "@type": "resin:Events/10020/Steps_kairos:Primitives_Events_violent_death:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "kill.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_killing:1",
             "name": "killing",
-            "comment": "",
-            "qnode": "Q844482",
-            "aka": "kill.01",
+            "qnode": "wd:Q844482",
             "participants": [
                 {
                     "@id": "resin:Participants/20050/kairos:Primitives_Events_killing:1:killer",
@@ -749,24 +755,24 @@
                     "entity": "resin:Entities/00003/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "act of killing a living being",
             "qlabel": "killing",
             "privateData": {
                 "@type": "resin:Events/10021/Steps_kairos:Primitives_Events_killing:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "kill.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_injury:1",
             "name": "injury",
-            "qnode": "Q193078",
-            "comment": "",
-            "aka": "wound.01",
+            "qnode": "wd:Q193078",
             "participants": [
                 {
                     "@id": "resin:Participants/20054/kairos:Primitives_Events_injury:1:injured_party",
@@ -784,24 +790,24 @@
                     "entity": "resin:Entities/00006/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "physiological wound caused by shooter",
             "qlabel": "injury",
             "privateData": {
                 "@type": "resin:Events/10022/Steps_kairos:Primitives_Events_injury:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "wound.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10023/Steps_kairos:Primitives_Events_survival:1",
             "name": "survival",
-            "qnode": "Q104482419",
-            "comment": "",
-            "aka": "survive.01",
+            "qnode": "wd:Q104482419",
             "participants": [
                 {
                     "@id": "resin:Participants/20058/kairos:Primitives_Events_survival:1:survivor",
@@ -814,24 +820,24 @@
                     "entity": "resin:Entities/00013/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "act of being still alive after a threatening or dangerous situation",
             "qlabel": "survival",
             "privateData": {
                 "@type": "resin:Events/10023/Steps_kairos:Primitives_Events_survival:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "survive.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10024/Steps_kairos:Primitives_Events_emergency_call:1",
             "name": "emergency_call",
-            "qnode": "Q106691145",
-            "comment": "",
-            "aka": "call.02",
+            "qnode": "wd:Q106691145",
             "participants": [
                 {
                     "@id": "resin:Participants/20060/kairos:Primitives_Events_emergency_call:1:caller",
@@ -849,24 +855,24 @@
                     "entity": "resin:Entities/00012/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "way of contacting an emergency call center usually by a phone to an emergency telephone number",
             "qlabel": "emergency_call",
             "privateData": {
                 "@type": "resin:Events/10024/Steps_kairos:Primitives_Events_emergency_call:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "call.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10025/Steps_kairos:Primitives_Events_driving:1",
             "name": "driving",
-            "qnode": "Q999646",
-            "comment": "",
-            "aka": "drive.01",
+            "qnode": "wd:Q999646",
             "participants": [
                 {
                     "@id": "resin:Participants/20061/kairos:Primitives_Events_driving:1:driver",
@@ -879,24 +885,24 @@
                     "entity": "resin:Entities/00010/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "operation of a vehicle to the crime scene",
             "qlabel": "driving",
             "privateData": {
                 "@type": "resin:Events/10025/Steps_kairos:Primitives_Events_driving:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "drive.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10027/Steps_kairos:Primitives_Events_first_aid:1",
             "name": "first_aid",
-            "qnode": "Q133981",
-            "comment": "",
-            "aka": "treat.03",
+            "qnode": "wd:Q133981",
             "participants": [
                 {
                     "@id": "resin:Participants/20068/kairos:Primitives_Events_first_aid:1:doctor",
@@ -909,24 +915,24 @@
                     "entity": "resin:Entities/00012/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
             "description": "",
-            "goal": "",
             "ta1explanation": "first and immediate assistance given to any person suffering from shooting injury",
             "qlabel": "first_aid",
             "privateData": {
                 "@type": "resin:Events/10027/Steps_kairos:Primitives_Events_first_aid:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "treat.03",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10028/Steps_kairos:Primitives_Events_rescue:1",
             "name": "rescue",
-            "comment": "",
-            "qnode": "Q1341429",
-            "aka": "rescue.01",
+            "qnode": "wd:Q1341429",
             "participants": [
                 {
                     "@id": "resin:Participants/20073/kairos:Primitives_Events_rescue:1:rescuer",
@@ -944,24 +950,24 @@
                     "entity": "resin:Entities/00001/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
             "qlabel": "rescue",
             "privateData": {
                 "@type": "resin:Events/10028/Steps_kairos:Primitives_Events_rescue:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "rescue.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_accusation:1",
             "name": "accusation",
-            "comment": "",
-            "qnode": "Q19357312",
-            "aka": "accuse.01",
+            "qnode": "wd:Q19357312",
             "participants": [
                 {
                     "@id": "resin:Participants/20077/kairos:Primitives_Events_accusation:1:accuser",
@@ -979,34 +985,30 @@
                     "entity": "resin:Entities/00013/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "act of accusing or charging another with a crime",
             "qlabel": "accusation",
             "privateData": {
                 "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_accusation:1",
                 "template": "",
                 "repeatable": false
-            }
+            },
+            "comment": "",
+            "aka": "accuse.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_arrest:1",
             "name": "arrest",
-            "comment": "",
-            "aka": "arrest.01",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "detention of a person and taking it into custody, usually because it has been suspected of committing a crime",
             "privateData": {
                 "@type": "resin:Events/10030/Steps_kairos:Primitives_Events_arrest:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q1403016",
+            "qnode": "wd:Q1403016",
             "qlabel": "arrest",
             "participants": [
                 {
@@ -1024,24 +1026,24 @@
                     "roleName": "A2_cau__crime",
                     "entity": "resin:Entities/00013/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "arrest.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10031/Steps_kairos:Primitives_Events_detention:1",
             "name": "detention",
-            "comment": "",
-            "aka": "detain.01",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "removal of the freedom of liberty by a state",
             "privateData": {
                 "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_detention:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q1071447",
+            "qnode": "wd:Q1071447",
             "qlabel": "detention",
             "participants": [
                 {
@@ -1059,24 +1061,24 @@
                     "roleName": "A2_cau_detained_for_what?",
                     "entity": "resin:Entities/00013/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "detain.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10032/Steps_kairos:Primitives_Events_conviction:1",
             "name": "conviction",
-            "comment": "",
-            "aka": "convict.01",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "verdict that results when a court of law finds a defendant guilty of a crime",
             "privateData": {
                 "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_conviction:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q2916183",
+            "qnode": "wd:Q2916183",
             "qlabel": "conviction",
             "participants": [
                 {
@@ -1094,24 +1096,24 @@
                     "roleName": "A2_cau__convicted_of",
                     "entity": "resin:Entities/00013/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "convict.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10033/Steps_kairos:Primitives_Events_plea:1",
             "name": "plea",
-            "comment": "",
-            "aka": "plead.02",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
             "privateData": {
                 "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_plea:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q15916459",
+            "qnode": "wd:Q15916459",
             "qlabel": "plea",
             "participants": [
                 {
@@ -1124,24 +1126,24 @@
                     "roleName": "A2_gol_alleged_crime",
                     "entity": "resin:Entities/00013/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "plead.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10034/Steps_kairos:Primitives_Events_trial:1",
             "name": "trial",
-            "comment": "",
-            "aka": "try.02",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "coming together of parties to a dispute, to present information in a tribunal",
             "privateData": {
                 "@type": "resin:Events/10034/Steps_kairos:Primitives_Events_trial:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q8016240",
+            "qnode": "wd:Q8016240",
             "qlabel": "trial",
             "participants": [
                 {
@@ -1154,24 +1156,24 @@
                     "roleName": "A3_cau_tried_for",
                     "entity": "resin:Entities/00013/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "try.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10035/Steps_kairos:Primitives_Events_legal_hearing:1",
             "name": "legal_hearing",
-            "comment": "",
-            "aka": "hearing.02",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "A legal hearing",
             "privateData": {
                 "@type": "resin:Events/10035/Steps_kairos:Primitives_Events_legal_hearing:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q545861",
+            "qnode": "wd:Q545861",
             "qlabel": "legal_hearing",
             "participants": [
                 {
@@ -1184,24 +1186,24 @@
                     "roleName": "A1_ppt__person_on_trial",
                     "entity": "resin:Entities/00001/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "hearing.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10036/Steps_kairos:Primitives_Events_court_decision:1",
             "name": "court_decision",
-            "comment": "",
-            "aka": "judge.01",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "formal decision made by a court",
             "privateData": {
                 "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_court_decision:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q327000",
+            "qnode": "wd:Q327000",
             "qlabel": "court_decision ",
             "participants": [
                 {
@@ -1219,24 +1221,24 @@
                     "roleName": "A3_cau__on_what_grounds",
                     "entity": "resin:Entities/00013/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "judge.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10037/Steps_kairos:Primitives_Events_sentence:1",
             "name": "sentence",
-            "comment": "",
-            "aka": "sentence.01",
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "decree of punishment in law",
             "privateData": {
                 "@type": "resin:Events/10037/Steps_kairos:Primitives_Events_sentence:1",
                 "template": "",
                 "repeatable": false
             },
-            "qnode": "Q1763090",
+            "qnode": "wd:Q1763090",
             "qlabel": "sentence",
             "participants": [
                 {
@@ -1259,13 +1261,18 @@
                     "roleName": "A2_ppt__punishment",
                     "entity": "resin:Entities/00014/"
                 }
-            ]
+            ],
+            "comment": "",
+            "aka": "sentence.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": ""
         },
         {
             "@id": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
             "name": "acquittal",
-            "comment": "",
-            "qnode": "Q1454723",
+            "qnode": "wd:Q1454723",
             "participants": [
                 {
                     "@id": "resin:Participants/20116/kairos:Primitives_Events_acquittal:1:remover_of_guilt",
@@ -1283,10 +1290,6 @@
                     "entity": "resin:Entities/00013/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "the legal result of a verdict of not guilty",
             "qlabel": "acquittal",
             "privateData": {
@@ -1294,13 +1297,17 @@
                 "template": "",
                 "repeatable": false
             },
+            "comment": "",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": "",
             "aka": "acquit.01"
         },
         {
             "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_imprisonment:1",
             "name": "imprisonment",
-            "comment": "",
-            "qnode": "Q841236",
+            "qnode": "wd:Q841236",
             "participants": [
                 {
                     "@id": "resin:Participants/20120/kairos:Primitives_Events_imprisonment:1:police",
@@ -1318,10 +1325,6 @@
                     "entity": "resin:Entities/00013/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "restraint of a person's liberty by judicial or other detention",
             "qlabel": "imprisonment",
             "privateData": {
@@ -1329,13 +1332,17 @@
                 "template": "",
                 "repeatable": false
             },
+            "comment": "",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": "",
             "aka": "detain.01"
         },
         {
             "@id": "resin:Events/10040/Steps_kairos:Primitives_Events_execution:1",
             "name": "execution",
-            "comment": "",
-            "qnode": "Q3966286",
+            "qnode": "wd:Q3966286",
             "participants": [
                 {
                     "@id": "resin:Participants/20125/kairos:Primitives_Events_execution:1:corpse",
@@ -1343,10 +1350,6 @@
                     "entity": "resin:Entities/00001/"
                 }
             ],
-            "minDuration": "P1D",
-            "maxDuration": "P10Y",
-            "description": "",
-            "goal": "",
             "ta1explanation": "homicide as capital punishment",
             "qlabel": "execution",
             "privateData": {
@@ -1354,6 +1357,11 @@
                 "template": "",
                 "repeatable": false
             },
+            "comment": "",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "",
+            "goal": "",
             "aka": "execute.01"
         },
         {
@@ -1425,88 +1433,110 @@
         {
             "@id": "resin:Entities/00001/",
             "name": "shooter",
-            "qnode": "Q109648129",
+            "qnode": "wd:Q109648129",
             "qlabel": "shooter",
             "centrality": 1
         },
         {
             "@id": "resin:Entities/00002/",
             "name": "target group",
-            "qnode": "Q16334295",
+            "qnode": "wd:Q16334295",
             "qlabel": "group of humans"
         },
         {
             "@id": "resin:Entities/00003/",
             "name": "crime scene",
-            "qnode": "Q1360677",
+            "qnode": "wd:Q1360677",
             "qlabel": "crime scene"
         },
         {
             "@id": "resin:Entities/00004/",
             "name": "person",
-            "qnode": "Q5",
+            "qnode": "wd:Q5",
             "qlabel": "human"
         },
         {
             "@id": "resin:Entities/00005/",
             "name": "motive",
-            "qnode": "Q4583280",
+            "qnode": "wd:Q4583280",
             "qlabel": "motive"
         },
         {
             "@id": "resin:Entities/00006/",
             "name": "weapon",
-            "qnode": "Q728",
+            "qnode": "wd:Q728",
             "qlabel": "weapon"
         },
         {
             "@id": "resin:Entities/00007/",
             "name": "emergency service",
-            "qnode": "Q814610",
+            "qnode": "wd:Q814610",
             "qlabel": "emergency service"
         },
         {
             "@id": "resin:Entities/00008/",
             "name": "court",
-            "qnode": "Q41487",
+            "qnode": "wd:Q41487",
             "qlabel": "court"
         },
         {
             "@id": "resin:Entities/00009/",
             "name": "general population",
-            "qnode": "Q16334295",
+            "qnode": "wd:Q16334295",
             "qlabel": "group of humans"
         },
         {
             "@id": "resin:Entities/00010/",
             "name": "emergency vehicle",
-            "qnode": "Q1308737",
+            "qnode": "wd:Q1308737",
             "qlabel": "emergency vehicle"
         },
         {
             "@id": "resin:Entities/00011/",
             "name": "media",
-            "qnode": "Q340169",
+            "qnode": "wd:Q340169",
             "qlabel": "media"
         },
         {
             "@id": "resin:Entities/00012/",
             "name": "victim",
-            "qnode": "Q1851760",
+            "qnode": "wd:Q1851760",
             "qlabel": "victim"
         },
         {
             "@id": "resin:Entities/00013/",
             "name": "crime",
-            "qnode": "Q83267",
+            "qnode": "wd:Q83267",
             "qlabel": "crime"
         },
         {
             "@id": "resin:Entities/00014/",
             "name": "imprisonment",
-            "qnode": "Q841236",
+            "qnode": "wd:Q841236",
             "qlabel": "imprisonment"
         }
     ],
-    "relations": []
+    "relations": [
+        {
+            "name": "has part",
+            "relationSubject": "resin:Entities/00010/",
+            "relationPredicate": "wd:P527",
+            "relationObject": "resin:Entities/00007/",
+            "@id": "resin:Relations/30000/"
+        },
+        {
+            "name": "has part",
+            "relationSubject": "resin:Entities/00011/",
+            "relationPredicate": "wd:P527",
+            "relationObject": "resin:Entities/00009/",
+            "@id": "resin:Relations/30001/"
+        },
+        {
+            "name": "partially coincident with",
+            "relationSubject": "resin:Entities/00014/",
+            "relationPredicate": "wd:P1382",
+            "relationObject": "resin:Entities/00008/",
+            "@id": "resin:Relations/30002/"
+        }
+    ]
 }
