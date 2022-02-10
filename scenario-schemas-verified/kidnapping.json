@@ -27,23 +27,7 @@
         "repeatable": false,
         "importance": 1
       },
-      "participants": [
-        {
-          "@id": "resin:Participants/20092/kairos:Primitives_Events_Kidnapping:1:kidnapper",
-          "roleName": "A0_pag_kidnapper",
-          "entity": "resin:Entities/00093/"
-        },
-        {
-          "@id": "resin:Participants/20093/kairos:Primitives_Events_Kidnapping:1:person_kidnapped",
-          "roleName": "A1_ppt_person_kidnapped",
-          "entity": "resin:Entities/00094/"
-        },
-        {
-          "@id": "resin:Participants/20094/kairos:Primitives_Events_Kidnapping:1:location",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00095/"
-        }
-      ],
+      "participants": [],
       "children": [
         {
           "child": "resin:Events/10001/Steps_kairos:Container:1",
@@ -924,11 +908,6 @@
           "@id": "resin:Participants/20046/kairos:Primitives_Events_Getting_vehicle:1:buyer",
           "roleName": "A0_pag_buyer",
           "entity": "resin:Entities/00093/"
-        },
-        {
-          "@id": "resin:Participants/20047/kairos:Primitives_Events_Getting_vehicle:1:thing_bought",
-          "roleName": "A1_ppt_thing_bought",
-          "entity": "resin:Entities/00048/"
         }
       ],
       "minDuration": "P1D",
@@ -1214,7 +1193,23 @@
       "qnode": "wd:Q318296",
       "qlabel": "kidnapping",
       "aka": "kidnap.01",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20092/kairos:Primitives_Events_Kidnapping:1:kidnapper",
+          "roleName": "A0_pag_kidnapper",
+          "entity": "resin:Entities/00093/"
+        },
+        {
+          "@id": "resin:Participants/20093/kairos:Primitives_Events_Kidnapping:1:person_kidnapped",
+          "roleName": "A1_ppt_person_kidnapped",
+          "entity": "resin:Entities/00094/"
+        },
+        {
+          "@id": "resin:Participants/20094/kairos:Primitives_Events_Kidnapping:1:location",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00095/"
+        }
+      ],
       "minDuration": "P1D",
       "maxDuration": "P10Y",
       "description": "taking away or transportation of a person against that person's will",
@@ -1338,11 +1333,6 @@
           "@id": "resin:Participants/20108/kairos:Primitives_Events_Request:1:agent_asker",
           "roleName": "A0_pag_agent_asker",
           "entity": "resin:Entities/00093/"
-        },
-        {
-          "@id": "resin:Participants/20109/kairos:Primitives_Events_Request:1:recipient_hearer",
-          "roleName": "A2_gol_recipient_hearer",
-          "entity": "resin:Entities/00110/"
         }
       ],
       "minDuration": "P1D",
@@ -1395,34 +1385,14 @@
       "aka": "ransom.01",
       "participants": [
         {
-          "@id": "resin:Participants/20116/kairos:Primitives_Events_Ransom:1:entity_paying_for_the_release_of_the_captive",
-          "roleName": "A0_pag_entity_paying_for_the_release_of_the_captive",
-          "entity": "resin:Entities/00117/"
-        },
-        {
           "@id": "resin:Participants/20117/kairos:Primitives_Events_Ransom:1:the_captive",
           "roleName": "A1_ppt_the_captive",
           "entity": "resin:Entities/00094/"
         },
         {
-          "@id": "resin:Participants/20118/kairos:Primitives_Events_Ransom:1:money_demanded_paid",
-          "roleName": "A2_vsp_money_demanded_paid",
-          "entity": "resin:Entities/00119/"
-        },
-        {
           "@id": "resin:Participants/20119/kairos:Primitives_Events_Ransom:1:kidnapper",
           "roleName": "A3_dir_kidnapper",
           "entity": "resin:Entities/00093/"
-        },
-        {
-          "@id": "resin:Participants/20120/kairos:Primitives_Events_Ransom:1:terrible_fate_arg1_avoids_via_ransom",
-          "roleName": "A4_vsp_terrible_fate_arg1_avoids_via_ransom",
-          "entity": "resin:Entities/00121/"
-        },
-        {
-          "@id": "resin:Participants/20121/kairos:Primitives_Events_Ransom:1:location",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00122/"
         }
       ],
       "minDuration": "P1D",
@@ -1500,19 +1470,24 @@
       "@id": "resin:Events/10038/Steps_kairos:Primitives_Events_Violence_attack_killing:1",
       "name": "Violence_attack_killing",
       "comment": "",
-      "qnode": "wd:Q252000",
-      "qlabel": "oppression",
-      "aka": "oppress.01",
+      "qnode": "wd:Q74948922",
+      "qlabel": "violent_death",
+      "aka": "kill.01",
       "participants": [
         {
-          "@id": "resin:Participants/20129/kairos:Primitives_Events_Violence_attack_killing:1:entity_oppressing",
-          "roleName": "A0_pag_entity_oppressing",
+          "@id": "resin:Participants/20129/kairos:Primitives_Events_Violence_attack_killing:1:killer",
+          "roleName": "A0_pag_agent_killer",
           "entity": "resin:Entities/00093/"
         },
         {
-          "@id": "resin:Participants/20130/kairos:Primitives_Events_Violence_attack_killing:1:entity_oppressed",
-          "roleName": "A1_ppt_entity_oppressed",
+          "@id": "resin:Participants/20130/kairos:Primitives_Events_Violence_attack_killing:1:corpse",
+          "roleName": "A1_ppt_patient_corpse",
           "entity": "resin:Entities/00094/"
+        },
+        {
+          "@id": "resin:Participants/20131/kairos:Primitives_Events_Violence_attack_killing:1:instrument",
+          "roleName": "A2_mnr_instrument_instrument",
+          "entity": "resin:Entities/00054/"
         },
         {
           "@id": "resin:Participants/20131/kairos:Primitives_Events_Violence_attack_killing:1:location",
@@ -1780,14 +1755,9 @@
       "aka": "fund.01",
       "participants": [
         {
-          "@id": "resin:Participants/20168/kairos:Primitives_Events_Getting_ransom:1:financier",
-          "roleName": "A0_pag_financier",
-          "entity": "resin:Entities/00169/"
-        },
-        {
           "@id": "resin:Participants/20170/kairos:Primitives_Events_Getting_ransom:1:funds",
           "roleName": "A2_ppt_funds",
-          "entity": "resin:Entities/00171/"
+          "entity": "resin:Entities/00199/"
         }
       ],
       "minDuration": "P1D",
@@ -2025,11 +1995,6 @@
       "aka": "fund.01",
       "participants": [
         {
-          "@id": "resin:Participants/20196/kairos:Primitives_Events_Getting_ransom:2:financier",
-          "roleName": "A0_pag_financier",
-          "entity": "resin:Entities/00197/"
-        },
-        {
           "@id": "resin:Participants/20198/kairos:Primitives_Events_Getting_ransom:2:funds",
           "roleName": "A2_ppt_funds",
           "entity": "resin:Entities/00199/"
@@ -2224,12 +2189,6 @@
   ],
   "entities": [
     {
-      "@id": "resin:Entities/00048/",
-      "name": "A1_ppt_thing_bought in event Getting_vehicle",
-      "qnode": "wd:Q42889",
-      "qlabel": "vehicle"
-    },
-    {
       "@id": "resin:Entities/00054/",
       "name": "A1_ppt_thing_bought in event Getting_weapons",
       "qnode": "wd:Q728",
@@ -2272,58 +2231,10 @@
       "qlabel": "crime scene"
     },
     {
-      "@id": "resin:Entities/00110/",
-      "name": "A2_gol_recipient_hearer in event Request",
-      "qnode": "wd:Q18029574",
-      "qlabel": "colleague"
-    },
-    {
-      "@id": "resin:Entities/00117/",
-      "name": "A0_pag_entity_paying_for_the_release_of_the_captive in event Ransom",
-      "qnode": "wd:Q106905641",
-      "qlabel": "funder"
-    },
-    {
-      "@id": "resin:Entities/00119/",
-      "name": "A2_vsp_money_demanded_paid in event Ransom",
-      "qnode": "wd:Q6055890",
-      "qlabel": "funding"
-    },
-    {
-      "@id": "resin:Entities/00121/",
-      "name": "A4_vsp_terrible_fate_arg1_avoids_via_ransom in event Ransom",
-      "qnode": "wd:Q926230",
-      "qlabel": "effect"
-    },
-    {
-      "@id": "resin:Entities/00122/",
-      "name": "AM_loc in event Ransom",
-      "qnode": "wd:Q2221906",
-      "qlabel": "geographic location"
-    },
-    {
       "@id": "resin:Entities/00124/",
       "name": "A1_ppt_to_whom_what in event GiveUp",
       "qnode": "wd:Q35535",
       "qlabel": "police"
-    },
-    {
-      "@id": "resin:Entities/00169/",
-      "name": "A0_pag_financier in event Getting_ransom",
-      "qnode": "wd:Q106905641",
-      "qlabel": "funder"
-    },
-    {
-      "@id": "resin:Entities/00171/",
-      "name": "A2_ppt_funds in event Getting_ransom",
-      "qnode": "wd:Q6055890",
-      "qlabel": "funding"
-    },
-    {
-      "@id": "resin:Entities/00197/",
-      "name": "A0_pag_financier in event Getting_ransom",
-      "qnode": "wd:Q106905641",
-      "qlabel": "funder"
     },
     {
       "@id": "resin:Entities/00199/",
