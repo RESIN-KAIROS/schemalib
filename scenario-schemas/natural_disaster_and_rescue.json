@@ -74,6 +74,15 @@
           ]
         },
         {
+          "child": "resin:Events/10657/Steps_kairos:Primitives_Events_Earthquake",
+          "comment": "earthquake",
+          "optional": false,
+          "importance": 1,
+          "outlinks": [
+            "resin:Events/10639/Steps_kairos:Primitives_Events_Trap"
+          ]
+        },
+        {
           "child": "resin:Events/10642/Steps_kairos:Primitives_Events_Tsunami",
           "comment": "tsunami",
           "optional": false,
@@ -207,6 +216,13 @@
             "resin:Events/10654/Steps_kairos:Container:3"
           ]
         },
+        {
+          "child": "resin:Events/10654/Steps_kairos:Container:3",
+          "comment": "treatment outlinks",
+          "optional": false,
+          "importance": 1,
+          "outlinks": []
+        },        
         {
           "child": "resin:Events/10655/Steps_kairos:Primitives_Events_Recover",
           "comment": "recover",
@@ -878,8 +894,8 @@
     },
     {
       "@id": "resin:Entities/00936",
-      "qnode": "victim",
-      "qlabel": "Q1851760",
+      "qnode": "wd:Q1851760",
+      "qlabel": "victim",
       "centrality": 1,
       "name": "victim"
     },
@@ -892,7 +908,7 @@
     },
     {
       "@id": "resin:Entities/00938",
-      "qnode": "DWD7188",
+      "qnode": "wd:Q7188",
       "qlabel": "government",
       "centrality": 1,
       "name": "government / authorities"
