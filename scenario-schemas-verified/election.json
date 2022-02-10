@@ -234,37 +234,6 @@
       }
     },
     {
-      "@id": "resin:Events/21006/Steps_kairos:Container:6",
-      "name": "candidate continues",
-      "participants": [],
-      "comment": "container node",
-      "description": "",
-      "children_gate": "xor",
-      "children": [
-        {
-          "child": "resin:Events/20006",
-          "comment": "continue campaign",
-          "optional": false,
-          "outlinks": [
-            "resin:Events/20003"
-          ]
-        },
-        {
-          "child": "resin:Events/20007",
-          "comment": "drop out",
-          "optional": false,
-          "outlinks": [
-            "resin:Events/20008"
-          ]
-        }
-      ],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
       "@id": "resin:Events/21007/Steps_kairos:Container:7",
       "name": "vote",
       "participants": [],
@@ -428,30 +397,6 @@
       ],
       "privateData": {
         "repeatable": true
-      }
-    },
-    {
-      "@id": "resin:Events/20006",
-      "name": "continue campaign",
-      "description": "attempt to influence the decision making process within a specific group",
-      "comment": "Not in xpo",
-      "ta1explanation": "a candidate, after seeing the results of a contest, will decide whether to stay in the race or concede",
-      "qnode": "wd:Q847301",
-      "qlabel": "political campaign",
-      "participants": [
-        {
-          "@id": "resin:Participants/10007/Candidate",
-          "roleName": "candidate",
-          "entity": "resin:Entities/00001/Candidate"
-        },
-        {
-          "@id": "resin:Participants/10008/Election",
-          "roleName": "election",
-          "entity": "resin:Entities/00007/Election"
-        }
-      ],
-      "privateData": {
-        "repeatable": false
       }
     },
     {
@@ -678,7 +623,18 @@
       "ta1explanation": "method for a group such as a meeting or an electorate to make a decision or express an opinion",
       "qnode": "wd:Q189760",
       "qlabel": "voting",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10100/Election",
+          "roleName": "election",
+          "entity": "resin:Entities/00007/Election"
+        },
+        {
+          "@id": "resin:Participants/10101/Citizen",
+          "roleName": "citizen",
+          "entity": "resin:Entities/00010/Citizen"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -690,7 +646,18 @@
       "ta1explanation": "some citizens will cast their votes by mailing their ballots",
       "qnode": "wd:Q15044040",
       "qlabel": "postal voting",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10102/Election",
+          "roleName": "election",
+          "entity": "resin:Entities/00007/Election"
+        },
+        {
+          "@id": "resin:Participants/10103/Citizen",
+          "roleName": "citizen",
+          "entity": "resin:Entities/00010/Citizen"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -702,7 +669,18 @@
       "ta1explanation": "some citizens will cast their votes early",
       "qnode": "wd:Q708369",
       "qlabel": "early voting",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10104/Election",
+          "roleName": "election",
+          "entity": "resin:Entities/00007/Election"
+        },
+        {
+          "@id": "resin:Participants/10105/Citizen",
+          "roleName": "citizen",
+          "entity": "resin:Entities/00010/Citizen"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -716,6 +694,11 @@
       "qnode": "wd:Q2672742",
       "qlabel": "vote counting",
       "participants": [
+        {
+          "@id": "resin:Participants/10106/Election",
+          "roleName": "election",
+          "entity": "resin:Entities/00007/Election"
+        },
         {
           "@id": "resin:Participants/10029/VotingResult",
           "roleName": "result",
@@ -743,6 +726,11 @@
           "@id": "resin:Participants/10031/Election",
           "roleName": "election",
           "entity": "resin:Entities/00007/Election"
+        },
+        {
+          "@id": "resin:Participants/10107/VotingResult",
+          "roleName": "result",
+          "entity": "resin:Entities/00006/VotingResult"
         }
       ],
       "privateData": {
@@ -767,6 +755,11 @@
           "@id": "resin:Participants/10033/VicePresident",
           "roleName": "vice-president",
           "entity": "resin:Entities/00005/RunningMate"
+        },
+        {
+          "@id": "resin:Participants/10108/Country",
+          "roleName": "country",
+          "entity": "resin:Entities/00009/Country"
         }
       ],
       "privateData": {
@@ -877,7 +870,13 @@
       "ta1explanation": "act of declining to accept an item for approval, consideration, marking etc.",
       "qnode": "wd:Q98398200",
       "qlabel": "rejection",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10109/Candidate",
+          "roleName": "candidate",
+          "entity": "resin:Entities/00001/Candidate"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -890,7 +889,13 @@
       "ta1explanation": "an incitement to commit an act of violence",
       "qnode": "wd:Q104951136",
       "qlabel": "call to violence",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10110/Candidate",
+          "roleName": "candidate",
+          "entity": "resin:Entities/00001/Candidate"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -903,7 +908,18 @@
       "ta1explanation": "civil action brought in a court of law",
       "qnode": "wd:Q697327",
       "qlabel": "lawsuit",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10111/Candidate",
+          "roleName": "candidate",
+          "entity": "resin:Entities/00001/Candidate"
+        }, 
+        {
+          "@id": "resin:Participants/10112/VotingResult",
+          "roleName": "voting result",
+          "entity": "resin:Entities/00006/VotingResult"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -915,7 +931,13 @@
       "ta1explanation": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
       "qnode": "wd:Q45382",
       "qlabel": "coup_d'\u00e9tat",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/10113/Country",
+          "roleName": "country",
+          "entity": "resin:Entities/00009/Country"
+        }
+      ],
       "privateData": {
         "repeatable": false
       }
@@ -957,6 +979,18 @@
       "name": "political party",
       "qnode": "wd:Q7278",
       "qlabel": "political party"
+    }, 
+    {
+      "@id": "resin:Entities/00009/Country",
+      "name": "country",
+      "qnode": "wd:Q6256",
+      "qlabel": "country"
+    }, 
+    {
+      "@id": "resin:Entities/00010/Citizen",
+      "name": "citizen",
+      "qnode": "wd:Q1020994",
+      "qlabel": "citizen"
     }
   ],
   "relations": [
@@ -980,6 +1014,27 @@
       "relationPredicate": "wd:P8001",
       "relationObject": "resin:Entities/00001/Candidate",
       "@id": "resin:Relations/30003/EndorsedBy"
+    },
+    {
+      "name": "member of",
+      "relationSubject": "resin:Entities/00001/Candidate",
+      "relationPredicate": "wd:P463",
+      "relationObject": "resin:Entities/00008/PoliticalParty",
+      "@id": "resin:Relations/30004/MemberOf"
+    },
+    {
+      "name": "member of",
+      "relationSubject": "resin:Entities/00005/RunningMate",
+      "relationPredicate": "wd:P463",
+      "relationObject": "resin:Entities/00008/PoliticalParty",
+      "@id": "resin:Relations/30005/MemberOf"
+    },
+    {
+      "name": "participant",
+      "relationSubject": "resin:Entities/00001/Candidate",
+      "relationPredicate": "wd:P710",
+      "relationObject": "resin:Entities/00002/Debate",
+      "@id": "resin:Relations/30006/ParticipantOf"
     }
   ]
 }
