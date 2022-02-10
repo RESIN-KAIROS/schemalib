@@ -152,14 +152,25 @@
 					"comment": ""
                 },
                 {
-                    "child": "resin:Events/10064/Steps_kairos:Primitives_Events_Investigation",
+                    "child": "kairos:Events/00050/JobCuts",
                     "outlinks": [
-						"resin:Events/10065/Steps_kairos:Primitives_Events_Justice"
                     ],
 					"comment": ""
                 },
                 {
-                    "child": "kairos:Events/00050/JobCuts",
+                    "child": "kairos:Events/00056/GovernmentActions",
+                    "outlinks": [
+                    ],
+					"comment": ""
+                },
+                {
+                    "child": "kairos:Events/00014/Response",
+                    "outlinks": [
+                    ],
+					"comment": "This is only a child because can only be one root node."
+                },
+                {
+                    "child": "kairos:Events/00018/BankruptcyActions",
                     "outlinks": [
                     ],
 					"comment": ""
@@ -170,7 +181,7 @@
             "@id": "kairos:Events/00001/Bankruptcy",
             "name": "bankruptcy",
             "ta1explanation": "event when a company declares bankruptcy.",
-            "qnode": "wiki:Q152074",
+            "qnode": "wd:Q152074",
             "qlabel": "bankruptcy",
             "participants": [
                 {
@@ -186,7 +197,7 @@
             "@id": "kairos:Events/00002/Acquisition",
             "name": "acquisition",
             "ta1explanation": "A company is acquired by another company.",
-            "qnode": "wiki:Q3604747",
+            "qnode": "wd:Q3604747",
             "qlabel": "acquisition",
             "participants": [
                 {
@@ -217,18 +228,18 @@
             "@id": "kairos:Events/00003/Merger",
             "name": "merger",
             "ta1explanation": "Two companies combine to make a bigger company.",
-            "qnode": "wiki:Q1363768",
+            "qnode": "wd:Q1363768",
             "qlabel": "amalgamation",
             "participants": [
                 {
                     "@id": "kairos:Participants/00006/Company1",
                     "roleName": "company1",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00014/Company1"
                 },
                 {
                     "@id": "kairos:Participants/00007/Company2",
                     "roleName": "company2",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00015/Company2"
                 }
             ],
             "description": false,
@@ -238,7 +249,7 @@
             "@id": "kairos:Events/00004/Divestment",
             "name": "divestment",
             "ta1explanation": "Company divests asset.",
-            "qnode": "wiki:Q1200733",
+            "qnode": "wd:Q1200733",
             "qlabel": "divestment",
             "participants": [
                 {
@@ -259,9 +270,14 @@
             "@id": "kairos:Events/00005/PersonnelChange",
             "name": "PersonnelChange",
             "ta1explanation": "",
-            "qnode": "wiki:Q105764136",
+            "qnode": "wd:Q105764136",
             "qlabel": "personnel",
             "participants": [
+                {
+                    "@id": "kairos:Participants/00084/Personnel",
+                    "roleName": "company",
+                    "entity": "kairos:Entities/00003/Personnel"
+                }
             ],
 			"children": [
 				{
@@ -278,7 +294,7 @@
             "@id": "kairos:Events/00006/Shutdown",
             "name": "Shutdown",
             "ta1explanation": "Company has to close for some reason.",
-            "qnode": "wiki:Q4128962",
+            "qnode": "wd:Q4128962",
             "qlabel": "Shutdown",
             "participants": [
                 {
@@ -294,7 +310,7 @@
             "@id": "kairos:Events/00007/Reorganization",
             "name": "Reorganization",
             "ta1explanation": "Company is reorganized. Often because of bankruptcy.",
-            "qnode": "wiki:Q2503234",
+            "qnode": "wd:Q2503234",
             "qlabel": "reorganization",
             "participants": [
                 {
@@ -310,7 +326,7 @@
             "@id": "kairos:Events/00008/Founding",
             "name": "founding",
             "ta1explanation": "Someone starts a company.",
-            "qnode": "wiki:Q3075355",
+            "qnode": "wd:Q3075355",
             "qlabel": "founding",
             "participants": [
                 {
@@ -331,7 +347,7 @@
             "@id": "kairos:Events/00009/Investigation",
             "name": "inquiry",
             "ta1explanation": "An invesigation, usually by the government. Maybe it could also be an audit.",
-            "qnode": "wiki:Q21004260",
+            "qnode": "wd:Q21004260",
             "qlabel": "inquiry",
 			"children": [
 			],
@@ -383,7 +399,14 @@
 				  "outlinks": [
 					"kairos:Events/00046/Container:AntiTrustXOR"
 				  ]
-				}
+				},
+                {
+                    "child": "resin:Events/10064/Steps_kairos:Primitives_Events_Investigation",
+                    "outlinks": [
+						"resin:Events/10065/Steps_kairos:Primitives_Events_Justice"
+                    ],
+					"comment": ""
+                }
 			],
             "description": false,
             "children_gate": "or"
@@ -392,7 +415,7 @@
             "@id": "kairos:Events/00010/Scandal",
             "name": "Scandal",
             "ta1explanation": "",
-            "qnode": "wiki:Q192909",
+            "qnode": "wd:Q192909",
             "qlabel": "scandal",
             "participants": [
                 {
@@ -429,7 +452,7 @@
 				"repeatable": true
 			  },
             "ta1explanation": "Corporate to distinguish from the person version.",
-            "qnode": "wiki:Q5167661",
+            "qnode": "wd:Q5167661",
             "qlabel": "justice",
             "participants": [
             ],
@@ -466,7 +489,7 @@
             "@id": "kairos:Events/00012/PoliticalCorruption",
             "name": "PoliticalCorruption",
             "ta1explanation": "The execs send money to their politician friends who pull some strings.",
-            "qnode": "wiki:Q10858400",
+            "qnode": "wd:Q10858400",
             "qlabel": "political corruption",
             "participants": [
             ],
@@ -477,7 +500,7 @@
             "@id": "kairos:Events/00013/Corruption",
             "name": "Corruption",
             "ta1explanation": "Some form of corruption occurs.",
-            "qnode": "wiki:Q366",
+            "qnode": "wd:Q366",
             "qlabel": "corruption",
             "participants": [
             ],
@@ -488,7 +511,7 @@
             "@id": "kairos:Events/00014/Response",
             "name": "Response",
             "ta1explanation": "This is the response to the invesigation, usually by the government. ",
-            "qnode": "wiki:Q1920566",
+            "qnode": "wd:Q1920566",
             "qlabel": "answer",
             "participants": [
                 {
@@ -508,12 +531,6 @@
                 }
             ],
             "children": [
-                {
-                    "child": "kairos:Events/00011/CorporateJustice",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                },
                 {
                     "child": "kairos:Events/00037/RegulatoryResponse",
                     "outlinks": [
@@ -549,7 +566,7 @@
             "@id": "kairos:Events/00015/Fundraising",
             "name": "Fundraising",
             "ta1explanation": "",
-            "qnode": "wiki:Q1161355",
+            "qnode": "wd:Q1161355",
             "qlabel": "fundraising",
             "participants": [
                 {
@@ -589,9 +606,19 @@
             "@id": "kairos:Events/00016/IPO",
             "name": "IPO",
             "ta1explanation": "The company undergoes an initial public offering (IPO) and lists itself on the stock market.",
-            "qnode": "wiki:Q185142",
+            "qnode": "wd:Q185142",
             "qlabel": "initial public offering",
             "participants": [
+                {
+                    "@id": "kairos:Participants/00088/Company",
+                    "roleName": "company",
+                    "entity": "kairos:Entities/00004/Company"
+                },
+                {
+                    "@id": "kairos:Participants/00089/FundingAmountRaised",
+                    "roleName": "Funding Amount Raised",
+                    "entity": "kairos:Entities/00009/Money"
+                }
             ],
             "description": false,
             "children_gate": "or"
@@ -600,9 +627,24 @@
             "@id": "kairos:Events/00017/PrivateFunding",
             "name": "PrivateFunding",
             "ta1explanation": "The company raises money from private investors (the opportunity is not available to the public).",
-            "qnode": "wiki:Q58900637",
+            "qnode": "wd:Q58900637",
             "qlabel": "Private funding for capital projects",
             "participants": [
+                {
+                    "@id": "kairos:Participants/00085/Company",
+                    "roleName": "company",
+                    "entity": "kairos:Entities/00004/Company"
+                },
+                {
+                    "@id": "kairos:Participants/00086/Investor",
+                    "roleName": "investor",
+                    "entity": "kairos:Entities/00007/Investor"
+                },
+                {
+                    "@id": "kairos:Participants/00087/FundingAmountRaised",
+                    "roleName": "Funding Amount Raised",
+                    "entity": "kairos:Entities/00009/Money"
+                }
             ],
             "description": false,
             "children_gate": "or",
@@ -666,7 +708,7 @@
             "@id": "kairos:Events/00019/Sell",
             "name": "exchange_of_goods",
             "ta1explanation": "Company sells assets.",
-            "qnode": "wiki:Q21651837",
+            "qnode": "wd:Q21651837",
             "qlabel": "transfer of equivalent goods to each other",
             "participants": [
                 {
@@ -698,7 +740,7 @@
             "@id": "kairos:Events/00020/Privatize",
             "name": "Privatize",
             "ta1explanation": "Buy stock and go private",
-            "qnode": "wiki:Q1589009",
+            "qnode": "wd:Q1589009",
             "qlabel": "privately held company",
             "participants": [
 				{
@@ -725,7 +767,7 @@
             "@id": "kairos:Events/00021/Assign",
             "name": "assign",
             "ta1explanation": "Government assigns trustee",
-            "qnode": "wiki:Q21014657",
+            "qnode": "wd:Q21014657",
             "qlabel": "assignment",
             "participants": [
 				{
@@ -746,7 +788,7 @@
             "@id": "kairos:Events/00022/BankruptcyCase",
             "name": "trial",
             "ta1explanation": "Trustee manages bankruptcy case.",
-            "qnode": "wiki:Q8016240",
+            "qnode": "wd:Q8016240",
             "qlabel": "trial",
             "participants": [
 				{
@@ -767,18 +809,18 @@
             "@id": "kairos:Events/00023/TransferMoney",
             "name": "Transfer Money",
             "ta1explanation": "Transfer money.",
-            "qnode": "wiki:Q21130860",
+            "qnode": "wd:Q21130860",
             "qlabel": "Money transfer",
             "participants": [
 				{
                     "@id": "kairos:Participants/00035/CompanyFrom",
                     "roleName": "company from",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00014/Company1"
                 },
                 {
                     "@id": "kairos:Participants/00036/CompanyTo",
                     "roleName": "company to",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00015/Company2"
                 }
             ],
             "description": false,
@@ -788,7 +830,7 @@
             "@id": "kairos:Events/00024/ExecutiveBonus",
             "name": "Executive Bonus",
             "ta1explanation": "The executives get a big bonus. It's in the news when it's bigger than they deserve. Sometimes called a golden parachute.",
-            "qnode": "wiki:Q107196812",
+            "qnode": "wd:Q107196812",
             "qlabel": "business bonus",
             "participants": [
 				{
@@ -809,7 +851,7 @@
             "@id": "kairos:Events/00025/ManagementChange",
             "name": "Management Change",
             "ta1explanation": "The management is changed. This often happens in an acquired company after an acquisition.",
-            "qnode": "wiki:Q116348",
+            "qnode": "wd:Q116348",
             "qlabel": "change management",
             "participants": [
                 {
@@ -820,12 +862,12 @@
                 {
                     "@id": "kairos:Participants/00040/NewManagement",
                     "roleName": "new management",
-                    "entity": "kairos:Entities/00003/Personnel"
+                    "entity": "kairos:Entities/00016/Personnel1"
                 },
                 {
                     "@id": "kairos:Participants/00041/OldManagement",
                     "roleName": "old management",
-                    "entity": "kairos:Entities/00003/Personnel"
+                    "entity": "kairos:Entities/00017/Personnel2"
                 }
             ],
             "description": false,
@@ -835,7 +877,7 @@
             "@id": "kairos:Events/00026/GovernmentBailout",
             "name": "Government Bailout",
             "ta1explanation": "The government loans a lot of money to a company when it's 'too big too fail' without damaging the economy.",
-            "qnode": "wiki:Q44312",
+            "qnode": "wd:Q44312",
             "qlabel": "bailout",
             "participants": [
                 {
@@ -856,18 +898,18 @@
             "@id": "kairos:Events/00027/CreatePartnership",
             "name": "Create Partnership",
             "ta1explanation": "Two companies partner together to do something mutually beneficial. They remain seperate entities, however.",
-            "qnode": "wiki:Q3366101",
+            "qnode": "wd:Q3366101",
             "qlabel": "business partner",
             "participants": [
                 {
                     "@id": "kairos:Participants/00044/Company1",
                     "roleName": "company1",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00014/Company1"
                 },
                 {
                     "@id": "kairos:Participants/00045/Company2",
                     "roleName": "company2",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00015/Company2"
                 }
             ],
             "description": false,
@@ -877,19 +919,19 @@
             "@id": "kairos:Events/00028/EndPartnership",
             "name": "End Partnership",
             "ta1explanation": "Two companies decide their partnership isn't worth it anymore.",
-            "qnode": "wiki:Q12769393",
+            "qnode": "wd:Q12769393",
             "qlabel": "end",
 			"comment": "don't think this is specific enough",
             "participants": [
                 {
                     "@id": "kairos:Participants/00046/Company1",
                     "roleName": "company1",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00014/Company1"
                 },
                 {
                     "@id": "kairos:Participants/00047/Company2",
                     "roleName": "company2",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00015/Company2"
                 }
             ],
             "description": false,
@@ -899,7 +941,7 @@
             "@id": "kairos:Events/00029/ExitBankruptcy",
             "name": "ExitBankruptcy",
             "ta1explanation": "Leaving bankruptcy.",
-            "qnode": "wiki:Q12769393",
+            "qnode": "wd:Q12769393",
             "qlabel": "end",
             "participants": [
                 {
@@ -915,7 +957,7 @@
             "@id": "kairos:Events/00030/Fine",
             "name": "Fine",
             "ta1explanation": "The government fines a company for doing something wrong.",
-            "qnode": "wiki:Q1243001",
+            "qnode": "wd:Q1243001",
             "qlabel": "fine",
             "participants": [
                 {
@@ -941,7 +983,7 @@
             "@id": "kairos:Events/00031/AskRegulators",
             "name": "AskRegulators",
             "ta1explanation": "",
-            "qnode": "wiki:Q428148",
+            "qnode": "wd:Q428148",
             "qlabel": "regulation",
             "participants": [
                 {
@@ -964,18 +1006,18 @@
             "@id": "kairos:Events/00032/ProposeMerger",
             "name": "Propose Merger",
             "ta1explanation": "Two companies decide to try and become one company.",
-            "qnode": "wiki:Q1363768",
+            "qnode": "wd:Q1363768",
             "qlabel": "amalgamation",
             "participants": [
                 {
                     "@id": "kairos:Participants/00054/Company1",
                     "roleName": "company1",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00014/Company1"
                 },
 				{
                     "@id": "kairos:Participants/00055/Company2",
                     "roleName": "company2",
-                    "entity": "kairos:Entities/00004/Company"
+                    "entity": "kairos:Entities/00015/Company2"
                 }
             ],
             "description": false,
@@ -985,7 +1027,7 @@
             "@id": "kairos:Events/00033/ProposeAcquisition",
             "name": "Propose Acquisition",
             "ta1explanation": "One company proposes acquiring another company.",
-            "qnode": "wiki:Q3604747",
+            "qnode": "wd:Q3604747",
             "qlabel": "acquisition",
             "participants": [
                 {
@@ -1016,7 +1058,7 @@
             "@id": "kairos:Events/00034/RegulatoryApproval",
             "name": "agreement",
             "ta1explanation": "The government will allow the companies to do what they want (often merger or acquisition).",
-            "qnode": "wiki:Q321839",
+            "qnode": "wd:Q321839",
             "qlabel": "agreement",
             "participants": [
                 {
@@ -1032,7 +1074,7 @@
             "@id": "kairos:Events/00035/RegulatoryRejection",
             "name": "rejection",
             "ta1explanation": "The government says no to some regulated action the companies want to do (often merger or acquisition).",
-            "qnode": "wiki:Q98398200",
+            "qnode": "wd:Q98398200",
             "qlabel": "rejection",
             "participants": [
                 {
@@ -1077,7 +1119,7 @@
             "@id": "kairos:Events/00037/RegulatoryResponse",
             "name": "Regulatory Response",
             "ta1explanation": "",
-            "qnode": "wiki:Q1920566",
+            "qnode": "wd:Q1920566",
             "qlabel": "answer",
             "participants": [
                 {
@@ -1087,6 +1129,12 @@
                 }
             ],
 			"children": [
+				{
+                    "child": "kairos:Events/00036/Container:RegulatoryResponseXOR",
+                    "outlinks": [
+                    ],
+                    "comment": false
+                }
 			],
             "description": false,
             "children_gate": "or"
@@ -1095,7 +1143,7 @@
             "@id": "kairos:Events/00038/CorporateCriminalResponse",
             "name": "Corporate Criminal Response",
             "ta1explanation": "To distinguish from criminal response against people. Also verdict qnode might be bad.",
-            "qnode": "wiki:Q13370881",
+            "qnode": "wd:Q13370881",
             "qlabel": "verdict",
             "participants": [
                 {
@@ -1104,6 +1152,14 @@
                     "entity": "kairos:Entities/00006/Government"
                 }
             ],
+			"children": [
+				{
+                    "child": "kairos:Events/00049/Container:CorporateCriminalXOR",
+                    "outlinks": [
+                    ],
+                    "comment": false
+                }
+			],
             "description": false,
             "children_gate": "or"
         },
@@ -1111,7 +1167,7 @@
             "@id": "kairos:Events/00039/BankruptcyResponse",
             "name": "Bankruptcy Response",
             "ta1explanation": "",
-            "qnode": "wiki:Q1920566",
+            "qnode": "wd:Q1920566",
             "qlabel": "answer",
             "participants": [
                 {
@@ -1144,7 +1200,7 @@
             "@id": "kairos:Events/00040/CorporateCriminalInquiry",
             "name": "Corporate Criminal Inquiry",
             "ta1explanation": "This is when the corporation itself is investigated and not a person. Not sure if this is the best way to manage the difference.",
-            "qnode": "wiki:Q1964968",
+            "qnode": "wd:Q1964968",
             "qlabel": "criminal investigation",
             "participants": [
                 {
@@ -1167,7 +1223,7 @@
             "@id": "kairos:Events/00041/ArrestExec",
             "name": "arrest",
             "ta1explanation": "Executives are arrested for crimes they committed carrying out their duties.",
-            "qnode": "wiki:Q1403016",
+            "qnode": "wd:Q1403016",
             "qlabel": "arrest",
             "participants": [
                 {
@@ -1193,7 +1249,7 @@
             "@id": "kairos:Events/00042/Breakup",
             "name": "breakup",
             "ta1explanation": "Government breaks up a company. Qnode is very bad.",
-            "qnode": "wiki:Q326498",
+            "qnode": "wd:Q326498",
             "qlabel": "competition law",
             "participants": [
                 {
@@ -1214,7 +1270,7 @@
             "@id": "kairos:Events/00043/AntiTrustInvestigation",
             "name": "Antitrust Investigation",
             "ta1explanation": "Investigate if corporation is a monopoly.",
-            "qnode": "wiki:Q61221204",
+            "qnode": "wd:Q61221204",
             "qlabel": "antitrust case",
             "participants": [
                 {
@@ -1229,6 +1285,12 @@
                 }
             ],
 			"children": [
+				{
+				  "child": "kairos:Events/00046/Container:AntiTrustXOR",
+				  "optional": false,
+				  "importance": 1,
+				  "outlinks": []
+				}
 			],
             "description": false,
             "children_gate": "or"
@@ -1237,7 +1299,7 @@
             "@id": "kairos:Events/00044/AntiTrustApproval",
             "name": "agreement",
             "ta1explanation": "The government decides a company is a monopoly and it's time to trust-bust it.",
-            "qnode": "wiki:Q321839",
+            "qnode": "wd:Q321839",
             "qlabel": "agreement",
             "participants": [
                 {
@@ -1253,7 +1315,7 @@
             "@id": "kairos:Events/00045/AntiTrustRegulatoryRejection",
             "name": "rejection",
             "ta1explanation": "The government decides a company is not a monopoly.",
-            "qnode": "wiki:Q98398200",
+            "qnode": "wd:Q98398200",
             "qlabel": "rejection",
             "participants": [
                 {
@@ -1298,7 +1360,7 @@
             "@id": "kairos:Events/00047/CorporateCriminalApproval",
             "name": "agreement",
             "ta1explanation": "The government decides a corporation broke the law.",
-            "qnode": "wiki:Q321839",
+            "qnode": "wd:Q321839",
             "qlabel": "agreement",
             "participants": [
                 {
@@ -1314,7 +1376,7 @@
             "@id": "kairos:Events/00048/CorporateCriminalRejection",
             "name": "rejection",
             "ta1explanation": "The government decides a corporation did not break the law.",
-            "qnode": "wiki:Q98398200",
+            "qnode": "wd:Q98398200",
             "qlabel": "rejection",
             "participants": [
                 {
@@ -1358,7 +1420,7 @@
             "@id": "kairos:Events/00050/JobCuts",
             "name": "dismissal",
             "ta1explanation": "A bunch of employees are fired.",
-            "qnode": "wiki:Q17052147",
+            "qnode": "wd:Q17052147",
             "qlabel": "dismissal",
             "participants": [
                 {
@@ -1379,7 +1441,7 @@
             "@id": "kairos:Events/00051/AskShareholders",
             "name": "Ask Shareholders",
             "ta1explanation": "Get shareholder approval for something.",
-            "qnode": "wiki:Q381136",
+            "qnode": "wd:Q381136",
             "qlabel": "shareholder",
             "participants": [
                 {
@@ -1402,7 +1464,7 @@
             "@id": "kairos:Events/00052/ShareHolderResponse",
             "name": "Shareholder Response",
             "ta1explanation": "",
-            "qnode": "wiki:Q1920566",
+            "qnode": "wd:Q1920566",
             "qlabel": "answer",
             "participants": [
                 {
@@ -1412,6 +1474,14 @@
                 }
             ],
 			"children": [
+				{
+				  "child": "kairos:Events/00055/Container:ShareHolderResponseXOR",
+				  "optional": false,
+				  "importance": 1,
+				  "outlinks": [
+						"kairos:Events/00011/CorporateJustice"
+					]
+				}
 			],
             "description": false,
             "children_gate": "or"
@@ -1420,7 +1490,7 @@
             "@id": "kairos:Events/00053/ShareHolderApproval",
             "name": "agreement",
             "ta1explanation": "Shareholders approve a proposal from the company (e.g. acquisition or merger).",
-            "qnode": "wiki:Q321839",
+            "qnode": "wd:Q321839",
             "qlabel": "agreement",
             "participants": [
                 {
@@ -1436,7 +1506,7 @@
             "@id": "kairos:Events/00054/ShareHolderRejection",
             "name": "rejection",
             "ta1explanation": "Shareholders reject a proposal from the company (e.g. acquisition or merger).",
-            "qnode": "wiki:Q98398200",
+            "qnode": "wd:Q98398200",
             "qlabel": "rejection",
             "participants": [
                 {
@@ -1476,7 +1546,54 @@
 		  "ta1explanation": "",
 		  "children_gate": "xor"
 		},
-		
+        {
+			"@id": "kairos:Events/00056/GovernmentActions",
+			"name": "GovernmentActions",
+			"comment": "general parent node. An alternative Qnode was bureaucracy",
+            "qnode": "wd:Q2478386",
+            "qlabel": "legal system",
+		  "privateData": {
+			"@type": "kairos:Container",
+			"template": "",
+			"repeatable": false
+		  },
+            "participants": [
+            ],
+		  "children": [
+			{
+				"child": "kairos:Events/00011/CorporateJustice",
+				"outlinks": [
+				],
+				"comment": false
+			},
+			{
+			  "child": "kairos:Events/00021/Assign",
+			  "optional": false,
+			  "importance": 1,
+			  "outlinks": []
+			},
+			{
+			  "child": "kairos:Events/00022/BankruptcyCase",
+			  "optional": false,
+			  "importance": 1,
+			  "outlinks": []
+			},
+			{
+			  "child": "kairos:Events/00026/GovernmentBailout",
+			  "optional": false,
+			  "importance": 1,
+			  "outlinks": []
+			},
+			{
+			  "child": "resin:Events/10065/Steps_kairos:Primitives_Events_Justice",
+			  "optional": false,
+			  "importance": 1,
+			  "outlinks": []
+			}
+		  ],
+            "description": false,
+            "children_gate": "or"
+        },
 		
 		
 		
@@ -2009,28 +2126,28 @@
     "entities": [
         {
             "@id": "kairos:Entities/00001/CEO",
-            "qnode": "wiki:Q484876",
+            "qnode": "wd:Q484876",
             "qlabel": "chief executive officer",
             "centrality": 1,
             "name": "CEO"
         },
         {
             "@id": "kairos:Entities/00002/Executive",
-            "qnode": "wiki:Q978044",
+            "qnode": "wd:Q978044",
             "qlabel": "executive",
             "centrality": 1,
             "name": "executive"
         },
         {
             "@id": "kairos:Entities/00003/Personnel",
-            "qnode": "wiki:Q105764136",
+            "qnode": "wd:Q105764136",
             "qlabel": "personnel",
             "centrality": 1,
             "name": "personnel"
         },
         {
             "@id": "kairos:Entities/00004/Company",
-            "qnode": "wiki:Q783794",
+            "qnode": "wd:Q783794",
             "qlabel": "company",
             "centrality": 1,
             "name": "company",
@@ -2038,66 +2155,96 @@
         },
         {
             "@id": "kairos:Entities/00005/Founder",
-            "qnode": "wiki:Q61268336",
+            "qnode": "wd:Q61268336",
             "qlabel": "founder",
             "centrality": 1,
             "name": "founder"
         },
         {
             "@id": "kairos:Entities/00006/Government",
-            "qnode": "wiki:Q7188",
+            "qnode": "wd:Q7188",
             "qlabel": "government",
             "centrality": 1,
             "name": "government"
         },
         {
             "@id": "kairos:Entities/00007/Investor",
-            "qnode": "wiki:Q557880",
+            "qnode": "wd:Q557880",
             "qlabel": "investor",
             "centrality": 1,
             "name": "investor"
         },
         {
             "@id": "kairos:Entities/00008/Assets",
-            "qnode": "wiki:Q46737",
+            "qnode": "wd:Q46737",
             "qlabel": "asset",
             "centrality": 1,
             "name": "asset"
         },
         {
             "@id": "kairos:Entities/00009/Money",
-            "qnode": "wiki:Q1368",
+            "qnode": "wd:Q1368",
             "qlabel": "money",
             "centrality": 1,
             "name": "money"
         },
         {
             "@id": "kairos:Entities/00010/GovernmentEmployee",
-            "qnode": "wiki:Q3796928",
+            "qnode": "wd:Q3796928",
             "qlabel": "government employee",
             "centrality": 1,
             "name": "government employee"
         },
         {
             "@id": "kairos:Entities/00011/Trustee",
-            "qnode": "wiki:Q2047357",
+            "qnode": "wd:Q2047357",
             "qlabel": "trustee",
             "centrality": 1,
             "name": "trustee"
         },
         {
             "@id": "kairos:Entities/00012/Investigator",
-            "qnode": "wiki:Q2047357",
+            "qnode": "wd:Q2047357",
             "qlabel": "investigator",
             "centrality": 1,
             "name": "investigator"
         },
         {
             "@id": "kairos:Entities/00013/Shareholder",
-            "qnode": "wiki:Q381136",
+            "qnode": "wd:Q381136",
             "qlabel": "shareholder",
             "centrality": 1,
             "name": "shareholder"
+        },
+        {
+            "@id": "kairos:Entities/00014/Company1",
+            "qnode": "wd:Q783794",
+            "qlabel": "company",
+            "centrality": 1,
+            "name": "company",
+			"comment": "the legal entity for events with more than 1 company."
+        },
+        {
+            "@id": "kairos:Entities/00015/Company2",
+            "qnode": "wd:Q783794",
+            "qlabel": "company",
+            "centrality": 1,
+            "name": "company",
+			"comment": "the legal entity for events with more than 1 company."
+        },
+        {
+            "@id": "kairos:Entities/00016/Personnel1",
+            "qnode": "wd:Q105764136",
+            "qlabel": "personnel",
+            "centrality": 1,
+            "name": "personnel for events with more than 1"
+        },
+        {
+            "@id": "kairos:Entities/00017/Personnel2",
+            "qnode": "wd:Q105764136",
+            "qlabel": "personnel",
+            "centrality": 1,
+            "name": "personnel for events with more than 1"
         },
     {
       "@id": "resin:Entities/00135/",
