@@ -36,7 +36,7 @@ def fix_prefix(id):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--schema_dir', type=str, default='scenario-schemas')
+    parser.add_argument('--schema_dir', type=str, default='scenario-schemas-verified')
     args = parser.parse_args() 
 
     local_to_global = {} # (scenario, @id) -> @id 
@@ -51,8 +51,11 @@ if __name__ == '__main__':
     # create @id mapping 
 
     for filename in os.listdir(args.schema_dir):
+        ext = os.path.splitext(filename)[1]
+        if ext != '.json': continue 
         with open(os.path.join(args.schema_dir, filename)) as f:
             scenario_schema = json.load(f)
+            
             scenario = os.path.splitext(filename)[0]
 
             for e in scenario_schema['events']:
@@ -107,6 +110,8 @@ if __name__ == '__main__':
         
     # copy to single schema 
     for filename in os.listdir(args.schema_dir):
+        ext = os.path.splitext(filename)[1]
+        if ext != '.json': continue 
         with open(os.path.join(args.schema_dir, filename)) as f:
             scenario_schema = json.load(f)
             scenario = os.path.splitext(filename)[0]

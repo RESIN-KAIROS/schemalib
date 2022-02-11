@@ -1,8 +1,14 @@
 # Changelog 
 
-## [Unreleased]
+## [Quizlet 9, 0.3] - 2022-02-10
 ### Added 
-- [Disaster Rescue] new schema 
+- [Manmade Disaster Rescue] new schema 
+- [Natural Disaster Rescue] new schema 
+- script for checking schema 
+### Fixed 
+- Issues with Qnode format 
+- Issues with multiple root nodes 
+
 ## [Quizlet9, 0.2] - 2022-02-03
 ### Added 
 - [Disease Outbreak] "partially coincident with" relations between entities 
