@@ -22,14 +22,14 @@ def make_unique_participants(schema: Dict)-> Dict:
         participant_list = e.get('participants', [])
         for p in participant_list:
             p_id = p['@id']
-            m = re.match(r'resin:Participants/(\d+)/(.*)', p_id)
+            m = re.match(r'resin:Participants/(\d+)/?(.*)', p_id)
             if not m:
                 print(p_id)
                 raise ValueError(f'participant id {p_id} does not match format.')
             
             
             uid = m.group(1)
-            assert uid[0] == '2', f'participant uid {uid} does not start with 2'
+            # assert uid[0] == '2', f'participant uid {uid} does not start with 2'
             suffix = m.group(2)
 
             uid = int(uid)
@@ -90,7 +90,7 @@ def fix_qnode(schema: Dict, errors: List[str]=[]) -> Tuple[Dict, List]:
             m = re.match(QNODE_RE, qnode)
             if not m: errors.append(f'qnode value {qnode} of relation {eid} invalid.')
             # add the prefix 
-            else: r['qnode'] = f'wd:{qnode}'
+            else: r['relationPredicate'] = f'wd:{qnode}'
     
     return schema , errors 
 
@@ -162,6 +162,8 @@ if __name__ == '__main__':
     os.makedirs(args.output_dir, exist_ok=True)
 
     for filename in os.listdir(args.schema_dir):
+        ext = os.path.splitext(filename)[1]
+        if ext != '.json': continue 
         with open(os.path.join(args.schema_dir, filename)) as f:
             scenario_schema = json.load(f)
             
@@ -174,7 +176,8 @@ if __name__ == '__main__':
             log_writer = open(os.path.join(args.output_dir, f'{scenario}.log'), 'w')
 
             if args.fix_uid: 
-                make_unique_participants(scenario_schema)
+                if scenario != 'business_change': # FIXME: this schema uses 'kairos' prefix instead of resin 
+                    make_unique_participants(scenario_schema)
             
             scenario_schema, errors  = fix_qnode(scenario_schema, errors)
 

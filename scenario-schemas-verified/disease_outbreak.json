@@ -802,7 +802,18 @@
       "comment": "",
       "qnode": "wd:Q2827815",
       "aka": "",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20119/AidBetweenGovernments:Giver",
+          "roleName": "A0_pag_agent_giver",
+          "entity": "resin:Entities/00025/"
+        },
+        {
+          "@id": "resin:Participants/20120/AidBetweenGovernments:Recipient",
+          "roleName": "A2_gol_recipient_entity_given_to",
+          "entity": "resin:Entities/00024/"
+        }
+      ],
       "minDuration": "P1M",
       "maxDuration": "P3Y",
       "description": "",
@@ -818,10 +829,26 @@
     {
       "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_Medical.Intervention.Unspecified:2",
       "name": "New Treatments",
-      "comment": "",
+      "comment": "Clinical testing of treatments.",
       "qnode": "wd:Q179661",
       "aka": "",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20121/Intervention:Illness",
+          "roleName": "A2_ppt__illness_or_injury",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20122/Intervention:Doctor",
+          "roleName": "A0_pag__doctor",
+          "entity": "resin:Entities/00029/"
+        },
+        {
+          "@id": "resin:Participants/20123/Intervention:Treatment",
+          "roleName": "A3_mnr__instrument",
+          "entity": "resin:Entities/00030/"
+        }
+      ],
       "minDuration": "PT5M",
       "maxDuration": "P10Y",
       "description": "",
@@ -1762,7 +1789,7 @@
         {
           "@id": "resin:Participants/20070/Steps_kairos:Primitives_Events_Identifycategorize_Identifier",
           "roleName": "A0_pag_agent_caller",
-          "entity": "resin:Entities/00029/"
+          "entity": "resin:Entities/00028/"
         },
         {
           "@id": "resin:Participants/20071/Steps_kairos:Primitives_Events_Identifycategorize_IdentifiedObject",
@@ -1787,7 +1814,18 @@
       "name": "Contact",
       "comment": "",
       "qnode": "wd:Q11024",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20124/Contact:Agent",
+          "roleName": "A0_pag_agent_one_party",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20125/Contact:Agent",
+          "roleName": "A1_com_co_agent_other_party",
+          "entity": "resin:Entities/00027/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -1805,7 +1843,18 @@
       "name": "Arrest",
       "comment": "",
       "qnode": "wd:Q1403016",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20126/Arrest:Police",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20127/Arrest:Criminal",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00027/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -1840,7 +1889,18 @@
       "name": "Inspect",
       "comment": "",
       "qnode": "wd:Q1137655",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20128/Inspect:Examiner",
+          "roleName": "A0_pag_examiner",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20129/Inspect:Inspected",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": "resin:Entities/00027/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2243,7 +2303,18 @@
       "name": "Mutate life",
       "comment": "",
       "qnode": "wd:Q42918",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130/Mutate:Agent",
+          "roleName": "A1_ppt_patient_entity_undergoing_mutation",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20131/Mutate:Result",
+          "roleName": "A2_prd_result_end_state",
+          "entity": "resin:Entities/00011/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2263,7 +2334,12 @@
       "qnode": "wd:Q7302970",
       "participants": [
         {
-          "@id": "resin:Participants/20041/Steps_kairos:Primitives_Events_Recover_Affliction",
+          "@id": "resin:Participants/20144/Recover:Agent",
+          "roleName": "A1_ppt_sick",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20041/Recover:Affliction",
           "roleName": "A2-cau_X_cause_or_disease",
           "entity": "resin:Entities/00008/"
         }
@@ -2285,7 +2361,18 @@
       "name": "Die",
       "comment": "",
       "qnode": "wd:Q4",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20142/Die:Deceased",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20143/Die:Cause",
+          "roleName": "AM_cau__cause",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2303,7 +2390,13 @@
       "name": "Funeral",
       "comment": "",
       "qnode": "wd:Q201676",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20145/Funeral:Deceased",
+          "roleName": "A1_ppt_entity_buried",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2321,7 +2414,18 @@
       "name": "Mutation",
       "comment": "",
       "qnode": "wd:Q42918",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140/Mutate:Agent",
+          "roleName": "A1_ppt_patient_entity_undergoing_mutation",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20141/Mutate:Result",
+          "roleName": "A2_prd_result_end_state",
+          "entity": "resin:Entities/00011/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2357,7 +2461,13 @@
       "name": "Collaborate",
       "comment": "",
       "qnode": "wd:Q1145523",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20138/Collaborate:Agent",
+          "roleName": "A0_pag_agent_focussed_party",
+          "entity": "resin:Entities/00029/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2375,7 +2485,13 @@
       "name": "Meeting",
       "comment": "",
       "qnode": "wd:Q625994",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20139/Meeting:Agent",
+          "roleName": "A0_pag_one_party",
+          "entity": "resin:Entities/00029/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2713,7 +2829,28 @@
       "name": "Vaccinate",
       "comment": "",
       "qnode": "wd:Q192995",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20132/Vaccinate:Inoculator",
+          "roleName": "A0_pag__inoculator",
+          "entity": "resin:Entities/00168/"
+        },
+        {
+          "@id": "resin:Participants/20133/Vaccinate:Inoculated",
+          "roleName": "A1_ppt__patient_inoculated",
+          "entity": "resin:Entities/00040/"
+        },
+        {
+          "@id": "resin:Participants/20134/Vaccinate:Pathogen",
+          "roleName": "A2_ppt__inoculated_against",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20135/Vaccinate:Vaccine",
+          "roleName": "Ax_mnr__innoculated_with",
+          "entity": "resin:Entities/00031/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2723,9 +2860,9 @@
       "children": [
         {
           "child": "resin:Events/10084/Steps_kairos:Primitives_Events_Inject",
-          "comment": "",
+          "comment": "inject vaccine, event from vision",
           "optional": true,
-          "importance": 1,
+          "importance": 0.1,
           "outlinks": []
         }
       ],
@@ -2825,13 +2962,24 @@
       "name": "Recover 2",
       "comment": "",
       "qnode": "wd:Q7302970",
-      "participants": [],
+      "qlabel": "recover",
+      "participants": [
+        {
+          "@id": "resin:Participants/20146/Recover:Agent",
+          "roleName": "A1_ppt_sick",
+          "entity": "resin:Entities/00044/"
+        },
+        {
+          "@id": "resin:Participants/20147/Recover:Affliction",
+          "roleName": "A2-cau_X_cause_or_disease",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
       "goal": "",
       "ta1explanation": "Patients may recover from the infection of the virus",
-      "qlabel": "recover",
       "privateData": {
         "@type": "FrameNet.Recovery",
         "template": "",
@@ -2843,13 +2991,24 @@
       "name": "Die 2",
       "comment": "",
       "qnode": "wd:Q4",
-      "participants": [],
+      "qlabel": "death",
+      "participants": [
+        {
+          "@id": "resin:Participants/20148/Die:Deceased",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00044/"
+        },
+        {
+          "@id": "resin:Participants/20149/Die:Cause",
+          "roleName": "AM_cau__cause",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
       "goal": "",
       "ta1explanation": "Patients may die from the infection of the virus",
-      "qlabel": "death",
       "privateData": {
         "@type": "life.die.unspecified",
         "template": "",
@@ -2861,7 +3020,13 @@
       "name": "Funeral 2",
       "comment": "",
       "qnode": "wd:Q201676",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150/Funeral:Deceased",
+          "roleName": "A1_ppt_entity_buried",
+          "entity": "resin:Entities/00044/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2879,7 +3044,18 @@
       "name": "Handcuffing",
       "comment": "",
       "qnode": "wd:Q15808",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20151/Handcuffing:Police",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20152/Handcuffing:Criminal",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00027/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2897,7 +3073,18 @@
       "name": "Interrogation",
       "comment": "",
       "qnode": "wd:Q327018",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20153/Interrogation:Police",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20154/Interrogation:Criminal",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00027/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2915,7 +3102,18 @@
       "name": "Restrain",
       "comment": "",
       "qnode": "wd:Q357003",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20155/Restrain:Agent",
+          "roleName": "A0_pag__agent",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20156/Restrain:Restrained",
+          "roleName": "A1_ppt__restrained",
+          "entity": "resin:Entities/00027/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -2951,7 +3149,18 @@
       "name": "Inject",
       "comment": "",
       "qnode": "wd:Q245359",
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20136/Inject:Injector",
+          "roleName": "A0_pag_injector",
+          "entity": "resin:Entities/00168/"
+        },
+        {
+          "@id": "resin:Participants/20137/Inject:InjectedObject",
+          "roleName": "A1_ppt_stuff_being_put_in",
+          "entity": "resin:Entities/00031/"
+        }
+      ],
       "minDuration": "",
       "maxDuration": "",
       "description": "",
@@ -3452,14 +3661,14 @@
       "children": [
         {
           "child": "resin:Events/10057/Steps_kairos:Primitives_Events_Recover",
-          "comment": "container node",
+          "comment": "recover from quarantine",
           "optional": false,
           "importance": 1,
           "outlinks": []
         },
         {
           "child": "resin:Events/10058/Steps_kairos:Primitives_Events_Die",
-          "comment": "container node",
+          "comment": "die",
           "optional": false,
           "importance": 1,
           "outlinks": []
@@ -3640,6 +3849,12 @@
       "qlabel": "pathogen"
     },
     {
+      "@id": "resin:Entities/00011/",
+      "name": "mutated strain of pathogen",
+      "qnode": "wd:Q170065",
+      "qlabel": "pathogen"
+    },
+    {
       "@id": "resin:Entities/00002/",
       "name": "plaintiff",
       "qnode": "wd:Q468489",
@@ -3682,10 +3897,40 @@
       "qlabel": "government agency"
     },
     {
+      "@id": "resin:Entities/00025/",
+      "name": "other government / authorities",
+      "qnode": "wd:Q327333",
+      "qlabel": "government agency"
+    },
+    {
+      "@id": "resin:Entities/00027/",
+      "name": "suspect of crime",
+      "qnode": "wd:Q224952",
+      "qlabel": "suspect"
+    },
+    {
+      "@id": "resin:Entities/00028/",
+      "name": "law enforcement agent",
+      "qnode": "wd:Q732717",
+      "qlabel": "law_enforcement_agency"
+    },
+    {
       "@id": "resin:Entities/00029/",
       "name": "researcher",
-      "qnode": "wd:Q28973077",
-      "qlabel": "observer"
+      "qnode": "wd:Q901",
+      "qlabel": "scientist"
+    },
+    {
+      "@id": "resin:Entities/00030/",
+      "name": "new treatment",
+      "qnode": "wd:Q796194",
+      "qlabel": "medical_procedure"
+    },
+    {
+      "@id": "resin:Entities/00031/",
+      "name": "vaccine",
+      "qnode": "wd:Q134808",
+      "qlabel": "vaccine"
     },
     {
       "@id": "resin:Entities/00040/",
@@ -3702,8 +3947,8 @@
     {
       "@id": "resin:Entities/00168/",
       "name": "medical team",
-      "qnode": "wd:Q335757",
-      "qlabel": "assessor"
+      "qnode": "wd:Q11974939",
+      "qlabel": "health_professional"
     },
     {
       "@id": "resin:Entities/00045/",
@@ -3747,6 +3992,20 @@
       "relationObject": "resin:Entities/00004/",
       "relationPredicate": "wd:P1382",
       "@id": "resin:Relations/30003/"
+    },
+    {
+      "name": "partially coincident with",
+      "relationSubject": "resin:Entities/00027/",
+      "relationObject": "resin:Entities/00003/",
+      "relationPredicate": "wd:P1382",
+      "@id": "resin:Relations/30004/"
+    },
+    {
+      "name": "partially coincident with",
+      "relationSubject": "resin:Entities/00030/",
+      "relationObject": "resin:Entities/00031/",
+      "relationPredicate": "wd:P1382",
+      "@id": "resin:Relations/30006/"
     }
   ]
 }
