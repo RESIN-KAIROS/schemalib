@@ -35,7 +35,7 @@
         {
           "@id": "resin:Participants/00003/learner",
           "roleName": "A2_gol_recipient_student",
-          "entity": "resin:Entities/00003/learner"
+          "entity": "resin:Entities/00050/attacker"
         },
         {
           "@id": "resin:Participants/00004/means",
@@ -150,7 +150,7 @@
         {
           "@id": "resin:Participants/00019/transporter",
           "roleName": "A0_pag_agent_transporter",
-          "entity": "resin:Entities/00019/transporter"
+          "entity": "resin:Entities/00050/attacker"
         },
         {
           "@id": "resin:Participants/00020/passenger-artifact",
@@ -945,11 +945,84 @@
       ]
     },
     {
-      "@id": "resin:Events/00001/General-IED",
-      "name": "General IED",
-      "description": "",
-      "ta1explanation": "",
-      "children_gate": "and",
+      "@id": "resin:Events/21001/Steps_kairos:Container:Contributory_Factors",
+      "name": "Contributory Factors",
+      "comment": "container node",
+      "description": "The contributory factor container.",
+      "ta1explanation": "The contributory factors that shows motives and backgrounds.",
+      "children_gate": "or",
+      "children": [
+        {
+          "child": "resin:Events/00010/Conflict-Demonstrate-Unspecified",
+          "outlinks": [
+            "resin:Events/00012/Conflict-Attack-DetonateExplode"
+          ]
+        },
+        {
+          "child": "resin:Events/00003/Conflict-Attack-Unspecified",
+          "outlinks": [
+            "resin:Events/00005/Transaction-ExchangeBuySell-Unspecified",
+            "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified"
+          ]
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": true
+      }
+    },
+    {
+      "@id": "resin:Events/21002/Steps_kairos:Container:Planning",
+      "name": "Planning",
+      "comment": "container node",
+      "description": "The Planning container.",
+      "ta1explanation": "The bomb making procedure.",
+      "children_gate": "or",
+      "children": [
+        {
+          "child": "resin:Events/00002/Cognitive-TeachingTrainingLearning-Unspecified",
+          "optional": true,
+          "outlinks": [
+            "resin:Events/00005/Transaction-ExchangeBuySell-Unspecified",
+            "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified"
+          ]
+        },
+        {
+          "child": "resin:Events/00005/Transaction-ExchangeBuySell-Unspecified",
+          "optional": true,
+          "outlinks": [
+            "resin:Events/00006/Movement-Transportation-Unspecified"
+          ]
+        },
+        {
+          "child": "resin:Events/00006/Movement-Transportation-Unspecified",
+          "optional": true,
+          "outlinks": [
+            "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified"
+          ]
+        },
+        {
+          "child": "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified",
+          "optional": false,
+          "outlinks": [
+            "resin:Events/00019/Movement-Transportation-Unspecified"
+          ]
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/21003/Steps_kairos:Container:Execution",
+      "name": "Execution",
+      "comment": "container node",
+      "description": "The Execution container.",
+      "ta1explanation": "The execution procedure to detonate the bomb.",
+      "children_gate": "or",
       "children": [
         {
           "child": "resin:Events/00019/Movement-Transportation-Unspecified",
@@ -968,13 +1041,7 @@
           ]
         },
         {
-          "child": "resin:Events/00013/Medical-Intervention-Unspecified",
-          "outlinks": [
-            "resin:Events/00017/Life-Die-Unspecified"
-          ]
-        },
-        {
-          "child": "resin:Events/00014/ArtifactExistence-DamageDestroyDisableDismantle-Destroy",
+          "child": "resin:Events/00018/Life-Die-Unspecified",
           "outlinks": [
             "resin:Events/00015/Movement-Transportation-Evacuation"
           ]
@@ -992,23 +1059,32 @@
           ]
         },
         {
-          "child": "resin:Events/00018/Life-Die-Unspecified",
-          "outlinks": [
-            "resin:Events/00015/Movement-Transportation-Evacuation"
-          ]
-        },
-        {
           "child": "resin:Events/00021/Contact-Contact-Correspondence",
           "outlinks": [
             "resin:Events/00015/Movement-Transportation-Evacuation"
           ]
         },
         {
-          "child": "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified",
+          "child": "resin:Events/00014/ArtifactExistence-DamageDestroyDisableDismantle-Destroy",
           "outlinks": [
-            "resin:Events/00019/Movement-Transportation-Unspecified"
+            "resin:Events/00015/Movement-Transportation-Evacuation"
           ]
-        },
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/21004/Steps_kairos:Container:Reaction",
+      "name": "Reaction",
+      "comment": "container node",
+      "description": "The Reaction container.",
+      "ta1explanation": "The reactions of governments and aids to victims.",
+      "children_gate": "or",
+      "children": [
         {
           "child": "resin:Events/00015/Movement-Transportation-Evacuation",
           "outlinks": [
@@ -1022,6 +1098,32 @@
             "resin:Events/00016/Contact-Contact-Unspecified"
           ]
         },
+        {
+          "child": "resin:Events/00013/Medical-Intervention-Unspecified",
+          "outlinks": [
+            "resin:Events/00017/Life-Die-Unspecified"
+          ]
+        },
+        {
+          "child": "resin:Events/00017/Life-Die-Unspecified",
+          "outlinks": []
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/21005/Steps_kairos:Container:Aftermath",
+      "name": "Aftermath",
+      "comment": "container node",
+      "description": "The Aftermath container.",
+      "ta1explanation": "The investigations, legal proceedings, and other events happened after the bombing.",
+      "participants": [],
+      "children_gate": "or",
+      "children": [
         {
           "child": "resin:Events/00024/Contact-Contact-Meet",
           "outlinks": [
@@ -1084,38 +1186,6 @@
           ]
         },
         {
-          "child": "resin:Events/00006/Movement-Transportation-Unspecified",
-          "outlinks": [
-            "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified"
-          ]
-        },
-        {
-          "child": "resin:Events/00005/Transaction-ExchangeBuySell-Unspecified",
-          "outlinks": [
-            "resin:Events/00006/Movement-Transportation-Unspecified"
-          ]
-        },
-        {
-          "child": "resin:Events/00002/Cognitive-TeachingTrainingLearning-Unspecified",
-          "outlinks": [
-            "resin:Events/00005/Transaction-ExchangeBuySell-Unspecified",
-            "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified"
-          ]
-        },
-        {
-          "child": "resin:Events/00003/Conflict-Attack-Unspecified",
-          "outlinks": [
-            "resin:Events/00005/Transaction-ExchangeBuySell-Unspecified",
-            "resin:Events/00007/ArtifactExistence-ManufactureAssemble-Unspecified"
-          ]
-        },
-        {
-          "child": "resin:Events/00010/Conflict-Demonstrate-Unspecified",
-          "outlinks": [
-            "resin:Events/00012/Conflict-Attack-DetonateExplode"
-          ]
-        },
-        {
           "child": "resin:Events/00004/Conflict-Attack-Unspecified",
           "outlinks": [
             "resin:Events/00011/Conflict-Demonstrate-Unspecified"
@@ -1130,16 +1200,71 @@
           "outlinks": []
         },
         {
-          "child": "resin:Events/00017/Life-Die-Unspecified",
-          "outlinks": []
-        },
-        {
           "child": "resin:Events/00032/Justice-ArrestJailDetain-Unspecified",
           "outlinks": []
         },
         {
           "child": "resin:Events/00011/Conflict-Demonstrate-Unspecified",
           "outlinks": []
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      }
+    },
+    {
+      "@id": "resin:Events/20000/Backpack-IED",
+      "name": "Backpack IED",
+      "description": "",
+      "comment": "container node",
+      "ta1explanation": "The root event of the backpack-IED schema.",
+      "children_gate": "or",
+      "children": [
+        {
+          "child": "resin:Events/21001/Steps_kairos:Container:Contributory_Factors",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.8,
+          "outlinks": [
+            "resin:Events/21002/Steps_kairos:Container:Planning"
+          ]
+        },
+        {
+          "child": "resin:Events/21002/Steps_kairos:Container:Planning",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.9,
+          "outlinks": [
+            "resin:Events/21003/Steps_kairos:Container:Execution"
+          ]
+        },
+        {
+          "child": "resin:Events/21003/Steps_kairos:Container:Execution",
+          "comment": "Container",
+          "optional": true,
+          "importance": 1.0,
+          "outlinks": [
+            "resin:Events/21004/Steps_kairos:Container:Reaction"
+          ]
+        },
+        {
+          "child": "resin:Events/21004/Steps_kairos:Container:Reaction",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.8,
+          "outlinks": [
+            "resin:Events/21005/Steps_kairos:Container:Aftermath"
+          ]
+        },
+        {
+          "child": "resin:Events/21005/Steps_kairos:Container:Aftermath",
+          "comment": "Container",
+          "optional": true,
+          "importance": 0.9,
+          "outlinks": [
+          ]
         }
       ]
     }
@@ -1160,13 +1285,6 @@
       "centrality": 0.8
     },
     {
-      "name": "learner",
-      "@id": "resin:Entities/00003/learner",
-      "qnode": "wd:Q48282",
-      "qlabel": "student",
-      "centrality": 1.0
-    },
-    {
       "name": "means",
       "@id": "resin:Entities/00004/means",
       "qnode": "wd:Q12894677",
@@ -1185,7 +1303,7 @@
       "@id": "resin:Entities/00006/attacker",
       "qnode": "wd:Q31924059",
       "qlabel": "attacker",
-      "centrality": 1.0
+      "centrality": 1
     },
     {
       "name": "target",
@@ -1213,7 +1331,7 @@
       "@id": "resin:Entities/00010/attacker",
       "qnode": "wd:Q31924059",
       "qlabel": "attacker",
-      "centrality": 1.0
+      "centrality": 1
     },
     {
       "name": "target",
@@ -1272,13 +1390,6 @@
       "centrality": 0.8
     },
     {
-      "name": "transporter",
-      "@id": "resin:Entities/00019/transporter",
-      "qnode": "wd:Q35120",
-      "qlabel": "entity",
-      "centrality": 0.8
-    },
-    {
       "name": "passenger_artifact",
       "@id": "resin:Entities/00020/passenger-artifact",
       "qnode": "wd:Q8205328",
@@ -1311,7 +1422,7 @@
       "@id": "resin:Entities/00024/manufacturerassembler",
       "qnode": "wd:P176",
       "qlabel": "manufacturer",
-      "centrality": 1.0
+      "centrality": 1
     },
     {
       "name": "artifact",
@@ -1493,7 +1604,7 @@
       "@id": "resin:Entities/00050/attacker",
       "qnode": "wd:Q31924059",
       "qlabel": "attacker",
-      "centrality": 1.0
+      "centrality": 1
     },
     {
       "name": "target",
@@ -1514,7 +1625,7 @@
       "@id": "resin:Entities/00053/explosive-device",
       "qnode": "wd:Q3054261",
       "qlabel": "explosive_device",
-      "centrality": 1.0
+      "centrality": 1
     },
     {
       "name": "place",
@@ -2112,5 +2223,7 @@
       "centrality": 0.8
     }
   ],
-  "relations": []
+  "relations": [
+    
+  ]
 }
