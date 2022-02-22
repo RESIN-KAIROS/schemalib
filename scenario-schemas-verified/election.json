@@ -333,12 +333,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10001/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_ppt_candidate",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10002/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_theme_candidate_or_ballot_issue",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -357,17 +357,17 @@
       "participants": [
         {
           "@id": "resin:Participants/10003/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_discussant",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10004/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_thing_discussed",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10041/Debate",
-          "roleName": "debate",
+          "roleName": "AM_loc",
           "entity": "resin:Entities/00002/Debate"
         }
       ],
@@ -381,17 +381,17 @@
       "description": "attempt to influence the decision making process within a specific group",
       "comment": "Not in xpo",
       "ta1explanation": "a candidate, after seeing the results of a contest, will decide whether to stay in the race or concede",
-      "qnode": "wd:Q847301",
-      "qlabel": "political campaign",
+      "qnode": "wd:Q11642595",
+      "qlabel": "election campaign",
       "participants": [
         {
           "@id": "resin:Participants/10005/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_campaigner",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10006/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_cause",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -410,12 +410,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10009/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_agent",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10010/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_theme",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -434,17 +434,17 @@
       "participants": [
         {
           "@id": "resin:Participants/10011/Endorser",
-          "roleName": "supporter",
+          "roleName": "A0_pag_supporter",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10012/Endorsee",
-          "roleName": "political_candidate",
+          "roleName": "A1_ppt_thing/person_supported",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10013/Election",
-          "roleName": "election",
+          "roleName": "A2_prp_for_what",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -463,17 +463,17 @@
       "participants": [
         {
           "@id": "resin:Participants/10014/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_ppt_candidate",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10015/Election",
-          "roleName": "election",
+          "roleName": "A1_prd_role_of_arg1",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10016/PoliticalParty",
-          "roleName": "political_party",
+          "roleName": "A2_pag_nominator",
           "entity": "resin:Entities/00008/PoliticalParty"
         }
       ],
@@ -492,17 +492,17 @@
       "participants": [
         {
           "@id": "resin:Participants/10017/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_agent_announcer",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10018/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_topic_utterance",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10019/RunningMate",
-          "roleName": "political_candidate",
+          "roleName": "A2_ppt_topic_utterance",
           "entity": "resin:Entities/00005/RunningMate"
         }
       ],
@@ -521,12 +521,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10020/Election",
-          "roleName": "election",
+          "roleName": "A0_ppt_theme",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10021/PoliticalParty",
-          "roleName": "political_party",
+          "roleName": "A1_pag_agent",
           "entity": "resin:Entities/00008/PoliticalParty"
         }
       ],
@@ -545,17 +545,17 @@
       "participants": [
         {
           "@id": "resin:Participants/10022/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_ppt_candidate",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10023/Election",
-          "roleName": "election",
+          "roleName": "A1_prd_role_of_arg1",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10024/PoliticalParty",
-          "roleName": "political_party",
+          "roleName": "A2_pag_nominator",
           "entity": "resin:Entities/00008/PoliticalParty"
         }
       ],
@@ -569,17 +569,17 @@
       "description": "campaign",
       "comment": "Not in xpo",
       "ta1explanation": "a presidential candidate will begin campaigning to try to gain votes",
-      "qnode": "wd:Q847301",
-      "qlabel": "political campaign",
+      "qnode": "wd:Q11642595",
+      "qlabel": "election campaign",
       "participants": [
         {
           "@id": "resin:Participants/10025/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_campaigner",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10026/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_cause",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -598,17 +598,17 @@
       "participants": [
         {
           "@id": "resin:Participants/10027/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_discussant",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10028/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_thing_discussed",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10043/Debate",
-          "roleName": "debate",
+          "roleName": "AM_loc",
           "entity": "resin:Entities/00002/Debate"
         }
       ],
@@ -626,12 +626,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10100/Election",
-          "roleName": "election",
+          "roleName": "A0_ppt_theme_candidate_or_ballot_issue",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10101/Citizen",
-          "roleName": "person",
+          "roleName": "A1_pag_agent_voter",
           "entity": "resin:Entities/00010/Citizen"
         }
       ],
@@ -649,12 +649,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10102/Election",
-          "roleName": "election",
+          "roleName": "A0_ppt_theme_candidate_or_ballot_issue",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10103/Citizen",
-          "roleName": "person",
+          "roleName": "A1_pag_agent_voter",
           "entity": "resin:Entities/00010/Citizen"
         }
       ],
@@ -672,12 +672,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10104/Election",
-          "roleName": "election",
+          "roleName": "A0_ppt_theme_candidate_or_ballot_issue",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10105/Citizen",
-          "roleName": "person",
+          "roleName": "A1_pag_agent_voter",
           "entity": "resin:Entities/00010/Citizen"
         }
       ],
@@ -696,12 +696,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10106/Election",
-          "roleName": "election",
+          "roleName": "A0_prd_office_or_position",
           "entity": "resin:Entities/00007/Election"
         },
         {
           "@id": "resin:Participants/10029/VotingResult",
-          "roleName": "voting_result",
+          "roleName": "A1_prd_result_numerical_count_of_vote",
           "entity": "resin:Entities/00006/VotingResult"
         }
       ],
@@ -719,18 +719,13 @@
       "participants": [
         {
           "@id": "resin:Participants/10030/Winner",
-          "roleName": "political_candidate",
+          "roleName": "A0_ppt_theme_candidate",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10031/Election",
-          "roleName": "election",
+          "roleName": "A1_prd_result_office_or_position",
           "entity": "resin:Entities/00007/Election"
-        },
-        {
-          "@id": "resin:Participants/10107/VotingResult",
-          "roleName": "voting_result",
-          "entity": "resin:Entities/00006/VotingResult"
         }
       ],
       "privateData": {
@@ -741,19 +736,18 @@
       "@id": "resin:Events/20024",
       "name": "inauguration",
       "description": "ceremony for the swearing-in of the newly elected leader",
-      "comment": "Not in xpo",
       "ta1explanation": "The new president is sworn into office",
       "qnode": "wd:Q1417098",
       "qlabel": "inauguration",
       "participants": [
         {
           "@id": "resin:Participants/10032/President",
-          "roleName": "president",
+          "roleName": "A0_ppt_new_officer",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10108/Country",
-          "roleName": "country",
+          "roleName": "A1_prd_office",
           "entity": "resin:Entities/00009/Country"
         }
       ],
@@ -772,12 +766,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10034/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_talker",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10035/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_subject",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -796,12 +790,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10036/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_raiser_of_funds",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10037/Election",
-          "roleName": "election",
+          "roleName": "A1_gol_beneficiary",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -820,12 +814,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10038/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_Attention_getter",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10039/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_Entity_referred_to",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -844,12 +838,12 @@
       "participants": [
         {
           "@id": "resin:Participants/10040/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_agent_first_communicator",
           "entity": "resin:Entities/00001/Candidate"
         },
         {
           "@id": "resin:Participants/10051/Election",
-          "roleName": "election",
+          "roleName": "A1_ppt_topic_utterance",
           "entity": "resin:Entities/00007/Election"
         }
       ],
@@ -868,7 +862,7 @@
       "participants": [
         {
           "@id": "resin:Participants/10109/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_agent",
           "entity": "resin:Entities/00001/Candidate"
         }
       ],
@@ -887,7 +881,7 @@
       "participants": [
         {
           "@id": "resin:Participants/10110/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_agent",
           "entity": "resin:Entities/00001/Candidate"
         }
       ],
@@ -899,19 +893,18 @@
       "@id": "resin:Events/20032",
       "name": "lawsuit",
       "description": "civil action brought in a court of law",
-      "comment": "Not in xpo",
       "ta1explanation": "civil action brought in a court of law",
       "qnode": "wd:Q697327",
       "qlabel": "lawsuit",
       "participants": [
         {
           "@id": "resin:Participants/10111/Candidate",
-          "roleName": "political_candidate",
+          "roleName": "A0_pag_prosecutor",
           "entity": "resin:Entities/00001/Candidate"
         }, 
         {
           "@id": "resin:Participants/10112/VotingResult",
-          "roleName": "voting_result",
+          "roleName": "A1_vsp_type/grounds/accusation",
           "entity": "resin:Entities/00006/VotingResult"
         }
       ],
@@ -929,7 +922,7 @@
       "participants": [
         {
           "@id": "resin:Participants/10113/Country",
-          "roleName": "country",
+          "roleName": "A0_ppt_theme_overthrown_government",
           "entity": "resin:Entities/00009/Country"
         }
       ],
