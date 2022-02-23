@@ -1,0 +1,604 @@
+{
+  "events": [
+    {
+      "name": "voting",
+      "wd_node": "Q189760",
+      "definition": "method for a group such as a meeting or an electorate to make a decision or express an opinion",
+      "arguments": [
+        "A0_pag_agent_voter",
+        "A1_ppt_theme_candidate_or_ballot_issue",
+        "A2_prd_result_numerical_count_of_vote",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_voter> voted for <A1_ppt_theme_candidate_or_ballot_issue> candidate on <A1_ppt_theme_candidate_or_ballot_issue> ballot with <A2_prd_result_numerical_count_of_vote> results in <AM_loc__location> place",
+      "keywords": [
+        "vote",
+        "cast vote",
+        "elect",
+        "appoint",
+        "coronate",
+        "crown",
+        "install"
+      ],
+      "additional_info": {
+        "framenet": "",
+        "verbnet": "appoint-29.1",
+        "propbank": "vote.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "Submitting_documents",
+      "wd_node": "Q189760",
+      "definition": "A Submittor gives Documents to an Authority so that they can be processed as part of an application, evaluation or other official or bureaucratic process.   'I  was sure I had passed as soon as I handed in the test. DNI'  'She stated that she turned in the paperwork yesterday.'  'After the applicant's submission to the department, the department chairperson must evaluate.'  'I acknowledge my submission of the Material to you shall not lead to a concurrent review by any of your affiliate and subsidiary channels.'",
+      "arguments": [
+        "A0_pag_agent_giver",
+        "A1_ppt_theme_given",
+        "A2_gol-recipient-given_to",
+        "A3_prp__purpose",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_giver> submitted <A1_ppt_theme_given> document(s) to <A2_gol-recipient-given_to> authority for the purpose of <A3_prp__purpose> in <AM_loc__location> place",
+      "keywords": [
+        "submit",
+        "file",
+        "hand in",
+        "turn in"
+      ],
+      "additional_info": {
+        "framenet": "Submitting_documents",
+        "verbnet": "contribute-13.2-1-1",
+        "propbank": "submit.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "nomination",
+      "wd_node": "Q1156895",
+      "definition": "part of the process of selecting a candidate",
+      "arguments": [
+        "A0_pag_agent_nominator",
+        "A1_ppt_theme_candidate",
+        "A2_prd_result_role_of_arg1",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_nominator> nominates <A1_ppt_theme_candidate> candidate for <A2_prd_result_role_of_arg1>  role in <AM_loc__location> place",
+      "keywords": [
+        "nominate",
+        "appoint",
+        "designate",
+        "name",
+        "accredit"
+      ],
+      "additional_info": {
+        "framenet": "Appointing",
+        "verbnet": "appoint-29.1",
+        "propbank": "nominate.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "ratification",
+      "wd_node": "Q193170",
+      "definition": "process of giving effect to documentation in international law",
+      "arguments": [
+        "A0_pag__approver",
+        "A1_ppt__entity_ratified",
+        "A2_gol__beneficiary",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__approver> ratifies <A1_ppt__entity_ratified> document or proposal constructed by <A2_gol__beneficiary> in <AM_loc__location> place",
+      "keywords": [
+        "ratify",
+        "ratification"
+      ],
+      "additional_info": {
+        "framenet": "Ratification",
+        "verbnet": "",
+        "propbank": "ratify.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "referendum",
+      "wd_node": "Q43109",
+      "definition": "direct and universal vote in which an entire electorate is invited to vote on a particular proposal",
+      "arguments": [
+        "A0_pag_agent_voter",
+        "A1_ppt_theme_candidate_or_ballot_issue",
+        "A2_prd_result_numerical_count_of_vote",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_voter> voted for <A1_ppt_theme_candidate_or_ballot_issue> candidate on <A1_ppt_theme_candidate_or_ballot_issue> ballot with <A2_prd_result_numerical_count_of_vote> results in <AM_loc__location> place",
+      "keywords": [
+        "vote",
+        "cast vote",
+        "elect"
+      ],
+      "additional_info": {
+        "framenet": "",
+        "verbnet": "appoint-29.1",
+        "propbank": "vote.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "appeal",
+      "wd_node": "Q329777",
+      "definition": "resort to a superior court to review the decision of an inferior court or administrative agency",
+      "arguments": [
+        "A0_pag__appealer",
+        "A1_ppt__decision_disagreed_with",
+        "A2_gol__appealed_to",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__appealer> appeals to <A2_gol__appealed_to> court to review the <A1_ppt__decision_disagreed_with> decision in <AM_loc__location> place",
+      "keywords": [
+        "appeal"
+      ],
+      "additional_info": {
+        "framenet": "Appeal",
+        "verbnet": "",
+        "propbank": "appeal.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "redistribution",
+      "wd_node": "Q7305975",
+      "definition": "process by which electoral districts are added, removed, or otherwise changed",
+      "arguments": [
+        "A0_pag__distributor",
+        "A1_ppt__entity_redistributed",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__distributor> agent redistributes <A1_ppt__entity_redistributed> electoral districts in <AM_loc__location> place",
+      "keywords": [
+        "redistribute",
+        "redistribution",
+        "redistrict"
+      ],
+      "additional_info": {
+        "framenet": "",
+        "verbnet": "",
+        "propbank": "redistribute.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "convention",
+      "wd_node": "Q625994",
+      "definition": "meeting of a group of individuals and/or companies in a certain field",
+      "arguments": [
+        "A0_pag_agent_entity_calling_the_meeting",
+        "A1_ppt_theme_the_meeting_itself",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_entity_calling_the_meeting> calls the <A1_ppt_theme_the_meeting_itself> meeting in <AM_loc__location> place",
+      "keywords": [
+        "convene",
+        "assemble",
+        "meet",
+        "come together"
+      ],
+      "additional_info": {
+        "framenet": "Assemble",
+        "verbnet": "herd-47.5.2",
+        "propbank": "convene.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "impeachment",
+      "wd_node": "Q480498",
+      "definition": "formal process in which an official is accused of unlawful activity",
+      "arguments": [
+        "A0_pag_agent_impeacher",
+        "A1_ppt_theme_impeached",
+        "A2_prd_attribute_crime",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_impeacher> officials accuse the <A1_ppt_theme_impeached> of <A2_prd_attribute_crime> unlawful activity in <AM_loc__location> place",
+      "keywords": [
+        "impeach",
+        "impeachment"
+      ],
+      "additional_info": {
+        "framenet": "",
+        "verbnet": "prosecute-33.2",
+        "propbank": "impeach.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "primary election",
+      "wd_node": "Q669262",
+      "definition": "election that narrows the field of candidates before an election for office",
+      "arguments": [
+        "A0_pag_agent_voters",
+        "A1_ppt_theme_candidate",
+        "A2_prd_result_office_or_position",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_voters> vote for <A1_ppt_theme_candidate> who is running for <A2_prd_result_office_or_position> in <AM_loc__location> place",
+      "keywords": [
+        "political primary",
+        "primary",
+        "primary election",
+        "primary election"
+      ],
+      "additional_info": {
+        "framenet": "Choosing",
+        "verbnet": "appoint-29.1",
+        "propbank": "elect.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "debate",
+      "wd_node": "Q179875",
+      "definition": "argument, or discussion, usually in an ordered or formal setting, often with more than two people, generally ending with a vote or other decision",
+      "arguments": [
+        "A0_pag_agent_discussants_debaters",
+        "A1_ppt_theme_thing_discussed",
+        "A2_com_co-agent_person_debated_against",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_discussants_debaters> debates <A2_com_co-agent_person_debated_against> on <A1_ppt_theme_thing_discussed> in <AM_loc__location> place",
+      "keywords": [
+        "debate",
+        "leaders' debate",
+        "presidential election debate",
+        "election debate",
+        "political debate"
+      ],
+      "additional_info": {
+        "framenet": "Discussion",
+        "verbnet": "battle-36.4-1",
+        "propbank": "debate.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "collusion",
+      "wd_node": "Q701521",
+      "definition": "secretive cooperation or deceitful agreement in order to deceive others, which may involve unions, wage fixing, kickbacks, or misrepresenting the independence of the relationship between the colluding parties",
+      "arguments": [
+        "A0_pag_agent_focussed_party",
+        "A1_com_co-agent_second_party",
+        "A2_ppt_theme_conspiracy",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_focussed_party> colluded with <A1_com_co-agent_second_party> over <A2_ppt_theme_conspiracy> in <AM_loc__location> place ",
+      "keywords": [
+        "collusion",
+        "collude",
+        "collusive",
+        "collusive agreement",
+        "conspire",
+        "conspiracy",
+        "in cahoots",
+        "in league"
+      ],
+      "additional_info": {
+        "framenet": "Collaboration",
+        "verbnet": "conspire-71",
+        "propbank": "collude.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "disinformation",
+      "wd_node": "Q189656",
+      "definition": "false or misleading information that is spread deliberately to deceive",
+      "arguments": [
+        "A0_pag__misinformer",
+        "A1_gol__misinformed",
+        "A2_ppt__misinformation",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__misinformer> attempted to deceived <A1_gol__misinformed> by spreading <A2_ppt__misinformation> in <AM_loc__location> place",
+      "keywords": [
+        "disinformation",
+        "disinform",
+        "misinformation",
+        "misinformed",
+        "misinform",
+        "false information",
+        "incorrect information",
+        "wrong information",
+        "prevaricate",
+        "prevarication",
+        "mislead",
+        "misrepresent",
+        "equivocate",
+        "deceive",
+        "deception",
+        "deceptive"
+      ],
+      "additional_info": {
+        "framenet": "Prevarication",
+        "verbnet": "",
+        "propbank": "misinform.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "foreign electoral intervention",
+      "wd_node": "Q28456918",
+      "definition": "activity by one nation to interfere in the electoral process of another sovereign nation",
+      "arguments": [
+        "A0_pag__nosy_individual",
+        "A1_ppt__intervene_in",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__nosy_individual> foreign country intervenes in <A1_ppt__intervene_in> elections in <AM_loc__location> place",
+      "keywords": [
+        "intervene",
+        "intervention",
+        "interfere",
+        "interference"
+      ],
+      "additional_info": {
+        "framenet": "",
+        "verbnet": "",
+        "propbank": "intervene.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "endorsement",
+      "wd_node": "Q265871",
+      "definition": "person's written or spoken statement extolling the virtue of a product, service, or person's qualifications",
+      "arguments": [
+        "A0_pag__supporter",
+        "A1_ppt__thing/person_supported",
+        "A2_prp__for_what",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__supporter> announces their support of <A1_ppt__thing/person_supported> and testifies that <A1_ppt__thing/person_supported> is qualified for <A2_prp__for_what>, in <AM_loc__location> place",
+      "keywords": [
+        "endorse",
+        "endorsement",
+        "testify",
+        "testimonial",
+        "support",
+        "supporter",
+        "supportive",
+        "back",
+        "backing",
+        "backs",
+        "believe in",
+        "in favor",
+        "side"
+      ],
+      "additional_info": {
+        "framenet": "Taking_sides",
+        "verbnet": "",
+        "propbank": "endorse.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "monitoring",
+      "wd_node": "Q2143522",
+      "definition": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+      "arguments": [
+        "A0_pag_agent_observer",
+        "A1_loc_location_thing_looked_at",
+        "A2_ppt_theme_looking_for_what",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_observer> looks closely at <A1_loc_location_thing_looked_at> process in <AM_loc__location> place, to ensure there are no <A2_ppt_theme_looking_for_what> problems",
+      "keywords": [
+        "election monitoring",
+        "monitoring",
+        "monitor",
+        "event monitoring"
+      ],
+      "additional_info": {
+        "framenet": "Scrutiny",
+        "verbnet": "assessment-34.1",
+        "propbank": "monitor.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "vote counting",
+      "wd_node": "Q2672742",
+      "definition": "process of counting votes in an election",
+      "arguments": [
+        "A0_pag_agent_counter",
+        "A1_ppt_theme_thing_counted",
+        "A2_prd__Count_itself",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_counter> counts <A1_ppt_theme_thing_counted> votes at place <AM_loc__location>, and the current count is <A2_prd__Count_itself>",
+      "keywords": [
+        "counting",
+        "count",
+        "counting votes",
+        "add up",
+        "tally",
+        "total"
+      ],
+      "additional_info": {
+        "framenet": "Adding_up",
+        "verbnet": "multiply-108",
+        "propbank": "count.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "political campaign",
+      "wd_node": "Q847301",
+      "definition": "attempt to influence the decision making process within a specific group",
+      "arguments": [
+        "A0_pag__campaigner",
+        "A1_ppt__cause_goal",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__campaigner> attempts to achieve <A1_ppt__cause_goal> in <AM_loc__location> place",
+      "keywords": [
+        "campaign",
+        "campaigning",
+        "electoral campaign",
+        "election campaign",
+        "political campaign"
+      ],
+      "additional_info": {
+        "framenet": "",
+        "verbnet": "",
+        "propbank": "campaign.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "victory",
+      "wd_node": "Q50000",
+      "definition": "success in a competition",
+      "arguments": [
+        "A0_pag__the_victor",
+        "A1_vsp__the_loser",
+        "A2_ppt__the_competition",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__the_victor> wins the <A2_ppt__the_competition> at location <AM_loc__location>, and the <A1_vsp__the_loser> loses",
+      "keywords": [
+        "win",
+        "success",
+        "triumph",
+        "victory",
+        "winning"
+      ],
+      "additional_info": {
+        "framenet": "Finish_competition",
+        "verbnet": "succeed-74-2",
+        "propbank": "victory.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "Competition",
+      "wd_node": "Q841654",
+      "definition": "This frame is concerned with the idea that people (Participant_1, Participant_2, or Participants) participate in an organized, rule-governed activity (the Competition) in order to achieve some advantageous outcome (often the Prize).  Rank and Score are different criteria by which the degree of achievement of the advantageous outcome is judged.  'He and I played tennis.' ",
+      "arguments": [
+        "A0_pag_agent_competitor",
+        "A1_com_co-agent_opponent",
+        "A2_prp__prize",
+        "A3_ppt__subject_matter_of_the_competition",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag_agent_competitor> competes with <A1_com_co-agent_opponent> over <A3_ppt__subject_matter_of_the_competition> to achieve <A2_prp__prize> in <AM_loc__location> place ",
+      "keywords": [
+        "compete",
+        "competitive",
+        "competitive event",
+        "competing",
+        "competition",
+        "competitor",
+        "contest",
+        "rival",
+        "rivalry"
+      ],
+      "additional_info": {
+        "framenet": "Competition",
+        "verbnet": "battle-36.4",
+        "propbank": "compete.01",
+        "<other_useful_mapping>": ""
+      }
+    },
+    {
+      "name": "failure",
+      "wd_node": "Q1121708",
+      "definition": "state or event of not meeting a desirable or intended objective, relative to a particular observer or belief system",
+      "arguments": [
+        "A0_pag__loser",
+        "A1_ppt__battle",
+        "A2_gol__winner",
+        "AM_loc__location"
+      ],
+      "scenario": [
+        "Election"
+      ],
+      "template": "<A0_pag__loser> lost <A1_ppt__battle> to <A2_gol__winner> in <AM_loc__location> place",
+      "keywords": [
+        "fail",
+        "failed",
+        "failure",
+        "lose",
+        "lost",
+        "loss",
+        "flop",
+        "miss",
+        "unsuccessful"
+      ],
+      "additional_info": {
+        "framenet": "Finish_competition",
+        "verbnet": "succeed-74-3-1",
+        "propbank": "lose.03",
+        "<other_useful_mapping>": ""
+      }
+    }
+  ]
+}

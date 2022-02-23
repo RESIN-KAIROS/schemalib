@@ -1,0 +1,816 @@
+{
+    "events": [
+        {
+            "name": "income",
+            "wd_node": "Q1527264",
+            "definition": "consumption and savings opportunity gained by an entity within a specified timeframe",
+            "arguments": [
+                "A0_pag_earner",
+                "A1_ppt_wages",
+                "A2_gol_benefactive",
+                "A3_dir_source",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_earner> <A1_ppt_wages> <A2_gol_benefactive> <A3_dir_source> <AM_loc>",
+            "keywords": [
+                "earnings",
+                "loss",
+                "profit",
+                "income",
+                "money"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Earnings_and_losses"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "earn.01"
+                ],
+                "ldc": [],
+                "maven": "Earnings_and_losses"
+            }
+        },
+        {
+            "name": "social_conflict",
+            "wd_node": "Q2672648",
+            "definition": "struggle for agency or power in society, when two or more actors oppose each other in social interaction",
+            "arguments": [
+                "A0_pag_agentive_clasher",
+                "A1_com_entity_clashed_with",
+                "A2_ppt_entity_clashed_over",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_agentive_clasher> <A1_com_entity_clashed_with> <A2_ppt_entity_clashed_over> <AM_loc>",
+            "keywords": [
+                "conflict",
+                "fight",
+                "disagreement",
+                "struggle",
+                "hostilities"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Quarreling"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "conflict.01"
+                ],
+                "ldc": [],
+                "maven": "Quarreling"
+            }
+        },
+        {
+            "name": "revenge",
+            "wd_node": "Q1712140",
+            "definition": "harmful action in response to a grievance",
+            "arguments": [
+                "A0_pag_vengeant_one",
+                "A1_gol_one_paid_back",
+                "A2_cau_for_what_offense",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_vengeant_one> <A1_gol_one_paid_back> <A2_cau_for_what_offense> <AM_loc>",
+            "keywords": [
+                "avenge",
+                "grievance",
+                "get even",
+                "pay back",
+                "vengeance"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Revenge"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "retribute.01"
+                ],
+                "ldc": [],
+                "maven": "Revenge"
+            }
+        },
+        {
+            "name": "safety_precaution",
+            "wd_node": "Q21010924",
+            "definition": "preventative measure taken to ensure someone's health",
+            "arguments": [
+                "A0_pag_Entity_giving_warning",
+                "A1_ppt_Topic_of_precaution",
+                "A2_gol_Precautioned_entity",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_Entity_giving_warning> <A1_ppt_Topic_of_precaution> <A2_gol_Precautioned_entity> <AM_loc>",
+            "keywords": [
+                "warn",
+                "precaution",
+                "alert",
+                "communication",
+                "threat"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Warning"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "precaution.01"
+                ],
+                "ldc": [],
+                "maven": "Warning"
+            }
+        },
+        {
+            "name": "choice",
+            "wd_node": "Q12888920",
+            "definition": "act of judging the merits of multiple options and selecting one or more of them",
+            "arguments": [
+                "A0_pag_picker",
+                "A1_ppt_thing_picked",
+                "A2_dir_group_or_source",
+                "A3_gol_benefactive",
+                "A4_prd_secondary_attribute_on_arg1",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_picker> <A1_ppt_thing_picked> <A2_dir_group_or_source> <A3_gol_benefactive> <A4_prd_secondary_attribute_on_arg1> <AM_loc>",
+            "keywords": [
+                "choice",
+                "selection",
+                "candidate",
+                "objective"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Adopt_selection",
+                    "Choosing"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "choose.01"
+                ],
+                "ldc": [],
+                "maven": "Choosing"
+            }
+        },
+        {
+            "name": "decision",
+            "wd_node": "Q16513426",
+            "definition": "result of deliberation",
+            "arguments": [
+                "A0_pag_decider",
+                "A1_ppt_the_decision_itself",
+                "A2_gol_beneficiary",
+                "A3_vsp_subject-matter_of_decision",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_decider> <A1_ppt_the_decision_itself> <A2_gol_beneficiary> <A3_vsp_subject-matter_of_decision> <AM_loc>",
+            "keywords": [
+                "decide",
+                "resolve",
+                "focus",
+                "agreement",
+                "discussion"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Deciding",
+                    "Waver_between_options"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "decide.01"
+                ],
+                "ldc": [],
+                "maven": "Deciding"
+            }
+        },
+        {
+            "name": "buy",
+            "wd_node": "Q12887029",
+            "definition": "None",
+            "arguments": [
+                "A0_pag_buyer",
+                "A1_ppt_thing_bought",
+                "A2_dir_seller",
+                "A3_vsp_price_paid",
+                "A4_gol_benefactive",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_buyer> <A1_ppt_thing_bought> <A2_dir_seller> <A3_vsp_price_paid> <A4_gol_benefactive> <AM_loc>",
+            "keywords": [
+                "purchase",
+                "equipment",
+                "tools",
+                "means",
+                "how-to"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Post_getting",
+                    "Getting"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "buy.01"
+                ],
+                "ldc": [],
+                "maven": "Getting"
+            }
+        },
+        {
+            "name": "monitoring",
+            "wd_node": "Q2143522",
+            "definition": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "arguments": [
+                "A0_pag_observer",
+                "A1_loc_thing_looked_at",
+                "A2_ppt_looking_for_what?",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_observer> <A1_loc_thing_looked_at> <A2_ppt_looking_for_what?> <AM_loc>",
+            "keywords": [
+                "surveillance",
+                "cyber surveillance",
+                "physical surveillance",
+                "spy",
+                "observe"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Scrutiny",
+                    "Court_examination",
+                    "Scrutinizing_for",
+                    "Inspecting"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "monitor.01"
+                ],
+                "ldc": [],
+                "maven": "Scrutiny"
+            }
+        },
+        {
+            "name": "sexual_assault",
+            "wd_node": "Q673281",
+            "definition": "act of coercing or physically forcing a person to engage in sexual activity",
+            "arguments": [
+                "A0_pag_assaulter",
+                "A1_ppt_entity_assaulted",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_assaulter> <A1_ppt_entity_assaulted> <AM_loc>",
+            "keywords": [
+                "rape",
+                "molest",
+                "sex crime",
+                "indecent",
+                "assault"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Violence"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "assault.01"
+                ],
+                "ldc": [],
+                "maven": "Violence"
+            }
+        },
+        {
+            "name": "attack",
+            "wd_node": "Q1174599",
+            "definition": "action to injure another organism",
+            "arguments": [
+                "A0_pag_agent_assaulter",
+                "A1_ppt_theme_entity_assaulted",
+                "AM_mnr__manner",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_agent_assaulter> <A1_ppt_theme_entity_assaulted> <AM_mnr__manner> <AM_loc>",
+            "keywords": [
+                "kill",
+                "maim",
+                "injure",
+                "hurt",
+                "harm"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Violence"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "attack.01"
+                ],
+                "ldc": [],
+                "maven": "Violence"
+            }
+        },
+        {
+            "name": "kidnapping",
+            "wd_node": "Q318296",
+            "definition": "taking away or transportation of a person against that person's will",
+            "arguments": [
+                "A0_pag_kidnapper",
+                "A1_ppt_person_kidnapped",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_kidnapper> <A1_ppt_person_kidnapped> <AM_loc>",
+            "keywords": [
+                "abduction",
+                "sequester",
+                "abscond",
+                "hostage",
+                "against will"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Violence"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "kidnap.01"
+                ],
+                "ldc": [],
+                "maven": "Violence"
+            }
+        },
+        {
+            "name": "motion",
+            "wd_node": "Q79782",
+            "definition": "change in position of an object over time; a body is said to be in motion if it changes its position with respect to its immediate surroundings",
+            "arguments": [
+                "A0_pag_mover",
+                "A1_ppt_moved",
+                "A2_gol_destination",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_mover> <A1_ppt_moved> <A2_gol_destination> <AM_loc>",
+            "keywords": [
+                "transport",
+                "temporary stay",
+                "safehouse",
+                "moving"
+            ],
+            "additional_info": {
+                "framenet": [],
+                "verbnet": "",
+                "propbank": [
+                    "move.01"
+                ],
+                "ldc": [],
+                "maven": "Spatial"
+            }
+        },
+        {
+            "name": "ransom",
+            "wd_node": "Q1414572",
+            "definition": "practice of holding a prisoner or item to extort money or property",
+            "arguments": [
+                "A0_pag_entity_paying_for_the_release_of_the_captive",
+                "A1_ppt_the_captive",
+                "A2_vsp_money_demanded/paid",
+                "A3_dir_kidnapper",
+                "A4_vsp_terrible_fate_arg1_avoids_via_ransom",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_entity_paying_for_the_release_of_the_captive> <A1_ppt_the_captive> <A2_vsp_money_demanded/paid> <A3_dir_kidnapper> <A4_vsp_terrible_fate_arg1_avoids_via_ransom> <AM_loc>",
+            "keywords": [
+                "money",
+                "payment",
+                "negotiations",
+                "dropoff point"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Post_getting",
+                    "Getting"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "ransom.01"
+                ],
+                "ldc": [],
+                "maven": "Getting"
+            }
+        },
+        {
+            "name": "surrender",
+            "wd_node": "Q3769366",
+            "definition": "cessation of fighting by the losing party",
+            "arguments": [
+                "A0_pag_agent_one_surrendering",
+                "A2_gol_recipient_victor",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_agent_one_surrendering> <A2_gol_recipient_victor> <AM_loc__location>",
+            "keywords": [
+                "give up",
+                "lay down weapon",
+                "hands up",
+                "arrest"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Surrendering_possession",
+                    "Surrendering"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "surrender.01",
+                    "yield.02"
+                ],
+                "ldc": [
+                    "Conflict.Yield.Unspecified",
+                    "Conflict.Yield.Surrender"
+                ],
+                "maven": "Surrendering"
+            }
+        },
+        {
+            "name": "violent_death",
+            "wd_node": "Q74948922",
+            "definition": "death caused by violence",
+            "arguments": [
+                "A0_pag_agent_killer",
+                "A1_ppt_patient_corpse",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_agent_killer> <A1_ppt_patient_corpse> <A2_mnr_instrument_instrument> <AM_loc__location>",
+            "keywords": [
+                "kill",
+                "murder",
+                "manslaughter",
+                "homicide",
+                "death"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Violence"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "kill.01"
+                ],
+                "ldc": [
+                    "Life.Die.DeathCausedByViolentEvents"
+                ],
+                "maven": "Violence"
+            }
+        },
+        {
+            "name": "agreement",
+            "wd_node": "Q2006324",
+            "definition": "understanding between entities to follow a specific course of conduct",
+            "arguments": [
+                "A0_pag_agreer",
+                "A1_ppt_proposition",
+                "A2_com_other_entity_agreeing",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_agreer> <A1_ppt_proposition> <A2_com_other_entity_agreeing> <AM_loc>",
+            "keywords": [
+                "agree",
+                "disagree",
+                "negotiate",
+                "discuss",
+                "resolve"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Agree_or_refuse_to_act"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "agree.01"
+                ],
+                "ldc": [],
+                "maven": "Agree_or_refuse_to_act"
+            }
+        },
+        {
+            "name": "parley",
+            "wd_node": "Q3400581",
+            "definition": "type of diplomatic meeting held between enemies",
+            "arguments": [
+                "A0_pag_negotiator",
+                "A1_com_explicit_other_party",
+                "A2_ppt_agreement",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_negotiator> <A1_com_explicit_other_party> <A2_ppt_agreement> <AM_loc>",
+            "keywords": [
+                "negotiate",
+                "negotiations",
+                "talk",
+                "listen",
+                "demands"
+            ],
+            "additional_info": {
+                "framenet": [],
+                "verbnet": "",
+                "propbank": [
+                    "negotiate.01"
+                ],
+                "ldc": [],
+                "maven": "Suasion"
+            }
+        },
+        {
+            "name": "police_action",
+            "wd_node": "Q3309962",
+            "definition": "military action taken without a declaration of war",
+            "arguments": [
+                "A0_pag_director",
+                "A1_ppt_entity_maneuvered",
+                "A2_gol_destination",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_director> <A1_ppt_entity_maneuvered> <A2_gol_destination> <AM_loc>",
+            "keywords": [
+                "SWAT",
+                "police",
+                "armed",
+                "response",
+                "officers"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Military_operation"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "maneuver.01"
+                ],
+                "ldc": [],
+                "maven": "Military_operation"
+            }
+        },
+        {
+            "name": "exchange_of_goods",
+            "wd_node": "Q21651837",
+            "definition": "transfer of equivalent goods to each other",
+            "arguments": [
+                "A0_pag_agent_agent",
+                "A2_com_co_agent_other_exchanger",
+                "A1_ppt_theme_thing_being_traded",
+                "A3_ppt_co_theme_other_item_in_exchange_price_or_premium",
+                "A4_gol__benefactive",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_agent_agent> <A2_com_co_agent_other_exchanger> <A1_ppt_theme_thing_being_traded> <A3_ppt_co_theme_other_item_in_exchange_price_or_premium> <A4_gol__benefactive> <AM_loc__location>",
+            "keywords": [
+                "exchange",
+                "trade",
+                "handover",
+                "demands",
+                "supply"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Exchange",
+                    "Exchange_currency"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "exchange.01"
+                ],
+                "ldc": [
+                    "Transaction.ExchangeBuySell.Unspecified"
+                ],
+                "maven": "Exchange"
+            }
+        },
+        {
+            "name": "punishment",
+            "wd_node": "Q186361",
+            "definition": "imposition of an undesirable or unpleasant outcome as a response and deterrent to an action or behaviour that is deemed undesirable or unacceptable",
+            "arguments": [
+                "A0_pag_punisher",
+                "A1_ppt_punished",
+                "A2_cau_punished-for",
+                "A3_mnr_mention_of_punishment_itself",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_punisher> <A1_ppt_punished> <A2_cau_punished-for> <A3_mnr_mention_of_punishment_itself> <AM_loc>",
+            "keywords": [
+                "hurt",
+                "punish",
+                "rewards",
+                "pay back"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Corporal_punishment",
+                    "Rewards_and_punishments",
+                    "Execution",
+                    "Fining"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "punish.01"
+                ],
+                "ldc": [],
+                "maven": "Rewards_and_punishments"
+            }
+        },
+        {
+            "name": "criminal_investigation",
+            "wd_node": "Q1415338",
+            "definition": "in the legal sense exploration of a fact",
+            "arguments": [
+                "A0_pag_examiner",
+                "A1_ppt_examined",
+                "A2_ppt_examined_for",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_examiner> <A1_ppt_examined> <A2_ppt_examined_for> <AM_loc>",
+            "keywords": [
+                "detectives",
+                "investigation",
+                "crime scene",
+                "police report",
+                "FBI"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Criminal_investigation"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "investigate.01"
+                ],
+                "ldc": [],
+                "maven": "Criminal_investigation"
+            }
+        },
+        {
+            "name": "criminal_case",
+            "wd_node": "Q16738832",
+            "definition": "investigation case under criminal law",
+            "arguments": [
+                "A0_pag_criminal",
+                "A1_ppt_act",
+                "A2_gol_crime_against",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_criminal> <A1_ppt_act> <A2_gol_crime_against> <AM_loc>",
+            "keywords": [
+                "judge",
+                "justice",
+                "legal case",
+                "criminal",
+                "defendant"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Legality"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "crime.02"
+                ],
+                "ldc": [],
+                "maven": "Legality"
+            }
+        },
+        {
+            "name": "legal_proceeding",
+            "wd_node": "Q6087062",
+            "definition": "evaluation of evidence to make a decision",
+            "arguments": [
+                "A0_pag_litigant",
+                "A1_ppt_entity_tried",
+                "A2_gol_adjudicator",
+                "A3_cau_tried_for",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_litigant> <A1_ppt_entity_tried> <A2_gol_adjudicator> <A3_cau_tried_for> <AM_loc>",
+            "keywords": [
+                "court",
+                "case",
+                "lawyer",
+                "hearing",
+                "examination"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Legal_rulings"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "try.02"
+                ],
+                "ldc": [],
+                "maven": "Legal_rulings"
+            }
+        },
+        {
+            "name": "legal_proceeding",
+            "wd_node": "Q6087062",
+            "definition": "evaluation of evidence to make a decision",
+            "arguments": [
+                "A0_pag_litigant",
+                "A1_ppt_entity_tried",
+                "A2_gol_adjudicator",
+                "A3_cau_tried_for",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Kidnapping"
+            ],
+            "template": "<A0_pag_litigant> <A1_ppt_entity_tried> <A2_gol_adjudicator> <A3_cau_tried_for> <AM_loc>",
+            "keywords": [
+                "judgment",
+                "court",
+                "jury",
+                "witness"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Legal_rulings"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "try.02"
+                ],
+                "ldc": [],
+                "maven": "Legal_rulings"
+            }
+        }
+    ]
+}

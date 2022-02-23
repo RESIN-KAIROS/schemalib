@@ -1,0 +1,501 @@
+{
+    "events": [
+        {
+            "name": "attack",
+            "wd_qnode": "Q1174599",
+            "definition": "action to injure another organism",
+            "arguments": [
+                "A0_pag_agent_assaulter",
+                "A1_ppt_theme_entity_assaulted",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_assaulter> attacked <A1_ppt_theme_entity_assaulted> using instruments <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["attack", "strike", "assault"],
+            "additional_info":{
+                "propbank": ["assault.01"],
+                "ldc_type": "Conflict.Attack.Unspecified"
+            }
+        },
+        {
+            "name": "demonstration",
+            "wd_qnode": "Q175331",
+            "definition": "collective action by people in favor of a cause",
+            "arguments": [
+                "A0_pag_agent_protester",
+                "A1_ppt_theme_objectionable_thing",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_protester> demonstrated about <A1_ppt_theme_objectionable_thing> at <AM_loc__location>.",
+            "keywords": ["demonstrate", "protest", "rally", "march", "parade"],
+            "additional_info":{
+                "propbank": ["protest.01"],
+                "ldc_type": "Conflict.Demonstrate.Unspecified"
+            }
+        },
+        {
+            "name": "assembly",
+            "wd_qnode": "Q3625549",
+            "definition": "the act of combining components in manufacturing",
+            "arguments": [
+                "A0_pag_agent_builder",
+                "A1_prd_product_construction",
+                "A2_vsp_material_material",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_builder> assembled <A1_prd_product_construction> from materials <A2_vsp_material_material> using instrucments <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["assembly", "assemble", "manufacture", "make", "produce", "build", "construct"],
+            "additional_info":{
+                "propbank": ["assembly.01", "assemble.01", "manufacture.01"],
+                "ldc_type": "ArtifactExistence.ManufactureAssemble.Unspecified"
+            }
+        },
+        {
+            "name": "damage",
+            "wd_qnode": "Q481609",
+            "definition": "changes introduced into a system that adversely affect its current or future performance",
+            "arguments": [
+                "A0_pag_agent_agent_causer",
+                "A1_ppt_patient_entity_damaged",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_agent_causer> demaged <A1_ppt_patient_entity_damaged> using instruments <A2_mnr_instrument_instrument> at <AM_loc__location>.",
+            "keywords": ["damage", "annihilate", "destroy", "disable", "defuse", "disassemble", "dismantle"],
+            "additional_info":{
+                "propbank": [
+                	"damage.01",
+                	"annihilate.01",
+		            "destroy.01",
+		            "disable.01",
+		            "defuse.01",
+		            "disassemble.01",
+		            "dismantle.01"
+		        ],
+                "ldc_type": "ArtifactExistence.DamageDestroyDisableDismantle.Unspecified"
+            }
+        },
+        {
+            "name": "education",
+            "wd_qnode": "Q8434",
+            "definition": "learning in which knowledge and skills are transferred through teaching",
+            "arguments": [
+                "A0_pag_agent_teacher",
+                "A1_ppt_topic_subject",
+                "A2_gol_recipient_student",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A2_gol_recipient_student> learned <A1_ppt_topic_subject> from <A0_pag_agent_teacher> using <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["teach", "educate", "learn", "train"],
+            "additional_info":{
+                "propbank": ["teach.01", "educate.01"],
+                "ldc_type": "Cognitive.TeachingTrainingLearning.Unspecified"
+            }
+        },
+        {
+            "name": "Inspection",
+            "wd_qnode": "Q1137655",
+            "definition": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+            "arguments": [
+                "A0_pag_experiencer_observer",
+                "A1_ppt_stimulus_thing_looked_at",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_experiencer_observer> inspected <A1_ppt_stimulus_thing_looked_at> using <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["inspect", "observe", "watch", "check"],
+            "additional_info":{
+                "propbank": ["inspect.01", "watch.01"],
+                "ldc_type": "Cognitive.Inspection.Unspecified"
+            }
+        },
+        {
+            "name": "communication",
+            "wd_qnode": "Q11024",
+            "definition": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "arguments": [
+                "A0_pag_agent_first_communicator",
+                "A1_ppt_topic_utterance",
+                "A2_com_co_agent_other_communicators",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_first_communicator> communicated <A2_com_co_agent_other_communicators> about <A1_ppt_topic_utterance> at <AM_loc__location>.",
+            "keywords": ["communicate", "meet", "talk", "call"],
+            "additional_info":{
+                "propbank": ["communicate.01"],
+                "ldc_type": "Contact.Contact.Unspecified"
+            }
+        },
+        {
+            "name": "announcement",
+            "wd_node": "Q567303",
+            "definition": "printed, spoken, or published statement or notice of an event or other news",
+            "arguments": [
+                "A0_pag_agent_announcer",
+                "A2_gol_recipient_hearer",
+                "AM_mnr__manner",
+                "A1_ppt_topic_utterance"
+            ],
+            "scenario":[
+                "Civil Unrest",
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "IED Bombing",
+                "International Invasion",
+                "Terrorism Attacks"
+            ],
+            "template": "<A0_pag_agent_announcer> announced <A1_ppt_topic_utterance> to <A2_gol_recipient_hearer> using <AM_mnr__manner>.",
+            "keywords": ["announce", "declare", "broadcast"],
+            "additional_info": {
+                "propbank": "announce.01",
+                "ldc_type": "Contact.Contact.Broadcast"
+            }
+        },
+        {
+            "name": "request",
+            "wd_qnode": "Q22445448",
+            "definition": "act of asking politely or formally for something",
+            "arguments": [
+            	"A0_pag_agent_asker",
+                "A2_gol_recipient_hearer",
+                "AM_mnr__manner",
+                "A1_ppt_topic_favor",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_asker> requested <A1_ppt_topic_favor> from <A2_gol_recipient_hearer> through <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["request", "command"],
+            "additional_info":{
+                "propbank": ["command.02","request.01"],
+                "ldc_type": "Contact.RequestCommand.Unspecified"
+            }
+        },
+        {
+            "name": "threat",
+            "wd_qnode": "Q707125",
+            "definition": "one person's statement that they intend to harm another, or another's property",
+            "arguments": [
+                "A0_pag_agent_persuasive_entity",
+                "A1_ppt_patient_impelled_person",
+                "AM_mnr__manner",
+                "A2_prd_result_action_or_Result",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_persuasive_entity> threated <A1_ppt_patient_impelled_person> using <AM_mnr__manner> at <AM_loc__location>, resulting in <A2_prd_result_action_or_Result>.",
+            "keywords": ["bully", "coerce"],
+            "additional_info":{
+                "propbank": ["bully.01", "coerce.01"],
+                "ldc_type": "Contact.ThreatenCoerce.Unspecified"
+            }
+        },
+        {
+            "name": "transport",
+            "wd_node": "Q7590",
+            "definition": "human-directed movement of things or people between locations",
+            "arguments": [
+                "A0_pag_agent_transporter",
+                "A1_ppt_theme_thing_transported",
+                "AM_mnr__manner",
+                "A2_dir_source_initial_location",
+                "A3_gol_destination_destination"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Terrorism Attacks",
+                "International Invasion",
+                "IED Bombing",
+                "Kidnapping",
+                "Election"
+            ],
+            "template": "<A0_pag_agent_transporter> transported <A1_ppt_theme_thing_transported> using <AM_mnr__manner> from <A2_dir_source_initial_location> to <A3_gol_destination_destination>.",
+            "keywords": [
+                "transport",
+                "move",
+                "drive"
+            ],
+            "additional_info":{
+                "propbank": "transport.01",
+                "ldc_type": "Movement.Transportation.Unspecified"
+            }
+        },
+        {
+            "name": "death",
+            "wd_node": "Q4",
+            "definition": "permanent cessation of vital functions",
+            "arguments": [
+                "A1_ppt_the_deceased",
+                "AM_loc__location",
+                "AM_cau__cause"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Terrorism Attacks",
+                "International Invasion",
+                "IED Bombing",
+                "Kidnapping"
+            ],
+            "template": "<A1_ppt_the_deceased> died because of <AM_cau__cause> at <AM_loc__location>.",
+            "keywords":[
+                "die",
+                "death",
+                "decease"
+            ],
+            "additional_info":{
+                "propbank": "die.01",
+                "ldc_type": "Life.Die.Unspecified"
+            }
+        },
+        {
+            "name": "identification",
+            "wd_node": "Q3265221",
+            "definition": "make something known, confirm its identity.",
+            "arguments":[
+                "A0_pag_agent_caller",
+                "A1_ppt_theme_item_being_labelled",
+                "A2_prd_attribute_attribute",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "IED Bombing",
+                "Terrorism Attacks"
+            ],
+            "template": "<A0_pag_agent_caller> identified <A1_ppt_theme_item_being_labelled> as <A2_prd_attribute_attribute> at <AM_loc__location>.",
+            "keywords": ["identify", "recognize", "label"],
+            "additional_info":{
+                "propbank": "identify.01",
+                "ldc_type": "Cognitive.IdentifyCategorize.Unspecified"
+            }
+        },
+        {
+            "name": "exchange_of_goods",
+            "wd_node": "Q21651837",
+            "definition": "transfer of goods to each other, trading products.",
+            "arguments": [
+                "A0_pag_agent_agent",
+                "A2_com_co_agent_other_exchanger",
+                "A1_ppt_theme_thing_being_traded",
+                "A3_ppt_co_theme_other_item_in_exchange_price_or_premium"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Terrorism Attacks",
+                "International Invasion",
+                "IED Bombing",
+                "Kidnapping",
+                "Election"
+            ],
+            "template": "<A0_pag_agent_agent> exchanged <A1_ppt_theme_thing_being_traded> with <A2_com_co_agent_other_exchanger> for <A3_ppt_co_theme_other_item_in_exchange_price_or_premium>.",
+            "keywords": [
+                "buy",
+                "sell",
+                "purchase",
+                "trade"
+            ],
+            "additional_info":{
+                "propbank": "exchange.01",
+                "ldc_type": "Transaction.ExchangeBuySell.Unspecified"
+            }
+        },
+        {
+            "name": "injury",
+            "wd_qnode": "Q193078",
+            "definition": "physiological wound caused by an external source",
+            "arguments": [
+                "A1_ppt_experiencer_injured_party",
+                "A0_pag_stimulus_stimulus_of_injury",
+                "A2_mnr__instrument",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A1_ppt_experiencer_injured_party> injured <A0_pag_stimulus_stimulus_of_injury> using <A2_mnr__instrument> at <AM_loc__location>.",
+            "keywords": ["injure", "wound"],
+            "additional_info":{
+                "propbank": ["injure.01", "wound.01"],
+                "ldc_type": "Life.Injure.Unspecified"
+            }
+        },
+        {
+            "name": "imprisonment",
+            "wd_qnode": "Q841236",
+            "definition": "restraint of a person's liberty by judicial or other detention",
+            "arguments": [
+                "A0_pag_agent_police",
+                "A1_ppt_patient_entity_detained",
+                "A2_cau_theme_detained_for_what",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_police> arrested <A1_ppt_patient_entity_detained> for <A2_cau_theme_detained_for_what> at <AM_loc__location>.",
+            "keywords": ["arrest", "detain"],
+            "additional_info":{
+                "propbank": ["arrest.01", "detain.01"],
+                "ldc_type": "Justice.ArrestJailDetain.Unspecified"
+            }
+        },
+        {
+            "name": "accusation",
+            "wd_qnode": "Q19357312",
+            "definition": "act of accusing or charging another with a crime",
+            "arguments": [
+                "A0_pag_agent_accuser",
+                "A1_ppt_theme_accused",
+                "A2_prd_attribute_crime",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_accuser> accused <A1_ppt_theme_accused> of <A2_prd_attribute_crime> at <AM_loc__location>.",
+            "keywords": ["charge", "accuse"],
+            "additional_info":{
+                "propbank": ["charge.01", "accuse.01"],
+                "ldc_type": "Justice.InitiateJudicialProcess.ChargeIndict"
+            }
+        },
+        {
+            "name": "trial",
+            "wd_qnode": "Q8016240",
+            "definition": "coming together of parties to a dispute, to present information in a tribunal",
+            "arguments": [
+            	"A0_pag__litigant",
+                "A1_ppt__entity_tried",
+                "A2_gol__adjudicator",
+                "A3_cau_tried_for",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A1_ppt__entity_tried> tried <A0_pag__litigant> before <A2_gol__adjudicator> court or judge for <A3_cau_tried_for> crime in <AM_loc__location> place.",
+            "keywords": ["hearing", "prosecute", "trial hearing"],
+            "additional_info":{
+                "propbank": ["hearing.02", "prosecute.01"],
+                "ldc_type": "Justice.InitiateJudicialProcess.TrialHearing"
+            }
+        },
+        {
+            "name": "conviction",
+            "wd_qnode": "Q2916183",
+            "definition": "verdict that results when a court of law finds a defendant guilty of a crime",
+            "arguments": [
+                "A0_pag__judge",
+                "A1_ppt__person_convicted",
+                "A2_cau__convicted_of",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag__judge> court or judge convicted <A1_ppt__person_convicted> of <A2_cau__convicted_of> crime in <AM_loc__location> place",
+            "keywords": ["convict"],
+            "additional_info":{
+                "propbank": ["convict.01"],
+                "ldc_type": "Justice.JudicialConsequences.Convict"
+            }
+        },
+        {
+            "name": "sentence",
+            "wd_qnode": "Q1763090",
+            "definition": "decree of punishment in law",
+            "arguments": [
+            	"A0_pag__judge",
+                "A1_ppt__criminal",
+                "A3_cau__crime",
+                "A2_ppt__punishment",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A1_ppt__criminal> were sentenced to <A2_ppt__punishment> for <A3_cau__crime> by <A0_pag__judge> at <AM_loc__location>.",
+            "keywords": ["sentence"],
+            "additional_info":{
+                "propbank": ["sentence.01"],
+                "ldc_type": "Justice.Sentence.Unspecified"
+            }
+        },
+        {
+            "name": "release_from_prison",
+            "wd_qnode": "Q3237993",
+            "definition": "process of releasing an inmate from prison",
+            "arguments": [
+                "A0_cau_cause_releaser",
+                "A1_ppt_theme_thing_released",
+                "AM_cau__cause",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_cau_cause_releaser> released <A1_ppt_theme_thing_released> because of <AM_cau__cause> at <AM_loc__location>.",
+            "keywords": ["release"],
+            "additional_info":{
+                "propbank": ["release.01"],
+                "ldc_type": "Justice.ReleaseParole.Unspecified"
+            }
+        },
+        {
+            "name": "prevention",
+            "wd_qnode": "Q1717246",
+            "definition": "causing an event or condition that would otherwise occur to not occur",
+            "arguments": [
+                "A0_pag_agent_agent",
+                "A1_ppt_theme_theme", 
+                "A2_ppt_secondary_predication_or_action", 
+                "A3_mnr__instrument", 
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_agent> impeded or interfered with <A1_ppt_theme_theme> by doing <A2_ppt_secondary_predication_or_action> using <A3_mnr__instrument> at <AM_loc__location>.",
+            "keywords": ["impede", "prevent", "delay", "interfer"],
+            "additional_info":{
+                "propbank": ["impede.01", "prevent.01"],
+                "ldc_type": "Control.ImpedeInterfereWith.Unspecified"
+            }
+        }
+    ]
+}

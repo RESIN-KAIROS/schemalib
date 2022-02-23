@@ -1,0 +1,391 @@
+{
+    "events": [
+	{
+            "name": "employment",
+            "wd_node": "Q656365",
+            "definition": "relationship between the employee and the employer",
+            "arguments": [
+                "A0_pag_employer",
+                "A1_ppt_employee",
+                "A2_prd_job"
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_employer> employs <A1_ppt_employee> to do <A2_prd_job> at <AM_loc__location>",
+            "keywords":["commission","employ","work","clerk","subcontract","contract","temp"],
+            "additional_info":{
+                "framenet":"Being_employed, Employing",
+                "verbnet":"Hire-13.5.3",
+                "propbank":"employ.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "buy",
+            "wd_node": "Q12887029",
+            "definition": "a commercial transaction involving an exchange of money and goods",
+            "arguments": [
+                "A0_pag_buyer",
+                "A1_ppt_thing_bought",
+                "A2_dir_seller",
+				"A3_vsp_price_paid",
+				"A4_gol_benefactive" 
+				],
+            "scenario":[
+                "Business Change",
+				"IED Bombing",
+				"Terrorist Attacks",
+				"Mass Shooting"
+            ],
+            "template":"<A0_pag_buyer> acquires <A1_ppt_thing_bought> from <A2_dir_seller> in exchange for <A3_vsp_price_paid> for the benefit of <A4_gol_benefactive> at <AM_loc__location>",
+            "keywords":["buy","purchase","lease","rent","procure"],
+            "additional_info":{
+                "framenet":"Commerce_buy",
+                "verbnet":"Get-13.5.1",
+                "propbank":"buy.01",
+                "<other_useful_mapping>":""
+            }
+        },
+        {
+            "name": "sell",
+            "wd_node": "Q3380760",
+            "definition": "exchange goods for money",
+            "arguments": [
+                "A0_pag_seller",
+                "A1_ppt_thing_sold",
+                "A2_gol_buyer",
+				"A3_vsp_price_paid",
+				"A4_gol_benefactive" 
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_seller> sells <A1_ppt_thing_sold> to <A2_dir_buyer> in exchange for <A3_vsp_price_paid> for the benefit of <A4_gol_benefactive> at <AM_loc__location>",
+            "keywords":["sell","auction","retail","vend","hawk","rent","lease"],
+            "additional_info":{
+                "framenet":"Commerce_sell",
+                "verbnet":"Give-13.1",
+                "propbank":"sell.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "merge",
+            "wd_node": "Q452440",
+            "definition": "combination of two or more political or administrative entities",
+            "arguments": [
+                "A1_ppt_ingredient_one",
+                "A2_ppt_ingredient_two" 
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A1_ppt_ingredient_one> merges with <A2_ppt_ingredient_two>",
+            "keywords":["merge","combine","consolidate","join","unite"],
+            "additional_info":{
+                "framenet":"Amalgamation",
+                "verbnet":"Mix-22.1",
+                "propbank":"merge.01",
+                "<other_useful_mapping>":""
+            }
+        },
+				{
+            "name": "communication",
+            "wd_node": "Q11024",
+            "definition": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "arguments": [
+                "A0_pag_agent_first_communicator",
+				"A1_ppt_topic_utterance",
+                "A2_com_co_agent_other_communicators" 
+				],
+            "scenario":[
+                "Business Change",
+				"IED Bombing",
+				"Civil Unrest",
+				"International Invasion",
+				"Disaster_and_Rescue",
+				"Terrorism Attacks",
+				"Election",
+				"Kidnapping",
+				"Mass Shooting"
+            ],
+            "template":"<A0_pag_agent_first_communicator> communicates <A1_ppt_topic_utterance> to <A2_com_co_agent_other_communicators>",
+            "keywords":["communicate","tell","state","indicate","share","signal","convey","debate","discuss","exchange","negotiate","parley","talk","announce","address","comment","declare","explain","describe","message","proclaim","recount","reiterate","remark","report"],
+            "additional_info":{
+                "framenet":"Communication, Communication_manner, Communication_response, Discussion, Reporting, Speak_on_topic, Statement",
+                "verbnet":"Transfer_msg-37.1.1, Tell-37.2, Manner_speaking-37.3, Instrument_communication-37.4.1, Talk-37.5, Chit_chat-37.6, Say-37.7, Lecture-37.11, Promise-37.13",
+                "propbank":"communicate.01",
+                "<other_useful_mapping>":""
+            }
+        },
+{
+            "name": "create",
+            "wd_node": "Q11398090",
+            "definition": "process in which a creator creates a new entity",
+            "arguments": [
+                "A0_pag_creator",
+                "A1_ppt_thing_created",
+                "A2_vsp_materials_used",
+				"A3_gol_benefactive"
+				],
+            "scenario":[
+                "Business Change",
+	    "IED Bombing"
+            ],
+            "template":"<A0_pag_creator> creates <A1_ppt_thing_created> using <A2_vsp_materials_used> for the benefit of <A3_gol_benefactive>",
+            "keywords":["create","develop","establish","found","generate","make","produce","set up","synthesize","author","construct","concoct","fabricate","formulate","manufacture","mass produce","turn out"],
+            "additional_info":{
+                "framenet":"Intentionally_create, Coming_up_with",
+                "verbnet":"Create-26.4",
+                "propbank":"create.01",
+                "<other_useful_mapping>":""
+            }
+},
+			{
+            "name": "terminate employment",
+            "wd_node": "Q685744",
+            "definition": "end of employment by either the employee or the employer",
+            "arguments": [
+                "A0_pag_employer",
+                "A1_ppt_employee",
+                "A2_prd_job" 
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_employer> ends their employment of <A1_ppt_employee> to do <A2_prd_job> at <AM_loc__location>",
+            "keywords":["fire","discharge","dismiss","downsize","lay off","let go","sack","terminate","quit","give notice","resign","leave","retire","step down","oust","force out"],
+            "additional_info":{
+                "framenet":"Firing, Quitting",
+                "verbnet":"Fire-10.10, Resign-10.11",
+                "propbank":"buy.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "sign agreement",
+            "wd_node": "Q50384157",
+            "definition": "signing of a treaty, decree, law, etc.",
+            "arguments": [
+                "A0_pag_agent_signer_agreer",
+                "A2_com__co-signer" 
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_agent_signer_agreer> signs an agreement with <A2_com__co-signer>",
+            "keywords":["sign"],
+            "additional_info":{
+                "framenet":"Sign_agreement",
+                "verbnet":"Image_impression-25.1",
+                "propbank":"sign.02",
+                "<other_useful_mapping>":""
+            }
+		},
+			{
+            "name": "legal ruling",
+            "wd_node": "Q327000",
+            "definition": "formal decision made by a court",
+            "arguments": [
+                "A0_pag_judge",
+                "A1_ppt_judged",
+				"A2_prd_judgement",
+				"A3_cau_on_what_grounds"
+				],
+            "scenario":[
+                "Business Change",
+				"IED Bombing",
+				"Civil Unrest",
+				"Terrorism Attacks",
+				"Election",
+				"Kidnapping",
+				"Mass Shooting"
+            ],
+            "template":"<A0_pag_judge> decides <A2_prd_judgement> for or against <A1_ppt_judged> using <A3_cau_on_what_grounds>",
+            "keywords":["judge","rule","decree","adjudicate","deem","pardon","censure"],
+            "additional_info":{
+                "framenet":"Legal_ruling",
+                "verbnet":"Judgment-33.1",
+                "propbank":"judge.01",
+                "<other_useful_mapping>":""
+            }
+			},
+			{
+            "name": "reform",
+            "wd_node": "Q900406",
+            "definition": "large improvement of what is wrong, corrupt, unsatisfactory",
+            "arguments": [
+                "A0_pag_reformer",
+                "A1_ppt_thing_changed",
+                "A2_prd_end_state",
+                "A3_dir_start_state"
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_reformer> reforms <A1_ppt_thing_changed> to <A2_prd_end_state> from <A3_dir_start_state>",
+            "keywords":["overhaul","reform","restructure"],
+            "additional_info":{
+                "framenet":"reforming_a_system",
+                "verbnet":"",
+                "propbank":"reform.01",
+                "<other_useful_mapping>":""
+            }
+        },
+{
+            "name": "income",
+            "wd_node": "Q1527264",
+            "definition": "consumption and savings opportunity gained by an entity within a specified timeframe",
+            "arguments": [
+                "A0_pag_earner",
+                "A1_ppt_wages",
+				"A2_gol_benefactive",
+				"A3_dir_source"
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_earner> earns amount <A1_ppt_wages> from <A3_dir_source> for the benefit of <A2_gol_benefactive>",
+            "keywords":["earn","income","make","net","profit","pull","revenue"],
+            "additional_info":{
+                "framenet":"Earnings_and_losses",
+                "verbnet":"Earn-54.6",
+                "propbank":"earn.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "lose",
+            "wd_node": "Q20888800",
+            "definition": "hurtful condition of having lost something or someone",
+            "arguments": [
+                "A0_pag_entity_losing_something",
+                "A1_ppt_thing_lost",
+				"A2_gol_benefactive",
+				"A3_dir_source_of_loss"
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_entity_losing_something> loses <A1_ppt_thing_lost> from <A3_dir_source_of_loss> to the harm of <A2_gol_benefactive>",
+            "keywords":["lose","loss","net","profit","pull","revenue"],
+            "additional_info":{
+                "framenet":"Earnings_and_losses, Losing",
+                "verbnet":"Earn-54.6",
+                "propbank":"lose.02",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "collaboration",
+            "wd_node": "Q1145523",
+            "definition": "working together",
+            "arguments": [
+                "A0_pag_agent_focussed_party",
+                "A1_com_co_agent_second_party",
+				"A2_ppt_theme_shared_task"
+				],
+            "scenario":[
+                "Business Change",
+	    "Terrorism Attacks"
+            ],
+            "template":"<A0_pag_agent_focussed_party> works with <A1_com_co_agent_second_party> to do <A2_ppt_theme_shared_task>",
+            "keywords":["collaborate","cooperate","collude","conspire","partner","team_up","work_together","join"],
+            "additional_info":{
+                "framenet":"Collaboration",
+                "verbnet":"Earn-54.6",
+                "propbank":"collaborate.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "name conferral",
+            "wd_node": "",
+            "definition": "giving a name to an entity",
+            "arguments": [
+                "A0_pag_agent_naming_authority",
+                "A1_ppt_thing_named",
+				"A2_prd_name_given"
+				],
+            "scenario":[
+                "Business Change"
+            ],
+            "template":"<A0_pag_agent_naming_authority> confers on <A1_ppt_thing_named> the name <A2_prd_name_given>",
+            "keywords":["name","call","christen","dub","entitle","nickname","rename","term","brand","label"],
+            "additional_info":{
+                "framenet":"Name_conferral",
+                "verbnet":"Dub-29.3.2",
+                "propbank":"name.01",
+                "<other_useful_mapping>":""
+            }
+        },
+{
+            "name": "bomb attack",
+            "wd_node": "Q891854",
+            "definition": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
+            "arguments": [
+                "A0_pag_agent_attacker",
+                "A1_ppt_patient_entity_bombed"
+				],
+            "scenario":[
+                "IED Bombing",
+				"Terrorist Attacks"
+            ],
+            "template":"<A0_pag_agent_attacker> bombs <A1_ppt_patient_entity_bombed>",
+            "keywords":["bomb","bombard","hit","strike"],
+            "additional_info":{
+                "framenet":"Attack",
+                "verbnet":"Attack-60.1",
+                "propbank":"bomb.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "Education",
+            "wd_node": "Q8434",
+            "definition": "learning in which knowledge and skills are transferred through teaching",
+            "arguments": [
+                "A0_pag_agent_teacher",
+                "A1_ppt_topic_subject",
+				"A2_gol_recipient_student"
+				],
+            "scenario":[
+                "IED Bombing",
+				"Terrorist Attacks",
+				"Disease Outbreak"
+            ],
+            "template":"<A0_pag_agent_teacher> teaches <A1_ppt_topic_subject> to <A2_gol_recipient_student",
+            "keywords":["teach","educate","coach","instruct","master","learn","train","training","tutor","study","graduate","brief"],
+            "additional_info":{
+                "framenet":"Education_teaching",
+                "verbnet":"Advise-37.9",
+                "propbank":"educate.01",
+                "<other_useful_mapping>":""
+            }
+        },
+		{
+            "name": "Construct",
+            "wd_node": "Q3875186",
+            "definition": "process of building",
+            "arguments": [
+                "A0_pag_builder",
+                "A1_ppt_construction",
+				"A2_vsp_material",
+				"A4_prd_end_state_of_arg1"
+				],
+            "scenario":[
+                "IED Bombing",
+				"Disease Outbreak"
+            ],
+            "template":"<A0_pag_builder> builds <A1_ppt_construction> out of <A2_vsp_material into <A4_prd_end_state_of_arg1>",
+            "keywords":["build","construct","assemble","erect","fit_together","glue","make","put_together","piece_together","weld","fashion","reassemble"],
+            "additional_info":{
+                "framenet":"Build",
+                "verbnet":"Build-26.1",
+                "propbank":"construct.01",
+                "<other_useful_mapping>":""
+            }
+        }
+    ]
+}

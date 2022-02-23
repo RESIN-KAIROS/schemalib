@@ -1,0 +1,364 @@
+{
+    "events": [
+        {
+            "name": "injury",
+            "wd_node": "Q193078",
+            "definition": "physiological wound caused by an external source",
+            "arguments": [
+                "A1_ppt_experiencer_injured_party",
+                "A0_pag_stimulus_stimulus_of_injury",
+                "A2_mnr__instrument",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Civil Unrest",
+                "International Invasion",
+                "Disaster and Rescue",
+                "Terrorism Attacks",
+                "Kidnapping",
+                "Mass Shooting"
+            ],
+            "template":"<A1_ppt_experiencer_injured_party> was injured by <A0_pag_stimulus_stimulus_of_injury> using <A2_mnr__instrument> at <AM_loc__location>",
+            "keywords":["beat","injure","wound"],
+            "additional_info":{
+                "propbank":"wound.01",
+                "ldc_type":"Life.Injure.Unspecified"
+            }
+        },
+        {
+            "name": "attack",
+            "wd_node": "Q1174599",
+            "definition": "action to injure another organism",
+            "arguments": [
+                "A0_pag_agent_assaulter",
+                "A1_ppt_theme_entity_assaulted",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Civil Unrest",
+                "International Invasion",
+                "Disaster and Rescue",
+                "Terrorism Attacks",
+                "Kidnapping",
+                "Mass Shooting"
+            ],
+            "template":"<A1_ppt_theme_entity_assaulted> was attacked by <A0_pag_agent_assaulter> using <AM_mnr__manner> at <AM_loc__location>",
+            "keywords":["attack","assault"],
+            "additional_info":{
+                "propbank":"assault.01",
+                "ldc_type":"Conflict.Attack.Unspecified"
+            }
+        },
+        {
+            "name": "violent_death",
+            "wd_node": "Q74948922",
+            "definition": "death caused by violence",
+            "arguments": [
+                "A0_pag_agent_killer",
+                "A1_ppt_patient_corpse",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Civil Unrest",
+                "International Invasion",
+                "Terrorism Attacks",
+                "Kidnapping",
+                "Mass Shooting"
+            ],
+            "template":"<A1_ppt_patient_corpse> was violently killed by <A0_pag_agent_killer> using <A2_mnr_instrument_instrument> at <AM_loc__location>",
+            "keywords":["kill","die"],
+            "additional_info":{
+                "propbank":"kill.01",
+                "ldc_type":"Life.Die.DeathCausedByViolentEvents"
+            }
+        },
+        {
+            "name": "transport",
+            "wd_node": "Q7590",
+            "definition": "human-directed movement of things or people between locations",
+            "arguments": [
+                "A0_pag_agent_transporter",
+                "A1_ppt_theme_thing_transported",
+                "AM_mnr__manner",
+                "A2_dir_source_initial_location",
+                "A3_gol_destination_destination"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Civil Unrest",
+                "International Invasion",
+                "Terrorism Attacks",
+                "Kidnapping",
+                "Mass Shooting"
+            ],
+            "template":"<A1_ppt_theme_thing_transported> was transported by <A1_ppt_theme_thing_transported> using <AM_mnr__manner> from <A2_dir_source_initial_location> to <A3_gol_destination_destination>",
+            "keywords":["move","transport","drive","travel"],
+            "additional_info":{
+                "propbank":"transport.01",
+                "ldc_type":"Movement.Transportation.Unspecified"
+            }
+        },
+        {
+            "name": "riot",
+            "wd_node": "Q124757",
+            "definition": "form of civil disorder",
+            "arguments": [
+                "A0_pag__rioter",
+                "A1_cau__who/what_the_riot_is_against",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest",
+                "Terrorism Attacks"
+            ],
+            "template":"<A0_pag__rioter> demonstrate with violence against <A1_cau__who/what_the_riot_is_against> at <AM_loc__location>",
+            "keywords":["protest with violence","riot","demonstrate with violence","rooting","robbery"],
+            "additional_info":{
+                "propbank":"riot.01",
+                "ldc_type":"Conflict.Demonstrate.DemonstrateWithViolence"
+            }
+        },
+        {
+            "name": "crime",
+            "wd_node": "Q83267",
+            "definition": "unlawful act forbidden and punishable by criminal law",
+            "arguments": [
+                "A0_pag__perp",
+                "A2_gol__victim",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A0_pag__perp> committed crime which harmed <A2_gol__victim> at <AM_loc__location>",
+            "keywords":["crime","felony"],
+            "additional_info":{
+                "propbank":"perpetrate.01",
+                "ldc_type":"GenericCrime.GenericCrime.GenericCrime"
+            }
+        },
+        {
+            "name": "legislative_process",
+            "wd_node": "Q3406566",
+            "definition": "formal process leading to the approval of a law",
+            "arguments": [
+                "A0_pag_agent_legislative_body",
+                "A1_ppt_thing_enacted",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A0_pag_agent_legislative_body> enacted <A1_ppt_thing_enacted> at <AM_loc__location>",
+            "keywords":["legislate","enact"],
+            "additional_info":{
+                "propbank":"enact.01",
+                "ldc_type":"Government.Legislate.Legislate"
+            }
+        },
+        {
+            "name": "imprisonment",
+            "wd_node": "Q841236",
+            "definition": "restraint of a person's liberty by judicial or other detention",
+            "arguments": [
+                "A0_pag_agent_police",
+                "A1_ppt_patient_entity_detained",
+                "A2_cau_theme_detained_for_what",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt_patient_entity_detained> was arrested by <A0_pag_agent_police> for <A2_cau_theme_detained_for_what> at <AM_loc__location>",
+            "keywords":["arrest","detain","jail"],
+            "additional_info":{
+                "propbank":"detain.01",
+                "ldc_type":"Justice.ArrestJailDetain.Unspecified"
+            }
+        },
+        {
+            "name": "conviction",
+            "wd_node": "Q2916183",
+            "definition": "verdict that results when a court of law finds a defendant guilty of a crime",
+            "arguments": [
+                "A0_pag__judge",
+                "A1_ppt__person_convicted",
+                "A2_cau__convicted_of",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt__person_convicted> convicted <A2_cau__convicted_of> in front of <A0_pag__judge> at <AM_loc__location>",
+            "keywords":["convict"],
+            "additional_info":{
+                "propbank":"convict.01",
+                "ldc_type":"Justice.JudicialConsequences.Convict"
+            }
+        },
+        {
+            "name": "sentence",
+            "wd_node": "Q1763090",
+            "definition": "decree of punishment in law",
+            "arguments": [
+                "A0_pag__judge/jury",
+                "A1_ppt__criminal",
+                "A3_cau__crime",
+                "A2_ppt__punishment",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt__criminal> is sentenced to <A2_ppt__punishment> for <A3_cau__crime> by <A0_pag__judge/jury> at <AM_loc__location>",
+            "keywords":["sentence"],
+            "additional_info":{
+                "propbank":"sentence.01",
+                "ldc_type":"Justice.Sentence.Unspecified"
+            }
+        },  
+        {
+            "name": "public_broadcasting",
+            "wd_node": "Q26398",
+            "definition": "electronic media outlets whose primary mission is public service",
+            "arguments": [
+                "A0_pag_agent_trasmitter",
+                "A2_gol_recipient_audience",
+                "AM_mnr__manner",
+                "A1_ppt_topic_message",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt_topic_message> was broadcasted through <AM_mnr__manner> from <A0_pag_agent_trasmitter> to <A2_gol_recipient_audience> at <AM_loc__location>",
+            "keywords":["spread","broadcast"],
+            "additional_info":{
+                "propbank":"broadcast.01",
+                "ldc_type":"Contact.MediaStatement.Broadcast"
+            }
+        },
+        {
+            "name": "criminal_investigation",
+            "wd_node": "Q1964968",
+            "definition": "process that attempts to determine the facts of a crime and circumstances",
+            "arguments": [
+                "A0_pag_agent_examiner",
+                "A1_ppt_location_examined",
+                "A2_ppt_theme_examined_for",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A0_pag_agent_examiner> investigated <A1_ppt_location_examined> for <A2_ppt_theme_examined_for> at <AM_loc__location>",
+            "keywords":["investigate","search"],
+            "additional_info":{
+                "propbank":"investigate.01",
+                "ldc_type":"Justice.Investigate.InvestigateCrime"
+            }
+        },
+        {
+            "name": "damage",
+            "wd_node": "Q481609",
+            "definition": "changes introduced into a system that adversely affect its current or future performance",
+            "arguments": [
+                "A0_pag_agent_agent_causer",
+                "A1_ppt_patient_entity_damaged",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt_patient_entity_damaged> is damaged by <A1_ppt_patient_entity_damaged> using <A2_mnr_instrument_instrument> at <AM_loc__location>",
+            "keywords":["damage","destroy","dismantle","remove"],
+            "additional_info":{
+                "propbank":"damage.01",
+                "ldc_type":"ArtifactExistence.DamageDestroyDisableDismantle.Damage"
+            }
+        },
+        {
+            "name": "demonstration",
+            "wd_node": "Q175331",
+            "definition": "collective action by people in favor of a cause",
+            "arguments": [
+                "A0_pag_agent_protester",
+                "A1_ppt_theme_objectionable_thing",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A0_pag_agent_protester> protested for <A1_ppt_theme_objectionable_thing> at <AM_loc__location>",
+            "keywords":["protest","demonstrate","march","gathering"],
+            "additional_info":{
+                "propbank":"protest.01",
+                "ldc_type":"Conflict.Demonstrate.MarchProtestPoliticalGathering"
+            }
+        },
+        {
+            "name": "emergency_evacuation",
+            "wd_node": "Q606332",
+            "definition": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "arguments": [
+                "A0_pag_agent_transporter",
+                "A1_ppt_thing_transported",
+                "AM_mnr__manner",
+                "A2_dir_initial_location_source",
+                "A3_gol_destination_destination"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt_thing_transported> was being evacuated by <A0_pag_agent_transporter> using <AM_mnr__manner> from <A2_dir_initial_location_source> to <A3_gol_destination_destination>",
+            "keywords":["evacuate"],
+            "additional_info":{
+                "propbank":"transport.01",
+                "ldc_type":"Movement.Transportation.Evacuation"
+            }
+        },
+        {
+            "name": "law_enforcement",
+            "wd_node": "Q44554",
+            "definition": "Law enforcement is the activity of some members of government who act in an organized manner to enforce the law by discovering, deterring, rehabilitating, or punishing people who violate the rules and norms governing that society",
+            "arguments": [
+                "A0_pag_agent_enforcement_officer",
+                "A1_ppt_thing_enforced",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt_thing_enforced> was being enforced by <A0_pag_agent_enforcement_officer> using <AM_mnr__manner> at <AM_loc__location>",
+            "keywords":["law enforcement","repression"],
+            "additional_info":{
+            }
+        },
+        {
+            "name": "spread",
+            "wd_node": "Q105460363",
+            "definition": "the spread of something (e.g. a news, an idea, a slogan etc) through social media",
+            "arguments": [
+                "A0_pag_agent_trasmitter",
+                "A2_gol_recipient_audience",
+                "AM_mnr__manner",
+                "A1_ppt_topic_message",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Civil Unrest"
+            ],
+            "template":"<A1_ppt_topic_message> was spreaded through <AM_mnr__manner> from <A0_pag_agent_trasmitter> to <A2_gol_recipient_audience> at <AM_loc__location>",
+            "keywords":["spread","dissemination"],
+            "additional_info":{
+            }
+        }
+    ]
+}

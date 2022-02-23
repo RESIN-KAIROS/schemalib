@@ -1,0 +1,618 @@
+{
+    "events": [
+        {
+            "name": "Emergency",
+            "wd_node": "Q5070802",
+            "definition": "This frame characterizes the situation or state of affairs in which someone should or must act to prevent a Undesirable_event from occurring. Often, an Entity affected by the Undesirable_event is more salient than the event itself and is mentioned in its place.  'Jo had a peanut butter chocolate candy emergency.'",
+            "arguments": [],
+            "scenario": "Disaster and Rescue",
+            "template": "",
+            "keywords": [
+                "disaster",
+                "catastrophe",
+                "incident",
+                "mayhem"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Emergency",
+                    "Disaster_scenario"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "disaster.01",
+                    "incident.01"
+                ],
+                "ldc": [
+                    ""
+                ],
+                "maven": "Emergency"
+            }
+        },
+        {
+            "name": "injury",
+            "wd_node": "Q193078",
+            "definition": "physiological wound caused by an external source",
+            "arguments": [
+                "A1_ppt_experiencer_injured_party",
+                "A0_pag_stimulus_stimulus_of_injury",
+                "A2_mnr__instrument",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A1_ppt_experiencer_injured_party> <A0_pag_stimulus_stimulus_of_injury> <A2_mnr__instrument> <AM_loc__location>",
+            "keywords": [
+                "harm",
+                "bodily harm",
+                "injury",
+                "maim",
+                "hurt"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Experience_bodily_harm",
+                    "Cause_harm"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "wound.01",
+                    "injure.01"
+                ],
+                "ldc": [
+                    "Life.Injure.Unspecified"
+                ],
+                "maven": "Bodily_harm"
+            }
+        },
+        {
+            "name": "damage",
+            "wd_node": "Q481609",
+            "definition": "changes introduced into a system that adversely affect its current or future performance",
+            "arguments": [
+                "A0_pag_agent_agent_causer",
+                "A1_ppt_patient_entity_damaged",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_agent_causer> <A1_ppt_patient_entity_damaged> <A2_mnr_instrument_instrument> <AM_loc__location>",
+            "keywords": [
+                "damage",
+                "break",
+                "destroy",
+                "destruction",
+                "loss"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Damaging"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "damage.01",
+                    "annihilate.01",
+                    "destroy.01",
+                    "disable.01",
+                    "defuse.01",
+                    "disassemble.01",
+                    "dismantle.01"
+                ],
+                "ldc": [
+                    "ArtifactExistence.DamageDestroyDisableDismantle.Damage",
+                    "ArtifactExistence.DamageDestroyDisableDismantle.Unspecified"
+                ],
+                "maven": "Damaging"
+            }
+        },
+        {
+            "name": "death",
+            "wd_node": "Q4",
+            "definition": "permanent cessation of vital functions",
+            "arguments": [
+                "A1_ppt_the_deceased",
+                "AM_loc__location",
+                "AM_cau__cause"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A1_ppt_the_deceased> <AM_loc__location> <AM_cau__cause>",
+            "keywords": [
+                "die",
+                "loss of life",
+                "death",
+                "deceased"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Death",
+                    "Losing_someone"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "die.01"
+                ],
+                "ldc": [
+                    "Life.Die.Unspecified"
+                ],
+                "maven": "Death"
+            }
+        },
+        {
+            "name": "difficulty",
+            "wd_node": "Q16515105",
+            "definition": "a specific problem or obstacle impeding achievement of a goal",
+            "arguments": [
+                "A0_pag_agent_entity_attempting_to_stop_something",
+                "A1_ppt_theme_theme",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_entity_attempting_to_stop_something> <A1_ppt_theme_theme> <AM_loc__location>",
+            "keywords": [
+                "problem",
+                "issue",
+                "obstacle"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Daring"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "impede.01",
+                    "prevent.01"
+                ],
+                "ldc": [
+                    "Control.ImpedeInterfereWith.Unspecified"
+                ],
+                "maven": "Risk"
+            }
+        },
+        {
+            "name": "access",
+            "wd_node": "Q58029698",
+            "definition": "set of mechanisms by which a target can be reached",
+            "arguments": [
+                "A0_pag_accessor",
+                "A1_ppt_thing_accessed",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_accessor> <A1_ppt_thing_accessed> <AM_loc>",
+            "keywords": [
+                "scarcity",
+                "resources",
+                "limits",
+                "constraints",
+                "blockage"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Having_or_lacking_access"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "access.01"
+                ],
+                "ldc": [],
+                "maven": "Having_or_lacking_access"
+            }
+        },
+        {
+            "name": "observation",
+            "wd_node": "Q193181",
+            "definition": "active acquisition of information from a primary source",
+            "arguments": [
+                "A0_pag_experiencer_observer",
+                "A1_ppt_stimulus_thing_looked_at",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_experiencer_observer> <A1_ppt_stimulus_thing_looked_at> <AM_mnr__manner> <AM_loc__location>",
+            "keywords": [
+                "observe",
+                "monitor",
+                "scout",
+                "authority response"
+            ],
+            "additional_info": {
+                "framenet": [],
+                "verbnet": "",
+                "propbank": [
+                    "watch.01",
+                    "inspect.01"
+                ],
+                "ldc": [
+                    "Cognitive.Inspection.SensoryObserve"
+                ],
+                "maven": ""
+            }
+        },
+        {
+            "name": "command",
+            "wd_node": "Q1665268",
+            "definition": "message conveying a requirement to perform a certain action",
+            "arguments": [
+                "A0_pag_agent_commander",
+                "A1_gol_recipient_impelled_agent",
+                "A2_ppt_topic_impelled_action",
+                "AM_loc__location",
+                "AM_mnr__manner"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_commander> <A1_gol_recipient_impelled_agent> <A2_ppt_topic_impelled_action> <AM_loc__location> <AM_mnr__manner>",
+            "keywords": [
+                "protection",
+                "defense",
+                "delegate",
+                "orders"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Self_control",
+                    "Control",
+                    "Domination",
+                    "Being_in_control"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "command.02",
+                    "request.01",
+                    "request.01",
+                    "request.01",
+                    "request.01"
+                ],
+                "ldc": [
+                    "Contact.RequestCommand.Broadcast",
+                    "Contact.RequestCommand.Correspondence",
+                    "Contact.RequestCommand.Meet",
+                    "Contact.RequestCommand.Unspecified"
+                ],
+                "maven": "Control"
+            }
+        },
+        {
+            "name": "Rescuing",
+            "wd_node": "Q1341429",
+            "definition": "An Agent saves a Patient or an Asset from a Harmful_situation.   'Israeli commandos rescued the hostages and left.'   'His German shepherd saved him from drowing once.'  'She saved my life on the bridge yesterday.'",
+            "arguments": [
+                "A0_pag_agent_rescuer",
+                "A1_ppt_rescued",
+                "A2_dir_rescued_from"
+            ],
+            "scenario": "Disaster and Rescue",
+            "template": "",
+            "keywords": [
+                "rescue",
+                "search",
+                "save",
+                "medical response"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "",
+                    ""
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "rescue.01",
+                    "save.02",
+                    "help.01"
+                ],
+                "ldc": [
+                    ""
+                ],
+                "maven": "Rescuing"
+            }
+        },
+        {
+            "name": "inquiry",
+            "wd_node": "Q21004260",
+            "definition": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "arguments": [
+                "A0_pag_agent_examiner",
+                "A1_ppt_location_examined",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_examiner> <A1_ppt_location_examined> <AM_loc__location>",
+            "keywords": [
+                "investigate",
+                "police",
+                "research",
+                "questions"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Resolve_problem"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "investigate.01"
+                ],
+                "ldc": [
+                    "Justice.Investigate.Unspecified"
+                ],
+                "maven": "Resolve_problem"
+            }
+        },
+        {
+            "name": "prevention",
+            "wd_node": "Q1717246",
+            "definition": "causing an event or condition that would otherwise occur to not occur",
+            "arguments": [
+                "A0_pag_agent_agent",
+                "A1_ppt_theme_theme",
+                "A2_ppt_secondary_predication_or_action",
+                "A3_mnr__instrument",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_agent> <A1_ppt_theme_theme> <A2_ppt_secondary_predication_or_action> <A3_mnr__instrument> <AM_loc__location>",
+            "keywords": [
+                "prevent",
+                "stop",
+                "impede",
+                "roadblock",
+                "quarantine"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Prevent_from_having",
+                    "Preventing",
+                    "Preventing_or_letting",
+                    "Avoiding"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "prevent.01",
+                    "impede.01"
+                ],
+                "ldc": [
+                    "Control.ImpedeInterfereWith.Unspecified",
+                    "Control.ImpedeInterfereWith.Prevent"
+                ],
+                "maven": "Preventing_or_letting"
+            }
+        },
+        {
+            "name": "international_aid",
+            "wd_node": "Q2827815",
+            "definition": "voluntary transfer of resources from one country to another",
+            "arguments": [
+                "A0_pag_agent_giver",
+                "A2_gol_recipient_entity_given_to",
+                "AM_gol__goal",
+                "A1_ppt_theme_thing_given",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_giver> <A2_gol_recipient_entity_given_to> <AM_gol__goal> <A1_ppt_theme_thing_given> <AM_loc__location>",
+            "keywords": [
+                "aid",
+                "charity",
+                "donations"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Supply"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "give.01",
+                    "gift.01"
+                ],
+                "ldc": [
+                    "Transaction.AidBetweenGovernments.Unspecified"
+                ],
+                "maven": "Supply"
+            }
+        },
+        {
+            "name": "exchange_of_goods",
+            "wd_node": "Q21651837",
+            "definition": "transfer of equivalent goods to each other",
+            "arguments": [
+                "A0_pag_agent_agent",
+                "A2_com_co_agent_other_exchanger",
+                "A1_ppt_theme_thing_being_traded",
+                "A3_ppt_co_theme_other_item_in_exchange_price_or_premium",
+                "A4_gol__benefactive",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_agent> <A2_com_co_agent_other_exchanger> <A1_ppt_theme_thing_being_traded> <A3_ppt_co_theme_other_item_in_exchange_price_or_premium> <A4_gol__benefactive> <AM_loc__location>",
+            "keywords": [
+                "provide",
+                "allocate",
+                "donate"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Expend_resource"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "exchange.01"
+                ],
+                "ldc": [
+                    "Transaction.ExchangeBuySell.Unspecified"
+                ],
+                "maven": "Expend_resource"
+            }
+        },
+        {
+            "name": "compliance",
+            "wd_node": "Q1399332",
+            "definition": "submission to a request",
+            "arguments": [
+                "A0_pag__complier",
+                "A1_ppt___complied_with",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag__complier> <A1_ppt___complied_with> <AM_loc__location>",
+            "keywords": [
+                "obey",
+                "follow instructions",
+                "evacuate"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Rejuvenation"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "comply.01",
+                    "abide.01"
+                ],
+                "ldc": [
+                    "SocialBehavior.ComplyObey.Unspecified"
+                ],
+                "maven": "Recovering"
+            }
+        },
+        {
+            "name": "collaboration",
+            "wd_node": "Q1145523",
+            "definition": "working together",
+            "arguments": [
+                "A0_pag_agent_focussed_party",
+                "A1_com_co_agent_second_party",
+                "AM_loc__location",
+                "A2_ppt_theme_shared_task"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_focussed_party> <A1_com_co_agent_second_party> <AM_loc__location> <A2_ppt_theme_shared_task>",
+            "keywords": [
+                "assist",
+                "agree"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Collaboration"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "collaborate.01"
+                ],
+                "ldc": [
+                    "Contact.Collaborate.Correspondence",
+                    "Contact.Collaborate.Meet",
+                    "Contact.Collaborate.Unspecified"
+                ],
+                "maven": "Collaboration"
+            }
+        },
+        {
+            "name": "communication",
+            "wd_node": "Q11024",
+            "definition": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "arguments": [
+                "A0_pag_agent_first_communicator",
+                "A2_com_co_agent_other_communicators",
+                "A1_ppt_topic_utterance",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_first_communicator> <A2_com_co_agent_other_communicators> <A1_ppt_topic_utterance> <AM_loc__location>",
+            "keywords": [
+                "media",
+                "public statement",
+                "broadcast",
+                "reports",
+                "coverage"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Communication",
+                    "Successfully_communicate_message",
+                    "Discussion",
+                    "Contacting",
+                    "Chatting",
+                    "Communication_response",
+                    "Encoding",
+                    "Talking_into"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "communicate.01"
+                ],
+                "ldc": [
+                    "Contact.Contact.Unspecified"
+                ],
+                "maven": "Communication"
+            }
+        },
+        {
+            "name": "emergency_evacuation",
+            "wd_node": "Q606332",
+            "definition": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "arguments": [
+                "A0_pag_agent_transporter",
+                "A1_ppt_thing_transported",
+                "AM_mnr__manner",
+                "A2_dir_initial_location_source",
+                "A3_gol_destination_destination",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_transporter> <A1_ppt_thing_transported> <AM_mnr__manner> <A2_dir_initial_location_source> <A3_gol_destination_destination> <AM_loc>",
+            "keywords": [
+                "evacuate",
+                "leave the area",
+                "avoid"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Cause_motion",
+                    "Cause_fluidic_motion",
+                    "Mass_motion",
+                    "Motion_scenario",
+                    "Fluidic_motion",
+                    "Cause_to_move_in_place",
+                    "Temporary_leave",
+                    "Motion"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "transport.01"
+                ],
+                "ldc": [
+                    "Movement.Transportation.Evacuation"
+                ],
+                "maven": "Motion"
+            }
+        }
+    ]
+}

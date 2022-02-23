@@ -1,0 +1,595 @@
+{
+    "events": [
+        {
+            "name": "creation",
+            "wd_node": "Q11398090",
+            "definition": "process during which something comes into being and gains its characteristics",
+            "arguments":[
+                "A0_pag_agent_creator",
+                "A1_ppt_result_thing_created",
+                "A2_vsp_material_materials_used",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "IED Bombing",
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_creator> created <A1_ppt_result_thing_created> using materials <A2_vsp_material_materials_used> at <AM_loc__location>.",
+            "keywords": ["create", "manufacture"],
+            "additional_info":{
+                "propbank": "create.01"
+            }
+        },
+        {
+            "name": "contamination",
+            "wd_node": "Q60528603",
+            "definition": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
+            "arguments":[
+                "A0_pag_agent_causer_of_contamination",
+                "A1_gol_destination_thing_becoming_contaminated",
+                "A2_ppt_theme_contaminant",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_causer_of_contamination> contaminated <A1_gol_destination_thing_becoming_contaminated> with <A2_ppt_theme_contaminant> at <AM_loc__location>.",
+            "keywords": ["contaminate", "pollute", "taint"],
+            "additional_info":{
+                "propbank": "contaminate.01",
+                "ldc_type": "ArtifactExistence.Contamination.Unspecified"
+            }
+        },
+        {
+            "name": "shortage",
+            "wd_node": "Q815758",
+            "definition": "Insufficicent supply of needed resources, such as medical treatment or hospital beds.",
+            "arguments": [
+                "A2_gol_recipient_",
+                "A1_ppt_theme_",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "Disaster and Rescue",
+                "Civil Unrest"
+            ],
+            "template": "<A2_gol_recipient_> is facing a shortage of <A1_ppt_theme_> at <AM_loc__location>.",
+            "keywords": ["shortage", "scarcity"],
+            "additional_info": {
+                "propbank": "provide.01",
+                "ldc_type": "ArtifactExistence.Shortage.Shortage"
+            }
+
+        },
+        {
+            "name": "identification",
+            "wd_node": "Q3265221",
+            "definition": "make something known, confirm its identity.",
+            "arguments":[
+                "A0_pag_agent_caller",
+                "A1_ppt_theme_item_being_labelled",
+                "A2_prd_attribute_attribute",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "IED Bombing",
+                "Terrorism Attacks"
+            ],
+            "template": "<A0_pag_agent_caller> identified <A1_ppt_theme_item_being_labelled> as <A2_prd_attribute_attribute> at <AM_loc__location>.",
+            "keywords": ["identify", "recognize", "label"],
+            "additional_info":{
+                "propbank": "identify.01",
+                "ldc_type": "Cognitive.IdentifyCategorize.Unspecified"
+            }
+        },
+        {
+            "name": "observation",
+            "wd_node": "Q193181",
+            "definition": "active acquisition of information from a primary source",
+            "arguments": [
+                "A0_pag_experiencer_observer",
+                "A1_ppt_stimulus_thing_observed",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "IED Bombing",
+                "Terrorism Attacks",
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_experiencer_observer> observed <A1_ppt_stimulus_thing_observed> using <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["observe"],
+            "additional_info": {
+                "propbank": "watch.01",
+                "ldc_type": "Cognitive.Inspection.SensoryObserve"
+            }
+        },
+        {
+            "name": "education",
+            "wd_node": "Q8434",
+            "definition": "learning in which knowledge and skills are transferred through teaching",
+            "arguments":[
+                "A0_pag_agent_teacher",
+                "A1_ppt_topic_subject",
+                "A2_gol_recipient_student",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_teacher> taught <A2_gol_recipient_student> about <A1_ppt_topic_subject> using <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": ["educate", "teach", "learn"],
+            "additional_info": {
+                "propbank": "teach.01",
+                "ldc_type": "Cognitive.TeachingTrainingLearning.Unspecified"
+            }
+        },
+        {
+            "name": "biological_warfare",
+            "wd_node":"Q8242560",
+            "definition": "use of biological toxins or infectious agents with the intent to kill as an act of war",
+            "arguments": [
+                "A0_pag_agent_killer",
+                "A1_ppt_patient_corpse",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "International Invasion"
+            ],
+            "template": "<A0_pag_agent_killer> launched biological warfare against <A1_ppt_patient_corpse> using <A2_mnr_instrument_instrument> at <AM_loc__location>.",
+            "keywords": ["bio-weapon", "bio-warfare"],
+            "additional_info": {
+                "propbank": "kill.01",
+                "ldc_type": "Conflict.Attack.BiologicalChemicalPoisonAttack"
+            }
+        },
+        {
+            "name": "demonstration",
+            "wd_node": "Q175331",
+            "definition": "collective action by people in favor of a cause",
+            "arguments": [
+                "A0_pag_agent_protester",
+                "A1_ppt_theme_objectionable_thing",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "Terrorism Attacks",
+                "Civil Unrest"
+            ],
+            "template": "<A0_pag_agent_protester> protested about <A1_ppt_theme_objectionable_thing> at <AM_loc__location>.",
+            "keywords": ["demonstrate", "protest", "rally"],
+            "additional_info":{
+                "propbank": "protest.01",
+                "ldc_type": "Conflict.Demonstrate.MarchProtestPoliticalGathering"
+            }
+        },
+        {
+            "name": "collaboration",
+            "wd_node": "Q1145523",
+            "definition": "working together for a common goal.",
+            "arguments": [
+                "A0_pag_agent_focussed_party",
+                "A1_com_co_agent_second_party",
+                "AM_loc__location",
+                "A2_ppt_theme_shared_task"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "Disaster and Rescue"
+            ],
+            "template": "<A0_pag_agent_focussed_party> collaborated with <A1_com_co_agent_second_party> on <A2_ppt_theme_shared_task> task at <AM_loc__location>.",
+            "keywords": ["collaborate", "work together"],
+            "additional_info":{
+                "propbank": "collaborate.01",
+                "ldc_type": "Contact.Collaborate.Correspondence"
+            }
+        },
+        {
+            "name": "announcement",
+            "wd_node": "Q567303",
+            "definition": "printed, spoken, or published statement or notice of an event or other news",
+            "arguments": [
+                "A0_pag_agent_announcer",
+                "A2_gol_recipient_hearer",
+                "AM_mnr__manner",
+                "A1_ppt_topic_utterance"
+            ],
+            "scenario":[
+                "Civil Unrest",
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "IED Bombing",
+                "International Invasion",
+                "Terrorism Attacks"
+            ],
+            "template": "<A0_pag_agent_announcer> announced <A1_ppt_topic_utterance> to <A2_gol_recipient_hearer> using <AM_mnr__manner>.",
+            "keywords": ["announce", "declare", "broadcast"],
+            "additional_info": {
+                "propbank": "announce.01",
+                "ldc_type": "Contact.Contact.Broadcast"
+            }
+        },
+        {
+            "name": "mutation",
+            "wd_node": "Q42918",
+            "definition": "change of the nucleotide sequence of the genome of an organism",
+            "arguments": [
+                "A1_ppt_patient_entity_undergoing_mutation",
+                "A2_prd_result_end_state",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Disease Outbreak"
+            ],
+            "template": "<A1_ppt_patient_entity_undergoing_mutation> mutated into <A2_prd_result_end_state> at <AM_loc__location>.",
+            "keywords": [
+                "mutate",
+                "evolve"
+            ],
+            "additional_info": {
+                "propbank": "mutate.01",
+                "ldc_type": "Life.Mutate.Unspecified"
+            }
+        },
+        {
+            "name": "infection",
+            "wd_node": "Q166231",
+            "definition": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
+            "arguments": [
+                "A1_gol_destination_thing_becoming_infected",
+                "A2_ppt_theme_infectant",
+                "A0_pag_agent_causer_of_infection",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_causer_of_infection> infected <A1_gol_destination_thing_becoming_infected> with <A2_ppt_theme_infectant> at <AM_loc__location>.",
+            "keywords": [
+                "infect",
+                "spread"
+            ],
+            "additional_info":{
+                "propbank": "infect.01",
+                "ldc_type": "Life.Infect.Unspecified"
+            }
+
+        },
+        {
+            "name": "treatment",
+            "wd_node": "Q179661",
+            "definition": "attempted medical remediation of a health problem, usually following a diagnosis",
+            "arguments":[
+                "A0_pag__doctor",
+                "A1_ppt__patient",
+                "A2_ppt__illness_or_injury",
+                "A3_mnr__instrument",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Disaster and Rescue",
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag__doctor> treated <A1_ppt__patient> for <A2_ppt__illness_or_injury> with <A3_mnr__instrument> at <AM_loc__location>.",
+            "keywords":[
+                "treatment",
+                "cure",
+                "hospitalize"
+            ],
+            "additional_info":{
+                "propbank": "treat.03",
+                "ldc_type": "Medical.Intervention.Unspecified"
+            }
+        },
+        {
+            "name": "medical_diagnosis",
+            "wd_node": "Q177719",
+            "definition": "process to determine or identify a disease or disorder, which would account for a person's symptoms and signs",
+            "arguments": [
+                "A0_pag_agent_doctor",
+                "A1_ppt_theme_patient", 
+                "A2_prd_attribute_illness",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_doctor> diagnosed <A1_ppt_theme_patient> with <A2_prd_attribute_illness> at <AM_loc__location>.",
+            "keywords": [
+                "diagnosis",
+                "identify"
+            ],
+            "additional_info":{
+                "propbank": "diagnose.01",
+                "ldc_type": "Medical.Diagnosis.Unspecified"
+            }
+        },
+        {
+            "name": "vaccination",
+            "wd_node": "Q192995",
+            "definition": "administration of a vaccine to protect against disease",
+            "arguments":[
+                "A0_pag__inoculator",
+                "A1_ppt__patient_inoculated",
+                "A2_ppt__inoculated_against",
+                "Ax_mnr__innoculated_with",
+                "AM_loc__location"
+            ],
+            "scenario":[
+                "Disease Outbreak"
+            ],
+            "template": "<A1_ppt__patient_inoculated> was vaccined by <A0_pag__inoculator> with <Ax_mnr__innoculated_with> to prevent <A2_ppt__inoculated_against> at <AM_loc__location>.",
+            "keywords": [
+                "vaccine",
+                "vaccinate",
+                "inoculate"
+            ],
+            "additional_info":{
+                "propbank": "inoculate.01",
+                "ldc_type": "Medical.Vaccinate.Unspecified"
+            }
+        },
+        {
+            "name": "disease",
+            "wd_node": "Q12136",
+            "definition":  "abnormal condition negatively affecting organisms",
+            "arguments": [
+                "A1_ppt__sick/ill_one",
+                "AM_cau__cause",
+                "A2_cau__cause_or_disease",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak"
+            ],
+            "template": "<A1_ppt__sick/ill_one> is ill with <AM_cau__cause> because of <A2_cau__cause_or_disease> at <AM_loc__location>.",
+            "keywords": [
+                "disease",
+                "ill",
+                "illness",
+                "sick"
+            ],
+            "additional_info":{
+                "propbank": "ill.01",
+                "ldc_type": "Life.Illness.Unspecified"
+            }
+        },
+        {
+            "name": "death",
+            "wd_node": "Q4",
+            "definition": "permanent cessation of vital functions",
+            "arguments": [
+                "A1_ppt_the_deceased",
+                "AM_loc__location",
+                "AM_cau__cause"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Terrorism Attacks",
+                "International Invasion",
+                "IED Bombing",
+                "Kidnapping"
+            ],
+            "template": "<A1_ppt_the_deceased> died because of <AM_cau__cause> at <AM_loc__location>.",
+            "keywords":[
+                "die",
+                "death",
+                "decease"
+            ],
+            "additional_info":{
+                "propbank": "die.01",
+                "ldc_type": "Life.Die.Unspecified"
+            }
+        },
+        {
+            "name": "transport",
+            "wd_node": "Q7590",
+            "definition": "human-directed movement of things or people between locations",
+            "arguments": [
+                "A0_pag_agent_transporter",
+                "A1_ppt_theme_thing_transported",
+                "AM_mnr__manner",
+                "A2_dir_source_initial_location",
+                "A3_gol_destination_destination"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Terrorism Attacks",
+                "International Invasion",
+                "IED Bombing",
+                "Kidnapping",
+                "Election"
+            ],
+            "template": "<A0_pag_agent_transporter> transported <A1_ppt_theme_thing_transported> using <AM_mnr__manner> from <A2_dir_source_initial_location> to <A3_gol_destination_destination>.",
+            "keywords": [
+                "transport",
+                "move",
+                "drive"
+            ],
+            "additional_info":{
+                "propbank": "transport.01",
+                "ldc_type": "Movement.Transportation.Unspecified"
+            }
+        },
+        {
+            "name": "international_aid",
+            "wd_node": "Q2827815",
+            "definition": "voluntary transfer of resources from one country to another",
+            "arguments": [
+                "A0_pag_agent_giver",
+                "A2_gol_recipient_entity_given_to",
+                "AM_gol__goal",
+                "A1_ppt_theme_thing_given",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Terrorism Attacks",
+                "Civil Unrest"
+            ],
+            "template": "<A0_pag_agent_giver> provided international aid to <A2_gol_recipient_entity_given_to> in the form of <A1_ppt_theme_thing_given> for <AM_gol__goal> at <AM_loc__location>.",
+            "keywords": [
+                "aid",
+                "assistance",
+                "donation"
+            ],
+            "additional_info":{
+                "propbank": "give.01",
+                "ldc_type": "Transaction.AidBetweenGovernments.Unspecified"
+            }
+        },
+        {
+            "name": "exchange_of_goods",
+            "wd_node": "Q21651837",
+            "definition": "transfer of goods to each other, trading products.",
+            "arguments": [
+                "A0_pag_agent_agent",
+                "A2_com_co_agent_other_exchanger",
+                "A1_ppt_theme_thing_being_traded",
+                "A3_ppt_co_theme_other_item_in_exchange_price_or_premium"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Terrorism Attacks",
+                "International Invasion",
+                "IED Bombing",
+                "Kidnapping",
+                "Election"
+            ],
+            "template": "<A0_pag_agent_agent> exchanged <A1_ppt_theme_thing_being_traded> with <A2_com_co_agent_other_exchanger> for <A3_ppt_co_theme_other_item_in_exchange_price_or_premium>.",
+            "keywords": [
+                "buy",
+                "sell",
+                "purchase",
+                "trade"
+            ],
+            "additional_info":{
+                "propbank": "exchange.01",
+                "ldc_type": "Transaction.ExchangeBuySell.Unspecified"
+            }
+        },
+        {
+            "name": "disinfection",
+            "wd_node": "Q66869562",
+            "definition": "making something clean, rendering pathogens harmless through methods including use of heat, antiseptics and antibacterial agents",
+            "arguments": [
+                "A0_pag__cleaner",
+                "A1_ppt__thing_made_clean",
+                "AM_mnr__manner",
+                "AM_cau__cause",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag__cleaner> cleaned <A1_ppt__thing_made_clean> of <AM_cau__cause> with <AM_mnr__manner> at <AM_loc__location>.",
+            "keywords": [
+                "clean",
+                "disinfect",
+                "sanitize"
+            ],
+            "additional_info":{
+                "propbank": ["sanitize.01","clean.01"],
+                "ldc_type": "SocialBehavior.Clean.Sanitize"
+            }
+        },
+        {
+            "name": "wear",
+            "wd_node":"Q11460",
+            "definition": "wearing clothing over the body.",
+            "arguments": [
+                "A0_pag_agent_wearer",
+                "A1_ppt_theme_clothing",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak",
+                "Disaster and Rescue",
+                "Civil Unrest"
+            ],
+            "template": "<A0_pag_agent_wearer> wore <A1_ppt_theme_clothing> at <AM_loc__location>.",
+            "keywords": [
+                "wear",
+                "dress"
+            ],
+            "additional_info":{
+                "propbank": "wear.01",
+                "ldc_type": "SocialBehavior.Wear.Unspecified"
+            }
+        },
+        {
+            "name": "estimation_process",
+            "wd_node": "Q791801",
+            "definition": "process of finding an estimate, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable",
+            "arguments": [
+                "A0_pag_agent_estimator",
+                "A1_ppt_theme_thing_estimated",
+                "A2_prd_value_estimated_to_be",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disaster and Rescue",
+                "Disease Outbreak",
+                "Civil Unrest",
+                "Election",
+                "International Invasion",
+                "Terrorism Attacks",
+                "IED Bombing"
+            ],
+            "template": "<A0_pag_agent_estimator> estimates the value of <A1_ppt_theme_thing_estimated> to be <A2_prd_value_estimated_to_be> at <AM_loc__location>.",
+            "keywords": [
+                "estimate",
+                "calculate",
+                "approximate"
+            ],
+            "additional_info":{
+                "propbank": "estimate.01",
+                "ldc_type": "Cognitive.Inspection.AssessTestMeasure"
+            }
+
+        },
+        {
+            "name": "ingestion",
+            "wd_node": "Q1663054",
+            "definition": "consumption of a substance by an organism",
+            "arguments": [
+                "A0_pag_agent_eater",
+                "A1_ppt_patient_entity_ingested",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Disease Outbreak"
+            ],
+            "template": "<A0_pag_agent_eater> ingested <A1_ppt_patient_entity_ingested> at <AM_loc__location>.",
+            "keywords": [
+                "ingest",
+                "eat",
+                "drink",
+                "consume"
+            ],
+            "additional_info":{
+                "propbank": "ingest.01",
+                "ldc_type": "Life.Consume.Unspecified"
+            }
+        }
+
+
+    ]
+}

@@ -1,0 +1,778 @@
+{
+    "events": [
+        {
+            "name": "search",
+            "wd_node": "Q4544684",
+            "definition": "set of methods, means, initiatives, organizational tools, aimed at finding people or things",
+            "arguments": [
+                "A0_pag_searcher",
+                "A1_loc_Area_searched",
+                "A2_ppt_searched_for",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_searcher> <A1_loc_Area_searched> <A2_ppt_searched_for> <AM_loc>",
+            "keywords": [
+                "target",
+                "looking for",
+                "finding",
+                "aiming",
+                "seeking"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Deciding",
+                    "Waver_between_options"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "search.01"
+                ],
+                "ldc": [],
+                "maven": "Deciding"
+            }
+        },
+        {
+            "name": "observation",
+            "wd_node": "Q193181",
+            "definition": "active acquisition of information from a primary source",
+            "arguments": [
+                "A0_pag_experiencer_observer",
+                "A1_ppt_stimulus_thing_looked_at",
+                "AM_mnr__manner",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_experiencer_observer> <A1_ppt_stimulus_thing_looked_at> <AM_mnr__manner> <AM_loc__location>",
+            "keywords": [
+                "surveillance",
+                "watching",
+                "observing",
+                "finding",
+                "exploration"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Scrutiny",
+                    "Court_examination",
+                    "Scrutinizing_for",
+                    "Inspecting"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "watch.01",
+                    "inspect.01"
+                ],
+                "ldc": [
+                    "Cognitive.Inspection.SensoryObserve"
+                ],
+                "maven": "Scrutiny"
+            }
+        },
+        {
+            "name": "targeting",
+            "wd_node": "Q7685924",
+            "definition": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare",
+            "arguments": [
+                "A0_pag_agent_targeter",
+                "A1_ppt_theme_thing_aimed_at",
+                "A2_mnr_instrument_instrument",
+                "AM_loc__location"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_agent_targeter> <A1_ppt_theme_thing_aimed_at> <A2_mnr_instrument_instrument> <AM_loc__location>",
+            "keywords": [
+                "finding",
+                "aiming",
+                "target",
+                "selection",
+                "objective"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Aiming"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "target.01"
+                ],
+                "ldc": [
+                    "Cognitive.Inspection.TargetAimAt"
+                ],
+                "maven": "Aiming"
+            }
+        },
+        {
+            "name": "planning",
+            "wd_node": "Q7201355",
+            "definition": "thought process",
+            "arguments": [
+                "A0_pag_planner",
+                "A1_ppt_thing_planned",
+                "A2_cau_grounds_for_planning",
+                "A3_gol_beneficiary",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_planner> <A1_ppt_thing_planned> <A2_cau_grounds_for_planning> <A3_gol_beneficiary> <AM_loc>",
+            "keywords": [
+                "preparation",
+                "design",
+                "devising",
+                "outline",
+                "premeditation"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Research",
+                    "Experimentation"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "plan.01"
+                ],
+                "ldc": [],
+                "maven": "Research"
+            }
+        },
+        {
+            "name": "buy",
+            "wd_node": "Q12887029",
+            "definition": "None",
+            "arguments": [
+                "A0_pag_buyer",
+                "A1_ppt_thing_bought",
+                "A2_dir_seller",
+                "A3_vsp_price_paid",
+                "A4_gol_benefactive",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_buyer> <A1_ppt_thing_bought> <A2_dir_seller> <A3_vsp_price_paid> <A4_gol_benefactive> <AM_loc>",
+            "keywords": [
+                "buy weapon",
+                "purchase",
+                "procurement",
+                "acquisition",
+                "arming"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Post_getting",
+                    "Getting"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "buy.01"
+                ],
+                "ldc": [],
+                "maven": "Getting"
+            }
+        },
+        {
+            "name": "rehearsal",
+            "wd_node": "Q1751775",
+            "definition": "practice performance",
+            "arguments": [
+                "A0_pag_practicer",
+                "A1_ppt_skill",
+                "A2_mnr_instrument",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_practicer> <A1_ppt_skill> <A2_mnr_instrument> <AM_loc>",
+            "keywords": [
+                "practice",
+                "run-through",
+                "exercise",
+                "drill",
+                "training"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Practice"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "practice.01"
+                ],
+                "ldc": [],
+                "maven": "Practice"
+            }
+        },
+        {
+            "name": "gun_violence",
+            "wd_node": "Q5618454",
+            "definition": "broadly defined as violence committed with the use of a gun",
+            "arguments": [
+                "A0_pag_criminal",
+                "A1_ppt_crime"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_criminal> <A1_ppt_crime>",
+            "keywords": [
+                "shooting",
+                "attack",
+                "violence",
+                "firing",
+                "discharge"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Violence"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "attack.01"
+                ],
+                "ldc": [],
+                "maven": "Violence"
+            }
+        },
+        {
+            "name": "killing",
+            "wd_node": "Q844482",
+            "definition": "act of killing a living being",
+            "arguments": [
+                "A0_pag_killer",
+                "A1_ppt_corpse",
+                "A2_mnr_instrument",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_killer> <A1_ppt_corpse> <A2_mnr_instrument> <AM_loc>",
+            "keywords": [
+                "homicide",
+                "murder",
+                "slaying",
+                "massacre",
+                "bloodshed"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Killing"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "kill.01"
+                ],
+                "ldc": [],
+                "maven": "Killing"
+            }
+        },
+        {
+            "name": "escape",
+            "wd_node": "Q50388354",
+            "definition": "break free from confinement or control",
+            "arguments": [
+                "A0_ppt_entity_escaping",
+                "A1_loc_place_or_thing_escaped",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_ppt_entity_escaping> <A1_loc_place_or_thing_escaped> <AM_loc>",
+            "keywords": [
+                "fleeing",
+                "absconding",
+                "running away",
+                "eluding",
+                "avoiding",
+                "evading"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Cause_motion",
+                    "Cause_fluidic_motion",
+                    "Mass_motion",
+                    "Motion_scenario",
+                    "Fluidic_motion",
+                    "Cause_to_move_in_place",
+                    "Temporary_leave",
+                    "Motion"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "escape.01"
+                ],
+                "ldc": [],
+                "maven": "Motion"
+            }
+        },
+        {
+            "name": "public_statement",
+            "wd_node": "Q52947181",
+            "definition": "statement made for a public audience",
+            "arguments": [
+                "A0_pag_agent_announcer",
+                "A2_gol_recipient_hearer",
+                "AM_loc__location",
+                "A1_ppt_topic_utterance",
+                "AM_mnr__manner"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_agent_announcer> <A2_gol_recipient_hearer> <AM_loc__location> <A1_ppt_topic_utterance> <AM_mnr__manner>",
+            "keywords": [
+                "taking credit",
+                "exploitation",
+                "announcement",
+                "communication",
+                "message"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Communication",
+                    "Successfully_communicate_message",
+                    "Discussion",
+                    "Contacting",
+                    "Chatting",
+                    "Communication_response",
+                    "Encoding",
+                    "Talking_into"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "announce.01"
+                ],
+                "ldc": [
+                    "Contact.PublicStatementInPerson.Broadcast",
+                    "Contact.PublicStatementInPerson.Unspecified"
+                ],
+                "maven": "Communication"
+            }
+        },
+        {
+            "name": "security",
+            "wd_node": "Q2526135",
+            "definition": "freedom from, or resilience against, potential harm caused by hostile forces or circumstances",
+            "arguments": [
+                "A0_pag_agent/causer",
+                "A1_ppt_entity_who_is_protected",
+                "A2_vsp_specific_domain_in_which_arg1_is_safe",
+                "A3_gol_potential_danger",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_agent/causer> <A1_ppt_entity_who_is_protected> <A2_vsp_specific_domain_in_which_arg1_is_safe> <A3_gol_potential_danger> <AM_loc>",
+            "keywords": [
+                "defending",
+                "making safe",
+                "guarding",
+                "securing",
+                "blocking"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Military_operation"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "security.03"
+                ],
+                "ldc": [],
+                "maven": "Military_operation"
+            }
+        },
+        {
+            "name": "emergency_evacuation",
+            "wd_node": "Q606332",
+            "definition": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "arguments": [
+                "A0_pag_agent_transporter",
+                "A1_ppt_thing_transported",
+                "AM_mnr__manner",
+                "A2_dir_initial_location_source",
+                "A3_gol_destination_destination",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_agent_transporter> <A1_ppt_thing_transported> <AM_mnr__manner> <A2_dir_initial_location_source> <A3_gol_destination_destination> <AM_loc>",
+            "keywords": [
+                "exodus",
+                "egress",
+                "exit",
+                "sortie",
+                "withdrawal"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Emergency_fire",
+                    "Emergency"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "transport.01"
+                ],
+                "ldc": [
+                    "Movement.Transportation.Evacuation"
+                ],
+                "maven": "Emergency"
+            }
+        },
+        {
+            "name": "rescue",
+            "wd_node": "Q1341429",
+            "definition": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+            "arguments": [
+                "A0_pag_rescuer",
+                "A1_ppt_entity_rescued",
+                "A2_dir_rescued_from",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_rescuer> <A1_ppt_entity_rescued> <A2_dir_rescued_from> <AM_loc>",
+            "keywords": [
+                "recovery",
+                "saving",
+                "help",
+                "aid",
+                "assistance"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Rescuing"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "rescue.01"
+                ],
+                "ldc": [],
+                "maven": "Rescuing"
+            }
+        },
+        {
+            "name": "treatment",
+            "wd_node": "Q26256310",
+            "definition": "process or manner of treating or responding to a condition",
+            "arguments": [
+                "A0_pag_assumer_of_attribute",
+                "A1_ppt_entity_treated",
+                "A2_prd_attribute",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_assumer_of_attribute> <A1_ppt_entity_treated> <A2_prd_attribute> <AM_loc>",
+            "keywords": [
+                "surgery",
+                "care",
+                "medicine",
+                "therapy",
+                "first aid"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Cause_change_of_strength"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "treat.01"
+                ],
+                "ldc": [],
+                "maven": "Cause_change_of_strength"
+            }
+        },
+        {
+            "name": "insurance",
+            "wd_node": "Q43183",
+            "definition": "equitable transfer of the risk of a loss, from one entity to another in exchange for payment",
+            "arguments": [
+                "A0_cau_entity_making_guarantee",
+                "A1_ppt_guarantee",
+                "A2_gol_benefactive",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_cau_entity_making_guarantee> <A1_ppt_guarantee> <A2_gol_benefactive> <AM_loc>",
+            "keywords": [
+                "assurance",
+                "guarantee",
+                "bond",
+                "claim",
+                "indemnity",
+                "casualty",
+                "fulfillment"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Earnings_and_losses"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "insure.01"
+                ],
+                "ldc": [],
+                "maven": "Earnings_and_losses"
+            }
+        },
+        {
+            "name": "criminal_investigation",
+            "wd_node": "Q1415338",
+            "definition": "in the legal sense exploration of a fact",
+            "arguments": [
+                "A0_pag_examiner",
+                "A1_ppt_examined",
+                "A2_ppt_examined_for",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_examiner> <A1_ppt_examined> <A2_ppt_examined_for> <AM_loc>",
+            "keywords": [
+                "investigation",
+                "probe",
+                "inquiry",
+                "questioning",
+                "delving"
+            ],
+            "additional_info": {
+                "framenet": [],
+                "verbnet": "",
+                "propbank": [
+                    "investigate.01"
+                ],
+                "ldc": [],
+                "maven": "Investigation"
+            }
+        },
+        {
+            "name": "identification",
+            "wd_node": "Q2493413",
+            "definition": "psychological process whereby the subject assimilates an aspect, property, or attribute of the other and is transformed, wholly or partially, by the model the other provides",
+            "arguments": [
+                "A0_pag_causer_of_change",
+                "A1_ppt_thing_changing",
+                "A2_gol_target",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_causer_of_change> <A1_ppt_thing_changing> <A2_gol_target> <AM_loc>",
+            "keywords": [
+                "naming",
+                "identity",
+                "suspect",
+                "suspicion",
+                "interest"
+            ],
+            "additional_info": {
+                "framenet": [],
+                "verbnet": "",
+                "propbank": [
+                    "assimilate.01"
+                ],
+                "ldc": [],
+                "maven": "Finding"
+            }
+        },
+        {
+            "name": "pursuit",
+            "wd_node": "Q2515647",
+            "definition": "pursuit of suspects by law enforcers",
+            "arguments": [
+                "A0_pag_thing_following",
+                "A1_ppt_thing_followed",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_thing_following> <A1_ppt_thing_followed> <AM_loc>",
+            "keywords": [
+                "chase",
+                "following",
+                "tracking",
+                "trailing",
+                "tracing"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Patrolling"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "pursue.01"
+                ],
+                "ldc": [],
+                "maven": "Patrolling"
+            }
+        },
+        {
+            "name": "detention",
+            "wd_node": "Q1071447",
+            "definition": "removal of the freedom of liberty by a state",
+            "arguments": [
+                "A0_pag_police",
+                "A1_ppt_entity_detained",
+                "A2_cau_detained_for_what?",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_police> <A1_ppt_entity_detained> <A2_cau_detained_for_what?> <AM_loc>",
+            "keywords": [
+                "detainer",
+                "detainment",
+                "holding",
+                "catching",
+                "busting",
+                "pinching",
+                "capture",
+                "apprehension",
+                "arrest"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Repel",
+                    "Defending"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "detain.01"
+                ],
+                "ldc": [],
+                "maven": "Defending"
+            }
+        },
+        {
+            "name": "news_broadcasting",
+            "wd_node": "Q1962634",
+            "definition": "news published over radio or television",
+            "arguments": [
+                "A0_pag_transmitter",
+                "A1_ppt_message",
+                "A2_gol_audience",
+                "A3_dir_source",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_transmitter> <A1_ppt_message> <A2_gol_audience> <A3_dir_source> <AM_loc>",
+            "keywords": [
+                "coverage",
+                "media",
+                "story",
+                "report",
+                "news"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Communication",
+                    "Successfully_communicate_message",
+                    "Discussion",
+                    "Contacting",
+                    "Chatting",
+                    "Communication_response",
+                    "Encoding",
+                    "Talking_into"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "broadcast.01"
+                ],
+                "ldc": [],
+                "maven": "Communication"
+            }
+        },
+        {
+            "name": "criminal_case",
+            "wd_node": "Q16738832",
+            "definition": "investigation case under criminal law",
+            "arguments": [
+                "A0_pag_criminal",
+                "A1_ppt_act",
+                "A2_gol_crime_against",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_criminal> <A1_ppt_act> <A2_gol_crime_against> <AM_loc>",
+            "keywords": [
+                "trial",
+                "hearing",
+                "proceedings",
+                "case",
+                "prosecution",
+                "defense"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Legal_rulings"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "crime.02"
+                ],
+                "ldc": [],
+                "maven": "Legal_rulings"
+            }
+        },
+        {
+            "name": "judgment",
+            "wd_node": "Q3769186",
+            "definition": "the formal decision made by a court following a lawsuit",
+            "arguments": [
+                "A0_pag_judge",
+                "A1_ppt_judged",
+                "A2_prd_judgement",
+                "A3_cau_on_what_grounds",
+                "AM_loc"
+            ],
+            "scenario": [
+                "Mass shooting"
+            ],
+            "template": "<A0_pag_judge> <A1_ppt_judged> <A2_prd_judgement> <A3_cau_on_what_grounds> <AM_loc>",
+            "keywords": [
+                "verdict",
+                "sentencing",
+                "sentence",
+                "decision",
+                "opinion"
+            ],
+            "additional_info": {
+                "framenet": [
+                    "Legal_rulings"
+                ],
+                "verbnet": "",
+                "propbank": [
+                    "judge.01"
+                ],
+                "ldc": [],
+                "maven": "Legal_rulings"
+            }
+        }
+    ]
+}
