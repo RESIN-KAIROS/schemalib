@@ -370,6 +370,16 @@
             "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
             "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism"
           ]
+        },
+        {
+          "child": "resin:Events/10035/Steps_kairos:Primitives_Events_Protest",
+          "comment": "Protest Elsewhere",
+          "optional": false,
+          "importance": 1,
+          "outlinks": [
+            "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
+            "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism"
+          ]
         }
       ]
     },
@@ -1179,6 +1189,30 @@
         "template": "",
         "repeatable": false
       }
+    },
+    {
+      "@id": "resin:Events/10035/Steps_kairos:Primitives_Events_Protest",
+      "name": "Protest Elsewhere",
+      "qnode": "wd:Q175331",
+      "qlabel": "demonstration",
+      "participants": [
+        {
+          "@id": "resin:Participants/20066/kairos:Primitives_Events_Demonstration_Protester",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20067/kairos:Primitives_Events_Demonstration",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "ta1explanation": "collective action by people to protest the terrorist attack and injustice",
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      }
     }
   ],
   "entities": [
@@ -1264,9 +1298,9 @@
     {
       "@id": "resin:Relations/30000/",
       "name": "member of",
-      "relationSubject": "resin:Entities/00001/",
+      "relationSubject": "resin:Entities/00005/",
       "relationPredicate": "wd:Q21503252",
-      "relationObject": "resin:Entities/00005/"
+      "relationObject": "resin:Entities/00001/"
     }
   ]
 }
