@@ -1,4 +1,79 @@
 # Changelog 
+## [Quizlet 9, 0.4] - 2022-03-18
+Refined all schemas. See sections for specific notes.
+### [Business Change]
+The entire schema is full of isolated events. Primitive events that do not have children still had `children_gate` and `children` in their events list, resulting in a convoluted graph.
+- organized events into containers and linked events in those containers
+- Recycled Civil Justice and Criminal Justice chapters, with added events to make sense in the context
+### [Election]
+- moved Candidate Continues into Nomination chapter as an XOR gate; created repeatable Nomination Campaign chapter
+- added participants
+- resolved some entities only referred to once warnings
+- added relations
+### [Sports]
+- many events have irrelevant Qnodes and labels; double checked all Qnodes and labels and fixed them where necessary
+- participant rolenames do not fit XPO format; redid all participants
+- entities do not have names; fixed and added missing entities
+- resolved entities only referred to once warnings
+- added relations
+### [Kidnapping]
+- each event only had 1 or 2 participants; added missing participants and entities
+- removed redundant events
+- replaced Legality chapter with Criminal Justice chapter
+- added relations
+### [Disease Outbreak]
+- added participants
+- add feedback events
+	- Contributory Factors: Environmental and Social Factors containers
+	- Medical Response: Disinfect contaminated areas, identify and quarantine exposed group
+	- Civil Justice: Contact attorney
+### [Mass Shooting]
+- resolved some entities only referred to once warnings
+- added relations
+### [Manmade Disaster and Rescue]
+- fixed location of "treatment"
+- added participants
+- added WD descriptions
+- added relations
+### [International Conflict]
+- added participants
+- added entities and participants for all events, including finding good Qnodes for entities
+- created coreferences between participants
+- added the events for the two schema episodes remaining to be done based on the schemaFeedback document: government response, and battle
+	- also added entities and created coreferences for them.
+	- for participants, found PropBank equivalents and extracted roles from them.
+- made optional and repeatable events 
+### [General Attack]
+- added participants
+- fixed Qnodes and Qlabels
+- Organized the events into containers (created a document similar to the schema feedback for international conflict)
+- Linked the childs and outlinks (hierarchical and temporal links) between events and containers
+- Recycled some events and their participants from other schemas, but changed the entity links to match the current schema
+- added entities that match the scenarios and are important to them
+- created xor gates when appropriate
+- made optional and repeatable events
+- found Qnodes for new (non-recyclable) entities and events 
+### [Natural Disaster and Rescue]
+- `damage` should be an outlink from all subtypes of natural disaster, not a type of natural disaster, as it is caused by natural disasters.
+- `trap` should be an outlink in all the disaster subtypes.
+- fixed some qnodes 
+- added descriptions from wd descriptions
+- added a second `treatment` node for onsite treatment, separate from the treatment after taking to the medical facility.
+### [Civil Unrest]
+- added WD descriptions
+- made sure all qlabel values have underscores instead of spaces
+- added some entities and removed some others
+- introduced correct entity links for all participants
+- made a distinction between person (as an individual) and group of humans
+- fixed the Qnodes that were either mistakenly selected or were pointing to a Wikimedia Disambiguation Page.
+### [General IED]
+- pruned participants to form coference links
+- added Criminal Justice chapter
+- added relations
+### [Other IEDs]
+- added specific events with their corresponding participants and entities based on previous schemas to General IED template
+
+-----
 
 ## [Quizlet 9, 0.3] - 2022-02-10
 ### Added 
@@ -8,6 +83,8 @@
 ### Fixed 
 - Issues with Qnode format 
 - Issues with multiple root nodes 
+
+-----
 
 ## [Quizlet9, 0.2] - 2022-02-03
 ### Added 
