@@ -1,2306 +1,2918 @@
 {
-  "@context": [
-    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
-    {
-      "caci": "https://caci.com/kairos/",
-      "my_key": "caci:my_key",
-      "giant_bitstring": "caci:giant_bitstring",
-      "resin": "https://blender.cs.illinois.edu/kairos/"
-    }
-  ],
-	"@id": "kairos:Submissions/TA1/schemas_business_change",
-    "sdfVersion": "1.4.1",
-    "version": "6.0",
-    "ta2": false,
-    "comment": [
-        "zero shot schema",
-        "this schema was induced using non-real documents (generated from GPT3)"
+    "@context": [
+        "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
+        {
+            "caci": "https://caci.com/kairos/",
+            "my_key": "caci:my_key",
+            "giant_bitstring": "caci:giant_bitstring",
+            "resin": "https://blender.cs.illinois.edu/kairos/"
+        }
     ],
+    "@id": "resin:Schemas/Business_Change",
+    "sdfVersion": "1.4.1",
+    "version": "caci-08.07.2020",
+    "ta2": false,
     "events": [
         {
-            "@id": "kairos:Events/00000/BusinessChange",
+            "@id": "resin:Events/10000/Business_Change",
             "name": "Business Change",
-            "description": "schema topic",
-            "goal": "",
-            "privateData": {},
+            "description": "",
+            "ta1explanation": "Schema describing business change events, including fraud, mergers and acquisitions, antitrust investigations, and bankruptcy",
             "children_gate": "or",
             "children": [
                 {
-                    "child": "kairos:Events/00002/Acquisition",
+                    "child": "resin:Events/10001/Steps_kairos:Container:Early_Stages",
+                    "comment": "Early Stages",
+                    "optional": false,
+                    "importance": 0.8,
                     "outlinks": [
-						"kairos:Events/00025/ManagementChange",
-						"kairos:Events/00050/JobCuts"
-                    ],
-					"comment": ""
+                        "resin:Events/10002/Corruption"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00001/Bankruptcy",
+                    "child": "resin:Events/10002/Corruption",
+                    "comment": "Corruption",
+                    "optional": true,
+                    "importance": 0.8,
                     "outlinks": [
-						"kairos:Events/00021/Assign"
-                    ],
-					"comment": ""
-                },
-				{
-                    "child": "kairos:Events/00010/Scandal",
-                    "outlinks": [
-                        "resin:Events/10064/Steps_kairos:Primitives_Events_Investigation",
-                        "kairos:Events/00040/CorporateCriminalInquiry"
-                    ],
-                    "comment": ""
-                },
-				{
-                    "child": "kairos:Events/00009/Investigation",
-					"outlinks": [
-						"kairos:Events/00014/Response"
-					],
-					"comment": ""
+                        "resin:Events/10003/Steps_kairos:Container:Fraud"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00008/Founding",
+                    "child": "resin:Events/10003/Steps_kairos:Container:Fraud",
+                    "comment": "Fraud",
+                    "optional": true,
+                    "importance": 0.9,
                     "outlinks": [
-						"kairos:Events/00015/Fundraising"
-                    ],
-					"comment": ""
+                        "resin:Events/10004/Steps_kairos:Primitives_Events_Audit"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00006/Shutdown",
+                    "child": "resin:Events/10004/Steps_kairos:Primitives_Events_Audit",
+                    "comment": "Audit",
+                    "optional": false,
+                    "importance": 1,
                     "outlinks": [
-						"kairos:Events/00019/Sell"
-                    ],
-					"comment": ""
+                        "resin:Events/10005/Steps_kairos:Container:Market_Shift",
+                        "resin:Events/10006/Steps_kairos:Container:Investigation"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00015/Fundraising",
-                    "outlinks": [
-                    ],
-					"comment": ""
+                    "child": "resin:Events/10006/Steps_kairos:Container:Investigation",
+                    "comment": "Criminal Investigation",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
                 },
                 {
-                    "child": "kairos:Events/00003/Merger",
+                    "child": "resin:Events/10005/Steps_kairos:Container:Market_Shift",
+                    "comment": "Market Shift",
+                    "optional": false,
+                    "importance": 0.9,
                     "outlinks": [
-						"kairos:Events/00050/JobCuts"
-                    ],
-					"comment": ""
+                        "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00019/Sell",
+                    "child": "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure",
+                    "comment": "Restructure",
+                    "optional": true,
+                    "importance": 0.9,
                     "outlinks": [
-                    ],
-					"comment": ""
+                        "resin:Events/10008/Steps_kairos:Container:100"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00020/Privatize",
-                    "outlinks": [
-                    ],
-					"comment": ""
+                    "child": "resin:Events/10008/Steps_kairos:Container:100",
+                    "comment": "Restructure outlinks",
+                    "optional": true,
+                    "importance": 0.9,
+                    "outlinks": []
                 },
                 {
-                    "child": "kairos:Events/00023/TransferMoney",
+                    "child": "resin:Events/10009/Steps_kairos:Container:Mergers_and_Acquistions",
+                    "comment": "Mergers and Acquisitions",
+                    "optional": true,
+                    "importance": 0.9,
                     "outlinks": [
-                    ],
-					"comment": ""
+                        "resin:Events/10010/Steps_kairos:Container:Reorganization"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00025/ManagementChange",
-                    "outlinks": [
-                    ],
-					"comment": ""
+                    "child": "resin:Events/10011/Steps_kairos:Container:Bankruptcy",
+                    "comment": "Bankruptcy",
+                    "optional": true,
+                    "importance": 0.9,
+                    "outlinks": []
                 },
                 {
-                    "child": "kairos:Events/00007/Reorganization",
+                    "child": "resin:Events/10010/Steps_kairos:Container:Reorganization",
+                    "comment": "Reorganization",
+                    "optional": false,
+                    "importance": 0.9,
                     "outlinks": [
-                    ],
-					"comment": ""
+                        "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation"
+                    ]
                 },
                 {
-                    "child": "kairos:Events/00027/CreatePartnership",
-                    "outlinks": [
-						"kairos:Events/00028/EndPartnership"
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00028/EndPartnership",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00033/ProposeAcquisition",
-                    "outlinks": [
-						"kairos:Events/00051/AskShareholders"
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00032/ProposeMerger",
-                    "outlinks": [
-						"kairos:Events/00051/AskShareholders"
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00042/Breakup",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00004/Divestment",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00050/JobCuts",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00056/GovernmentActions",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00014/Response",
-                    "outlinks": [
-                    ],
-					"comment": "This is only a child because can only be one root node."
-                },
-                {
-                    "child": "kairos:Events/00018/BankruptcyActions",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00005/PersonnelChange",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00013/Corruption",
-                    "outlinks": [
-                    ],
-					"comment": ""
+                    "child": "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation",
+                    "comment": "Antitrust investigation",
+                    "optional": true,
+                    "importance": 0.9,
+                    "outlinks": []
                 }
             ]
         },
         {
-            "@id": "kairos:Events/00001/Bankruptcy",
-            "name": "bankruptcy",
-            "ta1explanation": "event when a company declares bankruptcy.",
-            "qnode": "wd:Q152074",
-            "qlabel": "bankruptcy",
-            "participants": [
+            "@id": "resin:Events/10001/Steps_kairos:Container:Early_Stages",
+            "name": "Early Stages",
+            "description": "Early stages container",
+            "ta1explanation": "Events happening in the early stages of a business",
+            "comment": "container node",
+            "children": [
                 {
-                    "@id": "kairos:Participants/00001/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00002/Acquisition",
-            "name": "acquisition",
-            "ta1explanation": "A company is acquired by another company.",
-            "qnode": "wd:Q3604747",
-            "qlabel": "acquisition",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00002/Acquirer",
-                    "roleName": "acquirer",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00003/Acquired",
-                    "roleName": "acquired",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00004/AcquisitionCost",
-                    "roleName": "acquisition cost",
-                    "entity": "kairos:Entities/00009/Money"
-                },
-                {
-                    "@id": "kairos:Participants/00005/AcquiredAssets",
-                    "roleName": "acquired assets",
-                    "entity": "kairos:Entities/00008/Assets"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00003/Merger",
-            "name": "merger",
-            "ta1explanation": "Two companies combine to make a bigger company.",
-            "qnode": "wd:Q1363768",
-            "qlabel": "amalgamation",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00006/Company1",
-                    "roleName": "company1",
-                    "entity": "kairos:Entities/00014/Company1"
-                },
-                {
-                    "@id": "kairos:Participants/00007/Company2",
-                    "roleName": "company2",
-                    "entity": "kairos:Entities/00015/Company2"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00004/Divestment",
-            "name": "divestment",
-            "ta1explanation": "Company divests asset.",
-            "qnode": "wd:Q1200733",
-            "qlabel": "divestment",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00008/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-				{
-                    "@id": "kairos:Participants/00009/Assets",
-                    "roleName": "assets",
-                    "entity": "kairos:Entities/00008/Assets"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00005/PersonnelChange",
-            "name": "PersonnelChange",
-            "ta1explanation": "",
-            "qnode": "wd:Q105764136",
-            "qlabel": "personnel",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00084/Personnel",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00003/Personnel"
-                }
-            ],
-			"children": [
-				{
-                    "child": "kairos:Events/00025/ManagementChange",
+                    "child": "resin:Events/10013/Steps_kairos:Primitives_Events_Found_a_Business",
+                    "comment": "Found a business",
                     "outlinks": [
-                    ],
-					"comment": ""
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00006/Shutdown",
-            "name": "Shutdown",
-            "ta1explanation": "Company has to close for some reason.",
-            "qnode": "wd:Q4128962",
-            "qlabel": "Shutdown",
-            "participants": [
+                        "resin:Events/10014/Steps_kairos:Primitives_Events_Private_Funding"
+                    ]
+                },
                 {
-                    "@id": "kairos:Participants/00010/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "child": "resin:Events/10014/Steps_kairos:Primitives_Events_Private_Funding",
+                    "comment": "Private funding",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10015/Steps_kairos:Primitives_Events_Sell_IPOs"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10015/Steps_kairos:Primitives_Events_Sell_IPOs",
+                    "comment": "Go public and sell IPOs",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10016/Steps_kairos:Primitives_Events_Privatize"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10016/Steps_kairos:Primitives_Events_Privatize",
+                    "comment": "Privatize",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10017/Steps_kairos:Primitives_Events_Create_Partnership",
+                    "comment": "Create partnership",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "children_gate": "or",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00007/Reorganization",
+            "@id": "resin:Events/10002/Corruption",
+            "name": "Corruption",
+            "description": "",
+            "ta1explanation": "Some form of corruption happens amongst the people in the business",
+            "qnode": "wd:Q366",
+            "qlabel": "corruption",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": true
+            },
+            "participants": [
+                {
+                    "@id": "resin:Participants/20001/acquired-entity",
+                    "roleName": "A1_ppt_entity_corrupted",
+                    "entity": "resin:Entities/00000/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10003/Steps_kairos:Container:Fraud",
+            "name": "Fraud",
+            "description": "Fraud container",
+            "ta1explanation": "Types of business fraud",
+            "comment": "container node",
+            "children": [
+                {
+                    "child": "resin:Events/10018/Steps_kairos:Primitives_Events_Charity_Fraud",
+                    "comment": "Charity fraud",
+                    "optional": true,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10019/Steps_kairos:Primitives_Events_Internet_Auction_Fraud",
+                    "comment": "Internet auction fraud",
+                    "optional": true,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10020/Steps_kairos:Primitives_Events_Non-Delivery_of_Merchandise",
+                    "comment": "Nondelivery of merchandise",
+                    "optional": true,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment of Funds",
+                    "comment": "Nonpayment of funds",
+                    "optional": true,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10022/Steps_kairos:Primitives_Events_Overpayment_Scheme",
+                    "comment": "Overpayment scheme",
+                    "optional": true,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10023/Steps_kairos:Primitives_Events_Re-Shipping_Scheme",
+                    "comment": "Reshipment scheme",
+                    "optional": true,
+                    "outlinks": []
+                }
+            ],
+            "children_gate": "or",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10004/Steps_kairos:Primitives_Events_Audit",
+            "name": "Audit",
+            "description": "Type of audit conducted to ensure \"financial statements\" are in accordance with specified criteria",
+            "qnode": "wd:Q740419",
+            "qlabel": "financial audit",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/auditor",
+                    "roleName": "A0_pag_auditor",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20000/audited",
+                    "roleName": "A1_ppt_audited",
+                    "entity": "resin:Entities/00001/"
+                }
+            ],
+            "ta1explanation": "Regular audit to verify financial records",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": true
+            }
+        },
+        {
+            "@id": "resin:Events/10006/Steps_kairos:Container:Investigation",
+            "name": "Criminal investigation",
+            "ta1explanation": "Financial records could not be validated, a criminal investigation case is opened",
+            "qnode": "wd:Q1415338",
+            "qlabel": "criminal_investigation",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10024/Steps_kairos:Primitives_Events_accusation:1",
+                    "comment": "Accusation",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10026/Steps_kairos:Primitives_Events_detention:1"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10026/Steps_kairos:Primitives_Events_detention:1",
+                    "comment": "Detention",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10027/Steps_kairos:Primitives_Events_conviction:1"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10027/Steps_kairos:Primitives_Events_conviction:1",
+                    "comment": "Conviction",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10028/Steps_kairos:Primitives_Events_plea:1",
+                        "resin:Events/10029/Steps_kairos:Primitives_Events_trial:1"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10028/Steps_kairos:Primitives_Events_plea:1",
+                    "comment": "Plea",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10029/Steps_kairos:Primitives_Events_trial:1",
+                    "comment": "Trial",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10030/Steps_kairos:Primitives_Events_legal_hearing:1"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10030/Steps_kairos:Primitives_Events_legal_hearing:1",
+                    "comment": "Legal hearing",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10031/Steps_kairos:Primitives_Events_court_decision:1"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10031/Steps_kairos:Primitives_Events_court_decision:1",
+                    "comment": "Court decision",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10032/Steps_kairos:Container:101"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10032/Steps_kairos:Container:101",
+                    "comment": "court decision outcome",
+                    "optional": false,
+                    "importance": 0.5,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10033/Steps_kairos:Primitives_Events_sentence:1",
+                    "comment": "Sentence",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10034/Steps_kairos:Primitives_Events_arrest",
+                        "resin:Events/10035/Steps_kairos:Primitives_Events_fine",
+                        "resin:Events/10036/Steps_kairos:Primitives_Events_break_up"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10035/Steps_kairos:Primitives_Events_fine",
+                    "comment": "Fine the business",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10036/Steps_kairos:Primitives_Events_break_up",
+                    "comment": "Break up the business",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10010/Steps_kairos:Container:Reorganization"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10037/Steps_kairos:Primitives_Events_acquittal:1",
+                    "comment": "Acquittal",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10034/Steps_kairos:Primitives_Events_arrest",
+                    "comment": "Arrest executive",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10038/Steps_kairos:Primitives_Events_parole"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10038/Steps_kairos:Primitives_Events_parole",
+                    "comment": "Parole",
+                    "optional": true,
+                    "importance": 0,
+                    "outlinks": [
+                        "resin:Events/10039/Steps_kairos:Container:102"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10039/Steps_kairos:Container:102",
+                    "comment": "Parole outlinks",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10040/Steps_kairos:Primitives_Events_Release",
+                    "comment": "Release from Jail",
+                    "optional": false,
+                    "importance": 0,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10005/Steps_kairos:Container:Market_Shift",
+            "name": "Market Shift",
+            "description": "Market shift container",
+            "ta1explanation": "Events leading to the business suffering economically",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10041/Steps_kairos:Primitives_Events_End_Partnership",
+                    "comment": "End partnership",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10042/Steps_kairos:Primitives_Events_Declining_Trend",
+                    "comment": "Declining trend",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10043/Steps_kairos:Primitives_Events_Economic_Recession",
+                    "comment": "Economic recession",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10044/Steps_kairos:Primitives_Events_New_Competitor",
+                    "comment": "New competitor",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure",
+            "name": "Restructure",
+            "description": "act of reorganizing the legal, ownership, operational, or other structures of a company",
+            "ta1explanation": "Company restructures to avoid bankruptcy",
+            "qnode": "wd:Q1376796",
+            "qlabel": "restructuring",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": true
+            },
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/organizer",
+                    "roleName": "A0_pag_organizer",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20000/thing_organized",
+                    "roleName": "A1_ppt_thing_reorganized",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10008/Steps_kairos:Container:100",
+            "name": "Restructure outlinks",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "children_gate": "xor",
+            "children": [
+                {
+                    "child": "resin:Events/10009/Steps_kairos:Container:Mergers_and_Acquistions",
+                    "outlinks": [],
+                    "comment": "Mergers and Acquistions",
+                    "optional": false,
+                    "importance": 1
+                },
+                {
+                    "child": "resin:Events/10011/Steps_kairos:Container:Bankruptcy",
+                    "optional": false,
+                    "outlinks": [],
+                    "comment": "Bankruptcy",
+                    "importance": 1
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10009/Steps_kairos:Container:Mergers_and_Acquistions",
+            "name": "Mergers and Acquistions",
+            "description": "Mergers and Acquistions container",
+            "ta1explanation": "Process to merge or be acquired by another company",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10048/Steps_kairos:Primitives_Events_Contact",
+                    "comment": "Contact suitable company",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10049/Steps_kairos:Primitives_Events_Valuation_Analysis"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10049/Steps_kairos:Primitives_Events_Valuation_Analysis",
+                    "comment": "Valuation analysis",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10050/Steps_kairos:Primitives_Events_Negotiate_Terms"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10050/Steps_kairos:Primitives_Events_Negotiate_Terms",
+                    "comment": "Negotiate terms",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10051/Steps_kairos:Primitives_Events_Due_Diligence"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10051/Steps_kairos:Primitives_Events_Due_Diligence",
+                    "comment": "Due diligence",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10052/Steps_kairos:Primitives_Events_Purchase_and_Sale_Contract"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10052/Steps_kairos:Primitives_Events_Purchase_and_Sale_Contract",
+                    "comment": "Purchase and sale contract",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10010/Steps_kairos:Container:Reorganization",
             "name": "Reorganization",
-            "ta1explanation": "Company is reorganized. Often because of bankruptcy.",
-            "qnode": "wd:Q2503234",
-            "qlabel": "reorganization",
-            "participants": [
+            "description": "Reorganization container",
+            "ta1explanation": "Legal process after M&A or filing bankruptcy",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "children_gate": "or",
+            "children": [
                 {
-                    "@id": "kairos:Participants/00011/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "child": "resin:Events/10059/Steps_kairos:Container:Personnel_Change",
+                    "comment": "Personnel change",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10060/Steps_kairos:Primitives_Events_Terminate_Contracts",
+                    "comment": "Terminate contracts",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10062/Steps_kairos:Primitives_Events_Recover_Assets",
+                    "comment": "Recover assets",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10063/Steps_kairos:Primitives_Events_Repay_Some_Debt",
+                    "comment": "Repay some debt",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
         {
-            "@id": "kairos:Events/00008/Founding",
-            "name": "founding",
-            "ta1explanation": "Someone starts a company.",
+            "@id": "resin:Events/10011/Steps_kairos:Container:Bankruptcy",
+            "name": "Bankruptcy",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "description": "Bankruptcy container",
+            "ta1explanation": "Process in which a business files bankruptcy",
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10054/Steps_kairos:Primitives_Events_Apply_for_Reorganization",
+                    "comment": "Apply for reorganization",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10055/Steps_kairos:Container:Reorg_outlinks"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10055/Steps_kairos:Container:Reorg_outlinks",
+                    "comment": "Reorganization Application outlinks",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10056/Steps_kairos:Primitives_Events_Reorg_Approval",
+                    "comment": "Reorganization approval",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10010/Steps_kairos:Container:Reorganization"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10057/Steps_kairos:Primitives_Events_Reorg_Rejection",
+                    "comment": "Reorganization rejection",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10058/Steps_kairos:Container:Liquidation",
+                    "comment": "Liquidation",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation",
+            "name": "Antitrust investigation",
+            "description": "Antitrust investigation container",
+            "ta1explanation": "The government may sue a business if they have reason to believe the business is becoming a monopoly",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10064/Steps_kairos:Primitives_Events_Contact_Attorney",
+                    "comment": "Contact Attorney",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10065/Steps_kairos:Primitives_Events_File_Complaint"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10065/Steps_kairos:Primitives_Events_File_Complaint",
+                    "comment": "File Complaint",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10066/Steps_kairos:Primitives_Events_Answer"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10066/Steps_kairos:Primitives_Events_Answer",
+                    "comment": "Answer",
+                    "optional": false,
+                    "importance": 0.5,
+                    "outlinks": [
+                        "resin:Events/10067/Steps_kairos:Primitives_Events_Discovery"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10067/Steps_kairos:Primitives_Events_Discovery",
+                    "comment": "Discovery",
+                    "optional": false,
+                    "importance": 0.5,
+                    "outlinks": [
+                        "resin:Events/10068/Steps_kairos:Primitives_Events_Motion"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10068/Steps_kairos:Primitives_Events_Motion",
+                    "comment": "Motion",
+                    "optional": true,
+                    "importance": 0.5,
+                    "outlinks": [
+                        "resin:Events/10069/Steps_kairos:Container:104"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10069/Steps_kairos:Container:104",
+                    "comment": "Motion outlinks",
+                    "optional": true,
+                    "importance": 0.5,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10070/Steps_kairos:Primitives_Events_Mediation",
+                    "comment": "Mediation",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10071/Steps_kairos:Primitives_Events_Settlement"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10071/Steps_kairos:Primitives_Events_Settlement",
+                    "comment": "Settlement",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10072/Steps_kairos:Primitives_Events_Trial",
+                    "comment": "Trial",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10073/Steps_kairos:Primitives_Events_Judgement"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10073/Steps_kairos:Primitives_Events_Judgement",
+                    "comment": "Judgement",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10074/Steps_kairos:Primitives_Events_Appeal"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10074/Steps_kairos:Primitives_Events_Appeal",
+                    "comment": "Appeal",
+                    "optional": true,
+                    "importance": 0.5,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10013/Steps_kairos:Primitives_Events_Found_a_Business",
+            "name": "Found a business",
+            "description": "action of creating an organization or other entity intended to endure",
+            "ta1explanation": "A person founds a business",
             "qnode": "wd:Q3075355",
             "qlabel": "founding",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00012/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20000/agent",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "resin:Entities/00003/"
                 },
                 {
-                    "@id": "kairos:Participants/00013/Founder",
-                    "roleName": "founder",
-                    "entity": "kairos:Entities/00005/Founder"
+                    "@id": "resin:Participants/20000/thing_set",
+                    "roleName": "A1_ppt_theme_thing_set",
+                    "entity": "resin:Entities/00001/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00009/Investigation",
-            "name": "inquiry",
-            "ta1explanation": "An invesigation, usually by the government. Maybe it could also be an audit.",
-            "qnode": "wd:Q21004260",
-            "qlabel": "inquiry",
-			"children": [
-			],
+            "@id": "resin:Events/10014/Steps_kairos:Primitives_Events_Private_Funding",
+            "name": "Private funding",
+            "description": "act of providing resources",
+            "qnode": "wd:Q6055890",
+            "qlabel": "funding",
+            "ta1explanation": "Company is funded by private investors",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00014/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20000/financier",
+                    "roleName": "A0_pag_financier",
+                    "entity": "resin:Entities/00004/"
                 },
                 {
-                    "@id": "kairos:Participants/00015/Investigator",
-                    "roleName": "investigator",
-                    "entity": "kairos:Entities/00012/Investigator"
+                    "@id": "resin:Participants/20000/project",
+                    "roleName": "A1_gol_project",
+                    "entity": "resin:Entities/00001/"
                 }
             ],
-			"children": [
-				{
-				  "child": "kairos:Events/00031/AskRegulators",
-				  "comment": "",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": [
-					"kairos:Events/00037/RegulatoryResponse"
-				  ]
-				},
-				{
-				  "child": "kairos:Events/00051/AskShareholders",
-				  "comment": "",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": [
-					"kairos:Events/00052/ShareHolderResponse"
-				  ]
-				},
-				{
-				  "child": "kairos:Events/00040/CorporateCriminalInquiry",
-				  "comment": "",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": [
-					"kairos:Events/00038/CorporateCriminalResponse"
-				  ]
-				},
-				{
-				  "child": "kairos:Events/00043/AntiTrustInvestigation",
-				  "comment": "",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": [
-					"kairos:Events/00046/Container:AntiTrustXOR"
-				  ]
-				},
-                {
-                    "child": "resin:Events/10064/Steps_kairos:Primitives_Events_Investigation",
-                    "outlinks": [
-						"resin:Events/10065/Steps_kairos:Primitives_Events_Justice"
-                    ],
-					"comment": ""
-                }
-			],
-            "description": false,
-            "children_gate": "or"
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00010/Scandal",
-            "name": "Scandal",
-            "ta1explanation": "",
-            "qnode": "wd:Q192909",
-            "qlabel": "scandal",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00016/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00017/Personnel",
-                    "roleName": "scandal causer",
-                    "entity": "kairos:Entities/00003/Personnel"
-                }
-            ],
-			"children": [
-				{
-				  "child": "kairos:Events/00024/ExecutiveBonus",
-				  "comment": "Bonuses for executives.",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": [
-					"kairos:Events/00040/CorporateCriminalInquiry"
-				  ]
-				}
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00011/CorporateJustice",
-            "name": "Corporate Justice",
-			  "privateData": {
-				"@type": "kairos:Container",
-				"template": "",
-				"repeatable": true
-			  },
-            "ta1explanation": "Corporate to distinguish from the person version.",
-            "qnode": "wd:Q5167661",
-            "qlabel": "justice",
-            "participants": [
-            ],
-            "children": [
-                {
-                    "child": "kairos:Events/00012/PoliticalCorruption",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                },
-                {
-                    "child": "kairos:Events/00030/Fine",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                },
-                {
-                    "child": "kairos:Events/00042/Breakup",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                },
-                {
-                    "child": "kairos:Events/00041/ArrestExec",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00012/PoliticalCorruption",
-            "name": "PoliticalCorruption",
-            "ta1explanation": "The execs send money to their politician friends who pull some strings.",
-            "qnode": "wd:Q10858400",
-            "qlabel": "political corruption",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00090/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                },
-                {
-                    "@id": "kairos:Participants/00091/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00092/Politician",
-                    "roleName": "politician",
-                    "entity": "kairos:Entities/00018/Politician"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00013/Corruption",
-            "name": "Corruption",
-            "ta1explanation": "Some form of corruption occurs.",
-            "qnode": "wd:Q366",
-            "qlabel": "corruption",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00093/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00014/Response",
-            "name": "Response",
-            "ta1explanation": "This is the response to the invesigation, usually by the government. ",
-            "qnode": "wd:Q1920566",
-            "qlabel": "answer",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00018/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00019/Investigator",
-                    "roleName": "investigator",
-                    "entity": "kairos:Entities/00012/Investigator"
-                },
-                {
-                    "@id": "kairos:Participants/00020/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-            "children": [
-                {
-                    "child": "kairos:Events/00037/RegulatoryResponse",
-                    "outlinks": [
-						"kairos:Events/00036/Container:RegulatoryResponseXOR"
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00052/ShareHolderResponse",
-                    "outlinks": [
-						"kairos:Events/00055/Container:ShareHolderResponseXOR"
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00038/CorporateCriminalResponse",
-                    "outlinks": [
-						"kairos:Events/00049/Container:CorporateCriminalXOR"
-                    ],
-					"comment": ""
-                },
-                {
-                    "child": "kairos:Events/00039/BankruptcyResponse",
-                    "outlinks": [
-                    ],
-					"comment": ""
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00015/Fundraising",
-            "name": "Fundraising",
-            "ta1explanation": "",
-            "qnode": "wd:Q1161355",
-            "qlabel": "fundraising",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00021/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00022/Investor",
-                    "roleName": "investor",
-                    "entity": "kairos:Entities/00007/Investor"
-                },
-                {
-                    "@id": "kairos:Participants/00023/FundingAmountRaised",
-                    "roleName": "Funding Amount Raised",
-                    "entity": "kairos:Entities/00009/Money"
-                }
-            ],
-            "children": [
-                {
-                    "child": "kairos:Events/00017/PrivateFunding",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                },
-                {
-                    "child": "kairos:Events/00016/IPO",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00016/IPO",
-            "name": "IPO",
-            "ta1explanation": "The company undergoes an initial public offering (IPO) and lists itself on the stock market.",
-            "qnode": "wd:Q185142",
-            "qlabel": "initial public offering",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00088/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00089/FundingAmountRaised",
-                    "roleName": "Funding Amount Raised",
-                    "entity": "kairos:Entities/00009/Money"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00017/PrivateFunding",
-            "name": "PrivateFunding",
-            "ta1explanation": "The company raises money from private investors (the opportunity is not available to the public).",
-            "qnode": "wd:Q58900637",
-            "qlabel": "Private funding for capital projects",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00085/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00086/Investor",
-                    "roleName": "investor",
-                    "entity": "kairos:Entities/00007/Investor"
-                },
-                {
-                    "@id": "kairos:Participants/00087/FundingAmountRaised",
-                    "roleName": "Funding Amount Raised",
-                    "entity": "kairos:Entities/00009/Money"
-                }
-            ],
-            "description": false,
-            "children_gate": "or",
-			"comment": "seed funding, series A, ..."
-        },
-		{
-		  "@id": "kairos:Events/00018/BankruptcyActions",
-		  "name": "bankruptcy actions",
-		  "privateData": {
-			"@type": "kairos:Container",
-			"template": "",
-			"repeatable": true
-		  },
-		  "comment": "",
-		  "aka": "",
-		  "minDuration": "",
-		  "maxDuration": "",
-		  "children": [
-			{
-			  "child": "kairos:Events/00002/Acquisition",
-			  "comment": "business acquired",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "kairos:Events/00006/Shutdown",
-			  "comment": "business shutdown",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "kairos:Events/00007/Reorganization",
-			  "comment": "business reorganization",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "kairos:Events/00028/EndPartnership",
-			  "comment": "End a business partnership.",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "kairos:Events/00029/ExitBankruptcy",
-			  "comment": "Leave bankruptcy.",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			}
-		  ],
-		  "description": "",
-		  "goal": "",
-		  "ta1explanation": "",
-		  "children_gate": "or"
-		},
-        {
-            "@id": "kairos:Events/00019/Sell",
-            "name": "exchange_of_goods",
-            "ta1explanation": "Company sells assets.",
+            "@id": "resin:Events/10015/Steps_kairos:Primitives_Events_Sell_IPOs",
+            "name": "Go public and sell IPOs",
+            "description": "transfer of equivalent goods to each other",
+            "ta1explanation": "Company goes public and lists stock on the public market",
             "qnode": "wd:Q21651837",
-            "qlabel": "transfer of equivalent goods to each other",
+            "qlabel": "exchange of goods",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00024/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20000/agent",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "resin:Entities/00001/"
                 },
                 {
-                    "@id": "kairos:Participants/00025/Acquirer",
-                    "roleName": "acquirer",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20000/other_exchanger",
+                    "roleName": "A2_com_co_agent_other_exchanger",
+                    "entity": "resin:Entities/00006/"
                 },
                 {
-                    "@id": "kairos:Participants/00026/AssetCost",
-                    "roleName": "asset cost",
-                    "entity": "kairos:Entities/00009/Money"
-                },
-                {
-                    "@id": "kairos:Participants/00027/AssetsSold",
-                    "roleName": "assets sold",
-                    "entity": "kairos:Entities/00008/Assets"
+                    "@id": "resin:Participants/20000/thing_being_traded",
+                    "roleName": "A1_ppt_theme_thing_being_traded",
+                    "entity": "resin:Entities/00005/"
                 }
-				
             ],
-            "description": false,
-            "children_gate": "or"
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00020/Privatize",
+            "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Privatize",
             "name": "Privatize",
-            "ta1explanation": "Buy stock and go private",
-            "qnode": "wd:Q1589009",
-            "qlabel": "privately held company",
+            "description": "transfer of equivalent goods to each other",
+            "ta1explanation": "Company goes private and sells all their stock to a private equity firm",
+            "qnode": "wd:Q21651837",
+            "qlabel": "exchange of goods",
             "participants": [
-				{
-                    "@id": "kairos:Participants/00028/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                {
+                    "@id": "resin:Participants/20000/agent",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "resin:Entities/00001/"
                 },
                 {
-                    "@id": "kairos:Participants/00029/Acquirer",
-                    "roleName": "acquirer",
-                    "entity": "kairos:Entities/00007/Investor",
-					"comment": "maybe this should be a more generic entity?"
-                },
-                {
-                    "@id": "kairos:Participants/00030/Cost",
-                    "roleName": "cost",
-                    "entity": "kairos:Entities/00009/Money"
+                    "@id": "resin:Participants/20000/thing_being_traded",
+                    "roleName": "A1_ppt_theme_thing_being_traded",
+                    "entity": "resin:Entities/00005/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00021/Assign",
-            "name": "assign",
-            "ta1explanation": "Government assigns trustee",
-            "qnode": "wd:Q21014657",
-            "qlabel": "assignment",
+            "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Create_Partnership",
+            "name": "Create partnership",
+            "description": "arrangement in which parties agree to cooperate to advance their mutual interests",
+            "ta1explanation": "Two companies form a partnership, but remain separate entities",
+            "qnode": "wd:Q728646",
+            "qlabel": "partnership",
             "participants": [
-				{
-                    "@id": "kairos:Participants/00031/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                {
+                    "@id": "resin:Participants/20000/first_partner",
+                    "roleName": "A0_pag_first_partner",
+                    "entity": "resin:Entities/00001/"
                 },
                 {
-                    "@id": "kairos:Participants/00032/Trustee",
-                    "roleName": "trustee",
-                    "entity": "kairos:Entities/00011/Trustee"
+                    "@id": "resin:Participants/20000/other_partner",
+                    "roleName": "A2_pag_other_partner",
+                    "entity": "resin:Entities/00007/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00022/BankruptcyCase",
-            "name": "trial",
-            "ta1explanation": "Trustee manages bankruptcy case.",
+            "@id": "resin:Events/10018/Steps_kairos:Primitives_Events_Charity_Fraud",
+            "name": "Charity fraud",
+            "description": "act of using deception to get money from people who believe they are making donations to charities",
+            "ta1explanation": "Using deception to get money from individuals believing they are making donations to legitimate charity organizations, especially charities representing victims of natural disasters shortly after the incident occurs.",
+            "qnode": "wd:Q4843420",
+            "qlabel": "charity fraud",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/liar",
+                    "roleName": "A0_pag_liar",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/lied_to",
+                    "roleName": "A1_ppt_lied_to",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10019/Steps_kairos:Primitives_Events_Internet_Auction_Fraud",
+            "name": "Internet auction fraud",
+            "description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+            "ta1explanation": "A fraudulent transaction or exchange that occurs in the context of an online auction site.",
+            "qnode": "wd:Q28813",
+            "qlabel": "fraud",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/liar",
+                    "roleName": "A0_pag_liar",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/lied_to",
+                    "roleName": "A1_ppt_lied_to",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10020/Steps_kairos:Primitives_Events_Non-Delivery_of_Merchandise",
+            "name": "Nondelivery of merchandise",
+            "description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+            "ta1explanation": "Fraud occurring when a payment is sent but the goods and services ordered are never received.",
+            "qnode": "wd:Q28813",
+            "qlabel": "fraud",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/liar",
+                    "roleName": "A0_pag_liar",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/lied_to",
+                    "roleName": "A1_ppt_lied_to",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment of Funds",
+            "name": "Nonpayment of funds",
+            "description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+            "ta1explanation": "Fraud occurring when goods and services are shipped or rendered but payment for them is never received.",
+            "qnode": "wd:Q28813",
+            "qlabel": "fraud",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/liar",
+                    "roleName": "A0_pag_liar",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/lied_to",
+                    "roleName": "A1_ppt_lied_to",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_Overpayment_Scheme",
+            "name": "Overpayment scheme",
+            "description": "confidence trick designed to prey upon victims good faith",
+            "ta1explanation": "An individual is sent a payment significantly higher than an owed amount and is instructed to deposit the money in their bank account and wire transfer the excess funds back to the bank of the individual or company that sent it. ",
+            "qnode": "wd:Q104835881",
+            "qlabel": "overpayment scam",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/liar",
+                    "roleName": "A0_pag_liar",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/lied_to",
+                    "roleName": "A1_ppt_lied_to",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10023/Steps_kairos:Primitives_Events_Re-Shipping_Scheme",
+            "name": "Reshipment scheme",
+            "description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+            "ta1explanation": "An individual is recruited to receive merchandise at their place of residence and subsequently repackage the items for shipment, usually abroad.",
+            "qnode": "wd:Q28813",
+            "qlabel": "fraud",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/liar",
+                    "roleName": "A0_pag_liar",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/lied_to",
+                    "roleName": "A1_ppt_lied_to",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10024/Steps_kairos:Primitives_Events_accusation:1",
+            "name": "Accusation",
+            "description": "",
+            "ta1explanation": "act of accusing or charging another with a crime",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20002/kairos:Primitives_Events_accusation:1:accuser",
+                    "roleName": "A0_pag_agent_accuser",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20003/kairos:Primitives_Events_accusation:1:accused",
+                    "roleName": "A1_ppt_theme_accused",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20004/kairos:Primitives_Events_accusation:1:crime",
+                    "roleName": "A2_prd_attribute_crime",
+                    "entity": "resin:Entities/00011/"
+                }
+            ],
+            "qnode": "wd:Q19357312",
+            "qlabel": "accusation",
+            "comment": "",
+            "privateData": {
+                "@type": "resin:Events/10027/Steps_kairos:Primitives_Events_accusation:1",
+                "template": "",
+                "repeatable": false
+            },
+            "aka": "accuse.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": ""
+        },
+        {
+            "@id": "resin:Events/10026/Steps_kairos:Primitives_Events_detention:1",
+            "name": "Detention",
+            "description": "",
+            "ta1explanation": "removal of the freedom of liberty by a state",
+            "qnode": "wd:Q1071447",
+            "qlabel": "detention",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20008/kairos:Primitives_Events_detention:1:police",
+                    "roleName": "A0_pag_police",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20009/kairos:Primitives_Events_detention:1:entity_detained",
+                    "roleName": "A1_ppt_entity_detained",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20010/kairos:Primitives_Events_detention:1:detained_for_what?",
+                    "roleName": "A2_cau_detained_for_what?",
+                    "entity": "resin:Entities/00011/"
+                }
+            ],
+            "comment": "",
+            "aka": "detain.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "privateData": {
+                "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_detention:1",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10027/Steps_kairos:Primitives_Events_conviction:1",
+            "name": "Conviction",
+            "description": "",
+            "ta1explanation": "verdict that results when a court of law finds a defendant guilty of a crime",
+            "qnode": "wd:Q2916183",
+            "qlabel": "conviction",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20011/kairos:Primitives_Events_conviction:1:judge",
+                    "roleName": "A0_pag__judge",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "resin:Participants/20012/kairos:Primitives_Events_conviction:1:person_convicted",
+                    "roleName": "A1_ppt__person_convicted",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20013/kairos:Primitives_Events_conviction:1:convicted_of",
+                    "roleName": "A2_cau__convicted_of",
+                    "entity": "resin:Entities/00011/"
+                }
+            ],
+            "comment": "",
+            "aka": "convict.01",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "privateData": {
+                "@type": "resin:Events/10030/Steps_kairos:Primitives_Events_conviction:1",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10028/Steps_kairos:Primitives_Events_plea:1",
+            "name": "Plea",
+            "description": "",
+            "ta1explanation": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+            "qnode": "wd:Q15916459",
+            "qlabel": "plea",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20014/kairos:Primitives_Events_plea:1:the_accused",
+                    "roleName": "A0_pag_the_accused",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20015/kairos:Primitives_Events_plea:1:alleged_crime",
+                    "roleName": "A2_gol_alleged_crime",
+                    "entity": "resin:Entities/00011/"
+                }
+            ],
+            "comment": "",
+            "aka": "plead.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "privateData": {
+                "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_plea:1",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_trial:1",
+            "name": "Trial",
+            "description": "",
+            "ta1explanation": "coming together of parties to a dispute, to present information in a tribunal",
             "qnode": "wd:Q8016240",
             "qlabel": "trial",
             "participants": [
-				{
-                    "@id": "kairos:Participants/00033/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                {
+                    "@id": "resin:Participants/20016/kairos:Primitives_Events_trial:1:entity_tried",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "resin:Entities/00001/"
                 },
                 {
-                    "@id": "kairos:Participants/00034/Trustee",
-                    "roleName": "trustee",
-                    "entity": "kairos:Entities/00010/GovernmentEmployee"
+                    "@id": "resin:Participants/20017/kairos:Primitives_Events_trial:1:tried_for",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "resin:Entities/00011/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "comment": "",
+            "aka": "try.02",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "privateData": {
+                "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_trial:1",
+                "template": "",
+                "repeatable": false
+            }
         },
         {
-            "@id": "kairos:Events/00023/TransferMoney",
-            "name": "Transfer Money",
-            "ta1explanation": "Transfer money.",
-            "qnode": "wd:Q21130860",
-            "qlabel": "Money transfer",
-            "participants": [
-				{
-                    "@id": "kairos:Participants/00035/CompanyFrom",
-                    "roleName": "company from",
-                    "entity": "kairos:Entities/00014/Company1"
-                },
-                {
-                    "@id": "kairos:Participants/00036/CompanyTo",
-                    "roleName": "company to",
-                    "entity": "kairos:Entities/00015/Company2"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00024/ExecutiveBonus",
-            "name": "Executive Bonus",
-            "ta1explanation": "The executives get a big bonus. It's in the news when it's bigger than they deserve. Sometimes called a golden parachute.",
-            "qnode": "wd:Q107196812",
-            "qlabel": "business bonus",
-            "participants": [
-				{
-                    "@id": "kairos:Participants/00037/Company",
-                    "roleName": "company from",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00038/Executive",
-                    "roleName": "company to",
-                    "entity": "kairos:Entities/00004/Company"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00025/ManagementChange",
-            "name": "Management Change",
-            "ta1explanation": "The management is changed. This often happens in an acquired company after an acquisition.",
-            "qnode": "wd:Q116348",
-            "qlabel": "change management",
+            "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_legal_hearing:1",
+            "name": "Legal hearing",
+            "description": "",
+            "ta1explanation": "A legal hearing",
+            "qnode": "wd:Q545861",
+            "qlabel": "legal_hearing",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00039/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20018/kairos:Primitives_Events_legal_hearing:1:judge",
+                    "roleName": "A0_pag__judge",
+                    "entity": "resin:Entities/00009/"
                 },
                 {
-                    "@id": "kairos:Participants/00040/NewManagement",
-                    "roleName": "new management",
-                    "entity": "kairos:Entities/00016/Personnel1"
-                },
-                {
-                    "@id": "kairos:Participants/00041/OldManagement",
-                    "roleName": "old management",
-                    "entity": "kairos:Entities/00017/Personnel2"
+                    "@id": "resin:Participants/20019/kairos:Primitives_Events_legal_hearing:1:person_on_trial",
+                    "roleName": "A1_ppt__person_on_trial",
+                    "entity": "resin:Entities/00000/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "comment": "",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "privateData": {
+                "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_legal_hearing:1",
+                "template": "",
+                "repeatable": false
+            },
+            "aka": "hearing.02"
         },
         {
-            "@id": "kairos:Events/00026/GovernmentBailout",
-            "name": "Government Bailout",
-            "ta1explanation": "The government loans a lot of money to a company when it's 'too big too fail' without damaging the economy.",
-            "qnode": "wd:Q44312",
-            "qlabel": "bailout",
+            "@id": "resin:Events/10031/Steps_kairos:Primitives_Events_court_decision:1",
+            "name": "Court decision",
+            "description": "",
+            "ta1explanation": "formal decision made by a court",
+            "comment": "",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "privateData": {
+                "@type": "resin:Events/10034/Steps_kairos:Primitives_Events_court_decision:1",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q327000",
+            "qlabel": "court_decision ",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00042/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20020/kairos:Primitives_Events_court_decision:1:judge",
+                    "roleName": "A0_pag_agent_judge",
+                    "entity": "resin:Entities/00009/"
                 },
                 {
-                    "@id": "kairos:Participants/00043/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00027/CreatePartnership",
-            "name": "Create Partnership",
-            "ta1explanation": "Two companies partner together to do something mutually beneficial. They remain seperate entities, however.",
-            "qnode": "wd:Q3366101",
-            "qlabel": "business partner",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00044/Company1",
-                    "roleName": "company1",
-                    "entity": "kairos:Entities/00014/Company1"
+                    "@id": "resin:Participants/20021/kairos:Primitives_Events_court_decision:1:judged",
+                    "roleName": "A1_ppt_theme_judged",
+                    "entity": "resin:Entities/00000/"
                 },
                 {
-                    "@id": "kairos:Participants/00045/Company2",
-                    "roleName": "company2",
-                    "entity": "kairos:Entities/00015/Company2"
+                    "@id": "resin:Participants/20022/kairos:Primitives_Events_court_decision:1:on_what_grounds",
+                    "roleName": "A3_cau__on_what_grounds",
+                    "entity": "resin:Entities/00011/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "aka": "judge.01"
         },
         {
-            "@id": "kairos:Events/00028/EndPartnership",
-            "name": "End Partnership",
-            "ta1explanation": "Two companies decide their partnership isn't worth it anymore.",
-            "qnode": "wd:Q12769393",
-            "qlabel": "end",
-			"comment": "don't think this is specific enough",
-            "participants": [
+            "@id": "resin:Events/10032/Steps_kairos:Container:101",
+            "name": "Court Decision outlinks",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:container",
+                "template": "",
+                "repeatable": false
+            },
+            "children": [
                 {
-                    "@id": "kairos:Participants/00046/Company1",
-                    "roleName": "company1",
-                    "entity": "kairos:Entities/00014/Company1"
+                    "child": "resin:Events/10033/Steps_kairos:Primitives_Events_sentence:1",
+                    "comment": "Sentence",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
                 },
                 {
-                    "@id": "kairos:Participants/00047/Company2",
-                    "roleName": "company2",
-                    "entity": "kairos:Entities/00015/Company2"
+                    "child": "resin:Events/10037/Steps_kairos:Primitives_Events_acquittal:1",
+                    "comment": "Acquittal",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "children_gate": "xor"
         },
         {
-            "@id": "kairos:Events/00029/ExitBankruptcy",
-            "name": "ExitBankruptcy",
-            "ta1explanation": "Leaving bankruptcy.",
-            "qnode": "wd:Q12769393",
-            "qlabel": "end",
+            "@id": "resin:Events/10033/Steps_kairos:Primitives_Events_sentence:1",
+            "name": "Sentence",
+            "description": "",
+            "ta1explanation": "decree of punishment in law",
+            "privateData": {
+                "@type": "resin:Events/10035/Steps_kairos:Primitives_Events_sentence:1",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q1763090",
+            "qlabel": "sentence",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00048/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20023/kairos:Primitives_Events_sentence:1:judge_jury",
+                    "roleName": "A0_pag__judge_jury",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "resin:Participants/20024/kairos:Primitives_Events_sentence:1:criminal",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20025/kairos:Primitives_Events_sentence:1:crime",
+                    "roleName": "A3_cau__crime",
+                    "entity": "resin:Entities/00011/"
+                },
+                {
+                    "@id": "resin:Participants/20026/kairos:Primitives_Events_sentence:1:punishment",
+                    "roleName": "A2_ppt__punishment",
+                    "entity": "resin:Entities/00012/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
         {
-            "@id": "kairos:Events/00030/Fine",
-            "name": "Fine",
-            "ta1explanation": "The government fines a company for doing something wrong.",
+            "@id": "resin:Events/10035/Steps_kairos:Primitives_Events_fine",
+            "name": "Fine the business",
+            "description": "financial penalty",
+            "ta1explanation": "Government fines the business",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
             "qnode": "wd:Q1243001",
             "qlabel": "fine",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00049/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-				{
-                    "@id": "kairos:Participants/00050/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                },
-				{
-                    "@id": "kairos:Participants/00051/FineAmount",
-                    "roleName": "fine amount",
-                    "entity": "kairos:Entities/00009/Money"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00031/AskRegulators",
-            "name": "AskRegulators",
-            "ta1explanation": "",
-            "qnode": "wd:Q428148",
-            "qlabel": "regulation",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00052/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-				{
-                    "@id": "kairos:Participants/00053/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-			"children": [
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00032/ProposeMerger",
-            "name": "Propose Merger",
-            "ta1explanation": "Two companies decide to try and become one company.",
-            "qnode": "wd:Q1363768",
-            "qlabel": "amalgamation",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00054/Company1",
-                    "roleName": "company1",
-                    "entity": "kairos:Entities/00014/Company1"
-                },
-				{
-                    "@id": "kairos:Participants/00055/Company2",
-                    "roleName": "company2",
-                    "entity": "kairos:Entities/00015/Company2"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00033/ProposeAcquisition",
-            "name": "Propose Acquisition",
-            "ta1explanation": "One company proposes acquiring another company.",
-            "qnode": "wd:Q3604747",
-            "qlabel": "acquisition",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00056/Acquirer",
-                    "roleName": "acquirer",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20030/fine_finer",
+                    "roleName": "A0_pag_finer",
+                    "entity": "resin:Entities/00010/"
                 },
                 {
-                    "@id": "kairos:Participants/00057/Acquired",
-                    "roleName": "acquired",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20030/fine_fine",
+                    "roleName": "A1_vsp_fine",
+                    "entity": "resin:Entities/00013/"
                 },
                 {
-                    "@id": "kairos:Participants/00058/AcquisitionCost",
-                    "roleName": "acquisition cost",
-                    "entity": "kairos:Entities/00009/Money"
+                    "@id": "resin:Participants/20030/fine_fined",
+                    "roleName": "A2_gol_fined",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10036/Steps_kairos:Primitives_Events_break_up",
+            "name": "Break up the business",
+            "description": "act of separating one entity to form several",
+            "ta1explanation": "Government breaks company up into multiple, smaller companies",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q18511800",
+            "qlabel": "separation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20034/agent_of_division",
+                    "roleName": "A0_cau_agent_of_division",
+                    "entity": "resin:Entities/00010/"
                 },
                 {
-                    "@id": "kairos:Participants/00059/AcquiredAssets",
-                    "roleName": "acquired assets",
-                    "entity": "kairos:Entities/00008/Assets"
+                    "@id": "resin:Participants/20034/separated_entity",
+                    "roleName": "A1_ppt_separated_entity",
+                    "entity": "resin:Entities/00001/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
         {
-            "@id": "kairos:Events/00034/RegulatoryApproval",
-            "name": "agreement",
-            "ta1explanation": "The government will allow the companies to do what they want (often merger or acquisition).",
-            "qnode": "wd:Q321839",
-            "qlabel": "agreement",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00060/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00035/RegulatoryRejection",
-            "name": "rejection",
-            "ta1explanation": "The government says no to some regulated action the companies want to do (often merger or acquisition).",
-            "qnode": "wd:Q98398200",
-            "qlabel": "rejection",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00061/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-		{
-		  "@id": "kairos:Events/00036/Container:RegulatoryResponseXOR",
-		  "name": "RegulatoryResponseXOR",
-		  "comment": "container node",
-		  "aka": "",
-		  "minDuration": "",
-		  "maxDuration": "",
-		  "children": [
-			{
-			  "child": "kairos:Events/00034/RegulatoryApproval",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": [
-					"kairos:Events/00003/Merger",
-					"kairos:Events/00002/Acquisition"
-				]
-			},
-			{
-			  "child": "kairos:Events/00035/RegulatoryRejection",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			}
-		  ],
-		  "description": "",
-		  "goal": "",
-		  "ta1explanation": "",
-		  "children_gate": "xor"
-		},
-        {
-            "@id": "kairos:Events/00037/RegulatoryResponse",
-            "name": "Regulatory Response",
-            "ta1explanation": "",
-            "qnode": "wd:Q1920566",
-            "qlabel": "answer",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/10061/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-			"children": [
-				{
-                    "child": "kairos:Events/00036/Container:RegulatoryResponseXOR",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00038/CorporateCriminalResponse",
-            "name": "Corporate Criminal Response",
-            "ta1explanation": "To distinguish from criminal response against people. Also verdict qnode might be bad.",
-            "qnode": "wd:Q13370881",
-            "qlabel": "verdict",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00062/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-			"children": [
-				{
-                    "child": "kairos:Events/00049/Container:CorporateCriminalXOR",
-                    "outlinks": [
-                    ],
-                    "comment": false
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00039/BankruptcyResponse",
-            "name": "Bankruptcy Response",
-            "ta1explanation": "",
-            "qnode": "wd:Q1920566",
-            "qlabel": "answer",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00063/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-			"children": [
-				{
-                    "child": "kairos:Events/00021/Assign",
-                    "outlinks": [
-						"kairos:Events/00022/BankruptcyCase"
-                    ],
-                    "comment": false
-                },
-				{
-                    "child": "kairos:Events/00022/BankruptcyCase",
-                    "outlinks": [
-						"kairos:Events/00018/BankruptcyActions",
-						"kairos:Events/00026/GovernmentBailout"
-                    ],
-                    "comment": false
-                }
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00040/CorporateCriminalInquiry",
-            "name": "Corporate Criminal Inquiry",
-            "ta1explanation": "This is when the corporation itself is investigated and not a person. Not sure if this is the best way to manage the difference.",
-            "qnode": "wd:Q1964968",
-            "qlabel": "criminal investigation",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00064/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                },
-                {
-                    "@id": "kairos:Participants/00065/InvestigatedCompany",
-                    "roleName": "company under investigation",
-                    "entity": "kairos:Entities/00004/Company"
-                }
-            ],
-			"children": [
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00041/ArrestExec",
-            "name": "arrest",
-            "ta1explanation": "Executives are arrested for crimes they committed carrying out their duties.",
+            "@id": "resin:Events/10034/Steps_kairos:Primitives_Events_arrest",
+            "name": "Arrest executive",
+            "comment": "",
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "goal": "",
+            "ta1explanation": "Goverment arrests an executive of the company",
+            "privateData": {
+                "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_imprisonment:1",
+                "template": "",
+                "repeatable": false
+            },
             "qnode": "wd:Q1403016",
             "qlabel": "arrest",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00066/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20035/police",
+                    "roleName": "A0_pag__police",
+                    "entity": "resin:Entities/00010/"
                 },
-				{
-                    "@id": "kairos:Participants/00067/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                {
+                    "@id": "resin:Participants/20035/criminal",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/00000/"
                 },
-				{
-                    "@id": "kairos:Participants/00068/Executive",
-                    "roleName": "arrested executive",
-                    "entity": "kairos:Entities/00002/Executive"
+                {
+                    "@id": "resin:Participants/20035/crime",
+                    "roleName": "A2_cau__crime",
+                    "entity": "resin:Entities/00011/"
                 }
             ],
-            "description": false,
-            "children_gate": "or"
+            "aka": "detain.01"
         },
         {
-            "@id": "kairos:Events/00042/Breakup",
-            "name": "breakup",
-            "ta1explanation": "Government breaks up a company. Qnode is very bad.",
-            "qnode": "wd:Q326498",
-            "qlabel": "competition law",
+            "@id": "resin:Events/10038/Steps_kairos:Primitives_Events_parole",
+            "name": "Parole",
+            "description": "provisional release from prison, with certain conditions such as probation in some states",
+            "ta1explanation": "Executive goes on parole",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q5357120",
+            "qlabel": "parole",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00069/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-				{
-                    "@id": "kairos:Participants/00070/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00043/AntiTrustInvestigation",
-            "name": "Antitrust Investigation",
-            "ta1explanation": "Investigate if corporation is a monopoly.",
-            "qnode": "wd:Q61221204",
-            "qlabel": "antitrust case",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00071/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                    "@id": "resin:Participants/20039/releaser",
+                    "roleName": "A0_pag_releaser",
+                    "entity": "resin:Entities/00010/"
                 },
                 {
-                    "@id": "kairos:Participants/00072/InvestigatedCompany",
-                    "roleName": "company under investigation",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20039/criminal",
+                    "roleName": "A1_ppt_criminal",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20039/released_from",
+                    "roleName": "A2_dir_released_from",
+                    "entity": "resin:Entities/00012/"
                 }
-            ],
-			"children": [
-				{
-				  "child": "kairos:Events/00046/Container:AntiTrustXOR",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": []
-				}
-			],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
         {
-            "@id": "kairos:Events/00044/AntiTrustApproval",
-            "name": "agreement",
-            "ta1explanation": "The government decides a company is a monopoly and it's time to trust-bust it.",
-            "qnode": "wd:Q321839",
-            "qlabel": "agreement",
+            "@id": "resin:Events/10039/Steps_kairos:Container:102",
+            "name": "Parole outlinks",
+            "comment": "container node",
+            "privateData": {
+                "@type": "kairos:container",
+                "template": "",
+                "repeatable": false
+            },
+            "children": [
+                {
+                    "child": "resin:Events/10040/Steps_kairos:Primitives_Events_Release",
+                    "comment": "Release from Jail",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10034/Steps_kairos:Primitives_Events_arrest",
+                    "comment": "Arrest executive",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ],
+            "children_gate": "xor"
+        },
+        {
+            "@id": "resin:Events/10040/Steps_kairos:Primitives_Events_Release",
+            "name": "Release from Jail",
+            "description": "process of releasing an inmate from prison",
+            "ta1explanation": "Executive is officially released",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q3237993",
+            "qlabel": "release from prison",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00073/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                    "@id": "resin:Participants/20039/releaser",
+                    "roleName": "A0_pag_releaser",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20039/criminal",
+                    "roleName": "A1_ppt_criminal",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20039/location",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00012/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
         {
-            "@id": "kairos:Events/00045/AntiTrustRegulatoryRejection",
-            "name": "rejection",
-            "ta1explanation": "The government decides a company is not a monopoly.",
+            "@id": "resin:Events/10037/Steps_kairos:Primitives_Events_acquittal:1",
+            "name": "Acquittal",
+            "description": "",
+            "ta1explanation": "the legal result of a verdict of not guilty",
+            "comment": "",
+            "privateData": {
+                "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q1454723",
+            "qlabel": "acquittal",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20041/kairos:Primitives_Events_acquittal:1:remover_of_guilt",
+                    "roleName": "A0_cau_remover_of_guilt",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "resin:Participants/20042/kairos:Primitives_Events_acquittal:1:unguilty_person",
+                    "roleName": "A1_dir_source_unguilty_person",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20043/kairos:Primitives_Events_acquittal:1:explicit_mention_of_guilt",
+                    "roleName": "A2_ppt_theme_explicit_mention_of_guilt",
+                    "entity": "resin:Entities/00011/"
+                }
+            ],
+            "minDuration": "P1D",
+            "maxDuration": "P10Y",
+            "goal": "",
+            "aka": "acquit.01"
+        },
+        {
+            "@id": "resin:Events/10041/Steps_kairos:Primitives_Events_End_Partnership",
+            "name": "End partnership",
+            "description": "termination of something",
+            "ta1explanation": "Two companies end their partnership",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q12769393",
+            "qlabel": "end",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/first_partner",
+                    "roleName": "A0_pag_first_partner",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20000/other_partner",
+                    "roleName": "A2_pag_other_partner",
+                    "entity": "resin:Entities/00007/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10042/Steps_kairos:Primitives_Events_Declining_Trend",
+            "name": "Declining trend",
+            "description": "thing or behavior that achieves intense short-lived popularity and then fades away",
+            "ta1explanation": "Company adopted a trend that fades away",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q13427002",
+            "qlabel": "fad",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20052/location",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10043/Steps_kairos:Primitives_Events_Economic_Recession",
+            "name": "Economic recession",
+            "description": "business cycle contraction; general slowdown in economic activity",
+            "ta1explanation": "Recession affects company's sales",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q176494",
+            "qlabel": "recession",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20053/entity_suffering_a_recession",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10044/Steps_kairos:Primitives_Events_New_Competitor",
+            "name": "New competitor",
+            "description": "rivalry between organisms, animals, individuals, groups, etc., for mutually incompatible goals",
+            "ta1explanation": "A new company joins the market and the current company suffers",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q476300",
+            "qlabel": "competition",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20060/competitor",
+                    "roleName": "A0_pag_competitor",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20060/opponent",
+                    "roleName": "A1_com_opponent",
+                    "entity": "resin:Entities/00014/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10048/Steps_kairos:Primitives_Events_Contact",
+            "name": "Contact suitable company",
+            "description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "ta1explanation": "A company contacts a candidate company to propose merge / acquisition",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q11024",
+            "qlabel": "communication",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20073/first_communicator",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20073/other_communicator",
+                    "roleName": "A2_com_co_agent_other_communicators",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20073/topic_utterance",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00015/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10049/Steps_kairos:Primitives_Events_Valuation_Analysis",
+            "name": "Valuation analysis",
+            "description": "process of estimating what something is worth, used in the finance industry",
+            "ta1explanation": "Company performs valuation on the candidate company",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q4008379",
+            "qlabel": "valuation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20077/entity_establishing_value",
+                    "roleName": "A0_pag_entity_establishing_value",
+                    "entity": "resin:Entities/00016/"
+                },
+                {
+                    "@id": "resin:Participants/20077/commodity_being_valued",
+                    "roleName": "A1_ppt_commodity_being_valued",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10050/Steps_kairos:Primitives_Events_Negotiate_Terms",
+            "name": "Negotiate terms",
+            "description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "ta1explanation": "Companies negotiate terms of merge / acquisition",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q11024",
+            "qlabel": "communication",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20073/first_communicator",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20073/other_communicator",
+                    "roleName": "A2_com_co_agent_other_communicators",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20073/topic_utterance",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00015/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10051/Steps_kairos:Primitives_Events_Due_Diligence",
+            "name": "Due diligence",
+            "description": "investigation or exercise of care that a reasonable business or personis normally expected to take before entering into an agreement orcontract with another party or an act with a certain standard of care",
+            "ta1explanation": "Company performs due diligence on candidate company",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q794134",
+            "qlabel": "due diligence",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20088/examiner",
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": "resin:Entities/00016/"
+                },
+                {
+                    "@id": "resin:Participants/20088/thing_examined",
+                    "roleName": "A1_ppt_thing_examined",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10052/Steps_kairos:Primitives_Events_Purchase_and_Sale_Contract",
+            "name": "Purchase and sale contract",
+            "description": "type of contract",
+            "ta1explanation": "Companies sign a contract and officially merge / become acquired",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q18345888",
+            "qlabel": "purchase and sale agreement",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20089/agent",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20090/other_exchanger",
+                    "roleName": "A2_com_co_agent_other_exchanger",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20091/thing_being_traded",
+                    "roleName": "A1_ppt_theme_thing_being_traded",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20092/other_item_in_exchange",
+                    "roleName": "A3_ppt_co_theme_other_item_in_exchange_price_or_premium",
+                    "entity": "resin:Entities/00013/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10054/Steps_kairos:Primitives_Events_Apply_for_Reorganization",
+            "name": "Apply for reorganization",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "description": "act of asking politely or formally for something",
+            "ta1explanation": "Company officially applies for reorganization",
+            "qnode": "wd:Q22445448",
+            "qlabel": "request",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20100/asker",
+                    "roleName": "A0_pag_agent_asker",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20100/hearer",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/00010/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10055/Steps_kairos:Container:Reorg_outlinks",
+            "name": "Reorganization Application outlinks",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "comment": "container node",
+            "children_gate": "xor",
+            "children": [
+                {
+                    "child": "resin:Events/10056/Steps_kairos:Primitives_Events_Reorg_Approval",
+                    "comment": "Reorganization approval",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10057/Steps_kairos:Primitives_Events_Reorg_Rejection",
+                    "comment": "Reorganization rejection",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10056/Steps_kairos:Primitives_Events_Reorg_Approval",
+            "name": "Reorganization approval",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "description": "expression granting permission to proceed with a proposal",
+            "ta1explanation": "Government approves the reorganization",
+            "qnode": "wd:Q231043",
+            "qlabel": "consent",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20104/agreer",
+                    "roleName": "A0_pag_agreer",
+                    "entity": "resin:Entities/00010/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10057/Steps_kairos:Primitives_Events_Reorg_Rejection",
+            "name": "Reorganization rejection",
+            "description": "act of declining to accept an item for approval, consideration, marking etc.",
+            "ta1explanation": "Government rejects the reorganization",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
             "qnode": "wd:Q98398200",
             "qlabel": "rejection",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00074/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                    "@id": "resin:Participants/20108/entity_refusing",
+                    "roleName": "A0_pag_agent_entity_refusing",
+                    "entity": "resin:Entities/00010/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
-		{
-		  "@id": "kairos:Events/00046/Container:AntiTrustXOR",
-		  "name": "AntitrustXOR",
-		  "comment": "container node",
-		  "aka": "",
-		  "minDuration": "",
-		  "maxDuration": "",
-		  "children": [
-			{
-			  "child": "kairos:Events/00044/AntiTrustApproval",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": [
-					"kairos:Events/00042/Breakup",
-					"kairos:Events/00004/Divestment"
-				]
-			},
-			{
-			  "child": "kairos:Events/00045/AntiTrustRegulatoryRejection",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			}
-		  ],
-		  "description": "",
-		  "goal": "",
-		  "ta1explanation": "",
-		  "children_gate": "xor"
-		},
         {
-            "@id": "kairos:Events/00047/CorporateCriminalApproval",
-            "name": "agreement",
-            "ta1explanation": "The government decides a corporation broke the law.",
-            "qnode": "wd:Q321839",
-            "qlabel": "agreement",
+            "@id": "resin:Events/10058/Steps_kairos:Container:Liquidation",
+            "name": "Liquidation",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "comment": "container node",
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10075/Steps_kairos:Primitives_Events_Apply_for_Bankruptcy",
+                    "comment": "Apply for bankruptcy",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10076/Steps_kairos:Container:Bankruptcy_outlinks"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10076/Steps_kairos:Container:Bankruptcy_outlinks",
+                    "comment": "Bankruptcy Application outlinks",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10077/Steps_kairos:Primitives_Events_Bankruptcy_Approval",
+                    "comment": "Bankruptcy approval",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10078/Steps_kairos:Container:Bankruptcy_Approval_outlinks"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10079/Steps_kairos:Primitives_Events_Bankruptcy_Rejection",
+                    "comment": "Bankruptcy rejection",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10054/Steps_kairos:Primitives_Events_Apply_for_Reorganization"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10078/Steps_kairos:Container:Bankruptcy_Approval_outlinks",
+                    "comment": "Bankruptcy Approval outlinks",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10080/Steps_kairos:Primitives_Events_Government_Bail_Out",
+                    "comment": "Government bail out",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10081/Steps_kairos:Primitives_Events_Appoint_Trustee",
+                    "comment": "Appoint trustee",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10082/Steps_kairos:Primitives_Events_Divestment"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10082/Steps_kairos:Primitives_Events_Divestment",
+                    "comment": "Divestment",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10083/Steps_kairos:Primitives_Events_Transfer_Assets"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10083/Steps_kairos:Primitives_Events_Transfer_Assets",
+                    "comment": "Transfer Assets",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10059/Steps_kairos:Container:Personnel_Change",
+            "name": "Personnel change",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "comment": "container node",
+            "children_gate": "or",
+            "children": [
+                {
+                    "child": "resin:Events/10084/Steps_kairos:Primitives_Events_Management_Change",
+                    "comment": "Management change",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10085/Steps_kairos:Primitives_Events_Reorganize_Hire",
+                    "comment": "Hire new talent",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10086/Steps_kairos:Primitives_Events_Reorganize_Dismissal",
+                    "comment": "Dismiss employees",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10060/Steps_kairos:Primitives_Events_Terminate_Contracts",
+            "name": "Terminate contracts and leases",
+            "description": "termination of something",
+            "ta1explanation": "Company terminates some contracts and leases",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q12769393",
+            "qlabel": "end",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00075/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                    "@id": "Participants/20000/agent",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "Participants/20000/thing_closing",
+                    "roleName": "A1_ppt_thing_closing",
+                    "entity": "resin:Entities/00017/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
         {
-            "@id": "kairos:Events/00048/CorporateCriminalRejection",
-            "name": "rejection",
-            "ta1explanation": "The government decides a corporation did not break the law.",
+            "@id": "resin:Events/10062/Steps_kairos:Primitives_Events_Recover_Assets",
+            "name": "Recover assets",
+            "description": "winding-up of a company",
+            "ta1explanation": "Liquidate or re-use some assets",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q885621",
+            "qlabel": "liquidation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20160/liquidator",
+                    "roleName": "A0_pag_liquidator",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20160/thing_being_liquidated",
+                    "roleName": "A1_ppt_thing_being_liquidated",
+                    "entity": "resin:Entities/00018/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10063/Steps_kairos:Primitives_Events_Repay_Some_Debt",
+            "name": "Repay some debt",
+            "qnode": "wd:Q1148747",
+            "qlabel": "payment",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20161/payer",
+                    "roleName": "A0_pag_payer_or_buyer",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20161/money_or_attention",
+                    "roleName": "A1_vsp_money_or_attention",
+                    "entity": "resin:Entities/00018/"
+                },
+                {
+                    "@id": "resin:Participants/20161/person_being_paid",
+                    "roleName": "A2_gol_person_being_paid",
+                    "entity": "resin:Entities/00004/"
+                }
+            ],
+            "description": "transfer of an item of value from one party (such as a person orcompany) to another, in exchange for goods or services or to fulfill alegal obligation",
+            "ta1explanation": "Company repays some debt to its creditors",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10064/Steps_kairos:Primitives_Events_Contact_Attorney",
+            "name": "Contact Attorney",
+            "qnode": "wd:Q11024",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20165/Steps_kairos:Primitives_Events_File_Complaint_First_communicator",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20166/Steps_kairos:Primitives_Events_File_Complaint_Topic",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00019/"
+                }
+            ],
+            "description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "ta1explanation": "Government contacts attorney to begin filing a lawsuit",
+            "qlabel": "communication",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10065/Steps_kairos:Primitives_Events_File_Complaint",
+            "name": "File Complaint",
+            "comment": "",
+            "qnode": "wd:Q836925",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20167/Steps_kairos:Primitives_Events_File_Complaint_Plaintif",
+                    "roleName": "A0_pag_prosecutor_plaintif",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20168/Steps_kairos:Primitives_Events_File_Complaint_Cause",
+                    "roleName": "A2-cau_X_cause",
+                    "entity": "resin:Entities/00019/"
+                }
+            ],
+            "ta1explanation": "Plaintiff files a complaint to initiate a lawsuit",
+            "qlabel": "complaint",
+            "privateData": {
+                "@type": "justice.initiatejudicialprocess.filecomplaint",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10066/Steps_kairos:Primitives_Events_Answer",
+            "name": "Answer",
+            "comment": "",
+            "qnode": "wd:Q33622550",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20169/Steps_kairos:Primitives_Events_Answer_Defendant",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/00001/"
+                }
+            ],
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "In law, a solemn assertion in opposition to someone or something by the defendant",
+            "qlabel": "answer",
+            "privateData": {
+                "@type": "justice.initiatejudicialprocess.answer",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10067/Steps_kairos:Primitives_Events_Discovery",
+            "name": "Discovery",
+            "comment": "",
+            "qnode": "wd:Q902342",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20170/Steps_kairos:Primitives_Events_Discovery_Plaintif",
+                    "roleName": "A0_pag_prosecutor_plaintif",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20171/Steps_kairos:Primitives_Events_Discovery_Defendant",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/00001/"
+                }
+            ],
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "Pre-trial procedure in common law countries for obtaining evidence",
+            "qlabel": "discovery",
+            "privateData": {
+                "@type": "justice.initiatejudicialprocess.discovery",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10068/Steps_kairos:Primitives_Events_Motion",
+            "name": "Motion",
+            "comment": "",
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "In US law, a procedural device to bring a limited, contested issue before a court for decision",
+            "privateData": {
+                "@type": "justice.initiatejudicialprocess.motion",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q6917734",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20172/Steps_kairos:Primitives_Events_Motion_Plaintif",
+                    "roleName": "A0_pag_prosecutor_plaintif",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20173/Steps_kairos:Primitives_Events_Motion_Defendant",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20174/Steps_kairos:Primitives_Events_Motion_Judgecourt",
+                    "roleName": "A0-pag_X_judge",
+                    "entity": "resin:Entities/00009/"
+                }
+            ],
+            "qlabel": "motion"
+        },
+        {
+            "@id": "resin:Events/10069/Steps_kairos:Container:104",
+            "name": "Motion outlinks",
+            "comment": "container node",
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "aka": "",
+            "children": [
+                {
+                    "child": "resin:Events/10070/Steps_kairos:Primitives_Events_Mediation",
+                    "comment": "mediation",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10072/Steps_kairos:Primitives_Events_Trial",
+                    "comment": "trial",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ],
+            "children_gate": "xor"
+        },
+        {
+            "@id": "resin:Events/10070/Steps_kairos:Primitives_Events_Mediation",
+            "name": "Mediation",
+            "qnode": "wd:Q223871",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20175/Steps_kairos:Primitives_Events_Mediation_Plaintif",
+                    "roleName": "A0_pag_prosecutor_plaintif",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20176/Steps_kairos:Primitives_Events_Mediation_Defendant",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20177/Steps_kairos:Primitives_Events_Mediation_Judgecourt",
+                    "roleName": "A0-pag_X_judge",
+                    "entity": "resin:Entities/00009/"
+                }
+            ],
+            "ta1explanation": "Dispute resolution with assistance of an impartial third party moderator throughthe use of communication and negotiation techniques",
+            "qlabel": "mediation",
+            "privateData": {
+                "@type": "justice.judicialconsequences.mediation",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10071/Steps_kairos:Primitives_Events_Settlement",
+            "name": "Settlement",
+            "comment": "",
+            "qnode": "wd:Q21651837",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20178/Steps_kairos:Primitives_Events_Settlement_Agent",
+                    "roleName": "A0-pag_agent_Agent",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20179/Steps_kairos:Primitives_Events_Settlement_Receiver",
+                    "roleName": "A2_com_co_agent_other_exchanger",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20180/Steps_kairos:Primitives_Events_Settlement_Money",
+                    "roleName": "A1_ppt_theme_thing_being_traded",
+                    "entity": "resin:Entities/00013/"
+                }
+            ],
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "The dispute is resolved through a payment of money.",
+            "qlabel": "exchange_of_goods",
+            "privateData": {
+                "@type": "Transaction.ExchangeBuySell.Unspecified",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10072/Steps_kairos:Primitives_Events_Trial",
+            "name": "Trial",
+            "comment": "",
+            "qnode": "wd:Q8016240",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20181/Steps_kairos:Primitives_Events_Trial_Judgecourt",
+                    "roleName": "A0-pag_X_judge",
+                    "entity": "resin:Entities/00009/"
+                }
+            ],
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "Coming together of parties to a dispute, to present information in a tribunal",
+            "qlabel": "trial",
+            "privateData": {
+                "@type": "justice.initiatejudicialprocess.trialhearing",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10073/Steps_kairos:Primitives_Events_Judgement",
+            "name": "Judgement",
+            "comment": "",
+            "qnode": "wd:Q3769186",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20182/Steps_kairos:Primitives_Events_Judgement_Judgecourt",
+                    "roleName": "A0-pag_X_judge",
+                    "entity": "resin:Entities/00009/"
+                }
+            ],
+            "minDuration": "",
+            "maxDuration": "",
+            "description": "",
+            "goal": "",
+            "ta1explanation": "The formal decision made by a court following a lawsuit",
+            "qlabel": "judgement",
+            "privateData": {
+                "@type": "justice.judicialconsequences.judgement",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
+            "@id": "resin:Events/10074/Steps_kairos:Primitives_Events_Appeal",
+            "name": "Appeal",
+            "privateData": {
+                "@type": "justice.appeal.unspecified",
+                "template": "",
+                "repeatable": true
+            },
+            "description": "",
+            "ta1explanation": "Resort to a superior court to review the decision of an inferior court or administrative agency",
+            "qnode": "wd:Q329777",
+            "qlabel": "appeal",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20183/Steps_kairos:Primitives_Events_Appeal_Defendant",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/00001/"
+                }
+            ],
+            "comment": "",
+            "minDuration": "",
+            "maxDuration": "",
+            "goal": ""
+        },
+        {
+            "@id": "resin:Events/10075/Steps_kairos:Primitives_Events_Apply_for_Bankruptcy",
+            "name": "Apply for bankruptcy",
+            "privateData": {
+                "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
+                "template": "",
+                "repeatable": false
+            },
+            "description": "act of asking politely or formally for something",
+            "ta1explanation": "Company officially applies for bankruptcy",
+            "qnode": "wd:Q22445448",
+            "qlabel": "request",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20100/asker",
+                    "roleName": "A0_pag_agent_asker",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20100/hearer",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/00010/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10076/Steps_kairos:Container:Bankruptcy_outlinks",
+            "name": "Bankruptcy Application outlinks",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "comment": "container node",
+            "children_gate": "xor",
+            "children": [
+                {
+                    "child": "resin:Events/10077/Steps_kairos:Primitives_Events_Bankruptcy_Approval",
+                    "comment": "Bankruptcy approval",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10079/Steps_kairos:Primitives_Events_Bankruptcy_Rejection",
+                    "comment": "Bankruptcy rejection",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10077/Steps_kairos:Primitives_Events_Bankruptcy_Approval",
+            "name": "Bankruptcy approval",
+            "description": "expression granting permission to proceed with a proposal",
+            "ta1explanation": "Government approves the bankruptcy",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q231043",
+            "qlabel": "consent",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20104/agreer",
+                    "roleName": "A0_pag_agreer",
+                    "entity": "resin:Entities/00010/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10079/Steps_kairos:Primitives_Events_Bankruptcy_Rejection",
+            "name": "Bankruptcy rejection",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "description": "act of declining to accept an item for approval, consideration, marking etc.",
+            "ta1explanation": "Government rejects the bankruptcy",
             "qnode": "wd:Q98398200",
             "qlabel": "rejection",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00076/Government",
-                    "roleName": "government",
-                    "entity": "kairos:Entities/00006/Government"
+                    "@id": "resin:Participants/20108/entity_refusing",
+                    "roleName": "A0_pag_agent_entity_refusing",
+                    "entity": "resin:Entities/00010/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
+            ]
         },
-		{
-		  "@id": "kairos:Events/00049/Container:CorporateCriminalXOR",
-		  "name": "CorporateCriminalXOR",
-		  "comment": "container node",
-		  "aka": "",
-		  "minDuration": "",
-		  "maxDuration": "",
-		  "children": [
-			{
-			  "child": "kairos:Events/00047/CorporateCriminalApproval",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": [
-					"kairos:Events/00011/CorporateJustice"
-				]
-			},
-			{
-			  "child": "kairos:Events/00048/CorporateCriminalRejection",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			}
-		  ],
-		  "description": "",
-		  "goal": "",
-		  "ta1explanation": "",
-		  "children_gate": "xor"
-		},
         {
-            "@id": "kairos:Events/00050/JobCuts",
-            "name": "dismissal",
-            "ta1explanation": "A bunch of employees are fired.",
+            "@id": "resin:Events/10078/Steps_kairos:Container:Bankruptcy_Approval_outlinks",
+            "name": "Bankruptcy Approval outlinks",
+            "privateData": {
+                "@type": "kairos:Container",
+                "template": "",
+                "repeatable": false
+            },
+            "comment": "container node",
+            "children_gate": "xor",
+            "children": [
+                {
+                    "child": "resin:Events/10080/Steps_kairos:Primitives_Events_Government_Bail_Out",
+                    "comment": "Government bail out",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                },
+                {
+                    "child": "resin:Events/10081/Steps_kairos:Primitives_Events_Appoint_Trustee",
+                    "comment": "Appoint trustee",
+                    "optional": false,
+                    "importance": 1,
+                    "outlinks": []
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10080/Steps_kairos:Primitives_Events_Government_Bail_Out",
+            "name": "Government bail out",
+            "description": "transfer of money that must be repaid",
+            "ta1explanation": "Government lends company money, because the company bankruptcy would damage the economy",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q189539",
+            "qlabel": "loan",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20124/giver",
+                    "roleName": "A0_pag_giver",
+                    "entity": "resin:Entities/00010/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10081/Steps_kairos:Primitives_Events_Appoint_Trustee",
+            "name": "Appoint trustee",
+            "description": "action which designates a person to carry out a function(s) as a public official",
+            "ta1explanation": "Government appoints a trustee to oversee the reorganization",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q1318578",
+            "qlabel": "appointment",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20128/appointee",
+                    "roleName": "A1_ppt_theme_appointee",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20128/appointer",
+                    "roleName": "A0_pag_agent_appointer",
+                    "entity": "resin:Entities/00010/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10082/Steps_kairos:Primitives_Events_Divestment",
+            "name": "Divestment",
+            "description": "reduction of some kind of asset for financial, ethical, or political objectives or sale of an existing business by a firm",
+            "ta1explanation": "Trustee liquidates assets",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q1200733",
+            "qlabel": "divestment",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20129/entity_removing",
+                    "roleName": "A0_pag_entity_removing",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20129/thing_being_removed",
+                    "roleName": "A1_ppt_thing_being_removed",
+                    "entity": "resin:Entities/00018/"
+                },
+                {
+                    "@id": "resin:Participants/20129/removed_from",
+                    "roleName": "A2_dir_removed_from",
+                    "entity": "resin:Entities/00001/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10083/Steps_kairos:Primitives_Events_Transfer_Assets",
+            "name": "Transfer Assets",
+            "description": "in property law, the transfer of ownership of a thing from one person to another",
+            "ta1explanation": "Trustee distributes assets to creditors",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q315364",
+            "qlabel": "transfer",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20133/agent",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20133/thing_being_traded",
+                    "roleName": "A1_ppt_thing_being_traded",
+                    "entity": "resin:Entities/00018/"
+                },
+                {
+                    "@id": "resin:Participants/20133/thing_being_traded",
+                    "roleName": "A2_com_other_exchanger",
+                    "entity": "resin:Entities/00004/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10084/Steps_kairos:Primitives_Events_Management_Change",
+            "name": "Management change",
+            "description": "process, event or action that deviates from the present state",
+            "ta1explanation": "A new CEO or executive is hired",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q1150070",
+            "qlabel": "change",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20137/thing_changing",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20138/end_state",
+                    "roleName": "A2_prd_end_state",
+                    "entity": "resin:Entities/00021/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10085/Steps_kairos:Primitives_Events_Reorganize_Hire",
+            "name": "Hire new talent",
+            "description": "relationship between the employee and the employer",
+            "ta1explanation": "Company hires new talent",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
+            "qnode": "wd:Q656365",
+            "qlabel": "employment",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20141/employer",
+                    "roleName": "A0_pag_employer",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20141/employee",
+                    "roleName": "A1_ppt_employee",
+                    "entity": "resin:Entities/00022/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10086/Steps_kairos:Primitives_Events_Reorganize_Dismissal",
+            "name": "Dismiss employees",
+            "description": "termination of employment decided unilaterally by employer",
+            "ta1explanation": "Company fires some employees",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            },
             "qnode": "wd:Q17052147",
             "qlabel": "dismissal",
             "participants": [
                 {
-                    "@id": "kairos:Participants/00077/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
+                    "@id": "resin:Participants/20145/employer",
+                    "roleName": "A0_pag_agent_employer",
+                    "entity": "resin:Entities/00001/"
                 },
                 {
-                    "@id": "kairos:Participants/00078/Personnel",
-                    "roleName": "fired employee",
-                    "entity": "kairos:Entities/00003/Personnel"
+                    "@id": "resin:Participants/20145/ex_employee",
+                    "roleName": "A1_ppt_theme_ex_employee",
+                    "entity": "resin:Entities/00023/"
                 }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00051/AskShareholders",
-            "name": "Ask Shareholders",
-            "ta1explanation": "Get shareholder approval for something.",
-            "qnode": "wd:Q381136",
-            "qlabel": "shareholder",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00079/Company",
-                    "roleName": "company",
-                    "entity": "kairos:Entities/00004/Company"
-                },
-                {
-                    "@id": "kairos:Participants/00080/Shareholder",
-                    "roleName": "shareholder",
-                    "entity": "kairos:Entities/00013/Shareholder"
-                }
-            ],
-			"children": [
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00052/ShareHolderResponse",
-            "name": "Shareholder Response",
-            "ta1explanation": "",
-            "qnode": "wd:Q1920566",
-            "qlabel": "answer",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00081/Shareholder",
-                    "roleName": "shareholder",
-                    "entity": "kairos:Entities/00013/Shareholder"
-                }
-            ],
-			"children": [
-				{
-				  "child": "kairos:Events/00055/Container:ShareHolderResponseXOR",
-				  "optional": false,
-				  "importance": 1,
-				  "outlinks": [
-						"kairos:Events/00011/CorporateJustice"
-					]
-				}
-			],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00053/ShareHolderApproval",
-            "name": "agreement",
-            "ta1explanation": "Shareholders approve a proposal from the company (e.g. acquisition or merger).",
-            "qnode": "wd:Q321839",
-            "qlabel": "agreement",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00082/Shareholder",
-                    "roleName": "shareholder",
-                    "entity": "kairos:Entities/00013/Shareholder"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-        {
-            "@id": "kairos:Events/00054/ShareHolderRejection",
-            "name": "rejection",
-            "ta1explanation": "Shareholders reject a proposal from the company (e.g. acquisition or merger).",
-            "qnode": "wd:Q98398200",
-            "qlabel": "rejection",
-            "participants": [
-                {
-                    "@id": "kairos:Participants/00083/Shareholder",
-                    "roleName": "shareholder",
-                    "entity": "kairos:Entities/00013/Shareholder"
-                }
-            ],
-            "description": false,
-            "children_gate": "or"
-        },
-		{
-		  "@id": "kairos:Events/00055/Container:ShareHolderResponseXOR",
-		  "name": "ShareHolderResponseXOR",
-		  "comment": "container node",
-		  "aka": "",
-		  "minDuration": "",
-		  "maxDuration": "",
-		  "children": [
-			{
-			  "child": "kairos:Events/00053/ShareHolderApproval",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": [
-					"kairos:Events/00031/AskRegulators"
-				]
-			},
-			{
-			  "child": "kairos:Events/00054/ShareHolderRejection",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			}
-		  ],
-		  "description": "",
-		  "goal": "",
-		  "ta1explanation": "",
-		  "children_gate": "xor"
-		},
-        {
-			"@id": "kairos:Events/00056/GovernmentActions",
-			"name": "GovernmentActions",
-			"comment": "general parent node. An alternative Qnode was bureaucracy",
-            "qnode": "wd:Q2478386",
-            "qlabel": "legal system",
-		  "privateData": {
-			"@type": "kairos:Container",
-			"template": "",
-			"repeatable": false
-		  },
-            "participants": [
-            ],
-		  "children": [
-			{
-				"child": "kairos:Events/00011/CorporateJustice",
-				"outlinks": [
-				],
-				"comment": false
-			},
-			{
-			  "child": "kairos:Events/00021/Assign",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "kairos:Events/00022/BankruptcyCase",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "kairos:Events/00026/GovernmentBailout",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			},
-			{
-			  "child": "resin:Events/10065/Steps_kairos:Primitives_Events_Justice",
-			  "optional": false,
-			  "importance": 1,
-			  "outlinks": []
-			}
-		  ],
-            "description": false,
-            "children_gate": "or"
-        },
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-    {
-      "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Identifycategorize",
-      "name": "Identifycategorize",
-      "comment": "",
-      "qnode": "Q912550",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Investigation of the disease outbreak includes identify the source of the virus as well as the suspect of the creator",
-      "qlabel": "categorization",
-      "privateData": {
-        "@type": "cognitive.identifycategorize.unspecified",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10040/Steps_kairos:Primitives_Events_Contact",
-      "name": "Contact",
-      "comment": "",
-      "qnode": "Q11024",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Make contact with the suspect",
-      "qlabel": "communication",
-      "privateData": {
-        "@type": "contact.contact.unspecified",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10041/Steps_kairos:Primitives_Events_Arrest",
-      "name": "Arrest",
-      "comment": "",
-      "qnode": "Q1403016",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Taking the suspect who created the virus or violated laws during the outbreak into custody",
-      "qlabel": "arrest",
-      "children": [
-        {
-          "child": "resin:Events/10080/Steps_kairos:Primitives_Events_Handcuffing",
-          "comment": "",
-          "optional": true,
-          "importance": 0.3,
-          "outlinks": []
-        },
-        {
-          "child": "resin:Events/10082/Steps_kairos:Primitives_Events_Restrain",
-          "comment": "",
-          "optional": true,
-          "importance": 0.1,
-          "outlinks": []
+            ]
         }
-      ],
-      "children_gate": "or",
-      "privateData": {
-        "@type": "arrest_Q1403016",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10042/Steps_kairos:Primitives_Events_Inspect",
-      "name": "Inspect",
-      "comment": "",
-      "qnode": "Q1137655",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Organized examination or formal evaluation on the suspect for creating the virus",
-      "qlabel": "inspection",
-      "privateData": {
-        "@type": "cognitive.inspection.assesstestmeasure",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10043/Steps_kairos:Primitives_Events_Initiate_Judicial_Process",
-      "name": "Initiate Judicial Process",
-      "comment": "",
-      "qnode": "Q17310301",
-      "participants": [
-        {
-          "@id": "resin:Participants/20030/Steps_kairos:Primitives_Events_Initiate_Judicial_Process_Judgecourt",
-          "roleName": "A0-pag_X_judge",
-          "entity": "resin:Entities/00135/"
-        }
-      ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Initiate a legal proceeding on the suspect for creating the virus",
-      "qlabel": "bill of indictment",
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.unspecified",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10044/Steps_kairos:Primitives_Events_ChargeIndict",
-      "name": "ChargeIndict",
-      "comment": "",
-      "qnode": "Q19357312",
-      "participants": [
-        {
-          "@id": "resin:Participants/20031/Steps_kairos:Primitives_Events_ChargeIndict_Judgecourt",
-          "roleName": "A0-pag_X_judge",
-          "entity": "resin:Entities/00135/"
-        }
-      ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Formal accusation made by a governmental authority on the suspect for creating the virus",
-      "qlabel": "accusation",
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.chargeindict",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10045/Steps_kairos:Primitives_Events_Trial",
-      "name": "Trial",
-      "comment": "",
-      "qnode": "Q8016240",
-      "participants": [
-        {
-          "@id": "resin:Participants/20032/Steps_kairos:Primitives_Events_Trial_Judgecourt",
-          "roleName": "A0-pag_X_judge",
-          "entity": "resin:Entities/00135/"
-        }
-      ],
-	  "children": [
-        {
-          "child": "resin:Events/10089/Steps_kairos:Container:104",
-          "comment": "Added this to avoid multiple roots.",
-          "optional": true,
-          "importance": 0.2,
-          "outlinks": []
-        }
-	  ],
-      "children_gate": "or",
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Coming together of parties to a dispute, to present information in a tribunals on the case of creation of the virus",
-      "qlabel": "trial",
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.trialhearing",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10046/Steps_kairos:Primitives_Events_Convict",
-      "name": "Convict",
-      "comment": "",
-      "qnode": "Q5166547",
-      "participants": [
-        {
-          "@id": "resin:Participants/20033/Steps_kairos:Primitives_Events_Convict_Judgecourt",
-          "roleName": "A0-pag_X_judge",
-          "entity": "resin:Entities/00135/"
-        }
-      ],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "The suspect may found guilty of creating the virus",
-      "qlabel": "Convict",
-      "privateData": {
-        "@type": "justice.judicialconsequences.convict",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10047/Steps_kairos:Primitives_Events_Sentence",
-      "name": "Sentence",
-      "comment": "",
-      "qnode": "Q1763090",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Punishment, penalty or physical restraint that was actually imposed on the criminal responsible for creating the virus",
-      "qlabel": "sentence",
-      "privateData": {
-        "@type": "justice.sentence.unspecified",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10048/Steps_kairos:Primitives_Events_Detain",
-      "name": "Detain",
-      "comment": "",
-      "qnode": "Q1403016",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "A state or private citizen lawfully holds the criminal responsible for creating the virus by removing their freedom or liberty at that time",
-      "qlabel": "arrest",
-      "privateData": {
-        "@type": "arrest_Q1403016",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10049/Steps_kairos:Primitives_Events_Release_Parole",
-      "name": "Release Parole",
-      "comment": "",
-      "qnode": "Q5357120",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Release or early release of the criminal responsible for creating the virus",
-      "qlabel": "parole",
-      "privateData": {
-        "@type": "justice.releaseparole.unspecified",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10050/Steps_kairos:Primitives_Events_Acquit",
-      "name": "Acquit",
-      "comment": "",
-      "qnode": "Q1454723",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "In common law jurisdictions, an acquittal certifies that the accused is free from the charge of an offense, as far as the criminal law is concerned",
-      "qlabel": "acquittal",
-      "privateData": {
-        "@type": "justice.acquit.unspecified",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10064/Steps_kairos:Primitives_Events_Investigation",
-      "name": "Investigation",
-      "comment": "",
-      "qnode": "Q21004260",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "",
-      "qlabel": "inquiry",
-      "children": [
-        {
-          "child": "resin:Events/10039/Steps_kairos:Primitives_Events_Identifycategorize",
-          "comment": "Identifycategorize",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10040/Steps_kairos:Primitives_Events_Contact"
-          ]
-        },
-        {
-          "child": "resin:Events/10040/Steps_kairos:Primitives_Events_Contact",
-          "comment": "Contact",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10041/Steps_kairos:Primitives_Events_Arrest",
-            "resin:Events/10080/Steps_kairos:Primitives_Events_Handcuffing",
-            "resin:Events/10082/Steps_kairos:Primitives_Events_Restrain"
-          ]
-        },
-        {
-          "child": "resin:Events/10041/Steps_kairos:Primitives_Events_Arrest",
-          "comment": "Arrest",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10042/Steps_kairos:Primitives_Events_Inspect",
-            "resin:Events/10081/Steps_kairos:Primitives_Events_Interrogation"
-          ]
-        },
-        {
-          "child": "resin:Events/10042/Steps_kairos:Primitives_Events_Inspect",
-          "comment": "Inspect",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10043/Steps_kairos:Primitives_Events_Initiate_Judicial_Process"
-          ]
-        },
-        {
-          "child": "resin:Events/10081/Steps_kairos:Primitives_Events_Interrogation",
-          "comment": "Interrogation",
-          "optional": true,
-          "importance": 0.1,
-          "outlinks": []
-        },
-        {
-          "child": "resin:Events/10080/Steps_kairos:Primitives_Events_Handcuffing",
-          "comment": "Handcuffing",
-          "optional": true,
-          "importance": 0.1,
-          "outlinks": []
-        },
-        {
-          "child": "resin:Events/10082/Steps_kairos:Primitives_Events_Restrain",
-          "comment": "Restrain",
-          "optional": true,
-          "importance": 0.1,
-          "outlinks": []
-        }
-      ],
-      "children_gate": "or",
-      "privateData": {
-        "@type": "FrameNet.Scrutiny",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10065/Steps_kairos:Primitives_Events_Justice",
-      "name": "Justice",
-      "comment": "",
-      "qnode": "Q5167661",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "",
-      "qlabel": "justice",
-      "children": [
-        {
-          "child": "resin:Events/10043/Steps_kairos:Primitives_Events_Initiate_Judicial_Process",
-          "comment": "Initiate Judicial Process",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10044/Steps_kairos:Primitives_Events_ChargeIndict"
-          ]
-        },
-        {
-          "child": "resin:Events/10044/Steps_kairos:Primitives_Events_ChargeIndict",
-          "comment": "ChargeIndict",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10045/Steps_kairos:Primitives_Events_Trial"
-          ]
-        },
-        {
-          "child": "resin:Events/10045/Steps_kairos:Primitives_Events_Trial",
-          "comment": "Trial",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10089/Steps_kairos:Container:104"
-          ]
-        },
-        {
-          "child": "resin:Events/10046/Steps_kairos:Primitives_Events_Convict",
-          "comment": "Convict",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10047/Steps_kairos:Primitives_Events_Sentence"
-          ]
-        },
-        {
-          "child": "resin:Events/10047/Steps_kairos:Primitives_Events_Sentence",
-          "comment": "Sentence",
-          "optional": true,
-          "importance": 1,
-          "outlinks": [
-            "resin:Events/10048/Steps_kairos:Primitives_Events_Detain"
-          ]
-        },
-        {
-          "child": "resin:Events/10048/Steps_kairos:Primitives_Events_Detain",
-          "comment": "Detain",
-          "optional": true,
-          "importance": 0.8,
-          "outlinks": [
-            "resin:Events/10049/Steps_kairos:Primitives_Events_Release_Parole"
-          ]
-        },
-        {
-          "child": "resin:Events/10049/Steps_kairos:Primitives_Events_Release_Parole",
-          "comment": "Release Parole",
-          "optional": true,
-          "importance": 0.8,
-          "outlinks": []
-        },
-        {
-          "child": "resin:Events/10050/Steps_kairos:Primitives_Events_Acquit",
-          "comment": "Acquit",
-          "optional": true,
-          "importance": 0.5,
-          "outlinks": []
-        }
-      ],
-      "children_gate": "or",
-      "privateData": {
-        "@type": "FrameNet.Legal_rulings",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10080/Steps_kairos:Primitives_Events_Handcuffing",
-      "name": "Handcuffing",
-      "comment": "",
-      "qnode": "Q15808",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Using handcuffs to secure a suspect who violated law during the disease outbreak",
-      "qlabel": "handcuffs",
-      "privateData": {
-        "@type": "handcuffs_Q15808",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10081/Steps_kairos:Primitives_Events_Interrogation",
-      "name": "Interrogation",
-      "comment": "",
-      "qnode": "Q327018",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Interviewing with the goal of eliciting useful information related to suspected crime during the disease outbreak",
-      "qlabel": "interrogation",
-      "privateData": {
-        "@type": "interrogation_Q327018",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10082/Steps_kairos:Primitives_Events_Restrain",
-      "name": "Restrain",
-      "comment": "",
-      "qnode": "Q357003",
-      "participants": [],
-      "minDuration": "",
-      "maxDuration": "",
-      "description": "",
-      "goal": "",
-      "ta1explanation": "Physical restraint on the suspect",
-      "qlabel": "physical restraint",
-      "privateData": {
-        "@type": "physical_restraint_Q357003",
-        "template": "",
-        "repeatable": false
-      }
-    },
-    {
-      "@id": "resin:Events/10089/Steps_kairos:Container:104",
-      "name": "Trial outlinks",
-      "comment": "container node",
-      "aka": "",
-      "minDuration": "",
-      "maxDuration": "",
-      "children": [
-        {
-          "child": "resin:Events/10046/Steps_kairos:Primitives_Events_Convict",
-          "comment": "container node",
-          "optional": false,
-          "importance": 1,
-          "outlinks": []
-        },
-        {
-          "child": "resin:Events/10050/Steps_kairos:Primitives_Events_Acquit",
-          "comment": "container node",
-          "optional": false,
-          "importance": 1,
-          "outlinks": []
-        }
-      ],
-      "description": "",
-      "goal": "",
-      "ta1explanation": "",
-      "children_gate": "xor",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      }
-    }
     ],
     "entities": [
         {
-            "@id": "kairos:Entities/00001/CEO",
-            "qnode": "wd:Q484876",
-            "qlabel": "chief executive officer",
-            "centrality": 1,
-            "name": "CEO"
+            "name": "executive",
+            "@id": "resin:Entities/00000/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
         },
         {
-            "@id": "kairos:Entities/00002/Executive",
-            "qnode": "wd:Q978044",
-            "qlabel": "executive",
-            "centrality": 1,
-            "name": "executive"
+            "name": "auditor",
+            "@id": "resin:Entities/00002/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
         },
         {
-            "@id": "kairos:Entities/00003/Personnel",
-            "qnode": "wd:Q105764136",
-            "qlabel": "personnel",
-            "centrality": 1,
-            "name": "personnel"
+            "name": "founder",
+            "@id": "resin:Entities/00003/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
         },
         {
-            "@id": "kairos:Entities/00004/Company",
-            "qnode": "wd:Q783794",
-            "qlabel": "company",
-            "centrality": 1,
+            "name": "employee",
+            "@id": "resin:Entities/00016/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
+        },
+        {
+            "name": "trustee",
+            "@id": "resin:Entities/00020/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
+        },
+        {
+            "name": "new executive",
+            "@id": "resin:Entities/00021/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
+        },
+        {
+            "name": "new employee",
+            "@id": "resin:Entities/00022/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
+        },
+        {
+            "name": "old employee",
+            "@id": "resin:Entities/00023/",
+            "qnode": "wd:Q5",
+            "qlabel": "human"
+        },
+        {
+            "name": "investors",
+            "@id": "resin:Entities/00004/",
+            "qnode": "wd:Q16334295",
+            "qlabel": "group of humans"
+        },
+        {
+            "name": "general public",
+            "@id": "resin:Entities/00006/",
+            "qnode": "wd:Q16334295",
+            "qlabel": "group of humans"
+        },
+        {
             "name": "company",
-			"comment": "the legal entity"
+            "@id": "resin:Entities/00001/",
+            "qnode": "wd:Q783794",
+            "qlabel": "company"
         },
         {
-            "@id": "kairos:Entities/00005/Founder",
-            "qnode": "wd:Q61268336",
-            "qlabel": "founder",
-            "centrality": 1,
-            "name": "founder"
+            "name": "partnering company",
+            "@id": "resin:Entities/00007/",
+            "qnode": "wd:Q783794",
+            "qlabel": "company"
         },
         {
-            "@id": "kairos:Entities/00006/Government",
-            "qnode": "wd:Q7188",
-            "qlabel": "government",
-            "centrality": 1,
-            "name": "government"
+            "name": "bigger company",
+            "@id": "resin:Entities/00008/",
+            "qnode": "wd:Q783794",
+            "qlabel": "company"
         },
         {
-            "@id": "kairos:Entities/00007/Investor",
-            "qnode": "wd:Q557880",
-            "qlabel": "investor",
-            "centrality": 1,
-            "name": "investor"
+            "name": "new company",
+            "@id": "resin:Entities/00014/",
+            "qnode": "wd:Q783794",
+            "qlabel": "company"
         },
         {
-            "@id": "kairos:Entities/00008/Assets",
+            "name": "stock",
+            "@id": "resin:Entities/00005/",
+            "qnode": "wd:Q1196314",
+            "qlabel": "stock"
+        },
+        {
+            "name": "judge",
+            "@id": "resin:Entities/00009/",
+            "qnode": "wd:Q41487",
+            "qlabel": "court"
+        },
+        {
+            "name": "government authorities",
+            "@id": "resin:Entities/00010/",
+            "qnode": "wd:Q4383245",
+            "qlabel": "public authority"
+        },
+        {
+            "name": "fraud",
+            "@id": "resin:Entities/00011/",
+            "qnode": "wd:Q28813",
+            "qlabel": "fraud"
+        },
+        {
+            "name": "prison",
+            "@id": "resin:Entities/00012/",
+            "qnode": "wd:Q40357",
+            "qlabel": "prison"
+        },
+        {
+            "name": "asset",
+            "@id": "resin:Entities/00013/",
             "qnode": "wd:Q46737",
-            "qlabel": "asset",
-            "centrality": 1,
-            "name": "asset"
+            "qlabel": "asset"
         },
         {
-            "@id": "kairos:Entities/00009/Money",
-            "qnode": "wd:Q1368",
-            "qlabel": "money",
-            "centrality": 1,
-            "name": "money"
+            "name": "contracts and leases",
+            "@id": "resin:Entities/00017/",
+            "qnode": "wd:Q46737",
+            "qlabel": "asset"
         },
         {
-            "@id": "kairos:Entities/00010/GovernmentEmployee",
-            "qnode": "wd:Q3796928",
-            "qlabel": "government employee",
-            "centrality": 1,
-            "name": "government employee"
+            "name": "liquidated assets",
+            "@id": "resin:Entities/00018/",
+            "qnode": "wd:Q46737",
+            "qlabel": "asset"
         },
         {
-            "@id": "kairos:Entities/00011/Trustee",
-            "qnode": "wd:Q2047357",
-            "qlabel": "trustee",
-            "centrality": 1,
-            "name": "trustee"
+            "name": "mergers and acquisitions",
+            "@id": "resin:Entities/00015/",
+            "qnode": "wd:Q731112",
+            "qlabel": "mergers and acquisitions"
         },
         {
-            "@id": "kairos:Entities/00012/Investigator",
-            "qnode": "wd:Q2047357",
-            "qlabel": "investigator",
-            "centrality": 1,
-            "name": "investigator"
-        },
-        {
-            "@id": "kairos:Entities/00013/Shareholder",
-            "qnode": "wd:Q381136",
-            "qlabel": "shareholder",
-            "centrality": 1,
-            "name": "shareholder"
-        },
-        {
-            "@id": "kairos:Entities/00014/Company1",
-            "qnode": "wd:Q783794",
-            "qlabel": "company",
-            "centrality": 1,
-            "name": "company",
-			"comment": "the legal entity for events with more than 1 company."
-        },
-        {
-            "@id": "kairos:Entities/00015/Company2",
-            "qnode": "wd:Q783794",
-            "qlabel": "company",
-            "centrality": 1,
-            "name": "company",
-			"comment": "the legal entity for events with more than 1 company."
-        },
-        {
-            "@id": "kairos:Entities/00016/Personnel1",
-            "qnode": "wd:Q105764136",
-            "qlabel": "personnel",
-            "centrality": 1,
-            "name": "personnel for events with more than 1"
-        },
-        {
-            "@id": "kairos:Entities/00017/Personnel2",
-            "qnode": "wd:Q105764136",
-            "qlabel": "personnel",
-            "centrality": 1,
-            "name": "personnel for events with more than 1"
-        },
-        {
-            "@id": "kairos:Entities/00018/Politician",
-            "qnode": "wd:Q82955",
-            "qlabel": "politician",
-            "centrality": 1,
-            "name": "politician"
-        },
-    {
-      "@id": "resin:Entities/00135/",
-      "name": "judicial system",
-      "qnode": "Q41487",
-      "qlabel": "court"
-    }
+            "name": "monopoly",
+            "@id": "resin:Entities/00019/",
+            "qnode": "wd:Q43637",
+            "qlabel": "monopoly"
+        }
     ],
-    "relations": []
+    "relations": [
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00000/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00001/",
+            "@id": "resin:Relations/30000/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00003/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00001/",
+            "@id": "resin:Relations/30001/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00016/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00008/",
+            "@id": "resin:Relations/30002/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00017/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00013/",
+            "@id": "resin:Relations/30004/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00018/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00013/",
+            "@id": "resin:Relations/30005/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00020/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00010/",
+            "@id": "resin:Relations/30006/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00021/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00001/",
+            "@id": "resin:Relations/30007/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00022/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00001/",
+            "@id": "resin:Relations/30008/"
+        },
+        {
+            "name": "member of",
+            "relationSubject": "resin:Entities/00023/",
+            "relationPredicate": "wd:Q21503252",
+            "relationObject": "resin:Entities/00001/",
+            "@id": "resin:Relations/30009/"
+        },
+        {
+            "name": "partially coincident with",
+            "relationSubject": "resin:Entities/00014/",
+            "relationPredicate": "wd:Q78694451",
+            "relationObject": "resin:Entities/00008/",
+            "@id": "resin:Relations/30003/"
+        }
+    ]
 }

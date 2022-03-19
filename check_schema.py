@@ -176,8 +176,7 @@ if __name__ == '__main__':
             log_writer = open(os.path.join(args.output_dir, f'{scenario}.log'), 'w')
 
             if args.fix_uid: 
-                if scenario != 'business_change': # FIXME: this schema uses 'kairos' prefix instead of resin 
-                    make_unique_participants(scenario_schema)
+                make_unique_participants(scenario_schema)
             
             scenario_schema, errors  = fix_qnode(scenario_schema, errors)
 
