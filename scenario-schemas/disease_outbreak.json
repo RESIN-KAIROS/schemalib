@@ -124,9 +124,9 @@
             "description": "",
             "goal": "",
             "ta1explanation": "Compliance to a rule or regulation. Often negated, for example violating health regulations.",
+            "modality": "negated",
             "qnode": "wd:Q1399332",
             "qlabel": "Compliance",
-            "comment": "often negated",
             "aka": "",
             "participants": [
                 {
@@ -298,7 +298,7 @@
             ]
         },
         {
-            "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Medical.Intervention.Unspecified:1",
+            "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Treatment",
             "name": "Treatment",
             "privateData": {
                 "template": "",
@@ -338,7 +338,7 @@
             "qlabel": "treatment"
         },
         {
-            "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Movement.Transportation.PreventPassage:1",
+            "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Quarantine",
             "name": "Quarantine",
             "qnode": "wd:Q182899",
             "qlabel": "quarantine",
@@ -368,7 +368,7 @@
             "goal": ""
         },
         {
-            "@id": "resin:Events/10018/Steps_kairos:Primitives_Events_Cognitive.Inspection.SensoryObserve:1",
+            "@id": "resin:Events/10018/Steps_kairos:Primitives_Events_GatherData",
             "name": "Gather Data",
             "qnode": "wd:Q193181",
             "qlabel": "data collection",
@@ -401,6 +401,45 @@
             "minDuration": "PT1M",
             "maxDuration": "P1M",
             "goal": ""
+        },
+        {
+            "@id": "resin:Events/10121/Steps_kairos:Primitives_Events_CollectLabSamples",
+            "name": "Collect Lab Samples",
+            "qnode": "wd:Q2709468",
+            "qlabel": "laboratory procedure",
+            "participants":[
+                {
+                    "@id": "resin:Participants/20205/kairos:Primitives_Events_CollectLabSamples_Processor",
+                    "roleName": "A0_pag_processor",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id":"resin:Participants/20206/kairos:Primitives_Events_CollectLabSamples_Artifact",
+                    "roleName": "A1_ppt_thing_processed",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "ta1explanation": "Collecting and processing samples with the pathogen. These samples may not from the patient directly, but include food, water, surfaces, animals etc."
+        },
+        {
+            "@id": "resin:Events/10122/Steps_kairos:Primitives_Events_AnalyzeData",
+            "name": "Analyze Data",
+            "qnode": "Q1988917",
+            "qlabel": "data_analysis",
+            "ta1explanation": "process of applying analytical methods to existing data of a specific type, breaking a complex topic or substance into smaller parts in order to gain a better understanding of it",
+            "participants":[
+                {
+                    "@id": "resin:Participants/20207/kairos:Primitives_Events_AnalyzeData_Agent",
+                    "roleName": "A0-pag_agent_researcher",
+                    "entity": "resin:Entities/00019/"
+                },
+                {   
+                    "@id": "resin:Participants/20208/kairos:Primitives_Events_AnalyzeData_Subject",
+                    "roleName": "A1-ppt_theme_thing_reseached",
+                    "entity": "resin:Entities/00007/"
+
+                }
+            ]
         },
         {
             "@id": "resin:Events/10019/Steps_kairos:Primitives_Events_Cognitive.IdentifyCategorize.Unspecified:1",
@@ -734,7 +773,7 @@
             "goal": ""
         },
         {
-            "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_Contact.RequestCommand.Broadcast:1",
+            "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_GovDecree",
             "name": "Gov Health Decree",
             "description": "",
             "ta1explanation": "Legislations were issued fighting the disease outbreak by government",
@@ -985,7 +1024,6 @@
                     "outlinks": [
                         "resin:Events/10036/Steps_kairos:Container:3",
                         "resin:Events/10014/Steps_kairos:Primitives_Events_Medical.Diagnosis.Unspecified:1",
-                        "resin:Events/10037/Steps_kairos:Primitives_Events_Identifycategorize",
                         "resin:Events/10038/Steps_kairos:Primitives_Events_Testing"
                     ]
                 },
@@ -1005,7 +1043,7 @@
                     "importance": 0.3,
                     "outlinks": [
                         "resin:Events/10021/Steps_kairos:Primitives_Events_Contact.Contact.Broadcast:1",
-                        "resin:Events/10029/Steps_kairos:Primitives_Events_Contact.RequestCommand.Broadcast:1",
+                        "resin:Events/10029/Steps_kairos:Primitives_Events_GovDecree",
                         "resin:Events/10032/Steps_kairos:Primitives_Events_Cognitive.Research.Unspecified:1",
                         "resin:Events/10034/Steps_kairos:Primitives_Events_Transaction.AidBetweenGovernments.Unspecified:1",
                         "resin:Events/10022/Steps_kairos:Primitives_Events_Life.Infect.Unspecified:2",
@@ -1015,9 +1053,18 @@
                 {
                     "child": "resin:Events/10040/Steps_kairos:Primitives_Events_Contaminate_Substance",
                     "comment": "Contaminate Substance",
-                    "optional": true,
+                    "optional": false,
                     "importance": 0.7,
                     "outlinks": [
+                        "resin:Events/10120/Steps_kairos:Primitives_Events_Purchase"
+                    ]
+                },
+                {
+                    "child":"resin:Events/10120/Steps_kairos:Primitives_Events_Purchase",
+                    "comment": "Purchase Contaminated Object",
+                    "optional": true,
+                    "importance": 0.5,
+                    "outlinks":[
                         "resin:Events/10041/Steps_kairos:Primitives_Events_Consume"
                     ]
                 },
@@ -1032,7 +1079,7 @@
                 },
                 {
                     "child": "resin:Events/10042/Steps_kairos:Primitives_Events_Contamination",
-                    "comment": "Spread Disease",
+                    "comment": "Transmission",
                     "optional": true,
                     "importance": 0.8,
                     "outlinks": [
@@ -1060,30 +1107,47 @@
             "children": [
                 {
                     "child": "resin:Events/10039/Steps_kairos:Primitives_Events_Assignment",
-                    "comment": "StartPosition",
+                    "comment": "Assignment",
                     "optional": true,
                     "importance": 0.8,
                     "outlinks": [
-                        "resin:Events/10029/Steps_kairos:Primitives_Events_Contact.RequestCommand.Broadcast:1",
+                        "resin:Events/10124/Steps_kairos:Primitives_Events_Inspection"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10124/Steps_kairos:Primitives_Events_Inspection",
+                    "comment": "Inspection",
+                    "optional": true,
+                    "importance": 0.8,
+                    "outlinks": [
+                        "resin:Events/10029/Steps_kairos:Primitives_Events_GovDecree",
                         "resin:Events/10031/Steps_kairos:Primitives_Events_Destruction"
                     ]
                 },
                 {
-                    "child": "resin:Events/10029/Steps_kairos:Primitives_Events_Contact.RequestCommand.Broadcast:1",
-                    "comment": "Government Health Decrees",
+                    "child": "resin:Events/10029/Steps_kairos:Primitives_Events_GovDecree",
+                    "comment": "Government Orders",
                     "optional": false,
                     "importance": 0.8,
                     "outlinks": [
                         "resin:Events/10043/Steps_kairos:Primitives_Events_Distribute",
                         "resin:Events/10044/Steps_kairos:Primitives_Events_ExchangeBuySell",
                         "resin:Events/10045/Steps_kairos:Primitives_Events_CloseBorder",
-                        "resin:Events/10046/Steps_kairos:Primitives_Events_Debunk_Misinformation",
+                        "resin:Events/10125/Steps_kairos:Primitives_Events_Information_Campaign",
                         "resin:Events/10034/Steps_kairos:Primitives_Events_Transaction.AidBetweenGovernments.Unspecified:1"
                     ]
                 },
                 {
+                    "child":"resin:Events/10125/Steps_kairos:Primitives_Events_Information_Campaign",
+                    "comment": "Information Campaign",
+                    "optional": true,
+                    "importance": 0.5, 
+                    "outlinks": [
+                        "resin:Events/10046/Steps_kairos:Primitives_Events_Debunk_Misinformation"]
+                },
+                {
                     "child": "resin:Events/10034/Steps_kairos:Primitives_Events_Transaction.AidBetweenGovernments.Unspecified:1",
-                    "comment": "Aid",
+                    "comment": "International Aid",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
@@ -1136,26 +1200,6 @@
             "children_gate": "or"
         },
         {
-            "@id": "resin:Events/10045/Steps_kairos:Primitives_Events_CloseBorder",
-            "name": "Close Border",
-            "description": "modification in the border or boundary of an administrative, electoral or political entity",
-            "qnode": "wd:Q28953942",
-            "qlabel": "boundary change",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20066/Steps_kairos:Primitives_Events_CloseBorder_Cause",
-                    "roleName": "A0_pag_causer_of_transformation",
-                    "entity": "resin:Entities/00007/"
-                }
-            ],
-            "ta1explanation": "Close country borders to prevent disease spread",
-            "privateData": {
-                "@type": "",
-                "template": "",
-                "repeatable": false
-            }
-        },
-        {
             "@id": "resin:Events/10036/Steps_kairos:Container:3",
             "name": "Medical Response",
             "ta1explanation": "",
@@ -1174,11 +1218,15 @@
                 {
                     "child": "resin:Events/10014/Steps_kairos:Primitives_Events_Medical.Diagnosis.Unspecified:1",
                     "comment": "Diagnosis",
-                    "optional": true,
+                    "optional": false,
                     "importance": 1,
                     "outlinks": [
-                        "resin:Events/10016/Steps_kairos:Primitives_Events_Medical.Intervention.Unspecified:1",
-                        "resin:Events/10015/Steps_kairos:Primitives_Events_Disinfect"
+                        "resin:Events/10016/Steps_kairos:Primitives_Events_Treatment",
+                        "resin:Events/10015/Steps_kairos:Primitives_Events_Disinfect",
+                        "resin:Events/10017/Steps_kairos:Primitives_Events_Quarantine",
+                        "resin:Events/10037/Steps_kairos:Primitives_Events_Identifycategorize",
+                        "resin:Events/10050/Steps_kairos:Primitives_Events_Tracing",
+                        "resin:Events/10049/Steps_kairos:Container:IllnessOutcome"
                     ]
                 },
                 {
@@ -1189,24 +1237,38 @@
                     "outlinks": []
                 },
                 {
-                    "child": "resin:Events/10016/Steps_kairos:Primitives_Events_Medical.Intervention.Unspecified:1",
+                    "child": "resin:Events/10016/Steps_kairos:Primitives_Events_Treatment",
                     "comment": "Treatment",
                     "optional": true,
                     "importance": 0.8,
                     "outlinks": [
-                        "resin:Events/10048/Steps_kairos:Container:101"
+                        "resin:Events/10018/Steps_kairos:Primitives_Events_GatherData",
+                        "resin:Events/10017/Steps_kairos:Primitives_Events_Quarantine",
+                        "resin:Events/10049/Steps_kairos:Container:IllnessOutcome"
+
                     ]
                 },
                 {
-                    "child": "resin:Events/10048/Steps_kairos:Container:101",
-                    "comment": "Treatment outlinks",
+                    "child": "resin:Events/10121/Steps_kairos:Primitives_Events_CollectLabSamples",
+                    "comment": "Collect Lab Samples",
                     "optional": true,
-                    "importance": 0.8,
-                    "outlinks": []
+                    "importance": 0.3, 
+                    "outlinks": [
+                        "resin:Events/10018/Steps_kairos:Primitives_Events_GatherData"
+                    ]
                 },
                 {
-                    "child": "resin:Events/10018/Steps_kairos:Primitives_Events_Cognitive.Inspection.SensoryObserve:1",
+                    "child": "resin:Events/10018/Steps_kairos:Primitives_Events_GatherData",
                     "comment": "Gather Data",
+                    "optional": true,
+                    "importance": 0.5,
+                    "outlinks": [
+                        "resin:Events/10122/Steps_kairos:Primitives_Events_AnalyzeData"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10122/Steps_kairos:Primitives_Events_AnalyzeData",
+                    "comment": "Analyze Data",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": [
@@ -1214,17 +1276,17 @@
                     ]
                 },
                 {
-                    "child": "resin:Events/10017/Steps_kairos:Primitives_Events_Movement.Transportation.PreventPassage:1",
+                    "child": "resin:Events/10017/Steps_kairos:Primitives_Events_Quarantine",
                     "comment": "Quarantine",
                     "optional": true,
                     "importance": 1,
                     "outlinks": [
-                        "resin:Events/10049/Steps_kairos:Container:102"
+                       
                     ]
                 },
                 {
-                    "child": "resin:Events/10049/Steps_kairos:Container:102",
-                    "comment": "Quarantine outlinks",
+                    "child": "resin:Events/10049/Steps_kairos:Container:IllnessOutcome",
+                    "comment": "Illness outcome, recovery or death.",
                     "optional": true,
                     "importance": 1,
                     "outlinks": []
@@ -1244,9 +1306,9 @@
                     "optional": true,
                     "importance": 1,
                     "outlinks": [
-                        "resin:Events/10017/Steps_kairos:Primitives_Events_Movement.Transportation.PreventPassage:1",
-                        "resin:Events/10018/Steps_kairos:Primitives_Events_Cognitive.Inspection.SensoryObserve:1",
-                        "resin:Events/10051/Steps_kairos:Primitives_Events_Identify"
+                        "resin:Events/10018/Steps_kairos:Primitives_Events_GatherData",
+                        "resin:Events/10051/Steps_kairos:Primitives_Events_Identify",
+                        "resin:Events/10121/Steps_kairos:Primitives_Events_CollectLabSamples"
                     ]
                 },
                 {
@@ -1261,29 +1323,6 @@
                 {
                     "child": "resin:Events/10052/Steps_kairos:Primitives_Events_Quarantine",
                     "comment": "Quarantine Exposed Group",
-                    "optional": true,
-                    "importance": 0.5,
-                    "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10053/Steps_kairos:Primitives_Events_Recover",
-                    "comment": "Recover",
-                    "optional": true,
-                    "importance": 0.8,
-                    "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10054/Steps_kairos:Primitives_Events_Die",
-                    "comment": "Die",
-                    "optional": true,
-                    "importance": 0.5,
-                    "outlinks": [
-                        "resin:Events/10055/Steps_kairos:Primitives_Events_Funeral"
-                    ]
-                },
-                {
-                    "child": "resin:Events/10055/Steps_kairos:Primitives_Events_Funeral",
-                    "comment": "Funeral",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
@@ -1405,26 +1444,12 @@
                     "optional": false,
                     "importance": 0.8,
                     "outlinks": [
-                        "resin:Events/10066/Steps_kairos:Container:105"
+                        "resin:Events/10066/Steps_kairos:Container:BusinessCloseOutcome"
                     ]
                 },
                 {
-                    "child": "resin:Events/10066/Steps_kairos:Container:105",
+                    "child": "resin:Events/10066/Steps_kairos:Container:BusinessCloseOutcome",
                     "comment": "Business Close outlinks",
-                    "optional": false,
-                    "importance": 0.8,
-                    "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10067/Steps_kairos:Primitives_Events_Business_Reopen",
-                    "comment": "Business Reopen",
-                    "optional": false,
-                    "importance": 0.8,
-                    "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10068/Steps_kairos:Primitives_Events_Business_Shutdown",
-                    "comment": "Business Shutdown",
                     "optional": false,
                     "importance": 0.8,
                     "outlinks": []
@@ -1515,7 +1540,6 @@
                     "optional": true,
                     "importance": 0.3,
                     "outlinks": [
-                        "resin:Events/10012/Steps_kairos:Primitives_Events_Life.Infect.Unspecified:1"
                     ]
                 },
                 {
@@ -1524,7 +1548,6 @@
                     "optional": true,
                     "importance": 0.3,
                     "outlinks": [
-                        "resin:Events/10012/Steps_kairos:Primitives_Events_Life.Infect.Unspecified:1"
                     ]
                 }
             ],
@@ -1611,28 +1634,28 @@
                 },
                 {
                     "child": "resin:Events/10077/Steps_kairos:Primitives_Events_Sanitation",
-                    "comment": "Sanitation",
+                    "comment": "Lack of Sanitation",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
                 },
                 {
                     "child": "resin:Events/10078/Steps_kairos:Primitives_Events_Hygiene",
-                    "comment": "Hygiene",
+                    "comment": "Poor Hygiene",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
                 },
                 {
                     "child": "resin:Events/10079/Steps_kairos:Primitives_Events_Food_Safety",
-                    "comment": "Food Safety",
+                    "comment": "Inadequate Food Safety",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
                 },
                 {
                     "child": "resin:Events/10080/Steps_kairos:Primitives_Events_Drinking_Water",
-                    "comment": "Drinking Water",
+                    "comment": "Unclean Drinking Water",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
@@ -1663,6 +1686,15 @@
             "goal": "",
             "aka": "",
             "children": [
+                {
+                    "child": "resin:Events/10086/Steps_kairos:Primitives_Events_Mutation",
+                    "comment": "Mutation",
+                    "optional": true,
+                    "importance": 1,
+                    "outlinks": [
+                        "resin:Events/10081/Steps_kairos:Primitives_Events_Additional_Consume"
+                    ]
+                },
                 {
                     "child": "resin:Events/10081/Steps_kairos:Primitives_Events_Additional_Consume",
                     "comment": "Additional Consumption",
@@ -1696,27 +1728,16 @@
                     "optional": false,
                     "importance": 1,
                     "outlinks": [
-                        "resin:Events/10083/Steps_kairos:Container:3:2",
-                        "resin:Events/10024/Steps_kairos:Primitives_Events_Medical.Diagnosis.Unspecified:2",
-                        "resin:Events/10084/Steps_kairos:Primitives_Events_Additional_Testing",
+                        "resin:Events/10083/Steps_kairos:Container:MedicalResponse2",
                         "resin:Events/10085/Steps_kairos:Primitives_Events_Construction"
                     ]
                 },
                 {
-                    "child": "resin:Events/10083/Steps_kairos:Container:3:2",
+                    "child": "resin:Events/10083/Steps_kairos:Container:MedicalResponse2",
                     "comment": "medical response 2",
                     "optional": false,
                     "importance": 0.8,
                     "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10086/Steps_kairos:Primitives_Events_Mutation",
-                    "comment": "Mutation",
-                    "optional": true,
-                    "importance": 1,
-                    "outlinks": [
-                        "resin:Events/10081/Steps_kairos:Primitives_Events_Additional_Consume"
-                    ]
                 },
                 {
                     "child": "resin:Events/10085/Steps_kairos:Primitives_Events_Construction",
@@ -1729,7 +1750,7 @@
             "children_gate": "or"
         },
         {
-            "@id": "resin:Events/10083/Steps_kairos:Container:3:2",
+            "@id": "resin:Events/10083/Steps_kairos:Container:MedicalResponse2",
             "name": "Medical Response 2",
             "ta1explanation": "",
             "privateData": {
@@ -1863,6 +1884,52 @@
             "children_gate": "or"
         },
         {
+            "@id": "resin:Events/10124/Steps_kairos:Primitives_Events_Inspection",
+            "name": "Inspection",
+            "description":  "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+            "qnode": "Q1137655",
+            "qlabel":"inspection",
+            "ta1explanation": "Inspect the outbreak location and population to plan response.",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20211/Steps_kairos:Primitives_Events_Inspection_Examiner",
+                    "roleName": "A0_pag_examiner",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20212/Steps_kairos:Primitives_Events_Inspection_Inspected",
+                    "roleName": "A1_ppt_entity_inspected",
+                    "entity": "resin:Entities/00006/"
+
+                },
+                {
+                    "@id": "resin:Participants/20213/Steps_kairos:Primitives_Events_Inspection_Target",
+                    "roleName": "A2_ppt_inspected_for_what?",
+                    "entity": "resin:Entities/00007/"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10045/Steps_kairos:Primitives_Events_CloseBorder",
+            "name": "Close Border",
+            "description": "modification in the border or boundary of an administrative, electoral or political entity",
+            "qnode": "wd:Q28953942",
+            "qlabel": "boundary change",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20066/Steps_kairos:Primitives_Events_CloseBorder_Cause",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "ta1explanation": "Close country borders to prevent disease spread",
+            "privateData": {
+                "@type": "",
+                "template": "",
+                "repeatable": false
+            }
+        },
+        {
             "@id": "resin:Events/10043/Steps_kairos:Primitives_Events_Distribute",
             "name": "Distribute",
             "participants": [
@@ -1975,6 +2042,25 @@
             "qlabel": "assignment"
         },
         {
+            "@id": "resin:Events/10125/Steps_kairos:Primitives_Events_Information_Campaign",
+            "name": "Information Campaign",
+            "qnode": "Q62090711",
+            "qlabel": "media campaign",
+            "ta1explanation": "Use of media to raise public awareness of the disease.",
+            "participants": [
+                {
+                    "@id":"resin:Participants/20214/Steps_kairos:Primitive_Events_Information_Campaign_Communicator",
+                    "roleName": "A0-pag_agent_communicator",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20215/Steps_kairos:Primitive_Events_Information_Campaign_Topic",
+                    "roleName": "A1-ppt_topic_subject",
+                    "entity": "resin:Entities/00007/"
+                }
+            ]
+        },
+        {
             "@id": "resin:Events/10046/Steps_kairos:Primitives_Events_Debunk_Misinformation",
             "name": "Debunk Misinformation",
             "comment": "",
@@ -2055,7 +2141,7 @@
         },
         {
             "@id": "resin:Events/10077/Steps_kairos:Primitives_Events_Sanitation",
-            "name": "Sanitation",
+            "name": "Lack of Sanitation",
             "comment": "",
             "qnode": "wd:Q949149",
             "qlabel": "sanitation",
@@ -2063,11 +2149,12 @@
                 {
                     "@id": "resin:Participants/20081/Steps_kairos:Primitives_Events_Sanitation_Cleaner",
                     "roleName": "A0_pag_cleaner",
-                    "entity": "resin:Entities/00001/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "description": "public health conditions related to clean drinking water and adequate disposal of human excreta and sewage",
             "ta1explanation": "Negated, showing lack of a clean environment.",
+            "modality": "negated",
             "privateData": {
                 "@type": "",
                 "template": "",
@@ -2076,7 +2163,7 @@
         },
         {
             "@id": "resin:Events/10078/Steps_kairos:Primitives_Events_Hygiene",
-            "name": "Hygiene",
+            "name": "Poor Hygiene",
             "comment": "",
             "qnode": "wd:Q162297",
             "qlabel": "hygiene",
@@ -2084,11 +2171,12 @@
                 {
                     "@id": "resin:Participants/20082/Steps_kairos:Primitives_Events_Hygiene_Agent",
                     "roleName": "A0_pag_agent",
-                    "entity": "resin:Entities/00001/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "description": "set of practices performed for the preservation of health",
             "ta1explanation": "Negated, showing lack of practices preserving health.",
+            "modality": "negated",
             "privateData": {
                 "@type": "",
                 "template": "",
@@ -2097,7 +2185,7 @@
         },
         {
             "@id": "resin:Events/10079/Steps_kairos:Primitives_Events_Food_Safety",
-            "name": "Food Safety",
+            "name": "Inadequate Food Safety",
             "comment": "",
             "qnode": "wd:Q909821",
             "qlabel": "food safety",
@@ -2110,6 +2198,7 @@
             ],
             "description": "scientific discipline describing handling, preparation, and storage of food in ways that prevent foodborne illness",
             "ta1explanation": "Negated, showing lack of measures that prevent foodborne illness.",
+            "modality": "negated",
             "privateData": {
                 "@type": "",
                 "template": "",
@@ -2118,7 +2207,7 @@
         },
         {
             "@id": "resin:Events/10080/Steps_kairos:Primitives_Events_Drinking_Water",
-            "name": "Drinking Water",
+            "name": "Unclean Drinking Water",
             "comment": "",
             "qnode": "wd:Q7892",
             "qlabel": "drinking water",
@@ -2126,11 +2215,12 @@
                 {
                     "@id": "resin:Participants/20084/Steps_kairos:Primitives_Events_Drinking_Water_Drinker",
                     "roleName": "A0_pag_drinker",
-                    "entity": "resin:Entities/00001/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
-            "description": "water safe for consumption",
+            "description": "water not safe for consumption",
             "ta1explanation": "Negated, showing state of unclean water.",
+            "modality": "negated",
             "privateData": {
                 "@type": "",
                 "template": "",
@@ -2139,7 +2229,7 @@
         },
         {
             "@id": "resin:Events/10037/Steps_kairos:Primitives_Events_Identifycategorize",
-            "name": "Identifycategorize",
+            "name": "IdentifyDiseaseSource",
             "comment": "",
             "qnode": "wd:Q912550",
             "participants": [
@@ -2480,6 +2570,25 @@
                 "template": "",
                 "repeatable": false
             }
+        },
+        {
+            "@id": "resin:Events/10123/Steps_kairos:Primitives_Events_Education",
+            "name": "Education",
+            "qnode": "Q8434",
+            "qlabel": "education",
+            "ta1explanation":"learning in which knowledge and skills are transferred through teaching. The defendant is educated about regulations.",
+            "participants":[
+                {
+                    "@id":"resin:Participants/20209/Steps_kairos:Primitives_Events_Education_Recipient",
+                    "roleName": "A2_gol_recipient_student",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id":"resin:Participants/20210/Steps_kairos:Primitives_Events_Education_Teacher",
+                    "roleName": "A0_pag_agent_teacher",
+                    "entity": "resin:Entities/00018/"
+                }
+            ]
         },
         {
             "@id": "resin:Events/10107/Steps_kairos:Primitives_Events_Trial",
@@ -3051,7 +3160,7 @@
             "children": [
                 {
                     "child": "resin:Events/10037/Steps_kairos:Primitives_Events_Identifycategorize",
-                    "comment": "Identifycategorize",
+                    "comment": "Identify Disease Source",
                     "optional": true,
                     "importance": 1,
                     "outlinks": [
@@ -3172,24 +3281,15 @@
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": [
-                        "resin:Events/10112/Steps_kairos:Container:104"
+                        "resin:Events/10112/Steps_kairos:Container:MotionOutcome"
                     ]
                 },
                 {
-                    "child": "resin:Events/10112/Steps_kairos:Container:104",
+                    "child": "resin:Events/10112/Steps_kairos:Container:MotionOutcome",
                     "comment": "Motion outlinks",
                     "optional": true,
                     "importance": 0.5,
                     "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10105/Steps_kairos:Primitives_Events_Mediation",
-                    "comment": "Mediation",
-                    "optional": false,
-                    "importance": 1,
-                    "outlinks": [
-                        "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement"
-                    ]
                 },
                 {
                     "child": "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement",
@@ -3199,22 +3299,21 @@
                     "outlinks": []
                 },
                 {
-                    "child": "resin:Events/10107/Steps_kairos:Primitives_Events_Trial",
-                    "comment": "Trial",
-                    "optional": false,
-                    "importance": 1,
-                    "outlinks": [
-                        "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement"
-                    ]
-                },
-                {
                     "child": "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement",
                     "comment": "Judgement",
                     "optional": false,
                     "importance": 1,
                     "outlinks": [
-                        "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal"
+                        "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal",
+                        "resin:Events/10123/Steps_kairos:Primitives_Events_Education"
                     ]
+                },
+                {
+                    "child":"resin:Events/10123/Steps_kairos:Primitives_Events_Education",
+                    "comment": "Educate",
+                    "optional": true,
+                    "importance": 0.3,
+                    "outlinks": []
                 },
                 {
                     "child": "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal",
@@ -3936,20 +4035,40 @@
             "qlabel": "contamination"
         },
         {
+            "@id": "resin:Events/10120/Steps_kairos:Primitives_Events_Purchase",
+            "name": "Purchase Contaminated Object",
+            "comment":"optional event for purchasing contaminated food or drink.",
+            "ta1explanation": "transfer of equivalent goods to each other.",
+            "qnode": "wd:Q21651837",
+            "qlabel":"exchange of goods",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20202/kairos:Primitives_Events_Purchase_Buyer",
+                    "roleName":"A0_pag_agent_agent",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20203/kairos:Primitives_Events_Purchase_Seller",
+                    "roleName": "A2_com_co_agent_other_exchanger",
+                    "entity": "resin:Entities/00005/'"
+                },
+                {
+                    "@id": "resin:Participants/20204/kairos:Primitives_Events_Purchase_Artifact",
+                    "roleName":"A1_ppt_theme_thing_being_traded",
+                    "entity": "resin:Entities/00006/"
+                }
+            ]
+        },
+        {
             "@id": "resin:Events/10042/Steps_kairos:Primitives_Events_Contamination",
-            "name": "Spread Disease",
+            "name": "Transmission",
             "comment": "",
             "minDuration": "",
             "maxDuration": "",
             "description": "",
             "goal": "",
-            "ta1explanation": "Presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
-            "privateData": {
-                "@type": "contamination_Q60528603",
-                "template": "",
-                "repeatable": false
-            },
-            "qnode": "wd:Q60528603",
+            "ta1explanation": "passing of a pathogen causing communicable disease from an infected host individual or group to other individual or group, regardless of whether the other individual was previously infected",
+            "qnode": "wd:Q525512",
             "participants": [
                 {
                     "@id": "resin:Participants/20189/kairos:Primitives_Events_Contamination_Causer",
@@ -3962,13 +4081,13 @@
                     "entity": "resin:Entities/00000/"
                 }
             ],
-            "qlabel": "contamination"
+            "qlabel": "pathogen_transmission"
         },
         {
             "@id": "resin:Events/10082/Steps_kairos:Primitives_Events_Additional_Contamination",
-            "name": "Additional Spread Disease",
+            "name": "Additional Transmission",
             "comment": "",
-            "qnode": "wd:Q60528603",
+            "qnode": "wd:Q525512",
             "participants": [
                 {
                     "@id": "resin:Participants/20191/kairos:Primitives_Events_Contamination_Causer",
@@ -3985,13 +4104,8 @@
             "maxDuration": "",
             "description": "",
             "goal": "",
-            "ta1explanation": "Presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
-            "qlabel": "contamination",
-            "privateData": {
-                "@type": "contamination_Q60528603",
-                "template": "",
-                "repeatable": false
-            }
+            "ta1explanation": "passing of a pathogen causing communicable disease from an infected host individual or group to other individual or group, regardless of whether the other individual was previously infected",
+            "qlabel": "pathogen_transmission"
         },
         {
             "@id": "resin:Events/10081/Steps_kairos:Primitives_Events_Additional_Consume",
@@ -4205,46 +4319,6 @@
             }
         },
         {
-            "@id": "resin:Events/10048/Steps_kairos:Container:101",
-            "name": "Treatment outlinks",
-            "comment": "container node",
-            "aka": "",
-            "minDuration": "",
-            "maxDuration": "",
-            "children": [
-                {
-                    "child": "resin:Events/10017/Steps_kairos:Primitives_Events_Movement.Transportation.PreventPassage:1",
-                    "comment": "container node",
-                    "optional": false,
-                    "importance": 1,
-                    "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10018/Steps_kairos:Primitives_Events_Cognitive.Inspection.SensoryObserve:1",
-                    "comment": "container node",
-                    "optional": false,
-                    "importance": 1,
-                    "outlinks": []
-                },
-                {
-                    "child": "resin:Events/10050/Steps_kairos:Primitives_Events_Tracing",
-                    "comment": "container node",
-                    "optional": false,
-                    "importance": 1,
-                    "outlinks": []
-                }
-            ],
-            "description": "",
-            "goal": "",
-            "ta1explanation": "",
-            "children_gate": "and",
-            "privateData": {
-                "@type": "kairos:Container",
-                "template": "",
-                "repeatable": false
-            }
-        },
-        {
             "@id": "resin:Events/10088/Steps_kairos:Container:Quarantine_2",
             "name": "Quarantine outlinks",
             "comment": "container node",
@@ -4272,31 +4346,35 @@
             }
         },
         {
-            "@id": "resin:Events/10049/Steps_kairos:Container:102",
-            "name": "Quarantine outlinks",
+            "@id": "resin:Events/10049/Steps_kairos:Container:IllnessOutcome",
+            "name": "Illness Outcome",
             "comment": "container node",
             "children": [
                 {
                     "child": "resin:Events/10053/Steps_kairos:Primitives_Events_Recover",
-                    "comment": "recover from quarantine",
-                    "optional": false,
-                    "importance": 1,
+                    "comment": "Recover",
+                    "optional": true,
+                    "importance": 0.8,
                     "outlinks": []
                 },
                 {
                     "child": "resin:Events/10054/Steps_kairos:Primitives_Events_Die",
-                    "comment": "die",
-                    "optional": false,
-                    "importance": 1,
+                    "comment": "Die",
+                    "optional": true,
+                    "importance": 0.5,
+                    "outlinks": [
+                        "resin:Events/10055/Steps_kairos:Primitives_Events_Funeral"
+                    ]
+                },
+                {
+                    "child": "resin:Events/10055/Steps_kairos:Primitives_Events_Funeral",
+                    "comment": "Funeral",
+                    "optional": true,
+                    "importance": 0.5,
                     "outlinks": []
                 }
             ],
-            "children_gate": "xor",
-            "privateData": {
-                "@type": "kairos:Container",
-                "template": "",
-                "repeatable": false
-            }
+            "children_gate": "xor"
         },
         {
             "@id": "resin:Events/10087/Steps_kairos:Container:103",
@@ -4339,7 +4417,7 @@
             }
         },
         {
-            "@id": "resin:Events/10112/Steps_kairos:Container:104",
+            "@id": "resin:Events/10112/Steps_kairos:Container:MotionOutcome",
             "name": "Motion outlinks",
             "comment": "container node",
             "aka": "",
@@ -4351,14 +4429,18 @@
                     "comment": "mediation",
                     "optional": false,
                     "importance": 1,
-                    "outlinks": []
+                    "outlinks": [
+                        "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement"
+                    ]
                 },
                 {
                     "child": "resin:Events/10107/Steps_kairos:Primitives_Events_Trial",
                     "comment": "trial",
                     "optional": false,
                     "importance": 1,
-                    "outlinks": []
+                    "outlinks": [
+                        "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement"
+                    ]
                 }
             ],
             "description": "",
@@ -4372,7 +4454,7 @@
             }
         },
         {
-            "@id": "resin:Events/10066/Steps_kairos:Container:105",
+            "@id": "resin:Events/10066/Steps_kairos:Container:BusinessCloseOutcome",
             "name": "Business Close outlinks",
             "comment": "container node",
             "aka": "",
@@ -4397,12 +4479,7 @@
             "description": "",
             "goal": "",
             "ta1explanation": "",
-            "children_gate": "xor",
-            "privateData": {
-                "@type": "kairos:Container",
-                "template": "",
-                "repeatable": false
-            }
+            "children_gate": "xor"
         }
     ],
     "entities": [

@@ -1,4 +1,18 @@
 # Changelog 
+
+## [Quizlet 9, 0.4.1] - 2022-03-19
+Revised Disease outbreak schema and HRF.
+### [Disease Outbreak]
+- added "modality"="negated" to negated events in the Contributory Factors episode 
+- removed direct outlink from Contributory Factors to "early infections". 
+- Added "Purchase Contaminated Object" event in "Onset".
+- Changed "Spread Disease" to "Transmission"
+- Added "Collect Lab Samples" and "Analyze Data" in Medical Response. This is meant to match the "Investigation" episode in SBU's schema.
+- Rename  "Identifycategorize" to "IdentifyDiseaseSource"
+- Fixed parent-child relations for Illness Outcome XOR container
+- Added "Educate" event to "Civil Justice"
+- Added "Inspection" event to "Authority Response"
+- Added "Information Campaign" event to "Authority Response"
 ## [Quizlet 9, 0.4] - 2022-03-18
 Refined all schemas. See sections for specific notes.
 ### [Business Change]
