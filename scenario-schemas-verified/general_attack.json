@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
+    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v2.0.jsonld",
     {
       "caci": "https://caci.com/kairos/",
       "my_key": "caci:my_key",
@@ -9,7 +9,7 @@
     }
   ],
   "@id": "resin:Schemas/General-Attack",
-  "sdfVersion": "1.4.1",
+  "sdfVersion": "2.0",
   "version": "caci-08.07.2020",
   "ta2": false,
   "events": [
@@ -352,7 +352,7 @@
       "@id": "resin:Events/10011/",
       "name": "Attack",
       "description": "",
-      "ta1explanation": "",
+      "ta1explanation": "Physical attack, action to injure another organism.",
       "qnode": "wd:Q1174599",
       "qlabel": "attack",
       "privateData": {
@@ -1190,7 +1190,7 @@
       "@id": "resin:Events/10027/",
       "name": "Denunciation",
       "description": "",
-      "ta1explanation": "",
+      "ta1explanation": "accusation or complaint against a person or group",
       "qnode": "wd:Q1189956",
       "qlabel": "denunciation",
       "comment": "",

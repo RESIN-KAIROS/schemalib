@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
+    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v2.0.jsonld",
     {
       "caci": "https://caci.com/kairos/",
       "my_key": "caci:my_key",
@@ -9,7 +9,7 @@
     }
   ],
   "@id": "resin:Submissions/TA1/schemas_quizlet9",
-  "sdfVersion": "1.4.1",
+  "sdfVersion": "2.0",
   "version": "resin:disease-outbreak/quizlet9",
   "events": [
     {
@@ -825,7 +825,6 @@
             "resin:Events/10029/Steps_kairos:Primitives_Events_GovDecree",
             "resin:Events/10032/Steps_kairos:Primitives_Events_Cognitive.Research.Unspecified:1",
             "resin:Events/10034/Steps_kairos:Primitives_Events_Transaction.AidBetweenGovernments.Unspecified:1",
-            "resin:Events/10022/Steps_kairos:Primitives_Events_Life.Infect.Unspecified:2",
             "resin:Events/10039/Steps_kairos:Primitives_Events_Assignment"
           ]
         },
@@ -1312,7 +1311,7 @@
       "aka": "",
       "children": [
         {
-          "child": "resin:Events/10071/Steps_kairos:Container:Social Factors",
+          "child": "resin:Events/10071/Steps_kairos:Container:Social_Factors",
           "comment": "Social Factors",
           "optional": true,
           "importance": 0.3,
@@ -1329,7 +1328,7 @@
       "children_gate": "or"
     },
     {
-      "@id": "resin:Events/10071/Steps_kairos:Container:Social Factors",
+      "@id": "resin:Events/10071/Steps_kairos:Container:Social_Factors",
       "name": "Social Factors",
       "ta1explanation": "",
       "privateData": {
@@ -3612,6 +3611,12 @@
     {
       "@id": "resin:Entities/00000/",
       "name": "initial person infected",
+      "qnode": "wd:Q1851760",
+      "qlabel": "victim"
+    },
+    {
+      "@id": "resin:Entities/00001/",
+      "name": "exposed people",
       "qnode": "wd:Q1851760",
       "qlabel": "victim"
     },
