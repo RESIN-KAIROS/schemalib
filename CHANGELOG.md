@@ -1,5 +1,17 @@
 # Changelog 
 
+## [Evaluation, 0.4.2] - 2022-03-21
+Updated all schemas to v2.0 and pass validation.
+### [Disease Outbreak]
+- Combined "Onset" and "Outbreak" episodes as it was causing trouble for schema matching.
+### [Election]
+- Update HRF 
+
+### [International Conflict]
+- Update HRF 
+
+### [IED Related]
+- Updated HRF 
 ## [Quizlet 9, 0.4.1] - 2022-03-19
 Revised Disease outbreak schema and HRF.
 ### [Disease Outbreak]

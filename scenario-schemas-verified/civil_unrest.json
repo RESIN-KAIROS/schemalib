@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
+    "https://kairos-sdf.s3.amazonaws.com/context/kairos-v2.0.jsonld",
     {
       "caci": "https://caci.com/kairos/",
       "my_key": "caci:my_key",
@@ -9,7 +9,7 @@
     }
   ],
   "@id": "resin:Submissions/TA1/schemas_quizlet9",
-  "sdfVersion": "1.4.1",
+  "sdfVersion": "2.0",
   "version": "resin:disease-outbreak/quizlet9",
   "events": [
     {
@@ -248,12 +248,12 @@
       "qlabel": "conflict",
       "participants": [
         {
-          "@id": "resin:Participants/20010/resin:Events_civil-unrest_clasher",
+          "@id": "resin:Participants/20011/resin:Events_civil-unrest_clasher",
           "roleName": "A0_pag_agent_clasher",
           "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20011/resin:Events_civil-unrest_clashed",
+          "@id": "resin:Participants/20012/resin:Events_civil-unrest_clashed",
           "roleName": "A1_com_co_agent_entity clashed_with_when_separat_constituent",
           "entity": "resin:Entities/00000/"
         },
@@ -263,7 +263,7 @@
           "entity": "resin:Entities/00013/"
         },
         {
-          "@id": "resin:Participants/20012/resin:Events_civil-unrest_against_location",
+          "@id": "resin:Participants/20014/resin:Events_civil-unrest_against_location",
           "roleName": "AM_loc__location",
           "entity": "resin:Entities/00019/"
         }
@@ -278,22 +278,22 @@
       "qlabel": "attack",
       "participants": [
         {
-          "@id": "resin:Participants/20014/resin:Events_civil-unrest_attacker",
+          "@id": "resin:Participants/20015/resin:Events_civil-unrest_attacker",
           "roleName": "A0_pag_agent_hitter",
           "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20015/resin:Events_civil-unrest_attacked",
+          "@id": "resin:Participants/20016/resin:Events_civil-unrest_attacked",
           "roleName": "A1_ppt_patient_thing_hit",
           "entity": "resin:Entities/00000/"
         },
         {
-          "@id": "resin:Participants/20016/resin:Events_civil-unrest_weapon",
+          "@id": "resin:Participants/20017/resin:Events_civil-unrest_weapon",
           "roleName": "A2_mnr_instrument_instrument",
           "entity": "resin:Entities/00005/"
         },
         {
-          "@id": "resin:Participants/20017/resin:Events_civil-unrest_location",
+          "@id": "resin:Participants/20018/resin:Events_civil-unrest_location",
           "roleName": "AM_loc__location",
           "entity": "resin:Entities/00019/"
         }
@@ -308,17 +308,17 @@
       "qlabel": "demonstration",
       "participants": [
         {
-          "@id": "resin:Participants/20017/resin:Events_civil-unrest_protester",
+          "@id": "resin:Participants/20019/resin:Events_civil-unrest_protester",
           "roleName": "A0_pag_agent_protester",
           "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20018/resin:Events_civil-unrest_topic",
+          "@id": "resin:Participants/20020/resin:Events_civil-unrest_topic",
           "roleName": "A1_ppt_theme_objectionable_thing",
           "entity": "resin:Entities/00013/"
         },
         {
-          "@id": "resin:Participants/20020/resin:Events_civil-unrest_location",
+          "@id": "resin:Participants/20021/resin:Events_civil-unrest_location",
           "roleName": "AM_loc__location",
           "entity": "resin:Entities/00019/"
         }
@@ -333,17 +333,17 @@
       "qlabel": "shooting",
       "participants": [
         {
-          "@id": "resin:Participants/20021/resin:Events_civil-unrest_shooter",
+          "@id": "resin:Participants/20022/resin:Events_civil-unrest_shooter",
           "roleName": "A0_pag_agent_shooter",
           "entity": "resin:Entities/00000/"
         },
         {
-          "@id": "resin:Participants/20022/resin:Events_civil-unrest_corpse",
+          "@id": "resin:Participants/20023/resin:Events_civil-unrest_corpse",
           "roleName": "A1_ppt_patient_corpse",
           "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20023/resin:Events_civil-unrest_location",
+          "@id": "resin:Participants/20024/resin:Events_civil-unrest_location",
           "roleName": "AM_loc__location",
           "entity": "resin:Entities/00019/"
         }
@@ -358,7 +358,7 @@
       "qlabel": "separation",
       "participants": [
         {
-          "@id": "resin:Participants/20023/resin:Events_civil-unrest_scatterer",
+          "@id": "resin:Participants/20025/resin:Events_civil-unrest_scatterer",
           "roleName": "A0_pag_agent_scatterer",
           "entity": "resin:Entities/00000/"
         },
@@ -368,12 +368,12 @@
           "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20024/resin:Events_civil-unrest_instrument",
+          "@id": "resin:Participants/20124/resin:Events_civil-unrest_instrument",
           "roleName": "AM_mnr__manner",
           "entity": "resin:Entities/00001/"
         },
         {
-          "@id": "resin:Participants/20025/resin:Events_civil-unrest_location",
+          "@id": "resin:Participants/20125/resin:Events_civil-unrest_location",
           "roleName": "AM_loc__location",
           "entity": "resin:Entities/00019/"
         }
@@ -488,7 +488,7 @@
       "qlabel": "emergency_evacuation",
       "participants": [
         {
-          "@id": "resin:Participants/20033/resin:Events_civil-unrest_transporter",
+          "@id": "resin:Participants/20934/resin:Events_civil-unrest_transporter",
           "roleName": "A0_pag_agent_transporter",
           "entity": "resin:Entities/00000/"
         },
@@ -737,7 +737,7 @@
       "description": "formal process leading to the approval of a law",
       "participants": [
         {
-          "@id": "resin:Participants/20037/resin:Events_civil-unrest_lawmaker",
+          "@id": "resin:Participants/20935/resin:Events_civil-unrest_lawmaker",
           "roleName": "A0_pag_agent_legislative_body",
           "entity": "resin:Entities/00012/"
         },
@@ -782,7 +782,7 @@
       "description": "organised and prolonged violent conflict between states",
       "participants": [
         {
-          "@id": "resin:Participants/20041/resin:Events_civil-unrest_initiator",
+          "@id": "resin:Participants/20936/resin:Events_civil-unrest_initiator",
           "roleName": "A0_pag_agent_warmonger",
           "entity": "resin:Entities/00016/"
         },
@@ -832,7 +832,7 @@
       "description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
       "participants": [
         {
-          "@id": "resin:Participants/20043/resin:Events_civil-unrest_voters",
+          "@id": "resin:Participants/20946/resin:Events_civil-unrest_voters",
           "roleName": "A0_pag_agent_voters",
           "entity": "resin:Entities/00004/"
         },
@@ -857,7 +857,7 @@
       "description": "work stoppage caused by the mass refusal of employees to work",
       "participants": [
         {
-          "@id": "resin:Participants/20045/resin:Events_civil-unrest_striker",
+          "@id": "resin:Participants/20947/resin:Events_civil-unrest_striker",
           "roleName": "A0_pag_agent_striker",
           "entity": "resin:Entities/00002/"
         },
@@ -877,7 +877,7 @@
       "description": "form of protest",
       "participants": [
         {
-          "@id": "resin:Participants/20046/resin:Events_civil-unrest_occupier",
+          "@id": "resin:Participants/20948/resin:Events_civil-unrest_occupier",
           "roleName": "A0_pag_stimulus_occupier",
           "entity": "resin:Entities/00002/"
         },
@@ -927,7 +927,7 @@
       "description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
       "participants": [
         {
-          "@id": "resin:Participants/20052/resin:Events_civil-unrest_examiner",
+          "@id": "resin:Participants/20949/resin:Events_civil-unrest_examiner",
           "roleName": "A0_pag_agent_examiner",
           "entity": "resin:Entities/00002/"
         },

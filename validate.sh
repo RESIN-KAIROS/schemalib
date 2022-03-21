@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-SCHEMA_PATH=scenario-schemas
+SCHEMA_PATH=scenario-schemas-verified 
 
 for schema_file in ${SCHEMA_PATH}/*.json; do
     echo "Validating ${schema_file}..."

@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
+        "https://kairos-sdf.s3.amazonaws.com/context/kairos-v2.0.jsonld",
         {
             "caci": "https://caci.com/kairos/",
             "my_key": "caci:my_key",
@@ -9,7 +9,7 @@
         }
     ],
     "@id": "resin:Schemas/Business_Change",
-    "sdfVersion": "1.4.1",
+    "sdfVersion": "2.0",
     "version": "caci-08.07.2020",
     "ta2": false,
     "events": [
@@ -223,7 +223,7 @@
                     "outlinks": []
                 },
                 {
-                    "child": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment of Funds",
+                    "child": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment_of_Funds",
                     "comment": "Nonpayment of funds",
                     "optional": true,
                     "outlinks": []
@@ -987,7 +987,7 @@
             }
         },
         {
-            "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment of Funds",
+            "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment_of_Funds",
             "name": "Nonpayment of funds",
             "description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
             "ta1explanation": "Fraud occurring when goods and services are shipped or rendered but payment for them is never received.",
@@ -2026,12 +2026,12 @@
             "qlabel": "end",
             "participants": [
                 {
-                    "@id": "Participants/20000/agent",
+                    "@id": "resin:Participants/20000/agent",
                     "roleName": "A0_pag_agent",
                     "entity": "resin:Entities/00001/"
                 },
                 {
-                    "@id": "Participants/20000/thing_closing",
+                    "@id": "resin:Participants/20001/thing_closing",
                     "roleName": "A1_ppt_thing_closing",
                     "entity": "resin:Entities/00017/"
                 }
