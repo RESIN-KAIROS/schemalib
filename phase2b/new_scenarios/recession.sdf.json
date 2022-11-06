@@ -1,0 +1,2360 @@
+{
+  "@id": "resin:Schemas/recession",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Recession",
+      "description": "recession news story.",
+      "wd_node": "Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "Background",
+      "description": "Cause of the recession.",
+      "wd_node": "Q621695",
+      "wd_label": "blame",
+      "wd_description": "act of censuring, holding responsible, making negative statements about an individual or group",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_blamer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_entity_blamed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_prd_blame_for_what",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "Market Crash",
+      "description": "A sudden stock market drop which is the major sign of the recession.",
+      "wd_node": "Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10009",
+        "resin:Events/10010",
+        "resin:Events/10011",
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "Business Decline",
+      "description": "Businesses shutdown and job loss increases in the impact of the recession.",
+      "wd_node": "Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10017",
+        "resin:Events/10018",
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "Government Response",
+      "description": "Governments announce stimulus plans to counter the recession.",
+      "wd_node": "Q3771842",
+      "wd_label": "stimulus",
+      "wd_description": "in psychology, an object or event that elicits a sensory or behavioral response in an organism",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_cause_of_increase",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_thing_increasing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "A3_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20044",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10019",
+        "resin:Events/10020",
+        "resin:Events/10021"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "Recovery",
+      "description": "The market gradually recovers from the recession.",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10022",
+        "resin:Events/10023",
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10030",
+        "resin:Events/10031",
+        "resin:Events/10032",
+        "resin:Events/10034",
+        "resin:Events/10035",
+        "resin:Events/10036",
+        "resin:Events/10037",
+        "resin:Events/10046",
+        "resin:Events/10047",
+        "resin:Events/10048",
+        "resin:Events/10052",
+        "resin:Events/10053",
+        "resin:Events/10054",
+        "resin:Events/10055",
+        "resin:Events/10056",
+        "resin:Events/10057"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Economic Recession",
+      "description": "A recession is typically caused by a combination of factors",
+      "wd_node": "Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Financial Difficulty",
+      "description": "One factor is often an increase in interest rates",
+      "wd_node": "Q4876897",
+      "wd_label": "monetary_inflation",
+      "wd_description": "sustained increase in a nation's money supply",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10008"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag_causer_of_expansion",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20074",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20075",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Decrease in Consumer Spending",
+      "description": "Another factor is often a decrease in consumer spending",
+      "wd_node": "Q1971485",
+      "wd_label": "reduction",
+      "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_Agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "A3_dir_Start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20084",
+          "roleName": "A4_gol_End_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20085",
+          "roleName": "Am_loc_Medium",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20086",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Stock Market Crash",
+      "description": "A sharp decrease in stock prices",
+      "wd_node": "Q11868838",
+      "wd_label": "fall",
+      "wd_description": "motion downwards from a higher position to a lower one, under the influence of gravity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20094",
+          "roleName": "Am_loc_medium",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20095",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "US Dollar Decrease",
+      "description": "A decrease in the value of the US dollar.",
+      "wd_node": "Q220788",
+      "wd_label": "devaluation",
+      "wd_description": "Reduction in value of a currency with respect to anything which it can be exchanged for",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_causer_of_lower_value",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_thing_with_lower_value",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "A2_dir_original_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Gold Price Increase",
+      "description": "An increase in the price of gold.",
+      "wd_node": "Q4876897",
+      "wd_label": "monetary_inflation",
+      "wd_description": "sustained increase in a nation's money supply",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_causer_of_expansion",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20114",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20115",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Oil Price Decrease",
+      "description": "A decrease in the price of oil.",
+      "wd_node": "Q1971485",
+      "wd_label": "reduction",
+      "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_Agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "A3_dir_Start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20124",
+          "roleName": "A4_gol_End_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20125",
+          "roleName": "Am_loc_Medium",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20126",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Economic Slowdown",
+      "description": "A decrease in the demand for goods and services.",
+      "wd_node": "Q1971485",
+      "wd_label": "reduction",
+      "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_Agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "A3_dir_Start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20134",
+          "roleName": "A4_gol_End_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20135",
+          "roleName": "Am_loc_Medium",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20136",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Unemployment",
+      "description": "An increase in unemployment.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Businesses Close Down",
+      "description": "Businesses close down or declare bankruptcy",
+      "wd_node": "Q19862406",
+      "wd_label": "business",
+      "wd_description": "economic activity done by a businessperson",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt_thing_being_traded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_com_other_exchanger",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20154",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20155",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Layoffs",
+      "description": "Layoffs increase as businesses cut costs.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Economic Downturn",
+      "description": "Consumer spending declines as people tighten their belts.",
+      "wd_node": "Q1971485",
+      "wd_label": "reduction",
+      "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10018"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_Agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20173",
+          "roleName": "A3_dir_Start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20174",
+          "roleName": "A4_gol_End_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20175",
+          "roleName": "Am_loc_Medium",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20176",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Economic Instability",
+      "description": "Investment falls as businesses become less confident about the future.",
+      "wd_node": "Q4290",
+      "wd_label": "investment",
+      "wd_description": "set of actions with the intent of earning profit",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_investor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_thing_invested",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "A2_gol_invested_in",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Government Stimulus",
+      "description": "Government announces stimulus plans",
+      "wd_node": "Q3771842",
+      "wd_label": "stimulus",
+      "wd_description": "in psychology, an object or event that elicits a sensory or behavioral response in an organism",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_cause_of_increase",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_thing_increasing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "A3_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20194",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Financial Assistance",
+      "description": "Government provides financial assistance to businesses and individuals",
+      "wd_node": "Q4372150",
+      "wd_label": "bounty",
+      "wd_description": "payment or reward",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_entity_giving_reward",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_entity_being_given_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_cau_because_of_what",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Create New Programs",
+      "description": "Government creates new programs to boost employment",
+      "wd_node": "Q656365",
+      "wd_label": "employment",
+      "wd_description": "relationship between the employee and the employer",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_employer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_employee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_prd_job",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Stock Market Rebound",
+      "description": "The stock market starts to rebound",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10032",
+        "resin:Events/10035",
+        "resin:Events/10031"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028",
+        "resin:Events/10029"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Consumer Confidence",
+      "description": "Consumers begin to feel more confident and start spending again.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10035",
+        "resin:Events/10044",
+        "resin:Events/10045",
+        "resin:Events/10049"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10039",
+        "resin:Events/10040",
+        "resin:Events/10042",
+        "resin:Events/10043"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Business Expansion",
+      "description": "Businesses start to invest in expansion and new hiring.",
+      "wd_node": "Q4290",
+      "wd_label": "investment",
+      "wd_description": "set of actions with the intent of earning profit",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10050",
+        "resin:Events/10051"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_investor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_thing_invested",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "A2_gol_invested_in",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10033",
+        "resin:Events/10051"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Declining Unemployment",
+      "description": "Unemployment starts to decline.",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10056",
+        "resin:Events/10057",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "The Stock Market Boom",
+      "description": "This caused the stock market to expand and reach its peak in August 1929.",
+      "wd_node": "Q1342838",
+      "wd_label": "growth",
+      "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10050"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20264",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20265",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "Economic Improvement",
+      "description": "The world economy starts to improve",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Economic Boost",
+      "description": "Families start to spend more money on goods and services",
+      "wd_node": "Q192270",
+      "wd_label": "consumption",
+      "wd_description": "purchase and use of goods and services",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_consumer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_consumed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "Factory production",
+      "description": "Factory production starts to increase",
+      "wd_node": "Q187939",
+      "wd_label": "manufacturing",
+      "wd_description": "industrial activity producing goods for sale using labor and machines",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038",
+        "resin:Events/10045"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_agent_creator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_prd_result_creation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "A2_vsp_material_created_from_thing_changed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20293",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20294",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10030",
+      "name": "Global Economic Expansion",
+      "description": "The world economy is firing on all cylinders",
+      "wd_node": "Q1342838",
+      "wd_label": "growth",
+      "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10057"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20300",
+          "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20301",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20302",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20303",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20304",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20305",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10031",
+      "name": "Corporate Profits Grow",
+      "description": "Corporate profits and stock markets have grown worldwide",
+      "wd_node": "Q1342838",
+      "wd_label": "growth",
+      "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20310",
+          "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20311",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20312",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20313",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20314",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20315",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10032",
+      "name": "1 Year Anniversary",
+      "description": "The US economic recovery has reached its first birthday",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20320",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20321",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20322",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10033",
+      "name": "American Confidence",
+      "description": "Millions of Americans have a new feeling of confidence",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10050",
+        "resin:Events/10051"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10050"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10034",
+      "name": "Stockpiling",
+      "description": "Families are buying more items",
+      "wd_node": "Q12887029",
+      "wd_label": "buy",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20340",
+          "roleName": "A0_pag_buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20341",
+          "roleName": "A1_ppt_thing_bought",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20342",
+          "roleName": "A2_dir_seller",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20343",
+          "roleName": "A3_vsp_price_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20344",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20345",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10035",
+      "name": "Industry Resumption",
+      "description": "Factories are bustling again",
+      "wd_node": "Q187939",
+      "wd_label": "manufacturing",
+      "wd_description": "industrial activity producing goods for sale using labor and machines",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033",
+        "resin:Events/10050"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20350",
+          "roleName": "A0_pag_agent_creator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20351",
+          "roleName": "A1_prd_result_creation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20352",
+          "roleName": "A2_vsp_material_created_from_thing_changed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20353",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20354",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10038"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10036",
+      "name": "The Rebound",
+      "description": "The rebound has rescued some 2 million Americans from unemployment",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20360",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20361",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20362",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10037",
+      "name": "Increased Spending",
+      "description": "Families are buying more shirts and sofas, carpets and computers, autos and airline tickets now than they were in the bleak autumn of 1982",
+      "wd_node": "Q587972",
+      "wd_label": "part-time_employment",
+      "wd_description": "form of employment that carries fewer hours per week than a full-time job",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038",
+        "resin:Events/10049"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20370",
+          "roleName": "A0_pag_employer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20371",
+          "roleName": "A1_ppt_employee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20372",
+          "roleName": "A2_prd_job",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20373",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10038",
+      "name": "American Recession",
+      "description": "Additionally, the American economy enters a mild recession.",
+      "wd_node": "Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022",
+        "resin:Events/10024"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20380",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20381",
+          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20382",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10049",
+        "resin:Events/10044",
+        "resin:Events/10045"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10039",
+      "name": "The election happened",
+      "description": "The election happened",
+      "wd_node": "Q40231",
+      "wd_label": "election",
+      "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10045",
+        "resin:Events/10024",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20390",
+          "roleName": "A0_pag_agent_voters",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20391",
+          "roleName": "A1_ppt_theme_candidate",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20392",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20393",
+          "roleName": "A2_prd_result_office_or_position",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10040",
+      "name": "Financial Crisis",
+      "description": "The financial crisis was receding",
+      "wd_node": "Q7595734",
+      "wd_label": "stabilization",
+      "wd_description": "in architecture, retrofitting of platforms or foundations as constructed to improve the bearing capacity and levelness of the supported building.",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033",
+        "resin:Events/10050",
+        "resin:Events/10024"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20400",
+          "roleName": "A0_pag_cause_of_stability",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20401",
+          "roleName": "A1_ppt_thing_stabilized",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20402",
+          "roleName": "A2_prd_stabilized_at",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20403",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10041",
+      "name": "Pessimism",
+      "description": "Democrats became more pessimistic about the economy",
+      "wd_node": "Q104493",
+      "wd_label": "risk",
+      "wd_description": "potential for uncontrolled loss due to underlying vulnerability or uncertainties",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10036",
+        "resin:Events/10040",
+        "resin:Events/10047"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20410",
+          "roleName": "A0_pag_entity_risking_something",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20411",
+          "roleName": "A1_ppt_risky_action_undertaken",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20412",
+          "roleName": "A2_ppt_thing_in_jeopardy",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20413",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10042",
+      "name": "Confidence in the economy",
+      "description": "Consumers become more confident about the economy",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10040",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20420",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20421",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20422",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10043",
+      "name": "Stimulate Economy",
+      "description": "The increased spending helps to boost the economy",
+      "wd_node": "Q1342838",
+      "wd_label": "growth",
+      "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10044",
+        "resin:Events/10045",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20430",
+          "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20431",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20432",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20433",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20434",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20435",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10044",
+      "name": "Improved Business",
+      "description": "Businesses do better as consumers spend more",
+      "wd_node": "Q19862406",
+      "wd_label": "business",
+      "wd_description": "economic activity done by a businessperson",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10024",
+        "resin:Events/10033",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20440",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20441",
+          "roleName": "A1_ppt_thing_being_traded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20442",
+          "roleName": "A2_com_other_exchanger",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20443",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20444",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20445",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10045",
+      "name": "Improved Standard of Living",
+      "description": "The standard of living improves as more people are employed and have money to spend",
+      "wd_node": "Q4165229",
+      "wd_label": "gain",
+      "wd_description": "accounting term; financial benefit resulting from a non-typical or non-recurring transaction",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20450",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20451",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20452",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20453",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20454",
+          "roleName": "A5_loc_specific_aspect_of_arg1_gaining",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20455",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10046",
+      "name": "Improved Economy",
+      "description": "An improving economy",
+      "wd_node": "Q1342838",
+      "wd_label": "growth",
+      "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10025",
+        "resin:Events/10030"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20460",
+          "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20461",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20462",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20463",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20464",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20465",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10047",
+      "name": "Wage Inflation",
+      "description": "Rising wages",
+      "wd_node": "Q4165229",
+      "wd_label": "gain",
+      "wd_description": "accounting term; financial benefit resulting from a non-typical or non-recurring transaction",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20470",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20471",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20472",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20473",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20474",
+          "roleName": "A5_loc_specific_aspect_of_arg1_gaining",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20475",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10048",
+      "name": "Improved Consumer Confidence",
+      "description": "Increased consumer confidence",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20480",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20481",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20482",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10049",
+      "name": "Job Creation",
+      "description": "More jobs are created",
+      "wd_node": "Q656365",
+      "wd_label": "employment",
+      "wd_description": "relationship between the employee and the employer",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10050",
+        "resin:Events/10051"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20490",
+          "roleName": "A0_pag_employer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20491",
+          "roleName": "A1_ppt_employee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20492",
+          "roleName": "A2_prd_job",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20493",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10050",
+      "name": "Technology and Innovation",
+      "description": "Businesses invest in new technologies and innovations to improve their products and services",
+      "wd_node": "Q4290",
+      "wd_label": "investment",
+      "wd_description": "set of actions with the intent of earning profit",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20500",
+          "roleName": "A0_pag_investor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20501",
+          "roleName": "A1_ppt_thing_invested",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20502",
+          "roleName": "A2_gol_invested_in",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20503",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10051",
+      "name": "Market Expansion",
+      "description": "Businesses expand their markets by selling their products and services to new customers",
+      "wd_node": "Q194189",
+      "wd_label": "sales",
+      "wd_description": "act of selling a product or service in return for money or other compensation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20510",
+          "roleName": "A0_pag_Seller",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20511",
+          "roleName": "A1_ppt_Thing_Sold",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20512",
+          "roleName": "A2_gol_Buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20513",
+          "roleName": "A3_vsp_Price_Paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20514",
+          "roleName": "A4_gol_Benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20515",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10052",
+      "name": "Income",
+      "description": "Higher incomes",
+      "wd_node": "Q4165229",
+      "wd_label": "gain",
+      "wd_description": "accounting term; financial benefit resulting from a non-typical or non-recurring transaction",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038",
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20520",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20521",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20522",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20523",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20524",
+          "roleName": "A5_loc_specific_aspect_of_arg1_gaining",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20525",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10053",
+      "name": "Business Confidence",
+      "description": "An increase in business confidence",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20530",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20531",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20532",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10041"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10054",
+      "name": "The economy grows",
+      "description": "The economy grows",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10056",
+        "resin:Events/10037",
+        "resin:Events/10057",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20540",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20541",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20542",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10055",
+      "name": "Income Growth",
+      "description": "Incomes rise",
+      "wd_node": "Q4165229",
+      "wd_label": "gain",
+      "wd_description": "accounting term; financial benefit resulting from a non-typical or non-recurring transaction",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10023",
+        "resin:Events/10057"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20550",
+          "roleName": "A1_ppt_Logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20551",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20552",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20553",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20554",
+          "roleName": "A5_loc_specific_aspect_of_arg1_gaining",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20555",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10056",
+      "name": "Job Opportunities",
+      "description": "Individuals may find it easier to find a job",
+      "wd_node": "Q656365",
+      "wd_label": "employment",
+      "wd_description": "relationship between the employee and the employer",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038",
+        "resin:Events/10041"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20560",
+          "roleName": "A0_pag_employer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20561",
+          "roleName": "A1_ppt_employee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20562",
+          "roleName": "A2_prd_job",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20563",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10057",
+      "name": "Productivity Boost",
+      "description": "Communities may see an overall increase in productivity",
+      "wd_node": "Q1342838",
+      "wd_label": "growth",
+      "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20570",
+          "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20571",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20572",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20573",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20574",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20575",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

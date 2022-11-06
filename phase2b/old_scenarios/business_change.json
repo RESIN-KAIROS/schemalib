@@ -1,0 +1,2495 @@
+{
+  "@id": "resin:Schemas/Business_Change",
+  "sdfVersion": "3.0",
+  "version": "caci-08.07.2020",
+  "events": [
+    {
+      "@id": "resin:Events/10000/Business_Change",
+      "children": [
+        "resin:Events/10001/Steps_kairos:Container:Early_Stages",
+        "resin:Events/10002/Corruption",
+        "resin:Events/10003/Steps_kairos:Container:Fraud",
+        "resin:Events/10004/Steps_kairos:Primitives_Events_Audit",
+        "resin:Events/10006/Steps_kairos:Container:Investigation",
+        "resin:Events/10005/Steps_kairos:Container:Market_Shift",
+        "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure",
+        "resin:Events/10008/Steps_kairos:Container:100",
+        "resin:Events/10009/Steps_kairos:Container:Mergers_and_Acquistions",
+        "resin:Events/10011/Steps_kairos:Container:Bankruptcy",
+        "resin:Events/10010/Steps_kairos:Container:Reorganization",
+        "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation"
+      ],
+      "children_gate": "or",
+      "description": "Schema describing business change events, including fraud, mergers and acquisitions, antitrust investigations, and bankruptcy",
+      "name": "Business Change",
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10001/Steps_kairos:Container:Early_Stages",
+      "children": [
+        "resin:Events/10013/Steps_kairos:Primitives_Events_Found_a_Business",
+        "resin:Events/10014/Steps_kairos:Primitives_Events_Private_Funding",
+        "resin:Events/10015/Steps_kairos:Primitives_Events_Sell_IPOs",
+        "resin:Events/10016/Steps_kairos:Primitives_Events_Privatize",
+        "resin:Events/10017/Steps_kairos:Primitives_Events_Create_Partnership"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Events happening in the early stages of a business",
+      "name": "Early Stages",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002/Corruption"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10002/Corruption",
+      "description": "Some form of corruption happens amongst the people in the business",
+      "name": "Corruption",
+      "participants": [
+        {
+          "@id": "resin:Participants/20000/acquired-entity",
+          "roleName": "A1_ppt_entity_corrupted",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": true
+      },
+      "repeatable": true,
+      "wd_node": "wd:Q366",
+      "wd_label": "corruption",
+      "wd_description": "form of dishonesty or criminal offense undertaken by a person or organization entrusted with a position of authority, to acquire illicit benefit or abuse power for one's private gain",
+      "outlinks": [
+        "resin:Events/10003/Steps_kairos:Container:Fraud"
+      ]
+    },
+    {
+      "@id": "resin:Events/10003/Steps_kairos:Container:Fraud",
+      "children": [
+        "resin:Events/10018/Steps_kairos:Primitives_Events_Charity_Fraud",
+        "resin:Events/10019/Steps_kairos:Primitives_Events_Internet_Auction_Fraud",
+        "resin:Events/10020/Steps_kairos:Primitives_Events_Non-Delivery_of_Merchandise",
+        "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment_of_Funds",
+        "resin:Events/10022/Steps_kairos:Primitives_Events_Overpayment_Scheme",
+        "resin:Events/10023/Steps_kairos:Primitives_Events_Re-Shipping_Scheme"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Types of business fraud",
+      "name": "Fraud",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004/Steps_kairos:Primitives_Events_Audit"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10004/Steps_kairos:Primitives_Events_Audit",
+      "description": "Regular audit to verify financial records",
+      "name": "Audit",
+      "participants": [
+        {
+          "@id": "resin:Participants/20001/auditor",
+          "roleName": "A0_pag_auditor",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20002/audited",
+          "roleName": "A1_ppt_audited",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": true
+      },
+      "repeatable": true,
+      "wd_node": "wd:Q740419",
+      "wd_label": "financial audit",
+      "wd_description": "Type of audit conducted to ensure \"financial statements\" are in accordance with specified criteria.",
+      "outlinks": [
+        "resin:Events/10005/Steps_kairos:Container:Market_Shift",
+        "resin:Events/10006/Steps_kairos:Container:Investigation"
+      ]
+    },
+    {
+      "@id": "resin:Events/10006/Steps_kairos:Container:Investigation",
+      "children": [
+        "resin:Events/10024/Steps_kairos:Primitives_Events_accusation:1",
+        "resin:Events/10025/Steps_kairos:Primitives_Events_detention:1",
+        "resin:Events/10026/Steps_kairos:Primitives_Events_conviction:1",
+        "resin:Events/10027/Steps_kairos:Primitives_Events_plea:1",
+        "resin:Events/10028/Steps_kairos:Primitives_Events_trial:1",
+        "resin:Events/10029/Steps_kairos:Primitives_Events_legal_hearing:1",
+        "resin:Events/10030/Steps_kairos:Primitives_Events_court_decision:1",
+        "resin:Events/10031/Steps_kairos:Container:101",
+        "resin:Events/10032/Steps_kairos:Primitives_Events_sentence:1",
+        "resin:Events/10034/Steps_kairos:Primitives_Events_fine",
+        "resin:Events/10035/Steps_kairos:Primitives_Events_break_up",
+        "resin:Events/10036/Steps_kairos:Primitives_Events_acquittal:1",
+        "resin:Events/10033/Steps_kairos:Primitives_Events_arrest",
+        "resin:Events/10037/Steps_kairos:Primitives_Events_parole",
+        "resin:Events/10038/Steps_kairos:Container:102",
+        "resin:Events/10039/Steps_kairos:Primitives_Events_Release"
+      ],
+      "children_gate": "or",
+      "description": "Financial records could not be validated, a criminal investigation case is opened",
+      "name": "Criminal investigation",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1415338",
+      "wd_label": "criminal_investigation",
+      "wd_description": "in the legal sense exploration of a fact",
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10005/Steps_kairos:Container:Market_Shift",
+      "children": [
+        "resin:Events/10040/Steps_kairos:Primitives_Events_End_Partnership",
+        "resin:Events/10041/Steps_kairos:Primitives_Events_Declining_Trend",
+        "resin:Events/10042/Steps_kairos:Primitives_Events_Economic_Recession",
+        "resin:Events/10043/Steps_kairos:Primitives_Events_New_Competitor"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Events leading to the business suffering economically",
+      "name": "Market Shift",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure",
+      "description": "Company restructures to avoid bankruptcy",
+      "name": "Restructure",
+      "participants": [
+        {
+          "@id": "resin:Participants/20003/organizer",
+          "roleName": "A0_pag_organizer",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20004/thing_organized",
+          "roleName": "A1_ppt_thing_reorganized",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": true
+      },
+      "repeatable": true,
+      "wd_node": "wd:Q1376796",
+      "wd_label": "restructuring",
+      "wd_description": "act of reorganizing the legal, ownership, operational, or other structures of a company",
+      "outlinks": [
+        "resin:Events/10008/Steps_kairos:Container:100"
+      ]
+    },
+    {
+      "@id": "resin:Events/10008/Steps_kairos:Container:100",
+      "children": [
+        "resin:Events/10009/Steps_kairos:Container:Mergers_and_Acquistions",
+        "resin:Events/10011/Steps_kairos:Container:Bankruptcy"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Restructure outlinks",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10009/Steps_kairos:Container:Mergers_and_Acquistions",
+      "children": [
+        "resin:Events/10044/Steps_kairos:Primitives_Events_Contact",
+        "resin:Events/10045/Steps_kairos:Primitives_Events_Valuation_Analysis",
+        "resin:Events/10046/Steps_kairos:Primitives_Events_Negotiate_Terms",
+        "resin:Events/10047/Steps_kairos:Primitives_Events_Due_Diligence",
+        "resin:Events/10048/Steps_kairos:Primitives_Events_Purchase_and_Sale_Contract"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Process to merge or be acquired by another company",
+      "name": "Mergers and Acquistions",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10010/Steps_kairos:Container:Reorganization",
+      "children": [
+        "resin:Events/10049/Steps_kairos:Container:Personnel_Change",
+        "resin:Events/10050/Steps_kairos:Primitives_Events_Terminate_Contracts",
+        "resin:Events/10051/Steps_kairos:Primitives_Events_Recover_Assets",
+        "resin:Events/10052/Steps_kairos:Primitives_Events_Repay_Some_Debt"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Legal process after M&A or filing bankruptcy",
+      "name": "Reorganization",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10011/Steps_kairos:Container:Bankruptcy",
+      "children": [
+        "resin:Events/10053/Steps_kairos:Primitives_Events_Apply_for_Reorganization",
+        "resin:Events/10054/Steps_kairos:Container:Reorg_outlinks",
+        "resin:Events/10055/Steps_kairos:Primitives_Events_Reorg_Approval",
+        "resin:Events/10056/Steps_kairos:Primitives_Events_Reorg_Rejection",
+        "resin:Events/10057/Steps_kairos:Container:Liquidation"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Process in which a business files bankruptcy",
+      "name": "Bankruptcy",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation",
+      "children": [
+        "resin:Events/10058/Steps_kairos:Primitives_Events_Contact_Attorney",
+        "resin:Events/10059/Steps_kairos:Primitives_Events_File_Complaint",
+        "resin:Events/10060/Steps_kairos:Primitives_Events_Answer",
+        "resin:Events/10061/Steps_kairos:Primitives_Events_Discovery",
+        "resin:Events/10062/Steps_kairos:Primitives_Events_Motion",
+        "resin:Events/10063/Steps_kairos:Container:104",
+        "resin:Events/10064/Steps_kairos:Primitives_Events_Mediation",
+        "resin:Events/10065/Steps_kairos:Primitives_Events_Settlement",
+        "resin:Events/10066/Steps_kairos:Primitives_Events_Trial",
+        "resin:Events/10067/Steps_kairos:Primitives_Events_Judgement",
+        "resin:Events/10068/Steps_kairos:Primitives_Events_Appeal"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "The government may sue a business if they have reason to believe the business is becoming a monopoly",
+      "name": "Antitrust investigation",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10013/Steps_kairos:Primitives_Events_Found_a_Business",
+      "description": "A person founds a business",
+      "name": "Found a business",
+      "participants": [
+        {
+          "@id": "resin:Participants/20005/agent",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20006/thing_set",
+          "roleName": "A1_ppt_theme_thing_set",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q3075355",
+      "wd_label": "founding",
+      "wd_description": "action of creating an organization or other entity intended to endure",
+      "outlinks": [
+        "resin:Events/10014/Steps_kairos:Primitives_Events_Private_Funding"
+      ]
+    },
+    {
+      "@id": "resin:Events/10014/Steps_kairos:Primitives_Events_Private_Funding",
+      "description": "Company is funded by private investors",
+      "name": "Private funding",
+      "participants": [
+        {
+          "@id": "resin:Participants/20007/financier",
+          "roleName": "A0_pag_financier",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20008/project",
+          "roleName": "A1_gol_project",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q6055890",
+      "wd_label": "funding",
+      "wd_description": "act of providing resources",
+      "outlinks": [
+        "resin:Events/10015/Steps_kairos:Primitives_Events_Sell_IPOs"
+      ]
+    },
+    {
+      "@id": "resin:Events/10015/Steps_kairos:Primitives_Events_Sell_IPOs",
+      "description": "Company goes public and lists stock on the public market",
+      "name": "Go public and sell IPOs",
+      "participants": [
+        {
+          "@id": "resin:Participants/20009/agent",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20010/other_exchanger",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20011/thing_being_traded",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00014/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange of goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": [
+        "resin:Events/10016/Steps_kairos:Primitives_Events_Privatize"
+      ]
+    },
+    {
+      "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Privatize",
+      "description": "Company goes private and sells all their stock to a private equity firm",
+      "name": "Privatize",
+      "participants": [
+        {
+          "@id": "resin:Participants/20012/agent",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20013/thing_being_traded",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00014/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange of goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Create_Partnership",
+      "description": "Two companies form a partnership, but remain separate entities",
+      "name": "Create partnership",
+      "participants": [
+        {
+          "@id": "resin:Participants/20014/first_partner",
+          "roleName": "A0_pag_first_partner",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20015/other_partner",
+          "roleName": "A2_pag_other_partner",
+          "entity": "resin:Entities/00011/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q728646",
+      "wd_label": "partnership",
+      "wd_description": "arrangement in which parties agree to cooperate to advance their mutual interests",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10018/Steps_kairos:Primitives_Events_Charity_Fraud",
+      "description": "Using deception to get money from individuals believing they are making donations to legitimate charity organizations, especially charities representing victims of natural disasters shortly after the incident occurs.",
+      "name": "Charity fraud",
+      "participants": [
+        {
+          "@id": "resin:Participants/20016/liar",
+          "roleName": "A0_pag_liar",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20017/lied_to",
+          "roleName": "A1_ppt_lied_to",
+          "entity": "resin:Entities/00009/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q4843420",
+      "wd_label": "charity fraud",
+      "wd_description": "act of using deception to get money from people who believe they are making donations to charities",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10019/Steps_kairos:Primitives_Events_Internet_Auction_Fraud",
+      "description": "A fraudulent transaction or exchange that occurs in the context of an online auction site.",
+      "name": "Internet auction fraud",
+      "participants": [
+        {
+          "@id": "resin:Participants/20018/liar",
+          "roleName": "A0_pag_liar",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20019/lied_to",
+          "roleName": "A1_ppt_lied_to",
+          "entity": "resin:Entities/00009/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q28813",
+      "wd_label": "fraud",
+      "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10020/Steps_kairos:Primitives_Events_Non-Delivery_of_Merchandise",
+      "description": "Fraud occurring when a payment is sent but the goods and services ordered are never received.",
+      "name": "Nondelivery of merchandise",
+      "participants": [
+        {
+          "@id": "resin:Participants/20020/liar",
+          "roleName": "A0_pag_liar",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20021/lied_to",
+          "roleName": "A1_ppt_lied_to",
+          "entity": "resin:Entities/00009/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q28813",
+      "wd_label": "fraud",
+      "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10021/Steps_kairos:Primitives_Events_Non-Payment_of_Funds",
+      "description": "Fraud occurring when goods and services are shipped or rendered but payment for them is never received.",
+      "name": "Nonpayment of funds",
+      "participants": [
+        {
+          "@id": "resin:Participants/20022/liar",
+          "roleName": "A0_pag_liar",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20023/lied_to",
+          "roleName": "A1_ppt_lied_to",
+          "entity": "resin:Entities/00009/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q28813",
+      "wd_label": "fraud",
+      "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_Overpayment_Scheme",
+      "description": "An individual is sent a payment significantly higher than an owed amount and is instructed to deposit the money in their bank account and wire transfer the excess funds back to the bank of the individual or company that sent it. ",
+      "name": "Overpayment scheme",
+      "participants": [
+        {
+          "@id": "resin:Participants/20024/liar",
+          "roleName": "A0_pag_liar",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20025/lied_to",
+          "roleName": "A1_ppt_lied_to",
+          "entity": "resin:Entities/00009/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q104835881",
+      "wd_label": "overpayment scam",
+      "wd_description": "confidence trick designed to prey upon victims\u2019 good faith",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10023/Steps_kairos:Primitives_Events_Re-Shipping_Scheme",
+      "description": "An individual is recruited to receive merchandise at their place of residence and subsequently repackage the items for shipment, usually abroad.",
+      "name": "Reshipment scheme",
+      "participants": [
+        {
+          "@id": "resin:Participants/20026/liar",
+          "roleName": "A0_pag_liar",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20027/lied_to",
+          "roleName": "A1_ppt_lied_to",
+          "entity": "resin:Entities/00009/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q28813",
+      "wd_label": "fraud",
+      "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10024/Steps_kairos:Primitives_Events_accusation:1",
+      "comment": "",
+      "description": "act of accusing or charging another with a crime",
+      "name": "Accusation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20028/kairos:Primitives_Events_accusation:1:accuser",
+          "roleName": "A0_pag_agent_accuser",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20029/kairos:Primitives_Events_accusation:1:accused",
+          "roleName": "A1_ppt_theme_accused",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20030/kairos:Primitives_Events_accusation:1:crime",
+          "roleName": "A2_prd_attribute_crime",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10027/Steps_kairos:Primitives_Events_accusation:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q19357312",
+      "wd_label": "accusation",
+      "wd_description": "act of accusing or charging another with a crime",
+      "outlinks": [
+        "resin:Events/10025/Steps_kairos:Primitives_Events_detention:1"
+      ]
+    },
+    {
+      "@id": "resin:Events/10025/Steps_kairos:Primitives_Events_detention:1",
+      "comment": "",
+      "description": "removal of the freedom of liberty by a state",
+      "name": "Detention",
+      "participants": [
+        {
+          "@id": "resin:Participants/20031/kairos:Primitives_Events_detention:1:police",
+          "roleName": "A0_pag_police",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20032/kairos:Primitives_Events_detention:1:entity_detained",
+          "roleName": "A1_ppt_entity_detained",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20033/kairos:Primitives_Events_detention:1:detained_for_what?",
+          "roleName": "A2_cau_detained_for_what?",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_detention:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1071447",
+      "wd_label": "detention",
+      "wd_description": "removal of the freedom of liberty by a state",
+      "outlinks": [
+        "resin:Events/10026/Steps_kairos:Primitives_Events_conviction:1"
+      ]
+    },
+    {
+      "@id": "resin:Events/10026/Steps_kairos:Primitives_Events_conviction:1",
+      "comment": "",
+      "description": "verdict that results when a court of law finds a defendant guilty of a crime",
+      "name": "Conviction",
+      "participants": [
+        {
+          "@id": "resin:Participants/20034/kairos:Primitives_Events_conviction:1:judge",
+          "roleName": "A0_pag__judge",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20035/kairos:Primitives_Events_conviction:1:person_convicted",
+          "roleName": "A1_ppt__person_convicted",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20036/kairos:Primitives_Events_conviction:1:convicted_of",
+          "roleName": "A2_cau__convicted_of",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10030/Steps_kairos:Primitives_Events_conviction:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q2916183",
+      "wd_label": "conviction",
+      "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+      "outlinks": [
+        "resin:Events/10027/Steps_kairos:Primitives_Events_plea:1",
+        "resin:Events/10028/Steps_kairos:Primitives_Events_trial:1"
+      ]
+    },
+    {
+      "@id": "resin:Events/10027/Steps_kairos:Primitives_Events_plea:1",
+      "comment": "",
+      "description": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+      "name": "Plea",
+      "participants": [
+        {
+          "@id": "resin:Participants/20037/kairos:Primitives_Events_plea:1:the_accused",
+          "roleName": "A0_pag_the_accused",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20038/kairos:Primitives_Events_plea:1:alleged_crime",
+          "roleName": "A2_gol_alleged_crime",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_plea:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q15916459",
+      "wd_label": "plea",
+      "wd_description": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10028/Steps_kairos:Primitives_Events_trial:1",
+      "comment": "",
+      "description": "coming together of parties to a dispute, to present information in a tribunal",
+      "name": "Trial",
+      "participants": [
+        {
+          "@id": "resin:Participants/20039/kairos:Primitives_Events_trial:1:entity_tried",
+          "roleName": "A1_ppt__entity_tried",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20040/kairos:Primitives_Events_trial:1:tried_for",
+          "roleName": "A3_cau_tried_for",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_trial:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "outlinks": [
+        "resin:Events/10029/Steps_kairos:Primitives_Events_legal_hearing:1"
+      ]
+    },
+    {
+      "@id": "resin:Events/10029/Steps_kairos:Primitives_Events_legal_hearing:1",
+      "comment": "",
+      "description": "A legal hearing",
+      "name": "Legal hearing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20041/kairos:Primitives_Events_legal_hearing:1:judge",
+          "roleName": "A0_pag__judge",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20042/kairos:Primitives_Events_legal_hearing:1:person_on_trial",
+          "roleName": "A1_ppt__person_on_trial",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_legal_hearing:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q545861",
+      "wd_label": "legal_hearing",
+      "wd_description": "A legal hearing",
+      "outlinks": [
+        "resin:Events/10030/Steps_kairos:Primitives_Events_court_decision:1"
+      ]
+    },
+    {
+      "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_court_decision:1",
+      "comment": "",
+      "description": "formal decision made by a court",
+      "name": "Court decision",
+      "participants": [
+        {
+          "@id": "resin:Participants/20043/kairos:Primitives_Events_court_decision:1:judge",
+          "roleName": "A0_pag_agent_judge",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20044/kairos:Primitives_Events_court_decision:1:judged",
+          "roleName": "A1_ppt_theme_judged",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20045/kairos:Primitives_Events_court_decision:1:on_what_grounds",
+          "roleName": "A3_cau__on_what_grounds",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10034/Steps_kairos:Primitives_Events_court_decision:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q327000",
+      "wd_label": "court_decision ",
+      "wd_description": "formal decision made by a court",
+      "outlinks": [
+        "resin:Events/10031/Steps_kairos:Container:101"
+      ]
+    },
+    {
+      "@id": "resin:Events/10031/Steps_kairos:Container:101",
+      "children": [
+        "resin:Events/10032/Steps_kairos:Primitives_Events_sentence:1",
+        "resin:Events/10036/Steps_kairos:Primitives_Events_acquittal:1"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Court Decision outlinks",
+      "privateData": {
+        "@type": "kairos:container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10032/Steps_kairos:Primitives_Events_sentence:1",
+      "description": "decree of punishment in law",
+      "name": "Sentence",
+      "participants": [
+        {
+          "@id": "resin:Participants/20046/kairos:Primitives_Events_sentence:1:judge_jury",
+          "roleName": "A0_pag__judge_jury",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20047/kairos:Primitives_Events_sentence:1:criminal",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20048/kairos:Primitives_Events_sentence:1:crime",
+          "roleName": "A3_cau__crime",
+          "entity": "resin:Entities/00017/"
+        },
+        {
+          "@id": "resin:Participants/20049/kairos:Primitives_Events_sentence:1:punishment",
+          "roleName": "A2_ppt__punishment",
+          "entity": "resin:Entities/00018/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10035/Steps_kairos:Primitives_Events_sentence:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1763090",
+      "wd_label": "sentence",
+      "wd_description": "decree of punishment in law",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10034/Steps_kairos:Primitives_Events_fine",
+      "description": "Government fines the business",
+      "name": "Fine the business",
+      "participants": [
+        {
+          "@id": "resin:Participants/20050/fine_finer",
+          "roleName": "A0_pag_finer",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20051/fine_fine",
+          "roleName": "A1_vsp_fine",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20052/fine_fined",
+          "roleName": "A2_gol_fined",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1243001",
+      "wd_label": "fine",
+      "wd_description": "financial penalty",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10035/Steps_kairos:Primitives_Events_break_up",
+      "description": "Government breaks company up into multiple, smaller companies",
+      "name": "Break up the business",
+      "participants": [
+        {
+          "@id": "resin:Participants/20053/agent_of_division",
+          "roleName": "A0_cau_agent_of_division",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20054/separated_entity",
+          "roleName": "A1_ppt_separated_entity",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q18511800",
+      "wd_label": "separation",
+      "wd_description": "act of separating one entity to form several",
+      "outlinks": [
+        "resin:Events/10010/Steps_kairos:Container:Reorganization"
+      ]
+    },
+    {
+      "@id": "resin:Events/10033/Steps_kairos:Primitives_Events_arrest",
+      "comment": "",
+      "description": "Goverment arrests an executive of the company",
+      "name": "Arrest executive",
+      "participants": [
+        {
+          "@id": "resin:Participants/20055/police",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20056/criminal",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20057/crime",
+          "roleName": "A2_cau__crime",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_imprisonment:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10037/Steps_kairos:Primitives_Events_parole",
+      "description": "Executive goes on parole",
+      "name": "Parole",
+      "participants": [
+        {
+          "@id": "resin:Participants/20058/releaser",
+          "roleName": "A0_pag_releaser",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20059/criminal",
+          "roleName": "A1_ppt_criminal",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20060/released_from",
+          "roleName": "A2_dir_released_from",
+          "entity": "resin:Entities/00018/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q5357120",
+      "wd_label": "parole",
+      "wd_description": "provisional release from prison, with certain conditions such as probation in some states",
+      "outlinks": [
+        "resin:Events/10038/Steps_kairos:Container:102"
+      ]
+    },
+    {
+      "@id": "resin:Events/10038/Steps_kairos:Container:102",
+      "children": [
+        "resin:Events/10039/Steps_kairos:Primitives_Events_Release",
+        "resin:Events/10033/Steps_kairos:Primitives_Events_arrest"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Parole outlinks",
+      "privateData": {
+        "@type": "kairos:container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Release",
+      "description": "Executive is officially released",
+      "name": "Release from Jail",
+      "participants": [
+        {
+          "@id": "resin:Participants/20061/releaser",
+          "roleName": "A0_pag_releaser",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20062/criminal",
+          "roleName": "A1_ppt_criminal",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20063/location",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00018/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q3237993",
+      "wd_label": "release from prison",
+      "wd_description": "process of releasing an inmate from prison",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10036/Steps_kairos:Primitives_Events_acquittal:1",
+      "comment": "",
+      "description": "the legal result of a verdict of not guilty",
+      "name": "Acquittal",
+      "participants": [
+        {
+          "@id": "resin:Participants/20064/kairos:Primitives_Events_acquittal:1:remover_of_guilt",
+          "roleName": "A0_cau_remover_of_guilt",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20065/kairos:Primitives_Events_acquittal:1:unguilty_person",
+          "roleName": "A1_dir_source_unguilty_person",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20066/kairos:Primitives_Events_acquittal:1:explicit_mention_of_guilt",
+          "roleName": "A2_ppt_theme_explicit_mention_of_guilt",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1454723",
+      "wd_label": "acquittal",
+      "wd_description": "the legal result of a verdict of not guilty",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10040/Steps_kairos:Primitives_Events_End_Partnership",
+      "description": "Two companies end their partnership",
+      "name": "End partnership",
+      "participants": [
+        {
+          "@id": "resin:Participants/20067/first_partner",
+          "roleName": "A0_pag_first_partner",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20068/other_partner",
+          "roleName": "A2_pag_other_partner",
+          "entity": "resin:Entities/00011/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q12769393",
+      "wd_label": "end",
+      "wd_description": "termination of something",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10041/Steps_kairos:Primitives_Events_Declining_Trend",
+      "description": "Company adopted a trend that fades away",
+      "name": "Declining trend",
+      "participants": [
+        {
+          "@id": "resin:Participants/20069/location",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q13427002",
+      "wd_label": "fad",
+      "wd_description": "thing or behavior that achieves intense short-lived popularity and then fades away",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10042/Steps_kairos:Primitives_Events_Economic_Recession",
+      "description": "Recession affects company's sales",
+      "name": "Economic recession",
+      "participants": [
+        {
+          "@id": "resin:Participants/20070/entity_suffering_a_recession",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10043/Steps_kairos:Primitives_Events_New_Competitor",
+      "description": "A new company joins the market and the current company suffers",
+      "name": "New competitor",
+      "participants": [
+        {
+          "@id": "resin:Participants/20071/competitor",
+          "roleName": "A0_pag_competitor",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20072/opponent",
+          "roleName": "A1_com_opponent",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q476300",
+      "wd_label": "competition",
+      "wd_description": "rivalry between organisms, animals, individuals, groups, etc., for mutually incompatible goals",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10044/Steps_kairos:Primitives_Events_Contact",
+      "description": "A company contacts a candidate company to propose merge / acquisition",
+      "name": "Contact suitable company",
+      "participants": [
+        {
+          "@id": "resin:Participants/20073/first_communicator",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00012/"
+        },
+        {
+          "@id": "resin:Participants/20074/other_communicator",
+          "roleName": "A2_com_co_agent_other_communicators",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20075/topic_utterance",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10045/Steps_kairos:Primitives_Events_Valuation_Analysis"
+      ]
+    },
+    {
+      "@id": "resin:Events/10045/Steps_kairos:Primitives_Events_Valuation_Analysis",
+      "description": "Company performs valuation on the candidate company",
+      "name": "Valuation analysis",
+      "participants": [
+        {
+          "@id": "resin:Participants/20076/entity_establishing_value",
+          "roleName": "A0_pag_entity_establishing_value",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20077/commodity_being_valued",
+          "roleName": "A1_ppt_commodity_being_valued",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q4008379",
+      "wd_label": "valuation",
+      "wd_description": "process of estimating what something is worth, used in the finance industry",
+      "outlinks": [
+        "resin:Events/10046/Steps_kairos:Primitives_Events_Negotiate_Terms"
+      ]
+    },
+    {
+      "@id": "resin:Events/10046/Steps_kairos:Primitives_Events_Negotiate_Terms",
+      "description": "Companies negotiate terms of merge / acquisition",
+      "name": "Negotiate terms",
+      "participants": [
+        {
+          "@id": "resin:Participants/20078/first_communicator",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00012/"
+        },
+        {
+          "@id": "resin:Participants/20079/other_communicator",
+          "roleName": "A2_com_co_agent_other_communicators",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20080/topic_utterance",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10047/Steps_kairos:Primitives_Events_Due_Diligence"
+      ]
+    },
+    {
+      "@id": "resin:Events/10047/Steps_kairos:Primitives_Events_Due_Diligence",
+      "description": "Company performs due diligence on candidate company",
+      "name": "Due diligence",
+      "participants": [
+        {
+          "@id": "resin:Participants/20081/examiner",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20082/thing_examined",
+          "roleName": "A1_ppt_thing_examined",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q794134",
+      "wd_label": "due diligence",
+      "wd_description": "investigation or exercise of care that a reasonable business or person is normally expected to take before entering into an agreement or contract with another party or an act with a certain standard of care",
+      "outlinks": [
+        "resin:Events/10048/Steps_kairos:Primitives_Events_Purchase_and_Sale_Contract"
+      ]
+    },
+    {
+      "@id": "resin:Events/10048/Steps_kairos:Primitives_Events_Purchase_and_Sale_Contract",
+      "description": "Companies sign a contract and officially merge / become acquired",
+      "name": "Purchase and sale contract",
+      "participants": [
+        {
+          "@id": "resin:Participants/20083/agent",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00012/"
+        },
+        {
+          "@id": "resin:Participants/20084/other_exchanger",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20085/thing_being_traded",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20086/other_item_in_exchange",
+          "roleName": "A3_ppt_co_theme_other_item_in_exchange_price_or_premium",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q18345888",
+      "wd_label": "purchase and sale agreement",
+      "wd_description": "type of contract",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10053/Steps_kairos:Primitives_Events_Apply_for_Reorganization",
+      "description": "Company officially applies for reorganization",
+      "name": "Apply for reorganization",
+      "participants": [
+        {
+          "@id": "resin:Participants/20087/asker",
+          "roleName": "A0_pag_agent_asker",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20088/hearer",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q22445448",
+      "wd_label": "request",
+      "wd_description": "act of asking politely or formally for something",
+      "outlinks": [
+        "resin:Events/10054/Steps_kairos:Container:Reorg_outlinks"
+      ]
+    },
+    {
+      "@id": "resin:Events/10054/Steps_kairos:Container:Reorg_outlinks",
+      "children": [
+        "resin:Events/10055/Steps_kairos:Primitives_Events_Reorg_Approval",
+        "resin:Events/10056/Steps_kairos:Primitives_Events_Reorg_Rejection"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Reorganization Application outlinks",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10055/Steps_kairos:Primitives_Events_Reorg_Approval",
+      "description": "Government approves the reorganization",
+      "name": "Reorganization approval",
+      "participants": [
+        {
+          "@id": "resin:Participants/20089/agreer",
+          "roleName": "A0_pag_agreer",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q231043",
+      "wd_label": "consent",
+      "wd_description": "expression granting permission to proceed with a proposal",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10056/Steps_kairos:Primitives_Events_Reorg_Rejection",
+      "description": "Government rejects the reorganization",
+      "name": "Reorganization rejection",
+      "participants": [
+        {
+          "@id": "resin:Participants/20090/entity_refusing",
+          "roleName": "A0_pag_agent_entity_refusing",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q98398200",
+      "wd_label": "rejection",
+      "wd_description": "act of declining to accept an item for approval, consideration, marking etc.",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10057/Steps_kairos:Container:Liquidation",
+      "children": [
+        "resin:Events/10069/Steps_kairos:Primitives_Events_Apply_for_Bankruptcy",
+        "resin:Events/10070/Steps_kairos:Container:Bankruptcy_outlinks",
+        "resin:Events/10071/Steps_kairos:Primitives_Events_Bankruptcy_Approval",
+        "resin:Events/10073/Steps_kairos:Primitives_Events_Bankruptcy_Rejection",
+        "resin:Events/10072/Steps_kairos:Container:Bankruptcy_Approval_outlinks",
+        "resin:Events/10074/Steps_kairos:Primitives_Events_Government_Bail_Out",
+        "resin:Events/10075/Steps_kairos:Primitives_Events_Appoint_Trustee",
+        "resin:Events/10076/Steps_kairos:Primitives_Events_Divestment",
+        "resin:Events/10077/Steps_kairos:Primitives_Events_Transfer_Assets"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Liquidation",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10049/Steps_kairos:Container:Personnel_Change",
+      "children": [
+        "resin:Events/10078/Steps_kairos:Primitives_Events_Management_Change",
+        "resin:Events/10079/Steps_kairos:Primitives_Events_Reorganize_Hire",
+        "resin:Events/10080/Steps_kairos:Primitives_Events_Reorganize_Dismissal"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Personnel change",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10050/Steps_kairos:Primitives_Events_Terminate_Contracts",
+      "description": "Company terminates some contracts and leases",
+      "name": "Terminate contracts and leases",
+      "participants": [
+        {
+          "@id": "resin:Participants/20091/agent",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20092/thing_closing",
+          "roleName": "A1_ppt_thing_closing",
+          "entity": "resin:Entities/00020/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q12769393",
+      "wd_label": "end",
+      "wd_description": "termination of something",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10051/Steps_kairos:Primitives_Events_Recover_Assets",
+      "description": "Liquidate or re-use some assets",
+      "name": "Recover assets",
+      "participants": [
+        {
+          "@id": "resin:Participants/20093/liquidator",
+          "roleName": "A0_pag_liquidator",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20094/thing_being_liquidated",
+          "roleName": "A1_ppt_thing_being_liquidated",
+          "entity": "resin:Entities/00021/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q885621",
+      "wd_label": "liquidation",
+      "wd_description": "winding-up of a company",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10052/Steps_kairos:Primitives_Events_Repay_Some_Debt",
+      "description": "Company repays some debt to its creditors",
+      "name": "Repay some debt",
+      "participants": [
+        {
+          "@id": "resin:Participants/20095/payer",
+          "roleName": "A0_pag_payer_or_buyer",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20096/money_or_attention",
+          "roleName": "A1_vsp_money_or_attention",
+          "entity": "resin:Entities/00021/"
+        },
+        {
+          "@id": "resin:Participants/20097/person_being_paid",
+          "roleName": "A2_gol_person_being_paid",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1148747",
+      "wd_label": "payment",
+      "wd_description": "transfer of an item of value from one party (such as a person or company) to another in exchange for the provision of goods, services or both, or to fulfill a legal obligation",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10058/Steps_kairos:Primitives_Events_Contact_Attorney",
+      "description": "Government contacts attorney to begin filing a lawsuit",
+      "name": "Contact Attorney",
+      "participants": [
+        {
+          "@id": "resin:Participants/20098/Steps_kairos:Primitives_Events_File_Complaint_First_communicator",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20099/Steps_kairos:Primitives_Events_File_Complaint_Topic",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10059/Steps_kairos:Primitives_Events_File_Complaint"
+      ]
+    },
+    {
+      "@id": "resin:Events/10059/Steps_kairos:Primitives_Events_File_Complaint",
+      "comment": "",
+      "description": "Plaintiff files a complaint to initiate a lawsuit",
+      "name": "File Complaint",
+      "participants": [
+        {
+          "@id": "resin:Participants/20100/Steps_kairos:Primitives_Events_File_Complaint_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20101/Steps_kairos:Primitives_Events_File_Complaint_Cause",
+          "roleName": "A2-cau_X_cause",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.initiatejudicialprocess.filecomplaint",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q836925",
+      "wd_label": "complaint",
+      "wd_description": "Legal document, the filing of which initiates a lawsuit",
+      "outlinks": [
+        "resin:Events/10060/Steps_kairos:Primitives_Events_Answer"
+      ]
+    },
+    {
+      "@id": "resin:Events/10060/Steps_kairos:Primitives_Events_Answer",
+      "comment": "",
+      "description": "In law, a solemn assertion in opposition to someone or something by the defendant",
+      "name": "Answer",
+      "participants": [
+        {
+          "@id": "resin:Participants/20102/Steps_kairos:Primitives_Events_Answer_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.initiatejudicialprocess.answer",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q33622550",
+      "wd_label": "answer",
+      "wd_description": "in law a solemn assertion in opposition to someone or something",
+      "outlinks": [
+        "resin:Events/10061/Steps_kairos:Primitives_Events_Discovery"
+      ]
+    },
+    {
+      "@id": "resin:Events/10061/Steps_kairos:Primitives_Events_Discovery",
+      "comment": "",
+      "description": "Pre-trial procedure in common law countries for obtaining evidence",
+      "name": "Discovery",
+      "participants": [
+        {
+          "@id": "resin:Participants/20103/Steps_kairos:Primitives_Events_Discovery_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20104/Steps_kairos:Primitives_Events_Discovery_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.initiatejudicialprocess.discovery",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q902342",
+      "wd_label": "discovery",
+      "wd_description": "pre-trial procedure in common law countries for obtaining evidence",
+      "outlinks": [
+        "resin:Events/10062/Steps_kairos:Primitives_Events_Motion"
+      ]
+    },
+    {
+      "@id": "resin:Events/10062/Steps_kairos:Primitives_Events_Motion",
+      "comment": "",
+      "description": "In US law, a procedural device to bring a limited, contested issue before a court for decision",
+      "name": "Motion",
+      "participants": [
+        {
+          "@id": "resin:Participants/20105/Steps_kairos:Primitives_Events_Motion_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20106/Steps_kairos:Primitives_Events_Motion_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20107/Steps_kairos:Primitives_Events_Motion_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.initiatejudicialprocess.motion",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q6917734",
+      "wd_label": "motion",
+      "wd_description": "in US law, a procedural device to bring a limited, contested issue before a court for decision",
+      "outlinks": [
+        "resin:Events/10063/Steps_kairos:Container:104"
+      ]
+    },
+    {
+      "@id": "resin:Events/10063/Steps_kairos:Container:104",
+      "children": [
+        "resin:Events/10064/Steps_kairos:Primitives_Events_Mediation",
+        "resin:Events/10066/Steps_kairos:Primitives_Events_Trial"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Motion outlinks",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10064/Steps_kairos:Primitives_Events_Mediation",
+      "description": "Dispute resolution with assistance of an impartial third party moderator throughthe use of communication and negotiation techniques",
+      "name": "Mediation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20108/Steps_kairos:Primitives_Events_Mediation_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20109/Steps_kairos:Primitives_Events_Mediation_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20110/Steps_kairos:Primitives_Events_Mediation_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.judicialconsequences.mediation",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q223871",
+      "wd_label": "mediation",
+      "wd_description": "dispute resolution with assistance of an impartial third party moderator through the use of communication and negotiation techniques",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10065/Steps_kairos:Primitives_Events_Settlement",
+      "comment": "",
+      "description": "The dispute is resolved through a payment of money.",
+      "name": "Settlement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20111/Steps_kairos:Primitives_Events_Settlement_Agent",
+          "roleName": "A0-pag_agent_Agent",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20112/Steps_kairos:Primitives_Events_Settlement_Receiver",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20113/Steps_kairos:Primitives_Events_Settlement_Money",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "privateData": {
+        "@type": "Transaction.ExchangeBuySell.Unspecified",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange_of_goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10066/Steps_kairos:Primitives_Events_Trial",
+      "comment": "",
+      "description": "Coming together of parties to a dispute, to present information in a tribunal",
+      "name": "Trial",
+      "participants": [
+        {
+          "@id": "resin:Participants/20114/Steps_kairos:Primitives_Events_Trial_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.initiatejudicialprocess.trialhearing",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10067/Steps_kairos:Primitives_Events_Judgement",
+      "comment": "",
+      "description": "The formal decision made by a court following a lawsuit",
+      "name": "Judgement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20115/Steps_kairos:Primitives_Events_Judgement_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.judicialconsequences.judgement",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q3769186",
+      "wd_label": "judgement",
+      "wd_description": "the formal decision made by a court following a lawsuit",
+      "outlinks": [
+        "resin:Events/10068/Steps_kairos:Primitives_Events_Appeal"
+      ]
+    },
+    {
+      "@id": "resin:Events/10068/Steps_kairos:Primitives_Events_Appeal",
+      "comment": "",
+      "description": "Resort to a superior court to review the decision of an inferior court or administrative agency",
+      "name": "Appeal",
+      "participants": [
+        {
+          "@id": "resin:Participants/20116/Steps_kairos:Primitives_Events_Appeal_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "justice.appeal.unspecified",
+        "template": "",
+        "repeatable": true
+      },
+      "repeatable": true,
+      "wd_node": "wd:Q329777",
+      "wd_label": "appeal",
+      "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10069/Steps_kairos:Primitives_Events_Apply_for_Bankruptcy",
+      "description": "Company officially applies for bankruptcy",
+      "name": "Apply for bankruptcy",
+      "participants": [
+        {
+          "@id": "resin:Participants/20117/asker",
+          "roleName": "A0_pag_agent_asker",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20118/hearer",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q22445448",
+      "wd_label": "request",
+      "wd_description": "act of asking politely or formally for something",
+      "outlinks": [
+        "resin:Events/10070/Steps_kairos:Container:Bankruptcy_outlinks"
+      ]
+    },
+    {
+      "@id": "resin:Events/10070/Steps_kairos:Container:Bankruptcy_outlinks",
+      "children": [
+        "resin:Events/10071/Steps_kairos:Primitives_Events_Bankruptcy_Approval",
+        "resin:Events/10073/Steps_kairos:Primitives_Events_Bankruptcy_Rejection"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Bankruptcy Application outlinks",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10071/Steps_kairos:Primitives_Events_Bankruptcy_Approval",
+      "description": "Government approves the bankruptcy",
+      "name": "Bankruptcy approval",
+      "participants": [
+        {
+          "@id": "resin:Participants/20119/agreer",
+          "roleName": "A0_pag_agreer",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q231043",
+      "wd_label": "consent",
+      "wd_description": "expression granting permission to proceed with a proposal",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10073/Steps_kairos:Primitives_Events_Bankruptcy_Rejection",
+      "description": "Government rejects the bankruptcy",
+      "name": "Bankruptcy rejection",
+      "participants": [
+        {
+          "@id": "resin:Participants/20120/entity_refusing",
+          "roleName": "A0_pag_agent_entity_refusing",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q98398200",
+      "wd_label": "rejection",
+      "wd_description": "act of declining to accept an item for approval, consideration, marking etc.",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10072/Steps_kairos:Container:Bankruptcy_Approval_outlinks",
+      "children": [
+        "resin:Events/10074/Steps_kairos:Primitives_Events_Government_Bail_Out",
+        "resin:Events/10075/Steps_kairos:Primitives_Events_Appoint_Trustee"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Bankruptcy Approval outlinks",
+      "privateData": {
+        "@type": "kairos:Container",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10074/Steps_kairos:Primitives_Events_Government_Bail_Out",
+      "description": "Government lends company money, because the company bankruptcy would damage the economy",
+      "name": "Government bail out",
+      "participants": [
+        {
+          "@id": "resin:Participants/20121/giver",
+          "roleName": "A0_pag_giver",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q189539",
+      "wd_label": "loan",
+      "wd_description": "transfer of money that must be repaid",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10075/Steps_kairos:Primitives_Events_Appoint_Trustee",
+      "description": "Government appoints a trustee to oversee the reorganization",
+      "name": "Appoint trustee",
+      "participants": [
+        {
+          "@id": "resin:Participants/20122/appointee",
+          "roleName": "A1_ppt_theme_appointee",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20123/appointer",
+          "roleName": "A0_pag_agent_appointer",
+          "entity": "resin:Entities/00016/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1318578",
+      "wd_label": "appointment",
+      "wd_description": "action which designates a person to carry out a function(s) as a public official",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10076/Steps_kairos:Primitives_Events_Divestment",
+      "description": "Trustee liquidates assets",
+      "name": "Divestment",
+      "participants": [
+        {
+          "@id": "resin:Participants/20124/entity_removing",
+          "roleName": "A0_pag_entity_removing",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20125/thing_being_removed",
+          "roleName": "A1_ppt_thing_being_removed",
+          "entity": "resin:Entities/00021/"
+        },
+        {
+          "@id": "resin:Participants/20126/removed_from",
+          "roleName": "A2_dir_removed_from",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1200733",
+      "wd_label": "divestment",
+      "wd_description": "reduction of some kind of asset for financial, ethical, or political objectives or sale of an existing business by a firm",
+      "outlinks": [
+        "resin:Events/10077/Steps_kairos:Primitives_Events_Transfer_Assets"
+      ]
+    },
+    {
+      "@id": "resin:Events/10077/Steps_kairos:Primitives_Events_Transfer_Assets",
+      "description": "Trustee distributes assets to creditors",
+      "name": "Transfer Assets",
+      "participants": [
+        {
+          "@id": "resin:Participants/20127/agent",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20128/thing_being_traded",
+          "roleName": "A1_ppt_thing_being_traded",
+          "entity": "resin:Entities/00021/"
+        },
+        {
+          "@id": "resin:Participants/20129/thing_being_traded",
+          "roleName": "A2_com_other_exchanger",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q315364",
+      "wd_label": "transfer",
+      "wd_description": "in property law, the transfer of ownership of a thing from one person to another",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10078/Steps_kairos:Primitives_Events_Management_Change",
+      "description": "A new CEO or executive is hired",
+      "name": "Management change",
+      "participants": [
+        {
+          "@id": "resin:Participants/20130/thing_changing",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20131/end_state",
+          "roleName": "A2_prd_end_state",
+          "entity": "resin:Entities/00005/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q1150070",
+      "wd_label": "change",
+      "wd_description": "process, event or action that deviates from the present state",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10079/Steps_kairos:Primitives_Events_Reorganize_Hire",
+      "description": "Company hires new talent",
+      "name": "Hire new talent",
+      "participants": [
+        {
+          "@id": "resin:Participants/20132/employer",
+          "roleName": "A0_pag_employer",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20133/employee",
+          "roleName": "A1_ppt_employee",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q656365",
+      "wd_label": "employment",
+      "wd_description": "relationship between the employee and the employer",
+      "outlinks": []
+    },
+    {
+      "@id": "resin:Events/10080/Steps_kairos:Primitives_Events_Reorganize_Dismissal",
+      "description": "Company fires some employees",
+      "name": "Dismiss employees",
+      "participants": [
+        {
+          "@id": "resin:Participants/20134/employer",
+          "roleName": "A0_pag_agent_employer",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20135/ex_employee",
+          "roleName": "A1_ppt_theme_ex_employee",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "privateData": {
+        "@type": "",
+        "template": "",
+        "repeatable": false
+      },
+      "repeatable": false,
+      "wd_node": "wd:Q17052147",
+      "wd_label": "dismissal",
+      "wd_description": "termination of employment decided unilaterally by employer",
+      "outlinks": []
+    }
+  ],
+  "entities": [
+    {
+      "@id": "resin:Entities/00000/",
+      "name": "executive",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00001/",
+      "name": "auditor",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00002/",
+      "name": "founder",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00003/",
+      "name": "employee",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00004/",
+      "name": "trustee",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00005/",
+      "name": "new executive",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00006/",
+      "name": "new employee",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00007/",
+      "name": "old employee",
+      "wd_label": "human",
+      "wd_node": "wd:Q5",
+      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+    },
+    {
+      "@id": "resin:Entities/00008/",
+      "name": "investors",
+      "wd_label": "group of humans",
+      "wd_node": "wd:Q16334295",
+      "wd_description": "any set of human beings"
+    },
+    {
+      "@id": "resin:Entities/00009/",
+      "name": "general public",
+      "wd_label": "group of humans",
+      "wd_node": "wd:Q16334295",
+      "wd_description": "any set of human beings"
+    },
+    {
+      "@id": "resin:Entities/00010/",
+      "name": "company",
+      "wd_label": "company",
+      "wd_node": "wd:Q783794",
+      "wd_description": "legal entity representing an association of people"
+    },
+    {
+      "@id": "resin:Entities/00011/",
+      "name": "partnering company",
+      "wd_label": "company",
+      "wd_node": "wd:Q783794",
+      "wd_description": "legal entity representing an association of people"
+    },
+    {
+      "@id": "resin:Entities/00012/",
+      "name": "bigger company",
+      "wd_label": "company",
+      "wd_node": "wd:Q783794",
+      "wd_description": "legal entity representing an association of people"
+    },
+    {
+      "@id": "resin:Entities/00013/",
+      "name": "new company",
+      "wd_label": "company",
+      "wd_node": "wd:Q783794",
+      "wd_description": "legal entity representing an association of people"
+    },
+    {
+      "@id": "resin:Entities/00014/",
+      "name": "stock",
+      "wd_label": "stock",
+      "wd_node": "wd:Q1196314",
+      "wd_description": "Collective financial capital of a shared corporation"
+    },
+    {
+      "@id": "resin:Entities/00015/",
+      "name": "judge",
+      "wd_label": "court",
+      "wd_node": "wd:Q41487",
+      "wd_description": "judicial institution with the authority to resolve legal disputes"
+    },
+    {
+      "@id": "resin:Entities/00016/",
+      "name": "government authorities",
+      "wd_label": "public authority",
+      "wd_node": "wd:Q4383245",
+      "wd_description": "body that exercises official authority"
+    },
+    {
+      "@id": "resin:Entities/00017/",
+      "name": "fraud",
+      "wd_label": "fraud",
+      "wd_node": "wd:Q28813",
+      "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim"
+    },
+    {
+      "@id": "resin:Entities/00018/",
+      "name": "prison",
+      "wd_label": "prison",
+      "wd_node": "wd:Q40357",
+      "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
+    },
+    {
+      "@id": "resin:Entities/00019/",
+      "name": "asset",
+      "wd_label": "asset",
+      "wd_node": "wd:Q46737",
+      "wd_description": "economic resource, from which future economic benefits are expected"
+    },
+    {
+      "@id": "resin:Entities/00020/",
+      "name": "contracts and leases",
+      "wd_label": "asset",
+      "wd_node": "wd:Q46737",
+      "wd_description": "economic resource, from which future economic benefits are expected"
+    },
+    {
+      "@id": "resin:Entities/00021/",
+      "name": "liquidated assets",
+      "wd_label": "asset",
+      "wd_node": "wd:Q46737",
+      "wd_description": "economic resource, from which future economic benefits are expected"
+    },
+    {
+      "@id": "resin:Entities/00022/",
+      "name": "mergers and acquisitions",
+      "wd_label": "mergers and acquisitions",
+      "wd_node": "wd:Q731112",
+      "wd_description": "transactions in which the ownership of companies, other business organizations or their operating units are transferred or combined"
+    },
+    {
+      "@id": "resin:Entities/00023/",
+      "name": "monopoly",
+      "wd_label": "monopoly",
+      "wd_node": "wd:Q43637",
+      "wd_description": "market structure with a single firm dominating the market"
+    }
+  ],
+  "relations": [
+    {
+      "@id": "resin:Relations/30000/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00000/",
+      "relationObject": "resin:Entities/00010/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30001/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00002/",
+      "relationObject": "resin:Entities/00010/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30002/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00003/",
+      "relationObject": "resin:Entities/00012/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30003/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00020/",
+      "relationObject": "resin:Entities/00019/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30004/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00021/",
+      "relationObject": "resin:Entities/00019/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30005/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00004/",
+      "relationObject": "resin:Entities/00016/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30006/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00005/",
+      "relationObject": "resin:Entities/00010/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30007/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00006/",
+      "relationObject": "resin:Entities/00010/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30008/",
+      "name": "member of",
+      "relationSubject": "resin:Entities/00007/",
+      "relationObject": "resin:Entities/00010/",
+      "wd_node": "wd:Q21503252",
+      "wd_description": "relation of type constraints",
+      "wd_label": "instance of"
+    },
+    {
+      "@id": "resin:Relations/30009/",
+      "name": "partially coincident with",
+      "relationSubject": "resin:Entities/00013/",
+      "relationObject": "resin:Entities/00012/",
+      "wd_node": "wd:Q78694451",
+      "wd_description": "",
+      "wd_label": "partially coincident with"
+    }
+  ]
+}

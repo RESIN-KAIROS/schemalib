@@ -1,0 +1,1092 @@
+{
+  "@id": "resin:Schemas/international aggression",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "International Aggression",
+      "description": "international aggression news story.",
+      "wd_node": "Q191797",
+      "wd_label": "aggression",
+      "wd_description": "overt, often harmful, social interaction with the intention of inflicting damage or unpleasantness",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_aggressor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_gol_entity_aggression_is_directed_toward",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "Background",
+      "description": "History of the conflict between countries.",
+      "wd_node": "Q180684",
+      "wd_label": "conflict",
+      "wd_description": "friction, disagreement, or discord within a group or between different groups",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_agentive_clasher",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_com_entity_clashed_with",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_ppt_entity_clashed_over",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10005",
+        "resin:Events/10006"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "Crisis",
+      "description": "One country shows aggression towards another country, causing international tension.",
+      "wd_node": "Q180684",
+      "wd_label": "conflict",
+      "wd_description": "friction, disagreement, or discord within a group or between different groups",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_agentive_clasher",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_com_entity_clashed_with",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_ppt_entity_clashed_over",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "International Response",
+      "description": "Other countries respond to the international crisis.",
+      "wd_node": "Q1168287",
+      "wd_label": "intervention",
+      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_forcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "Aftermath",
+      "description": "The outcome of the international crisis.",
+      "wd_node": "Q2751586",
+      "wd_label": "resolution",
+      "wd_description": "written declaration adopted by a deliberative body",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_announcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "A3_prd_attributive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20044",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10009",
+        "resin:Events/10010",
+        "resin:Events/10011",
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10020",
+        "resin:Events/10021",
+        "resin:Events/10025",
+        "resin:Events/10026"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "Country Backs Down",
+      "description": "The first country begins to back down",
+      "wd_node": "Q6498453",
+      "wd_label": "self-help",
+      "wd_description": "self-guided improvement, often utilizing publicly available information or support groups",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10006"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Solution",
+      "description": "A resolution is reached",
+      "wd_node": "Q321839",
+      "wd_label": "agreement",
+      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_agent_agreer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A2_com_co_agent_other_entity_agreeing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Tensions Arise",
+      "description": "Tensions rise between the two countries",
+      "wd_node": "Q11371169",
+      "wd_label": "incident",
+      "wd_description": "violent or disruptive occurrence that may precipitate a larger crisis",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt_problem",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Control Methods",
+      "description": "These responses may include economic sanctions, military action, or diplomatic pressure.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Aggressive Actions",
+      "description": "The international community may condemn the actions of the aggressor",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10027"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Isolate",
+      "description": "The aggressor may be diplomatically isolated",
+      "wd_node": "Q11714847",
+      "wd_label": "isolation",
+      "wd_description": "limitation or total lack of contacts between populations of the same species",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_entity_causing_isolation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_entity_isolated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "A2_dir_entity_that_patient_was_isolated_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10014",
+        "resin:Events/10016",
+        "resin:Events/10019"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Reparations",
+      "description": "The aggressor may be required to pay reparations",
+      "wd_node": "Q1498273",
+      "wd_label": "compensation",
+      "wd_description": "legal term",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019",
+        "resin:Events/10025"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_payer_or_buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_thing_bought_or_paid_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_gol_seller_or_person_being_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "A3_ppt_price_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20114",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10022"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Perceived Double Standard",
+      "description": "Perceived double standard",
+      "wd_node": "Q179742",
+      "wd_label": "prejudice",
+      "wd_description": "prejudgment, or forming an opinion before becoming aware of the relevant facts of a case",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_causer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_prejudiced_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_gol_prejudiced_against",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Criticize Operation",
+      "description": "The international community overwhelmingly criticized the Grenada operation",
+      "wd_node": "Q1255828",
+      "wd_label": "controversy",
+      "wd_description": "state of prolonged public dispute or debate",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009",
+        "resin:Events/10024"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_first",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_com_second_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_ppt_topic",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10018"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Negotiate Freedom",
+      "description": "The United States and Cuba negotiated the freedom of movement and activities by diplomats.",
+      "wd_node": "Q202875",
+      "wd_label": "negotiation",
+      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_agent_negotiator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_com_co_agent_explicit_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "A2_ppt_theme_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20144",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Cuba US Tensions",
+      "description": "Cuba agreed to this, but the United States did not.",
+      "wd_node": "Q104813442",
+      "wd_label": "disagreement",
+      "wd_description": "absence of consensus",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_first_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_com_second_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_ppt_topic",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Diplomatic Disagreement",
+      "description": "The two countries then had a diplomatic disagreement.",
+      "wd_node": "Q104813442",
+      "wd_label": "disagreement",
+      "wd_description": "absence of consensus",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10018",
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_first_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_com_second_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_ppt_topic",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Coordinate Authorities",
+      "description": "The first step is to contact important authorities in advance so that they can grant the necessary permission and notify their subordinates to expect, and co",
+      "wd_node": "Q21075777",
+      "wd_label": "contact",
+      "wd_description": "subclass of physical contact",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010",
+        "resin:Events/10024"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_contactor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_entity_contacted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Preventative Measures",
+      "description": "The second step is to hold a pre",
+      "wd_node": "Q1717246",
+      "wd_label": "prevention",
+      "wd_description": "causing an event or condition that would otherwise occur to not occur",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014",
+        "resin:Events/10015"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_agent_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_theme_theme",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "A2_ppt_secondary_predication_or_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "A3_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20184",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Face Mask",
+      "description": "The third step is to negotiate face",
+      "wd_node": "Q202875",
+      "wd_label": "negotiation",
+      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10023",
+        "resin:Events/10015",
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_agent_negotiator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_com_co_agent_explicit_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "A2_ppt_theme_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20194",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Quarantine",
+      "description": "This can make it difficult for the aggressor to get aid or trade with other countries.",
+      "wd_node": "Q11714847",
+      "wd_label": "isolation",
+      "wd_description": "limitation or total lack of contacts between populations of the same species",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_entity_causing_isolation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_entity_isolated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_dir_entity_that_patient_was_isolated_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10024"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Improved diplomatic relations",
+      "description": "The United States and Cuba came to an agreement that allowed the United States to open an embassy in Cuba and have diplomatic relations with the country",
+      "wd_node": "Q321839",
+      "wd_label": "agreement",
+      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010",
+        "resin:Events/10018"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_agent_agreer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A2_com_co_agent_other_entity_agreeing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Break off Trade Relations",
+      "description": "The Arab League states threatened to break off trade relations with Germany and impose a boycott on German products if the reparations agreement was carried out.",
+      "wd_node": "Q707125",
+      "wd_label": "threat",
+      "wd_description": "one person's statement that they intend to harm another, or another's property",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_agent_persuasive_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_patient_impelled_person",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "A2_prd_result_action_or_Result",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20224",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Government Decision",
+      "description": "The German government's decision was confirmed at a meeting of Chancellor Konrad Adnauer's Cabinet.",
+      "wd_node": "Q21170798",
+      "wd_label": "meeting",
+      "wd_description": "situation in which two or more persons meet",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_agent_one_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_com_co_agent_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Payment",
+      "description": "The payment may be made in a lump sum or in installments.",
+      "wd_node": "Q1148747",
+      "wd_label": "payment",
+      "wd_description": "transfer of an item of value from one party (such as a person or company) to another in exchange for the provision of goods, services or both, or to fulfill a legal obligation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_payer_or_buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_vsp_money_or_attention",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "A2_gol_person_being_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "A3_ppt_commodity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20244",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Compensate",
+      "description": "The aggressor may be required to pay compensation to individuals who were harmed during the conflict",
+      "wd_node": "Q1498273",
+      "wd_label": "compensation",
+      "wd_description": "legal term",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014",
+        "resin:Events/10015"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_payer_or_buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_thing_bought_or_paid_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_gol_seller_or_person_being_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "A3_ppt_price_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20254",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Psychological Damage",
+      "description": "The aggressor may have caused psychological damage",
+      "wd_node": "Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "Financial Support",
+      "description": "Meager and difficult to obtain, such payments were nonetheless an important beginning",
+      "wd_node": "Q1148747",
+      "wd_label": "payment",
+      "wd_description": "transfer of an item of value from one party (such as a person or company) to another in exchange for the provision of goods, services or both, or to fulfill a legal obligation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012",
+        "resin:Events/10024"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_payer_or_buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_vsp_money_or_attention",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "A2_gol_person_being_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20273",
+          "roleName": "A3_ppt_commodity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20274",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10017"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    }
+  ]
+}
