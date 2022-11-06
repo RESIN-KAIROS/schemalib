@@ -12,7 +12,7 @@ RELATION_RE = r'resin:Relations/(\d{5})/?(.*)'
 
 schema = {
         "@context": [
-        "https://kairos-sdf.s3.amazonaws.com/context/kairos-v1.4.1.jsonld",
+        "https://kairos-sdf.s3.amazonaws.com/context/kairos-v2.0.jsonld",
         {
         "caci": "https://caci.com/kairos/",
         "my_key": "caci:my_key",
@@ -20,9 +20,9 @@ schema = {
         "resin": "https://blender.cs.illinois.edu/kairos/"
         }
         ],
-        "@id": "resin:Submissions/TA1/schemas_quizlet9",
-        "sdfVersion": "1.4.1",
-        "version": "resin:disease-outbreak/quizlet9",
+        "@id": "resin:Submissions/TA1/schemas_eval",
+        "sdfVersion": "2.0",
+        "version": "resin:schemalib/eval",
         "events": [],
         "entities": [],
         "relations": []

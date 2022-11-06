@@ -11,7 +11,7 @@ done
 
 
 # for combined schema 
-# curl -X POST "https://validation.kairos.nextcentury.com/json-ld/ksf/validate" \
-#     -H "accept: application/json" \
-#     -H "Content-Type: application/ld+json" \
-#     -d "$(cat resin-schemalib.json)"
+curl -X POST "https://validation.kairos.nextcentury.com/json-ld/ksf/validate" \
+    -H "accept: application/json" \
+    -H "Content-Type: application/ld+json" \
+    -d "$(cat resin-schemalib.json)"
