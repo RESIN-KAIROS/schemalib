@@ -1,4 +1,17 @@
 # Changelog 
+## [1.0] = 2022-11-05 
+Moved all of the old schemas to `phase2a`.
+
+Documentation for SDFv3.0 is under `docs`.
+
+Old schemas are updated and moved under `phase2b/old_scenarios`.
+
+5 new scenarios are added: 
+- Infrastructure disaster 
+- International aggression
+- Investment 
+- Recession 
+- Refugee crisis 
 
 ## [Evaluation, 0.4.2] - 2022-03-21
 Updated all schemas to v2.0 and pass validation.
