@@ -1,4 +1,11 @@
 # Changelog 
+
+## [1.1] = 2022-11-21
+
+Uploaded 3 new scenarios:
+- Medical research
+- Sanctions 
+- State visit 
 ## [1.0] = 2022-11-05 
 Moved all of the old schemas to `phase2a`.
 
