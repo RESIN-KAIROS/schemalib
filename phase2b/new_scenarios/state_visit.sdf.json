@@ -1,0 +1,1014 @@
+{
+  "@id": "resin:Schemas/state visit",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "State Visit",
+      "description": "state visit news story.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "background",
+      "description": "The reason for the state visit.",
+      "wd_node": "Q6163881",
+      "wd_label": "visit",
+      "wd_description": "custom of going to the home of a relative, friend or acquaintance for social reasons",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002",
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_visitor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_com_visited",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "Visit Facility",
+      "description": "The government official visits the major facilities of the destination.",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10009",
+        "resin:Events/10010"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "Meeting",
+      "description": "The government official holds a bilateral meeting with other leaders.",
+      "wd_node": "Q3400581",
+      "wd_label": "parley",
+      "wd_description": "type of diplomatic meeting held between enemies",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_negotiator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_com_explicit_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_ppt_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10011",
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "Speech",
+      "description": "The govenment official gives a speech about the relations of the two nations.",
+      "wd_node": "Q52946",
+      "wd_label": "speech",
+      "wd_description": "human vocal communication using spoken language",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20044",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "Effects and response",
+      "description": "The public responds to the state visit and the speech.",
+      "wd_node": "Q31983622",
+      "wd_label": "reaction",
+      "wd_description": "action or statement in response to a stimulus or other event",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_ppt_reactor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_pag_reacted-to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_prd_reaction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10025",
+        "resin:Events/10019",
+        "resin:Events/10020"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Host Country Prepares",
+      "description": "The host country prepares for the visit",
+      "wd_node": "Q169489",
+      "wd_label": "security",
+      "wd_description": "tradable financial asset",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_thing_being_traded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_com_other_exchanger",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20064",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20065",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Official Visit",
+      "description": "- The guest country's leader arrives in the host country.",
+      "wd_node": "Q66317493",
+      "wd_label": "reception",
+      "wd_description": "formal party",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10008"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag_celebrator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Leaders' Summit",
+      "description": "- The leaders of the two countries meet and hold talks.",
+      "wd_node": "Q21170798",
+      "wd_label": "meeting",
+      "wd_description": "situation in which two or more persons meet",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_agent_one_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_com_co_agent_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Discussion and Negotiation",
+      "description": "Discussions and negotiations may take place.",
+      "wd_node": "Q202875",
+      "wd_label": "negotiation",
+      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_agent_negotiator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_com_co_agent_explicit_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "A2_ppt_theme_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20094",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Gift",
+      "description": "The dignitary is given a gift by the facility.",
+      "wd_node": "Q707482",
+      "wd_label": "gift",
+      "wd_description": "in law, voluntary transfer of property from one person (the donor or grantor) to another (the donee or grantee)",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_agent_giver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A2_gol_recipient_entity_given_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "AM_gol__goal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "A1_ppt_theme_thing_given",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20104",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Negotiations",
+      "description": "The two world leaders sit down at a table and talk",
+      "wd_node": "Q3400581",
+      "wd_label": "parley",
+      "wd_description": "type of diplomatic meeting held between enemies",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_negotiator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_com_explicit_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_ppt_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Treaty or Agreement",
+      "description": "They might sign a treaty or an agreement",
+      "wd_node": "Q321839",
+      "wd_label": "agreement",
+      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_agent_agreer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A2_com_co_agent_other_entity_agreeing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "President's Speech",
+      "description": "The President might give a speech",
+      "wd_node": "Q52946",
+      "wd_label": "speech",
+      "wd_description": "human vocal communication using spoken language",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20134",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "State Dinner",
+      "description": "A state dinner is usually held in the evening",
+      "wd_node": "Q657221",
+      "wd_label": "dinner",
+      "wd_description": "largest most formal meal of the day",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_eater",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_ppt_meal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Head of State Speech",
+      "description": "The president or head of state of one nation gives a speech to the president or head of state of another nation",
+      "wd_node": "Q52946",
+      "wd_label": "speech",
+      "wd_description": "human vocal communication using spoken language",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20154",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Bilateral Agreement",
+      "description": "Both leaders reaffirm the strong relationship between their two nations",
+      "wd_node": "Q815005",
+      "wd_label": "commitment",
+      "wd_description": "public expression of facts concerning the actor",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_causal_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_entity_committed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_gol_committed_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10017"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Politeness",
+      "description": "The first leader thanks the second leader for their hospitality",
+      "wd_node": "Q2728730",
+      "wd_label": "gratitude",
+      "wd_description": "feeling or attitude in acknowledgment of a benefit that one has received or will receive",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10018"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_ppt_emoter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_pag_thing_appreciated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10018"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Peaceful Meeting",
+      "description": "Both leaders express their hope for continued peace and prosperity between their two nations",
+      "wd_node": "Q321839",
+      "wd_label": "agreement",
+      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_agent_agreer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A2_com_co_agent_other_entity_agreeing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Give Speech",
+      "description": "The president or prime minister gives a speech",
+      "wd_node": "Q52946",
+      "wd_label": "speech",
+      "wd_description": "human vocal communication using spoken language",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20194",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10024",
+        "resin:Events/10021",
+        "resin:Events/10022",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Head of State Visit",
+      "description": "The head of state visits a country",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10026"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Presidential Address",
+      "description": "The speech is often given in a Joint Session or a House Reception",
+      "wd_node": "Q52946",
+      "wd_label": "speech",
+      "wd_description": "human vocal communication using spoken language",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20214",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Informal Addresses",
+      "description": "There are five known instances of informal addresses by foreign leaders or dignitaries to the House and Senate",
+      "wd_node": "Q18342738",
+      "wd_label": "public_speaking",
+      "wd_description": "process and act of speaking or giving a lecture to a group of people in a structured, deliberate manner intended to inform, influence, or entertain a listening audience",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20224",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Churchill's Christmas Speech",
+      "description": "Prime Minister Winston Churchill of the United Kingdom on December 26, 1941",
+      "wd_node": "Q1318578",
+      "wd_label": "appointment",
+      "wd_description": "action which designates a person to carry out a function(s) as a public official",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A1_ppt_theme_appointee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A0_pag_agent_appointer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "A2_prd_result_job",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Omirou's Speech",
+      "description": "Speech by the President of the House of Representatives of the Republic of Cyprus Yiannakis Omirou at the RA NA Extraordinary Sitting",
+      "wd_node": "Q52946",
+      "wd_label": "speech",
+      "wd_description": "human vocal communication using spoken language",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_talker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "A3_ppt_language",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20244",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Appreciation",
+      "description": "To thank supporters",
+      "wd_node": "Q2728730",
+      "wd_label": "gratitude",
+      "wd_description": "feeling or attitude in acknowledgment of a benefit that one has received or will receive",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026",
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_ppt_emoter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_pag_thing_appreciated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Bilateral talks",
+      "description": "They may hold bilateral talks, attend a state dinner, and tour the country.",
+      "wd_node": "Q657221",
+      "wd_label": "dinner",
+      "wd_description": "largest most formal meal of the day",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_eater",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_meal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

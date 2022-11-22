@@ -1,0 +1,1131 @@
+{
+  "@id": "resin:Schemas/sanction",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Sanction",
+      "description": "sanction news story.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20003",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "background",
+      "description": "background events that lead up to the sanction.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008",
+        "resin:Events/10009",
+        "resin:Events/10010",
+        "resin:Events/10011",
+        "resin:Events/10012"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "sanction",
+      "description": "the sanction is imposed by a country or the UN.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10013",
+        "resin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "effect",
+      "description": "the effect of the sanction.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004",
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "administrative response",
+      "description": "government agencies respond to the sanction.",
+      "wd_node": "Q1032176",
+      "wd_label": "countermeasure",
+      "wd_description": "specific action taken or system used to offset another action",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_worker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_action_or_object_being_prevented",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A3_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10017"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "economic impact",
+      "description": "the sanction impacts the global economy.",
+      "wd_node": "Q1248258",
+      "wd_label": "economic_sanctions",
+      "wd_description": "financial penalties applied by nations to persons, nations or companies to affect political change",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_applier_of_penalty",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_entity_penalized",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_prd_thing_penalized_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10018",
+        "resin:Events/10019",
+        "resin:Events/10020",
+        "resin:Events/10021",
+        "resin:Events/10022",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "social response",
+      "description": "the public responds to the sanction.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10024"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "relief",
+      "description": "sanction measures come to an end or are bypassed.",
+      "wd_node": "Q12769393",
+      "wd_label": "end",
+      "wd_description": "termination of something",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A1_ppt_thing_closing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20074",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10025",
+        "resin:Events/10029"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Person Violates Rule",
+      "description": "The person violates a rule",
+      "wd_node": "Q2995853",
+      "wd_label": "contravention",
+      "wd_description": "non-criminal offense",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_breaker_of_rules",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_ppt_rules",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Warning",
+      "description": "They are warned by a staff member.",
+      "wd_node": "Q10423562",
+      "wd_label": "notification",
+      "wd_description": "note that a postal operator sends to the recipient",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_notifier",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_gol_entity_notified",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Rule Violation",
+      "description": "They continue to violate the rule.",
+      "wd_node": "Q21256745",
+      "wd_label": "disobedience",
+      "wd_description": "neglect or refusal to obey",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_disobeyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_rule_or_rule-giver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Formal Warning",
+      "description": "They are given a formal warning.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Banned from server.",
+      "description": "They are banned from the server.",
+      "wd_node": "Q621608",
+      "wd_label": "ban",
+      "wd_description": "an official rule or ruling prohibiting something generally, or forbidding someone to do something others can do",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_lawgiver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_activity/place/item_not_allowed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_gol_secondary_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Restrictions Imposed",
+      "description": "That entity is subject to financial and other restrictions",
+      "wd_node": "Q989265",
+      "wd_label": "embargo",
+      "wd_description": "prohibition of commerce and trade with a particular country or group of countries",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_blocker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_foiled",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Appeal the Decision",
+      "description": "The entity may appeal the decision",
+      "wd_node": "Q329777",
+      "wd_label": "appeal",
+      "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_appealer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_ppt_decision_disagreed_with",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "A2_gol_appealed_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Reintegration",
+      "description": "-The sanctioned person may be rehabilitated.",
+      "wd_node": "Q2142602",
+      "wd_label": "rehabilitation",
+      "wd_description": "penological process to make a person again a functional part of society",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_restorer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt_patient_rehabilitated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_ppt_affliction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Deterrence",
+      "description": "-The sanctioned person may be deterred from future wrongdoing.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Sanction Revision",
+      "description": "The government agency may revise the sanction based on the evaluation.",
+      "wd_node": "Q32098",
+      "wd_label": "sanction",
+      "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_entity_enforcing_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_entity_being_punished",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "A2_mnr_sanctions",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20173",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Economic Collapse",
+      "description": "The sanctioned country's currency value plummets",
+      "wd_node": "Q1248258",
+      "wd_label": "economic_sanctions",
+      "wd_description": "financial penalties applied by nations to persons, nations or companies to affect political change",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_applier_of_penalty",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_entity_penalized",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "A2_prd_thing_penalized_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Inflation",
+      "description": "The country experiences inflation.",
+      "wd_node": "Q35865",
+      "wd_label": "inflation",
+      "wd_description": "increase in the general price level of goods and services in an economy over a period of time",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_causer_of_expansion",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_thing_grown",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_ext_amount_increased_by",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20194",
+          "roleName": "A4_gol_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20195",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Economic downturn",
+      "description": "The country's imports and exports decrease.",
+      "wd_node": "Q3246603",
+      "wd_label": "trade",
+      "wd_description": "sports transaction in which players are transferred between teams, usually for other players",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_thing_being_traded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_com_other_exchanger",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20204",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20205",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Business Closure",
+      "description": "Sanctioned businesses in the country close down.",
+      "wd_node": "Q5135520",
+      "wd_label": "closure",
+      "wd_description": "actions taken when it is no longer necessary or possible for a business or other organization to continue to operate",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_person_doing_the_closing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_thing_closing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Unemployment Rate Increase",
+      "description": "The country's unemployment rate increases.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10023"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Decrease in Standard of Living",
+      "description": "The country's standard of living decreases.",
+      "wd_node": "Q853930",
+      "wd_label": "starvation",
+      "wd_description": "long deficiencies of calories/nutriants cause grave morbidity, finally horrific death",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10018"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_cause_of_starvation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_entity_starving",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "A2_vsp_food/nutrient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Change in Behavior",
+      "description": "The public may change its behavior as a result of the sanction.",
+      "wd_node": "Q28873693",
+      "wd_label": "alteration",
+      "wd_description": "modification to the style, tailoring, or size of a garment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_causer_of_transformation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "A3_vsp_start_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20244",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Bypass Sanctions",
+      "description": "Sanctioned individuals or entities are allowed to bypass the measures.",
+      "wd_node": "Q11985577",
+      "wd_label": "exemption",
+      "wd_description": "rule or legal act that exempts certain persons or situations from applying a more general rule",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_releaser",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_entity_exempted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_dir_entity_exempted_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Sanctions lifted",
+      "description": "The individuals or entities are allowed to engage in transactions that would normally be prohibited by the sanctions",
+      "wd_node": "Q11985577",
+      "wd_label": "exemption",
+      "wd_description": "rule or legal act that exempts certain persons or situations from applying a more general rule",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10027",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_releaser",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_entity_exempted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_dir_entity_exempted_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "economic sanctions",
+      "description": "All property and interests in property of the individuals and entities must be blocked and reported to OFAC",
+      "wd_node": "Q46388",
+      "wd_label": "prohibition",
+      "wd_description": "the outlawing of the consumption, sale, production etc. of alcohol",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_Agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_ppt_Theme",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "A2_ppt_secondary_predication_or_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20273",
+          "roleName": "A3_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20274",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Remove Sanctions",
+      "description": "The removal of sanctions is available for persons designated under E",
+      "wd_node": "Q1428130",
+      "wd_label": "curettage",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_thing_removed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "A2_dir_source",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20283",
+          "roleName": "A3_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20284",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "Exemption",
+      "description": "The individual or entity may be exempt from the prohibitions",
+      "wd_node": "Q11985577",
+      "wd_label": "exemption",
+      "wd_description": "rule or legal act that exempts certain persons or situations from applying a more general rule",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10025"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_releaser",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_ppt_entity_exempted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "A2_dir_entity_exempted_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20293",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}
