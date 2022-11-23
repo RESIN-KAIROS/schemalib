@@ -1,6 +1,17 @@
 # Changelog 
 
-## [1.1] = 2022-11-21
+## [1.0.2] = 2022-11-22
+Additional 8 new scenarios:
+- Chemical warfare 
+- Cyber attack
+- Health care 
+- Information campaign
+- Legal process 
+- Construction
+- Nuclear attack 
+- Political corruption 
+
+## [1.0.1] = 2022-11-21
 
 Uploaded 3 new scenarios:
 - Medical research

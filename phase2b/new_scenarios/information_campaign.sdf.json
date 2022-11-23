@@ -1,0 +1,981 @@
+{
+  "@id": "resin:Schemas/information campaign",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Information Campaign",
+      "description": "information campaign news story.",
+      "wd_node": "Q98144857",
+      "wd_label": "information_campaign",
+      "wd_description": "effort to provide education",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "planning",
+      "description": "The information campaign is planned.",
+      "wd_node": "Q98144857",
+      "wd_label": "information_campaign",
+      "wd_description": "effort to provide education",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10006",
+        "resin:Events/10007",
+        "resin:Events/10008",
+        "resin:Events/10009",
+        "resin:Events/10010"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "execution",
+      "description": "The information campaign is executed.",
+      "wd_node": "Q98144857",
+      "wd_label": "information_campaign",
+      "wd_description": "effort to provide education",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10011",
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "tracking",
+      "description": "The effect of the information campaign is tracked and analyzed.",
+      "wd_node": "Q1379672",
+      "wd_label": "evaluation",
+      "wd_description": "systematic determination of a subject's merit, worth and significance",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_evaluator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt_thing_evaluated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_prd_the_assessment_itself",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "public response",
+      "description": "The public responds to the information campaign. ",
+      "wd_node": "Q8434",
+      "wd_label": "education",
+      "wd_description": "learning in which knowledge and skills are transferred through teaching",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_agent_teacher",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_topic_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_gol_recipient_student",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20044",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10017",
+        "resin:Events/10018",
+        "resin:Events/10019"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "effects",
+      "description": "Social-level changes brought by the campaign.",
+      "wd_node": "Q18812548",
+      "wd_label": "campaign",
+      "wd_description": "series of operations undertaken to achieve a defined goal",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10025",
+        "resin:Events/10020",
+        "resin:Events/10021"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Fund the campaign",
+      "description": "Creating a budget for the campaign",
+      "wd_node": "Q41263",
+      "wd_label": "budget",
+      "wd_description": "balance sheet or statement of estimated receipts and expenditures",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_allocator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_money",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_prp_purpose",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Decide on Campaign Message",
+      "description": "Deciding on the message of the campaign.",
+      "wd_node": "Q18812548",
+      "wd_label": "campaign",
+      "wd_description": "series of operations undertaken to achieve a defined goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10008"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Communication Strategy",
+      "description": "Developing strategies for delivering the message to the target audience.",
+      "wd_node": "Q16947618",
+      "wd_label": "strategizing",
+      "wd_description": "method of planning by preemptively defining actions and reactions to reach a goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_planner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_ppt_thing_planned",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "A2_cau_grounds_for_planning",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "A3_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20084",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Create Campaign Materials",
+      "description": "Creating materials for the campaign.",
+      "wd_node": "Q1519454",
+      "wd_label": "design",
+      "wd_description": "creative process",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_designer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_prd_thing_designed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "A3_prp_purpose",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20094",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Campaign Schedule",
+      "description": "Scheduling when the campaign will run.",
+      "wd_node": "Q18812548",
+      "wd_label": "campaign",
+      "wd_description": "series of operations undertaken to achieve a defined goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10006"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Gather Information",
+      "description": "Information is gathered about the campaign's target audience",
+      "wd_node": "Q42240",
+      "wd_label": "research",
+      "wd_description": "systematic study undertaken to increase knowledge",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_agent_student",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_theme_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Execution Plan",
+      "description": "A plan is created for how the campaign will be executed.",
+      "wd_node": "Q18812548",
+      "wd_label": "campaign",
+      "wd_description": "series of operations undertaken to achieve a defined goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011",
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Campaign",
+      "description": "The campaign is launched.",
+      "wd_node": "Q18812548",
+      "wd_label": "campaign",
+      "wd_description": "series of operations undertaken to achieve a defined goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Evaluation",
+      "description": "The campaign is monitored and evaluated.",
+      "wd_node": "Q265158",
+      "wd_label": "review",
+      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_reviewer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_ppt_thing_reviewed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "A2_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "A3_vsp_secondary-theme",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20144",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Evaluate results",
+      "description": "Results are reported and adjustments are made to the campaign based on the results.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Public Awareness",
+      "description": "The public becomes aware of the campaign",
+      "wd_node": "Q37038",
+      "wd_label": "advertising",
+      "wd_description": "form of communication for marketing, typically paid for",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_advertiser",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_thing_being_pitched",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Public Evaluation",
+      "description": "-The public evaluates the information and decides whether or not to support the campaign.",
+      "wd_node": "Q11640",
+      "wd_label": "outreach",
+      "wd_description": "activity of providing services to populations who might not otherwise have access to those services",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_entity_offering",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_commodity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "A2_vsp_price",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20173",
+          "roleName": "A3_gol_benefactive_or_entity_offered_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20174",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Public Support",
+      "description": "-The public takes action in support of the campaign, such as donating money or signing a petition.",
+      "wd_node": "Q1124860",
+      "wd_label": "donation",
+      "wd_description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_giver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_thing_given",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "A2_gol_entity_given_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Social Media Campaign",
+      "description": "-The public shares the campaign with others, helping to spread the message.",
+      "wd_node": "Q459221",
+      "wd_label": "sharing",
+      "wd_description": "joint use of a resource or space",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_sharer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_thing_shared",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_com_shared_with",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Convince",
+      "description": "The target audience is persuaded by the campaign's message.",
+      "wd_node": "Q1231428",
+      "wd_label": "persuasion",
+      "wd_description": "umbrella term of influence and mode of communication",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_convincer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10022"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Behavior Change",
+      "description": "The target audience changes its behavior as a result of the campaign.",
+      "wd_node": "Q28873693",
+      "wd_label": "alteration",
+      "wd_description": "modification to the style, tailoring, or size of a garment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_causer_of_transformation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "A3_vsp_start_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20214",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10024",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Supportive Discussion",
+      "description": "They started talking to each other about it, and became more convinced that it was worth supporting.",
+      "wd_node": "Q3030248",
+      "wd_label": "discussion",
+      "wd_description": "conversation between two or more people in which they express their point of view on a choosen theme",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_agent_discussant",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A2_gol_co_agent_conversation_partner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20224",
+          "roleName": "A1_ppt__topic",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Target Audience Awareness",
+      "description": "The target audience became more aware of the issue at hand",
+      "wd_node": "Q600134",
+      "wd_label": "course",
+      "wd_description": "program of study, or unit of teaching that typically lasts one academic term",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_liquid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_channel",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "First Exposure",
+      "description": "The target audience is first exposed to the campaign.",
+      "wd_node": "Q1384726",
+      "wd_label": "exposure",
+      "wd_description": "in medical context, environmental influence on an object or living thing",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_exposer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_exposed_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "A2_gol_exposed_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "End Campaign",
+      "description": "Stop the behavior that the campaign encouraged",
+      "wd_node": "Q98144857",
+      "wd_label": "information_campaign",
+      "wd_description": "effort to provide education",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_campaigner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

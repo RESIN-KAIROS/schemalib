@@ -1,0 +1,1095 @@
+{
+  "@id": "resin:Schemas/construction",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Construction",
+      "description": "construction news story.",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20003",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20004",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "history",
+      "description": "The history of the construction site.",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20014",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "planning",
+      "description": "The new building or facility is being planned.",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20024",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008",
+        "resin:Events/10009",
+        "resin:Events/10010"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "construction",
+      "description": "The building or facility is being constructed.",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20034",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10011",
+        "resin:Events/10012"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "operation",
+      "description": "The construction is complete and the building or facility is put into operation.",
+      "wd_node": "Q28972820",
+      "wd_label": "operation",
+      "wd_description": "act or process of operating; agency; the exertion of power, physical, mechanical, or moral",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_thing_operated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_gol_explicit_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "A3_prd_explicit_role",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20044",
+          "roleName": "A4_mnr_explicit_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20045",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10013",
+        "resin:Events/10014",
+        "resin:Events/10015",
+        "resin:Events/10017",
+        "resin:Events/10018",
+        "resin:Events/10019",
+        "resin:Events/10021",
+        "resin:Events/10026"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "Land Preparation",
+      "description": "The land is cleared and prepared for construction",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10006"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20054",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Erect Frame",
+      "description": "The frame of the building is erected.",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20064",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Opening Ceremony",
+      "description": "The building is officially opened.",
+      "wd_node": "Q15051339",
+      "wd_label": "opening",
+      "wd_description": "moment when an institution starts operating",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag_opener",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt_thing_opening",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "A3_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20074",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Design the building",
+      "description": "The building is designed by an architect.",
+      "wd_node": "Q12271",
+      "wd_label": "architecture",
+      "wd_description": "both the process and product of planning, designing and construction",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_designer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_prd_thing_designed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "A3_prp_purpose",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20084",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Approval",
+      "description": "The building is approved by the local government.",
+      "wd_node": "Q29526855",
+      "wd_label": "approval",
+      "wd_description": "process of giving effect to documentation in international law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_approver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_thing_approved",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_prd_secondary_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Opening",
+      "description": "The building is finished and open to the public.",
+      "wd_node": "Q15051339",
+      "wd_label": "opening",
+      "wd_description": "moment when an institution starts operating",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_opener",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_thing_opening",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "A3_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20104",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Construction Site Preparation",
+      "description": "The construction site is prepared",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20114",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Inspection",
+      "description": "The building is inspected and approved.",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Handover",
+      "description": "The construction company hands over the keys to the building or facility to the client.",
+      "wd_node": "Q2334804",
+      "wd_label": "delivery",
+      "wd_description": "process of transporting goods from a source location to a predefined destination",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_sender",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_sent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_gol_sent-to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Final Walk-Through",
+      "description": "The construction company completes the final walk-through of the building or facility with the client.",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013",
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10024",
+        "resin:Events/10020"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Completion of Construction",
+      "description": "The construction company completes the final punch list of items to be completed before the project is considered complete.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10026"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10022",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Construction Company Fixes",
+      "description": "The construction company may identify and fix items that weren't picked up while the project was being built",
+      "wd_node": "Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_builder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_construction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "A4_prd_end_state_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20164",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Liability Release",
+      "description": "The client may be responsible for maintenance and repairs, and the company may no longer be liable for any problems with the building or facility.",
+      "wd_node": "Q2144962",
+      "wd_label": "repair",
+      "wd_description": "activity to fix any broken or inoperable equipment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Client Responsibility",
+      "description": "The client is responsible for the building or facility",
+      "wd_node": "Q6498684",
+      "wd_label": "ownership",
+      "wd_description": "legal concept; relationship between a legal person and property conferring exclusive control",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10024",
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_owner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_possession",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10025"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Problems persist",
+      "description": "If problems persist for more than a year, that is unusual",
+      "wd_node": "Q621184",
+      "wd_label": "problem",
+      "wd_description": "situation that invites resolution",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016",
+        "resin:Events/10018",
+        "resin:Events/10025"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_thing_becoming_complicated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Quality Control",
+      "description": "They check to make sure that everything is up to the client's standards and that there are no outstanding issues.",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Company Statement",
+      "description": "After that, the company will issue a statement about the building's condition.",
+      "wd_node": "Q52947181",
+      "wd_label": "public_statement",
+      "wd_description": "statement made for a public audience",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_agent_announcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20214",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Inspection Team Meeting",
+      "description": "The inspection team meets with representatives of the inspected State Party",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Project Approval",
+      "description": "The minister or delegate makes a decision about whether or not the project should be approved to proceed, and if so, whether any specific conditions need to be attached to that approval",
+      "wd_node": "Q29526855",
+      "wd_label": "approval",
+      "wd_description": "process of giving effect to documentation in international law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_approver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_thing_approved",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "A2_prd_secondary_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Project Handoff",
+      "description": "The company turns over the project to the owner",
+      "wd_node": "Q1811518",
+      "wd_label": "transfer",
+      "wd_description": "sports action in which a player moves between clubs",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_sender",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_sent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "A2_gol_sent-to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "A3_dir_sent-from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20244",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Post-mortem",
+      "description": "The company evaluates the project to see what went well and what could be improved",
+      "wd_node": "Q1379672",
+      "wd_label": "evaluation",
+      "wd_description": "systematic determination of a subject's merit, worth and significance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_evaluator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_thing_evaluated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_prd_the_assessment_itself",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Company Moves On",
+      "description": "The company moves on to its next project",
+      "wd_node": "Q24895239",
+      "wd_label": "forwarding",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_sender",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_entity_forwarded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_gol_destination",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

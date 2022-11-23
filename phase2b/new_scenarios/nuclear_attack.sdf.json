@@ -1,0 +1,1756 @@
+{
+  "@id": "resin:Schemas/nuclear attack",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Nuclear Attack",
+      "description": "nuclear attack news story.",
+      "wd_node": "Q2656967",
+      "wd_label": "nuclear_explosion",
+      "wd_description": "explosion that occurs as a result of rapid release of energy from a nuclear reaction (fission or fusion)",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_bomber",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_ppt_bomb",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "A2_prd_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20003",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007",
+        "resin:Events/10008"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "preparations",
+      "description": "Preparations for the nuclear attack.",
+      "wd_node": "Q19833559",
+      "wd_label": "preparation",
+      "wd_description": "activity of achieving readiness for some event or activity",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_preparer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_thing_made_ready",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_prp_ready_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10009",
+        "resin:Events/10010",
+        "resin:Events/10011"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "attack",
+      "description": "The nuclear attack occurs.",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10008",
+        "resin:Events/10003",
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10014",
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "nuclear damage",
+      "description": "The nuclear attack causes damage in the target country.",
+      "wd_node": "Q17781833",
+      "wd_label": "destruction",
+      "wd_description": "concept of damage to an object, system or an idea",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_agent_destroyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt_patient_thing_destroyed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_mnr_instrument_instrument_of_destruction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10017"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "nuclear causality",
+      "description": "The nuclear attack causes deaths and injuries in the target country.",
+      "wd_node": "Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10018",
+        "resin:Events/10019",
+        "resin:Events/10020"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "government response",
+      "description": "The government responds to the nuclear attack.",
+      "wd_node": "Q1168287",
+      "wd_label": "intervention",
+      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_forcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10021",
+        "resin:Events/10022",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "civilian response",
+      "description": "Civilian response to the nuclear attack and take shelter.",
+      "wd_node": "Q10427676",
+      "wd_label": "civil_defense",
+      "wd_description": "protection of the citizens of a state (generally non-combatants) from military attack",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_protector",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_protected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_ppt_danger",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "A3_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20064",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "international response",
+      "description": "People from other countries react to the ongoing conflict.",
+      "wd_node": "Q31983622",
+      "wd_label": "reaction",
+      "wd_description": "action or statement in response to a stimulus or other event",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_ppt_reactor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_pag_reacted-to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A2_prd_reaction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10032",
+        "resin:Events/10029",
+        "resin:Events/10030",
+        "resin:Events/10031"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "outcome",
+      "description": "The nuclear attack leds to victory or failure of the warfare.",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10033",
+        "resin:Events/10034",
+        "resin:Events/10047"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Military Quarantine",
+      "description": "The order is relayed to the appropriate military personnel.",
+      "wd_node": "Q1665268",
+      "wd_label": "command",
+      "wd_description": "message conveying a requirement to perform a certain action",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_agent_commander",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_gol_recipient_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_ppt_topic_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20094",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Nuclear Weapons",
+      "description": "Military personnel begin to prepare for the attack, including prepping the nuclear weapons.",
+      "wd_node": "Q707125",
+      "wd_label": "threat",
+      "wd_description": "one person's statement that they intend to harm another, or another's property",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009",
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_agent_persuasive_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_patient_impelled_person",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "A2_prd_result_action_or_Result",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20104",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Nuclear Launch",
+      "description": "Once everything is in place, the nuclear weapons are launched.",
+      "wd_node": "Q44532072",
+      "wd_label": "launch",
+      "wd_description": "marketing event introducing a product, brand, or fashion collection",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_starter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_thing_being_launched",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Target Destroyed",
+      "description": "The target is destroyed.",
+      "wd_node": "Q17781833",
+      "wd_label": "destruction",
+      "wd_description": "concept of damage to an object, system or an idea",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_agent_destroyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_patient_thing_destroyed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_mnr_instrument_instrument_of_destruction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Heavy Damage",
+      "description": "The area around the target is heavily damaged.",
+      "wd_node": "Q554774",
+      "wd_label": "property_damage",
+      "wd_description": "natural or intentional damage or destruction of public or private property",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_entity_damaged",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Large Number of Casualties",
+      "description": "There is a large number of casualties.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10015"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Consequences",
+      "description": "The economic and social consequences of the attack are severe.",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Nuclear Detonation",
+      "description": "The nuclear weapon detonates",
+      "wd_node": "Q2656967",
+      "wd_label": "nuclear_explosion",
+      "wd_description": "explosion that occurs as a result of rapid release of energy from a nuclear reaction (fission or fusion)",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_bomber",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_bomb",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_prd_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Nuclear Explosion",
+      "description": "The nuclear blast wave propagates through the target country.",
+      "wd_node": "Q786054",
+      "wd_label": "detonation",
+      "wd_description": "supersonic combustion of an explosive material",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_bomber",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_bomb",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Nuclear Bomb",
+      "description": "The nuclear bomb is dropped",
+      "wd_node": "Q891854",
+      "wd_label": "bomb_attack",
+      "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_agent_attacker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_patient_entity_bombed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Bomb Explosion",
+      "description": "The bomb detonates, causing death and destruction.",
+      "wd_node": "Q786054",
+      "wd_label": "detonation",
+      "wd_description": "supersonic combustion of an explosive material",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_bomber",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_bomb",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Bomb survivors",
+      "description": "The survivors suffer from the effects of the bomb, including radiation poisoning and burns.",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Military Retaliation",
+      "description": "The military launches a counterattack against the attacking country.",
+      "wd_node": "Q2329143",
+      "wd_label": "counterattack",
+      "wd_description": "tactic employed in response to an attack",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_attacker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_entity_attacked",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Cabinet Meeting",
+      "description": "The President and his Cabinet meet to discuss the situation.",
+      "wd_node": "Q21170798",
+      "wd_label": "meeting",
+      "wd_description": "situation in which two or more persons meet",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_agent_one_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_com_co_agent_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "National Address",
+      "description": "The President addresses the nation, informing them of the attack and the government's response.",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Nuclear Warning",
+      "description": "The government issues a warning to the public about an impending nuclear attack",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10025"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Panic",
+      "description": "People start to panic and scramble to find shelter.",
+      "wd_node": "Q44619",
+      "wd_label": "fear",
+      "wd_description": "emotion induced by perceived danger or threat",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_ppt_scaredy_cat",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_afraid_of",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_gol_afraid_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Trapped",
+      "description": "Those who do find shelter may be trapped there for days or weeks.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "People Flee",
+      "description": "Some people may try to flee the area, but many will be unable to do so.",
+      "wd_node": "Q1430466",
+      "wd_label": "escape",
+      "wd_description": "response to distress",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_ppt_entity_escaping",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_loc_place_or_thing_escaped",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Nuclear Fallout",
+      "description": "The aftermath of the attack will be devastating, with many people suffering from injuries, radiation sickness, and death.",
+      "wd_node": "Q74948922",
+      "wd_label": "violent_death",
+      "wd_description": "death caused by violence",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_agent_killer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_patient_corpse",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "A2_mnr_instrument_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20283",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "UN Security Council Meeting",
+      "description": "The United Nations Security Council meets to discuss the situation",
+      "wd_node": "Q21170798",
+      "wd_label": "meeting",
+      "wd_description": "situation in which two or more persons meet",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10030"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_agent_one_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_com_co_agent_other_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10030",
+      "name": "Global Condemnation",
+      "description": "Countries around the world condemn the attack",
+      "wd_node": "Q1297428",
+      "wd_label": "strike",
+      "wd_description": "blow delivered during combat",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10031"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20300",
+          "roleName": "A0_pag_animate",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20301",
+          "roleName": "A1_ppt_thing_hit",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20302",
+          "roleName": "A2_gol_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20303",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10031",
+      "name": "UN Resolution",
+      "description": "The United Nations General Assembly passes a resolution condemning the attack",
+      "wd_node": "Q2751586",
+      "wd_label": "resolution",
+      "wd_description": "written declaration adopted by a deliberative body",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20310",
+          "roleName": "A0_pag_announcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20311",
+          "roleName": "A1_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20312",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20313",
+          "roleName": "A3_prd_attributive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20314",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10032",
+      "name": "Prepare for Nuclear War",
+      "description": "Countries around the world begin to prepare for the possibility of a nuclear war",
+      "wd_node": "Q19833559",
+      "wd_label": "preparation",
+      "wd_description": "activity of achieving readiness for some event or activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10029"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20320",
+          "roleName": "A0_pag_preparer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20321",
+          "roleName": "A1_ppt_thing_made_ready",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20322",
+          "roleName": "A2_prp_ready_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20323",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10033",
+      "name": "Explosion",
+      "description": "The death and injury of people caused by the explosion.",
+      "wd_node": "Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10035",
+        "resin:Events/10036",
+        "resin:Events/10046"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20330",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20331",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20332",
+          "roleName": "A2_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20333",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10035",
+        "resin:Events/10036"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10034",
+      "name": "Post-Explosion Damage",
+      "description": "The aftermath of the explosion, including the effects on the environment and the economy.",
+      "wd_node": "Q481609",
+      "wd_label": "damage",
+      "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20340",
+          "roleName": "A0_pag_agent_agent_causer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20341",
+          "roleName": "A1_ppt_patient_entity_damaged",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20342",
+          "roleName": "A2_mnr_instrument_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20343",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10037",
+        "resin:Events/10038",
+        "resin:Events/10039",
+        "resin:Events/10041",
+        "resin:Events/10042",
+        "resin:Events/10043",
+        "resin:Events/10044",
+        "resin:Events/10045",
+        "resin:Events/10046"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10035",
+      "name": "Hospital",
+      "description": "Bodies are taken to hospitals",
+      "wd_node": "Q3140971",
+      "wd_label": "hospitalization",
+      "wd_description": "admission of a patient to a hospital",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20350",
+          "roleName": "A0_pag_sender",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20351",
+          "roleName": "A1_ppt_injured/ill_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20352",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10036",
+      "name": "Treat Injuries",
+      "description": "Injuries are treated",
+      "wd_node": "Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20360",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20361",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20362",
+          "roleName": "A2_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20363",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10037",
+      "name": "Mourning",
+      "description": "The government declared a national day of mourning",
+      "wd_node": "Q201676",
+      "wd_label": "funeral",
+      "wd_description": "ceremony for a person who has died",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10035",
+        "resin:Events/10036",
+        "resin:Events/10046"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20370",
+          "roleName": "A0_pag__officiant",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20371",
+          "roleName": "A1_ppt__entity_buried",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20372",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20373",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10038",
+      "name": "Protest",
+      "description": "Protesters demanded government resignations and fresh elections",
+      "wd_node": "Q273120",
+      "wd_label": "protest",
+      "wd_description": "expression of objection",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20380",
+          "roleName": "A0_pag_protester",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20381",
+          "roleName": "A1_ppt_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20382",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10040"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10039",
+      "name": "Resignation",
+      "description": "The first government minister resigned in the wake of the blast",
+      "wd_node": "Q796919",
+      "wd_label": "resignation",
+      "wd_description": "act of giving up or quitting an office or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10035",
+        "resin:Events/10046"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20390",
+          "roleName": "A0_pag_agent_quitter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20391",
+          "roleName": "AM_dir__directional",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20392",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20393",
+          "roleName": "A1_ppt_source_job",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10040",
+      "name": "Debris Scattered",
+      "description": "Debris is scattered over a wide area",
+      "wd_node": "Q105460363",
+      "wd_label": "spread",
+      "wd_description": "the spread of something (e.g. a pathogen, an idea, a technique etc)",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10044",
+        "resin:Events/10046"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20400",
+          "roleName": "A0_pag_distributor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20401",
+          "roleName": "A1_ppt_things_distributed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20402",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10041",
+      "name": "Emergency Response",
+      "description": "Emergency services respond to the scene",
+      "wd_node": "Q5070802",
+      "wd_label": "emergency",
+      "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20410",
+          "roleName": "A1_ppt_nature_of_the_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20411",
+          "roleName": "A2_gol_experiencer_of_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20412",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10042",
+      "name": "Evacuation",
+      "description": "The area is evacuated",
+      "wd_node": "Q5070802",
+      "wd_label": "emergency",
+      "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10046"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20420",
+          "roleName": "A1_ppt_nature_of_the_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20421",
+          "roleName": "A2_gol_experiencer_of_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20422",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10043",
+      "name": "Investigation",
+      "description": "An investigation is launched to determine the cause of the explosion",
+      "wd_node": "Q21004260",
+      "wd_label": "inquiry",
+      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20430",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20431",
+          "roleName": "A1_ppt_location_examined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20432",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10044",
+      "name": "Cleanup",
+      "description": "The cleanup begins",
+      "wd_node": "Q1428130",
+      "wd_label": "curettage",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20440",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20441",
+          "roleName": "A1_ppt_thing_removed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20442",
+          "roleName": "A2_dir_source",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20443",
+          "roleName": "A3_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20444",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10045",
+      "name": "Rebuild Structures",
+      "description": "The damaged buildings are repaired or rebuilt",
+      "wd_node": "Q2144962",
+      "wd_label": "repair",
+      "wd_description": "activity to fix any broken or inoperable equipment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20450",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20451",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20452",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10046",
+      "name": "Economic Disruption",
+      "description": "The economy is affected as businesses in the area are disrupted",
+      "wd_node": "Q2956685",
+      "wd_label": "disruption",
+      "wd_description": "event which interferes with an ongoing process",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20460",
+          "roleName": "A0_pag_disrupter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20461",
+          "roleName": "A1_ppt_entity_disrupted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20462",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10047",
+      "name": "Productivity Loss",
+      "description": "The economy suffers from the loss of productivity",
+      "wd_node": "Q13135567",
+      "wd_label": "economic_loss",
+      "wd_description": "negative difference between revenues and costs",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10033"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20470",
+          "roleName": "A1_ppt_logical_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20471",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20472",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20473",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20474",
+          "roleName": "Am_loc_medium",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20475",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}
