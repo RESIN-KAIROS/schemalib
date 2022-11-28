@@ -1,0 +1,1337 @@
+{
+  "@id": "resin:Schemas/general crime",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "General Crime",
+      "description": "general crime news story.",
+      "wd_node": "Q83267",
+      "wd_label": "crime",
+      "wd_description": "unlawful act forbidden and punishable by criminal law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag__perp",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A2_gol__victim",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "background",
+      "description": "reasons that lead to the crime.",
+      "wd_node": "Q124490",
+      "wd_label": "violence",
+      "wd_description": "use of physical force or power with the intent to inflict harm",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_agent_of_violent_behavior",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_non-agentive_thing/action_characterized_by_violence",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_gol_target_of_violent_behavior",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "planning",
+      "description": "the perpetrator plans for the crime.",
+      "wd_node": "Q16947618",
+      "wd_label": "strategizing",
+      "wd_description": "method of planning by preemptively defining actions and reactions to reach a goal",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_planner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_thing_planned",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_cau_grounds_for_planning",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "A3_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20024",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008",
+        "resin:Events/10009"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "crime",
+      "description": "The crime is committed.",
+      "wd_node": "Q83267",
+      "wd_label": "crime",
+      "wd_description": "unlawful act forbidden and punishable by criminal law",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag__perp",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A2_gol__victim",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10010"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "investigation and justice",
+      "description": "investigation about the crime and prosecution of the perpetrator.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10011",
+        "resin:Events/10012",
+        "resin:Events/10013"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "public response",
+      "description": "The public reacts to reports of the crime.",
+      "wd_node": "Q31983622",
+      "wd_label": "reaction",
+      "wd_description": "action or statement in response to a stimulus or other event",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_ppt_reactor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_pag_reacted-to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_prd_reaction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10032",
+        "resin:Events/10033",
+        "resin:Events/10034",
+        "resin:Events/10035",
+        "resin:Events/10014",
+        "resin:Events/10015",
+        "resin:Events/10021",
+        "resin:Events/10022",
+        "resin:Events/10023",
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10029",
+        "resin:Events/10030",
+        "resin:Events/10031"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Birth",
+      "description": "A person is born",
+      "wd_node": "Q14819852",
+      "wd_label": "birth",
+      "wd_description": "the result of childbirth",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_mother",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_child",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Arrest",
+      "description": "- A person is arrested for a crime",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag__police",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt__criminal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Gather Materials",
+      "description": "The perpetrator gathers the necessary materials for the crime.",
+      "wd_node": "Q19833559",
+      "wd_label": "preparation",
+      "wd_description": "activity of achieving readiness for some event or activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_preparer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_ppt_thing_made_ready",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "A2_prp_ready_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Perpetrator Scouting",
+      "description": "The perpetrator scouts the location of the crime.",
+      "wd_node": "Q872181",
+      "wd_label": "scouting",
+      "wd_description": "world-wide movement for the education of youth, founded by Robert Baden-Powell in 1907",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10008"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_spy",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_loc_location_searched",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_ppt_intelligence_sought",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Perpetrator is Convicted",
+      "description": "The perpetrator is convicted.",
+      "wd_node": "Q2916183",
+      "wd_label": "conviction",
+      "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag__judge",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt__person_convicted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "A2_cau__convicted_of",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Report Crime",
+      "description": "The crime is reported to the police",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Investigate Crime",
+      "description": "The police investigate the crime.",
+      "wd_node": "Q21004260",
+      "wd_label": "inquiry",
+      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_location_examined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Police Arrest",
+      "description": "The police make an arrest.",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag__police",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt__criminal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Public Demand",
+      "description": "The public demands justice for the crime.",
+      "wd_node": "Q697327",
+      "wd_label": "lawsuit",
+      "wd_description": "civil action brought in a court of law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020",
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_prosecutor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_ppt_defendant",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "A2_vsp_type/grounds/accusation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10018",
+        "resin:Events/10019"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Public outcry",
+      "description": "The public demands action to prevent future crimes.",
+      "wd_node": "Q4026292",
+      "wd_label": "action",
+      "wd_description": "something an agent can do or perform",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10024",
+        "resin:Events/10030",
+        "resin:Events/10031"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_doer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt_thing_done",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_vsp_type_of_act",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10026",
+        "resin:Events/10027"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Call to action",
+      "description": "The public called for an end to police brutality and mob attacks",
+      "wd_node": "Q896527",
+      "wd_label": "deadly_force",
+      "wd_description": "force that a person knows would create a substantial risk of causing, death or serious bodily harm or injury",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_attacker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_entity_attacked",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_prd_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Call for Equal Justice",
+      "description": "The public called for equal justice under the law",
+      "wd_node": "Q273120",
+      "wd_label": "protest",
+      "wd_description": "expression of objection",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_protester",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Catch and Punish",
+      "description": "The criminals are caught and brought to justice",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10025",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag__police",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt__criminal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Criminal Sentencing",
+      "description": "The criminals are sentenced to punishment",
+      "wd_node": "Q1716571",
+      "wd_label": "banishment",
+      "wd_description": "expelling a person from a country or state; an enforced status of exile as punishment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_banisher",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_entity_expelled",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_dir_expelled_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Crime Victim Compensation",
+      "description": "The victim of the crime may receive compensation",
+      "wd_node": "Q1498273",
+      "wd_label": "compensation",
+      "wd_description": "legal term",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10025",
+        "resin:Events/10026",
+        "resin:Events/10029"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_payer_or_buyer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_thing_bought_or_paid_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_gol_seller_or_person_being_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "A3_ppt_price_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20204",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Punish the Accused",
+      "description": "The public believes that the accused is guilty and wants them to be punished",
+      "wd_node": "Q2916183",
+      "wd_label": "conviction",
+      "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag__judge",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt__person_convicted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_cau__convicted_of",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Public Opinion",
+      "description": "The public wants to see the accused brought to justice",
+      "wd_node": "Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag__litigant",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt__entity_tried",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "A2_gol__adjudicator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "A3_cau_tried_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20224",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Rehabilitate",
+      "description": "The criminal is rehabilitated",
+      "wd_node": "Q2142602",
+      "wd_label": "rehabilitation",
+      "wd_description": "penological process to make a person again a functional part of society",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10025",
+        "resin:Events/10027",
+        "resin:Events/10029"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_restorer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_patient_rehabilitated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "A2_ppt_affliction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "End Violence",
+      "description": "The only specific demand was for an immediate end to police brutality and mob attacks",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Justified Anger",
+      "description": "The demand for justice is justified, but at what price",
+      "wd_node": "Q467033",
+      "wd_label": "feud",
+      "wd_description": "long-running argument or fight, often between social groups of people, especially families or clans",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_first_fighter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_com_second_fighter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_ppt_spoils_or_point_of_contention",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10028"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Address the Root Causes",
+      "description": "This includes taking steps to address the root causes of crime, such as poverty and inequality.",
+      "wd_node": "Q1168287",
+      "wd_label": "intervention",
+      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10027"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_forcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "Prevention",
+      "description": "The first step is for the public to demand action from the government to prevent future crimes.",
+      "wd_node": "Q4026292",
+      "wd_label": "action",
+      "wd_description": "something an agent can do or perform",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_doer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_ppt_thing_done",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "A2_vsp_type_of_act",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20273",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Public Accountability",
+      "description": "The third step is for the public to hold the government accountable for its actions and ensure that the policies are effective.",
+      "wd_node": "Q1379672",
+      "wd_label": "evaluation",
+      "wd_description": "systematic determination of a subject's merit, worth and significance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_evaluator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_thing_evaluated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "A2_prd_the_assessment_itself",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20283",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "Politicians Take Action",
+      "description": "Politicians may feel pressure to take action in order to appease the public",
+      "wd_node": "Q4026292",
+      "wd_label": "action",
+      "wd_description": "something an agent can do or perform",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_doer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_ppt_thing_done",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "A2_vsp_type_of_act",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20293",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10030",
+      "name": "Population Surveillance",
+      "description": "There may be an increase in surveillance and monitoring of the population",
+      "wd_node": "Q2143522",
+      "wd_label": "monitoring",
+      "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20300",
+          "roleName": "A0_pag_observer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20301",
+          "roleName": "A1_loc_thing_looked_at",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20302",
+          "roleName": "A2_ppt_looking_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20303",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10031",
+      "name": "Civil Liberties Curtailed",
+      "description": "Civil liberties may be curtailed in the name of public safety",
+      "wd_node": "Q223625",
+      "wd_label": "curfew",
+      "wd_description": "ban on entering public areas such as streets or squares at certain times",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20310",
+          "roleName": "A0_pag_lawgiver",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20311",
+          "roleName": "A1_ppt_activity/place/item_not_allowed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20312",
+          "roleName": "A2_gol_secondary_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20313",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10032",
+      "name": "Tired of Talking",
+      "description": "The public is tired of politicians sitting around and talking",
+      "wd_node": "Q7163",
+      "wd_label": "politics",
+      "wd_description": "practice and theory of influencing other people, as in government",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10015"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20320",
+          "roleName": "A0_pag_influencer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20321",
+          "roleName": "A1_ppt_influenced",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20322",
+          "roleName": "A2_prd_induced_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20323",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10017"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10033",
+      "name": "Climate Crisis",
+      "description": "The climate crisis is the most important issue facing humanity",
+      "wd_node": "Q10711575",
+      "wd_label": "emissions",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10015"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20330",
+          "roleName": "A0_pag_emitting_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20331",
+          "roleName": "A1_ppt_thing_emitted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20332",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10034",
+      "name": "Public Awareness",
+      "description": "The public needs to continue to take action to have an impact",
+      "wd_node": "Q1168287",
+      "wd_label": "intervention",
+      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20340",
+          "roleName": "A0_pag_forcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20341",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20342",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20343",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10035",
+      "name": "Protests and Riots",
+      "description": "The protests and riots that have followed",
+      "wd_node": "Q124757",
+      "wd_label": "riot",
+      "wd_description": "form of civil disorder",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10032",
+        "resin:Events/10016",
+        "resin:Events/10018",
+        "resin:Events/10019",
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20350",
+          "roleName": "A0_pag__rioter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20351",
+          "roleName": "A1_cau__who/what_the_riot_is_against",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20352",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10020"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

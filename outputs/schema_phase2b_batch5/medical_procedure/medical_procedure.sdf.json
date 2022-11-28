@@ -1,0 +1,1139 @@
+{
+  "@id": "resin:Schemas/medical procedure",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Medical Procedure",
+      "description": "medical procedure news story.",
+      "wd_node": "Q41689629",
+      "wd_label": "procedure",
+      "wd_description": "standardised method of carrying out a task",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_ppt_process_or_operation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20003",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "Propaedeutic procedures",
+      "description": "Basic medical inspections and measurements of the patient.",
+      "wd_node": "Q1355298",
+      "wd_label": "examination",
+      "wd_description": "process to determine knowledge or skills",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "A2_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10006",
+        "resin:Events/10007",
+        "resin:Events/10008",
+        "resin:Events/10009",
+        "resin:Events/10010",
+        "resin:Events/10011",
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "Diagnostic procedures",
+      "description": "Procedures that can be used to help diagnose the illness of the patient.",
+      "wd_node": "Q16644043",
+      "wd_label": "diagnosis",
+      "wd_description": "identification of the nature and cause of a certain phenomenon, which is used in many different disciplines to determine causality",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003",
+        "resin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_doctor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_prd_illness",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10017",
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "Therapeutic procedures",
+      "description": "Procedures that are used to treat the illness.",
+      "wd_node": "Q179661",
+      "wd_label": "treatment",
+      "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag__doctor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt__patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20032",
+          "roleName": "A2_ppt__illness_or_injury",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20033",
+          "roleName": "A3_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20034",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10018",
+        "resin:Events/10019",
+        "resin:Events/10020"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "Surgical procedures",
+      "description": "Surgery procedures on the patient.",
+      "wd_node": "Q40821",
+      "wd_label": "surgery",
+      "wd_description": "medical specialty",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_surgeon",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20043",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10021",
+        "resin:Events/10022"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "Anesthesia procedures",
+      "description": "Treating the patient with global or local anesthesia to enable painless performance of procedures.",
+      "wd_node": "Q40821",
+      "wd_label": "surgery",
+      "wd_description": "medical specialty",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_surgeon",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10029",
+        "resin:Events/10030",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "Patient Arrival",
+      "description": "The patient arrives at the medical facility and is greeted by staff",
+      "wd_node": "Q45594",
+      "wd_label": "greeting",
+      "wd_description": "expression to acknowledge another person",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_pag_greeter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_thing_greeted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_cau_secondary_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "A3_mnr_specific_reaction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20064",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "Patient Information",
+      "description": "The patient is asked to provide basic information, such as their name and reason for visit.",
+      "wd_node": "Q1068755",
+      "wd_label": "check-in",
+      "wd_description": "process whereby a person announces their arrival at a hotel, hospital, event, airport or sea port",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10008"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_pag_staff_member_or_other_entity_enabling_the_checking_in",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_ppt_entity_being_checked_in",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A2_gol_place_checked_into",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Patient Examination",
+      "description": "The patient is asked to lie down on the examination table.",
+      "wd_node": "Q1355298",
+      "wd_label": "examination",
+      "wd_description": "process to determine knowledge or skills",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "A2_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Urine Sample",
+      "description": "The patient is asked to provide a urine sample, if necessary.",
+      "wd_node": "Q49906",
+      "wd_label": "sample",
+      "wd_description": "set of data collected and/or selected from a statistical population by a defined procedure",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_sampler",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_thing_sampled",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_dir_source_of_the_samples",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Gown",
+      "description": "The patient is given a gown to wear during the procedure.",
+      "wd_node": "Q41689629",
+      "wd_label": "procedure",
+      "wd_description": "standardised method of carrying out a task",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_process_or_operation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Preparation",
+      "description": "The medical staff prepares the patient for the procedure.",
+      "wd_node": "Q19833559",
+      "wd_label": "preparation",
+      "wd_description": "activity of achieving readiness for some event or activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_preparer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_thing_made_ready",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_prp_ready_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Medication",
+      "description": "The patient is given any necessary medication to help them relax during the procedure.",
+      "wd_node": "Q41689629",
+      "wd_label": "procedure",
+      "wd_description": "standardised method of carrying out a task",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_ppt_process_or_operation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Procedure",
+      "description": "The procedure is performed.",
+      "wd_node": "Q41689629",
+      "wd_label": "procedure",
+      "wd_description": "standardised method of carrying out a task",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_process_or_operation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Patient Monitoring",
+      "description": "The patient is monitored for any complications after the procedure.",
+      "wd_node": "Q2143522",
+      "wd_label": "monitoring",
+      "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_observer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_loc_thing_looked_at",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "A2_ppt_looking_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Medical History",
+      "description": "The medical professional obtains a medical history from the patient.",
+      "wd_node": "Q178651",
+      "wd_label": "interview",
+      "wd_description": "structured series of questions and answers",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag_interviewer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_gol_interviewee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_ppt_purpose_or_subject_matter_of_interview",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "Order Diagnostic Tests",
+      "description": "The medical professional orders diagnostic tests.",
+      "wd_node": "Q106171319",
+      "wd_label": "testing",
+      "wd_description": "the collective event of testing whole or parts of the population of a place in a period of time for a disesase. NOT the single event of testing a person, but the collective event of testing multiple people.",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_ppt_in_search_of",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "A3_prd_test_result",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20164",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Diagnose",
+      "description": "The diagnostic tests are performed.",
+      "wd_node": "Q16644043",
+      "wd_label": "diagnosis",
+      "wd_description": "identification of the nature and cause of a certain phenomenon, which is used in many different disciplines to determine causality",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_doctor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "A2_prd_illness",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20173",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Medical Assessment",
+      "description": "The doctor will assess the patient",
+      "wd_node": "Q1355298",
+      "wd_label": "examination",
+      "wd_description": "process to determine knowledge or skills",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "A2_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Surgery",
+      "description": "The patient will be given a general anaesthetic to put them to sleep during the procedure",
+      "wd_node": "Q40821",
+      "wd_label": "surgery",
+      "wd_description": "medical specialty",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_surgeon",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Patient in Recovery",
+      "description": "The patient will be taken to recovery where they will be monitored for any complications",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Anesthesia",
+      "description": "The patient is given anesthesia to prevent pain during the surgery",
+      "wd_node": "Q40821",
+      "wd_label": "surgery",
+      "wd_description": "medical specialty",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_surgeon",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Incision",
+      "description": "The surgeon makes an incision in the patient's skin to access the area of the body that will be operated on.",
+      "wd_node": "Q40821",
+      "wd_label": "surgery",
+      "wd_description": "medical specialty",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_surgeon",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Give Anesthesia",
+      "description": "The patient is given global or local anesthesia to numb the area where the procedure will be performed",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10024"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Physician Assisted Abortion",
+      "description": "The physician performing the abortion will be physically present during the performance of the entire abortion procedure.",
+      "wd_node": "Q8452",
+      "wd_label": "abortion",
+      "wd_description": "intentional ending of a pregnancy",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10029",
+        "resin:Events/10030"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_causer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_entity_aborted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Induce Abortion",
+      "description": "The physician prescribing, dispensing, or otherwise providing any drug or chemical for the purpose of inducing an abortion will be physically present in the same room as the patient when the first drug or chemical is administered to the patient.",
+      "wd_node": "Q8452",
+      "wd_label": "abortion",
+      "wd_description": "intentional ending of a pregnancy",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10029"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_causer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_entity_aborted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Pyridostigmine Bromide",
+      "description": "The patient is given a small dose of pyridostigmine bromide to reverse the effect of anesthesia",
+      "wd_node": "Q3269441",
+      "wd_label": "side_effect",
+      "wd_description": "medicinal effect, whether therapeutic or adverse, that is secondary to the one intended",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_effect",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "Airborne",
+      "description": "The patient is placed in an airborne",
+      "wd_node": "Q11714847",
+      "wd_label": "isolation",
+      "wd_description": "limitation or total lack of contacts between populations of the same species",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_entity_causing_isolation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_ppt_entity_isolated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "A2_dir_entity_that_patient_was_isolated_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20273",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Patient Wears Mask",
+      "description": "The patient wears a surgical mask when outside their room",
+      "wd_node": "Q617224",
+      "wd_label": "wear",
+      "wd_description": "damaging, gradual removal or deformation of material at solid surfaces",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_Cause_of_erosion",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_Thing_eroded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "A2_dir_Source_location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20283",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "Side Effects",
+      "description": "The patient may experience side effects from the anesthesia, such as dizziness, nausea, or vomiting.",
+      "wd_node": "Q127076",
+      "wd_label": "vomiting",
+      "wd_description": "forcible expulsion of the contents of the stomach through the mouth",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_person_vomiting",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_ppt_vomit",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10030",
+      "name": "Administer Anesthesia",
+      "description": "To prevent the patient from feeling pain during the procedure",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}
