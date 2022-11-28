@@ -1,5 +1,15 @@
 # Changelog 
 
+## [1.0.3]=2022-11-28
+Added schemas for 
+- General crime 
+- international negotiation
+- Environmental protection 
+- Trading 
+- Protest 
+- Transport accident 
+- Medical Procedure 
+
 ## [1.0.2] = 2022-11-22
 Additional 8 new scenarios:
 - Chemical warfare 
