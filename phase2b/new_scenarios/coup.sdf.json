@@ -1,0 +1,1966 @@
+{
+  "@id": "resin:Schemas/coup",
+  "sdfVersion": "3.0",
+  "version": "resin:Phase2b",
+  "events": [
+    {
+      "@id": "resin:Events/10000",
+      "name": "Coup",
+      "description": "coup news story.",
+      "wd_node": "Q10931",
+      "wd_label": "revolution",
+      "wd_description": "fundamental change in power or organizational structures that takes place in a relatively short period of time",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20000",
+          "roleName": "A0_pag_revolting_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20001",
+          "roleName": "A1_gol_revolting_against",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20002",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10001",
+        "resin:Events/10002",
+        "resin:Events/10003",
+        "resin:Events/10004",
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "resin:Events/10001",
+      "name": "background",
+      "description": "political, social, or economic conflict that leads to the coup.",
+      "wd_node": "Q7897387",
+      "wd_label": "unrest",
+      "wd_description": "sociopolitical turbulence and discontent, may involve riots",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20010",
+          "roleName": "A0_pag_protester",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20011",
+          "roleName": "A1_ppt_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20012",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10008",
+        "resin:Events/10009",
+        "resin:Events/10010",
+        "resin:Events/10011"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10002",
+      "name": "conflict escalation",
+      "description": "conflicts escalate between the ruling government and the party to attempt the coup.",
+      "wd_node": "Q79084310",
+      "wd_label": "clash",
+      "wd_description": "event or series of events where two groups of people which differ collide or come in contact",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_1st",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20021",
+          "roleName": "A1_com_entity_clashed_with_when_separat_constituent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20022",
+          "roleName": "A2_ppt_entity_clashed_over",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10012",
+        "resin:Events/10013",
+        "resin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10003",
+      "name": "coup",
+      "description": "the coup occurs.",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004",
+        "resin:Events/10006",
+        "resin:Events/10007"
+      ],
+      "participants": [],
+      "children": [
+        "resin:Events/10016",
+        "resin:Events/10017",
+        "resin:Events/10015"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "government deposition",
+      "description": "the ruling party is overturned.",
+      "wd_node": "Q10931",
+      "wd_label": "revolution",
+      "wd_description": "fundamental change in power or organizational structures that takes place in a relatively short period of time",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20040",
+          "roleName": "A0_pag_revolting_entity",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20041",
+          "roleName": "A1_gol_revolting_against",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20042",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10018",
+        "resin:Events/10019"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10005",
+      "name": "new government action",
+      "description": "the new government implements its agenda.",
+      "wd_node": "Q245962",
+      "wd_label": "implementation",
+      "wd_description": "realization of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20050",
+          "roleName": "A0_pag_implementer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20051",
+          "roleName": "A1_ppt_thing_implemented",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20052",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10020",
+        "resin:Events/10021",
+        "resin:Events/10022",
+        "resin:Events/10023",
+        "resin:Events/10024"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10006",
+      "name": "civilian reaction",
+      "description": "civilians react to the coup.",
+      "wd_node": "Q44619",
+      "wd_label": "fear",
+      "wd_description": "emotion induced by perceived danger or threat",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20060",
+          "roleName": "A0_ppt_scaredy_cat",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20061",
+          "roleName": "A1_ppt_afraid_of",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20062",
+          "roleName": "A2_gol_afraid_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20063",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10025"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10007",
+      "name": "international response",
+      "description": "people from other countries react to the ongoing coup.",
+      "wd_node": "Q31983622",
+      "wd_label": "reaction",
+      "wd_description": "action or statement in response to a stimulus or other event",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20070",
+          "roleName": "A0_ppt_reactor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20071",
+          "roleName": "A1_pag_reacted-to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20072",
+          "roleName": "A2_prd_reaction",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20073",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10036",
+        "resin:Events/10037",
+        "resin:Events/10038",
+        "resin:Events/10041",
+        "resin:Events/10042",
+        "resin:Events/10048",
+        "resin:Events/10052",
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028",
+        "resin:Events/10029"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Change in Government",
+      "description": "A change in government",
+      "wd_node": "Q38772044",
+      "wd_label": "transition",
+      "wd_description": "change from one state to another (FSM can change from one state to another in response to some external inputs)",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20080",
+          "roleName": "A0_pag_causer_of_change",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20081",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20082",
+          "roleName": "A2_gol_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20083",
+          "roleName": "A3_dir_start_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20084",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10009",
+      "name": "Ruling Party Change",
+      "description": "A change in the ruling party",
+      "wd_node": "Q28873693",
+      "wd_label": "alteration",
+      "wd_description": "modification to the style, tailoring, or size of a garment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_causer_of_transformation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "A3_vsp_start_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20094",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10010",
+      "name": "Constitutional Amendment",
+      "description": "A change in the constitution",
+      "wd_node": "Q28873693",
+      "wd_label": "alteration",
+      "wd_description": "modification to the style, tailoring, or size of a garment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20100",
+          "roleName": "A0_pag_causer_of_transformation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20101",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20102",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "A3_vsp_start_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20104",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10011",
+      "name": "Economic Change",
+      "description": "A change in the economic system",
+      "wd_node": "Q28873693",
+      "wd_label": "alteration",
+      "wd_description": "modification to the style, tailoring, or size of a garment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20110",
+          "roleName": "A0_pag_causer_of_transformation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20111",
+          "roleName": "A1_ppt_thing_changing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20112",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20113",
+          "roleName": "A3_vsp_start_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20114",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10012",
+      "name": "Governmental Disagreement",
+      "description": "The ruling government and the party attempting the coup begin to disagree on more and more issues",
+      "wd_node": "Q104813442",
+      "wd_label": "disagreement",
+      "wd_description": "absence of consensus",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20120",
+          "roleName": "A0_pag_first_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20121",
+          "roleName": "A1_com_second_arguer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20122",
+          "roleName": "A2_ppt_topic",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10013",
+      "name": "Coup Attempt",
+      "description": "The party attempting the coup becomes increasingly frustrated with the ruling government.",
+      "wd_node": "Q12897867",
+      "wd_label": "attempt",
+      "wd_description": "action whose success is not guaranteed",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_Agent/Entity_Trying",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_thing_tried",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10014",
+      "name": "Coup Planning",
+      "description": "The party attempting the coup begins to plan and prepare for a coup.",
+      "wd_node": "Q16947618",
+      "wd_label": "strategizing",
+      "wd_description": "method of planning by preemptively defining actions and reactions to reach a goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20140",
+          "roleName": "A0_pag_planner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20141",
+          "roleName": "A1_ppt_thing_planned",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20142",
+          "roleName": "A2_cau_grounds_for_planning",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20143",
+          "roleName": "A3_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20144",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10015",
+      "name": "Presidential Arrest",
+      "description": "The president and his family are taken into custody.",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20150",
+          "roleName": "A0_pag__police",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20151",
+          "roleName": "A1_ppt__criminal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20152",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20153",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10016",
+      "name": "New Government",
+      "description": "The soldiers declare a new government.",
+      "wd_node": "Q7163",
+      "wd_label": "politics",
+      "wd_description": "practice and theory of influencing other people, as in government",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20160",
+          "roleName": "A0_pag_influencer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20161",
+          "roleName": "A1_ppt_influenced",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20162",
+          "roleName": "A2_prd_induced_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10017",
+      "name": "Presidential Execution",
+      "description": "The president is executed.",
+      "wd_node": "Q3966286",
+      "wd_label": "execution",
+      "wd_description": "homicide as capital punishment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20170",
+          "roleName": "A0_pag_agent_killer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20171",
+          "roleName": "A1_ppt_patient_corpse",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20172",
+          "roleName": "AM_cau__cause",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20173",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10018",
+      "name": "Government Overthrow",
+      "description": "The current government is overthrown by a group of rebels or a foreign invader",
+      "wd_node": "Q467011",
+      "wd_label": "invasion",
+      "wd_description": "type of military offensive where armed forces of one polity forcibly enter another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20180",
+          "roleName": "A0_pag_agent_invader",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20181",
+          "roleName": "A1_ppt_patient_place_invaded",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20182",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20183",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10019",
+      "name": "Old Government Overthrown",
+      "description": "The old government is either exiled or killed.",
+      "wd_node": "Q66023226",
+      "wd_label": "dethronement",
+      "wd_description": "removing a monarch from power",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20190",
+          "roleName": "A0_pag_usurper",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20191",
+          "roleName": "A1_ppt_king",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20192",
+          "roleName": "A2_prd_kingdom",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10020",
+      "name": "Government Takeover",
+      "description": "The new government seizes control of the government institutions",
+      "wd_node": "Q1416898",
+      "wd_label": "takeover",
+      "wd_description": "purchase of one company (the target) by another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_thing_acquired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20202",
+          "roleName": "A2_dir_seller",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20203",
+          "roleName": "A3_vsp_price_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20204",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20205",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10021",
+      "name": "Martial Law",
+      "description": "The new government suspends or dissolves the legislature and/or the judiciary.",
+      "wd_node": "Q105387498",
+      "wd_label": "suspension",
+      "wd_description": "halt of implementation of a legal action",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10022"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20210",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20211",
+          "roleName": "A1_ppt_action_or_object_being_stopped",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20212",
+          "roleName": "A2_prd_attribute/function_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "State of Emergency/Martial Law",
+      "description": "The new government declares a state of emergency and/or martial law.",
+      "wd_node": "Q5070802",
+      "wd_label": "emergency",
+      "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A1_ppt_nature_of_the_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A2_gol_experiencer_of_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Government Restrictions",
+      "description": "The new government restricts freedom of assembly and/or freedom of association.",
+      "wd_node": "Q46388",
+      "wd_label": "prohibition",
+      "wd_description": "the outlawing of the consumption, sale, production etc. of alcohol",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_Agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_Theme",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "A2_ppt_secondary_predication_or_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "A3_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20234",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Government Suppression",
+      "description": "The new government suppresses protests and/or demonstrations.",
+      "wd_node": "Q543",
+      "wd_label": "censorship",
+      "wd_description": "practice of suppressing speech or other public communication",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_suppressor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_suppressed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Military Reaction",
+      "description": "Military reaction is defined as \"the military reacts to the coup.",
+      "wd_node": "Q1168287",
+      "wd_label": "intervention",
+      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_forcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Coup d'etat",
+      "description": "Other countries condemn the coup",
+      "wd_node": "Q1297428",
+      "wd_label": "strike",
+      "wd_description": "blow delivered during combat",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10027",
+        "resin:Events/10036",
+        "resin:Events/10037"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_animate",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_thing_hit",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_gol_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10032",
+        "resin:Events/10033",
+        "resin:Events/10034",
+        "resin:Events/10035",
+        "resin:Events/10031"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "Call for Democracy",
+      "description": "Other countries call for the restoration of democracy.",
+      "wd_node": "Q273120",
+      "wd_label": "protest",
+      "wd_description": "expression of objection",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10039"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_protester",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_ppt_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10040",
+        "resin:Events/10039"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Foreign Assistance",
+      "description": "Other countries offer assistance to the government that was overthrown.",
+      "wd_node": "Q1168287",
+      "wd_label": "intervention",
+      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10036",
+        "resin:Events/10039",
+        "resin:Events/10048"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_forcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "A2_prd_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20283",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10043",
+        "resin:Events/10044",
+        "resin:Events/10046"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "Consequences of a Coup",
+      "description": "Other countries sever diplomatic relations with the country that carried out the coup.",
+      "wd_node": "Q102186844",
+      "wd_label": "focal_seizure",
+      "wd_description": "symptom",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A1_ppt_entity_experiencing_a_seizure",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10049",
+        "resin:Events/10051"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10030",
+      "name": "Burkina Faso Coup",
+      "description": "The UN, African Union, and European Union condemned the latest coup in Burkina Faso",
+      "wd_node": "Q273120",
+      "wd_label": "protest",
+      "wd_description": "expression of objection",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10048",
+        "resin:Events/10027"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20300",
+          "roleName": "A0_pag_protester",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20301",
+          "roleName": "A1_ppt_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20302",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10031",
+      "name": "Targeted Sanctions",
+      "description": "The United States is considering targeted sanctions on individuals and entities controlled by Myanmar's military",
+      "wd_node": "Q1297428",
+      "wd_label": "strike",
+      "wd_description": "blow delivered during combat",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10048"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20310",
+          "roleName": "A0_pag_animate",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20311",
+          "roleName": "A1_ppt_thing_hit",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20312",
+          "roleName": "A2_gol_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20313",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10032",
+      "name": "China's Cautious Response",
+      "description": "China joined the consensus on the UNSC statement but has not condemned the army takeover and has said countries should act in the interests of the stability of its neighbour Myanmar",
+      "wd_node": "Q202722",
+      "wd_label": "consensus",
+      "wd_description": "general agreement on a subject",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10027"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20320",
+          "roleName": "A0_pag_agreer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20321",
+          "roleName": "A1_ppt_proposition",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20322",
+          "roleName": "A2_com_other_entity_agreeing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20323",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10033",
+      "name": "Call for Release",
+      "description": "UN Myanmar envoy Christine Schraner Burgener strongly condemned the coup in a call with Myanmar's deputy military chief, Soe Win, and called for the immediate release of all those detained, a UN spokesman said",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20330",
+          "roleName": "A0_pag__police",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20331",
+          "roleName": "A1_ppt__criminal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20332",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20333",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10034",
+      "name": "Civilian Casualties",
+      "description": "Canada accuses the military factions of fighting for power with no regard for the civilian population",
+      "wd_node": "Q19357312",
+      "wd_label": "accusation",
+      "wd_description": "act of accusing or charging another with a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10040"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20340",
+          "roleName": "A0_pag_agent_accuser",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20341",
+          "roleName": "A1_ppt_theme_accused",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20342",
+          "roleName": "A2_prd_attribute_crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20343",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10030"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10035",
+      "name": "Call for Coup Condemnation",
+      "description": "Secretary of State Antony Blinken presses top Chinese diplomat Yang Jiechi to condemn the coup in a phone call",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10040"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10036",
+      "name": "Aid Reduction or End",
+      "description": "Other countries may reduce or end aid to Myanmar",
+      "wd_node": "Q12769393",
+      "wd_label": "end",
+      "wd_description": "termination of something",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20360",
+          "roleName": "A1_ppt_thing_closing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20361",
+          "roleName": "A2_ext_EXT",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20362",
+          "roleName": "A3_dir_start_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20363",
+          "roleName": "A4_prd_end_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20364",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10037",
+      "name": "Isolation",
+      "description": "Other countries may sever diplomatic relations",
+      "wd_node": "Q989265",
+      "wd_label": "embargo",
+      "wd_description": "prohibition of commerce and trade with a particular country or group of countries",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20370",
+          "roleName": "A0_pag_blocker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20371",
+          "roleName": "A1_ppt_foiled",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20372",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10038",
+      "name": "Pariah State",
+      "description": "The country may become a pariah state",
+      "wd_node": "Q11714847",
+      "wd_label": "isolation",
+      "wd_description": "limitation or total lack of contacts between populations of the same species",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10046",
+        "resin:Events/10028",
+        "resin:Events/10031"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20380",
+          "roleName": "A0_pag_entity_causing_isolation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20381",
+          "roleName": "A1_ppt_entity_isolated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20382",
+          "roleName": "A2_dir_entity_that_patient_was_isolated_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20383",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10039",
+      "name": "Return to Democracy",
+      "description": "The United States has an interest in seeing democracy return to Thailand as rapidly as possible.",
+      "wd_node": "Q7163",
+      "wd_label": "politics",
+      "wd_description": "practice and theory of influencing other people, as in government",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10029",
+        "resin:Events/10044"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20390",
+          "roleName": "A0_pag_influencer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20391",
+          "roleName": "A1_ppt_influenced",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20392",
+          "roleName": "A2_prd_induced_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20393",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10040",
+      "name": "Catherine Ashton speaks",
+      "description": "EU foreign policy chief Catherine Ashton said",
+      "wd_node": "Q52947181",
+      "wd_label": "public_statement",
+      "wd_description": "statement made for a public audience",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20400",
+          "roleName": "A0_pag_agent_announcer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20401",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20402",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20403",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20404",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10041",
+      "name": "Western Intervention",
+      "description": "The Western world wants to help \u201crestore\u201d the country\u2019s path to democracy.",
+      "wd_node": "Q1643184",
+      "wd_label": "help",
+      "wd_description": "cooperation between living things",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10048",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20410",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20411",
+          "roleName": "A1_ppt_project",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20412",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20413",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10045",
+        "resin:Events/10047"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10042",
+      "name": "Return to Power",
+      "description": "ASEAN wants a \u201creturn.\u201d The EU stated in January that it \u201cdemands\u2026the return to power of democratically elected leaders,\u201d meaning the National League for Democracy (NLD) government that was re-elected in November 2020.",
+      "wd_node": "Q481394",
+      "wd_label": "re-election",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10026",
+        "resin:Events/10028",
+        "resin:Events/10030"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20420",
+          "roleName": "A0_pag_voters",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20421",
+          "roleName": "A1_ppt_candidate",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20422",
+          "roleName": "A2_prd_office_or_position",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20423",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10043",
+      "name": "Support the Government",
+      "description": "The Soviet Union and conservative Arab states supplied substantial military and financial aid to the government that was overthrown",
+      "wd_node": "Q5409930",
+      "wd_label": "supply",
+      "wd_description": "economic activity aimed at covering the consumption needs of an economic unit",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10047",
+        "resin:Events/10049",
+        "resin:Events/10026"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20430",
+          "roleName": "A0_pag_provider",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20431",
+          "roleName": "A1_ppt_thing_provided",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20432",
+          "roleName": "A2_gol_entity_provided_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20433",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10044",
+      "name": "Countries That Supplied Saddam",
+      "description": "Other countries known to have supplied the Iraqi dictator include Argentina, Brazil, Egypt, Greece, India, Romania, Japan, the Netherlands, Poland, Sweden, Spain, China, Yugoslavia, South Korea, North Korea, Cuba, Denmark, Finland and Norway",
+      "wd_node": "Q5409930",
+      "wd_label": "supply",
+      "wd_description": "economic activity aimed at covering the consumption needs of an economic unit",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20440",
+          "roleName": "A0_pag_provider",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20441",
+          "roleName": "A1_ppt_thing_provided",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20442",
+          "roleName": "A2_gol_entity_provided_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20443",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10045",
+      "name": "Aid Requirements",
+      "description": "The new government must meet certain requirements in order to receive aid",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10028",
+        "resin:Events/10030",
+        "resin:Events/10031"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10046",
+      "name": "Aid Reinstated",
+      "description": "If the new government meets these requirements, aid is reinstated",
+      "wd_node": "Q107036510",
+      "wd_label": "restoration",
+      "wd_description": "event of something being returned to a prior state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10050"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20460",
+          "roleName": "A0_pag_restorer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20461",
+          "roleName": "A1_ppt_thing_restored",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20462",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20463",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10047",
+      "name": "Gain Favor",
+      "description": "The assisting country wants to gain favor with the new government",
+      "wd_node": "Q102358908",
+      "wd_label": "support",
+      "wd_description": "help for a person in a difficult situation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10051",
+        "resin:Events/10027",
+        "resin:Events/10028"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20470",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20471",
+          "roleName": "A1_ppt_person",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20472",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10050"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10048",
+      "name": "Aid to the Country",
+      "description": "The U.S. would have to reinstate aid to the country.",
+      "wd_node": "Q1643184",
+      "wd_label": "help",
+      "wd_description": "cooperation between living things",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10044",
+        "resin:Events/10037"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20480",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20481",
+          "roleName": "A1_ppt_project",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20482",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20483",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10049",
+      "name": "Diplomatic Break",
+      "description": "The United States broke off diplomatic relations with Cuba",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10035",
+        "resin:Events/10045",
+        "resin:Events/10051"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10050",
+      "name": "Latin American Deterioration",
+      "description": "Relations with other Latin American nations have also generally deteriorated",
+      "wd_node": "Q3045438",
+      "wd_label": "deterioration",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10041",
+        "resin:Events/10030"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20500",
+          "roleName": "A0_pag_causer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20501",
+          "roleName": "A1_ppt_entity_deteriorating",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20502",
+          "roleName": "A2_prd_endstate",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20503",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10051",
+      "name": "Economic Sanctions",
+      "description": "The country that carried out the coup may face economic sanctions from other countries",
+      "wd_node": "Q989265",
+      "wd_label": "embargo",
+      "wd_description": "prohibition of commerce and trade with a particular country or group of countries",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20510",
+          "roleName": "A0_pag_blocker",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20511",
+          "roleName": "A1_ppt_foiled",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20512",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10052",
+      "name": "Diplomatic Isolation",
+      "description": "3.The country that carried out the coup becomes isolated diplomatically.",
+      "wd_node": "Q11714847",
+      "wd_label": "isolation",
+      "wd_description": "limitation or total lack of contacts between populations of the same species",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10040"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20520",
+          "roleName": "A0_pag_entity_causing_isolation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20521",
+          "roleName": "A1_ppt_entity_isolated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20522",
+          "roleName": "A2_dir_entity_that_patient_was_isolated_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20523",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

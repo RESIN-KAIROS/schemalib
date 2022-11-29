@@ -1,5 +1,11 @@
 # Changelog 
 
+## [1.0.4]=2022-11-29
+Added schemas for 
+- coup
+- chemical spill
+- warfare 
+
 ## [1.0.3]=2022-11-28
 Added schemas for 
 - General crime 
