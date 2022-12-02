@@ -11,9 +11,249 @@
         "resin:Events/10003/"
       ],
       "children_gate": "or",
-      "description": "",
+      "description": "International Conflict",
       "name": "International Conflict",
-      "privateData": {},
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "group of people",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "concrete object",
+          "wd_label": "concrete_object",
+          "wd_node": "wd:Q4406616",
+          "wd_description": "object with a physical referent"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "war site",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "vehicle",
+          "wd_label": "vehicle",
+          "wd_node": "wd:Q42889",
+          "wd_description": "mobile machine that transports people, animals or cargo"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "abstract object",
+          "wd_label": "abstract_object",
+          "wd_node": "wd:Q7184903",
+          "wd_description": "object with no physical referents"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "person",
+          "wd_label": "person",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "media",
+          "wd_label": "communication_medium",
+          "wd_node": "wd:Q340169",
+          "wd_description": "storage and delivering agent of information or data"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "warmonger",
+          "wd_label": "political_territorial_entity",
+          "wd_node": "wd:Q1048835",
+          "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "government",
+          "wd_label": "government",
+          "wd_node": "wd:Q7188",
+          "wd_description": "system or group of people governing an organized community, often a state"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "objection",
+          "wd_label": "objection",
+          "wd_node": "wd:Q2090618",
+          "wd_description": "reason arguing against a premise, argument, or conclusion"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "invaded country",
+          "wd_label": "political_territorial_entity",
+          "wd_node": "wd:Q2090618",
+          "wd_description": "reason arguing against a premise, argument, or conclusion"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "trigger/topic",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "trigger location",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "other location",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "civilians",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00020/",
+          "name": "aid agency",
+          "wd_label": "aid_agency",
+          "wd_node": "wd:Q336473",
+          "wd_description": "organization with the task to help humans or animals or to protect sensitive cultural goods"
+        },
+        {
+          "@id": "resin:Entities/00021/",
+          "name": "refuge",
+          "wd_label": "refuge",
+          "wd_node": "wd:Q108147624",
+          "wd_description": "location where a person seeks shelter from something"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "humanitarian aid",
+          "wd_label": "humanitarian_aid",
+          "wd_node": "wd:Q826745",
+          "wd_description": "material or logistical assistance for people in need"
+        },
+        {
+          "@id": "resin:Entities/00024/",
+          "name": "some location",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00028/",
+          "name": "military",
+          "wd_label": "military",
+          "wd_node": "wd:Q8473",
+          "wd_description": "organized body primarily tasked with preparing for and conducting war"
+        },
+        {
+          "@id": "resin:Entities/00029/",
+          "name": "combatant",
+          "wd_label": "combatant",
+          "wd_node": "wd:Q1414937",
+          "wd_description": "person who takes a direct part in the hostilities of an armed conflict"
+        },
+        {
+          "@id": "resin:Entities/00030/",
+          "name": "armed conflict",
+          "wd_label": "armed_conflict",
+          "wd_node": "wd:Q350604",
+          "wd_description": "conflict including violence where at least one of the acting groups is a state"
+        },
+        {
+          "@id": "resin:Entities/00031/",
+          "name": "infrastructure",
+          "wd_label": "infrastructure",
+          "wd_node": "wd:Q121359",
+          "wd_description": "fundamental facilities and systems serving a country, city, or other areas"
+        },
+        {
+          "@id": "resin:Entities/00038/",
+          "name": "country in war",
+          "wd_label": "political_territorial_entity",
+          "wd_node": "wd:Q1048835",
+          "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+        },
+        {
+          "@id": "resin:Entities/00040/",
+          "name": "business",
+          "wd_label": "business",
+          "wd_node": "wd:Q4830453",
+          "wd_description": "organization involved in commercial, industrial, or professional activity"
+        },
+        {
+          "@id": "resin:Entities/00043/",
+          "name": "head of state",
+          "wd_label": "head_of_state",
+          "wd_node": "wd:Q48352",
+          "wd_description": "official who holds the highest-ranked executive position in a sovereign state"
+        },
+        {
+          "@id": "resin:Entities/00044/",
+          "name": "general audience",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00046/",
+          "name": "ceasefire",
+          "wd_label": "ceasefire",
+          "wd_node": "wd:Q208383",
+          "wd_description": "temporary stoppage of war"
+        },
+        {
+          "@id": "resin:Entities/00047/",
+          "name": "intervening country",
+          "wd_label": "political_territorial_entity",
+          "wd_node": "wd:Q1048835",
+          "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+        },
+        {
+          "@id": "resin:Entities/00048/",
+          "name": "weapon",
+          "wd_label": "weapon",
+          "wd_node": "wd:Q728",
+          "wd_description": "tool used to inflict damage or harm"
+        },
+        {
+          "@id": "resin:Entities/00050/",
+          "name": "war crime",
+          "wd_label": "war_crime",
+          "wd_node": "wd:Q135010",
+          "wd_description": "serious violation of the laws of war"
+        },
+        {
+          "@id": "resin:Entities/00051/",
+          "name": "communication device",
+          "wd_label": "communication_device",
+          "wd_node": "wd:Q1780509",
+          "wd_description": "technology for conveying meaning, usually across distance"
+        },
+        {
+          "@id": "resin:Entities/00055/",
+          "name": "human-made geographic feature",
+          "wd_label": "human-made_geographic_feature",
+          "wd_node": "wd:Q811430",
+          "wd_description": "artificial construction meant to remain at a fixed geographic location"
+        }
+      ],
+      "relations": [],
       "isSchema": true
     },
     {
@@ -69,9 +309,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q198",
       "wd_label": "war",
@@ -115,9 +352,6 @@
           "entity": "resin:Entities/00046/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q202875",
       "wd_label": "negotiation",
@@ -221,9 +455,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q180684",
       "wd_label": "conflict",
@@ -367,9 +598,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q1472062",
       "wd_label": "remote_communication",
@@ -535,9 +763,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q178561",
       "wd_label": "battle",
@@ -2892,246 +3117,5 @@
         "resin:Events/10038/"
       ]
     }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "group of people",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "concrete object",
-      "wd_label": "concrete_object",
-      "wd_node": "wd:Q4406616",
-      "wd_description": "object with a physical referent"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "war site",
-      "wd_label": "geographic_location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "vehicle",
-      "wd_label": "vehicle",
-      "wd_node": "wd:Q42889",
-      "wd_description": "mobile machine that transports people, animals or cargo"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "abstract object",
-      "wd_label": "abstract_object",
-      "wd_node": "wd:Q7184903",
-      "wd_description": "object with no physical referents"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "person",
-      "wd_label": "person",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "media",
-      "wd_label": "communication_medium",
-      "wd_node": "wd:Q340169",
-      "wd_description": "storage and delivering agent of information or data"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "warmonger",
-      "wd_label": "political_territorial_entity",
-      "wd_node": "wd:Q1048835",
-      "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "government",
-      "wd_label": "government",
-      "wd_node": "wd:Q7188",
-      "wd_description": "system or group of people governing an organized community, often a state"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "objection",
-      "wd_label": "objection",
-      "wd_node": "wd:Q2090618",
-      "wd_description": "reason arguing against a premise, argument, or conclusion"
-    },
-    {
-      "@id": "resin:Entities/00014/",
-      "name": "invaded country",
-      "wd_label": "political_territorial_entity",
-      "wd_node": "wd:Q2090618",
-      "wd_description": "reason arguing against a premise, argument, or conclusion"
-    },
-    {
-      "@id": "resin:Entities/00015/",
-      "name": "trigger/topic",
-      "wd_label": "cause",
-      "wd_node": "wd:Q2574811",
-      "wd_description": "entity which forms causality for an event"
-    },
-    {
-      "@id": "resin:Entities/00016/",
-      "name": "trigger location",
-      "wd_label": "geographic_location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00017/",
-      "name": "police",
-      "wd_label": "police",
-      "wd_node": "wd:Q35535",
-      "wd_description": "constituted body of persons empowered by the state to enforce the law"
-    },
-    {
-      "@id": "resin:Entities/00018/",
-      "name": "other location",
-      "wd_label": "geographic_location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00019/",
-      "name": "civilians",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00020/",
-      "name": "aid agency",
-      "wd_label": "aid_agency",
-      "wd_node": "wd:Q336473",
-      "wd_description": "organization with the task to help humans or animals or to protect sensitive cultural goods"
-    },
-    {
-      "@id": "resin:Entities/00021/",
-      "name": "refuge",
-      "wd_label": "refuge",
-      "wd_node": "wd:Q108147624",
-      "wd_description": "location where a person seeks shelter from something"
-    },
-    {
-      "@id": "resin:Entities/00022/",
-      "name": "humanitarian aid",
-      "wd_label": "humanitarian_aid",
-      "wd_node": "wd:Q826745",
-      "wd_description": "material or logistical assistance for people in need"
-    },
-    {
-      "@id": "resin:Entities/00024/",
-      "name": "some location",
-      "wd_label": "geographic_location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00028/",
-      "name": "military",
-      "wd_label": "military",
-      "wd_node": "wd:Q8473",
-      "wd_description": "organized body primarily tasked with preparing for and conducting war"
-    },
-    {
-      "@id": "resin:Entities/00029/",
-      "name": "combatant",
-      "wd_label": "combatant",
-      "wd_node": "wd:Q1414937",
-      "wd_description": "person who takes a direct part in the hostilities of an armed conflict"
-    },
-    {
-      "@id": "resin:Entities/00030/",
-      "name": "armed conflict",
-      "wd_label": "armed_conflict",
-      "wd_node": "wd:Q350604",
-      "wd_description": "conflict including violence where at least one of the acting groups is a state"
-    },
-    {
-      "@id": "resin:Entities/00031/",
-      "name": "infrastructure",
-      "wd_label": "infrastructure",
-      "wd_node": "wd:Q121359",
-      "wd_description": "fundamental facilities and systems serving a country, city, or other areas"
-    },
-    {
-      "@id": "resin:Entities/00038/",
-      "name": "country in war",
-      "wd_label": "political_territorial_entity",
-      "wd_node": "wd:Q1048835",
-      "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
-    },
-    {
-      "@id": "resin:Entities/00040/",
-      "name": "business",
-      "wd_label": "business",
-      "wd_node": "wd:Q4830453",
-      "wd_description": "organization involved in commercial, industrial, or professional activity"
-    },
-    {
-      "@id": "resin:Entities/00043/",
-      "name": "head of state",
-      "wd_label": "head_of_state",
-      "wd_node": "wd:Q48352",
-      "wd_description": "official who holds the highest-ranked executive position in a sovereign state"
-    },
-    {
-      "@id": "resin:Entities/00044/",
-      "name": "general audience",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00046/",
-      "name": "ceasefire",
-      "wd_label": "ceasefire",
-      "wd_node": "wd:Q208383",
-      "wd_description": "temporary stoppage of war"
-    },
-    {
-      "@id": "resin:Entities/00047/",
-      "name": "intervening country",
-      "wd_label": "political_territorial_entity",
-      "wd_node": "wd:Q1048835",
-      "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
-    },
-    {
-      "@id": "resin:Entities/00048/",
-      "name": "weapon",
-      "wd_label": "weapon",
-      "wd_node": "wd:Q728",
-      "wd_description": "tool used to inflict damage or harm"
-    },
-    {
-      "@id": "resin:Entities/00050/",
-      "name": "war crime",
-      "wd_label": "war_crime",
-      "wd_node": "wd:Q135010",
-      "wd_description": "serious violation of the laws of war"
-    },
-    {
-      "@id": "resin:Entities/00051/",
-      "name": "communication device",
-      "wd_label": "communication_device",
-      "wd_node": "wd:Q1780509",
-      "wd_description": "technology for conveying meaning, usually across distance"
-    },
-    {
-      "@id": "resin:Entities/00055/",
-      "name": "human-made geographic feature",
-      "wd_label": "human-made_geographic_feature",
-      "wd_node": "wd:Q811430",
-      "wd_description": "artificial construction meant to remain at a fixed geographic location"
-    }
-  ],
-  "relations": []
+  ]
 }

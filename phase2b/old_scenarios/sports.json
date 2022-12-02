@@ -11,9 +11,182 @@
         "resin:Events/10003/"
       ],
       "children_gate": "or",
-      "description": "",
+      "description": "Sports Games",
       "name": "Sports Games",
-      "privateData": {},
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "organizer",
+          "wd_label": "organizer",
+          "wd_node": "wd:P664",
+          "wd_description": "person or institution organizing an event"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "sports event",
+          "wd_label": "event",
+          "wd_node": "wd:Q1656682",
+          "wd_description": "temporary and scheduled happening, like a conference, festival or competition"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "coach",
+          "wd_label": "coach",
+          "wd_node": "wd:Q41583",
+          "wd_description": "person involved in directing, instructing and training sportspeople"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "athletes",
+          "wd_label": "athlete",
+          "wd_node": "wd:Q2066131",
+          "wd_description": "person who participates regularly in a sport"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "team of athletes",
+          "wd_label": "athlete",
+          "wd_node": "wd:Q2066131",
+          "wd_description": "person who participates regularly in a sport"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "other team of athletes",
+          "wd_label": "athlete",
+          "wd_node": "wd:Q2066131",
+          "wd_description": "person who participates regularly in a sport"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "stadium",
+          "wd_label": "stadium",
+          "wd_node": "wd:Q483110",
+          "wd_description": "place or venue for (mostly) outdoor sports, concerts, or other events"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "training village",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "general population",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "protestors",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "event attendees",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "reporter",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "country",
+          "wd_label": "country",
+          "wd_node": "wd:Q6256",
+          "wd_description": "distinct region in geography; a broad term that can include political divisions"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "other country",
+          "wd_label": "country",
+          "wd_node": "wd:Q6256",
+          "wd_description": "distinct region in geography; a broad term that can include political divisions"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00009/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "proximity",
+          "relationSubject": "resin:Entities/00007/",
+          "relationObject": "resin:Entities/00006/",
+          "wd_node": "wd:Q19267375",
+          "wd_description": "state of being near as in space, time, or relationship",
+          "wd_label": "proximity"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00010/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00004/",
+          "relationObject": "resin:Entities/00003/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30004/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00005/",
+          "relationObject": "resin:Entities/00003/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30005/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00011/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30006/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00004/",
+          "relationObject": "resin:Entities/00012/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30007/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00005/",
+          "relationObject": "resin:Entities/00013/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -413,180 +586,6 @@
       "wd_label": "journalistic interview",
       "wd_description": "conversation led by journalist",
       "outlinks": []
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "organizer",
-      "wd_label": "organizer",
-      "wd_node": "wd:P664",
-      "wd_description": "person or institution organizing an event"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "sports event",
-      "wd_label": "event",
-      "wd_node": "wd:Q1656682",
-      "wd_description": "temporary and scheduled happening, like a conference, festival or competition"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "coach",
-      "wd_label": "coach",
-      "wd_node": "wd:Q41583",
-      "wd_description": "person involved in directing, instructing and training sportspeople"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "athletes",
-      "wd_label": "athlete",
-      "wd_node": "wd:Q2066131",
-      "wd_description": "person who participates regularly in a sport"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "team of athletes",
-      "wd_label": "athlete",
-      "wd_node": "wd:Q2066131",
-      "wd_description": "person who participates regularly in a sport"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "other team of athletes",
-      "wd_label": "athlete",
-      "wd_node": "wd:Q2066131",
-      "wd_description": "person who participates regularly in a sport"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "stadium",
-      "wd_label": "stadium",
-      "wd_node": "wd:Q483110",
-      "wd_description": "place or venue for (mostly) outdoor sports, concerts, or other events"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "training village",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "general population",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "protestors",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "event attendees",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00011/",
-      "name": "reporter",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00012/",
-      "name": "country",
-      "wd_label": "country",
-      "wd_node": "wd:Q6256",
-      "wd_description": "distinct region in geography; a broad term that can include political divisions"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "other country",
-      "wd_label": "country",
-      "wd_node": "wd:Q6256",
-      "wd_description": "distinct region in geography; a broad term that can include political divisions"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00009/",
-      "relationObject": "resin:Entities/00008/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30001/",
-      "name": "proximity",
-      "relationSubject": "resin:Entities/00007/",
-      "relationObject": "resin:Entities/00006/",
-      "wd_node": "wd:Q19267375",
-      "wd_description": "state of being near as in space, time, or relationship",
-      "wd_label": "proximity"
-    },
-    {
-      "@id": "resin:Relations/30002/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00010/",
-      "relationObject": "resin:Entities/00008/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30003/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00004/",
-      "relationObject": "resin:Entities/00003/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30004/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00005/",
-      "relationObject": "resin:Entities/00003/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30005/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00011/",
-      "relationObject": "resin:Entities/00008/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30006/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00004/",
-      "relationObject": "resin:Entities/00012/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30007/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00005/",
-      "relationObject": "resin:Entities/00013/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
     }
   ]
 }

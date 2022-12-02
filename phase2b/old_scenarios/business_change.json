@@ -22,6 +22,268 @@
       "children_gate": "or",
       "description": "Schema describing business change events, including fraud, mergers and acquisitions, antitrust investigations, and bankruptcy",
       "name": "Business Change",
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "executive",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "auditor",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "founder",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "employee",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "trustee",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "new executive",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "new employee",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "old employee",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "investors",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "general public",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "company",
+          "wd_label": "company",
+          "wd_node": "wd:Q783794",
+          "wd_description": "legal entity representing an association of people"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "partnering company",
+          "wd_label": "company",
+          "wd_node": "wd:Q783794",
+          "wd_description": "legal entity representing an association of people"
+        },
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "bigger company",
+          "wd_label": "company",
+          "wd_node": "wd:Q783794",
+          "wd_description": "legal entity representing an association of people"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "new company",
+          "wd_label": "company",
+          "wd_node": "wd:Q783794",
+          "wd_description": "legal entity representing an association of people"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "stock",
+          "wd_label": "stock",
+          "wd_node": "wd:Q1196314",
+          "wd_description": "Collective financial capital of a shared corporation"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "judge",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "government authorities",
+          "wd_label": "public authority",
+          "wd_node": "wd:Q4383245",
+          "wd_description": "body that exercises official authority"
+        },
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "fraud",
+          "wd_label": "fraud",
+          "wd_node": "wd:Q28813",
+          "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim"
+        },
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "prison",
+          "wd_label": "prison",
+          "wd_node": "wd:Q40357",
+          "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "asset",
+          "wd_label": "asset",
+          "wd_node": "wd:Q46737",
+          "wd_description": "economic resource, from which future economic benefits are expected"
+        },
+        {
+          "@id": "resin:Entities/00020/",
+          "name": "contracts and leases",
+          "wd_label": "asset",
+          "wd_node": "wd:Q46737",
+          "wd_description": "economic resource, from which future economic benefits are expected"
+        },
+        {
+          "@id": "resin:Entities/00021/",
+          "name": "liquidated assets",
+          "wd_label": "asset",
+          "wd_node": "wd:Q46737",
+          "wd_description": "economic resource, from which future economic benefits are expected"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "mergers and acquisitions",
+          "wd_label": "mergers and acquisitions",
+          "wd_node": "wd:Q731112",
+          "wd_description": "transactions in which the ownership of companies, other business organizations or their operating units are transferred or combined"
+        },
+        {
+          "@id": "resin:Entities/00023/",
+          "name": "monopoly",
+          "wd_label": "monopoly",
+          "wd_node": "wd:Q43637",
+          "wd_description": "market structure with a single firm dominating the market"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00002/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00003/",
+          "relationObject": "resin:Entities/00012/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00020/",
+          "relationObject": "resin:Entities/00019/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30004/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00021/",
+          "relationObject": "resin:Entities/00019/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30005/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00004/",
+          "relationObject": "resin:Entities/00016/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30006/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00005/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30007/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00006/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30008/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00007/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30009/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00013/",
+          "relationObject": "resin:Entities/00012/",
+          "wd_node": "wd:Q78694451",
+          "wd_description": "",
+          "wd_label": "partially coincident with"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -37,11 +299,6 @@
       "comment": "container node",
       "description": "Events happening in the early stages of a business",
       "name": "Early Stages",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10002/Corruption"
@@ -59,11 +316,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q366",
       "wd_label": "corruption",
@@ -86,11 +338,6 @@
       "comment": "container node",
       "description": "Types of business fraud",
       "name": "Fraud",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10004/Steps_kairos:Primitives_Events_Audit"
@@ -113,11 +360,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q740419",
       "wd_label": "financial audit",
@@ -150,11 +392,6 @@
       "children_gate": "or",
       "description": "Financial records could not be validated, a criminal investigation case is opened",
       "name": "Criminal investigation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1415338",
       "wd_label": "criminal_investigation",
@@ -174,11 +411,6 @@
       "comment": "container node",
       "description": "Events leading to the business suffering economically",
       "name": "Market Shift",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10007/Steps_kairos:Primitive_Events_Restructure"
@@ -201,11 +433,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q1376796",
       "wd_label": "restructuring",
@@ -222,13 +449,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Restructure outlinks",
       "name": "Restructure outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -246,11 +468,6 @@
       "comment": "container node",
       "description": "Process to merge or be acquired by another company",
       "name": "Mergers and Acquistions",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -267,11 +484,6 @@
       "comment": "container node",
       "description": "Legal process after M&A or filing bankruptcy",
       "name": "Reorganization",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation"
@@ -291,11 +503,6 @@
       "comment": "container node",
       "description": "Process in which a business files bankruptcy",
       "name": "Bankruptcy",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -319,11 +526,6 @@
       "comment": "container node",
       "description": "The government may sue a business if they have reason to believe the business is becoming a monopoly",
       "name": "Antitrust investigation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -344,11 +546,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3075355",
       "wd_label": "founding",
@@ -373,11 +570,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q6055890",
       "wd_label": "funding",
@@ -407,11 +599,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange of goods",
@@ -436,11 +623,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange of goods",
@@ -463,11 +645,6 @@
           "entity": "resin:Entities/00011/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q728646",
       "wd_label": "partnership",
@@ -490,11 +667,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4843420",
       "wd_label": "charity fraud",
@@ -517,11 +689,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q28813",
       "wd_label": "fraud",
@@ -544,11 +711,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q28813",
       "wd_label": "fraud",
@@ -571,11 +733,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q28813",
       "wd_label": "fraud",
@@ -598,11 +755,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q104835881",
       "wd_label": "overpayment scam",
@@ -625,11 +777,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q28813",
       "wd_label": "fraud",
@@ -658,11 +805,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10027/Steps_kairos:Primitives_Events_accusation:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19357312",
       "wd_label": "accusation",
@@ -693,11 +835,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_detention:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1071447",
       "wd_label": "detention",
@@ -728,11 +865,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10030/Steps_kairos:Primitives_Events_conviction:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2916183",
       "wd_label": "conviction",
@@ -759,11 +891,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_plea:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15916459",
       "wd_label": "plea",
@@ -787,11 +914,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_trial:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -817,11 +939,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_legal_hearing:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q545861",
       "wd_label": "legal_hearing",
@@ -852,11 +969,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10034/Steps_kairos:Primitives_Events_court_decision:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q327000",
       "wd_label": "court_decision ",
@@ -873,13 +985,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Court Decision outlinks",
       "name": "Court Decision outlinks",
-      "privateData": {
-        "@type": "kairos:container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -910,11 +1017,6 @@
           "entity": "resin:Entities/00018/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10035/Steps_kairos:Primitives_Events_sentence:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1763090",
       "wd_label": "sentence",
@@ -942,11 +1044,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1243001",
       "wd_label": "fine",
@@ -969,11 +1066,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q18511800",
       "wd_label": "separation",
@@ -1004,11 +1096,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_imprisonment:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1403016",
       "wd_label": "arrest",
@@ -1036,11 +1123,6 @@
           "entity": "resin:Entities/00018/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q5357120",
       "wd_label": "parole",
@@ -1057,13 +1139,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Parole outlinks",
       "name": "Parole outlinks",
-      "privateData": {
-        "@type": "kairos:container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1089,11 +1166,6 @@
           "entity": "resin:Entities/00018/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3237993",
       "wd_label": "release from prison",
@@ -1122,11 +1194,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1454723",
       "wd_label": "acquittal",
@@ -1149,11 +1216,6 @@
           "entity": "resin:Entities/00011/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12769393",
       "wd_label": "end",
@@ -1171,11 +1233,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q13427002",
       "wd_label": "fad",
@@ -1193,11 +1250,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q176494",
       "wd_label": "recession",
@@ -1220,11 +1272,6 @@
           "entity": "resin:Entities/00013/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q476300",
       "wd_label": "competition",
@@ -1252,11 +1299,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1281,11 +1323,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4008379",
       "wd_label": "valuation",
@@ -1315,11 +1352,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1344,11 +1376,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q794134",
       "wd_label": "due diligence",
@@ -1383,11 +1410,6 @@
           "entity": "resin:Entities/00019/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q18345888",
       "wd_label": "purchase and sale agreement",
@@ -1410,11 +1432,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q22445448",
       "wd_label": "request",
@@ -1431,13 +1448,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Reorganization Application outlinks",
       "name": "Reorganization Application outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1453,11 +1465,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q231043",
       "wd_label": "consent",
@@ -1475,11 +1482,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q98398200",
       "wd_label": "rejection",
@@ -1501,13 +1503,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Liquidation",
       "name": "Liquidation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1521,13 +1518,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Personnel change",
       "name": "Personnel change",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1548,11 +1540,6 @@
           "entity": "resin:Entities/00020/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12769393",
       "wd_label": "end",
@@ -1575,11 +1562,6 @@
           "entity": "resin:Entities/00021/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q885621",
       "wd_label": "liquidation",
@@ -1607,11 +1589,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1148747",
       "wd_label": "payment",
@@ -1634,11 +1611,6 @@
           "entity": "resin:Entities/00023/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1664,11 +1636,6 @@
           "entity": "resin:Entities/00023/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.filecomplaint",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q836925",
       "wd_label": "complaint",
@@ -1689,11 +1656,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.answer",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q33622550",
       "wd_label": "answer",
@@ -1719,11 +1681,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.discovery",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q902342",
       "wd_label": "discovery",
@@ -1754,11 +1711,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.motion",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q6917734",
       "wd_label": "motion",
@@ -1777,11 +1729,6 @@
       "comment": "container node",
       "description": "",
       "name": "Motion outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1807,11 +1754,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "justice.judicialconsequences.mediation",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q223871",
       "wd_label": "mediation",
@@ -1840,11 +1782,6 @@
           "entity": "resin:Entities/00019/"
         }
       ],
-      "privateData": {
-        "@type": "Transaction.ExchangeBuySell.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange_of_goods",
@@ -1863,11 +1800,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.trialhearing",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -1886,11 +1818,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "justice.judicialconsequences.judgement",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3769186",
       "wd_label": "judgement",
@@ -1911,11 +1838,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "justice.appeal.unspecified",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q329777",
       "wd_label": "appeal",
@@ -1938,11 +1860,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q22445448",
       "wd_label": "request",
@@ -1959,13 +1876,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Bankruptcy Application outlinks",
       "name": "Bankruptcy Application outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1981,11 +1893,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q231043",
       "wd_label": "consent",
@@ -2003,11 +1910,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q98398200",
       "wd_label": "rejection",
@@ -2022,13 +1924,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Bankruptcy Approval outlinks",
       "name": "Bankruptcy Approval outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -2044,11 +1941,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q189539",
       "wd_label": "loan",
@@ -2071,11 +1963,6 @@
           "entity": "resin:Entities/00016/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1318578",
       "wd_label": "appointment",
@@ -2103,11 +1990,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1200733",
       "wd_label": "divestment",
@@ -2137,11 +2019,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q315364",
       "wd_label": "transfer",
@@ -2164,11 +2041,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1150070",
       "wd_label": "change",
@@ -2191,11 +2063,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q656365",
       "wd_label": "employment",
@@ -2218,278 +2085,11 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q17052147",
       "wd_label": "dismissal",
       "wd_description": "termination of employment decided unilaterally by employer",
       "outlinks": []
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "executive",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "auditor",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "founder",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "employee",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "trustee",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "new executive",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "new employee",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "old employee",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "investors",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "general public",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "company",
-      "wd_label": "company",
-      "wd_node": "wd:Q783794",
-      "wd_description": "legal entity representing an association of people"
-    },
-    {
-      "@id": "resin:Entities/00011/",
-      "name": "partnering company",
-      "wd_label": "company",
-      "wd_node": "wd:Q783794",
-      "wd_description": "legal entity representing an association of people"
-    },
-    {
-      "@id": "resin:Entities/00012/",
-      "name": "bigger company",
-      "wd_label": "company",
-      "wd_node": "wd:Q783794",
-      "wd_description": "legal entity representing an association of people"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "new company",
-      "wd_label": "company",
-      "wd_node": "wd:Q783794",
-      "wd_description": "legal entity representing an association of people"
-    },
-    {
-      "@id": "resin:Entities/00014/",
-      "name": "stock",
-      "wd_label": "stock",
-      "wd_node": "wd:Q1196314",
-      "wd_description": "Collective financial capital of a shared corporation"
-    },
-    {
-      "@id": "resin:Entities/00015/",
-      "name": "judge",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    },
-    {
-      "@id": "resin:Entities/00016/",
-      "name": "government authorities",
-      "wd_label": "public authority",
-      "wd_node": "wd:Q4383245",
-      "wd_description": "body that exercises official authority"
-    },
-    {
-      "@id": "resin:Entities/00017/",
-      "name": "fraud",
-      "wd_label": "fraud",
-      "wd_node": "wd:Q28813",
-      "wd_description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim"
-    },
-    {
-      "@id": "resin:Entities/00018/",
-      "name": "prison",
-      "wd_label": "prison",
-      "wd_node": "wd:Q40357",
-      "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
-    },
-    {
-      "@id": "resin:Entities/00019/",
-      "name": "asset",
-      "wd_label": "asset",
-      "wd_node": "wd:Q46737",
-      "wd_description": "economic resource, from which future economic benefits are expected"
-    },
-    {
-      "@id": "resin:Entities/00020/",
-      "name": "contracts and leases",
-      "wd_label": "asset",
-      "wd_node": "wd:Q46737",
-      "wd_description": "economic resource, from which future economic benefits are expected"
-    },
-    {
-      "@id": "resin:Entities/00021/",
-      "name": "liquidated assets",
-      "wd_label": "asset",
-      "wd_node": "wd:Q46737",
-      "wd_description": "economic resource, from which future economic benefits are expected"
-    },
-    {
-      "@id": "resin:Entities/00022/",
-      "name": "mergers and acquisitions",
-      "wd_label": "mergers and acquisitions",
-      "wd_node": "wd:Q731112",
-      "wd_description": "transactions in which the ownership of companies, other business organizations or their operating units are transferred or combined"
-    },
-    {
-      "@id": "resin:Entities/00023/",
-      "name": "monopoly",
-      "wd_label": "monopoly",
-      "wd_node": "wd:Q43637",
-      "wd_description": "market structure with a single firm dominating the market"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00010/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30001/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00002/",
-      "relationObject": "resin:Entities/00010/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30002/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00003/",
-      "relationObject": "resin:Entities/00012/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30003/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00020/",
-      "relationObject": "resin:Entities/00019/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30004/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00021/",
-      "relationObject": "resin:Entities/00019/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30005/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00004/",
-      "relationObject": "resin:Entities/00016/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30006/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00005/",
-      "relationObject": "resin:Entities/00010/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30007/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00006/",
-      "relationObject": "resin:Entities/00010/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30008/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00007/",
-      "relationObject": "resin:Entities/00010/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30009/",
-      "name": "partially coincident with",
-      "relationSubject": "resin:Entities/00013/",
-      "relationObject": "resin:Entities/00012/",
-      "wd_node": "wd:Q78694451",
-      "wd_description": "",
-      "wd_label": "partially coincident with"
     }
   ]
 }

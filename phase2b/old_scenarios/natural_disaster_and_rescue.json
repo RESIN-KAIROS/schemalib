@@ -10,9 +10,46 @@
         "resin:Events/10637/Steps_kairos:Container:2"
       ],
       "children_gate": "or",
-      "description": "",
+      "description": "Natural Disaster and Rescue",
       "name": "Natural Disaster and Rescue",
-      "privateData": {},
+      "entities": [
+        {
+          "@id": "resin:Entities/00935",
+          "name": "rescuer",
+          "wd_label": "rescuer",
+          "wd_node": "wd:Q17126809",
+          "wd_description": "person who rescues something from harm or danger"
+        },
+        {
+          "@id": "resin:Entities/00936",
+          "name": "victim",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00937",
+          "name": "disaster site",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00938",
+          "name": "government / authorities",
+          "wd_label": "government",
+          "wd_node": "wd:Q7188",
+          "wd_description": "system or group of people governing an organized community, often a state"
+        },
+        {
+          "@id": "resin:Entities/00940",
+          "name": "medical location / facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "relations": [],
       "isSchema": true
     },
     {
@@ -33,11 +70,6 @@
       "comment": "container node",
       "description": "A disaster caused by humans.",
       "name": "Natural Disaster",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10637/Steps_kairos:Container:2"
@@ -62,11 +94,6 @@
       "comment": "container node",
       "description": "Rescuing the victims from the disaster.",
       "name": "Rescue",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -88,11 +115,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8081",
       "wd_label": "tornado",
@@ -118,11 +140,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8068",
       "wd_label": "flood",
@@ -148,11 +165,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q169950",
       "wd_label": "wildfire",
@@ -178,11 +190,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7944",
       "wd_label": "earthquake",
@@ -208,11 +215,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8070",
       "wd_label": "Tsunami",
@@ -238,11 +240,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2857578",
       "wd_label": "thunderstorm",
@@ -268,11 +265,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q34168",
       "wd_label": "trapping",
@@ -299,11 +291,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "ArtifactExistence.DamageDestroyDisableDismantle.Damage",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q481609",
       "wd_label": "damage",
@@ -338,11 +325,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "Life.Injure.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q193078",
       "wd_label": "injury",
@@ -366,11 +348,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "Life.Die.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
@@ -394,11 +371,6 @@
           "entity": "resin:Entities/00941"
         }
       ],
-      "privateData": {
-        "@type": "Contact.Contact.Broadcast",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q567303",
       "wd_label": "announcement",
@@ -433,11 +405,6 @@
           "entity": "resin:Entities/00935"
         }
       ],
-      "privateData": {
-        "@type": "Contact.RequestCommand.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1665268",
       "wd_label": "command",
@@ -468,11 +435,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "Contact.Contact.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -504,11 +466,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "Movement.Transportation.Evacuation",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q606332",
       "wd_label": "emergency_evacuation",
@@ -539,11 +496,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "Contact.Collaborate.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1145523",
       "wd_label": "collaboration",
@@ -579,11 +531,6 @@
           "entity": "resin:Entities/00940"
         }
       ],
-      "privateData": {
-        "@type": "Movement.Transportation.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7590",
       "wd_label": "transport",
@@ -614,11 +561,6 @@
           "entity": "resin:Entities/00937"
         }
       ],
-      "privateData": {
-        "@type": "Medical.Intervention.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q179661",
       "wd_label": "treatment",
@@ -646,11 +588,6 @@
       "comment": "container node",
       "description": "",
       "name": "treatment outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -667,11 +604,6 @@
           "entity": "resin:Entities/00936"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7302970",
       "wd_label": "recover",
@@ -695,54 +627,11 @@
           "entity": "resin:Entities/00940"
         }
       ],
-      "privateData": {
-        "@type": "Life.Die.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
       "wd_description": "permanent cessation of vital functions",
       "outlinks": []
     }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00935",
-      "name": "rescuer",
-      "wd_label": "rescuer",
-      "wd_node": "wd:Q17126809",
-      "wd_description": "person who rescues something from harm or danger"
-    },
-    {
-      "@id": "resin:Entities/00936",
-      "name": "victim",
-      "wd_label": "victim",
-      "wd_node": "wd:Q1851760",
-      "wd_description": "person who suffers as a result of a crime or other event"
-    },
-    {
-      "@id": "resin:Entities/00937",
-      "name": "disaster site",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00938",
-      "name": "government / authorities",
-      "wd_label": "government",
-      "wd_node": "wd:Q7188",
-      "wd_description": "system or group of people governing an organized community, often a state"
-    },
-    {
-      "@id": "resin:Entities/00940",
-      "name": "medical location / facility",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    }
-  ],
-  "relations": []
+  ]
 }

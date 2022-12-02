@@ -14,6 +14,182 @@
       "children_gate": "or",
       "description": "",
       "name": "General Attack",
+      "entities": [
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "trigger/topic",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "attacker",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "attack target",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "attack instrument",
+          "wd_label": "weapon",
+          "wd_node": "wd:Q728",
+          "wd_description": "tool used to inflict damage or harm"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "attack event",
+          "wd_label": "attack",
+          "wd_node": "wd:Q1174599",
+          "wd_description": "action to injure another organism"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "medium of communication",
+          "wd_label": "communication_medium",
+          "wd_node": "wd:Q340169",
+          "wd_description": "storage and delivering agent of information or data"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "people injured onsite",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "people dead onsite",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "authorities",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "other poeple",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "medical team",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00023/",
+          "name": "driver",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00024/",
+          "name": "vehicle",
+          "wd_label": "vehicle",
+          "wd_node": "wd:Q42889",
+          "wd_description": "mobile machine that transports people, animals or cargo"
+        },
+        {
+          "@id": "resin:Entities/00026/",
+          "name": "medical facility",
+          "wd_label": "medical_facility",
+          "wd_node": "wd:Q4260475",
+          "wd_description": "any location at which medicine is practiced regularly"
+        },
+        {
+          "@id": "resin:Entities/00027/",
+          "name": "doctor",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00029/",
+          "name": "deceased poeple",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00030/",
+          "name": "ultimatelu rescued poeple",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00031/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00032/",
+          "name": "investigator",
+          "wd_label": "detective",
+          "wd_node": "wd:Q842782",
+          "wd_description": "investigator, either a member of a police agency or a private person"
+        },
+        {
+          "@id": "resin:Entities/00035/",
+          "name": "court",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00036/",
+          "name": "judge",
+          "wd_label": "judge",
+          "wd_node": "wd:Q16533",
+          "wd_description": "official who presides over court proceedings"
+        },
+        {
+          "@id": "resin:Entities/00038/",
+          "name": "poeple rescued from attack",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00027/",
+          "relationObject": "resin:Entities/00022/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00015/",
+          "relationObject": "resin:Entities/00038/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -26,11 +202,6 @@
       "comment": "container node",
       "description": "The contributory factors that shows motives and backgrounds.",
       "name": "Contributory Factors",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "outlinks": [
         "resin:Events/10002/"
@@ -48,11 +219,6 @@
       "comment": "container node",
       "description": "Attack planning procedure.",
       "name": "Planning",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10003/"
@@ -70,11 +236,6 @@
       "comment": "container node",
       "description": "The attack execution procedure.",
       "name": "Execution",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10004/"
@@ -93,11 +254,6 @@
       "comment": "container node",
       "description": "Response to the attack.",
       "name": "Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -123,11 +279,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q175331",
       "wd_label": "demonstration",
@@ -166,11 +317,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1174599",
       "wd_label": "attack",
@@ -214,11 +360,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1472062",
       "wd_label": "remote_communication",
@@ -252,11 +393,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1665268",
       "wd_label": "command",
@@ -279,11 +415,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange_of_goods",
@@ -306,11 +437,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q325980",
       "wd_label": "coercion",
@@ -345,11 +471,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1174599",
       "wd_label": "attack",
@@ -367,13 +488,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Attack Consequences",
       "name": "Attack Consequences",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -387,13 +503,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Emergency Evacuation",
       "name": "Emergency Evacuation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -407,13 +518,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Social Response",
       "name": "Social Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -426,13 +532,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Authorities Response",
       "name": "Authorities Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -448,13 +549,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Criminal Investigation",
       "name": "Criminal Investigation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -485,11 +581,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q193078",
       "wd_label": "injury",
@@ -514,11 +605,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
@@ -533,13 +619,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "damage severity outlinks",
       "name": "damage severity outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -566,11 +647,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q17781833",
       "wd_label": "destruction",
@@ -608,11 +684,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q481609",
       "wd_label": "damage",
@@ -655,11 +726,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1472062",
       "wd_label": "remote_communication",
@@ -699,11 +765,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7590",
       "wd_label": "transport",
@@ -720,13 +781,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Emergency department response",
       "name": "Emergency department response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -741,13 +797,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Medical Intervention",
       "name": "Medical Intervention",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -760,13 +811,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Intervention Results",
       "name": "Intervention Results",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -798,11 +844,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q133981",
       "wd_label": "first_aid",
@@ -845,11 +886,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7590",
       "wd_label": "transport",
@@ -880,11 +916,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q179661",
       "wd_label": "treatment",
@@ -919,11 +950,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1341429",
       "wd_label": "rescue",
@@ -955,11 +981,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q47328472",
       "wd_label": "hispital_discharge",
@@ -983,11 +1004,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
@@ -1016,11 +1032,6 @@
           "entity": "resin:Entities/00025/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q606332",
       "wd_label": "emergency_evacuation",
@@ -1048,11 +1059,6 @@
           "entity": "resin:Entities/00020/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q180684",
       "wd_label": "conflict",
@@ -1090,11 +1096,6 @@
           "entity": "resin:Entities/00019/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q175331",
       "wd_label": "demonstration",
@@ -1139,11 +1140,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q7216866",
       "wd_label": "post",
@@ -1188,11 +1184,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1472062",
       "wd_label": "remote_communication",
@@ -1227,11 +1218,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1189956",
       "wd_label": "denunciation",
@@ -1246,13 +1232,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Defendant decision",
       "name": "Defendant decision",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1265,13 +1246,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Court decision",
       "name": "Court decision",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1308,11 +1284,6 @@
           "entity": "resin:Entities/00035/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1763090",
       "wd_label": "sentence",
@@ -1342,11 +1313,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19357312",
       "wd_label": "accusation",
@@ -1377,11 +1343,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1403016",
       "wd_label": "arrest",
@@ -1412,11 +1373,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1071447",
       "wd_label": "detention",
@@ -1447,11 +1403,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2916183",
       "wd_label": "conviction",
@@ -1477,11 +1428,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15916459",
       "wd_label": "plea",
@@ -1510,11 +1456,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -1541,11 +1482,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q545861",
       "wd_label": "legal_hearing",
@@ -1576,11 +1512,6 @@
           "entity": "resin:Entities/00035/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1454723",
       "wd_label": "acquittal",
@@ -1623,11 +1554,6 @@
           "entity": "resin:Entities/00034/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q841236",
       "wd_label": "imprisonment",
@@ -1657,192 +1583,11 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3966286",
       "wd_label": "execution",
       "wd_description": "homicide as capital punishment",
       "outlinks": []
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "trigger/topic",
-      "wd_label": "cause",
-      "wd_node": "wd:Q2574811",
-      "wd_description": "entity which forms causality for an event"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "attacker",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "attack target",
-      "wd_label": "geographic_location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "attack instrument",
-      "wd_label": "weapon",
-      "wd_node": "wd:Q728",
-      "wd_description": "tool used to inflict damage or harm"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "attack event",
-      "wd_label": "attack",
-      "wd_node": "wd:Q1174599",
-      "wd_description": "action to injure another organism"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "medium of communication",
-      "wd_label": "communication_medium",
-      "wd_node": "wd:Q340169",
-      "wd_description": "storage and delivering agent of information or data"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "people injured onsite",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00011/",
-      "name": "people dead onsite",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00014/",
-      "name": "authorities",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00016/",
-      "name": "other poeple",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00022/",
-      "name": "medical team",
-      "wd_label": "health_professional",
-      "wd_node": "wd:Q11974939",
-      "wd_description": "individual who systematically provides health care services"
-    },
-    {
-      "@id": "resin:Entities/00023/",
-      "name": "driver",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00024/",
-      "name": "vehicle",
-      "wd_label": "vehicle",
-      "wd_node": "wd:Q42889",
-      "wd_description": "mobile machine that transports people, animals or cargo"
-    },
-    {
-      "@id": "resin:Entities/00026/",
-      "name": "medical facility",
-      "wd_label": "medical_facility",
-      "wd_node": "wd:Q4260475",
-      "wd_description": "any location at which medicine is practiced regularly"
-    },
-    {
-      "@id": "resin:Entities/00027/",
-      "name": "doctor",
-      "wd_label": "health_professional",
-      "wd_node": "wd:Q11974939",
-      "wd_description": "individual who systematically provides health care services"
-    },
-    {
-      "@id": "resin:Entities/00029/",
-      "name": "deceased poeple",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00030/",
-      "name": "ultimatelu rescued poeple",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00031/",
-      "name": "police",
-      "wd_label": "police",
-      "wd_node": "wd:Q35535",
-      "wd_description": "constituted body of persons empowered by the state to enforce the law"
-    },
-    {
-      "@id": "resin:Entities/00032/",
-      "name": "investigator",
-      "wd_label": "detective",
-      "wd_node": "wd:Q842782",
-      "wd_description": "investigator, either a member of a police agency or a private person"
-    },
-    {
-      "@id": "resin:Entities/00035/",
-      "name": "court",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    },
-    {
-      "@id": "resin:Entities/00036/",
-      "name": "judge",
-      "wd_label": "judge",
-      "wd_node": "wd:Q16533",
-      "wd_description": "official who presides over court proceedings"
-    },
-    {
-      "@id": "resin:Entities/00038/",
-      "name": "poeple rescued from attack",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00027/",
-      "relationObject": "resin:Entities/00022/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30001/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00015/",
-      "relationObject": "resin:Entities/00038/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
     }
   ]
 }
