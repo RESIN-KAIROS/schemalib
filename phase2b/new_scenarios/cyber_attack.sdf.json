@@ -94,7 +94,7 @@
     {
       "@id": "resin:Events/10002",
       "name": "impact",
-      "description": "the attack impacts organizations and personal devices.",
+      "description": "the cyber attack impacts organizations and personal devices.",
       "wd_node": "Q1174599",
       "wd_label": "attack",
       "wd_description": "action to injure another organism",
@@ -127,7 +127,9 @@
       ],
       "children": [
         "resin:Events/10009",
-        "resin:Events/10010"
+        "resin:Events/10010",
+        "resin:Events/10011",
+        "resin:Events/10012"
       ],
       "children_gate": "or",
       "entities": [],
@@ -136,10 +138,10 @@
     {
       "@id": "resin:Events/10003",
       "name": "response",
-      "description": "authorities and the public respond to the attack.",
-      "wd_node": "Q31983622",
-      "wd_label": "reaction",
-      "wd_description": "action or statement in response to a stimulus or other event",
+      "description": "authorities and the public respond to the cyber attack.",
+      "wd_node": "Q169489",
+      "wd_label": "security",
+      "wd_description": "tradable financial asset",
       "isSchema": true,
       "repeatable": false,
       "outlinks": [
@@ -148,27 +150,40 @@
       "participants": [
         {
           "@id": "resin:Participants/20030",
-          "roleName": "A0_ppt_reactor",
+          "roleName": "A0_pag_agent",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20031",
-          "roleName": "A1_pag_reacted-to",
+          "roleName": "A1_ppt_thing_being_traded",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20032",
-          "roleName": "A2_prd_reaction",
+          "roleName": "A2_com_other_exchanger",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20033",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20034",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20035",
           "roleName": "AM_loc",
           "entity": ""
         }
       ],
       "children": [
-        "resin:Events/10011"
+        "resin:Events/10016",
+        "resin:Events/10013",
+        "resin:Events/10014",
+        "resin:Events/10015"
       ],
       "children_gate": "or",
       "entities": [],
@@ -177,7 +192,7 @@
     {
       "@id": "resin:Events/10004",
       "name": "investigation and justice",
-      "description": "investigation on the source of the attack and possible lawsuit related to the attack.",
+      "description": "investigation on the source of the cyber attack and possible lawsuit related to the cyber attack.",
       "wd_node": "Q697327",
       "wd_label": "lawsuit",
       "wd_description": "civil action brought in a court of law",
@@ -207,28 +222,19 @@
         }
       ],
       "children": [
-        "resin:Events/10012",
-        "resin:Events/10013",
-        "resin:Events/10014",
-        "resin:Events/10015",
-        "resin:Events/10025",
-        "resin:Events/10026",
-        "resin:Events/10027",
-        "resin:Events/10028",
-        "resin:Events/10029",
-        "resin:Events/10030",
-        "resin:Events/10036",
-        "resin:Events/10037",
+        "resin:Events/10032",
+        "resin:Events/10033",
         "resin:Events/10038",
         "resin:Events/10039",
         "resin:Events/10040",
+        "resin:Events/10041",
+        "resin:Events/10042",
+        "resin:Events/10045",
+        "resin:Events/10046",
         "resin:Events/10048",
-        "resin:Events/10049",
-        "resin:Events/10050",
-        "resin:Events/10056",
-        "resin:Events/10057",
-        "resin:Events/10058",
-        "resin:Events/10059"
+        "resin:Events/10018",
+        "resin:Events/10019",
+        "resin:Events/10030"
       ],
       "children_gate": "or",
       "entities": [],
@@ -381,44 +387,65 @@
     },
     {
       "@id": "resin:Events/10009",
-      "name": "Data Exfiltration",
-      "description": "The attacker exfiltrates data from the target system.",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
+      "name": "Business Loss",
+      "description": "The target organization or individual experiences business disruption, financial loss, or reputational damage.",
+      "wd_node": "Q2956685",
+      "wd_label": "disruption",
+      "wd_description": "event which interferes with an ongoing process",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [],
-      "participants": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_disrupter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_entity_disrupted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10010",
-      "name": "Cover Tracks",
-      "description": "The attacker covers their tracks.",
-      "wd_node": "Q1229735",
-      "wd_label": "cover-up",
-      "wd_description": "attempt to conceal evidence",
+      "name": "Harm",
+      "description": "The target organization or individual suffers personal or physical harm.",
+      "wd_node": "Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10009"
+        "resin:Events/10011"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20100",
-          "roleName": "A0_pag_coverer",
+          "roleName": "A1_ppt_experiencer_injured_party",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20101",
-          "roleName": "A1_ppt_thing_covered",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20102",
-          "roleName": "AM_loc",
+          "roleName": "A2_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20103",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -427,38 +454,30 @@
     },
     {
       "@id": "resin:Events/10011",
-      "name": "Prevent Future Attacks",
-      "description": "The authorities and the public take steps to prevent future attacks.",
-      "wd_node": "Q1717246",
-      "wd_label": "prevention",
-      "wd_description": "causing an event or condition that would otherwise occur to not occur",
+      "name": "Data Breach",
+      "description": "The attacker gains unauthorized access to the target organization's or individual's systems and data.",
+      "wd_node": "Q2144405",
+      "wd_label": "hacking",
+      "wd_description": "solving of technical work that requires deep understanding, especially of a computer system",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10012"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20110",
-          "roleName": "A0_pag_agent_agent",
+          "roleName": "A0_pag_hacker",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20111",
-          "roleName": "A1_ppt_theme_theme",
+          "roleName": "A1_ppt_target_or_project",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20112",
-          "roleName": "A2_ppt_secondary_predication_or_action",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20113",
-          "roleName": "A3_mnr__instrument",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20114",
-          "roleName": "AM_loc__location",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
@@ -467,196 +486,172 @@
     },
     {
       "@id": "resin:Events/10012",
-      "name": "Report to Police",
-      "description": "The victim of the attack reports the incident to law enforcement",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "name": "Denial-of-Service Attack",
+      "description": "The attacker launches a denial-of-service attack against the target organization's or individual's systems.",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10013",
-        "resin:Events/10025"
+        "resin:Events/10009"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20120",
-          "roleName": "A0_pag_Reporter",
+          "roleName": "A0_pag_agent_assaulter",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20121",
-          "roleName": "A1_ppt_thing_reported",
+          "roleName": "A1_ppt_theme_entity_assaulted",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20122",
-          "roleName": "A2_gol_entity_reported_to",
+          "roleName": "AM_mnr__manner",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20123",
-          "roleName": "AM_loc",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10016",
-        "resin:Events/10017",
-        "resin:Events/10018",
-        "resin:Events/10019",
-        "resin:Events/10020",
-        "resin:Events/10021",
-        "resin:Events/10022",
-        "resin:Events/10024"
-      ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10013",
-      "name": "Investigate Attack",
-      "description": "Law enforcement opens an investigation into the attack.",
-      "wd_node": "Q21004260",
-      "wd_label": "inquiry",
-      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "name": "Call the Police",
+      "description": "The organization notifies law enforcement of the attack",
+      "wd_node": "Q10423562",
+      "wd_label": "notification",
+      "wd_description": "note that a postal operator sends to the recipient",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10033",
-        "resin:Events/10034",
-        "resin:Events/10036",
-        "resin:Events/10040",
-        "resin:Events/10041"
+        "resin:Events/10014"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20130",
-          "roleName": "A0_pag_agent_examiner",
+          "roleName": "A0_pag_notifier",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20131",
-          "roleName": "A1_ppt_location_examined",
+          "roleName": "A1_gol_entity_notified",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20132",
-          "roleName": "AM_loc__location",
+          "roleName": "A2_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10035",
-        "resin:Events/10031"
-      ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10014",
-      "name": "Investigate Source",
-      "description": "Investigators try to identify the source of the attack.",
-      "wd_node": "Q3265221",
-      "wd_label": "identification",
-      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+      "name": "Notify Insurance Company",
+      "description": "The organization notifies its insurance company of the attack.",
+      "wd_node": "Q43183",
+      "wd_label": "insurance",
+      "wd_description": "equitable transfer of the risk of a loss, from one entity to another in exchange for payment",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10015"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20140",
-          "roleName": "A0_pag_agent_caller",
+          "roleName": "A0_cau_entity_making_guarantee",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20141",
-          "roleName": "A1_ppt_theme_item_being_labelled",
+          "roleName": "A1_ppt_guarantee",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20142",
-          "roleName": "A2_prd_attribute_attribute",
+          "roleName": "A2_gol_benefactive",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20143",
-          "roleName": "AM_loc__location",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10041",
-        "resin:Events/10042",
-        "resin:Events/10043",
-        "resin:Events/10044",
-        "resin:Events/10046"
-      ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10015",
-      "name": "Source Identification",
-      "description": "If the source of the attack is identified, law enforcement may take legal action against the attacker.",
-      "wd_node": "Q3265221",
-      "wd_label": "identification",
-      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+      "name": "Security Investigation",
+      "description": "The organization hires a security firm to help investigate and mitigate the attack.",
+      "wd_node": "Q169489",
+      "wd_label": "security",
+      "wd_description": "tradable financial asset",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10056",
-        "resin:Events/10014"
+        "resin:Events/10016"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20150",
-          "roleName": "A0_pag_agent_caller",
+          "roleName": "A0_pag_agent",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20151",
-          "roleName": "A1_ppt_theme_item_being_labelled",
+          "roleName": "A1_ppt_thing_being_traded",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20152",
-          "roleName": "A2_prd_attribute_attribute",
+          "roleName": "A2_com_other_exchanger",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20153",
-          "roleName": "AM_loc__location",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20154",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20155",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10051",
-        "resin:Events/10053",
-        "resin:Events/10054",
-        "resin:Events/10055"
-      ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10016",
-      "name": "Police Response",
-      "description": "Police officials in Washington respond to the incident",
+      "name": "Prosecute Attackers",
+      "description": "The organization works with law enforcement to prosecute the attackers.",
       "wd_node": "Q1403016",
       "wd_label": "arrest",
       "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10027",
-        "resin:Events/10031"
-      ],
+      "outlinks": [],
       "participants": [
         {
           "@id": "resin:Participants/20160",
@@ -684,33 +679,33 @@
     },
     {
       "@id": "resin:Events/10017",
-      "name": "Dallas Sniper",
-      "description": "The incident occurred just days after five Dallas police officers were killed by a sniper",
-      "wd_node": "Q2252077",
-      "wd_label": "shooting",
-      "wd_description": "act or process of firing firearms or other projectile weapons",
+      "name": "Source of the attack",
+      "description": "The source of the attack is identified",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10031",
         "resin:Events/10032",
-        "resin:Events/10035",
-        "resin:Events/10045"
+        "resin:Events/10018",
+        "resin:Events/10030",
+        "resin:Events/10031"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20170",
-          "roleName": "A0_pag_agent_shooter",
+          "roleName": "A0_pag_agent_assaulter",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20171",
-          "roleName": "A1_ppt_patient_corpse",
+          "roleName": "A1_ppt_theme_entity_assaulted",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20172",
-          "roleName": "A2_mnr_instrument_gun",
+          "roleName": "AM_mnr__manner",
           "entity": ""
         },
         {
@@ -719,20 +714,34 @@
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10020",
+        "resin:Events/10021",
+        "resin:Events/10022",
+        "resin:Events/10024",
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028",
+        "resin:Events/10029"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10018",
-      "name": "Bureau of Alcohol",
-      "description": "An official from the Bureau of Alcohol",
+      "name": "Gather Evidence",
+      "description": "Evidence is gathered against the attacker.",
       "wd_node": "Q1403016",
       "wd_label": "arrest",
       "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10056"
+        "resin:Events/10035",
+        "resin:Events/10037",
+        "resin:Events/10040",
+        "resin:Events/10046"
       ],
       "participants": [
         {
@@ -756,73 +765,89 @@
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10034",
+        "resin:Events/10036"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10019",
-      "name": "FBI",
-      "description": "Another law enforcement official told Fox News the Federal Bureau of Investigation",
-      "wd_node": "Q21004260",
-      "wd_label": "inquiry",
-      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "name": "Prosecution",
+      "description": "The attacker is prosecuted in court.",
+      "wd_node": "Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10023",
-        "resin:Events/10030",
-        "resin:Events/10031",
-        "resin:Events/10035",
-        "resin:Events/10042",
-        "resin:Events/10052"
+        "resin:Events/10043",
+        "resin:Events/10045"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20190",
-          "roleName": "A0_pag_agent_examiner",
+          "roleName": "A0_pag__litigant",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20191",
-          "roleName": "A1_ppt_location_examined",
+          "roleName": "A1_ppt__entity_tried",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20192",
+          "roleName": "A2_gol__adjudicator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20193",
+          "roleName": "A3_cau_tried_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20194",
           "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10043"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10020",
-      "name": "Investigation",
-      "description": "This will be thoroughly investigated and in keeping with past practice",
-      "wd_node": "Q41689629",
-      "wd_label": "procedure",
-      "wd_description": "standardised method of carrying out a task",
+      "name": "Detecting possible outbreak",
+      "description": "According to ISIS, definite hits were identified",
+      "wd_node": "Q124490",
+      "wd_label": "violence",
+      "wd_description": "use of physical force or power with the intent to inflict harm",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10057",
-        "resin:Events/10046"
+        "resin:Events/10022",
+        "resin:Events/10025",
+        "resin:Events/10031"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20200",
-          "roleName": "A0_pag_agent",
+          "roleName": "A0_pag_agent_of_violent_behavior",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20201",
-          "roleName": "A1_ppt_process_or_operation",
+          "roleName": "A1_ppt_non-agentive_thing/action_characterized_by_violence",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20202",
-          "roleName": "A2_gol_benefactive",
+          "roleName": "A2_gol_target_of_violent_behavior",
           "entity": ""
         },
         {
@@ -836,28 +861,38 @@
     },
     {
       "@id": "resin:Events/10021",
-      "name": "Officer Uses Force",
-      "description": "The preliminary investigation revealed the officer who used force observed an assault and attempted to detain the involved suspects",
-      "wd_node": "Q2911369",
-      "wd_label": "assault",
-      "wd_description": "act causing the reasonable apprehension of an immediate harmful or offensive touching",
+      "name": "Shells fired at army base",
+      "description": "Shells were fired at a Nigerian army base in Goniri, about 45 km southeast of Damaturu, in northeastern Nigeria",
+      "wd_node": "Q2252077",
+      "wd_label": "shooting",
+      "wd_description": "act or process of firing firearms or other projectile weapons",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10041",
+        "resin:Events/10044",
+        "resin:Events/10031"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20210",
-          "roleName": "A0_pag_assaulter",
+          "roleName": "A0_pag_agent_shooter",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20211",
-          "roleName": "A1_ppt_entity_assaulted",
+          "roleName": "A1_ppt_patient_corpse",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20212",
-          "roleName": "AM_loc",
+          "roleName": "A2_mnr_instrument_gun",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20213",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -866,66 +901,77 @@
     },
     {
       "@id": "resin:Events/10022",
-      "name": "Foot chase",
-      "description": "After a foot chase that ended at the gas station",
-      "wd_node": "Q11639276",
-      "wd_label": "pursuit",
-      "wd_description": "following a retreating adversary",
+      "name": "Hacking",
+      "description": "More than 45,000 attacks recorded in countries including the UK, Russia, India and China may have originated with theft of ",
+      "wd_node": "Q29137",
+      "wd_label": "cybercrime",
+      "wd_description": "any crime that involves a computer and a network",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10045",
-        "resin:Events/10049",
-        "resin:Events/10050",
-        "resin:Events/10054"
+        "resin:Events/10041",
+        "resin:Events/10035",
+        "resin:Events/10033"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20220",
-          "roleName": "A0_pag_thing_following",
+          "roleName": "A0_pag_criminal",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20221",
-          "roleName": "A1_ppt_thing_followed",
+          "roleName": "A1_ppt_act",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20222",
+          "roleName": "A2_gol_crime_against",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
           "roleName": "AM_loc",
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10044"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10023",
-      "name": "Incident",
-      "description": "Local police officials describe the incident",
-      "wd_node": "Q83267",
-      "wd_label": "crime",
-      "wd_description": "unlawful act forbidden and punishable by criminal law",
+      "name": "Telefonica",
+      "description": "In Spain, major companies including telecommunications firm Telef\u00f3nica were infected",
+      "wd_node": "Q166231",
+      "wd_label": "infection",
+      "wd_description": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10021",
-        "resin:Events/10059"
+        "resin:Events/10033"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20230",
-          "roleName": "A0_pag__perp",
+          "roleName": "A1_gol_destination_thing_becoming_infected",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20231",
-          "roleName": "A2_gol__victim",
+          "roleName": "A2_ppt_theme_infectant",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20232",
+          "roleName": "A0_pag_agent_causer_of_infection",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
           "roleName": "AM_loc__location",
           "entity": ""
         }
@@ -935,64 +981,55 @@
     },
     {
       "@id": "resin:Events/10024",
-      "name": "Paul Pastor",
-      "description": "Paul Pastor, the county sheriff, comments on the incident",
-      "wd_node": "Q63248011",
-      "wd_label": "comment",
-      "wd_description": "None",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10055",
-        "resin:Events/10028"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20240",
-          "roleName": "A0_pag_commenter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20241",
-          "roleName": "A1_ppt_utterance",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20242",
-          "roleName": "A2_gol_hearer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20243",
-          "roleName": "A3_vsp_attributive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20244",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10045"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10025",
-      "name": "Trauma Re-experiencing",
-      "description": "The victim may have to relive the trauma of the attack by recounting the details to police officers",
+      "name": "Investigation",
+      "description": "It is based on interviews with victims and witnesses, investigations of the attack sites, IDF and media reports on the fighting, and in one case IDF video footage of the attack",
       "wd_node": "Q1174599",
       "wd_label": "attack",
       "wd_description": "action to injure another organism",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10027"
+        "resin:Events/10035",
+        "resin:Events/10023"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20243",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Civilian Attacks",
+      "description": "Human Rights Watch determined that in all of these attacks the Israeli military directed their strikes on individuals who were all found to be civilians",
+      "wd_node": "Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10035",
+        "resin:Events/10044",
+        "resin:Events/10018"
       ],
       "participants": [
         {
@@ -1021,32 +1058,36 @@
     },
     {
       "@id": "resin:Events/10026",
-      "name": "Public Assault",
-      "description": "The victim may have been attacked in a public place, and they want law enforcement to be aware in case other people were attacked or witnessed the attack",
-      "wd_node": "Q2911369",
-      "wd_label": "assault",
-      "wd_description": "act causing the reasonable apprehension of an immediate harmful or offensive touching",
+      "name": "No Evidence",
+      "description": "In none of the cases did Human Rights Watch find evidence",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10032",
-        "resin:Events/10035",
-        "resin:Events/10012",
+        "resin:Events/10022",
+        "resin:Events/10025",
         "resin:Events/10031"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20260",
-          "roleName": "A0_pag_assaulter",
+          "roleName": "A0_pag_Reporter",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20261",
-          "roleName": "A1_ppt_entity_assaulted",
+          "roleName": "A1_ppt_thing_reported",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20262",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
           "roleName": "AM_loc",
           "entity": ""
         }
@@ -1056,30 +1097,30 @@
     },
     {
       "@id": "resin:Events/10027",
-      "name": "No Indication of Harm",
-      "description": "Paul Pastor, the county sheriff, says that there is no indication that he had intended any harm to others.",
-      "wd_node": "Q1403016",
-      "wd_label": "arrest",
-      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "name": "Attack Determination",
+      "description": "The nature of the attack is determined",
+      "wd_node": "Q3265221",
+      "wd_label": "identification",
+      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10059"
+        "resin:Events/10025"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20270",
-          "roleName": "A0_pag__police",
+          "roleName": "A0_pag_agent_caller",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20271",
-          "roleName": "A1_ppt__criminal",
+          "roleName": "A1_ppt_theme_item_being_labelled",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20272",
-          "roleName": "A2_cau__crime",
+          "roleName": "A2_prd_attribute_attribute",
           "entity": ""
         },
         {
@@ -1088,42 +1129,37 @@
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10033",
-        "resin:Events/10023"
-      ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10028",
-      "name": "Unidentified Woman",
-      "description": "He does not identify her.",
-      "wd_node": "Q3265221",
-      "wd_label": "identification",
-      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+      "name": "Determine Damage",
+      "description": "The extent of the damage is determined",
+      "wd_node": "Q481609",
+      "wd_label": "damage",
+      "wd_description": "changes introduced into a system that adversely affect its current or future performance",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10059",
-        "resin:Events/10044",
-        "resin:Events/10046"
+        "resin:Events/10035",
+        "resin:Events/10041",
+        "resin:Events/10023"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20280",
-          "roleName": "A0_pag_agent_caller",
+          "roleName": "A0_pag_agent_agent_causer",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20281",
-          "roleName": "A1_ppt_theme_item_being_labelled",
+          "roleName": "A1_ppt_patient_entity_damaged",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20282",
-          "roleName": "A2_prd_attribute_attribute",
+          "roleName": "A2_mnr_instrument_instrument",
           "entity": ""
         },
         {
@@ -1132,59 +1168,67 @@
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10032"
-      ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10029",
-      "name": "Car Accident",
-      "description": "The victim of the attack was driving her car when the suspect hit her car with his truck, causing her to crash.",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
+      "name": "Response Planning",
+      "description": "The response to the attack is planned",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10030"
+        "resin:Events/10035",
+        "resin:Events/10041",
+        "resin:Events/10023"
       ],
-      "participants": [],
-      "children": [
-        "resin:Events/10047"
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
       ],
-      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10030",
-      "name": "Assault",
-      "description": "The suspect then got out of his truck and attacked the victim.",
-      "wd_node": "Q1174599",
-      "wd_label": "attack",
-      "wd_description": "action to injure another organism",
+      "name": "Attack Source",
+      "description": "The attack is traced back to its source, and the responsible party is held accountable",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [
-        "resin:Events/10012"
-      ],
+      "outlinks": [],
       "participants": [
         {
           "@id": "resin:Participants/20300",
-          "roleName": "A0_pag_agent_assaulter",
+          "roleName": "A0_pag__police",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20301",
-          "roleName": "A1_ppt_theme_entity_assaulted",
+          "roleName": "A1_ppt__criminal",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20302",
-          "roleName": "AM_mnr__manner",
+          "roleName": "A2_cau__crime",
           "entity": ""
         },
         {
@@ -1198,33 +1242,40 @@
     },
     {
       "@id": "resin:Events/10031",
-      "name": "Report Findings",
-      "description": "The team submitted their findings to the appropriate authorities",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "name": "Source Isolation",
+      "description": "The source of the attack is known, and steps can be taken to prevent future attacks from the same source",
+      "wd_node": "Q1717246",
+      "wd_label": "prevention",
+      "wd_description": "causing an event or condition that would otherwise occur to not occur",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10035"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20310",
-          "roleName": "A0_pag_Reporter",
+          "roleName": "A0_pag_agent_agent",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20311",
-          "roleName": "A1_ppt_thing_reported",
+          "roleName": "A1_ppt_theme_theme",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20312",
-          "roleName": "A2_gol_entity_reported_to",
+          "roleName": "A2_ppt_secondary_predication_or_action",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20313",
-          "roleName": "AM_loc",
+          "roleName": "A3_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20314",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -1233,40 +1284,43 @@
     },
     {
       "@id": "resin:Events/10032",
-      "name": "Law Enforcement",
-      "description": "Law enforcement officials are notified of the attack",
-      "wd_node": "Q1174599",
-      "wd_label": "attack",
-      "wd_description": "action to injure another organism",
+      "name": "File a Lawsuit",
+      "description": "Victims of the attack can seek compensation from the responsible party",
+      "wd_node": "Q1498273",
+      "wd_label": "compensation",
+      "wd_description": "legal term",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [
-        "resin:Events/10055"
-      ],
+      "outlinks": [],
       "participants": [
         {
           "@id": "resin:Participants/20320",
-          "roleName": "A0_pag_agent_assaulter",
+          "roleName": "A0_pag_payer_or_buyer",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20321",
-          "roleName": "A1_ppt_theme_entity_assaulted",
+          "roleName": "A1_ppt_thing_bought_or_paid_for",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20322",
-          "roleName": "AM_mnr__manner",
+          "roleName": "A2_gol_seller_or_person_being_paid",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20323",
-          "roleName": "AM_loc__location",
+          "roleName": "A3_ppt_price_paid",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20324",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
       "children": [
-        "resin:Events/10052"
+        "resin:Events/10037"
       ],
       "children_gate": "or",
       "entities": [],
@@ -1274,42 +1328,39 @@
     },
     {
       "@id": "resin:Events/10033",
-      "name": "Collect Evidence",
-      "description": "The investigators collect evidence and interview witnesses",
-      "wd_node": "Q1779350",
-      "wd_label": "collection",
-      "wd_description": "money gathered to support a church or charity, mainly during service",
+      "name": "Cybersecurity Threat",
+      "description": "Kaspersky Lab records more than 45,000 attacks in 99 countries.",
+      "wd_node": "Q2251595",
+      "wd_label": "protection",
+      "wd_description": "action or precaution against a threat against an uncertainty or possible unpleasant events",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10045"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20330",
-          "roleName": "A0_pag_agent",
+          "roleName": "A0_pag_protector",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20331",
-          "roleName": "A1_ppt_thing_acquired",
+          "roleName": "A1_ppt_protected",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20332",
-          "roleName": "A2_dir_source",
+          "roleName": "A2_ppt_danger",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20333",
-          "roleName": "A3_vsp_more_specific_attribute_of_arg1_being_collected",
+          "roleName": "A3_mnr_instrument",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20334",
-          "roleName": "A4_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20335",
           "roleName": "AM_loc",
           "entity": ""
         }
@@ -1319,35 +1370,41 @@
     },
     {
       "@id": "resin:Events/10034",
-      "name": "Analysis",
-      "description": "The investigators analyze the evidence and compile a report",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "name": "Investigate Crime",
+      "description": "The Office of the Prosecutor collected and examined the evidence and gathered testimony from victims and witnesses.",
+      "wd_node": "Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10014"
+        "resin:Events/10037",
+        "resin:Events/10041"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20340",
-          "roleName": "A0_pag_Reporter",
+          "roleName": "A0_pag__litigant",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20341",
-          "roleName": "A1_ppt_thing_reported",
+          "roleName": "A1_ppt__entity_tried",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20342",
-          "roleName": "A2_gol_entity_reported_to",
+          "roleName": "A2_gol__adjudicator",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20343",
-          "roleName": "AM_loc",
+          "roleName": "A3_cau_tried_for",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20344",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -1356,36 +1413,35 @@
     },
     {
       "@id": "resin:Events/10035",
-      "name": "Report",
-      "description": "The report is submitted to the appropriate authorities",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "name": "Criminal Investigation",
+      "description": "The investigation culminated in either the issuance of arrest warrants against individuals suspected of committing crimes or a decision not to prosecute due to lack of evidence.",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10056",
-        "resin:Events/10014"
+        "resin:Events/10043"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20350",
-          "roleName": "A0_pag_Reporter",
+          "roleName": "A0_pag__police",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20351",
-          "roleName": "A1_ppt_thing_reported",
+          "roleName": "A1_ppt__criminal",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20352",
-          "roleName": "A2_gol_entity_reported_to",
+          "roleName": "A2_cau__crime",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20353",
-          "roleName": "AM_loc",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -1394,69 +1450,45 @@
     },
     {
       "@id": "resin:Events/10036",
-      "name": "Request for Assistance",
-      "description": "The agency may ask for help from other law enforcement agencies in investigating the attack",
-      "wd_node": "Q1403016",
-      "wd_label": "arrest",
-      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "name": "No Indication of Manipulation",
+      "description": "The Prosecution sees no indication whatsoever that the incriminating intercepts, photographs and videos were manipulated",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10020",
-        "resin:Events/10027"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20360",
-          "roleName": "A0_pag__police",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20361",
-          "roleName": "A1_ppt__criminal",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20362",
-          "roleName": "A2_cau__crime",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20363",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
+      "outlinks": [],
+      "participants": [],
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10037",
-      "name": "Help Identify Attacker",
-      "description": "The agency may ask for help from the public in identifying the attacker",
-      "wd_node": "Q3265221",
-      "wd_label": "identification",
-      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+      "name": "Attack Prevention",
+      "description": "Additionally, if there is enough evidence, the attacker could be prosecuted and convicted in a court of law.",
+      "wd_node": "Q2916183",
+      "wd_label": "conviction",
+      "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10021"
+        "resin:Events/10019",
+        "resin:Events/10023"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20370",
-          "roleName": "A0_pag_agent_caller",
+          "roleName": "A0_pag__judge",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20371",
-          "roleName": "A1_ppt_theme_item_being_labelled",
+          "roleName": "A1_ppt__person_convicted",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20372",
-          "roleName": "A2_prd_attribute_attribute",
+          "roleName": "A2_cau__convicted_of",
           "entity": ""
         },
         {
@@ -1465,41 +1497,51 @@
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10017",
+        "resin:Events/10031",
+        "resin:Events/10047"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
     {
       "@id": "resin:Events/10038",
-      "name": "Property Destruction",
-      "description": "The attack occurred on law enforcement property",
-      "wd_node": "Q1174599",
-      "wd_label": "attack",
-      "wd_description": "action to injure another organism",
+      "name": "Incomplete evidence",
+      "description": "The evidence may be incomplete",
+      "wd_node": "Q11540953",
+      "wd_label": "search",
+      "wd_description": "search for target data from a set of data",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10029",
-        "resin:Events/10031"
+        "resin:Events/10020",
+        "resin:Events/10021",
+        "resin:Events/10028",
+        "resin:Events/10032",
+        "resin:Events/10047",
+        "resin:Events/10048"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20380",
-          "roleName": "A0_pag_agent_assaulter",
+          "roleName": "A0_pag_searcher",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20381",
-          "roleName": "A1_ppt_theme_entity_assaulted",
+          "roleName": "A1_loc_Area_searched",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20382",
-          "roleName": "AM_mnr__manner",
+          "roleName": "A2_ppt_searched_for",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20383",
-          "roleName": "AM_loc__location",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
@@ -1508,16 +1550,16 @@
     },
     {
       "@id": "resin:Events/10039",
-      "name": "Police Brutality",
-      "description": "The attack was motivated by a law enforcement officer's actions",
-      "wd_node": "Q533668",
-      "wd_label": "thrust",
-      "wd_description": "force which expels or accelerates mass in one direction",
+      "name": "Biased Defence",
+      "description": "The defence may be biased",
+      "wd_node": "Q169489",
+      "wd_label": "security",
+      "wd_description": "tradable financial asset",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10051",
-        "resin:Events/10029"
+        "resin:Events/10018",
+        "resin:Events/10022"
       ],
       "participants": [
         {
@@ -1527,16 +1569,26 @@
         },
         {
           "@id": "resin:Participants/20391",
-          "roleName": "A1_ppt_entity_pushed",
+          "roleName": "A1_ppt_thing_being_traded",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20392",
-          "roleName": "A2_gol_direction",
+          "roleName": "A2_com_other_exchanger",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20393",
+          "roleName": "A3_ppt_other_item_in_exchange",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20394",
+          "roleName": "A4_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20395",
           "roleName": "AM_loc",
           "entity": ""
         }
@@ -1546,37 +1598,35 @@
     },
     {
       "@id": "resin:Events/10040",
-      "name": "FBI Case",
-      "description": "The case is turned over to the FBI",
-      "wd_node": "Q1403016",
-      "wd_label": "arrest",
-      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "name": "Prosecutor's Assessment",
+      "description": "The Prosecution will assess if there is reasonable ground to believe that core crimes have been committed and by who.",
+      "wd_node": "Q851176",
+      "wd_label": "assessment",
+      "wd_description": "value judgement about a fact, an object or a person",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10037",
-        "resin:Events/10020",
-        "resin:Events/10024"
+        "resin:Events/10043"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20400",
-          "roleName": "A0_pag__police",
+          "roleName": "A0_pag_assessor",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20401",
-          "roleName": "A1_ppt__criminal",
+          "roleName": "A1_ppt_entity_assessed",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20402",
-          "roleName": "A2_cau__crime",
+          "roleName": "A2_prd_value_or_attribute",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20403",
-          "roleName": "AM_loc__location",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
@@ -1585,32 +1635,76 @@
     },
     {
       "@id": "resin:Events/10041",
-      "name": "Internal Investigation",
-      "description": "The FBI and postal inspectors have spent months piecing together a voluminous internal report that will review the scope of the investigation and explore issues including what has been the prevailing theory",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "name": "Issuing Arrest Warrant",
+      "description": "If they believe so, they will issue arrest warrants against the individuals suspected.",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10043"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20410",
-          "roleName": "A0_pag_Reporter",
+          "roleName": "A0_pag__police",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20411",
-          "roleName": "A1_ppt_thing_reported",
+          "roleName": "A1_ppt__criminal",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20412",
-          "roleName": "A2_gol_entity_reported_to",
+          "roleName": "A2_cau__crime",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20413",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10042",
+      "name": "Surveillance",
+      "description": "The evidence in this case is largely supported by footage and intercepts",
+      "wd_node": "Q1196258",
+      "wd_label": "testimony",
+      "wd_description": "solemn attestation as to the truth of a matter",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10018",
+        "resin:Events/10031"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20420",
+          "roleName": "A0_pag_witness",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20421",
+          "roleName": "A1_ppt_testimony",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20422",
+          "roleName": "A2_gol_person_testified_for/against",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20423",
           "roleName": "AM_loc",
           "entity": ""
         }
@@ -1619,52 +1713,34 @@
       "relations": []
     },
     {
-      "@id": "resin:Events/10042",
-      "name": "Theory",
-      "description": "That theory emerged early in the investigation and remains viable today, authorities said",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10055"
-      ],
-      "participants": [],
-      "entities": [],
-      "relations": []
-    },
-    {
       "@id": "resin:Events/10043",
-      "name": "Backlash",
-      "description": "Sources in Denver's gay community, who feared a backlash if one or both killers turned out to be gay, say the truth may never be known",
-      "wd_node": "Q44619",
-      "wd_label": "fear",
-      "wd_description": "emotion induced by perceived danger or threat",
+      "name": "Trial",
+      "description": "The attacker is tried and convicted or acquitted on a charge of an offence against any of the preceding provisions of this Division.",
+      "wd_node": "Q2916183",
+      "wd_label": "conviction",
+      "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [
-        "resin:Events/10029"
-      ],
+      "outlinks": [],
       "participants": [
         {
           "@id": "resin:Participants/20430",
-          "roleName": "A0_ppt_scaredy_cat",
+          "roleName": "A0_pag__judge",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20431",
-          "roleName": "A1_ppt_afraid_of",
+          "roleName": "A1_ppt__person_convicted",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20432",
-          "roleName": "A2_gol_afraid_for",
+          "roleName": "A2_cau__convicted_of",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20433",
-          "roleName": "AM_loc",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -1673,28 +1749,36 @@
     },
     {
       "@id": "resin:Events/10044",
-      "name": "Theories about myths",
-      "description": "As they continue to search for the truth, investigators have developed theories about how the myths emerged and spread",
-      "wd_node": "Q105460363",
-      "wd_label": "spread",
-      "wd_description": "the spread of something (e.g. a pathogen, an idea, a technique etc)",
+      "name": "Arrest Warrant",
+      "description": "A warrant is issued for the attacker's arrest.",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10043",
+        "resin:Events/10023"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20440",
-          "roleName": "A0_pag_distributor",
+          "roleName": "A0_pag__police",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20441",
-          "roleName": "A1_ppt_things_distributed",
+          "roleName": "A1_ppt__criminal",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20442",
-          "roleName": "AM_loc",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20443",
+          "roleName": "AM_loc__location",
           "entity": ""
         }
       ],
@@ -1703,111 +1787,112 @@
     },
     {
       "@id": "resin:Events/10045",
-      "name": "Traumatized Students",
-      "description": "Some sprang directly from the mouths of traumatized students",
-      "wd_node": "Q1196258",
-      "wd_label": "testimony",
-      "wd_description": "solemn attestation as to the truth of a matter",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10052",
-        "resin:Events/10030"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20450",
-          "roleName": "A0_pag_witness",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20451",
-          "roleName": "A1_ppt_testimony",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20452",
-          "roleName": "A2_gol_person_testified_for/against",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20453",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10046",
-      "name": "Security Footage",
-      "description": "Investigators review any CCTV footage of the attack to try and identify the perpetrator",
-      "wd_node": "Q265158",
-      "wd_label": "review",
-      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20460",
-          "roleName": "A0_pag_reviewer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20461",
-          "roleName": "A1_ppt_thing_reviewed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20462",
-          "roleName": "A2_gol_beneficiary",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20463",
-          "roleName": "A3_vsp_secondary-theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20464",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10047",
-      "name": "Unknown Culprit",
-      "description": "The culprit is a U",
+      "name": "Violation of Quarantine",
+      "description": "The attacker may be fined, imprisoned, or both.",
       "wd_node": "Q83267",
       "wd_label": "crime",
       "wd_description": "unlawful act forbidden and punishable by criminal law",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [
-        "resin:Events/10032",
-        "resin:Events/10050",
-        "resin:Events/10051",
-        "resin:Events/10058"
-      ],
+      "outlinks": [],
       "participants": [
         {
-          "@id": "resin:Participants/20470",
+          "@id": "resin:Participants/20450",
           "roleName": "A0_pag__perp",
           "entity": ""
         },
         {
-          "@id": "resin:Participants/20471",
+          "@id": "resin:Participants/20451",
           "roleName": "A2_gol__victim",
           "entity": ""
         },
         {
-          "@id": "resin:Participants/20472",
+          "@id": "resin:Participants/20452",
           "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10035"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10046",
+      "name": "attacker caught",
+      "description": "The attacker is caught and arrested by the police",
+      "wd_node": "Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10041",
+        "resin:Events/10019",
+        "resin:Events/10033"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20460",
+          "roleName": "A0_pag__police",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20461",
+          "roleName": "A1_ppt__criminal",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20462",
+          "roleName": "A2_cau__crime",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20463",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10025"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10047",
+      "name": "Press Charges",
+      "description": "The victim or their family presses charges against the attacker",
+      "wd_node": "Q697327",
+      "wd_label": "lawsuit",
+      "wd_description": "civil action brought in a court of law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20470",
+          "roleName": "A0_pag_prosecutor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20471",
+          "roleName": "A1_ppt_defendant",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20472",
+          "roleName": "A2_vsp_type/grounds/accusation",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20473",
+          "roleName": "AM_loc",
           "entity": ""
         }
       ],
@@ -1816,463 +1901,32 @@
     },
     {
       "@id": "resin:Events/10048",
-      "name": "US Capitol Police said",
-      "description": "US Capitol Police said",
-      "wd_node": "Q1403016",
-      "wd_label": "arrest",
-      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "name": "Confession",
+      "description": "The attacker confesses to the crime",
+      "wd_node": "Q83267",
+      "wd_label": "crime",
+      "wd_description": "unlawful act forbidden and punishable by criminal law",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10016",
-        "resin:Events/10032",
-        "resin:Events/10038",
-        "resin:Events/10045",
-        "resin:Events/10050",
-        "resin:Events/10051"
+        "resin:Events/10034",
+        "resin:Events/10035",
+        "resin:Events/10040",
+        "resin:Events/10046"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20480",
-          "roleName": "A0_pag__police",
+          "roleName": "A0_pag__perp",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20481",
-          "roleName": "A1_ppt__criminal",
+          "roleName": "A2_gol__victim",
           "entity": ""
         },
         {
           "@id": "resin:Participants/20482",
-          "roleName": "A2_cau__crime",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20483",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10049",
-      "name": "Persons of Interest Report",
-      "description": "This report includes the names of various people deemed to be \"persons of interest\" over the years, as well as updates on the scientific tests.",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10029"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20490",
-          "roleName": "A0_pag_Reporter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20491",
-          "roleName": "A1_ppt_thing_reported",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20492",
-          "roleName": "A2_gol_entity_reported_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20493",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10050",
-      "name": "Sensationalize",
-      "description": "Sensational comments",
-      "wd_node": "Q63248011",
-      "wd_label": "comment",
-      "wd_description": "None",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10019"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20500",
-          "roleName": "A0_pag_commenter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20501",
-          "roleName": "A1_ppt_utterance",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20502",
-          "roleName": "A2_gol_hearer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20503",
-          "roleName": "A3_vsp_attributive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20504",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10051",
-      "name": "Public Attack",
-      "description": "The attack occurred in a public place;",
-      "wd_node": "Q1174599",
-      "wd_label": "attack",
-      "wd_description": "action to injure another organism",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10014"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20510",
-          "roleName": "A0_pag_agent_assaulter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20511",
-          "roleName": "A1_ppt_theme_entity_assaulted",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20512",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20513",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10052",
-      "name": "Mass Murder",
-      "description": "The motive for the attack appeared to be indiscriminate mass murder;",
-      "wd_node": "Q750215",
-      "wd_label": "mass_murder",
-      "wd_description": "act of murdering a large number of people",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10018",
-        "resin:Events/10027"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20520",
-          "roleName": "A0_pag_killer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20521",
-          "roleName": "A1_ppt_corpse",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20522",
-          "roleName": "A2_mnr_instrument",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20523",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10053",
-      "name": "Perpetrator",
-      "description": "The perpetrator is a state or nonstate actor;",
-      "wd_node": "Q36949023",
-      "wd_label": "involvement",
-      "wd_description": "state of being involved (e.g. in a process or event)",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20530",
-          "roleName": "A0_pag_causer_of_inclusion",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20531",
-          "roleName": "A1_ppt_theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20532",
-          "roleName": "A2_ppt_group",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20533",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10054",
-      "name": "Criticism",
-      "description": "The United States endured much condemnation from the international community- not to mention internal criticism.",
-      "wd_node": "Q17955",
-      "wd_label": "criticism",
-      "wd_description": "practice of judging the merits and faults of something or someone",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10032",
-        "resin:Events/10012",
-        "resin:Events/10016"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20540",
-          "roleName": "A0_pag_critiquer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20541",
-          "roleName": "A1_ppt_entity_being_critiqued",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20542",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10055",
-      "name": "Prevent Violence",
-      "description": "Exclude cases of armed robbery, gang violence, or domestic violence",
-      "wd_node": "Q124490",
-      "wd_label": "violence",
-      "wd_description": "use of physical force or power with the intent to inflict harm",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10027"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20550",
-          "roleName": "A0_pag_agent_of_violent_behavior",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20551",
-          "roleName": "A1_ppt_non-agentive_thing/action_characterized_by_violence",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20552",
-          "roleName": "A2_gol_target_of_violent_behavior",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20553",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10056",
-      "name": "Arrest",
-      "description": "The attacker may be arrested, charged, and tried in a court of law.",
-      "wd_node": "Q1403016",
-      "wd_label": "arrest",
-      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20560",
-          "roleName": "A0_pag__police",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20561",
-          "roleName": "A1_ppt__criminal",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20562",
-          "roleName": "A2_cau__crime",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20563",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10034"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10057",
-      "name": "Hone Criteria",
-      "description": "We honed our criteria accordingly",
-      "wd_node": "Q65920874",
-      "wd_label": "configuring",
-      "wd_description": "activity of changing a system to suit a particular function",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10015"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20570",
-          "roleName": "A0_pag_agent",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20571",
-          "roleName": "A1_ppt_construction",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20572",
-          "roleName": "A2_vsp_start_state",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20573",
-          "roleName": "A3_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20574",
-          "roleName": "A4_prd_end_state",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20575",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10058",
-      "name": "Do Not Use",
-      "description": "In that state of affairs, it should not be used",
-      "wd_node": "Q21127725",
-      "wd_label": "caution",
-      "wd_description": "attention paid to potentially dangerous consequences of an act",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10042",
-        "resin:Events/10052",
-        "resin:Events/10030"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20580",
-          "roleName": "A0_pag_Sayer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20581",
-          "roleName": "A1_ppt_Utterance",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20582",
-          "roleName": "A2_gol_Hearer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20583",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10059",
-      "name": "Thorough Investigation",
-      "description": "Third, after an attack on a civilian suspected of taking an active part, at such time, in hostilities, a thorough investigation regarding the precision of the identification of the target and the circumstances of the attack upon him is to be performed ",
-      "wd_node": "Q1174599",
-      "wd_label": "attack",
-      "wd_description": "action to injure another organism",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10053",
-        "resin:Events/10015"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20590",
-          "roleName": "A0_pag_agent_assaulter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20591",
-          "roleName": "A1_ppt_theme_entity_assaulted",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20592",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20593",
           "roleName": "AM_loc__location",
           "entity": ""
         }
