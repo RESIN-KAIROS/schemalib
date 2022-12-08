@@ -15,6 +15,180 @@
       "children_gate": "or",
       "description": "",
       "name": "Car IED",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "IED",
+          "wd_label": "Improvised Explosive Device",
+          "wd_node": "wd:Q1249453",
+          "wd_description": "homemade bomb"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "crime committer",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "target location",
+          "wd_label": "geographic region",
+          "wd_node": "wd:Q82794",
+          "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "general population",
+          "wd_label": "human population",
+          "wd_node": "wd:Q33829",
+          "wd_description": "humans that live in the same locality"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "building facility",
+          "wd_label": "geographic region",
+          "wd_node": "wd:Q82794",
+          "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "commander or requester",
+          "wd_label": "participant",
+          "wd_node": "wd:Q56512863",
+          "wd_description": "object that takes part in an event or process"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "bomb attack",
+          "wd_label": "bomb attack",
+          "wd_node": "wd:Q891854",
+          "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "victims",
+          "wd_label": "human population",
+          "wd_node": "wd:Q33829",
+          "wd_description": "humans that live in the same locality"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "evacuation site",
+          "wd_label": "geographic region",
+          "wd_node": "wd:Q82794",
+          "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "medical staff",
+          "wd_label": "medical staff",
+          "wd_node": "wd:Q69948433",
+          "wd_description": "professional medical personnel who provide care to patients in an organized facility, institution or agency"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "investigator",
+          "wd_label": "detective",
+          "wd_node": "wd:Q842782",
+          "wd_description": "investigator, either a member of a police agency or a private person"
+        },
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "suspect",
+          "wd_label": "suspect",
+          "wd_node": "wd:Q224952",
+          "wd_description": "known person suspected of committing a crime"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "prison",
+          "wd_label": "prison",
+          "wd_node": "wd:Q40357",
+          "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "court",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "judge",
+          "wd_label": "judge",
+          "wd_node": "wd:Q16533",
+          "wd_description": "official who presides over court proceedings"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "group of people",
+          "wd_label": "human population",
+          "wd_node": "wd:Q33829",
+          "wd_description": "humans that live in the same locality"
+        },
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "components",
+          "wd_label": "component",
+          "wd_node": "wd:Q1310239",
+          "wd_description": "smaller, self-contained part of technical entity consisting of components"
+        },
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "car",
+          "wd_label": "car",
+          "wd_node": "wd:Q1420",
+          "wd_description": "road vehicle powered by a motor to carry driver and small number of passengers"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00015/",
+          "relationObject": "resin:Entities/00014/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00012/",
+          "relationObject": "resin:Entities/00003/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00008/",
+          "relationObject": "resin:Entities/00003/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00001/",
+          "relationObject": "resin:Entities/00016/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -27,11 +201,6 @@
       "comment": "container node",
       "description": "The contributory factors that shows motives and backgrounds.",
       "name": "Contributory Factors",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "outlinks": [
         "resin:Events/10002/Steps_kairos:Container:Planning"
@@ -52,11 +221,6 @@
       "comment": "container node",
       "description": "The bomb making procedure.",
       "name": "Planning",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10003/Steps_kairos:Container:Execution"
@@ -83,11 +247,6 @@
       "comment": "container node",
       "description": "The execution procedure to detonate the bomb.",
       "name": "Execution",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10004/Steps_kairos:Container:Response"
@@ -113,11 +272,6 @@
       "comment": "container node",
       "description": "Response to the explosion.",
       "name": "Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10005/Steps_kairos:Container:Investigation"
@@ -144,11 +298,6 @@
       "children_gate": "or",
       "description": "Episode for Steps_kairos:container:5",
       "name": "Criminal investigation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1415338",
       "wd_label": "criminal_investigation",
@@ -524,13 +673,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Interference outlinks",
       "name": "Interference outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -569,13 +713,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "IED detonate target outlinks",
       "name": "IED detonate target outlinks",
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -818,11 +957,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3265221",
       "wd_label": "identification",
@@ -919,13 +1053,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Medical Intervention outlinks",
       "name": "Medical Intervention outlinks",
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1004,11 +1133,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10027/Steps_kairos:Primitives_Events_accusation:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19357312",
       "wd_label": "accusation",
@@ -1039,11 +1163,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10028/Steps_kairos:Primitives_Events_arrest:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1403016",
       "wd_label": "arrest",
@@ -1074,11 +1193,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_detention:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1071447",
       "wd_label": "detention",
@@ -1109,11 +1223,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10030/Steps_kairos:Primitives_Events_conviction:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2916183",
       "wd_label": "conviction",
@@ -1140,11 +1249,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_plea:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15916459",
       "wd_label": "plea",
@@ -1168,11 +1272,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_trial:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -1198,11 +1297,6 @@
           "entity": "resin:Entities/00012/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_legal_hearing:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q545861",
       "wd_label": "legal_hearing",
@@ -1233,11 +1327,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10034/Steps_kairos:Primitives_Events_court_decision:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q327000",
       "wd_label": "court_decision ",
@@ -1256,11 +1345,6 @@
       "comment": "container node",
       "description": "",
       "name": "Court Decision outlinks",
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1292,11 +1376,6 @@
           "entity": "resin:Entities/00013/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10035/Steps_kairos:Primitives_Events_sentence:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1763090",
       "wd_label": "sentence",
@@ -1330,11 +1409,6 @@
           "entity": "resin:Entities/00013/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_imprisonment:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q841236",
       "wd_label": "imprisonment",
@@ -1355,11 +1429,6 @@
           "entity": "resin:Entities/00012/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10037/Steps_kairos:Primitives_Events_execution:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3966286",
       "wd_label": "execution",
@@ -1393,189 +1462,11 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1454723",
       "wd_label": "acquittal",
       "wd_description": "the legal result of a verdict of not guilty",
       "outlinks": []
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "IED",
-      "wd_label": "Improvised Explosive Device",
-      "wd_node": "wd:Q1249453",
-      "wd_description": "homemade bomb"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "crime committer",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "target location",
-      "wd_label": "geographic region",
-      "wd_node": "wd:Q82794",
-      "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "general population",
-      "wd_label": "human population",
-      "wd_node": "wd:Q33829",
-      "wd_description": "humans that live in the same locality"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "building facility",
-      "wd_label": "geographic region",
-      "wd_node": "wd:Q82794",
-      "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "commander or requester",
-      "wd_label": "participant",
-      "wd_node": "wd:Q56512863",
-      "wd_description": "object that takes part in an event or process"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "bomb attack",
-      "wd_label": "bomb attack",
-      "wd_node": "wd:Q891854",
-      "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "police",
-      "wd_label": "police",
-      "wd_node": "wd:Q35535",
-      "wd_description": "constituted body of persons empowered by the state to enforce the law"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "victims",
-      "wd_label": "human population",
-      "wd_node": "wd:Q33829",
-      "wd_description": "humans that live in the same locality"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "evacuation site",
-      "wd_label": "geographic region",
-      "wd_node": "wd:Q82794",
-      "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "medical staff",
-      "wd_label": "medical staff",
-      "wd_node": "wd:Q69948433",
-      "wd_description": "professional medical personnel who provide care to patients in an organized facility, institution or agency"
-    },
-    {
-      "@id": "resin:Entities/00011/",
-      "name": "investigator",
-      "wd_label": "detective",
-      "wd_node": "wd:Q842782",
-      "wd_description": "investigator, either a member of a police agency or a private person"
-    },
-    {
-      "@id": "resin:Entities/00012/",
-      "name": "suspect",
-      "wd_label": "suspect",
-      "wd_node": "wd:Q224952",
-      "wd_description": "known person suspected of committing a crime"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "prison",
-      "wd_label": "prison",
-      "wd_node": "wd:Q40357",
-      "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
-    },
-    {
-      "@id": "resin:Entities/00014/",
-      "name": "court",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    },
-    {
-      "@id": "resin:Entities/00015/",
-      "name": "judge",
-      "wd_label": "judge",
-      "wd_node": "wd:Q16533",
-      "wd_description": "official who presides over court proceedings"
-    },
-    {
-      "@id": "resin:Entities/00016/",
-      "name": "group of people",
-      "wd_label": "human population",
-      "wd_node": "wd:Q33829",
-      "wd_description": "humans that live in the same locality"
-    },
-    {
-      "@id": "resin:Entities/00017/",
-      "name": "components",
-      "wd_label": "component",
-      "wd_node": "wd:Q1310239",
-      "wd_description": "smaller, self-contained part of technical entity consisting of components"
-    },
-    {
-      "@id": "resin:Entities/00018/",
-      "name": "car",
-      "wd_label": "car",
-      "wd_node": "wd:Q1420",
-      "wd_description": "road vehicle powered by a motor to carry driver and small number of passengers"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00015/",
-      "relationObject": "resin:Entities/00014/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30001/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00012/",
-      "relationObject": "resin:Entities/00003/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30002/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00008/",
-      "relationObject": "resin:Entities/00003/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30003/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00001/",
-      "relationObject": "resin:Entities/00016/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
     }
   ]
 }

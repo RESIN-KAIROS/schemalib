@@ -13,9 +13,75 @@
         "resin:Events/10020/resin:Events_civil-unrest"
       ],
       "children_gate": "or",
-      "description": "",
+      "description": "Civil Unrest",
       "name": "Civil Unrest",
-      "privateData": {},
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "protesters",
+          "wd_label": "street_protester",
+          "wd_node": "wd:Q7623053",
+          "wd_description": "person partaking in a public protest against a cause of concern"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "city",
+          "wd_label": "city",
+          "wd_node": "wd:Q515",
+          "wd_description": "large permanent human settlement"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "person",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "court",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "trigger",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "people",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "unrest location",
+          "wd_label": "spatial_entity",
+          "wd_node": "wd:Q58416391",
+          "wd_description": "thing occupying some space, entity that can be contained within a region of space"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "crime",
+          "wd_label": "crime",
+          "wd_node": "wd:Q83267",
+          "wd_description": "unlawful act forbidden and punishable by criminal law"
+        }
+      ],
+      "relations": [],
       "isSchema": true
     },
     {
@@ -65,7 +131,6 @@
       "description": "a violent disturbance of the peace by a crowd",
       "name": "Riot",
       "participants": [],
-      "privateData": {},
       "wd_node": "wd:Q124757",
       "wd_label": "riot",
       "wd_description": "form of civil disorder",
@@ -498,7 +563,6 @@
       "description": "the trigger or cause of the incident",
       "name": "Trigger",
       "participants": [],
-      "privateData": {},
       "wd_node": "wd:Q2574811",
       "wd_label": "cause",
       "wd_description": "entity which forms causality for an event",
@@ -521,7 +585,6 @@
       "description": "Protesters take peaceful and legal way to express dissatisfaction",
       "name": "Peaceful Protest",
       "participants": [],
-      "privateData": {},
       "wd_node": "wd:Q273120",
       "wd_label": "protest",
       "wd_description": "expression of objection",
@@ -543,7 +606,6 @@
       "description": "a judge or magistrate",
       "name": "Justice",
       "participants": [],
-      "privateData": {},
       "wd_node": "wd:Q1301203",
       "wd_label": "legal_proceeding",
       "wd_description": "proceedings in any civil lawsuit or criminal prosecution",
@@ -561,7 +623,6 @@
       "description": "Government response to civil unrest",
       "name": "Response",
       "participants": [],
-      "privateData": {},
       "wd_node": "wd:Q31983622",
       "wd_label": "reaction",
       "wd_description": "action or statement in response to a stimulus or other event",
@@ -945,71 +1006,5 @@
         "resin:Events/10012/resin:Events_civil-unrest"
       ]
     }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "police",
-      "wd_label": "police",
-      "wd_node": "wd:Q35535",
-      "wd_description": "constituted body of persons empowered by the state to enforce the law"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "protesters",
-      "wd_label": "street_protester",
-      "wd_node": "wd:Q7623053",
-      "wd_description": "person partaking in a public protest against a cause of concern"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "city",
-      "wd_label": "city",
-      "wd_node": "wd:Q515",
-      "wd_description": "large permanent human settlement"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "person",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "court",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "trigger",
-      "wd_label": "cause",
-      "wd_node": "wd:Q2574811",
-      "wd_description": "entity which forms causality for an event"
-    },
-    {
-      "@id": "resin:Entities/00015/",
-      "name": "people",
-      "wd_label": "group_of_humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00019/",
-      "name": "unrest location",
-      "wd_label": "spatial_entity",
-      "wd_node": "wd:Q58416391",
-      "wd_description": "thing occupying some space, entity that can be contained within a region of space"
-    },
-    {
-      "@id": "resin:Entities/00022/",
-      "name": "crime",
-      "wd_label": "crime",
-      "wd_node": "wd:Q83267",
-      "wd_description": "unlawful act forbidden and punishable by criminal law"
-    }
-  ],
-  "relations": []
+  ]
 }

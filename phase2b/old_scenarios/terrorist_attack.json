@@ -16,15 +16,101 @@
       "children_gate": "or",
       "description": "",
       "name": "Terrorist attacks",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q2223653",
       "wd_label": "terrorist attack",
       "wd_description": "offensive action",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "target group",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "terrorist group",
+          "wd_label": "terrorist group",
+          "wd_node": "wd:Q4456236",
+          "wd_description": "group of people working together to commit acts of terrorism"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "target location",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "cause for the terrorist group",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "person",
+          "wd_label": "person",
+          "wd_node": "wd:Q215627",
+          "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "terrorist",
+          "wd_label": "person",
+          "wd_node": "wd:Q215627",
+          "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "benefactor group",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "weapon",
+          "wd_label": "weapon",
+          "wd_node": "wd:Q728",
+          "wd_description": "tool used to inflict damage or harm"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "general population",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "government",
+          "wd_label": "government",
+          "wd_node": "wd:Q7188",
+          "wd_description": "system or group of people governing an organized community, often a state"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "government facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00005/",
+          "relationObject": "resin:Entities/00001/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -39,13 +125,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Motivation",
       "name": "Motivation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10002/Steps_kairos:Container:2",
@@ -63,13 +144,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Preparation",
       "name": "Preparation",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10004/Steps_kairos:Container:4"
@@ -84,13 +160,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Fundraising",
       "name": "Fundraising",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10004/Steps_kairos:Container:4"
@@ -106,13 +177,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Crime",
       "name": "Crime",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10005/Steps_kairos:Container:5",
@@ -136,11 +202,6 @@
       "comment": "container node",
       "description": "activity to defend against or prevent terrorist actions",
       "name": "Counter-Terrorism",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q909459",
       "wd_label": "counter-terrorism",
@@ -158,13 +219,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Society Response",
       "name": "Society Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10005/Steps_kairos:Container:5"
@@ -197,11 +253,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q180684",
       "wd_label": "conflict",
@@ -235,11 +286,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7281",
       "wd_label": "propaganda",
@@ -267,11 +313,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q99748589",
       "wd_label": "awareness campaign",
@@ -299,11 +340,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7283",
       "wd_label": "terrorism",
@@ -326,11 +362,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q899277",
       "wd_label": "recruitment",
@@ -348,11 +379,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q34394",
       "wd_label": "belief",
@@ -370,11 +396,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1371819",
       "wd_label": "plan",
@@ -399,11 +420,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q918385",
       "wd_label": "training",
@@ -431,11 +447,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q165950",
       "wd_label": "espionage",
@@ -463,11 +474,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1369832",
       "wd_label": "purchasing",
@@ -490,11 +496,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1124860",
       "wd_label": "donation",
@@ -517,11 +518,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q46952",
       "wd_label": "organized crime",
@@ -554,11 +550,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1174599",
       "wd_label": "attack",
@@ -595,11 +586,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q193078",
       "wd_label": "injure",
@@ -632,11 +618,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q844482",
       "wd_label": "killing",
@@ -664,11 +645,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q891854",
       "wd_label": "bomb attack",
@@ -701,11 +677,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2252077",
       "wd_label": "shooting",
@@ -733,11 +704,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q202833",
       "wd_label": "social media",
@@ -768,11 +734,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11030",
       "wd_label": "journalism",
@@ -797,11 +758,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q252000",
       "wd_label": "oppression",
@@ -829,11 +785,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q379693",
       "wd_label": "deportation",
@@ -861,11 +812,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q574759",
       "wd_label": "anti-terrorism legislation",
@@ -893,11 +839,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1071447",
       "wd_label": "detention",
@@ -927,11 +868,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q327018",
       "wd_label": "interrogation",
@@ -956,11 +892,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q978423",
       "wd_label": "hardening",
@@ -983,11 +914,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q42240",
       "wd_label": "scientific research",
@@ -1015,11 +941,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q334401",
       "wd_label": "surveillance",
@@ -1049,11 +970,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q175331",
       "wd_label": "demonstration",
@@ -1079,11 +995,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q175331",
       "wd_label": "demonstration",
@@ -1092,96 +1003,6 @@
         "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
         "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism"
       ]
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "target group",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "terrorist group",
-      "wd_label": "terrorist group",
-      "wd_node": "wd:Q4456236",
-      "wd_description": "group of people working together to commit acts of terrorism"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "target location",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "cause for the terrorist group",
-      "wd_label": "cause",
-      "wd_node": "wd:Q2574811",
-      "wd_description": "entity which forms causality for an event"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "person",
-      "wd_label": "person",
-      "wd_node": "wd:Q215627",
-      "wd_description": "being that has certain capacities or attributes constituting personhood"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "terrorist",
-      "wd_label": "person",
-      "wd_node": "wd:Q215627",
-      "wd_description": "being that has certain capacities or attributes constituting personhood"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "benefactor group",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "weapon",
-      "wd_label": "weapon",
-      "wd_node": "wd:Q728",
-      "wd_description": "tool used to inflict damage or harm"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "general population",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "government",
-      "wd_label": "government",
-      "wd_node": "wd:Q7188",
-      "wd_description": "system or group of people governing an organized community, often a state"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "government facility",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00005/",
-      "relationObject": "resin:Entities/00001/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
     }
   ]
 }

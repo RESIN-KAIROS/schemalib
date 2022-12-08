@@ -17,15 +17,129 @@
       "children_gate": "or",
       "description": "taking away or transportation of a person against that person's will",
       "name": "Kidnapping",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q318296",
       "wd_label": "kidnapping",
       "wd_description": "taking away or transportation of a person against that person's will",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "weapon",
+          "wd_label": "weapon",
+          "wd_node": "wd:Q728",
+          "wd_description": "tool used to inflict damage or harm"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "attack location",
+          "wd_label": "crime scene",
+          "wd_node": "wd:Q1360677",
+          "wd_description": "location that may be associated with a committed crime"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "kidnapper",
+          "wd_label": "kidnapper",
+          "wd_node": "wd:Q65622885",
+          "wd_description": "person who practices kidnapping"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "victim",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "kidnap location",
+          "wd_label": "crime scene",
+          "wd_node": "wd:Q1360677",
+          "wd_description": "location that may be associated with a committed crime"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "holding location",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "ransom",
+          "wd_label": "funding",
+          "wd_node": "wd:Q6055890",
+          "wd_description": "act of providing resources"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "person",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "kidnapping tools",
+          "wd_label": "tool",
+          "wd_node": "wd:Q39546",
+          "wd_description": "physical item that can be used to achieve a goal"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "kidnapping vehicle",
+          "wd_label": "vehicle",
+          "wd_node": "wd:Q42889",
+          "wd_description": "mobile machine that transports people, animals or cargo"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "accomplices",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "exchange location",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "court",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "kidnapping crime",
+          "wd_label": "kidnapping",
+          "wd_node": "wd:Q318296",
+          "wd_description": "taking away or transportation of a person against that person's will"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "funder / benefactor / relative of",
+          "relationSubject": "resin:Entities/00008/",
+          "relationObject": "resin:Entities/00003/",
+          "wd_node": "wd:P8324",
+          "wd_description": "entity that gives money to a person, organization, or project for a specific purpose",
+          "wd_label": "funder"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -39,11 +153,6 @@
       "children_gate": "or",
       "description": "Circumstance that contributes to a result, but is not 100% determinative of outcome",
       "name": "Contributory factors",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q18603648",
       "wd_label": "contributing factor",
@@ -69,11 +178,6 @@
       "children_gate": "or",
       "description": "outline of a strategy for achievement of an objective",
       "name": "Planning",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q1371819",
       "wd_label": "plan",
@@ -95,11 +199,6 @@
       "children_gate": "or",
       "description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing",
       "name": "Scrutiny",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q334401",
       "wd_label": "surveillance",
@@ -125,11 +224,6 @@
       "children_gate": "or",
       "description": "unlawful act forbidden and punishable by criminal law",
       "name": "Committing crime",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q83267",
       "wd_label": "crime",
@@ -161,11 +255,6 @@
       "children_gate": "or",
       "description": "power to command",
       "name": "Authority response",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q174834",
       "wd_label": "authority",
@@ -187,11 +276,6 @@
       "children_gate": "or",
       "description": "final consequence or product of a sequence of actions or events",
       "name": "Non authority response",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q2995644",
       "wd_label": "result",
@@ -221,11 +305,6 @@
       "children_gate": "or",
       "description": "",
       "name": "Criminal investigation",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q1415338",
       "wd_label": "criminal_investigation",
@@ -245,11 +324,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1527264",
       "wd_label": "income",
@@ -273,11 +347,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10011/Steps_kairos:Primitives_Events_Quarreling:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2672648",
       "wd_label": "social_conflict",
@@ -301,11 +370,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10012/Steps_kairos:Primitives_Events_Revenge:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1712140",
       "wd_label": "revenge",
@@ -329,11 +393,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10013/Steps_kairos:Primitives_Events_Warning:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21010924",
       "wd_label": "safety_precaution",
@@ -357,11 +416,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10014/Steps_kairos:Primitives_Events_Choosing_victim:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12888920",
       "wd_label": "choice",
@@ -387,11 +441,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10015/Steps_kairos:Primitives_Events_Choosing_location:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12888920",
       "wd_label": "choice",
@@ -418,11 +467,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10016/Steps_kairos:Primitives_Events_Choosing_method:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12888920",
       "wd_label": "choice",
@@ -441,11 +485,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10017/Steps_kairos:Primitives_Events_Deciding_communication_protocols:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q16513426",
       "wd_label": "decision",
@@ -469,11 +508,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10018/Steps_kairos:Primitives_Events_Getting_tools:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12887029",
       "wd_label": "buy",
@@ -497,11 +531,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10019/Steps_kairos:Primitives_Events_Getting_vehicle:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12887029",
       "wd_label": "buy",
@@ -525,11 +554,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12887029",
       "wd_label": "buy",
@@ -553,11 +577,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10021/Steps_kairos:Primitives_Events_Getting_place_to_keep_victim:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q12887029",
       "wd_label": "buy",
@@ -581,11 +600,6 @@
           "entity": "resin:Entities/00011/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q899277",
       "wd_label": "recruitment",
@@ -609,11 +623,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10023/Steps_kairos:Primitives_Events_Physical_surveillance:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q334401",
       "wd_label": "surveillance",
@@ -639,11 +648,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10024/Steps_kairos:Primitives_Events_Know_perception_active:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21142755",
       "wd_label": "recognition",
@@ -669,11 +673,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10025/Steps_kairos:Primitives_Events_Cyber_surveillance:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q165950",
       "wd_label": "espionage",
@@ -704,11 +703,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10026/Steps_kairos:Primitives_Events_Communication:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -737,11 +731,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19279529",
       "wd_label": "go",
@@ -777,11 +766,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10028/Steps_kairos:Primitives_Events_Violence_attack:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1174599",
       "wd_label": "attack",
@@ -817,11 +801,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_Kidnapping:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q318296",
       "wd_label": "kidnapping",
@@ -857,11 +836,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_Spatial_placing_victim:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q909534",
       "wd_label": "mass_transfer",
@@ -892,11 +866,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_Communication:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -928,11 +897,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_Request:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q22445448",
       "wd_label": "request",
@@ -956,11 +920,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10037/Steps_kairos:Primitives_Events_Agree_or_refuse_to_act:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2006324",
       "wd_label": "agreement",
@@ -992,11 +951,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_GiveUp:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q217901",
       "wd_label": "capitulation",
@@ -1030,11 +984,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_Violence_attack_killing:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q74948922",
       "wd_label": "violent_death",
@@ -1063,11 +1012,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10039/Steps_kairos:Primitives_Events_Physical_surveillance:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q334401",
       "wd_label": "surveillance",
@@ -1093,11 +1037,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10040/Steps_kairos:Primitives_Events_Motion_traveling:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19279529",
       "wd_label": "go",
@@ -1128,11 +1067,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10041/Steps_kairos:Primitives_Events_Finding:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q69034079",
       "wd_label": "find",
@@ -1163,11 +1097,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10042/Steps_kairos:Primitives_Events_Communication:3",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1189,11 +1118,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10043/Steps_kairos:Primitives_Events_Communication_expressing_publicly:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q67123584",
       "wd_label": "disclosure",
@@ -1222,11 +1146,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10044/Steps_kairos:Primitives_Events_Request:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q22445448",
       "wd_label": "request",
@@ -1252,11 +1171,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10045/Steps_kairos:Primitives_Events_Suasion_negotiation:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3400581",
       "wd_label": "parley",
@@ -1282,11 +1196,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1231428",
       "wd_label": "persuasion",
@@ -1316,11 +1225,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10047/Steps_kairos:Primitives_Events_Getting_ransom:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q25392373",
       "wd_label": "fund",
@@ -1354,11 +1258,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10048/Steps_kairos:Primitives_Events_Defending:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q38118448",
       "wd_label": "defending",
@@ -1387,11 +1286,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10049/Steps_kairos:Primitives_Events_Helping:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1643184",
       "wd_label": "help",
@@ -1420,11 +1314,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10050/Steps_kairos:Primitives_Events_Violence_attack:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1174599",
       "wd_label": "attack",
@@ -1455,11 +1344,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10051/Steps_kairos:Primitives_Events_Violence_attack_killing:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q844482",
       "wd_label": "killing",
@@ -1493,11 +1377,6 @@
           "entity": "resin:Entities/00012/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10052/Steps_kairos:Primitives_Events_Exchange_victim:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q766238",
       "wd_label": "mutual_aid",
@@ -1521,11 +1400,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10053/Steps_kairos:Primitives_Events_Suasion_negotiation:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3400581",
       "wd_label": "parley",
@@ -1552,11 +1426,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10054/Steps_kairos:Primitives_Events_Getting_ransom:2",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q25392373",
       "wd_label": "fund",
@@ -1587,11 +1456,6 @@
           "entity": "resin:Entities/00012/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10057/Steps_kairos:Primitives_Events_Communication:4",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1615,11 +1479,6 @@
           "entity": "resin:Entities/00012/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10056/Steps_kairos:Primitives_Events_Motion_traveling:3",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19279529",
       "wd_label": "go",
@@ -1660,11 +1519,6 @@
           "entity": "resin:Entities/00012/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10055/Steps_kairos:Primitives_Events_Giving_ransom:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1414572",
       "wd_label": "ransom",
@@ -1693,11 +1547,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10029/Steps_kairos:Primitives_Events_accusation:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q19357312",
       "wd_label": "accusation",
@@ -1728,11 +1577,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10030/Steps_kairos:Primitives_Events_arrest:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1403016",
       "wd_label": "arrest",
@@ -1763,11 +1607,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10031/Steps_kairos:Primitives_Events_detention:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1071447",
       "wd_label": "detention",
@@ -1798,11 +1637,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10032/Steps_kairos:Primitives_Events_conviction:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2916183",
       "wd_label": "conviction",
@@ -1829,11 +1663,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10033/Steps_kairos:Primitives_Events_plea:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15916459",
       "wd_label": "plea",
@@ -1857,11 +1686,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10034/Steps_kairos:Primitives_Events_trial:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -1887,11 +1711,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10035/Steps_kairos:Primitives_Events_legal_hearing:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q545861",
       "wd_label": "legal_hearing",
@@ -1922,11 +1741,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10036/Steps_kairos:Primitives_Events_court_decision:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q327000",
       "wd_label": "court_decision ",
@@ -1945,11 +1759,6 @@
       "comment": "container node",
       "description": "",
       "name": "Court Decision outlinks",
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -1976,11 +1785,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10037/Steps_kairos:Primitives_Events_sentence:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1763090",
       "wd_label": "sentence",
@@ -2009,11 +1813,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10039/Steps_kairos:Primitives_Events_imprisonment:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q841236",
       "wd_label": "imprisonment",
@@ -2034,11 +1833,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10040/Steps_kairos:Primitives_Events_execution:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3966286",
       "wd_label": "execution",
@@ -2067,134 +1861,11 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "resin:Events/10038/Steps_kairos:Primitives_Events_acquittal:1",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1454723",
       "wd_label": "acquittal",
       "wd_description": "the legal result of a verdict of not guilty",
       "outlinks": []
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "weapon",
-      "wd_label": "weapon",
-      "wd_node": "wd:Q728",
-      "wd_description": "tool used to inflict damage or harm"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "attack location",
-      "wd_label": "crime scene",
-      "wd_node": "wd:Q1360677",
-      "wd_description": "location that may be associated with a committed crime"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "kidnapper",
-      "wd_label": "kidnapper",
-      "wd_node": "wd:Q65622885",
-      "wd_description": "person who practices kidnapping"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "victim",
-      "wd_label": "victim",
-      "wd_node": "wd:Q1851760",
-      "wd_description": "person who suffers as a result of a crime or other event"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "kidnap location",
-      "wd_label": "crime scene",
-      "wd_node": "wd:Q1360677",
-      "wd_description": "location that may be associated with a committed crime"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "holding location",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "police",
-      "wd_label": "police",
-      "wd_node": "wd:Q35535",
-      "wd_description": "constituted body of persons empowered by the state to enforce the law"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "ransom",
-      "wd_label": "funding",
-      "wd_node": "wd:Q6055890",
-      "wd_description": "act of providing resources"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "person",
-      "wd_label": "human",
-      "wd_node": "wd:Q5",
-      "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "kidnapping tools",
-      "wd_label": "tool",
-      "wd_node": "wd:Q39546",
-      "wd_description": "physical item that can be used to achieve a goal"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "kidnapping vehicle",
-      "wd_label": "vehicle",
-      "wd_node": "wd:Q42889",
-      "wd_description": "mobile machine that transports people, animals or cargo"
-    },
-    {
-      "@id": "resin:Entities/00011/",
-      "name": "accomplices",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00012/",
-      "name": "exchange location",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "court",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    },
-    {
-      "@id": "resin:Entities/00014/",
-      "name": "kidnapping crime",
-      "wd_label": "kidnapping",
-      "wd_node": "wd:Q318296",
-      "wd_description": "taking away or transportation of a person against that person's will"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "funder / benefactor / relative of",
-      "relationSubject": "resin:Entities/00008/",
-      "relationObject": "resin:Entities/00003/",
-      "wd_node": "wd:P8324",
-      "wd_description": "entity that gives money to a person, organization, or project for a specific purpose",
-      "wd_label": "funder"
     }
   ]
 }

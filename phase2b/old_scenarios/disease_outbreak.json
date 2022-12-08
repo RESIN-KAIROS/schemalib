@@ -25,15 +25,262 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "importance": 1
-      },
       "repeatable": false,
       "wd_node": "wd:Q3241045",
       "wd_label": "disease outbreak",
       "wd_description": "sudden increase in occurrences of a disease in a particular time and place",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "initial person infected",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "exposed people",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "consumer, person in contact with the infectant",
+          "wd_label": "person",
+          "wd_node": "wd:Q215627",
+          "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "food",
+          "wd_label": "food",
+          "wd_node": "wd:Q2095",
+          "wd_description": "any substance consumed to provide nutritional support for the body; form of energy stored in chemical"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "business",
+          "wd_label": "business",
+          "wd_node": "wd:Q4830453",
+          "wd_description": "organization involved in commercial, industrial, or professional activity"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "infectant, carrier of disease",
+          "wd_label": [
+            "pathogen",
+            "food",
+            "liquid"
+          ],
+          "wd_node": [
+            "wd:Q170065",
+            "wd:Q2095",
+            "wd:Q11435"
+          ]
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "cause of disease",
+          "wd_label": "pathogen",
+          "wd_node": "wd:Q170065",
+          "wd_description": "biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "mutated strain of pathogen",
+          "wd_label": "pathogen",
+          "wd_node": "wd:Q170065",
+          "wd_description": "biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "plaintiff",
+          "wd_label": "plaintiff",
+          "wd_node": "wd:Q468489",
+          "wd_description": "party which initiates a court case"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "defendant",
+          "wd_label": "defendant",
+          "wd_node": "wd:Q159394",
+          "wd_description": "accused person"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "location / facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "research facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "government / authorities",
+          "wd_label": "government agency",
+          "wd_node": "wd:Q327333",
+          "wd_description": "organization in the machinery of government responsible for specific functions"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "other government / authorities",
+          "wd_label": "government agency",
+          "wd_node": "wd:Q327333",
+          "wd_description": "organization in the machinery of government responsible for specific functions"
+        },
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "suspect of crime",
+          "wd_label": "suspect",
+          "wd_node": "wd:Q224952",
+          "wd_description": "known person suspected of committing a crime"
+        },
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "law enforcement agent",
+          "wd_label": "law_enforcement_agency",
+          "wd_node": "wd:Q732717",
+          "wd_description": "government agency responsible for the enforcement of the laws"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "researcher",
+          "wd_label": "scientist",
+          "wd_node": "wd:Q901",
+          "wd_description": "person who conducts scientific research into an area of interest"
+        },
+        {
+          "@id": "resin:Entities/00020/",
+          "name": "new treatment",
+          "wd_label": "medical_procedure",
+          "wd_node": "wd:Q796194",
+          "wd_description": "process of medicine done to heal; course of action intended to achieve a result in the delivery of healthcare"
+        },
+        {
+          "@id": "resin:Entities/00021/",
+          "name": "vaccine",
+          "wd_label": "vaccine",
+          "wd_node": "wd:Q134808",
+          "wd_description": "substance used to stimulate the production of antibodies and provide immunity against one or several diseases, prepared from the causative agent of a disease, its products, or a synthetic substitute"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "general population",
+          "wd_label": "addressee",
+          "wd_node": "wd:Q28008314",
+          "wd_description": "person or organization to whom a information, letter or note is addressed"
+        },
+        {
+          "@id": "resin:Entities/00023/",
+          "name": "judicial system",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00024/",
+          "name": "medical team",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00025/",
+          "name": "source of disease",
+          "wd_label": "facility",
+          "wd_node": "wd:Q13226383",
+          "wd_description": "place for doing something"
+        },
+        {
+          "@id": "resin:Entities/00026/",
+          "name": "disease prevention measures and guidelines",
+          "wd_label": "law",
+          "wd_node": "wd:Q7748",
+          "wd_description": "system of rules and guidelines, generally backed by governmental authority"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "proximity",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00013/",
+          "wd_node": "wd:Q19267375",
+          "wd_description": "state of being near as in space, time, or relationship",
+          "wd_label": "proximity"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "proximity",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00013/",
+          "wd_node": "wd:Q19267375",
+          "wd_description": "state of being near as in space, time, or relationship",
+          "wd_label": "proximity"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00009/",
+          "relationObject": "resin:Entities/00000/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00010/",
+          "relationObject": "resin:Entities/00005/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30004/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00002/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30005/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00017/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30006/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00020/",
+          "relationObject": "resin:Entities/00021/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30007/",
+          "name": "instance of",
+          "relationSubject": "resin:Entities/00026/",
+          "relationObject": "resin:Entities/00015/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -47,11 +294,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Socialbehavior.Complyobey.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q1399332",
       "wd_label": "Compliance",
@@ -77,11 +319,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/GenericCrime.GenericCrime.GenericCrime"
-      },
       "repeatable": false,
       "wd_node": "wd:Q83267",
       "wd_label": "crime",
@@ -113,11 +350,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Life.Infect.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q166231",
       "wd_label": "infection",
@@ -143,11 +375,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Life.Illness.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q814207",
       "wd_label": "illness",
@@ -183,11 +410,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Medical.Diagnosis.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q177719",
       "wd_label": "medical diagnosis",
@@ -218,11 +440,6 @@
           "entity": "resin:Entities/00013/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Medical.Diagnosis.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q17200001",
       "wd_label": "cleaning",
@@ -256,11 +473,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Medical.Intervention.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q179661",
       "wd_label": "treatment",
@@ -288,11 +500,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Primitives/Events/Movement.Transportation.PreventPassage"
-      },
       "repeatable": false,
       "wd_node": "wd:Q182899",
       "wd_label": "quarantine",
@@ -321,11 +528,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Cognitive.Inspection.SensoryObserve",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q193181",
       "wd_label": "data collection",
@@ -402,11 +604,6 @@
           "entity": "resin:Entities/00014/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Cognitive.IdentifyCategorize.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3265221",
       "wd_label": "identification",
@@ -438,11 +635,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Contact.Contact.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q446078",
       "wd_label": "Alert",
@@ -477,11 +669,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Contact.Contact.Broadcast",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q17012118",
       "wd_label": "emergency population warning",
@@ -511,11 +698,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Contact.RequestCommand.Broadcast",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1298239",
       "wd_label": "decree",
@@ -545,11 +727,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Movement.Transportation.PreventPassage",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q87745167",
       "wd_label": "travel restriction",
@@ -595,11 +772,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Cognitive.Research.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q42240",
       "wd_label": "research",
@@ -626,11 +798,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Cognitive.Research.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q106807541",
       "wd_label": "disease prevention",
@@ -654,11 +821,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Transaction.AidBetweenGovernments.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2827815",
       "wd_label": "international aid",
@@ -687,11 +849,6 @@
           "entity": "resin:Entities/00020/"
         }
       ],
-      "privateData": {
-        "@type": "kairos:Primitives/Events/Medical.Intervention.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q179661",
       "wd_label": "treatment",
@@ -717,11 +874,6 @@
       "comment": "container node",
       "description": "",
       "name": "Outbreak",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10002/Steps_kairos:Container:OutbreakOutcome"
@@ -747,11 +899,6 @@
       "comment": "container node",
       "description": "",
       "name": "Authority Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -776,11 +923,6 @@
       "comment": "container node",
       "description": "",
       "name": "Medical Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "outlinks": [
         "resin:Events/10019/Steps_kairos:Primitives_Events_Cognitive.IdentifyCategorize.Unspecified:1"
@@ -808,11 +950,6 @@
       "comment": "container node",
       "description": "",
       "name": "Society Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -830,11 +967,6 @@
       "comment": "container node",
       "description": "",
       "name": "Research Response",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -849,11 +981,6 @@
       "comment": "container node",
       "description": "",
       "name": "Contributory Factors",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10001/Steps_kairos:Container:Outbreak"
@@ -872,11 +999,6 @@
       "comment": "container node",
       "description": "",
       "name": "Social Factors",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -895,11 +1017,6 @@
       "comment": "container node",
       "description": "",
       "name": "Environmental Factors",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -944,11 +1061,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q28953942",
       "wd_label": "boundary change",
@@ -977,11 +1089,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "FrameNet.Dispersal",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q843478",
       "wd_label": "rationing",
@@ -1000,11 +1107,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "transaction.exchangebuysell.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q601401",
       "wd_label": "trade",
@@ -1030,11 +1132,6 @@
           "entity": "resin:Entities/00024/"
         }
       ],
-      "privateData": {
-        "@type": "transaction.donation.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1124860",
       "wd_label": "donation",
@@ -1063,11 +1160,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "personnel.startposition.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21014657",
       "wd_label": "assignment",
@@ -1111,11 +1203,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "Communication.Debunk",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q59555084",
       "wd_label": "fact-checking",
@@ -1144,11 +1231,6 @@
           "entity": "resin:Entities/00013/"
         }
       ],
-      "privateData": {
-        "@type": "artifactexistence.creation.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q63244734",
       "wd_label": "Creation",
@@ -1169,11 +1251,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q125928",
       "wd_label": "climate change",
@@ -1194,11 +1271,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q949149",
       "wd_label": "sanitation",
@@ -1217,11 +1289,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q162297",
       "wd_label": "hygiene",
@@ -1240,11 +1307,6 @@
           "entity": "resin:Entities/00025/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q909821",
       "wd_label": "food safety",
@@ -1263,11 +1325,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7892",
       "wd_label": "drinking water",
@@ -1291,11 +1348,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "cognitive.identifycategorize.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q912550",
       "wd_label": "categorization",
@@ -1321,11 +1373,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "contact.contact.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1358,11 +1405,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "arrest_Q1403016",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1403016",
       "wd_label": "arrest",
@@ -1390,11 +1432,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "cognitive.inspection.assesstestmeasure",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1137655",
       "wd_label": "inspection",
@@ -1420,11 +1457,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -1450,11 +1482,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.filecomplaint",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q836925",
       "wd_label": "complaint",
@@ -1475,11 +1502,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.answer",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q33622550",
       "wd_label": "answer",
@@ -1505,11 +1527,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.discovery",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q902342",
       "wd_label": "discovery",
@@ -1540,11 +1557,6 @@
           "entity": "resin:Entities/00023/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.motion",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q6917734",
       "wd_label": "motion",
@@ -1575,11 +1587,6 @@
           "entity": "resin:Entities/00023/"
         }
       ],
-      "privateData": {
-        "@type": "justice.judicialconsequences.mediation",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q223871",
       "wd_label": "mediation",
@@ -1610,11 +1617,6 @@
           "entity": "resin:Entities/00011/"
         }
       ],
-      "privateData": {
-        "@type": "Transaction.ExchangeBuySell.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange_of_goods",
@@ -1663,11 +1665,6 @@
           "entity": "resin:Entities/00023/"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.trialhearing",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -1688,11 +1685,6 @@
           "entity": "resin:Entities/00023/"
         }
       ],
-      "privateData": {
-        "@type": "justice.judicialconsequences.judgement",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3769186",
       "wd_label": "judgement",
@@ -1714,11 +1706,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "@type": "justice.appeal.unspecified",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q329777",
       "wd_label": "appeal",
@@ -1742,11 +1729,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "cognitive.inspection.assesstestmeasure",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1003030",
       "wd_label": "test",
@@ -1772,11 +1754,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1128437",
       "wd_label": "contact tracing",
@@ -1809,11 +1786,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q3265221",
       "wd_label": "identification",
@@ -1844,11 +1816,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q182899",
       "wd_label": "quarantine",
@@ -1872,11 +1839,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "biological_warfare_Q8242560",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8242560",
       "wd_label": "biological warfare",
@@ -1900,11 +1862,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "life.mutate.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q42918",
       "wd_label": "mutation",
@@ -1928,11 +1885,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "FrameNet.Recovery",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7302970",
       "wd_label": "recover",
@@ -1956,11 +1908,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "life.die.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
@@ -1981,11 +1928,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "@type": "contact.funeralvigil.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q201676",
       "wd_label": "funeral",
@@ -2009,11 +1951,6 @@
           "entity": "resin:Entities/00008/"
         }
       ],
-      "privateData": {
-        "@type": "mutation_Q42918",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q42918",
       "wd_label": "mutation",
@@ -2034,11 +1971,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "FrameNet.Building",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q385378",
       "wd_label": "construction",
@@ -2057,11 +1989,6 @@
           "entity": "resin:Entities/00019/"
         }
       ],
-      "privateData": {
-        "@type": "contact.collaborate.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1145523",
       "wd_label": "collaboration",
@@ -2086,11 +2013,6 @@
           "entity": "resin:Entities/00019/"
         }
       ],
-      "privateData": {
-        "@type": "Contact.contact.meet",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q625994",
       "wd_label": "convention",
@@ -2116,11 +2038,6 @@
       "description": "",
       "name": "Investigation",
       "participants": [],
-      "privateData": {
-        "@type": "FrameNet.Scrutiny",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21004260",
       "wd_label": "inquiry",
@@ -2149,11 +2066,6 @@
       "description": "",
       "name": "Civil Justice",
       "participants": [],
-      "privateData": {
-        "@type": "FrameNet.Legal_rulings",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q5167661",
       "wd_label": "justice",
@@ -2173,11 +2085,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "socialbehavior.clean.sanitize",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q24887418",
       "wd_label": "disinfection",
@@ -2196,11 +2103,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "socialbehavior.clean.wash",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q23841",
       "wd_label": "washing",
@@ -2224,11 +2126,6 @@
           "entity": "resin:Entities/00015/"
         }
       ],
-      "privateData": {
-        "@type": "socialbehavior.complyobey.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1456974",
       "wd_label": "obedience",
@@ -2254,11 +2151,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "socialbehavior.wear.wear",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q579282",
       "wd_label": "Wear",
@@ -2287,11 +2179,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "cognitive.teachingtraininglearning.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8434",
       "wd_label": "education",
@@ -2326,11 +2213,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q30314010",
       "wd_label": "social distancing",
@@ -2368,11 +2250,6 @@
           "entity": "resin:Entities/00021/"
         }
       ],
-      "privateData": {
-        "@type": "medical.vaccinate.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q192995",
       "wd_label": "vaccination",
@@ -2392,11 +2269,6 @@
           "entity": "resin:Entities/00022/"
         }
       ],
-      "privateData": {
-        "@type": "exchange_of_goods_Q21651837",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange of goods",
@@ -2420,11 +2292,6 @@
           "entity": "resin:Entities/00026/"
         }
       ],
-      "privateData": {
-        "@type": "conflict.demonstrate.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q175331",
       "wd_label": "demonstration",
@@ -2443,11 +2310,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "FrameNet.Business_closure",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q89681240",
       "wd_label": "closing of non-essential businesses",
@@ -2468,11 +2330,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "FrameNet.Activity_resume",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q16571590",
       "wd_label": "reopening",
@@ -2496,11 +2353,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "handcuffs_Q15808",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15808",
       "wd_label": "handcuffs",
@@ -2524,11 +2376,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "interrogation_Q327018",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q327018",
       "wd_label": "interrogation",
@@ -2552,11 +2399,6 @@
           "entity": "resin:Entities/00017/"
         }
       ],
-      "privateData": {
-        "@type": "physical_restraint_Q357003",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q357003",
       "wd_label": "physical restraint",
@@ -2580,11 +2422,6 @@
           "entity": "resin:Entities/00020/"
         }
       ],
-      "privateData": {
-        "@type": "discussion_Q3030248",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3030248",
       "wd_label": "discussion",
@@ -2608,11 +2445,6 @@
           "entity": "resin:Entities/00021/"
         }
       ],
-      "privateData": {
-        "@type": "injection_Q245359",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q245359",
       "wd_label": "injection",
@@ -2642,11 +2474,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "ingestion_Q1663054",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1663054",
       "wd_label": "ingestion",
@@ -2673,11 +2500,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "@type": "eating_Q213449",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q213449",
       "wd_label": "eating",
@@ -2701,11 +2523,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "@type": "drinking_Q876776",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q876776",
       "wd_label": "drinking",
@@ -2738,11 +2555,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "@type": "skin_absorption_Q4669896",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4669896",
       "wd_label": "skin absorption",
@@ -2766,11 +2578,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "@type": "contamination_Q60528603",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q60528603",
       "wd_label": "contamination",
@@ -2844,11 +2651,6 @@
           "entity": "resin:Entities/00005/"
         }
       ],
-      "privateData": {
-        "@type": "FrameNet.Business_closure",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q152074",
       "wd_label": "bankruptcy",
@@ -2866,11 +2668,6 @@
       "comment": "container node",
       "description": "",
       "name": "onset outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -2884,7 +2681,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Illness Outcome",
       "name": "Illness Outcome",
       "outlinks": [],
       "isSchema": true
@@ -2899,11 +2696,6 @@
       "comment": "container node",
       "description": "",
       "name": "Motion outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -2920,257 +2712,6 @@
       "name": "Business Close outlinks",
       "outlinks": [],
       "isSchema": true
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "initial person infected",
-      "wd_label": "victim",
-      "wd_node": "wd:Q1851760",
-      "wd_description": "person who suffers as a result of a crime or other event"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "exposed people",
-      "wd_label": "victim",
-      "wd_node": "wd:Q1851760",
-      "wd_description": "person who suffers as a result of a crime or other event"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "consumer, person in contact with the infectant",
-      "wd_label": "person",
-      "wd_node": "wd:Q215627",
-      "wd_description": "being that has certain capacities or attributes constituting personhood"
-    },
-    {
-      "@id": "resin:Entities/00003/",
-      "name": "food",
-      "wd_label": "food",
-      "wd_node": "wd:Q2095",
-      "wd_description": "any substance consumed to provide nutritional support for the body; form of energy stored in chemical"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "business",
-      "wd_label": "business",
-      "wd_node": "wd:Q4830453",
-      "wd_description": "organization involved in commercial, industrial, or professional activity"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "infectant, carrier of disease",
-      "wd_label": [
-        "pathogen",
-        "food",
-        "liquid"
-      ],
-      "wd_node": [
-        "wd:Q170065",
-        "wd:Q2095",
-        "wd:Q11435"
-      ]
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "cause of disease",
-      "wd_label": "pathogen",
-      "wd_node": "wd:Q170065",
-      "wd_description": "biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "mutated strain of pathogen",
-      "wd_label": "pathogen",
-      "wd_node": "wd:Q170065",
-      "wd_description": "biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "plaintiff",
-      "wd_label": "plaintiff",
-      "wd_node": "wd:Q468489",
-      "wd_description": "party which initiates a court case"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "defendant",
-      "wd_label": "defendant",
-      "wd_node": "wd:Q159394",
-      "wd_description": "accused person"
-    },
-    {
-      "@id": "resin:Entities/00013/",
-      "name": "location / facility",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00014/",
-      "name": "research facility",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00015/",
-      "name": "government / authorities",
-      "wd_label": "government agency",
-      "wd_node": "wd:Q327333",
-      "wd_description": "organization in the machinery of government responsible for specific functions"
-    },
-    {
-      "@id": "resin:Entities/00016/",
-      "name": "other government / authorities",
-      "wd_label": "government agency",
-      "wd_node": "wd:Q327333",
-      "wd_description": "organization in the machinery of government responsible for specific functions"
-    },
-    {
-      "@id": "resin:Entities/00017/",
-      "name": "suspect of crime",
-      "wd_label": "suspect",
-      "wd_node": "wd:Q224952",
-      "wd_description": "known person suspected of committing a crime"
-    },
-    {
-      "@id": "resin:Entities/00018/",
-      "name": "law enforcement agent",
-      "wd_label": "law_enforcement_agency",
-      "wd_node": "wd:Q732717",
-      "wd_description": "government agency responsible for the enforcement of the laws"
-    },
-    {
-      "@id": "resin:Entities/00019/",
-      "name": "researcher",
-      "wd_label": "scientist",
-      "wd_node": "wd:Q901",
-      "wd_description": "person who conducts scientific research into an area of interest"
-    },
-    {
-      "@id": "resin:Entities/00020/",
-      "name": "new treatment",
-      "wd_label": "medical_procedure",
-      "wd_node": "wd:Q796194",
-      "wd_description": "process of medicine done to heal; course of action intended to achieve a result in the delivery of healthcare"
-    },
-    {
-      "@id": "resin:Entities/00021/",
-      "name": "vaccine",
-      "wd_label": "vaccine",
-      "wd_node": "wd:Q134808",
-      "wd_description": "substance used to stimulate the production of antibodies and provide immunity against one or several diseases, prepared from the causative agent of a disease, its products, or a synthetic substitute"
-    },
-    {
-      "@id": "resin:Entities/00022/",
-      "name": "general population",
-      "wd_label": "addressee",
-      "wd_node": "wd:Q28008314",
-      "wd_description": "person or organization to whom a information, letter or note is addressed"
-    },
-    {
-      "@id": "resin:Entities/00023/",
-      "name": "judicial system",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    },
-    {
-      "@id": "resin:Entities/00024/",
-      "name": "medical team",
-      "wd_label": "health_professional",
-      "wd_node": "wd:Q11974939",
-      "wd_description": "individual who systematically provides health care services"
-    },
-    {
-      "@id": "resin:Entities/00025/",
-      "name": "source of disease",
-      "wd_label": "facility",
-      "wd_node": "wd:Q13226383",
-      "wd_description": "place for doing something"
-    },
-    {
-      "@id": "resin:Entities/00026/",
-      "name": "disease prevention measures and guidelines",
-      "wd_label": "law",
-      "wd_node": "wd:Q7748",
-      "wd_description": "system of rules and guidelines, generally backed by governmental authority"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "proximity",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00013/",
-      "wd_node": "wd:Q19267375",
-      "wd_description": "state of being near as in space, time, or relationship",
-      "wd_label": "proximity"
-    },
-    {
-      "@id": "resin:Relations/30001/",
-      "name": "proximity",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00013/",
-      "wd_node": "wd:Q19267375",
-      "wd_description": "state of being near as in space, time, or relationship",
-      "wd_label": "proximity"
-    },
-    {
-      "@id": "resin:Relations/30002/",
-      "name": "partially coincident with",
-      "relationSubject": "resin:Entities/00009/",
-      "relationObject": "resin:Entities/00000/",
-      "wd_node": "wd:P1382",
-      "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
-      "wd_label": "partially coincident with"
-    },
-    {
-      "@id": "resin:Relations/30003/",
-      "name": "partially coincident with",
-      "relationSubject": "resin:Entities/00010/",
-      "relationObject": "resin:Entities/00005/",
-      "wd_node": "wd:P1382",
-      "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
-      "wd_label": "partially coincident with"
-    },
-    {
-      "@id": "resin:Relations/30004/",
-      "name": "partially coincident with",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00002/",
-      "wd_node": "wd:P1382",
-      "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
-      "wd_label": "partially coincident with"
-    },
-    {
-      "@id": "resin:Relations/30005/",
-      "name": "partially coincident with",
-      "relationSubject": "resin:Entities/00017/",
-      "relationObject": "resin:Entities/00010/",
-      "wd_node": "wd:P1382",
-      "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
-      "wd_label": "partially coincident with"
-    },
-    {
-      "@id": "resin:Relations/30006/",
-      "name": "partially coincident with",
-      "relationSubject": "resin:Entities/00020/",
-      "relationObject": "resin:Entities/00021/",
-      "wd_node": "wd:P1382",
-      "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
-      "wd_label": "partially coincident with"
-    },
-    {
-      "@id": "resin:Relations/30007/",
-      "name": "instance of",
-      "relationSubject": "resin:Entities/00026/",
-      "relationObject": "resin:Entities/00015/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
     }
   ]
 }

@@ -14,10 +14,188 @@
       "children_gate": "or",
       "description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
       "name": "Election",
-      "privateData": {},
       "wd_node": "wd:Q40231",
       "wd_label": "election",
       "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "party candidate",
+          "wd_label": "political candidate",
+          "wd_node": "wd:Q19772737",
+          "wd_description": "candidate in an election for political office"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "other party candidate",
+          "wd_label": "political candidate",
+          "wd_node": "wd:Q19772737",
+          "wd_description": "candidate in an election for political office"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "different party candidate",
+          "wd_label": "political candidate",
+          "wd_node": "wd:Q19772737",
+          "wd_description": "candidate in an election for political office"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "running mate",
+          "wd_label": "running mate",
+          "wd_node": "wd:Q1339406",
+          "wd_description": "person running together with another person on a joint ticket during an election"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "electoral result",
+          "wd_label": "electoral result",
+          "wd_node": "wd:Q19571328",
+          "wd_description": "results of an election"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "election",
+          "wd_label": "election",
+          "wd_node": "wd:Q40231",
+          "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "political party",
+          "wd_label": "political party",
+          "wd_node": "wd:Q7278",
+          "wd_description": "organized group of people who have the same ideology"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "other political party",
+          "wd_label": "political party",
+          "wd_node": "wd:Q7278",
+          "wd_description": "organized group of people who have the same ideology"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "general public",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "supporters",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "detractors / people who do not support",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "government / authorities",
+          "wd_label": "public authority",
+          "wd_node": "wd:Q4383245",
+          "wd_description": "body that exercises official authority"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "candidacy in election",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00006/",
+          "wd_node": "wd:P3602",
+          "wd_description": "election where the subject is a candidate",
+          "wd_label": "candidacy in election"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "running mate",
+          "relationSubject": "resin:Entities/00004/",
+          "relationObject": "resin:Entities/00000/",
+          "wd_node": "wd:P6149",
+          "wd_description": "second person on a presidential or other electoral ticket",
+          "wd_label": "running mate"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "endorsed by",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00001/",
+          "wd_node": "wd:P8001",
+          "wd_description": "public support given by a person or organization to a political campaign",
+          "wd_label": "endorsed by"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "endorsed by",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00001/",
+          "wd_node": "wd:P8001",
+          "wd_description": "public support given by a person or organization to a political campaign",
+          "wd_label": "endorsed by"
+        },
+        {
+          "@id": "resin:Relations/30004/",
+          "name": "member of political party",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00007/",
+          "wd_node": "wd:P102",
+          "wd_description": "the political party of which a person is or has been a member or otherwise affiliated",
+          "wd_label": "member of political party"
+        },
+        {
+          "@id": "resin:Relations/30005/",
+          "name": "member of political party",
+          "relationSubject": "resin:Entities/00001/",
+          "relationObject": "resin:Entities/00007/",
+          "wd_node": "wd:P102",
+          "wd_description": "the political party of which a person is or has been a member or otherwise affiliated",
+          "wd_label": "member of political party"
+        },
+        {
+          "@id": "resin:Relations/30006/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00010/",
+          "relationObject": "resin:Entities/00009/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30007/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00011/",
+          "relationObject": "resin:Entities/00009/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30008/",
+          "name": "candidacy in election",
+          "relationSubject": "resin:Entities/00002/",
+          "relationObject": "resin:Entities/00006/",
+          "wd_node": "wd:P3602",
+          "wd_description": "election where the subject is a candidate",
+          "wd_label": "candidacy in election"
+        },
+        {
+          "@id": "resin:Relations/30009/",
+          "name": "member of political party",
+          "relationSubject": "resin:Entities/00002/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "wd:P102",
+          "wd_description": "the political party of which a person is or has been a member or otherwise affiliated",
+          "wd_label": "member of political party"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -36,14 +214,9 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Nomination",
       "name": "Nomination",
       "participants": [],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10002/Steps_kairos:Container:2"
@@ -62,14 +235,9 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Official campaign",
       "name": "Official campaign",
       "participants": [],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10003/Steps_kairos:Container:3"
@@ -85,14 +253,9 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Voting",
       "name": "Voting",
       "participants": [],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10004/Steps_kairos:Container:8"
@@ -110,14 +273,9 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Conclusion",
       "name": "Conclusion",
       "participants": [],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -154,9 +312,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q567303",
       "wd_label": "announcement",
@@ -174,13 +329,8 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "",
+      "description": "Nomination campaign",
       "name": "Nomination campaign",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "outlinks": [
         "resin:Events/10007/Steps_kairos:Container:6"
@@ -195,13 +345,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Result outlinks",
       "name": "Result outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -223,9 +368,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q5158595",
       "wd_label": "concession",
@@ -256,9 +398,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q265871",
       "wd_label": "endorsement",
@@ -287,9 +426,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q847301",
       "wd_label": "political campaign",
@@ -313,9 +449,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1156895",
       "wd_label": "nomination",
@@ -346,9 +479,6 @@
           "entity": "resin:Entities/00004/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q567303",
       "wd_label": "announcement",
@@ -374,9 +504,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2288051",
       "wd_label": "party conference",
@@ -402,9 +529,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1156895",
       "wd_label": "nomination",
@@ -430,9 +554,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q847301",
       "wd_label": "political campaign",
@@ -461,9 +582,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q861911",
       "wd_label": "speech",
@@ -487,9 +605,6 @@
           "entity": "resin:Entities/00010/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q1161355",
       "wd_label": "fundraising",
@@ -513,9 +628,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q37038",
       "wd_label": "advertising",
@@ -544,9 +656,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -575,9 +684,6 @@
           "entity": "resin:Entities/00002/"
         }
       ],
-      "privateData": {
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q179875",
       "wd_label": "debate",
@@ -593,13 +699,8 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Vote",
       "name": "Vote",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10022/"
@@ -623,9 +724,6 @@
           "entity": "resin:Entities/00013/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q2672742",
       "wd_label": "vote counting",
@@ -659,9 +757,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q20826785",
       "wd_label": "elected",
@@ -681,9 +776,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q189760",
       "wd_label": "voting",
@@ -703,9 +795,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15044040",
       "wd_label": "postal voting",
@@ -725,9 +814,6 @@
           "entity": "resin:Entities/00009/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q708369",
       "wd_label": "early voting",
@@ -753,9 +839,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1417098",
       "wd_label": "inauguration",
@@ -779,9 +862,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q98398200",
       "wd_label": "rejection",
@@ -808,9 +888,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q124757",
       "wd_label": "riot",
@@ -836,9 +913,6 @@
           "entity": "resin:Entities/00000/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q697327",
       "wd_label": "lawsuit",
@@ -861,9 +935,6 @@
           "entity": "resin:Entities/00007/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q45382",
       "wd_label": "coup_d'\u00e9tat",
@@ -897,9 +968,6 @@
           "entity": "resin:Entities/00006/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q847301",
       "wd_label": "political campaign",
@@ -930,9 +998,6 @@
           "entity": "resin:Entities/00001/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q179875",
       "wd_label": "debate",
@@ -968,9 +1033,6 @@
           "entity": "resin:Entities/00003/"
         }
       ],
-      "privateData": {
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q747810",
       "wd_label": "questionnaire",
@@ -985,184 +1047,6 @@
           "wd_description": "argument, or discussion, usually in an ordered or formal setting, often with more than two people, generally ending with a vote or other decision"
         }
       ]
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/",
-      "name": "party candidate",
-      "wd_label": "political candidate",
-      "wd_node": "wd:Q19772737",
-      "wd_description": "candidate in an election for political office"
-    },
-    {
-      "@id": "resin:Entities/00001/",
-      "name": "other party candidate",
-      "wd_label": "political candidate",
-      "wd_node": "wd:Q19772737",
-      "wd_description": "candidate in an election for political office"
-    },
-    {
-      "@id": "resin:Entities/00002/",
-      "name": "different party candidate",
-      "wd_label": "political candidate",
-      "wd_node": "wd:Q19772737",
-      "wd_description": "candidate in an election for political office"
-    },
-    {
-      "@id": "resin:Entities/00004/",
-      "name": "running mate",
-      "wd_label": "running mate",
-      "wd_node": "wd:Q1339406",
-      "wd_description": "person running together with another person on a joint ticket during an election"
-    },
-    {
-      "@id": "resin:Entities/00005/",
-      "name": "electoral result",
-      "wd_label": "electoral result",
-      "wd_node": "wd:Q19571328",
-      "wd_description": "results of an election"
-    },
-    {
-      "@id": "resin:Entities/00006/",
-      "name": "election",
-      "wd_label": "election",
-      "wd_node": "wd:Q40231",
-      "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society"
-    },
-    {
-      "@id": "resin:Entities/00007/",
-      "name": "political party",
-      "wd_label": "political party",
-      "wd_node": "wd:Q7278",
-      "wd_description": "organized group of people who have the same ideology"
-    },
-    {
-      "@id": "resin:Entities/00008/",
-      "name": "other political party",
-      "wd_label": "political party",
-      "wd_node": "wd:Q7278",
-      "wd_description": "organized group of people who have the same ideology"
-    },
-    {
-      "@id": "resin:Entities/00009/",
-      "name": "general public",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00010/",
-      "name": "supporters",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00011/",
-      "name": "detractors / people who do not support",
-      "wd_label": "group of humans",
-      "wd_node": "wd:Q16334295",
-      "wd_description": "any set of human beings"
-    },
-    {
-      "@id": "resin:Entities/00012/",
-      "name": "government / authorities",
-      "wd_label": "public authority",
-      "wd_node": "wd:Q4383245",
-      "wd_description": "body that exercises official authority"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "candidacy in election",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00006/",
-      "wd_node": "wd:P3602",
-      "wd_description": "election where the subject is a candidate",
-      "wd_label": "candidacy in election"
-    },
-    {
-      "@id": "resin:Relations/30001/",
-      "name": "running mate",
-      "relationSubject": "resin:Entities/00004/",
-      "relationObject": "resin:Entities/00000/",
-      "wd_node": "wd:P6149",
-      "wd_description": "second person on a presidential or other electoral ticket",
-      "wd_label": "running mate"
-    },
-    {
-      "@id": "resin:Relations/30002/",
-      "name": "endorsed by",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00001/",
-      "wd_node": "wd:P8001",
-      "wd_description": "public support given by a person or organization to a political campaign",
-      "wd_label": "endorsed by"
-    },
-    {
-      "@id": "resin:Relations/30003/",
-      "name": "endorsed by",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00001/",
-      "wd_node": "wd:P8001",
-      "wd_description": "public support given by a person or organization to a political campaign",
-      "wd_label": "endorsed by"
-    },
-    {
-      "@id": "resin:Relations/30004/",
-      "name": "member of political party",
-      "relationSubject": "resin:Entities/00000/",
-      "relationObject": "resin:Entities/00007/",
-      "wd_node": "wd:P102",
-      "wd_description": "the political party of which a person is or has been a member or otherwise affiliated",
-      "wd_label": "member of political party"
-    },
-    {
-      "@id": "resin:Relations/30005/",
-      "name": "member of political party",
-      "relationSubject": "resin:Entities/00001/",
-      "relationObject": "resin:Entities/00007/",
-      "wd_node": "wd:P102",
-      "wd_description": "the political party of which a person is or has been a member or otherwise affiliated",
-      "wd_label": "member of political party"
-    },
-    {
-      "@id": "resin:Relations/30006/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00010/",
-      "relationObject": "resin:Entities/00009/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30007/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00011/",
-      "relationObject": "resin:Entities/00009/",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
-    },
-    {
-      "@id": "resin:Relations/30008/",
-      "name": "candidacy in election",
-      "relationSubject": "resin:Entities/00002/",
-      "relationObject": "resin:Entities/00006/",
-      "wd_node": "wd:P3602",
-      "wd_description": "election where the subject is a candidate",
-      "wd_label": "candidacy in election"
-    },
-    {
-      "@id": "resin:Relations/30009/",
-      "name": "member of political party",
-      "relationSubject": "resin:Entities/00002/",
-      "relationObject": "resin:Entities/00008/",
-      "wd_node": "wd:P102",
-      "wd_description": "the political party of which a person is or has been a member or otherwise affiliated",
-      "wd_label": "member of political party"
     }
   ]
 }

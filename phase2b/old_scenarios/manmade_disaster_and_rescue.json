@@ -12,9 +12,92 @@
         "resin:Events/10004/Steps_kairos:Primitives_Events_Civil_Justice"
       ],
       "children_gate": "or",
-      "description": "",
+      "description": "Manmade Disaster and Rescue",
       "name": "Manmade Disaster and Rescue",
-      "privateData": {},
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/00924",
+          "name": "building",
+          "wd_label": "building",
+          "wd_node": "wd:Q41176",
+          "wd_description": "structure, typically with a roof and walls, standing more or less permanently in one place"
+        },
+        {
+          "@id": "resin:Entities/00001/00925",
+          "name": "rescuer",
+          "wd_label": "rescuer",
+          "wd_node": "wd:Q17126809",
+          "wd_description": "person who rescues something from harm or danger"
+        },
+        {
+          "@id": "resin:Entities/00002/00926",
+          "name": "victim",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00003/00927",
+          "name": "disaster site",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00004/00928",
+          "name": "government / authorities",
+          "wd_label": "government",
+          "wd_node": "wd:Q7188",
+          "wd_description": "system or group of people governing an organized community, often a state"
+        },
+        {
+          "@id": "resin:Entities/00005/00929",
+          "name": "medical team",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00006/00930",
+          "name": "medical location / facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00007/00931",
+          "name": "general population",
+          "wd_label": "addressee",
+          "wd_node": "wd:Q28008314",
+          "wd_description": "person or organization to whom a information, letter or note is addressed"
+        },
+        {
+          "@id": "resin:Entities/00008/00932",
+          "name": "initiator of the disaster",
+          "wd_label": "criminal",
+          "wd_node": "wd:Q2159907",
+          "wd_description": "person who has committed a crime"
+        },
+        {
+          "@id": "resin:Entities/00009/00933",
+          "name": "judicial system",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00002/00926",
+          "relationObject": "resin:Entities/00007/00931",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
       "isSchema": true
     },
     {
@@ -31,11 +114,6 @@
       "comment": "container node",
       "description": "A disaster caused by humans.",
       "name": "Manmade Disaster",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Container"
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10002/Steps_kairos:Container:2"
@@ -60,11 +138,6 @@
       "comment": "container node",
       "description": "Rescuing the victims from the disaster.",
       "name": "Rescue",
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "kairos:Container"
-      },
       "repeatable": false,
       "outlinks": [
         "resin:Events/10003/Steps_kairos:Primitives_Events_Investigation"
@@ -85,11 +158,6 @@
       "description": "Investigation of cause of the disaster.",
       "name": "Investigation",
       "participants": [],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "FrameNet.Scrutiny"
-      },
       "repeatable": false,
       "wd_node": "wd:Q21004260",
       "wd_label": "inquiry",
@@ -118,11 +186,6 @@
       "description": "Justice procedures on those responsible for the disaster. ",
       "name": "Civil Justice",
       "participants": [],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "FrameNet.Legal_rulings"
-      },
       "repeatable": false,
       "wd_node": "wd:Q5167661",
       "wd_label": "justice",
@@ -147,11 +210,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": ""
-      },
       "repeatable": false,
       "wd_node": "wd:Q1309431",
       "wd_label": "structural failure",
@@ -177,11 +235,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": "Disaster.FireExplosion.Unspecified"
-      },
       "repeatable": false,
       "wd_node": "wd:Q168983",
       "wd_label": "conflagration",
@@ -207,11 +260,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "template": "",
-        "repeatable": false,
-        "@type": ""
-      },
       "repeatable": false,
       "wd_node": "wd:Q34168",
       "wd_label": "trapping",
@@ -238,11 +286,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "@type": "ArtifactExistence.DamageDestroyDisableDismantle.Damage",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q481609",
       "wd_label": "damage",
@@ -268,11 +311,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "@type": "Life.Injure.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q193078",
       "wd_label": "injury",
@@ -296,11 +334,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "@type": "Life.Die.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
@@ -324,11 +357,6 @@
           "entity": "resin:Entities/00007/00931"
         }
       ],
-      "privateData": {
-        "@type": "Contact.Contact.Broadcast",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q567303",
       "wd_label": "announcement",
@@ -354,11 +382,6 @@
           "entity": "resin:Entities/00001/00925"
         }
       ],
-      "privateData": {
-        "@type": "Contact.RequestCommand.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1665268",
       "wd_label": "command",
@@ -389,11 +412,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "@type": "Contact.Contact.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -425,11 +443,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "@type": "Movement.Transportation.Evacuation",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q606332",
       "wd_label": "emergency_evacuation",
@@ -460,11 +473,6 @@
           "entity": "resin:Entities/00003/00927"
         }
       ],
-      "privateData": {
-        "@type": "Contact.Collaborate.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1145523",
       "wd_label": "collaboration",
@@ -500,11 +508,6 @@
           "entity": "resin:Entities/00006/00930"
         }
       ],
-      "privateData": {
-        "@type": "Movement.Transportation.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7590",
       "wd_label": "transport",
@@ -535,11 +538,6 @@
           "entity": "resin:Entities/00006/00930"
         }
       ],
-      "privateData": {
-        "@type": "Medical.Intervention.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q179661",
       "wd_label": "treatment",
@@ -558,11 +556,6 @@
       "comment": "container node",
       "description": "",
       "name": "treatment outlinks",
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -584,11 +577,6 @@
           "entity": "resin:Entities/00002/00926"
         }
       ],
-      "privateData": {
-        "@type": "",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q7302970",
       "wd_label": "recover",
@@ -612,11 +600,6 @@
           "entity": "resin:Entities/00006/00930"
         }
       ],
-      "privateData": {
-        "@type": "Life.Die.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q4",
       "wd_label": "death",
@@ -640,11 +623,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "cognitive.identifycategorize.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q912550",
       "wd_label": "categorization",
@@ -670,11 +648,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "contact.contact.unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q11024",
       "wd_label": "communication",
@@ -693,11 +666,6 @@
       "comment": "",
       "description": "Taking the suspect who caused the disaster into custody",
       "name": "Arrest",
-      "privateData": {
-        "@type": "arrest_Q1403016",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1403016",
       "wd_label": "arrest",
@@ -725,11 +693,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "handcuffs_Q15808",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q15808",
       "wd_label": "handcuffs",
@@ -753,11 +716,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "interrogation_Q327018",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q327018",
       "wd_label": "interrogation",
@@ -781,11 +739,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "physical_restraint_Q357003",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q357003",
       "wd_label": "physical restraint",
@@ -809,11 +762,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "cognitive.inspection.assesstestmeasure",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q1137655",
       "wd_label": "inspection",
@@ -834,11 +782,6 @@
           "entity": "resin:Entities/00004/00928"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.filecomplaint",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q836925",
       "wd_label": "complaint",
@@ -859,11 +802,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.answer",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q33622550",
       "wd_label": "answer",
@@ -889,11 +827,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.discovery",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q902342",
       "wd_label": "discovery",
@@ -919,11 +852,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.motion",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q6917734",
       "wd_label": "motion",
@@ -943,11 +871,6 @@
       "description": "",
       "name": "Motion outlinks",
       "participants": [],
-      "privateData": {
-        "@type": "kairos:Container",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "outlinks": [],
       "isSchema": true
@@ -969,11 +892,6 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "justice.judicialconsequences.mediation",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q223871",
       "wd_label": "mediation",
@@ -1002,11 +920,6 @@
           "entity": "resin:Entities/00009/00933"
         }
       ],
-      "privateData": {
-        "@type": "Transaction.ExchangeBuySell.Unspecified",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q21651837",
       "wd_label": "exchange_of_goods",
@@ -1025,11 +938,6 @@
           "entity": "resin:Entities/00009/00933"
         }
       ],
-      "privateData": {
-        "@type": "justice.initiatejudicialprocess.trialhearing",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q8016240",
       "wd_label": "trial",
@@ -1048,11 +956,6 @@
           "entity": "resin:Entities/00009/00933"
         }
       ],
-      "privateData": {
-        "@type": "justice.judicialconsequences.judgement",
-        "template": "",
-        "repeatable": false
-      },
       "repeatable": false,
       "wd_node": "wd:Q3769186",
       "wd_label": "judgement",
@@ -1073,99 +976,11 @@
           "entity": "resin:Entities/00008/00932"
         }
       ],
-      "privateData": {
-        "@type": "justice.appeal.unspecified",
-        "template": "",
-        "repeatable": true
-      },
       "repeatable": true,
       "wd_node": "wd:Q329777",
       "wd_label": "appeal",
       "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
       "outlinks": []
-    }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000/00924",
-      "name": "building",
-      "wd_label": "building",
-      "wd_node": "wd:Q41176",
-      "wd_description": "structure, typically with a roof and walls, standing more or less permanently in one place"
-    },
-    {
-      "@id": "resin:Entities/00001/00925",
-      "name": "rescuer",
-      "wd_label": "rescuer",
-      "wd_node": "wd:Q17126809",
-      "wd_description": "person who rescues something from harm or danger"
-    },
-    {
-      "@id": "resin:Entities/00002/00926",
-      "name": "victim",
-      "wd_label": "victim",
-      "wd_node": "wd:Q1851760",
-      "wd_description": "person who suffers as a result of a crime or other event"
-    },
-    {
-      "@id": "resin:Entities/00003/00927",
-      "name": "disaster site",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00004/00928",
-      "name": "government / authorities",
-      "wd_label": "government",
-      "wd_node": "wd:Q7188",
-      "wd_description": "system or group of people governing an organized community, often a state"
-    },
-    {
-      "@id": "resin:Entities/00005/00929",
-      "name": "medical team",
-      "wd_label": "health_professional",
-      "wd_node": "wd:Q11974939",
-      "wd_description": "individual who systematically provides health care services"
-    },
-    {
-      "@id": "resin:Entities/00006/00930",
-      "name": "medical location / facility",
-      "wd_label": "geographic location",
-      "wd_node": "wd:Q2221906",
-      "wd_description": "point or an area on the Earth's surface or elsewhere"
-    },
-    {
-      "@id": "resin:Entities/00007/00931",
-      "name": "general population",
-      "wd_label": "addressee",
-      "wd_node": "wd:Q28008314",
-      "wd_description": "person or organization to whom a information, letter or note is addressed"
-    },
-    {
-      "@id": "resin:Entities/00008/00932",
-      "name": "initiator of the disaster",
-      "wd_label": "criminal",
-      "wd_node": "wd:Q2159907",
-      "wd_description": "person who has committed a crime"
-    },
-    {
-      "@id": "resin:Entities/00009/00933",
-      "name": "judicial system",
-      "wd_label": "court",
-      "wd_node": "wd:Q41487",
-      "wd_description": "judicial institution with the authority to resolve legal disputes"
-    }
-  ],
-  "relations": [
-    {
-      "@id": "resin:Relations/30000/",
-      "name": "member of",
-      "relationSubject": "resin:Entities/00002/00926",
-      "relationObject": "resin:Entities/00007/00931",
-      "wd_node": "wd:Q21503252",
-      "wd_description": "relation of type constraints",
-      "wd_label": "instance of"
     }
   ]
 }
