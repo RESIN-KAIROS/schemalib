@@ -1,0 +1,3361 @@
+{
+  "0": {
+    "py/object": "base.Schema",
+    "id": 0,
+    "description": "cyber attack news story.",
+    "name": "Cyber Attack",
+    "level": 6,
+    "wd_node": "Q29137",
+    "wd_description": "any crime that involves a computer and a network",
+    "wd_name": "cybercrime",
+    "is_schema": true,
+    "is_chapter": true,
+    "children": {
+      "py/set": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "parent": -1,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 0,
+        "role_name": "A0_pag_criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 0,
+        "role_name": "A1_ppt_act",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 0,
+        "role_name": "A2_gol_crime_against",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 0,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": [],
+    "scenario": "cyber attack",
+    "events": {
+      "py/id": 0
+    },
+    "event_ids": {
+      "py/set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    "event_names": {
+      "py/set": [
+        "Civilian Attacks",
+        "Shells fired at army base",
+        "Criminal Investigation",
+        "Incomplete evidence",
+        "Identify Target",
+        "Denial-of-Service Attack",
+        "attack",
+        "Biased Defence",
+        "Breach",
+        "Source Isolation",
+        "Gather Evidence",
+        "Cybersecurity Threat",
+        "Prosecution",
+        "Detecting possible outbreak",
+        "response",
+        "Attack Determination",
+        "Harm",
+        "impact",
+        "Issuing Arrest Warrant",
+        "Cyber Attack",
+        "Arrest Warrant",
+        "Data Breach",
+        "Attack Source",
+        "No Indication of Manipulation",
+        "Press Charges",
+        "No Evidence",
+        "Call the Police",
+        "Notify Insurance Company",
+        "Security Investigation",
+        "Execute Attack",
+        "Telefonica",
+        "Prosecutor's Assessment",
+        "Business Loss",
+        "System Compromised",
+        "Surveillance",
+        "Violation of Quarantine",
+        "investigation and justice",
+        "attacker caught",
+        "Trial",
+        "Response Planning",
+        "Attack Prevention",
+        "Confession",
+        "Source of the attack",
+        "Determine Damage",
+        "File a Lawsuit",
+        "Hacking",
+        "Prosecute Attackers",
+        "Investigate Crime",
+        "Investigation"
+      ]
+    },
+    "event_embs": null,
+    "embedding_model": null,
+    "G": null,
+    "ACTIONS": {},
+    "VERIFY_ACTIONS": {}
+  },
+  "1": {
+    "py/object": "base.Event",
+    "id": 1,
+    "description": "the attacker performs the cyber attack.",
+    "name": "attack",
+    "level": 1,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": true,
+    "children": {
+      "py/set": [
+        8,
+        5,
+        6,
+        7
+      ]
+    },
+    "parent": 0,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        2
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 1,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 1,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 1,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 1,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "2": {
+    "py/object": "base.Event",
+    "id": 2,
+    "description": "the cyber attack impacts organizations and personal devices.",
+    "name": "impact",
+    "level": 1,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": true,
+    "children": {
+      "py/set": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "parent": 0,
+    "before": {
+      "py/set": [
+        1
+      ]
+    },
+    "after": {
+      "py/set": [
+        3
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 2,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 2,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 2,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 2,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "3": {
+    "py/object": "base.Event",
+    "id": 3,
+    "description": "authorities and the public respond to the cyber attack.",
+    "name": "response",
+    "level": 1,
+    "wd_node": "Q169489",
+    "wd_description": "tradable financial asset",
+    "wd_name": "security",
+    "is_schema": false,
+    "is_chapter": true,
+    "children": {
+      "py/set": [
+        16,
+        13,
+        14,
+        15
+      ]
+    },
+    "parent": 0,
+    "before": {
+      "py/set": [
+        2
+      ]
+    },
+    "after": {
+      "py/set": [
+        4
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 3,
+        "role_name": "A0_pag_agent",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 3,
+        "role_name": "A1_ppt_thing_being_traded",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 3,
+        "role_name": "A2_com_other_exchanger",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 3,
+        "role_name": "A3_ppt_other_item_in_exchange",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 3,
+        "role_name": "A4_gol_benefactive",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "5": {
+        "py/object": "schema.base.Participant",
+        "id": 5,
+        "event_id": 3,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "4": {
+    "py/object": "base.Event",
+    "id": 4,
+    "description": "investigation on the source of the cyber attack and possible lawsuit related to the cyber attack.",
+    "name": "investigation and justice",
+    "level": 5,
+    "wd_node": "Q697327",
+    "wd_description": "civil action brought in a court of law",
+    "wd_name": "lawsuit",
+    "is_schema": false,
+    "is_chapter": true,
+    "children": {
+      "py/set": [
+        32,
+        33,
+        38,
+        39,
+        40,
+        41,
+        42,
+        45,
+        46,
+        48,
+        18,
+        19,
+        30
+      ]
+    },
+    "parent": 0,
+    "before": {
+      "py/set": [
+        3
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 4,
+        "role_name": "A0_pag_prosecutor",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 4,
+        "role_name": "A1_ppt_defendant",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 4,
+        "role_name": "A2_vsp_type/grounds/accusation",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 4,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "5": {
+    "py/object": "base.Event",
+    "id": 5,
+    "description": "The attacker identifies a target",
+    "name": "Identify Target",
+    "level": 0,
+    "wd_node": "Q3265221",
+    "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+    "wd_name": "identification",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 1,
+    "before": {
+      "py/set": [
+        7
+      ]
+    },
+    "after": {
+      "py/set": [
+        6
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 5,
+        "role_name": "A0_pag_agent_caller",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 5,
+        "role_name": "A1_ppt_theme_item_being_labelled",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 5,
+        "role_name": "A2_prd_attribute_attribute",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 5,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "6": {
+    "py/object": "base.Event",
+    "id": 6,
+    "description": "The attacker gains access to the target's system.",
+    "name": "Breach",
+    "level": 0,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 1,
+    "before": {
+      "py/set": [
+        5
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 6,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 6,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 6,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 6,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "7": {
+    "py/object": "base.Event",
+    "id": 7,
+    "description": "The attacker executes the attack.",
+    "name": "Execute Attack",
+    "level": 0,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 1,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        8,
+        5
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 7,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 7,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 7,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 7,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "8": {
+    "py/object": "base.Event",
+    "id": 8,
+    "description": "The target system is compromised.",
+    "name": "System Compromised",
+    "level": 0,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 1,
+    "before": {
+      "py/set": [
+        7
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 8,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 8,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 8,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 8,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "9": {
+    "py/object": "base.Event",
+    "id": 9,
+    "description": "The target organization or individual experiences business disruption, financial loss, or reputational damage.",
+    "name": "Business Loss",
+    "level": 0,
+    "wd_node": "Q2956685",
+    "wd_description": "event which interferes with an ongoing process",
+    "wd_name": "disruption",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 2,
+    "before": {
+      "py/set": [
+        12
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 9,
+        "role_name": "A0_pag_disrupter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 9,
+        "role_name": "A1_ppt_entity_disrupted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 9,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "10": {
+    "py/object": "base.Event",
+    "id": 10,
+    "description": "The target organization or individual suffers personal or physical harm.",
+    "name": "Harm",
+    "level": 0,
+    "wd_node": "Q193078",
+    "wd_description": "physiological wound caused by an external source",
+    "wd_name": "injury",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 2,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        11
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 10,
+        "role_name": "A1_ppt_experiencer_injured_party",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 10,
+        "role_name": "A0_pag_stimulus_stimulus_of_injury",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 10,
+        "role_name": "A2_mnr__instrument",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 10,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "11": {
+    "py/object": "base.Event",
+    "id": 11,
+    "description": "The attacker gains unauthorized access to the target organization's or individual's systems and data.",
+    "name": "Data Breach",
+    "level": 0,
+    "wd_node": "Q2144405",
+    "wd_description": "solving of technical work that requires deep understanding, especially of a computer system",
+    "wd_name": "hacking",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 2,
+    "before": {
+      "py/set": [
+        10
+      ]
+    },
+    "after": {
+      "py/set": [
+        12
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 11,
+        "role_name": "A0_pag_hacker",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 11,
+        "role_name": "A1_ppt_target_or_project",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 11,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "12": {
+    "py/object": "base.Event",
+    "id": 12,
+    "description": "The attacker launches a denial-of-service attack against the target organization's or individual's systems.",
+    "name": "Denial-of-Service Attack",
+    "level": 0,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 2,
+    "before": {
+      "py/set": [
+        11
+      ]
+    },
+    "after": {
+      "py/set": [
+        9
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 12,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 12,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 12,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 12,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "13": {
+    "py/object": "base.Event",
+    "id": 13,
+    "description": "The organization notifies law enforcement of the attack",
+    "name": "Call the Police",
+    "level": 0,
+    "wd_node": "Q10423562",
+    "wd_description": "note that a postal operator sends to the recipient",
+    "wd_name": "notification",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 3,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        14
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 13,
+        "role_name": "A0_pag_notifier",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 13,
+        "role_name": "A1_gol_entity_notified",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 13,
+        "role_name": "A2_ppt_utterance",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 13,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "14": {
+    "py/object": "base.Event",
+    "id": 14,
+    "description": "The organization notifies its insurance company of the attack.",
+    "name": "Notify Insurance Company",
+    "level": 0,
+    "wd_node": "Q43183",
+    "wd_description": "equitable transfer of the risk of a loss, from one entity to another in exchange for payment",
+    "wd_name": "insurance",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 3,
+    "before": {
+      "py/set": [
+        13
+      ]
+    },
+    "after": {
+      "py/set": [
+        15
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 14,
+        "role_name": "A0_cau_entity_making_guarantee",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 14,
+        "role_name": "A1_ppt_guarantee",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 14,
+        "role_name": "A2_gol_benefactive",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 14,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "15": {
+    "py/object": "base.Event",
+    "id": 15,
+    "description": "The organization hires a security firm to help investigate and mitigate the attack.",
+    "name": "Security Investigation",
+    "level": 0,
+    "wd_node": "Q169489",
+    "wd_description": "tradable financial asset",
+    "wd_name": "security",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 3,
+    "before": {
+      "py/set": [
+        14
+      ]
+    },
+    "after": {
+      "py/set": [
+        16
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 15,
+        "role_name": "A0_pag_agent",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 15,
+        "role_name": "A1_ppt_thing_being_traded",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 15,
+        "role_name": "A2_com_other_exchanger",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 15,
+        "role_name": "A3_ppt_other_item_in_exchange",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 15,
+        "role_name": "A4_gol_benefactive",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "5": {
+        "py/object": "schema.base.Participant",
+        "id": 5,
+        "event_id": 15,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "16": {
+    "py/object": "base.Event",
+    "id": 16,
+    "description": "The organization works with law enforcement to prosecute the attackers.",
+    "name": "Prosecute Attackers",
+    "level": 0,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 3,
+    "before": {
+      "py/set": [
+        15
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 16,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 16,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 16,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 16,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "17": {
+    "py/object": "base.Event",
+    "id": 17,
+    "description": "The source of the attack is identified",
+    "name": "Source of the attack",
+    "level": 2,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        20,
+        21,
+        22,
+        24,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "parent": 37,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        32,
+        18,
+        30,
+        31
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 17,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 17,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 17,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 17,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "18": {
+    "py/object": "base.Event",
+    "id": 18,
+    "description": "Evidence is gathered against the attacker.",
+    "name": "Gather Evidence",
+    "level": 1,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        34,
+        36
+      ]
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        17,
+        42,
+        25,
+        39
+      ]
+    },
+    "after": {
+      "py/set": [
+        40,
+        35,
+        37,
+        46
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 18,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 18,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 18,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 18,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "19": {
+    "py/object": "base.Event",
+    "id": 19,
+    "description": "The attacker is prosecuted in court.",
+    "name": "Prosecution",
+    "level": 1,
+    "wd_node": "Q8016240",
+    "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+    "wd_name": "trial",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        43
+      ]
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        37,
+        46,
+        47
+      ]
+    },
+    "after": {
+      "py/set": [
+        43,
+        45
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 19,
+        "role_name": "A0_pag__litigant",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 19,
+        "role_name": "A1_ppt__entity_tried",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 19,
+        "role_name": "A2_gol__adjudicator",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 19,
+        "role_name": "A3_cau_tried_for",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 19,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "20": {
+    "py/object": "base.Event",
+    "id": 20,
+    "description": "According to ISIS, definite hits were identified",
+    "name": "Detecting possible outbreak",
+    "level": 0,
+    "wd_node": "Q124490",
+    "wd_description": "use of physical force or power with the intent to inflict harm",
+    "wd_name": "violence",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": [
+        38
+      ]
+    },
+    "after": {
+      "py/set": [
+        25,
+        22,
+        31
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 20,
+        "role_name": "A0_pag_agent_of_violent_behavior",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 20,
+        "role_name": "A1_ppt_non-agentive_thing/action_characterized_by_violence",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 20,
+        "role_name": "A2_gol_target_of_violent_behavior",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 20,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "21": {
+    "py/object": "base.Event",
+    "id": 21,
+    "description": "Shells were fired at a Nigerian army base in Goniri, about 45 km southeast of Damaturu, in northeastern Nigeria",
+    "name": "Shells fired at army base",
+    "level": 0,
+    "wd_node": "Q2252077",
+    "wd_description": "act or process of firing firearms or other projectile weapons",
+    "wd_name": "shooting",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": [
+        38
+      ]
+    },
+    "after": {
+      "py/set": [
+        41,
+        44,
+        37,
+        31
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 21,
+        "role_name": "A0_pag_agent_shooter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 21,
+        "role_name": "A1_ppt_patient_corpse",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 21,
+        "role_name": "A2_mnr_instrument_gun",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 21,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "22": {
+    "py/object": "base.Event",
+    "id": 22,
+    "description": "More than 45,000 attacks recorded in countries including the UK, Russia, India and China may have originated with theft of ",
+    "name": "Hacking",
+    "level": 1,
+    "wd_node": "Q29137",
+    "wd_description": "any crime that involves a computer and a network",
+    "wd_name": "cybercrime",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        44
+      ]
+    },
+    "parent": 17,
+    "before": {
+      "py/set": [
+        26,
+        20,
+        39
+      ]
+    },
+    "after": {
+      "py/set": [
+        41,
+        35,
+        33
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 22,
+        "role_name": "A0_pag_criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 22,
+        "role_name": "A1_ppt_act",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 22,
+        "role_name": "A2_gol_crime_against",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 22,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "23": {
+    "py/object": "base.Event",
+    "id": 23,
+    "description": "In Spain, major companies including telecommunications firm Telef\u00f3nica were infected",
+    "name": "Telefonica",
+    "level": 0,
+    "wd_node": "Q166231",
+    "wd_description": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
+    "wd_name": "infection",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 41,
+    "before": {
+      "py/set": [
+        37,
+        44,
+        24,
+        28,
+        29
+      ]
+    },
+    "after": {
+      "py/set": [
+        33
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 23,
+        "role_name": "A1_gol_destination_thing_becoming_infected",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 23,
+        "role_name": "A2_ppt_theme_infectant",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 23,
+        "role_name": "A0_pag_agent_causer_of_infection",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 23,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "24": {
+    "py/object": "base.Event",
+    "id": 24,
+    "description": "It is based on interviews with victims and witnesses, investigations of the attack sites, IDF and media reports on the fighting, and in one case IDF video footage of the attack",
+    "name": "Investigation",
+    "level": 0,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        35,
+        23
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 24,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 24,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 24,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 24,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "25": {
+    "py/object": "base.Event",
+    "id": 25,
+    "description": "Human Rights Watch determined that in all of these attacks the Israeli military directed their strikes on individuals who were all found to be civilians",
+    "name": "Civilian Attacks",
+    "level": 0,
+    "wd_node": "Q1174599",
+    "wd_description": "action to injure another organism",
+    "wd_name": "attack",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 46,
+    "before": {
+      "py/set": [
+        26,
+        27,
+        20
+      ]
+    },
+    "after": {
+      "py/set": [
+        18,
+        35,
+        44
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 25,
+        "role_name": "A0_pag_agent_assaulter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 25,
+        "role_name": "A1_ppt_theme_entity_assaulted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 25,
+        "role_name": "AM_mnr__manner",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 25,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "26": {
+    "py/object": "base.Event",
+    "id": 26,
+    "description": "In none of the cases did Human Rights Watch find evidence",
+    "name": "No Evidence",
+    "level": 0,
+    "wd_node": "Q10429085",
+    "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+    "wd_name": "report",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        25,
+        22,
+        31
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 26,
+        "role_name": "A0_pag_Reporter",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 26,
+        "role_name": "A1_ppt_thing_reported",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 26,
+        "role_name": "A2_gol_entity_reported_to",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 26,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "27": {
+    "py/object": "base.Event",
+    "id": 27,
+    "description": "The nature of the attack is determined",
+    "name": "Attack Determination",
+    "level": 0,
+    "wd_node": "Q3265221",
+    "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+    "wd_name": "identification",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        25
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 27,
+        "role_name": "A0_pag_agent_caller",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 27,
+        "role_name": "A1_ppt_theme_item_being_labelled",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 27,
+        "role_name": "A2_prd_attribute_attribute",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 27,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "28": {
+    "py/object": "base.Event",
+    "id": 28,
+    "description": "The extent of the damage is determined",
+    "name": "Determine Damage",
+    "level": 0,
+    "wd_node": "Q481609",
+    "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+    "wd_name": "damage",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": [
+        38
+      ]
+    },
+    "after": {
+      "py/set": [
+        41,
+        35,
+        23
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 28,
+        "role_name": "A0_pag_agent_agent_causer",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 28,
+        "role_name": "A1_ppt_patient_entity_damaged",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 28,
+        "role_name": "A2_mnr_instrument_instrument",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 28,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "29": {
+    "py/object": "base.Event",
+    "id": 29,
+    "description": "The response to the attack is planned",
+    "name": "Response Planning",
+    "level": 0,
+    "wd_node": "Q38127868",
+    "wd_description": "process by which something is returned to its former status or position",
+    "wd_name": "recovery",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 17,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        41,
+        35,
+        23
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 29,
+        "role_name": "A0_pag_repairer",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 29,
+        "role_name": "A1_ppt_entity_repaired",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 29,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "30": {
+    "py/object": "base.Event",
+    "id": 30,
+    "description": "The attack is traced back to its source, and the responsible party is held accountable",
+    "name": "Attack Source",
+    "level": 0,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        17
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 30,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 30,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 30,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 30,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "31": {
+    "py/object": "base.Event",
+    "id": 31,
+    "description": "The source of the attack is known, and steps can be taken to prevent future attacks from the same source",
+    "name": "Source Isolation",
+    "level": 0,
+    "wd_node": "Q1717246",
+    "wd_description": "causing an event or condition that would otherwise occur to not occur",
+    "wd_name": "prevention",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 37,
+    "before": {
+      "py/set": [
+        42,
+        17,
+        20,
+        21,
+        26
+      ]
+    },
+    "after": {
+      "py/set": [
+        35
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 31,
+        "role_name": "A0_pag_agent_agent",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 31,
+        "role_name": "A1_ppt_theme_theme",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 31,
+        "role_name": "A2_ppt_secondary_predication_or_action",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 31,
+        "role_name": "A3_mnr__instrument",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 31,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "32": {
+    "py/object": "base.Event",
+    "id": 32,
+    "description": "Victims of the attack can seek compensation from the responsible party",
+    "name": "File a Lawsuit",
+    "level": 4,
+    "wd_node": "Q1498273",
+    "wd_description": "legal term",
+    "wd_name": "compensation",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        37
+      ]
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        17,
+        38
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 32,
+        "role_name": "A0_pag_payer_or_buyer",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 32,
+        "role_name": "A1_ppt_thing_bought_or_paid_for",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 32,
+        "role_name": "A2_gol_seller_or_person_being_paid",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 32,
+        "role_name": "A3_ppt_price_paid",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 32,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "33": {
+    "py/object": "base.Event",
+    "id": 33,
+    "description": "Kaspersky Lab records more than 45,000 attacks in 99 countries.",
+    "name": "Cybersecurity Threat",
+    "level": 0,
+    "wd_node": "Q2251595",
+    "wd_description": "action or precaution against a threat against an uncertainty or possible unpleasant events",
+    "wd_name": "protection",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        23,
+        46,
+        22
+      ]
+    },
+    "after": {
+      "py/set": [
+        45
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 33,
+        "role_name": "A0_pag_protector",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 33,
+        "role_name": "A1_ppt_protected",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 33,
+        "role_name": "A2_ppt_danger",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 33,
+        "role_name": "A3_mnr_instrument",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 33,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "34": {
+    "py/object": "base.Event",
+    "id": 34,
+    "description": "The Office of the Prosecutor collected and examined the evidence and gathered testimony from victims and witnesses.",
+    "name": "Investigate Crime",
+    "level": 0,
+    "wd_node": "Q8016240",
+    "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+    "wd_name": "trial",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 18,
+    "before": {
+      "py/set": [
+        48
+      ]
+    },
+    "after": {
+      "py/set": [
+        41,
+        37
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 34,
+        "role_name": "A0_pag__litigant",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 34,
+        "role_name": "A1_ppt__entity_tried",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 34,
+        "role_name": "A2_gol__adjudicator",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 34,
+        "role_name": "A3_cau_tried_for",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 34,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "35": {
+    "py/object": "base.Event",
+    "id": 35,
+    "description": "The investigation culminated in either the issuance of arrest warrants against individuals suspected of committing crimes or a decision not to prosecute due to lack of evidence.",
+    "name": "Criminal Investigation",
+    "level": 0,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 45,
+    "before": {
+      "py/set": [
+        48,
+        18,
+        22,
+        24,
+        25,
+        28,
+        29,
+        31
+      ]
+    },
+    "after": {
+      "py/set": [
+        43
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 35,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 35,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 35,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 35,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "36": {
+    "py/object": "base.Event",
+    "id": 36,
+    "description": "The Prosecution sees no indication whatsoever that the incriminating intercepts, photographs and videos were manipulated",
+    "name": "No Indication of Manipulation",
+    "level": 0,
+    "wd_node": "",
+    "wd_description": "",
+    "wd_name": "",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 18,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {},
+    "entities": [],
+    "relations": []
+  },
+  "37": {
+    "py/object": "base.Event",
+    "id": 37,
+    "description": "Additionally, if there is enough evidence, the attacker could be prosecuted and convicted in a court of law.",
+    "name": "Attack Prevention",
+    "level": 3,
+    "wd_node": "Q2916183",
+    "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+    "wd_name": "conviction",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        17,
+        47,
+        31
+      ]
+    },
+    "parent": 32,
+    "before": {
+      "py/set": [
+        34,
+        18,
+        21
+      ]
+    },
+    "after": {
+      "py/set": [
+        19,
+        23
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 37,
+        "role_name": "A0_pag__judge",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 37,
+        "role_name": "A1_ppt__person_convicted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 37,
+        "role_name": "A2_cau__convicted_of",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 37,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "38": {
+    "py/object": "base.Event",
+    "id": 38,
+    "description": "The evidence may be incomplete",
+    "name": "Incomplete evidence",
+    "level": 0,
+    "wd_node": "Q11540953",
+    "wd_description": "search for target data from a set of data",
+    "wd_name": "search",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        32,
+        47,
+        48,
+        20,
+        21,
+        28
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 38,
+        "role_name": "A0_pag_searcher",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 38,
+        "role_name": "A1_loc_Area_searched",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 38,
+        "role_name": "A2_ppt_searched_for",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 38,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "39": {
+    "py/object": "base.Event",
+    "id": 39,
+    "description": "The defence may be biased",
+    "name": "Biased Defence",
+    "level": 0,
+    "wd_node": "Q169489",
+    "wd_description": "tradable financial asset",
+    "wd_name": "security",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        18,
+        22
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 39,
+        "role_name": "A0_pag_agent",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 39,
+        "role_name": "A1_ppt_thing_being_traded",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 39,
+        "role_name": "A2_com_other_exchanger",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 39,
+        "role_name": "A3_ppt_other_item_in_exchange",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "4": {
+        "py/object": "schema.base.Participant",
+        "id": 4,
+        "event_id": 39,
+        "role_name": "A4_gol_benefactive",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "5": {
+        "py/object": "schema.base.Participant",
+        "id": 5,
+        "event_id": 39,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "40": {
+    "py/object": "base.Event",
+    "id": 40,
+    "description": "The Prosecution will assess if there is reasonable ground to believe that core crimes have been committed and by who.",
+    "name": "Prosecutor's Assessment",
+    "level": 0,
+    "wd_node": "Q851176",
+    "wd_description": "value judgement about a fact, an object or a person",
+    "wd_name": "assessment",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        48,
+        18
+      ]
+    },
+    "after": {
+      "py/set": [
+        43
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 40,
+        "role_name": "A0_pag_assessor",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 40,
+        "role_name": "A1_ppt_entity_assessed",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 40,
+        "role_name": "A2_prd_value_or_attribute",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 40,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "41": {
+    "py/object": "base.Event",
+    "id": 41,
+    "description": "If they believe so, they will issue arrest warrants against the individuals suspected.",
+    "name": "Issuing Arrest Warrant",
+    "level": 1,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        23
+      ]
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        34,
+        46,
+        21,
+        22,
+        28,
+        29
+      ]
+    },
+    "after": {
+      "py/set": [
+        43
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 41,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 41,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 41,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 41,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "42": {
+    "py/object": "base.Event",
+    "id": 42,
+    "description": "The evidence in this case is largely supported by footage and intercepts",
+    "name": "Surveillance",
+    "level": 0,
+    "wd_node": "Q1196258",
+    "wd_description": "solemn attestation as to the truth of a matter",
+    "wd_name": "testimony",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": []
+    },
+    "after": {
+      "py/set": [
+        18,
+        31
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 42,
+        "role_name": "A0_pag_witness",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 42,
+        "role_name": "A1_ppt_testimony",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 42,
+        "role_name": "A2_gol_person_testified_for/against",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 42,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "43": {
+    "py/object": "base.Event",
+    "id": 43,
+    "description": "The attacker is tried and convicted or acquitted on a charge of an offence against any of the preceding provisions of this Division.",
+    "name": "Trial",
+    "level": 0,
+    "wd_node": "Q2916183",
+    "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+    "wd_name": "conviction",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 19,
+    "before": {
+      "py/set": [
+        35,
+        40,
+        41,
+        44,
+        19
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 43,
+        "role_name": "A0_pag__judge",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 43,
+        "role_name": "A1_ppt__person_convicted",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 43,
+        "role_name": "A2_cau__convicted_of",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 43,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "44": {
+    "py/object": "base.Event",
+    "id": 44,
+    "description": "A warrant is issued for the attacker's arrest.",
+    "name": "Arrest Warrant",
+    "level": 0,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 22,
+    "before": {
+      "py/set": [
+        25,
+        21
+      ]
+    },
+    "after": {
+      "py/set": [
+        43,
+        23
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 44,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 44,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 44,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 44,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "45": {
+    "py/object": "base.Event",
+    "id": 45,
+    "description": "The attacker may be fined, imprisoned, or both.",
+    "name": "Violation of Quarantine",
+    "level": 1,
+    "wd_node": "Q83267",
+    "wd_description": "unlawful act forbidden and punishable by criminal law",
+    "wd_name": "crime",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        35
+      ]
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        33,
+        19
+      ]
+    },
+    "after": {
+      "py/set": []
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 45,
+        "role_name": "A0_pag__perp",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 45,
+        "role_name": "A2_gol__victim",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 45,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "46": {
+    "py/object": "base.Event",
+    "id": 46,
+    "description": "The attacker is caught and arrested by the police",
+    "name": "attacker caught",
+    "level": 1,
+    "wd_node": "Q1403016",
+    "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+    "wd_name": "arrest",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": [
+        25
+      ]
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        48,
+        18
+      ]
+    },
+    "after": {
+      "py/set": [
+        41,
+        19,
+        33
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 46,
+        "role_name": "A0_pag__police",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 46,
+        "role_name": "A1_ppt__criminal",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 46,
+        "role_name": "A2_cau__crime",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 46,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "47": {
+    "py/object": "base.Event",
+    "id": 47,
+    "description": "The victim or their family presses charges against the attacker",
+    "name": "Press Charges",
+    "level": 0,
+    "wd_node": "Q697327",
+    "wd_description": "civil action brought in a court of law",
+    "wd_name": "lawsuit",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 37,
+    "before": {
+      "py/set": [
+        38
+      ]
+    },
+    "after": {
+      "py/set": [
+        19
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 47,
+        "role_name": "A0_pag_prosecutor",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 47,
+        "role_name": "A1_ppt_defendant",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 47,
+        "role_name": "A2_vsp_type/grounds/accusation",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "3": {
+        "py/object": "schema.base.Participant",
+        "id": 3,
+        "event_id": 47,
+        "role_name": "AM_loc",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  },
+  "48": {
+    "py/object": "base.Event",
+    "id": 48,
+    "description": "The attacker confesses to the crime",
+    "name": "Confession",
+    "level": 0,
+    "wd_node": "Q83267",
+    "wd_description": "unlawful act forbidden and punishable by criminal law",
+    "wd_name": "crime",
+    "is_schema": false,
+    "is_chapter": false,
+    "children": {
+      "py/set": []
+    },
+    "parent": 4,
+    "before": {
+      "py/set": [
+        38
+      ]
+    },
+    "after": {
+      "py/set": [
+        40,
+        34,
+        35,
+        46
+      ]
+    },
+    "instanceOf": null,
+    "repeatable": false,
+    "participants": {
+      "0": {
+        "py/object": "schema.base.Participant",
+        "id": 0,
+        "event_id": 48,
+        "role_name": "A0_pag__perp",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "1": {
+        "py/object": "schema.base.Participant",
+        "id": 1,
+        "event_id": 48,
+        "role_name": "A2_gol__victim",
+        "entity": null,
+        "templateParticipant": null
+      },
+      "2": {
+        "py/object": "schema.base.Participant",
+        "id": 2,
+        "event_id": 48,
+        "role_name": "AM_loc__location",
+        "entity": null,
+        "templateParticipant": null
+      }
+    },
+    "entities": [],
+    "relations": []
+  }
+}

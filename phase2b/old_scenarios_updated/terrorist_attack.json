@@ -1,0 +1,1044 @@
+{
+  "@id": "resin:Submissions/TA1/schemas_quizlet9",
+  "sdfVersion": "3.0",
+  "version": "resin:terrorist_attacks/quizlet9",
+  "events": [
+    {
+      "@id": "resin:Events/10000/",
+      "children": [
+        "resin:Events/10001/",
+        "resin:Events/10002/",
+        "resin:Events/10003/",
+        "resin:Events/10004/",
+        "resin:Events/10005/",
+        "resin:Events/10006/"
+      ],
+      "children_gate": "or",
+      "description": "",
+      "name": "Terrorist attacks",
+      "repeatable": false,
+      "wd_node": "wd:Q2223653",
+      "wd_label": "terrorist attack",
+      "wd_description": "offensive action",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "target group",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "terrorist group",
+          "wd_label": "terrorist group",
+          "wd_node": "wd:Q4456236",
+          "wd_description": "group of people working together to commit acts of terrorism"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "target location",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "cause for the terrorist group",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "person",
+          "wd_label": "person",
+          "wd_node": "wd:Q215627",
+          "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "terrorist",
+          "wd_label": "person",
+          "wd_node": "wd:Q215627",
+          "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "benefactor group",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "weapon",
+          "wd_label": "weapon",
+          "wd_node": "wd:Q728",
+          "wd_description": "tool used to inflict damage or harm"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "general population",
+          "wd_label": "group of humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "government",
+          "wd_label": "government",
+          "wd_node": "wd:Q7188",
+          "wd_description": "system or group of people governing an organized community, often a state"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "government facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00005/",
+          "relationObject": "resin:Entities/00001/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10001/",
+      "children": [
+        "resin:Events/10007/",
+        "resin:Events/10008/",
+        "resin:Events/10009/",
+        "resin:Events/10010/",
+        "resin:Events/10011/",
+        "resin:Events/10012/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Motivation",
+      "name": "Motivation",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002/",
+        "resin:Events/10003/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10002/",
+      "children": [
+        "resin:Events/10013/",
+        "resin:Events/10014/",
+        "resin:Events/10015/",
+        "resin:Events/10016/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Preparation",
+      "name": "Preparation",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10003/",
+      "children": [
+        "resin:Events/10017/",
+        "resin:Events/10018/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Fundraising",
+      "name": "Fundraising",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10004/",
+      "children": [
+        "resin:Events/10019/",
+        "resin:Events/10020/",
+        "resin:Events/10021/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Crime",
+      "name": "Crime",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005/",
+        "resin:Events/10006/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10005/",
+      "children": [
+        "resin:Events/10026/",
+        "resin:Events/10027/",
+        "resin:Events/10028/",
+        "resin:Events/10029/",
+        "resin:Events/10030/",
+        "resin:Events/10031/",
+        "resin:Events/10032/",
+        "resin:Events/10033/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "activity to defend against or prevent terrorist actions",
+      "name": "Counter-Terrorism",
+      "repeatable": false,
+      "wd_node": "wd:Q909459",
+      "wd_label": "counter-terrorism",
+      "wd_description": "activity to defend against or prevent terrorist actions",
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10006/",
+      "children": [
+        "resin:Events/10024/",
+        "resin:Events/10025/",
+        "resin:Events/10034/",
+        "resin:Events/10035/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Society Response",
+      "name": "Society Response",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10005/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10007/",
+      "description": "Injustice, whether objective or perceived, towards a group or individual.",
+      "name": "Injustice",
+      "participants": [
+        {
+          "@id": "resin:Participants/20000/",
+          "roleName": "A0_pag_agentive_clasher",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20001/",
+          "roleName": "A1_com_entity_clashed_with",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20002/",
+          "roleName": "A2_ppt_entity_clashed_over",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20003/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q180684",
+      "wd_label": "conflict",
+      "wd_description": "friction, disagreement, or discord within a group or between different groups",
+      "outlinks": [
+        "resin:Events/10008/",
+        "resin:Events/10009/",
+        "resin:Events/10010/",
+        "resin:Events/10011/",
+        "resin:Events/10012/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10008/",
+      "description": "Crime as propaganda to inspire people for the cause.",
+      "name": "Propaganda",
+      "participants": [
+        {
+          "@id": "resin:Participants/20004/",
+          "roleName": "A0_pag_campaigner",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20005/",
+          "roleName": "A1_ppt_cause",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20006/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7281",
+      "wd_label": "propaganda",
+      "wd_description": "form of communication intended to sway the audience through presenting only one side of the argument",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10009/",
+      "description": "Raise awareness and receive attention from the media on the cause.",
+      "name": "Awareness Campaign",
+      "participants": [
+        {
+          "@id": "resin:Participants/20007/",
+          "roleName": "A0_pag_campaigner",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20008/",
+          "roleName": "A1_ppt_cause",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20009/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q99748589",
+      "wd_label": "awareness campaign",
+      "wd_description": "media campaign to raise awareness in the public for an issue",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10010/",
+      "description": "Incite fear in the general population.",
+      "name": "Terrorism",
+      "participants": [
+        {
+          "@id": "resin:Participants/20010/",
+          "roleName": "A0_pag_intentional_agent_of_scaring",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20011/",
+          "roleName": "A1_ppt_scared_entity",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20012/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7283",
+      "wd_label": "terrorism",
+      "wd_description": "use of violence as a form of political, economic and religious coercion",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10011/",
+      "description": "Inspire people to join the cause.",
+      "name": "Recruitment",
+      "participants": [
+        {
+          "@id": "resin:Participants/20013/",
+          "roleName": "A0_pag_agent_employer",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20014/",
+          "roleName": "A1_ppt_theme_new_employee",
+          "entity": "resin:Entities/00004/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q899277",
+      "wd_label": "recruitment",
+      "wd_description": "process of attracting, selecting and appointing candidates to a job or other organization",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10012/",
+      "description": "Personal beliefs that something about the world is inherently wrong.",
+      "name": "Personal Beliefs",
+      "participants": [
+        {
+          "@id": "resin:Participants/20015/",
+          "roleName": "A0_pag_speaker",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q34394",
+      "wd_label": "belief",
+      "wd_description": "psychological state in which an individual holds a proposition or premise to be true",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10013/",
+      "description": "Plan the specifics of attack.",
+      "name": "Plan Attack",
+      "participants": [
+        {
+          "@id": "resin:Participants/20016/",
+          "roleName": "A0_pag_planner",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1371819",
+      "wd_label": "plan",
+      "wd_description": "outline of a strategy for achievement of an objective",
+      "outlinks": [
+        "resin:Events/10016/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10014/",
+      "description": "Train participants in the attack.",
+      "name": "Train Participants",
+      "participants": [
+        {
+          "@id": "resin:Participants/20017/",
+          "roleName": "A0_pag_trainer",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20018/",
+          "roleName": "A2_ppt_trainee",
+          "entity": "resin:Entities/00005/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q918385",
+      "wd_label": "training",
+      "wd_description": "acquisition of knowledge, skills, and competencies as a result of teaching",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10015/",
+      "description": "Plant spies in the target group to obtain information.",
+      "name": "Plant Undercover Agents",
+      "participants": [
+        {
+          "@id": "resin:Participants/20019/",
+          "roleName": "A0_pag_agent_secret_agent",
+          "entity": "resin:Entities/00005/"
+        },
+        {
+          "@id": "resin:Participants/20020/",
+          "roleName": "A1_ppt_stimulus_entity_spied",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20021/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q165950",
+      "wd_label": "espionage",
+      "wd_description": "clandestine acquisition of confidential information",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10016/",
+      "description": "Obtaining weapons for the crime.",
+      "name": "Purchase Weapons",
+      "participants": [
+        {
+          "@id": "resin:Participants/20022/",
+          "roleName": "A0_pag_purchaser",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20023/",
+          "roleName": "A1_ppt_thing_purchased",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20024/",
+          "roleName": "A2_dir_seller",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1369832",
+      "wd_label": "purchasing",
+      "wd_description": "acquisition of goods or services by fiduciary exchange",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10017/",
+      "description": "Monetary donation from supporters.",
+      "name": "Donation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20025/",
+          "roleName": "A0_pag_giver",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20026/",
+          "roleName": "A2_gol_entity_given_to",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1124860",
+      "wd_label": "donation",
+      "wd_description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10018/",
+      "description": "Criminal enterprises for the purpose of profit.",
+      "name": "Organized Crime",
+      "participants": [
+        {
+          "@id": "resin:Participants/20027/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20028/",
+          "roleName": "A2_gol_victim",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q46952",
+      "wd_label": "organized crime",
+      "wd_description": "groupings of highly centralized criminal enterprises",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10019/",
+      "children": [
+        "resin:Events/10022/",
+        "resin:Events/10023/"
+      ],
+      "children_gate": "or",
+      "description": "Terrorist action to injure another organism.",
+      "name": "Attack",
+      "participants": [
+        {
+          "@id": "resin:Participants/20069/",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": "resin:Entities/00005/"
+        },
+        {
+          "@id": "resin:Participants/20070/",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20071/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "outlinks": [
+        "resin:Events/10020/",
+        "resin:Events/10021/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10020/",
+      "description": "Injuring an individual or group.",
+      "name": "Injure",
+      "participants": [
+        {
+          "@id": "resin:Participants/20029/",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20030/",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20031/",
+          "roleName": "A2_mnr_instrument",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20032/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q193078",
+      "wd_label": "injure",
+      "wd_description": "physiological wound caused by an external source",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10021/",
+      "description": "Killing an individual or group.",
+      "name": "Kill",
+      "participants": [
+        {
+          "@id": "resin:Participants/20033/",
+          "roleName": "A0_pag_killer",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20034/",
+          "roleName": "A1_ppt_corpse",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20035/",
+          "roleName": "A2_mnr_instrument",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20036/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q844482",
+      "wd_label": "killing",
+      "wd_description": "act of killing a living being",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10022/",
+      "description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
+      "name": "Bombing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20037/",
+          "roleName": "A0_pag_agent_attacker",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20038/",
+          "roleName": "A1_ppt_patient_entity_bombed",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20039/",
+          "roleName": "AM_mnr__manner",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q891854",
+      "wd_label": "bomb attack",
+      "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10023/",
+      "description": "act or process of firing firearms or other projectile weapons",
+      "name": "Shooting",
+      "participants": [
+        {
+          "@id": "resin:Participants/20040/",
+          "roleName": "A0_pag_agent_shooter",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20041/",
+          "roleName": "A1_ppt_patient_corpse",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20042/",
+          "roleName": "A2_mnr_instrument_gun",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20043/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q2252077",
+      "wd_label": "shooting",
+      "wd_description": "act or process of firing firearms or other projectile weapons",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10024/",
+      "description": "interaction among people in which they create, share, and/or exchange information and ideas in virtual communities and networks",
+      "name": "Social Media",
+      "participants": [
+        {
+          "@id": "resin:Participants/20044/",
+          "roleName": "A0_pag_Reporter",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20045/",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20046/",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q202833",
+      "wd_label": "social media",
+      "wd_description": "virtual internet communities",
+      "outlinks": [
+        "resin:Events/10025/",
+        "resin:Events/10034/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10025/",
+      "description": "investigation and reporting of events, issues and trends to a broad audience",
+      "name": "Journalism",
+      "participants": [
+        {
+          "@id": "resin:Participants/20047/",
+          "roleName": "A0_pag_Reporter",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20048/",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20049/",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q11030",
+      "wd_label": "journalism",
+      "wd_description": "investigation and reporting of events, issues and trends to a broad audience",
+      "outlinks": [
+        "resin:Events/10024/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10027/",
+      "description": "control of people by others through violence",
+      "name": "Military Action",
+      "participants": [
+        {
+          "@id": "resin:Participants/20072/",
+          "roleName": "A0_pag_entity_oppressing",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20073/",
+          "roleName": "A1_ppt_entity_oppressed",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q252000",
+      "wd_label": "oppression",
+      "wd_description": "control of people by others",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10028/",
+      "description": "expulsion of the people from a place or country",
+      "name": "Deportation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20074/",
+          "roleName": "A0_pag_causer",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20075/",
+          "roleName": "A1_ppt_entity_deported",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20076/",
+          "roleName": "A2_dir_country_deported_from",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q379693",
+      "wd_label": "deportation",
+      "wd_description": "expulsion of the people from a place or country",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10026/",
+      "description": "Laws enacted against terrorism",
+      "name": "Legislation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20050/",
+          "roleName": "A0_pag_law-giving_body",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20051/",
+          "roleName": "A1_ppt_thing_controlled",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20052/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q574759",
+      "wd_label": "anti-terrorism legislation",
+      "wd_description": "Laws enacted against terrorism",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10029/",
+      "description": "removal of the freedom of liberty by a state",
+      "name": "Detention",
+      "participants": [
+        {
+          "@id": "resin:Participants/20053/",
+          "roleName": "A0_pag_police",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20054/",
+          "roleName": "A1_ppt_entity_detained",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20055/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1071447",
+      "wd_label": "detention",
+      "wd_description": "removal of the freedom of liberty by a state",
+      "outlinks": [
+        "resin:Events/10030/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10030/",
+      "description": "interviewing employed by lawenforcement officers, military personnel, and intelligence agencieswith the goal of eliciting useful information",
+      "name": "Interrogation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20056/",
+          "roleName": "A0_pag_asker",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20057/",
+          "roleName": "A2_gol_entity_asked",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20058/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q327018",
+      "wd_label": "interrogation",
+      "wd_description": "interviewing employed by law enforcement officers, military personnel, and intelligence agencies with the goal of eliciting useful information",
+      "outlinks": [
+        "resin:Events/10028/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10031/",
+      "description": "process of securing a systemby reducing its surface of vulnerability, which is larger when a systemperforms more functions; in principle a single-function system is moresecure than a multipurpose one",
+      "name": "Target Hardening",
+      "participants": [
+        {
+          "@id": "resin:Participants/20059/",
+          "roleName": "A0_pag_maker",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20060/",
+          "roleName": "A1_ppt_thing_secured",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q978423",
+      "wd_label": "hardening",
+      "wd_description": "process of securing a system by reducing its surface of vulnerability, which is larger when a system performs more functions; in principle a single-function system is more secure than a multipurpose one",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10032/",
+      "description": "systematic study undertaken to increase knowledge of the cause of terrorism and its impact as well as preventative measures",
+      "name": "Terrorism Research",
+      "participants": [
+        {
+          "@id": "resin:Participants/20061/",
+          "roleName": "A0_pag_agent_student",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20062/",
+          "roleName": "A1_ppt_theme_subject",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q42240",
+      "wd_label": "scientific research",
+      "wd_description": "systematic study undertaken to increase knowledge",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10033/",
+      "description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing",
+      "name": "Surveillance",
+      "participants": [
+        {
+          "@id": "resin:Participants/20063/",
+          "roleName": "A0_pag_observer",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20064/",
+          "roleName": "A1_loc_thing_looked_at",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20065/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q334401",
+      "wd_label": "surveillance",
+      "wd_description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing",
+      "outlinks": [
+        "resin:Events/10029/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10034/",
+      "description": "collective action by people to protest the terrorist attack and injustice",
+      "name": "Protest",
+      "participants": [
+        {
+          "@id": "resin:Participants/20066/",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20067/",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20068/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00002/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "outlinks": [
+        "resin:Events/10024/",
+        "resin:Events/10025/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10035/",
+      "description": "collective action by people to protest the terrorist attack and injustice",
+      "name": "Protest Elsewhere",
+      "participants": [
+        {
+          "@id": "resin:Participants/20077/",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20078/",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "outlinks": [
+        "resin:Events/10024/",
+        "resin:Events/10025/"
+      ],
+      "modality": []
+    }
+  ]
+}

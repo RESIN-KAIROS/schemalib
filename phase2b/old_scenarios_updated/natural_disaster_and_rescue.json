@@ -1,0 +1,661 @@
+{
+  "@id": "resin:Submissions/TA1/schemas_quizlet9",
+  "sdfVersion": "3.0",
+  "version": "resin:natural-disaster-and-rescue/quizlet9",
+  "events": [
+    {
+      "@id": "resin:Events/10635/",
+      "children": [
+        "resin:Events/10636/",
+        "resin:Events/10637/"
+      ],
+      "children_gate": "or",
+      "description": "Natural Disaster and Rescue",
+      "name": "Natural Disaster and Rescue",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00935",
+          "name": "rescuer",
+          "wd_label": "rescuer",
+          "wd_node": "wd:Q17126809",
+          "wd_description": "person who rescues something from harm or danger"
+        },
+        {
+          "@id": "resin:Entities/00936",
+          "name": "victim",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00937",
+          "name": "disaster site",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00938",
+          "name": "government / authorities",
+          "wd_label": "government",
+          "wd_node": "wd:Q7188",
+          "wd_description": "system or group of people governing an organized community, often a state"
+        },
+        {
+          "@id": "resin:Entities/00940",
+          "name": "medical location / facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "relations": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10636/",
+      "children": [
+        "resin:Events/10638/",
+        "resin:Events/10640/",
+        "resin:Events/10641/",
+        "resin:Events/10657/",
+        "resin:Events/10642/",
+        "resin:Events/10643/",
+        "resin:Events/10639/",
+        "resin:Events/10646/",
+        "resin:Events/10644/",
+        "resin:Events/10645/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "A disaster caused by humans.",
+      "name": "Natural Disaster",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10637/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10637/",
+      "children": [
+        "resin:Events/10647/",
+        "resin:Events/10648/",
+        "resin:Events/10649/",
+        "resin:Events/10650/",
+        "resin:Events/10651/",
+        "resin:Events/10652/",
+        "resin:Events/10653/",
+        "resin:Events/10654/",
+        "resin:Events/10655/",
+        "resin:Events/10656/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Rescuing the victims from the disaster.",
+      "name": "Rescue",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10638/",
+      "comment": "",
+      "description": "violently rotating column of air that is in contact with both the earth's surface and a cumulonimbus cloud in the air",
+      "name": "tornado",
+      "participants": [
+        {
+          "@id": "resin:Participants/21395/",
+          "roleName": "A1_ppt_victims",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21396/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8081",
+      "wd_label": "tornado",
+      "wd_description": "violently rotating column of air that is in contact with both the earth's surface and a cumulonimbus cloud in the air",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10640/",
+      "comment": "",
+      "description": "overflow of water that submerges land",
+      "name": "flood",
+      "participants": [
+        {
+          "@id": "resin:Participants/21397/",
+          "roleName": "A1_ppt_victims",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21398/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8068",
+      "wd_label": "flood",
+      "wd_description": "overflow of water that submerges land",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10641/",
+      "comment": "",
+      "description": "uncontrolled fire in an area of combustible vegetation that occurs in the countryside or a wilderness area",
+      "name": "wildfire",
+      "participants": [
+        {
+          "@id": "resin:Participants/21399/",
+          "roleName": "A1_ppt_victims",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21400/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q169950",
+      "wd_label": "wildfire",
+      "wd_description": "uncontrolled fire in an area of combustible vegetation that occurs in the countryside or a wilderness area",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10657/",
+      "comment": "",
+      "description": "result of a sudden release of energy in the Earth's crust that creates seismic waves",
+      "name": "earthquake",
+      "participants": [
+        {
+          "@id": "resin:Participants/21401/",
+          "roleName": "A1_ppt_victims",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21402/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7944",
+      "wd_label": "earthquake",
+      "wd_description": "result of a sudden release of energy in the Earth's crust that creates seismic waves",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10642/",
+      "comment": "",
+      "description": "series of water waves caused by the displacement of a large volume of a body of water",
+      "name": "tsunami",
+      "participants": [
+        {
+          "@id": "resin:Participants/21403/",
+          "roleName": "A1_ppt_victims",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21404/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8070",
+      "wd_label": "Tsunami",
+      "wd_description": "series of water waves caused by the displacement of a large volume of a body of water",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10643/",
+      "comment": "",
+      "description": "type of weather",
+      "name": "thunderstorm",
+      "participants": [
+        {
+          "@id": "resin:Participants/21405/",
+          "roleName": "A1_ppt_victims",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21406/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q2857578",
+      "wd_label": "thunderstorm",
+      "wd_description": "a storm characterized by the presence of lightning, usually accompanied by strong winds and often produce heavy rain and sometimes snow, sleet, or hail, but some produce little precipitation or no precipitation at all",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10639/",
+      "comment": "",
+      "description": "victims are trapped in the disaster site",
+      "name": "trap",
+      "participants": [
+        {
+          "@id": "resin:Participants/21407/",
+          "roleName": "A1_ppt_experiencer_trapped_victim",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21408/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q34168",
+      "wd_label": "trapping",
+      "wd_description": "use of a device to remotely catch an animal",
+      "outlinks": [
+        "resin:Events/10644/",
+        "resin:Events/10645/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10646/",
+      "comment": "",
+      "description": "changes introduced into a system that adversely affect its current or future performance",
+      "name": "damage",
+      "participants": [
+        {
+          "@id": "resin:Participants/21409/",
+          "roleName": "A1_ppt_patient_entity_damaged",
+          "entity": "resin:Entities/00934"
+        },
+        {
+          "@id": "resin:Participants/21410/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q481609",
+      "wd_label": "damage",
+      "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+      "outlinks": [
+        "resin:Events/10639/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00934",
+          "name": "building",
+          "wd_label": "building",
+          "wd_node": "wd:Q41176",
+          "wd_description": "structure, typically with a roof and walls, standing more or less permanently in one place"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10644/",
+      "comment": "",
+      "description": "physiological wound caused by an external source",
+      "name": "injury",
+      "participants": [
+        {
+          "@id": "resin:Participants/21411/",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21412/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10645/",
+      "comment": "",
+      "description": "permanent cessation of vital functions",
+      "name": "death",
+      "participants": [
+        {
+          "@id": "resin:Participants/21413/",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21414/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q4",
+      "wd_label": "death",
+      "wd_description": "permanent cessation of vital functions",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10647/",
+      "comment": "",
+      "description": "government announces the disaster to public",
+      "name": "announcement",
+      "participants": [
+        {
+          "@id": "resin:Participants/21415/",
+          "roleName": "A0_pag_agent_announcer",
+          "entity": "resin:Entities/00938"
+        },
+        {
+          "@id": "resin:Participants/21416/",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": "resin:Entities/00941"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q567303",
+      "wd_label": "announcement",
+      "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+      "outlinks": [
+        "resin:Events/10648/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00941",
+          "name": "general population",
+          "wd_label": "addressee",
+          "wd_node": "wd:Q28008314",
+          "wd_description": "person or organization to whom a information, letter or note is addressed"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10648/",
+      "comment": "",
+      "description": "government commands rescuers to carry out rescue",
+      "name": "command",
+      "participants": [
+        {
+          "@id": "resin:Participants/21417/",
+          "roleName": "A0_pag_agent_commander",
+          "entity": "resin:Entities/00938"
+        },
+        {
+          "@id": "resin:Participants/21418/",
+          "roleName": "A1_gol_recipient_impelled_agent",
+          "entity": "resin:Entities/00935"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1665268",
+      "wd_label": "command",
+      "wd_description": "message conveying a requirement to perform a certain action",
+      "outlinks": [
+        "resin:Events/10649/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10649/",
+      "comment": "",
+      "description": "rescuers communicate with trapped victims",
+      "name": "communication",
+      "participants": [
+        {
+          "@id": "resin:Participants/21419/",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00935"
+        },
+        {
+          "@id": "resin:Participants/21420/",
+          "roleName": "A2_com_co_agent_other_communicators",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21421/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10650/",
+        "resin:Events/10651/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10650/",
+      "comment": "",
+      "description": "rescuers evacuate trapped victims",
+      "name": "emergency_evacuation",
+      "participants": [
+        {
+          "@id": "resin:Participants/21422/",
+          "roleName": "A0_pag_agent_transporter",
+          "entity": "resin:Entities/00935"
+        },
+        {
+          "@id": "resin:Participants/21423/",
+          "roleName": "A1_ppt_thing_transported",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21424/",
+          "roleName": "A2_dir_initial_location_source",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q606332",
+      "wd_label": "emergency_evacuation",
+      "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+      "outlinks": [
+        "resin:Events/10652/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10651/",
+      "comment": "",
+      "description": "different parties of rescuers collaborate",
+      "name": "collaboration",
+      "participants": [
+        {
+          "@id": "resin:Participants/21425/",
+          "roleName": "A0_pag_agent_focussed_party",
+          "entity": "resin:Entities/00935"
+        },
+        {
+          "@id": "resin:Participants/21426/",
+          "roleName": "A1_com_co_agent_second_party",
+          "entity": "resin:Entities/00935"
+        },
+        {
+          "@id": "resin:Participants/21427/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1145523",
+      "wd_label": "collaboration",
+      "wd_description": "working together",
+      "outlinks": [
+        "resin:Events/10652/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10652/",
+      "comment": "",
+      "description": "rescuers transport victims to medical sites",
+      "name": "transport",
+      "participants": [
+        {
+          "@id": "resin:Participants/21428/",
+          "roleName": "A0_pag_agent_transporter",
+          "entity": "resin:Entities/00935"
+        },
+        {
+          "@id": "resin:Participants/21429/",
+          "roleName": "A1_ppt_theme_thing_transported",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21430/",
+          "roleName": "A2_dir_source_initial_location",
+          "entity": "resin:Entities/00937"
+        },
+        {
+          "@id": "resin:Participants/21431/",
+          "roleName": "A3_gol_destination_destination",
+          "entity": "resin:Entities/00940"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7590",
+      "wd_label": "transport",
+      "wd_description": "human-directed movement of things or people between locations",
+      "outlinks": [
+        "resin:Events/10653/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10653/",
+      "comment": "",
+      "description": "medical treatment of the victims",
+      "name": "treatment",
+      "participants": [
+        {
+          "@id": "resin:Participants/21432/",
+          "roleName": "A0_pag__doctor",
+          "entity": "resin:Entities/00939"
+        },
+        {
+          "@id": "resin:Participants/21433/",
+          "roleName": "A1_ppt__patient",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21434/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00937"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q179661",
+      "wd_label": "treatment",
+      "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+      "outlinks": [
+        "resin:Events/10654/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00939",
+          "name": "medical team",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10654/",
+      "children": [
+        "resin:Events/10655/",
+        "resin:Events/10656/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "treatment outlinks",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10655/",
+      "comment": "",
+      "description": "victims recover from injuries",
+      "name": "recover",
+      "participants": [
+        {
+          "@id": "resin:Participants/21435/",
+          "roleName": "A1_ppt__patient",
+          "entity": "resin:Entities/00936"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7302970",
+      "wd_label": "recover",
+      "wd_description": "Dateiwiederherstellungsprogramm",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10656/",
+      "comment": "",
+      "description": "permanent cessation of vital functions",
+      "name": "death",
+      "participants": [
+        {
+          "@id": "resin:Participants/21436/",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00936"
+        },
+        {
+          "@id": "resin:Participants/21437/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00940"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q4",
+      "wd_label": "death",
+      "wd_description": "permanent cessation of vital functions",
+      "outlinks": [],
+      "modality": []
+    }
+  ]
+}

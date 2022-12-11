@@ -1,0 +1,2819 @@
+{
+  "@id": "resin:Submissions/TA1/schemas_quizlet9",
+  "sdfVersion": "3.0",
+  "version": "resin:disease-outbreak/quizlet9",
+  "events": [
+    {
+      "@id": "resin:Events/10000/",
+      "children": [
+        "resin:Events/10001/",
+        "resin:Events/10002/",
+        "resin:Events/10003/",
+        "resin:Events/10005/",
+        "resin:Events/10006/",
+        "resin:Events/10007/",
+        "resin:Events/10004/",
+        "resin:Events/10009/"
+      ],
+      "children_gate": "or",
+      "description": "Root node for disease outbreak schema.",
+      "name": "Disease Outbreak with Hierarchy",
+      "participants": [
+        {
+          "@id": "resin:Participants/20000/",
+          "roleName": "A2-GOL_location_victims",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q3241045",
+      "wd_label": "disease outbreak",
+      "wd_description": "sudden increase in occurrences of a disease in a particular time and place",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "initial person infected",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "exposed people",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "consumer, person in contact with the infectant",
+          "wd_label": "person",
+          "wd_node": "wd:Q215627",
+          "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "food",
+          "wd_label": "food",
+          "wd_node": "wd:Q2095",
+          "wd_description": "any substance consumed to provide nutritional support for the body; form of energy stored in chemical"
+        },
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "business",
+          "wd_label": "business",
+          "wd_node": "wd:Q4830453",
+          "wd_description": "organization involved in commercial, industrial, or professional activity"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "infectant, carrier of disease",
+          "wd_label": [
+            "pathogen",
+            "food",
+            "liquid"
+          ],
+          "wd_node": [
+            "wd:Q170065",
+            "wd:Q2095",
+            "wd:Q11435"
+          ]
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "cause of disease",
+          "wd_label": "pathogen",
+          "wd_node": "wd:Q170065",
+          "wd_description": "biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "mutated strain of pathogen",
+          "wd_label": "pathogen",
+          "wd_node": "wd:Q170065",
+          "wd_description": "biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "plaintiff",
+          "wd_label": "plaintiff",
+          "wd_node": "wd:Q468489",
+          "wd_description": "party which initiates a court case"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "defendant",
+          "wd_label": "defendant",
+          "wd_node": "wd:Q159394",
+          "wd_description": "accused person"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "location / facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "research facility",
+          "wd_label": "geographic location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "government / authorities",
+          "wd_label": "government agency",
+          "wd_node": "wd:Q327333",
+          "wd_description": "organization in the machinery of government responsible for specific functions"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "other government / authorities",
+          "wd_label": "government agency",
+          "wd_node": "wd:Q327333",
+          "wd_description": "organization in the machinery of government responsible for specific functions"
+        },
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "suspect of crime",
+          "wd_label": "suspect",
+          "wd_node": "wd:Q224952",
+          "wd_description": "known person suspected of committing a crime"
+        },
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "law enforcement agent",
+          "wd_label": "law_enforcement_agency",
+          "wd_node": "wd:Q732717",
+          "wd_description": "government agency responsible for the enforcement of the laws"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "researcher",
+          "wd_label": "scientist",
+          "wd_node": "wd:Q901",
+          "wd_description": "person who conducts scientific research into an area of interest"
+        },
+        {
+          "@id": "resin:Entities/00020/",
+          "name": "new treatment",
+          "wd_label": "medical_procedure",
+          "wd_node": "wd:Q796194",
+          "wd_description": "process of medicine done to heal; course of action intended to achieve a result in the delivery of healthcare"
+        },
+        {
+          "@id": "resin:Entities/00021/",
+          "name": "vaccine",
+          "wd_label": "vaccine",
+          "wd_node": "wd:Q134808",
+          "wd_description": "substance used to stimulate the production of antibodies and provide immunity against one or several diseases, prepared from the causative agent of a disease, its products, or a synthetic substitute"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "general population",
+          "wd_label": "addressee",
+          "wd_node": "wd:Q28008314",
+          "wd_description": "person or organization to whom a information, letter or note is addressed"
+        },
+        {
+          "@id": "resin:Entities/00023/",
+          "name": "judicial system",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00024/",
+          "name": "medical team",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00025/",
+          "name": "source of disease",
+          "wd_label": "facility",
+          "wd_node": "wd:Q13226383",
+          "wd_description": "place for doing something"
+        },
+        {
+          "@id": "resin:Entities/00026/",
+          "name": "disease prevention measures and guidelines",
+          "wd_label": "law",
+          "wd_node": "wd:Q7748",
+          "wd_description": "system of rules and guidelines, generally backed by governmental authority"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "proximity",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00013/",
+          "wd_node": "wd:Q19267375",
+          "wd_description": "state of being near as in space, time, or relationship",
+          "wd_label": "proximity"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "proximity",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00013/",
+          "wd_node": "wd:Q19267375",
+          "wd_description": "state of being near as in space, time, or relationship",
+          "wd_label": "proximity"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00009/",
+          "relationObject": "resin:Entities/00000/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00010/",
+          "relationObject": "resin:Entities/00005/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30004/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00002/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30005/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00017/",
+          "relationObject": "resin:Entities/00010/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30006/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00020/",
+          "relationObject": "resin:Entities/00021/",
+          "wd_node": "wd:P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        },
+        {
+          "@id": "resin:Relations/30007/",
+          "name": "instance of",
+          "relationSubject": "resin:Entities/00026/",
+          "relationObject": "resin:Entities/00015/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10010/",
+      "description": "Compliance to a rule or regulation. Often negated, for example violating health regulations.",
+      "name": "Compliance",
+      "participants": [
+        {
+          "@id": "resin:Participants/20001/",
+          "roleName": "A0-pag_X_complier",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1399332",
+      "wd_label": "Compliance",
+      "wd_description": "submission to a request",
+      "outlinks": [
+        "resin:Events/10074/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10011/",
+      "comment": "",
+      "description": "The disease outbreak could be the result of a crime, i.e., someone polluting the water with a chemical",
+      "name": "Generic Crime",
+      "participants": [
+        {
+          "@id": "resin:Participants/20002/",
+          "roleName": "A2-gol_X_victim",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20003/",
+          "roleName": "A0_pag__perp",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q83267",
+      "wd_label": "crime",
+      "wd_description": "unlawful act forbidden and punishable by criminal law",
+      "outlinks": [
+        "resin:Events/10010/",
+        "resin:Events/10073/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10012/",
+      "comment": "",
+      "description": "Invasion of an organism's body tissues by the virus. People can be infected by the virus in the disease outbreak",
+      "name": "Infections",
+      "participants": [
+        {
+          "@id": "resin:Participants/20004/",
+          "roleName": "A1-gol_thing_becoming_infected",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20005/",
+          "roleName": "A2-ppt_infectant",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20006/",
+          "roleName": "A0_pag_agent_causer_of_infection",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q166231",
+      "wd_label": "infection",
+      "wd_description": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
+      "outlinks": [
+        "resin:Events/10013/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10013/",
+      "comment": "",
+      "description": "Abnormal condition that negatively affects the structure or function of all or part of an organism due to the virus in the disease outbreak",
+      "name": "Illness",
+      "participants": [
+        {
+          "@id": "resin:Participants/20007/",
+          "roleName": "A1-ppt_X_sick/ill_one",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20008/",
+          "roleName": "A2_cau__cause_or_disease",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q814207",
+      "wd_label": "illness",
+      "wd_description": "the state of being unwell",
+      "outlinks": [
+        "resin:Events/10036/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10014/",
+      "comment": "DiagnosePatient: Medical personnel diagnose patient",
+      "description": "Medical diagnosis on infection of the virus in the disease outbreak",
+      "name": "Diagnosis",
+      "participants": [
+        {
+          "@id": "resin:Participants/20009/",
+          "roleName": "A0-pag_agent_doctor",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20010/",
+          "roleName": "A1-ppt_theme_patient",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20011/",
+          "roleName": "AM-LOC",
+          "entity": "resin:Entities/00013/"
+        },
+        {
+          "@id": "resin:Participants/20012/",
+          "roleName": "A2_prd_attribute_illness",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q177719",
+      "wd_label": "medical diagnosis",
+      "wd_description": "process to determine or identify a disease or disorder, which would account for a person's symptoms and signs",
+      "outlinks": [
+        "resin:Events/10016/",
+        "resin:Events/10015/",
+        "resin:Events/10017/",
+        "resin:Events/10037/",
+        "resin:Events/10050/",
+        "resin:Events/10049/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10015/",
+      "comment": "",
+      "description": "Disinfect contaminated areas",
+      "name": "Disinfect",
+      "participants": [
+        {
+          "@id": "resin:Participants/20013/",
+          "roleName": "A0_pag_agent_cleaner",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20014/",
+          "roleName": "AM-LOC",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q17200001",
+      "wd_label": "cleaning",
+      "wd_description": "activity that purifies people, animals and objects of dirt and other particles",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10016/",
+      "comment": "TreatPatient: Medical personnel treat patient",
+      "description": "Attempted remediation of a health problem due to infection of the virus in the disease outbreak",
+      "name": "Treatment",
+      "participants": [
+        {
+          "@id": "resin:Participants/20015/",
+          "roleName": "A0-pag_X_doctor",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20016/",
+          "roleName": "A1_dir_source_patient",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20017/",
+          "roleName": "AM-LOC",
+          "entity": "resin:Entities/00013/"
+        },
+        {
+          "@id": "resin:Participants/20018/",
+          "roleName": "A2_ppt__illness_or_injury",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q179661",
+      "wd_label": "treatment",
+      "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+      "outlinks": [
+        "resin:Events/10018/",
+        "resin:Events/10017/",
+        "resin:Events/10049/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10017/",
+      "comment": "",
+      "description": "Restriction on the movement of people, animals and goods which is intended to prevent the spread of the disease",
+      "name": "Quarantine",
+      "participants": [
+        {
+          "@id": "resin:Participants/20019/",
+          "roleName": "A0-pag_agent_transporter",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20020/",
+          "roleName": "A1-ppt_theme_thing_transported",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q182899",
+      "wd_label": "quarantine",
+      "wd_description": "epidemiological intervention of restriction on the movement of people and goods, which is intended to prevent the spread of infectious disease or pests",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10018/",
+      "comment": "",
+      "description": "Epidemiologic data collection",
+      "name": "Gather Data",
+      "participants": [
+        {
+          "@id": "resin:Participants/20021/",
+          "roleName": "A0-ppt_experiencer_observer",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20022/",
+          "roleName": "A1-pag_stimulus_thing_looked_at",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20023/",
+          "roleName": "AM-LOC",
+          "entity": "resin:Entities/00014/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q193181",
+      "wd_label": "data collection",
+      "wd_description": "active acquisition of information from a primary source",
+      "outlinks": [
+        "resin:Events/10122/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10121/",
+      "description": "Collecting and processing samples with the pathogen. These samples may not from the patient directly, but include food, water, surfaces, animals etc.",
+      "name": "Collect Lab Samples",
+      "participants": [
+        {
+          "@id": "resin:Participants/20205/",
+          "roleName": "A0_pag_processor",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20206/",
+          "roleName": "A1_ppt_thing_processed",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "wd_node": "wd:Q2709468",
+      "wd_label": "laboratory procedure",
+      "wd_description": "medical procedure",
+      "outlinks": [
+        "resin:Events/10018/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10122/",
+      "description": "process of applying analytical methods to existing data of a specific type, breaking a complex topic or substance into smaller parts in order to gain a better understanding of it",
+      "name": "Analyze Data",
+      "participants": [
+        {
+          "@id": "resin:Participants/20207/",
+          "roleName": "A0-pag_agent_researcher",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20208/",
+          "roleName": "A1-ppt_theme_thing_reseached",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "wd_node": "wd:Q1988917",
+      "wd_label": "data_analysis",
+      "wd_description": "activity for gaining insight from data",
+      "outlinks": [
+        "resin:Events/10019/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10019/",
+      "comment": "",
+      "description": "Detecting a possible outbreak. Usually accompanied by an announcement.",
+      "name": "Identify Outbreak",
+      "participants": [
+        {
+          "@id": "resin:Participants/20024/",
+          "roleName": "A0-pag_agent_caller",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20025/",
+          "roleName": "A1-ppt_theme_item_being_labelled",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20026/",
+          "roleName": "AM-LOC",
+          "entity": "resin:Entities/00014/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q3265221",
+      "wd_label": "identification",
+      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+      "outlinks": [
+        "resin:Events/10020/",
+        "resin:Events/10085/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10020/",
+      "comment": "",
+      "description": "Alerting and reporting the detected outbreak to state and local public health authorities",
+      "name": "Alert Authorities",
+      "participants": [
+        {
+          "@id": "resin:Participants/20027/",
+          "roleName": "A0-pag_agent_first_communicator",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20028/",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20029/",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q446078",
+      "wd_label": "Alert",
+      "wd_description": "Wikimedia disambiguation page",
+      "outlinks": [
+        "resin:Events/10021/",
+        "resin:Events/10029/",
+        "resin:Events/10032/",
+        "resin:Events/10034/",
+        "resin:Events/10039/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10021/",
+      "comment": "",
+      "description": "Alerting population of the exposure of the virus",
+      "name": "Alert Population",
+      "participants": [
+        {
+          "@id": "resin:Participants/20030/",
+          "roleName": "A2-gol_recipient_hearer",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20031/",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20032/",
+          "roleName": "A0_pag_agent_announcer",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q17012118",
+      "wd_label": "emergency population warning",
+      "wd_description": "warning issued by authorities to the public en masse",
+      "outlinks": [
+        "resin:Events/10030/",
+        "resin:Events/10056/",
+        "resin:Events/10057/",
+        "resin:Events/10058/",
+        "resin:Events/10059/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10029/",
+      "comment": "",
+      "description": "Legislations were issued fighting the disease outbreak by government",
+      "name": "Gov Health Decree",
+      "participants": [
+        {
+          "@id": "resin:Participants/20051/",
+          "roleName": "A0-pag_agent_xx",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20052/",
+          "roleName": "A1-ppt_topic_subject",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1298239",
+      "wd_label": "decree",
+      "wd_description": "order of the executive branch to another government agency or to the population of a country",
+      "outlinks": [
+        "resin:Events/10043/",
+        "resin:Events/10044/",
+        "resin:Events/10045/",
+        "resin:Events/10125/",
+        "resin:Events/10034/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10030/",
+      "comment": "",
+      "description": "Restrictions on traveling to slow down the spread of the virus",
+      "name": "Restrict Travel",
+      "participants": [
+        {
+          "@id": "resin:Participants/20053/",
+          "roleName": "A1-ppt_theme_thing_transported",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20054/",
+          "roleName": "A0-pag_agent_Agent",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q87745167",
+      "wd_label": "travel restriction",
+      "wd_description": "policy",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10031/",
+      "comment": "",
+      "description": "The government destroys the source of the disease, for example, Haiti demolished the fishing nuts where the Cholera epidemic started.",
+      "name": "Destruction",
+      "participants": [
+        {
+          "@id": "resin:Participants/20055/",
+          "roleName": "A0_pag_agent_destroyer",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20056/",
+          "roleName": "A1_ppt_patient_thing_destroyed",
+          "entity": "resin:Entities/00025/"
+        }
+      ],
+      "wd_node": "wd:Q17781833",
+      "wd_label": "destruction",
+      "wd_description": "concept of damage to an object, system or an idea",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10032/",
+      "comment": "",
+      "description": "Conducting research fighting the disease outbreak",
+      "name": "Research",
+      "participants": [
+        {
+          "@id": "resin:Participants/20057/",
+          "roleName": "A0-pag_agent_researcher",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20058/",
+          "roleName": "A1-ppt_theme_thing_reseached",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q42240",
+      "wd_label": "research",
+      "wd_description": "systematic study undertaken to increase knowledge",
+      "outlinks": [
+        "resin:Events/10035/",
+        "resin:Events/10033/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10033/",
+      "comment": "",
+      "description": "Develop disease-prevention measures or guidelines",
+      "name": "Disease Prevention",
+      "participants": [
+        {
+          "@id": "resin:Participants/20059/",
+          "roleName": "A0-pag_agent_researcher",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20060/",
+          "roleName": "A1-ppt_theme_thing_reseached",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q106807541",
+      "wd_label": "disease prevention",
+      "wd_description": "acting to avoid the ocurrence of certain diseases in an organism or a population",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10034/",
+      "comment": "",
+      "description": "Financial assistance with food, housing and bills",
+      "name": "Aid",
+      "participants": [
+        {
+          "@id": "resin:Participants/20061/",
+          "roleName": "A0_pag_agent_giver",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20062/",
+          "roleName": "A2_gol_recipient_entity_given_to",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q2827815",
+      "wd_label": "international aid",
+      "wd_description": "voluntary transfer of resources from one country to another",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10035/",
+      "comment": "Clinical testing of treatments.",
+      "description": "Developing effective treatment or cure for the disease",
+      "name": "New Treatments",
+      "participants": [
+        {
+          "@id": "resin:Participants/20063/",
+          "roleName": "A2_ppt__illness_or_injury",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20064/",
+          "roleName": "A0_pag__doctor",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20065/",
+          "roleName": "A3_mnr__instrument",
+          "entity": "resin:Entities/00020/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q179661",
+      "wd_label": "treatment",
+      "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10001/",
+      "children": [
+        "resin:Events/10086/",
+        "resin:Events/10036/",
+        "resin:Events/10012/",
+        "resin:Events/10013/",
+        "resin:Events/10019/",
+        "resin:Events/10085/",
+        "resin:Events/10020/",
+        "resin:Events/10040/",
+        "resin:Events/10120/",
+        "resin:Events/10041/",
+        "resin:Events/10042/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Outbreak",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10002/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10003/",
+      "children": [
+        "resin:Events/10039/",
+        "resin:Events/10124/",
+        "resin:Events/10029/",
+        "resin:Events/10125/",
+        "resin:Events/10034/",
+        "resin:Events/10043/",
+        "resin:Events/10044/",
+        "resin:Events/10047/",
+        "resin:Events/10045/",
+        "resin:Events/10046/",
+        "resin:Events/10031/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Authority Response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10036/",
+      "children": [
+        "resin:Events/10014/",
+        "resin:Events/10015/",
+        "resin:Events/10016/",
+        "resin:Events/10121/",
+        "resin:Events/10018/",
+        "resin:Events/10122/",
+        "resin:Events/10017/",
+        "resin:Events/10049/",
+        "resin:Events/10038/",
+        "resin:Events/10050/",
+        "resin:Events/10051/",
+        "resin:Events/10052/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Medical Response",
+      "repeatable": true,
+      "outlinks": [
+        "resin:Events/10019/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10005/",
+      "children": [
+        "resin:Events/10021/",
+        "resin:Events/10030/",
+        "resin:Events/10060/",
+        "resin:Events/10061/",
+        "resin:Events/10062/",
+        "resin:Events/10063/",
+        "resin:Events/10056/",
+        "resin:Events/10065/",
+        "resin:Events/10064/",
+        "resin:Events/10057/",
+        "resin:Events/10058/",
+        "resin:Events/10059/",
+        "resin:Events/10066/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Society Response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10006/",
+      "children": [
+        "resin:Events/10033/",
+        "resin:Events/10032/",
+        "resin:Events/10035/",
+        "resin:Events/10069/",
+        "resin:Events/10070/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Research Response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10007/",
+      "children": [
+        "resin:Events/10071/",
+        "resin:Events/10072/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Contributory Factors",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10001/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10071/",
+      "children": [
+        "resin:Events/10011/",
+        "resin:Events/10010/",
+        "resin:Events/10073/",
+        "resin:Events/10074/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Social Factors",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10072/",
+      "children": [
+        "resin:Events/10075/",
+        "resin:Events/10077/",
+        "resin:Events/10078/",
+        "resin:Events/10079/",
+        "resin:Events/10080/",
+        "resin:Events/10076/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "",
+      "name": "Environmental Factors",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10124/",
+      "description": "Inspect the outbreak location and population to plan response.",
+      "name": "Inspection",
+      "participants": [
+        {
+          "@id": "resin:Participants/20211/",
+          "roleName": "A0_pag_examiner",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20212/",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20213/",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "wd_node": "wd:Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "outlinks": [
+        "resin:Events/10029/",
+        "resin:Events/10031/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10045/",
+      "description": "Close country borders to prevent disease spread",
+      "name": "Close Border",
+      "participants": [
+        {
+          "@id": "resin:Participants/20066/",
+          "roleName": "A0_pag_causer_of_transformation",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q28953942",
+      "wd_label": "boundary change",
+      "wd_description": "modification in the border or boundary of an administrative, electoral or political entity",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10043/",
+      "comment": "",
+      "description": "Distributing the vaccines of the virus",
+      "name": "Distribute",
+      "participants": [
+        {
+          "@id": "resin:Participants/20067/",
+          "roleName": "A0_pag_distributor",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20068/",
+          "roleName": "A1_ppt_thing_distributed",
+          "entity": "resin:Entities/00021/"
+        },
+        {
+          "@id": "resin:Participants/20069/",
+          "roleName": "A3_gol_recipient",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q843478",
+      "wd_label": "rationing",
+      "wd_description": "controlled distribution of scarce resources, goods, or services",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10044/",
+      "comment": "",
+      "description": "Buying, selling or exchanging goods related to the disease outbreak",
+      "name": "ExchangeBuySell",
+      "participants": [
+        {
+          "@id": "resin:Participants/20070/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q601401",
+      "wd_label": "trade",
+      "wd_description": "economic branch involving the exchange of goods and services",
+      "outlinks": [
+        "resin:Events/10047/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10047/",
+      "comment": "",
+      "description": "Charitable activities related to the disease outbreak",
+      "name": "Donate",
+      "participants": [
+        {
+          "@id": "resin:Participants/20071/",
+          "roleName": "A0_pag_giver",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20072/",
+          "roleName": "A2_gol_entity_given_to",
+          "entity": "resin:Entities/00024/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1124860",
+      "wd_label": "donation",
+      "wd_description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10039/",
+      "comment": "",
+      "description": "Officials are assigned to monitor, prevent, contain, and mitigate the disease outbreak",
+      "name": "Assignment",
+      "participants": [
+        {
+          "@id": "resin:Participants/20073/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20074/",
+          "roleName": "A1_ppt_thing_assigned",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20075/",
+          "roleName": "A2_gol_assigned_to",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q21014657",
+      "wd_label": "assignment",
+      "wd_description": "moment or event when something is formally granted",
+      "outlinks": [
+        "resin:Events/10124/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10125/",
+      "description": "Use of media to raise public awareness of the disease.",
+      "name": "Information Campaign",
+      "participants": [
+        {
+          "@id": "resin:Participants/20214/",
+          "roleName": "A0-pag_agent_communicator",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20215/",
+          "roleName": "A1-ppt_topic_subject",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "wd_node": "wd:Q62090711",
+      "wd_label": "media campaign",
+      "wd_description": "campaign that exclusively occurs in/uses media",
+      "outlinks": [
+        "resin:Events/10046/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10046/",
+      "comment": "",
+      "description": "Debunking misinformation of related to the disease outbreak",
+      "name": "Debunk Misinformation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20076/",
+          "roleName": "A1-PPT_topic_subject",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q59555084",
+      "wd_label": "fact-checking",
+      "wd_description": "process of verifying information in non-fictional text in order to determine its veracity and factual correctness",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10073/",
+      "comment": "",
+      "description": "Creation of a disease by laboratories or organizations",
+      "name": "Create Artifact",
+      "participants": [
+        {
+          "@id": "resin:Participants/20077/",
+          "roleName": "A1_ppt_result_thing_created",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20078/",
+          "roleName": "A0_pag_agent_creator",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20079/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q63244734",
+      "wd_label": "Creation",
+      "wd_description": "Wikimedia disambiguation page",
+      "outlinks": [
+        "resin:Events/10010/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10075/",
+      "comment": "",
+      "description": "Contemporary climate change may contribute to the disease outbreak, i.e., global warming",
+      "name": "Climate Change",
+      "participants": [
+        {
+          "@id": "resin:Participants/20080/",
+          "roleName": "A1_ppt_influenced",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q125928",
+      "wd_label": "climate change",
+      "wd_description": "change in the statistical distribution of weather patterns for an extended period, not necessarily current or recent",
+      "outlinks": [
+        "resin:Events/10076/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10077/",
+      "comment": "",
+      "description": "Negated, showing lack of a clean environment.",
+      "name": "Lack of Sanitation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20081/",
+          "roleName": "A0_pag_cleaner",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q949149",
+      "wd_label": "sanitation",
+      "wd_description": "public health conditions related to clean drinking water and adequate disposal of human excreta and sewage",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10078/",
+      "comment": "",
+      "description": "Negated, showing lack of practices preserving health.",
+      "name": "Poor Hygiene",
+      "participants": [
+        {
+          "@id": "resin:Participants/20082/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q162297",
+      "wd_label": "hygiene",
+      "wd_description": "set of practices performed for the preservation of health",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10079/",
+      "comment": "",
+      "description": "Negated, showing lack of measures that prevent foodborne illness.",
+      "name": "Inadequate Food Safety",
+      "participants": [
+        {
+          "@id": "resin:Participants/20083/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00025/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q909821",
+      "wd_label": "food safety",
+      "wd_description": "scientific discipline describing handling, preparation, and storage of food in ways that prevent foodborne illness",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10080/",
+      "comment": "",
+      "description": "Negated, showing state of unclean water.",
+      "name": "Unclean Drinking Water",
+      "participants": [
+        {
+          "@id": "resin:Participants/20084/",
+          "roleName": "A0_pag_drinker",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7892",
+      "wd_label": "drinking water",
+      "wd_description": "water safe for consumption",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10037/",
+      "comment": "",
+      "description": "Investigation of the disease outbreak includes identify the source of the virus as well as the suspect of the creator",
+      "name": "IdentifyDiseaseSource",
+      "participants": [
+        {
+          "@id": "resin:Participants/20085/",
+          "roleName": "A0_pag_agent_caller",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20086/",
+          "roleName": "A1_ppt_theme_item_being_labelled",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q912550",
+      "wd_label": "categorization",
+      "wd_description": "cognitive process in which ideas and objects are recognized, differentiated, and understood",
+      "outlinks": [
+        "resin:Events/10095/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10095/",
+      "comment": "",
+      "description": "Make contact with the suspect",
+      "name": "Contact",
+      "participants": [
+        {
+          "@id": "resin:Participants/20087/",
+          "roleName": "A0_pag_agent_one_party",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20088/",
+          "roleName": "A1_com_co_agent_other_party",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10096/",
+        "resin:Events/10097/",
+        "resin:Events/10098/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10096/",
+      "children": [
+        "resin:Events/10097/",
+        "resin:Events/10098/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "Taking the suspect who created the virus or violated laws during the outbreak into custody",
+      "name": "Arrest",
+      "participants": [
+        {
+          "@id": "resin:Participants/20089/",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20090/",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "outlinks": [
+        "resin:Events/10099/",
+        "resin:Events/10111/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10099/",
+      "comment": "",
+      "description": "Organized examination or formal evaluation on the suspect for creating the virus",
+      "name": "Inspect",
+      "participants": [
+        {
+          "@id": "resin:Participants/20091/",
+          "roleName": "A0_pag_examiner",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20092/",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "outlinks": [
+        "resin:Events/10101/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10100/",
+      "comment": "",
+      "description": "Plaintiff contacts attorney to begin filing a lawsuit",
+      "name": "Contact Attorney",
+      "participants": [
+        {
+          "@id": "resin:Participants/20093/",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20094/",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10101/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10101/",
+      "comment": "",
+      "description": "Plaintiff files a complaint to initiate a lawsuit",
+      "name": "File Complaint",
+      "participants": [
+        {
+          "@id": "resin:Participants/20095/",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20096/",
+          "roleName": "A2-cau_X_cause",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q836925",
+      "wd_label": "complaint",
+      "wd_description": "Legal document, the filing of which initiates a lawsuit",
+      "outlinks": [
+        "resin:Events/10102/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10102/",
+      "comment": "",
+      "description": "In law, a solemn assertion in opposition to someone or something by the defendant",
+      "name": "Answer",
+      "participants": [
+        {
+          "@id": "resin:Participants/20097/",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q33622550",
+      "wd_label": "answer",
+      "wd_description": "in law a solemn assertion in opposition to someone or something",
+      "outlinks": [
+        "resin:Events/10103/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10103/",
+      "comment": "",
+      "description": "Pre-trial procedure in common law countries for obtaining evidence",
+      "name": "Discovery",
+      "participants": [
+        {
+          "@id": "resin:Participants/20098/",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20099/",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q902342",
+      "wd_label": "discovery",
+      "wd_description": "pre-trial procedure in common law countries for obtaining evidence",
+      "outlinks": [
+        "resin:Events/10104/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10104/",
+      "comment": "",
+      "description": "In US law, a procedural device to bring a limited, contested issue before a court for decision",
+      "name": "Motion",
+      "participants": [
+        {
+          "@id": "resin:Participants/20100/",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20101/",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20102/",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q6917734",
+      "wd_label": "motion",
+      "wd_description": "in US law, a procedural device to bring a limited, contested issue before a court for decision",
+      "outlinks": [
+        "resin:Events/10112/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10105/",
+      "comment": "",
+      "description": "Dispute resolution with assistance of an impartial third party moderator throughthe use of communication and negotiation techniques",
+      "name": "Mediation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20103/",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20104/",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20105/",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q223871",
+      "wd_label": "mediation",
+      "wd_description": "dispute resolution with assistance of an impartial third party moderator through the use of communication and negotiation techniques",
+      "outlinks": [
+        "resin:Events/10106/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10106/",
+      "comment": "",
+      "description": "The dispute is resolved through a payment of money.",
+      "name": "Settlement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20106/",
+          "roleName": "A0-pag_agent_Agent",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20107/",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20108/",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00011/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange_of_goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "settlement money",
+          "wd_label": "money",
+          "wd_node": "wd:Q1368",
+          "wd_description": "object or record accepted as payment"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10123/",
+      "description": "learning in which knowledge and skills are transferred through teaching. The defendant is educated about regulations.",
+      "name": "Education",
+      "participants": [
+        {
+          "@id": "resin:Participants/20209/",
+          "roleName": "A2_gol_recipient_student",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20210/",
+          "roleName": "A0_pag_agent_teacher",
+          "entity": "resin:Entities/00018/"
+        }
+      ],
+      "wd_node": "wd:Q8434",
+      "wd_label": "education",
+      "wd_description": "learning in which knowledge and skills are transferred through teaching",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10107/",
+      "comment": "",
+      "description": "Coming together of parties to a dispute, to present information in a tribunal",
+      "name": "Trial",
+      "participants": [
+        {
+          "@id": "resin:Participants/20109/",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "outlinks": [
+        "resin:Events/10108/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10108/",
+      "comment": "",
+      "description": "The formal decision made by a court following a lawsuit",
+      "name": "Judgement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20110/",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q3769186",
+      "wd_label": "judgement",
+      "wd_description": "the formal decision made by a court following a lawsuit",
+      "outlinks": [
+        "resin:Events/10109/",
+        "resin:Events/10123/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10109/",
+      "comment": "",
+      "description": "Resort to a superior court to review the decision of an inferior court or administrative agency",
+      "name": "Appeal",
+      "participants": [
+        {
+          "@id": "resin:Participants/20111/",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q329777",
+      "wd_label": "appeal",
+      "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10038/",
+      "comment": "",
+      "description": "A viral test checks specimens from your nose or your mouth to find out if you are currently infected with the virus",
+      "name": "Testing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20112/",
+          "roleName": "A0-pag_agent_estimator",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20113/",
+          "roleName": "A1-ppt_theme_thing_estimated",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1003030",
+      "wd_label": "test",
+      "wd_description": "way of checking something for quality or attributes",
+      "outlinks": [
+        "resin:Events/10014/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10050/",
+      "comment": "",
+      "description": "Contact tracing identifies persons who may have come into contact with an infected person during the disease outbreak",
+      "name": "Tracing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20116/",
+          "roleName": "A0-pag_agent_Agent",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20117/",
+          "roleName": "A2-cau_X_cause_or_disease",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1128437",
+      "wd_label": "contact tracing",
+      "wd_description": "process of finding and identifying people in close contact with someone who is infected with a transmissible pathogen",
+      "outlinks": [
+        "resin:Events/10018/",
+        "resin:Events/10051/",
+        "resin:Events/10121/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10051/",
+      "comment": "",
+      "description": "Identify people exposed to the virus or came into contact with the infected person.",
+      "name": "Identify Exposed People",
+      "participants": [
+        {
+          "@id": "resin:Participants/20118/",
+          "roleName": "A0_pag_agent_caller",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20119/",
+          "roleName": "A1_ppt_theme_item_being_labelled",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20120/",
+          "roleName": "A2_prd_attribute_attribute",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q3265221",
+      "wd_label": "identification",
+      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+      "outlinks": [
+        "resin:Events/10052/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10052/",
+      "comment": "",
+      "description": "Quarantine and monitor people who came into contact with the infected person.",
+      "name": "Quarantine Exposed Group",
+      "participants": [
+        {
+          "@id": "resin:Participants/20124/",
+          "roleName": "A0_pag_quarantiner",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20125/",
+          "roleName": "A1_ppt_thing",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20126/",
+          "roleName": "A2_gol_quarrantined_from_whom",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q182899",
+      "wd_label": "quarantine",
+      "wd_description": "epidemiological intervention of restriction on the movement of people and goods, which is intended to prevent the spread of infectious disease or pests",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10074/",
+      "comment": "",
+      "description": "The disease outbreak may result from the use of biological toxins or infectious agents such as bacteria, viruses, insects, and fungi with the intent to kill, harm or incapacitate humans, animals or plants as an act of war",
+      "name": "Biological Warfare",
+      "participants": [
+        {
+          "@id": "resin:Participants/20131/",
+          "roleName": "A2_mnr_instrument_instrument",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20132/",
+          "roleName": "A1_ppt_patient_corpse",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8242560",
+      "wd_label": "biological warfare",
+      "wd_description": "use of biological toxins or infectious agents with the intent to kill as an act of war",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10076/",
+      "comment": "",
+      "description": "The virus may undergo an alteration in the nucleotide sequence of the genome during the disease outbreak",
+      "name": "Mutate life",
+      "participants": [
+        {
+          "@id": "resin:Participants/20133/",
+          "roleName": "A1_ppt_patient_entity_undergoing_mutation",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20134/",
+          "roleName": "A2_prd_result_end_state",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q42918",
+      "wd_label": "mutation",
+      "wd_description": "change of the nucleotide sequence of the genome of an organism",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10053/",
+      "comment": "",
+      "description": "Patients may recover from the infection of the virus",
+      "name": "Recover",
+      "participants": [
+        {
+          "@id": "resin:Participants/20135/",
+          "roleName": "A1_ppt_sick",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20136/",
+          "roleName": "A2-cau_X_cause_or_disease",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7302970",
+      "wd_label": "recover",
+      "wd_description": "Dateiwiederherstellungsprogramm",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10054/",
+      "comment": "",
+      "description": "Patients may die from the infection of the virus",
+      "name": "Die",
+      "participants": [
+        {
+          "@id": "resin:Participants/20137/",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20138/",
+          "roleName": "AM_cau__cause",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q4",
+      "wd_label": "death",
+      "wd_description": "permanent cessation of vital functions",
+      "outlinks": [
+        "resin:Events/10055/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10055/",
+      "comment": "",
+      "description": "A ceremony for patients died in the disease outbreak",
+      "name": "Funeral",
+      "participants": [
+        {
+          "@id": "resin:Participants/20139/",
+          "roleName": "A1_ppt_entity_buried",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q201676",
+      "wd_label": "funeral",
+      "wd_description": "ceremony for a person who has died",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10086/",
+      "comment": "",
+      "description": "The virus may undergo an alteration in the nucleotide sequence of the genome during the disease outbreak",
+      "name": "Mutation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20140/",
+          "roleName": "A1_ppt_patient_entity_undergoing_mutation",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20141/",
+          "roleName": "A2_prd_result_end_state",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q42918",
+      "wd_label": "mutation",
+      "wd_description": "change of the nucleotide sequence of the genome of an organism",
+      "outlinks": [
+        "resin:Events/10040/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10085/",
+      "comment": "",
+      "description": "Field hospitals may be constructed to accommodate patients during the outbreak",
+      "name": "Construction",
+      "participants": [
+        {
+          "@id": "resin:Participants/20142/",
+          "roleName": "A0_pag_builder",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q385378",
+      "wd_label": "construction",
+      "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10069/",
+      "comment": "",
+      "description": "Research collaboration on finding treatment for the virus",
+      "name": "Collaborate",
+      "participants": [
+        {
+          "@id": "resin:Participants/20143/",
+          "roleName": "A0_pag_agent_focussed_party",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1145523",
+      "wd_label": "collaboration",
+      "wd_description": "working together",
+      "outlinks": [
+        "resin:Events/10032/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10070/",
+      "children": [
+        "resin:Events/10110/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "Academic conference or scientific conference for conducting research on fighting the virus",
+      "name": "Meeting",
+      "participants": [
+        {
+          "@id": "resin:Participants/20144/",
+          "roleName": "A0_pag_one_party",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q625994",
+      "wd_label": "convention",
+      "wd_description": "meeting of a group of individuals and/or companies in a certain field",
+      "outlinks": [
+        "resin:Events/10069/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10004/",
+      "children": [
+        "resin:Events/10037/",
+        "resin:Events/10095/",
+        "resin:Events/10096/",
+        "resin:Events/10099/",
+        "resin:Events/10111/",
+        "resin:Events/10097/",
+        "resin:Events/10098/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "",
+      "name": "Investigation",
+      "participants": [],
+      "repeatable": false,
+      "wd_node": "wd:Q21004260",
+      "wd_label": "inquiry",
+      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "outlinks": [
+        "resin:Events/10009/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10009/",
+      "children": [
+        "resin:Events/10100/",
+        "resin:Events/10101/",
+        "resin:Events/10102/",
+        "resin:Events/10103/",
+        "resin:Events/10104/",
+        "resin:Events/10112/",
+        "resin:Events/10106/",
+        "resin:Events/10108/",
+        "resin:Events/10123/",
+        "resin:Events/10109/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "",
+      "name": "Civil Justice",
+      "participants": [],
+      "repeatable": false,
+      "wd_node": "wd:Q5167661",
+      "wd_label": "justice",
+      "wd_description": "correct application of law as opposed to arbitrariness",
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10060/",
+      "comment": "",
+      "description": "Disinfection to prevent infection of the virus",
+      "name": "Sanitize",
+      "participants": [
+        {
+          "@id": "resin:Participants/20145/",
+          "roleName": "A0_pag__cleaner",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q24887418",
+      "wd_label": "disinfection",
+      "wd_description": "rendering pathogens harmless through methods including use of heat, antiseptics and antibacterial agents",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10061/",
+      "comment": "",
+      "description": "Washing hands to prevent infection",
+      "name": "Wash",
+      "participants": [
+        {
+          "@id": "resin:Participants/20146/",
+          "roleName": "A0_pag__cleaner",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q23841",
+      "wd_label": "washing",
+      "wd_description": "a method of cleaning",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10062/",
+      "comment": "",
+      "description": "Complying to the government legislations",
+      "name": "Comply",
+      "participants": [
+        {
+          "@id": "resin:Participants/20147/",
+          "roleName": "A0_pag_obeyer",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20148/",
+          "roleName": "A1_ppt_rule_or_rule-giver",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1456974",
+      "wd_label": "obedience",
+      "wd_description": "yielding to instructions from an authority figure",
+      "outlinks": [
+        "resin:Events/10060/",
+        "resin:Events/10030/",
+        "resin:Events/10063/",
+        "resin:Events/10061/",
+        "resin:Events/10064/",
+        "resin:Events/10065/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10063/",
+      "comment": "",
+      "description": "Wearing masks to prevent the spread of virus",
+      "name": "Wear",
+      "participants": [
+        {
+          "@id": "resin:Participants/20149/",
+          "roleName": "A0_pag__wearer",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q579282",
+      "wd_label": "Wear",
+      "wd_description": "Wikimedia disambiguation page",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10056/",
+      "comment": "",
+      "description": "Sharing and educating related knowledge for fighting the disease outbreak",
+      "name": "Educate",
+      "participants": [
+        {
+          "@id": "resin:Participants/20150/",
+          "roleName": "A2-gol_recipient_student",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20151/",
+          "roleName": "A0_pag_agent_teacher",
+          "entity": "resin:Entities/00012/"
+        },
+        {
+          "@id": "resin:Participants/20152/",
+          "roleName": "A1_ppt_topic_subject",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8434",
+      "wd_label": "education",
+      "wd_description": "learning in which knowledge and skills are transferred through teaching",
+      "outlinks": [
+        "resin:Events/10062/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "educator",
+          "wd_label": "educator",
+          "wd_node": "wd:Q974144",
+          "wd_description": "occupation which teaches others knowledge, skills, and habits"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10065/",
+      "comment": "",
+      "description": "Keep physical distance to prevent the spread of the disease",
+      "name": "Social Distancing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20153/",
+          "roleName": "A0_pag_causer_of_distance",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20154/",
+          "roleName": "A1_ppt_first_thing",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q30314010",
+      "wd_label": "social distancing",
+      "wd_description": "reduction of human social interaction in an effort to prevent the spread of infectious disease",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10064/",
+      "children": [
+        "resin:Events/10113/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "Vaccine intended to provide acquired immunity against the virus",
+      "name": "Vaccinate",
+      "participants": [
+        {
+          "@id": "resin:Participants/20155/",
+          "roleName": "A0_pag__inoculator",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20156/",
+          "roleName": "A1_ppt__patient_inoculated",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20157/",
+          "roleName": "A2_ppt__inoculated_against",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20158/",
+          "roleName": "Ax_mnr__innoculated_with",
+          "entity": "resin:Entities/00021/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q192995",
+      "wd_label": "vaccination",
+      "wd_description": "administration of a vaccine to protect against disease",
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10057/",
+      "comment": "",
+      "description": "Buying, selling or exchanging goods related to the disease outbreak",
+      "name": "Exchange",
+      "participants": [
+        {
+          "@id": "resin:Participants/20159/",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange of goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10058/",
+      "comment": "",
+      "description": "Protests over responses to the disease outbreak",
+      "name": "Demonstrate",
+      "participants": [
+        {
+          "@id": "resin:Participants/20160/",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20161/",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10059/",
+      "comment": "",
+      "description": "Business close due to the disease outbreak",
+      "name": "Business Close",
+      "participants": [
+        {
+          "@id": "resin:Participants/20162/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00005/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q89681240",
+      "wd_label": "closing of non-essential businesses",
+      "wd_description": "",
+      "outlinks": [
+        "resin:Events/10066/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10067/",
+      "comment": "",
+      "description": "Business reopen due to the disease outbreak",
+      "name": "Business Reopen",
+      "participants": [
+        {
+          "@id": "resin:Participants/20163/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00005/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q16571590",
+      "wd_label": "reopening",
+      "wd_description": "new opening, usually for a cultural or commercial establishment",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10097/",
+      "comment": "",
+      "description": "Using handcuffs to secure a suspect who violated law during the disease outbreak",
+      "name": "Handcuffing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20169/",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20170/",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q15808",
+      "wd_label": "handcuffs",
+      "wd_description": "restraint devices",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10111/",
+      "comment": "",
+      "description": "Interviewing with the goal of eliciting useful information related to suspected crime during the disease outbreak",
+      "name": "Interrogation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20171/",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20172/",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q327018",
+      "wd_label": "interrogation",
+      "wd_description": "interviewing employed by law enforcement officers, military personnel, and intelligence agencies with the goal of eliciting useful information",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10098/",
+      "comment": "",
+      "description": "Physical restraint on the suspect",
+      "name": "Restrain",
+      "participants": [
+        {
+          "@id": "resin:Participants/20173/",
+          "roleName": "A0_pag__agent",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20174/",
+          "roleName": "A1_ppt__restrained",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q357003",
+      "wd_label": "physical restraint",
+      "wd_description": "practice or device for rendering a person harmless or defenseless by constraining movement",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10110/",
+      "comment": "",
+      "description": "conversation between two or more people on responding to the disease outbreak",
+      "name": "Discussion",
+      "participants": [
+        {
+          "@id": "resin:Participants/20175/",
+          "roleName": "A0_pag_agent_discussant",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20176/",
+          "roleName": "A1_ppt__topic",
+          "entity": "resin:Entities/00020/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q3030248",
+      "wd_label": "discussion",
+      "wd_description": "conversation between two or more people in which they express their point of view on a choosen theme",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10113/",
+      "comment": "",
+      "description": "The act of administering a liquid, especially a drug, into a patient infected by the virus using a needle and a syringe",
+      "name": "Inject",
+      "participants": [
+        {
+          "@id": "resin:Participants/20177/",
+          "roleName": "A0_pag_injector",
+          "entity": "resin:Entities/00024/"
+        },
+        {
+          "@id": "resin:Participants/20178/",
+          "roleName": "A1_ppt_stuff_being_put_in",
+          "entity": "resin:Entities/00021/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q245359",
+      "wd_label": "injection",
+      "wd_description": "infusion method of putting fluid into the body",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10041/",
+      "children": [
+        "resin:Events/10114/",
+        "resin:Events/10115/",
+        "resin:Events/10116/"
+      ],
+      "children_gate": "xor",
+      "comment": "",
+      "description": "Consumption of a substance by an organism",
+      "name": "Consume",
+      "participants": [
+        {
+          "@id": "resin:Participants/20179/",
+          "roleName": "A0-pag_agent_eater",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20180/",
+          "roleName": "A1-ppt_patient_entity_ingested",
+          "entity": "resin:Entities/00003/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1663054",
+      "wd_label": "ingestion",
+      "wd_description": "consumption of a substance by an organism",
+      "outlinks": [
+        "resin:Events/10042/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10114/",
+      "comment": "",
+      "description": "Ingestion of food to provide for all organisms their nutritional or medicinal needs",
+      "name": "Eat",
+      "participants": [
+        {
+          "@id": "resin:Participants/20181/",
+          "roleName": "A0-pag_consumer",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20182/",
+          "roleName": "A1-ppt_meal",
+          "entity": "resin:Entities/00003/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q213449",
+      "wd_label": "eating",
+      "wd_description": "ingestion of food to provide for all organisms their nutritional or medicinal needs",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10115/",
+      "comment": "",
+      "description": "Ingesting water or other liquids into the body through the mouth",
+      "name": "Drink",
+      "participants": [
+        {
+          "@id": "resin:Participants/20183/",
+          "roleName": "A0-pag_drinker",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20184/",
+          "roleName": "A1-ppt_liquid",
+          "entity": "resin:Entities/00004/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q876776",
+      "wd_label": "drinking",
+      "wd_description": "ingesting water or other liquids into the body through the mouth",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "liquid",
+          "wd_label": "liquid",
+          "wd_node": "wd:Q11435",
+          "wd_description": "nearly incompressible fluid that conforms to the shape of its container but retains a nearly constant volume independent of pressure"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10116/",
+      "comment": "",
+      "description": "Route through which substances may be received",
+      "name": "Contact Through Skin",
+      "participants": [
+        {
+          "@id": "resin:Participants/20185/",
+          "roleName": "A0-pag_absorber",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20186/",
+          "roleName": "A1-ppt_absorbed",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q4669896",
+      "wd_label": "skin absorption",
+      "wd_description": "route through which substances may be received",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10040/",
+      "comment": "Pathogen contaminates object, which is later consumed.",
+      "description": "Presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
+      "name": "Contaminate Substance",
+      "participants": [
+        {
+          "@id": "resin:Participants/20187/",
+          "roleName": "A0-pag_agent_causer_of_contamination",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20188/",
+          "roleName": "A1-gol_destination_thing_becoming_contaminated",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q60528603",
+      "wd_label": "contamination",
+      "wd_description": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
+      "outlinks": [
+        "resin:Events/10120/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10120/",
+      "comment": "optional event for purchasing contaminated food or drink.",
+      "description": "transfer of equivalent goods to each other.",
+      "name": "Purchase Contaminated Object",
+      "participants": [
+        {
+          "@id": "resin:Participants/20202/",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20203/",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00005/"
+        },
+        {
+          "@id": "resin:Participants/20204/",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange of goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": [
+        "resin:Events/10041/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10042/",
+      "comment": "",
+      "description": "passing of a pathogen causing communicable disease from an infected host individual or group to other individual or group, regardless of whether the other individual was previously infected",
+      "name": "Transmission",
+      "participants": [
+        {
+          "@id": "resin:Participants/20189/",
+          "roleName": "A0-pag_agent_causer_of_contamination",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20190/",
+          "roleName": "A1-gol_destination_thing_becoming_contaminated",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "wd_node": "wd:Q525512",
+      "wd_label": "pathogen_transmission",
+      "wd_description": "passing of a pathogen causing communicable disease from an infected host individual or group to other individual or group, regardless of whether the other individual was previously infected",
+      "outlinks": [
+        "resin:Events/10012/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10068/",
+      "comment": "",
+      "description": "Business close permanently due to the disease outbreak",
+      "name": "Business Shutdown",
+      "participants": [
+        {
+          "@id": "resin:Participants/20201/",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00005/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q152074",
+      "wd_label": "bankruptcy",
+      "wd_description": "legal process through which people or other entities who cannot repay debts to creditors may seek relief from some or all of their debts",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10002/",
+      "children": [
+        "resin:Events/10003/",
+        "resin:Events/10005/",
+        "resin:Events/10006/"
+      ],
+      "children_gate": "and",
+      "comment": "container node",
+      "description": "",
+      "name": "onset outlinks",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10049/",
+      "children": [
+        "resin:Events/10053/",
+        "resin:Events/10054/",
+        "resin:Events/10055/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "Illness Outcome",
+      "name": "Illness Outcome",
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10112/",
+      "children": [
+        "resin:Events/10105/",
+        "resin:Events/10107/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Motion outlinks",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10066/",
+      "children": [
+        "resin:Events/10067/",
+        "resin:Events/10068/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Business Close outlinks",
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    }
+  ]
+}

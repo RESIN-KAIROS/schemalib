@@ -1,0 +1,1646 @@
+{
+  "@id": "resin:Schemas/General-Attack",
+  "sdfVersion": "3.0",
+  "version": "caci-08.07.2020",
+  "events": [
+    {
+      "@id": "resin:Events/10000/",
+      "children": [
+        "resin:Events/10001/",
+        "resin:Events/10002/",
+        "resin:Events/10003/",
+        "resin:Events/10004/"
+      ],
+      "children_gate": "or",
+      "description": "",
+      "name": "General Attack",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "trigger/topic",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "attacker",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00006/",
+          "name": "attack target",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00007/",
+          "name": "attack instrument",
+          "wd_label": "weapon",
+          "wd_node": "wd:Q728",
+          "wd_description": "tool used to inflict damage or harm"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "attack event",
+          "wd_label": "attack",
+          "wd_node": "wd:Q1174599",
+          "wd_description": "action to injure another organism"
+        },
+        {
+          "@id": "resin:Entities/00009/",
+          "name": "medium of communication",
+          "wd_label": "communication_medium",
+          "wd_node": "wd:Q340169",
+          "wd_description": "storage and delivering agent of information or data"
+        },
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "people injured onsite",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "people dead onsite",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "authorities",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "other poeple",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "medical team",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00023/",
+          "name": "driver",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00024/",
+          "name": "vehicle",
+          "wd_label": "vehicle",
+          "wd_node": "wd:Q42889",
+          "wd_description": "mobile machine that transports people, animals or cargo"
+        },
+        {
+          "@id": "resin:Entities/00026/",
+          "name": "medical facility",
+          "wd_label": "medical_facility",
+          "wd_node": "wd:Q4260475",
+          "wd_description": "any location at which medicine is practiced regularly"
+        },
+        {
+          "@id": "resin:Entities/00027/",
+          "name": "doctor",
+          "wd_label": "health_professional",
+          "wd_node": "wd:Q11974939",
+          "wd_description": "individual who systematically provides health care services"
+        },
+        {
+          "@id": "resin:Entities/00029/",
+          "name": "deceased poeple",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00030/",
+          "name": "ultimatelu rescued poeple",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00031/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00032/",
+          "name": "investigator",
+          "wd_label": "detective",
+          "wd_node": "wd:Q842782",
+          "wd_description": "investigator, either a member of a police agency or a private person"
+        },
+        {
+          "@id": "resin:Entities/00035/",
+          "name": "court",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00036/",
+          "name": "judge",
+          "wd_label": "judge",
+          "wd_node": "wd:Q16533",
+          "wd_description": "official who presides over court proceedings"
+        },
+        {
+          "@id": "resin:Entities/00038/",
+          "name": "poeple rescued from attack",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00027/",
+          "relationObject": "resin:Entities/00022/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "member of",
+          "relationSubject": "resin:Entities/00015/",
+          "relationObject": "resin:Entities/00038/",
+          "wd_node": "wd:Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        }
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10001/",
+      "children": [
+        "resin:Events/10005/",
+        "resin:Events/10006/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "The contributory factors that shows motives and backgrounds.",
+      "name": "Contributory Factors",
+      "repeatable": true,
+      "outlinks": [
+        "resin:Events/10002/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10002/",
+      "children": [
+        "resin:Events/10007/",
+        "resin:Events/10008/",
+        "resin:Events/10009/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Attack planning procedure.",
+      "name": "Planning",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10003/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10003/",
+      "children": [
+        "resin:Events/10010/",
+        "resin:Events/10011/",
+        "resin:Events/10012/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "The attack execution procedure.",
+      "name": "Execution",
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10004/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10004/",
+      "children": [
+        "resin:Events/10013/",
+        "resin:Events/10014/",
+        "resin:Events/10015/",
+        "resin:Events/10016/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Response to the attack.",
+      "name": "Response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10005/",
+      "description": "A demonstration event happening independently and possibly being the precursor to the detonation event.",
+      "name": "Demonstration",
+      "participants": [
+        {
+          "@id": "resin:Participants/20000/",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20001/",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20002/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00001/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "pre-attack demonstrators",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "pre-attack demonstration location",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10006/",
+      "description": "Attack that motivates this attack as retaliation.",
+      "name": "Motivating Attack",
+      "participants": [
+        {
+          "@id": "resin:Participants/20003/",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": "resin:Entities/00037/"
+        },
+        {
+          "@id": "resin:Participants/20004/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00004/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "motivating attack location",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        },
+        {
+          "@id": "resin:Entities/00037/",
+          "name": "motivating attack target",
+          "wd_label": "concrete_object",
+          "wd_node": "wd:Q4406616",
+          "wd_description": "object with a physical referent"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10007/",
+      "description": "Talk to leader",
+      "name": "Talk to Leader",
+      "participants": [
+        {
+          "@id": "resin:Participants/20005/",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20006/",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20007/",
+          "roleName": "A2_com_co-agent_other_communicator",
+          "entity": "resin:Entities/00005/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1472062",
+      "wd_label": "remote_communication",
+      "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+      "outlinks": [
+        "resin:Events/10008/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "leader",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10008/",
+      "description": "Determine attack target",
+      "name": "Determine Attack Target",
+      "participants": [
+        {
+          "@id": "resin:Participants/20008/",
+          "roleName": "A0_pag_agent_decider",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20009/",
+          "roleName": "A1_ppt_theme_thing_determined",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1665268",
+      "wd_label": "command",
+      "wd_description": "message conveying a requirement to perform a certain action",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10009/",
+      "description": "Purchase Attack Instrument",
+      "name": "Purchase Attack Instrument",
+      "participants": [
+        {
+          "@id": "resin:Participants/20010/",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20011/",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange_of_goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10010/",
+      "description": "Threaten populace by announcing the attack",
+      "name": "Announce Attack",
+      "participants": [
+        {
+          "@id": "resin:Participants/20012/",
+          "roleName": "A0_pag_agent_persuasive_entity",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20013/",
+          "roleName": "A2_prd_result_action_or_Result",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q325980",
+      "wd_label": "coercion",
+      "wd_description": "practice of forcing another party to act in an involuntary manner by use of threats or force",
+      "outlinks": [
+        "resin:Events/10011/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10011/",
+      "description": "Physical attack, action to injure another organism.",
+      "name": "Attack",
+      "participants": [
+        {
+          "@id": "resin:Participants/20014/",
+          "roleName": "A0_pag_agent_assaulter",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20015/",
+          "roleName": "A1_ppt_theme_entity_assaulted",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20016/",
+          "roleName": "AM_mnr__manner",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20017/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "outlinks": [
+        "resin:Events/10012/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10012/",
+      "children": [
+        "resin:Events/10017/",
+        "resin:Events/10018/",
+        "resin:Events/10019/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Attack Consequences",
+      "name": "Attack Consequences",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10013/",
+      "children": [
+        "resin:Events/10020/",
+        "resin:Events/10021/",
+        "resin:Events/10022/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Emergency Evacuation",
+      "name": "Emergency Evacuation",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10014/",
+      "children": [
+        "resin:Events/10023/",
+        "resin:Events/10024/",
+        "resin:Events/10025/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Social Response",
+      "name": "Social Response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10015/",
+      "children": [
+        "resin:Events/10026/",
+        "resin:Events/10027/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Authorities Response",
+      "name": "Authorities Response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10016/",
+      "children": [
+        "resin:Events/10028/",
+        "resin:Events/10029/",
+        "resin:Events/10030/",
+        "resin:Events/10031/",
+        "resin:Events/10032/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Criminal Investigation",
+      "name": "Criminal Investigation",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10017/",
+      "description": "Victims are injured.",
+      "name": "Injure",
+      "participants": [
+        {
+          "@id": "resin:Participants/20018/",
+          "roleName": "A1_ppt_experiencer_injured_party",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20019/",
+          "roleName": "A0_pag_stimulus_stimulus_of_injury",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20020/",
+          "roleName": "A2_mnr__instrument",
+          "entity": "resin:Entities/00007/"
+        },
+        {
+          "@id": "resin:Participants/20021/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "outlinks": [
+        "resin:Events/10018/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10018/",
+      "description": "Victims are killed.",
+      "name": "Die",
+      "participants": [
+        {
+          "@id": "resin:Participants/20022/",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00011/"
+        },
+        {
+          "@id": "resin:Participants/20023/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q4",
+      "wd_label": "death",
+      "wd_description": "permanent cessation of vital functions",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10019/",
+      "children": [
+        "resin:Events/10033/",
+        "resin:Events/10034/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "damage severity outlinks",
+      "name": "damage severity outlinks",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10033/",
+      "comment": "",
+      "description": "Destruction caused by attack",
+      "name": "Destruction",
+      "participants": [
+        {
+          "@id": "resin:Participants/20024/",
+          "roleName": "A0_pag_agent_destroyer",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20025/",
+          "roleName": "A1_ppt_patient_thing_destroyed",
+          "entity": "resin:Entities/00013/"
+        },
+        {
+          "@id": "resin:Participants/20026/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q17781833",
+      "wd_label": "destruction",
+      "wd_description": "concept of damage to an object, system or an idea",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "properties destroyed",
+          "wd_label": "human-made_geographic_feature",
+          "wd_node": "wd:Q811430",
+          "wd_description": "artificial construction meant to remain at a fixed geographic location"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10034/",
+      "comment": "",
+      "description": "Damage caused by the attack.",
+      "name": "Damage",
+      "participants": [
+        {
+          "@id": "resin:Participants/20027/",
+          "roleName": "A0_pag_agent_agent_causer",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20028/",
+          "roleName": "A1_ppt_patient_entity_damaged",
+          "entity": "resin:Entities/00012/"
+        },
+        {
+          "@id": "resin:Participants/20029/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q481609",
+      "wd_label": "damage",
+      "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "properties damaged",
+          "wd_label": "human-made_geographic_feature",
+          "wd_node": "wd:Q811430",
+          "wd_description": "artificial construction meant to remain at a fixed geographic location"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10020/",
+      "comment": "",
+      "description": "Contacting the emergency department for help.",
+      "name": "Contact Emergency Department",
+      "participants": [
+        {
+          "@id": "resin:Participants/20030/",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20031/",
+          "roleName": "A1_ppt_topic_message",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20032/",
+          "roleName": "A2_com_co-agent_other_communicator",
+          "entity": "resin:Entities/00021/"
+        },
+        {
+          "@id": "resin:Participants/20033/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1472062",
+      "wd_label": "remote_communication",
+      "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+      "outlinks": [
+        "resin:Events/10021/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00021/",
+          "name": "emergency department",
+          "wd_label": "emergency_service",
+          "wd_node": "wd:Q814610",
+          "wd_description": "organizations which ensure public safety and health by addressing different emergencies"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10021/",
+      "comment": "",
+      "description": "Medical team Drives to attack site",
+      "name": "Drive",
+      "participants": [
+        {
+          "@id": "resin:Participants/20034/",
+          "roleName": "A0_pag_agent_transporter",
+          "entity": "resin:Entities/00023/"
+        },
+        {
+          "@id": "resin:Participants/20035/",
+          "roleName": "A1_ppt_theme_thing_transported",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20036/",
+          "roleName": "A3_gol_destination_destination",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7590",
+      "wd_label": "transport",
+      "wd_description": "human-directed movement of things or people between locations",
+      "outlinks": [
+        "resin:Events/10022/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10022/",
+      "children": [
+        "resin:Events/10035/",
+        "resin:Events/10036/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "Emergency department response",
+      "name": "Emergency department response",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10035/",
+      "children": [
+        "resin:Events/10037/",
+        "resin:Events/10038/",
+        "resin:Events/10039/",
+        "resin:Events/10040/"
+      ],
+      "children_gate": "or",
+      "comment": "container node",
+      "description": "Medical Intervention",
+      "name": "Medical Intervention",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10040/",
+      "children": [
+        "resin:Events/10041/",
+        "resin:Events/10043/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "Intervention Results",
+      "name": "Intervention Results",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10037/",
+      "comment": "",
+      "description": "On-site intervention, including first and immediate assistance given to any person suffering from either a minor or serious injury",
+      "name": "first-aid",
+      "participants": [
+        {
+          "@id": "resin:Participants/20037/",
+          "roleName": "A0_pag_doctor",
+          "entity": "resin:Entities/00022/"
+        },
+        {
+          "@id": "resin:Participants/20038/",
+          "roleName": "A1_ppt_patient",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20039/",
+          "roleName": "A3_mnr_instrument",
+          "entity": "resin:Entities/00028/"
+        },
+        {
+          "@id": "resin:Participants/20040/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q133981",
+      "wd_label": "first_aid",
+      "wd_description": "first and immediate assistance given to any person suffering from either a minor or serious illness or injury",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00028/",
+          "name": "medical equipments",
+          "wd_label": "medical_device",
+          "wd_node": "wd:Q6554101",
+          "wd_description": "any device intended to be used for medical purposes"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10038/",
+      "comment": "",
+      "description": "Drive to medical facility",
+      "name": "transfer to hospital",
+      "participants": [
+        {
+          "@id": "resin:Participants/20041/",
+          "roleName": "A0_pag_agent_transporter",
+          "entity": "resin:Entities/00023/"
+        },
+        {
+          "@id": "resin:Participants/20042/",
+          "roleName": "A1_ppt_theme_thing_transported",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20043/",
+          "roleName": "A2_dir_source_initial_location",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20044/",
+          "roleName": "A3_gol_destination_destination",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q7590",
+      "wd_label": "transport",
+      "wd_description": "human-directed movement of things or people between locations",
+      "outlinks": [
+        "resin:Events/10039/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10039/",
+      "comment": "",
+      "description": "Medical intervention at hospital",
+      "name": "treatment",
+      "participants": [
+        {
+          "@id": "resin:Participants/20045/",
+          "roleName": "A0_pag__doctor",
+          "entity": "resin:Entities/00027/"
+        },
+        {
+          "@id": "resin:Participants/20046/",
+          "roleName": "A1_ppt__patient",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20047/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q179661",
+      "wd_label": "treatment",
+      "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+      "outlinks": [
+        "resin:Events/10040/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10041/",
+      "children": [
+        "resin:Events/10042/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "",
+      "name": "Rescue",
+      "participants": [
+        {
+          "@id": "resin:Participants/20048/",
+          "roleName": "A0_pag_agent_rescuer",
+          "entity": "resin:Entities/00027/"
+        },
+        {
+          "@id": "resin:Participants/20049/",
+          "roleName": "A1_ppt_theme_entity_rescued",
+          "entity": "resin:Entities/00030/"
+        },
+        {
+          "@id": "resin:Participants/20050/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1341429",
+      "wd_label": "rescue",
+      "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+      "outlinks": [
+        "resin:Events/10042/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10042/",
+      "comment": "",
+      "description": "Dismiss from hospital",
+      "name": "Dismiss",
+      "participants": [
+        {
+          "@id": "resin:Participants/20051/",
+          "roleName": "A0_pag__releaser",
+          "entity": "resin:Entities/00027/"
+        },
+        {
+          "@id": "resin:Participants/20052/",
+          "roleName": "A1_ppt__patient",
+          "entity": "resin:Entities/00030/"
+        },
+        {
+          "@id": "resin:Participants/20053/",
+          "roleName": "A2_dir__place_released_from",
+          "entity": "resin:Entities/00026/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q47328472",
+      "wd_label": "hispital_discharge",
+      "wd_description": "release of a patient from clinical care",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10043/",
+      "comment": "",
+      "description": "Ultimate death in the hospital when medical intervention is unsuccessful.",
+      "name": "Die",
+      "participants": [
+        {
+          "@id": "resin:Participants/20054/",
+          "roleName": "A1_ppt_the_deceased",
+          "entity": "resin:Entities/00011/"
+        },
+        {
+          "@id": "resin:Participants/20055/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00006/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q4",
+      "wd_label": "death",
+      "wd_description": "permanent cessation of vital functions",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10036/",
+      "comment": "",
+      "description": "Evacuate target premises.",
+      "name": "Evacuation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20056/",
+          "roleName": "A1_ppt_thing_transported",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20057/",
+          "roleName": "A2_dir_initial_location_source",
+          "entity": "resin:Entities/00006/"
+        },
+        {
+          "@id": "resin:Participants/20058/",
+          "roleName": "A3_gol_destination_destination",
+          "entity": "resin:Entities/00025/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q606332",
+      "wd_label": "emergency_evacuation",
+      "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00025/",
+          "name": "safe place",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10023/",
+      "comment": "",
+      "description": "Conflict after the attack, possibly directed towards a group that the crime committer is a part of.",
+      "name": "Conflict",
+      "participants": [
+        {
+          "@id": "resin:Participants/20059/",
+          "roleName": "A0_pag_agent_agentive_clasher",
+          "entity": "resin:Entities/00020/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q180684",
+      "wd_label": "conflict",
+      "wd_description": "friction, disagreement, or discord within a group or between different groups",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00020/",
+          "name": "poeple involved in post-attack conflict",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10024/",
+      "comment": "",
+      "description": "Post-attack demonstration",
+      "name": "Demonstration",
+      "participants": [
+        {
+          "@id": "resin:Participants/20060/",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20061/",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20062/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "post-attack demonstrators",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "post-attack demonstration location",
+          "wd_label": "geographic_location",
+          "wd_node": "wd:Q2221906",
+          "wd_description": "point or an area on the Earth's surface or elsewhere"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10025/",
+      "comment": "",
+      "description": "Social media posts",
+      "name": "Social media posts",
+      "participants": [
+        {
+          "@id": "resin:Participants/20063/",
+          "roleName": "A0_pag_agent_poster",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20064/",
+          "roleName": "A1_ppt_theme_posted",
+          "entity": "resin:Entities/00039/"
+        },
+        {
+          "@id": "resin:Participants/20065/",
+          "roleName": "A2_gol_destination_posted-to",
+          "entity": "resin:Entities/00017/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q7216866",
+      "wd_label": "post",
+      "wd_description": "entry on a social media platform, forum, or blog",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "social network",
+          "wd_label": "social_networking_service",
+          "wd_node": "wd:Q3220391",
+          "wd_description": "online platform that facilitates the building of social relations"
+        },
+        {
+          "@id": "resin:Entities/00039/",
+          "name": "objection",
+          "wd_label": "objection",
+          "wd_node": "wd:Q2090618",
+          "wd_description": "reason arguing against a premise, argument, or conclusion"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10026/",
+      "comment": "",
+      "description": "Contact authorities and inform them of the attack.",
+      "name": "Contact authorities",
+      "participants": [
+        {
+          "@id": "resin:Participants/20066/",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20067/",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20068/",
+          "roleName": "A2_com_co-agent_other_communicator",
+          "entity": "resin:Entities/00014/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1472062",
+      "wd_label": "remote_communication",
+      "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+      "outlinks": [
+        "resin:Events/10027/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "poeple contacting authorities",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10027/",
+      "comment": "",
+      "description": "accusation or complaint against a person or group",
+      "name": "Denunciation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20069/",
+          "roleName": "A0_pag_agent_speaker",
+          "entity": "resin:Entities/00014/"
+        },
+        {
+          "@id": "resin:Participants/20070/",
+          "roleName": "A1_ppt_theme_subject",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1189956",
+      "wd_label": "denunciation",
+      "wd_description": "accusation or complaint against a person or group",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10032/",
+      "children": [
+        "resin:Events/10044/",
+        "resin:Events/10045/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "Defendant decision",
+      "name": "Defendant decision",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10047/",
+      "children": [
+        "resin:Events/10048/",
+        "resin:Events/10049/"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "Court decision",
+      "name": "Court decision",
+      "repeatable": false,
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10049/",
+      "children": [
+        "resin:Events/10050/",
+        "resin:Events/10051/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "decree of punishment in law",
+      "name": "Sentence",
+      "participants": [
+        {
+          "@id": "resin:Participants/20071/",
+          "roleName": "A0_pag__judge_jury",
+          "entity": "resin:Entities/00036/"
+        },
+        {
+          "@id": "resin:Participants/20072/",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20073/",
+          "roleName": "A3_cau__crime",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20074/",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00035/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1763090",
+      "wd_label": "sentence",
+      "wd_description": "decree of punishment in law",
+      "outlinks": [],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10028/",
+      "comment": "",
+      "description": "act of accusing or charging another with a crime",
+      "name": "Accuse",
+      "participants": [
+        {
+          "@id": "resin:Participants/20075/",
+          "roleName": "A0_pag_agent_accuser",
+          "entity": "resin:Entities/00036/"
+        },
+        {
+          "@id": "resin:Participants/20076/",
+          "roleName": "A1_ppt_theme_accused",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20077/",
+          "roleName": "A2_prd_attribute_crime",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q19357312",
+      "wd_label": "accusation",
+      "wd_description": "act of accusing or charging another with a crime",
+      "outlinks": [
+        "resin:Events/10029/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10029/",
+      "comment": "",
+      "description": "detention of a person and taking it into custody, usually because it has been suspected of committing a crime",
+      "name": "Arrest",
+      "participants": [
+        {
+          "@id": "resin:Participants/20078/",
+          "roleName": "A0_pag__police",
+          "entity": "resin:Entities/00031/"
+        },
+        {
+          "@id": "resin:Participants/20079/",
+          "roleName": "A1_ppt__criminal",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20080/",
+          "roleName": "A2_cau__crime",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1403016",
+      "wd_label": "arrest",
+      "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+      "outlinks": [
+        "resin:Events/10030/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10030/",
+      "comment": "",
+      "description": "removal of the freedom of liberty by a state",
+      "name": "Detention",
+      "participants": [
+        {
+          "@id": "resin:Participants/20081/",
+          "roleName": "A0_pag_police",
+          "entity": "resin:Entities/00031/"
+        },
+        {
+          "@id": "resin:Participants/20082/",
+          "roleName": "A1_ppt_entity_detained",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20083/",
+          "roleName": "A2_cau_detained_for_what?",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1071447",
+      "wd_label": "detention",
+      "wd_description": "removal of the freedom of liberty by a state",
+      "outlinks": [
+        "resin:Events/10031/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10031/",
+      "comment": "",
+      "description": "verdict that results when a court of law finds a defendant guilty of a crime",
+      "name": "Convict",
+      "participants": [
+        {
+          "@id": "resin:Participants/20084/",
+          "roleName": "A0_pag__judge",
+          "entity": "resin:Entities/00036/"
+        },
+        {
+          "@id": "resin:Participants/20085/",
+          "roleName": "A1_ppt__person_convicted",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20086/",
+          "roleName": "A2_cau__convicted_of",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q2916183",
+      "wd_label": "conviction",
+      "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+      "outlinks": [
+        "resin:Events/10032/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10044/",
+      "comment": "",
+      "description": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+      "name": "Plea",
+      "participants": [
+        {
+          "@id": "resin:Participants/20087/",
+          "roleName": "A0_pag_the_accused",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20088/",
+          "roleName": "A2_gol_alleged_crime",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q15916459",
+      "wd_label": "plea",
+      "wd_description": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+      "outlinks": [],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10045/",
+      "children": [
+        "resin:Events/10046/",
+        "resin:Events/10047/"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "coming together of parties to a dispute, to present information in a tribunal",
+      "name": "Trial",
+      "participants": [
+        {
+          "@id": "resin:Participants/20089/",
+          "roleName": "A1_ppt__entity_tried",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20090/",
+          "roleName": "A3_cau_tried_for",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "outlinks": [
+        "resin:Events/10046/"
+      ],
+      "isSchema": true,
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10046/",
+      "comment": "",
+      "description": "A legal hearing",
+      "name": "Hearing",
+      "participants": [
+        {
+          "@id": "resin:Participants/20091/",
+          "roleName": "A0_pag__judge",
+          "entity": "resin:Entities/00036/"
+        },
+        {
+          "@id": "resin:Participants/20092/",
+          "roleName": "A1_ppt__person_on_trial",
+          "entity": "resin:Entities/00003/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q545861",
+      "wd_label": "legal_hearing",
+      "wd_description": "A legal hearing",
+      "outlinks": [
+        "resin:Events/10047/"
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10048/",
+      "comment": "",
+      "description": "the legal result of a verdict of not guilty",
+      "name": "Acquit",
+      "participants": [
+        {
+          "@id": "resin:Participants/20093/",
+          "roleName": "A0_cau_remover_of_guilt",
+          "entity": "resin:Entities/00036/"
+        },
+        {
+          "@id": "resin:Participants/20094/",
+          "roleName": "A1_dir_source_unguilty_person",
+          "entity": "resin:Entities/00033/"
+        },
+        {
+          "@id": "resin:Participants/20095/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00035/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q1454723",
+      "wd_label": "acquittal",
+      "wd_description": "the legal result of a verdict of not guilty",
+      "outlinks": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00033/",
+          "name": "suspect",
+          "wd_label": "suspect",
+          "wd_node": "wd:Q224952",
+          "wd_description": "known person suspected of committing a crime"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10050/",
+      "comment": "",
+      "description": "restraint of a person's liberty by judicial or other detention",
+      "name": "Imprisonment",
+      "participants": [
+        {
+          "@id": "resin:Participants/20096/",
+          "roleName": "A0_pag_agent_police",
+          "entity": "resin:Entities/00031/"
+        },
+        {
+          "@id": "resin:Participants/20097/",
+          "roleName": "A1_ppt_patient_entity_detained",
+          "entity": "resin:Entities/00003/"
+        },
+        {
+          "@id": "resin:Participants/20098/",
+          "roleName": "A2_cau_theme_detained_for_what",
+          "entity": "resin:Entities/00008/"
+        },
+        {
+          "@id": "resin:Participants/20099/",
+          "roleName": "AM_loc",
+          "entity": "resin:Entities/00034/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q841236",
+      "wd_label": "imprisonment",
+      "wd_description": "restraint of a person's liberty by judicial or other detention",
+      "outlinks": [
+        "resin:Events/10051/"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00034/",
+          "name": "prison",
+          "wd_label": "prison",
+          "wd_node": "wd:Q40357",
+          "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
+        }
+      ],
+      "modality": []
+    },
+    {
+      "@id": "resin:Events/10051/",
+      "comment": "",
+      "description": "homicide as capital punishment",
+      "name": "Execution",
+      "participants": [
+        {
+          "@id": "resin:Participants/20100/",
+          "roleName": "A1_ppt_patient_corpse",
+          "entity": "resin:Entities/00003/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q3966286",
+      "wd_label": "execution",
+      "wd_description": "homicide as capital punishment",
+      "outlinks": [],
+      "modality": []
+    }
+  ]
+}
