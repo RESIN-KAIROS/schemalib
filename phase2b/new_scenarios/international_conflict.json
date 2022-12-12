@@ -1,0 +1,3180 @@
+{
+    "@id": "resin:Submissions/TA1/schemas_quizlet9",
+    "sdfVersion": "3.0",
+    "version": "resin:disease-outbreak/quizlet9",
+    "events": [
+        {
+            "@id": "Events/10000/",
+            "name": "international conflict",
+            "description": "dispute between nations",
+            "wd_node": "Q11422542",
+            "wd_label": "international conflict",
+            "wd_description": "dispute between nations",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/10001/",
+                "resin:Events/10002/",
+                "resin:Events/10003/"
+            ],
+            "modality": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00000/",
+                    "name": "group of people",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "concrete object",
+                    "wd_label": "concrete_object",
+                    "wd_node": "wd:Q4406616",
+                    "wd_description": "object with a physical referent"
+                },
+                {
+                    "@id": "resin:Entities/00002/",
+                    "name": "war site",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "vehicle",
+                    "wd_label": "vehicle",
+                    "wd_node": "wd:Q42889",
+                    "wd_description": "mobile machine that transports people, animals or cargo"
+                },
+                {
+                    "@id": "resin:Entities/00004/",
+                    "name": "abstract object",
+                    "wd_label": "abstract_object",
+                    "wd_node": "wd:Q7184903",
+                    "wd_description": "object with no physical referents"
+                },
+                {
+                    "@id": "resin:Entities/00005/",
+                    "name": "person",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q5",
+                    "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+                },
+                {
+                    "@id": "resin:Entities/00006/",
+                    "name": "media",
+                    "wd_label": "communication_medium",
+                    "wd_node": "wd:Q340169",
+                    "wd_description": "storage and delivering agent of information or data"
+                },
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "warmonger",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "resin:Entities/00010/",
+                    "name": "government",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "resin:Entities/00013/",
+                    "name": "objection",
+                    "wd_label": "objection",
+                    "wd_node": "wd:Q2090618",
+                    "wd_description": "reason arguing against a premise, argument, or conclusion"
+                },
+                {
+                    "@id": "resin:Entities/00014/",
+                    "name": "invaded country",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q2090618",
+                    "wd_description": "reason arguing against a premise, argument, or conclusion"
+                },
+                {
+                    "@id": "resin:Entities/00015/",
+                    "name": "trigger/topic",
+                    "wd_label": "cause",
+                    "wd_node": "wd:Q2574811",
+                    "wd_description": "entity which forms causality for an event"
+                },
+                {
+                    "@id": "resin:Entities/00016/",
+                    "name": "trigger location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/00017/",
+                    "name": "police",
+                    "wd_label": "police",
+                    "wd_node": "wd:Q35535",
+                    "wd_description": "constituted body of persons empowered by the state to enforce the law"
+                },
+                {
+                    "@id": "resin:Entities/00018/",
+                    "name": "other location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/00019/",
+                    "name": "civilians",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00020/",
+                    "name": "aid agency",
+                    "wd_label": "aid_agency",
+                    "wd_node": "wd:Q336473",
+                    "wd_description": "organization with the task to help humans or animals or to protect sensitive cultural goods"
+                },
+                {
+                    "@id": "resin:Entities/00021/",
+                    "name": "refuge",
+                    "wd_label": "refuge",
+                    "wd_node": "wd:Q108147624",
+                    "wd_description": "location where a person seeks shelter from something"
+                },
+                {
+                    "@id": "resin:Entities/00022/",
+                    "name": "humanitarian aid",
+                    "wd_label": "humanitarian_aid",
+                    "wd_node": "wd:Q826745",
+                    "wd_description": "material or logistical assistance for people in need"
+                },
+                {
+                    "@id": "resin:Entities/00024/",
+                    "name": "some location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/00028/",
+                    "name": "military",
+                    "wd_label": "military",
+                    "wd_node": "wd:Q8473",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "resin:Entities/00029/",
+                    "name": "combatant",
+                    "wd_label": "combatant",
+                    "wd_node": "wd:Q1414937",
+                    "wd_description": "person who takes a direct part in the hostilities of an armed conflict"
+                },
+                {
+                    "@id": "resin:Entities/00030/",
+                    "name": "armed conflict",
+                    "wd_label": "armed_conflict",
+                    "wd_node": "wd:Q350604",
+                    "wd_description": "conflict including violence where at least one of the acting groups is a state"
+                },
+                {
+                    "@id": "resin:Entities/00031/",
+                    "name": "infrastructure",
+                    "wd_label": "infrastructure",
+                    "wd_node": "wd:Q121359",
+                    "wd_description": "fundamental facilities and systems serving a country, city, or other areas"
+                },
+                {
+                    "@id": "resin:Entities/00038/",
+                    "name": "country in war",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "resin:Entities/00040/",
+                    "name": "business",
+                    "wd_label": "business",
+                    "wd_node": "wd:Q4830453",
+                    "wd_description": "organization involved in commercial, industrial, or professional activity"
+                },
+                {
+                    "@id": "resin:Entities/00043/",
+                    "name": "head of state",
+                    "wd_label": "head_of_state",
+                    "wd_node": "wd:Q48352",
+                    "wd_description": "official who holds the highest-ranked executive position in a sovereign state"
+                },
+                {
+                    "@id": "resin:Entities/00044/",
+                    "name": "general audience",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00046/",
+                    "name": "ceasefire",
+                    "wd_label": "ceasefire",
+                    "wd_node": "wd:Q208383",
+                    "wd_description": "temporary stoppage of war"
+                },
+                {
+                    "@id": "resin:Entities/00047/",
+                    "name": "intervening country",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "resin:Entities/00048/",
+                    "name": "weapon",
+                    "wd_label": "weapon",
+                    "wd_node": "wd:Q728",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/00050/",
+                    "name": "war crime",
+                    "wd_label": "war_crime",
+                    "wd_node": "wd:Q135010",
+                    "wd_description": "serious violation of the laws of war"
+                },
+                {
+                    "@id": "resin:Entities/00051/",
+                    "name": "communication device",
+                    "wd_label": "communication_device",
+                    "wd_node": "wd:Q1780509",
+                    "wd_description": "technology for conveying meaning, usually across distance"
+                },
+                {
+                    "@id": "resin:Entities/00055/",
+                    "name": "human-made geographic feature",
+                    "wd_label": "human-made_geographic_feature",
+                    "wd_node": "wd:Q811430",
+                    "wd_description": "artificial construction meant to remain at a fixed geographic location"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10001/",
+            "name": "incident",
+            "description": "event that may cause an interruption or a crisis",
+            "wd_node": "Q12890393",
+            "wd_label": "incident",
+            "wd_description": "event that may cause an interruption or a crisis",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/10002/"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/10004/",
+                "resin:Events/10005/",
+                "resin:Events/10006/",
+                "resin:Events/10007/",
+                "resin:Events/10008/",
+                "resin:Events/10009/",
+                "resin:Events/10010/",
+                "resin:Events/10095/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10002/",
+            "name": "war",
+            "description": "organised and prolonged violent conflict between states",
+            "wd_node": "wd:Q198",
+            "wd_label": "war",
+            "wd_description": "organised and prolonged violent conflict between states",
+            "isSchema": true,
+            "repeatable": true,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/10003/"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000/",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20001/",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20002/",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20003/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10011/",
+                "resin:Events/10012/",
+                "resin:Events/10013/",
+                "resin:Events/10014/",
+                "resin:Events/10015/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10003/",
+            "name": "negotiation",
+            "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "wd_node": "wd:Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "isSchema": true,
+            "repeatable": true,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20004/",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20005/",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20006/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20007/",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": "resin:Entities/00046/"
+                }
+            ],
+            "children": [
+                "resin:Events/10016/",
+                "resin:Events/10017/",
+                "resin:Events/10018/",
+                "resin:Events/10019/",
+                "resin:Events/10020/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10004/",
+            "description": "sharp deterioration in economic situation and perspectives",
+            "name": "economic_crisis",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20008/",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "resin:Participants/20009/",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20010/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q290178",
+            "wd_label": "economic_crisis",
+            "wd_description": "sharp deterioration in economic situation and perspectives",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00009/",
+                    "name": "economy",
+                    "wd_label": "economy",
+                    "wd_node": "wd:Q159810",
+                    "wd_description": "area of the production, distribution and trade, as well as consumption of goods and services by different agents"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10005/",
+            "description": "fundamental change in power or organizational structures that takes place in a relatively short period of time",
+            "name": "revolution",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20011/",
+                    "roleName": "A0_pag_revolting_entity",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20012/",
+                    "roleName": "A1_gol_revolting_against",
+                    "entity": "resin:Entities/00033/"
+                },
+                {
+                    "@id": "resin:Participants/20013/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q10931",
+            "wd_label": "revolution",
+            "wd_description": "fundamental change in power or organizational structures that takes place in a relatively short period of time",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00033/",
+                    "name": "political_territorial_entity",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10006/",
+            "description": "friction, disagreement, or discord within a group or between different groups",
+            "name": "conflict",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20014/",
+                    "roleName": "A0_pag_agentive_clasher",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20015/",
+                    "roleName": "A1_com_entity_clashed_with",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20016/",
+                    "roleName": "A2_ppt_entity_clashed_over",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20017/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "repeatable": true,
+            "wd_node": "wd:Q180684",
+            "wd_label": "conflict",
+            "wd_description": "friction, disagreement, or discord within a group or between different groups",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10007/",
+            "description": "murder of a prominent person, often a political leader or ruler",
+            "name": "assassination",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20018/",
+                    "roleName": "A0_pag_assassin",
+                    "entity": "resin:Entities/00034/"
+                },
+                {
+                    "@id": "resin:Participants/20019/",
+                    "roleName": "A1_ppt_person_assassinated",
+                    "entity": "resin:Entities/00035/"
+                },
+                {
+                    "@id": "resin:Participants/20020/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q3882219",
+            "wd_label": "assassination",
+            "wd_description": "murder of a prominent person, often a political leader or ruler",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00034/",
+                    "name": "person",
+                    "wd_label": "human",
+                    "wd_node": "wd:Q5",
+                    "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+                },
+                {
+                    "@id": "resin:Entities/00035/",
+                    "name": "person",
+                    "wd_label": "human",
+                    "wd_node": "wd:Q5",
+                    "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10008/",
+            "description": "forms of unrest arising from a mass act of civil disobedience in which the participants become hostile toward authority, and authorities incur difficulties in maintaining public safety and order, over the disorderly crowd",
+            "name": "civil_disorder",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20021/",
+                    "roleName": "A0_pag_protester",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20022/",
+                    "roleName": "A1_ppt_objectionable_thing",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20023/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q686984",
+            "wd_label": "civil_disorder",
+            "wd_description": "forms of unrest arising from a mass act of civil disobedience in which the participants become hostile toward authority, and authorities incur difficulties in maintaining public safety and order, over the disorderly crowd",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10009/",
+            "description": "mental state representing commitment to perform an action",
+            "name": "intention",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20024/",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/00036/"
+                },
+                {
+                    "@id": "resin:Participants/20025/",
+                    "roleName": "A1_ppt_intent",
+                    "entity": "resin:Entities/00011/"
+                },
+                {
+                    "@id": "resin:Participants/20026/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q706622",
+            "wd_label": "intention",
+            "wd_description": "mental state representing commitment to perform an action",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00011/",
+                    "name": "alliance",
+                    "wd_label": "alliance",
+                    "wd_node": "wd:Q878249",
+                    "wd_description": "coalition made between two or more parties to secure common interests"
+                },
+                {
+                    "@id": "resin:Entities/00036/",
+                    "name": "political_territorial_entity",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10010/",
+            "children": [
+                "resin:Events/10021/",
+                "resin:Events/10022/",
+                "resin:Events/10023/"
+            ],
+            "children_gate": "or",
+            "description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "name": "remote_communication",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20027/",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20028/",
+                    "roleName": "A1_ppt_topic_message",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20029/",
+                    "roleName": "A2_com_co_agent_other_communicator",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "repeatable": true,
+            "wd_node": "wd:Q1472062",
+            "wd_label": "remote_communication",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10021/",
+            "description": "one person's statement that they intend to harm another, or another's property",
+            "name": "threat",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20030/",
+                    "roleName": "A0_pag_agent_entity_making_a_threat",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20031/",
+                    "roleName": "A1_ppt__threat",
+                    "entity": "resin:Entities/00007/"
+                },
+                {
+                    "@id": "resin:Participants/20032/",
+                    "roleName": "A2_gol__entity_threatened",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20033/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q707125",
+            "wd_label": "threat",
+            "wd_description": "one person's statement that they intend to harm another, or another's property",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00007/",
+                    "name": "information",
+                    "wd_label": "information",
+                    "wd_node": "wd:Q11028",
+                    "wd_description": "that which informs; the answer to a question of some kind; that from which data and knowledge can be derived"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10022/",
+            "description": "printed, spoken, or published statement or notice of an event or other news",
+            "name": "announcement",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20034/",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20035/",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20036/",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20037/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10023/",
+            "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "name": "negotiation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20038/",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20039/",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20040/",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20041/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10011/",
+            "children": [
+                "resin:Events/10024/",
+                "resin:Events/10025/",
+                "resin:Events/10026/",
+                "resin:Events/10027/",
+                "resin:Events/10028/",
+                "resin:Events/10029/",
+                "resin:Events/10030/",
+                "resin:Events/10031/"
+            ],
+            "children_gate": "or",
+            "description": "",
+            "name": "government_action",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10012/",
+            "children": [
+                "resin:Events/10032/",
+                "resin:Events/10034/",
+                "resin:Events/10035/",
+                "resin:Events/10036/",
+                "resin:Events/10037/",
+                "resin:Events/10038/",
+                "resin:Events/10033/",
+                "resin:Events/10039/",
+                "resin:Events/10040/"
+            ],
+            "children_gate": "or",
+            "description": "part of a war which is well defined in duration, area and force commitment",
+            "name": "battle",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20042/",
+                    "roleName": "A0_pag_agent_combatant",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20043/",
+                    "roleName": "A1_com_co_agent_fight_or_other_combatant",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20044/",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20045/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00000/"
+                }
+            ],
+            "repeatable": true,
+            "wd_node": "wd:Q178561",
+            "wd_label": "battle",
+            "wd_description": "part of a war which is well defined in duration, area and force commitment",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10013/",
+            "children": [
+                "resin:Events/10041/",
+                "resin:Events/10042/",
+                "resin:Events/10043/",
+                "resin:Events/10044/",
+                "resin:Events/10045/",
+                "resin:Events/10047/",
+                "resin:Events/10048/",
+                "resin:Events/10046/"
+            ],
+            "children_gate": "or",
+            "description": "",
+            "name": "civilian_reaction",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10014/",
+            "children": [
+                "resin:Events/10049/",
+                "resin:Events/10050/",
+                "resin:Events/10051/",
+                "resin:Events/10052/",
+                "resin:Events/10053/",
+                "resin:Events/10054/",
+                "resin:Events/10055/"
+            ],
+            "children_gate": "or",
+            "description": "",
+            "name": "economic_impact",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10015/",
+            "children": [
+                "resin:Events/10056/",
+                "resin:Events/10059/",
+                "resin:Events/10057/",
+                "resin:Events/10060/",
+                "resin:Events/10058/",
+                "resin:Events/10061/",
+                "resin:Events/10062/",
+                "resin:Events/10063/",
+                "resin:Events/10064/",
+                "resin:Events/10065/",
+                "resin:Events/10066/",
+                "resin:Events/10067/",
+                "resin:Events/10068/",
+                "resin:Events/10069/",
+                "resin:Events/10070/",
+                "resin:Events/10071/",
+                "resin:Events/10072/"
+            ],
+            "children_gate": "or",
+            "description": "",
+            "name": "international_response",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10016/",
+            "description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "name": "remote_communication",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20046/",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20047/",
+                    "roleName": "A2_com_co_agent_other_communicator",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20048/",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/00051/"
+                },
+                {
+                    "@id": "resin:Participants/20049/",
+                    "roleName": "A1_ppt_topic_message",
+                    "entity": "resin:Entities/00046/"
+                },
+                {
+                    "@id": "resin:Participants/20050/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q1472062",
+            "wd_label": "remote_communication",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "outlinks": [
+                "resin:Events/10017/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10017/",
+            "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "name": "negotiation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20051/",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20052/",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20053/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20054/",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": "resin:Entities/00046/"
+                }
+            ],
+            "wd_node": "wd:Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "outlinks": [
+                "resin:Events/10018/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10018/",
+            "name": "negotiation_outcome",
+            "description": "outcome of the negotiation",
+            "wd_label": "result",
+            "wd_descripton": "final consequence or product of a sequence of actions or events",
+            "wd_node": "wd:Q2995644",
+            "children": [
+                "resin:Events/10073/",
+                "resin:Events/10074/"
+            ],
+            "children_gate": "xor",
+            "outlinks": [
+                "resin:Events/10019/",
+                "resin:Events/10020/"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10073/",
+            "children": [
+                "resin:Events/10075/",
+                "resin:Events/10076/",
+                "resin:Events/10077/",
+                "resin:Events/10078/"
+            ],
+            "children_gate": "or",
+            "description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "name": "agreement",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20055/",
+                    "roleName": "A0_pag_agent_agreer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20056/",
+                    "roleName": "A2_com_co_agent_other_entity_agreeing",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20057/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q321839",
+            "wd_label": "agreement",
+            "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10075/",
+            "description": "signing of a treaty, decree, law, etc.",
+            "name": "signature",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20058/",
+                    "roleName": "A0_pag_agent_signer_agreer",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20059/",
+                    "roleName": "A2_com__co-signer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20060/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q50384157",
+            "wd_label": "signature",
+            "wd_description": "signing of a treaty, decree, law, etc.",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10076/",
+            "description": "printed, spoken, or published statement or notice of an event or other news",
+            "name": "announcement",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20061/",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20062/",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00046/"
+                },
+                {
+                    "@id": "resin:Participants/20063/",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/00044/"
+                },
+                {
+                    "@id": "resin:Participants/20064/",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/00051/"
+                },
+                {
+                    "@id": "resin:Participants/20065/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10077/",
+            "description": "military operation",
+            "name": "withdrawal",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20066/",
+                    "roleName": "A0_pag_entity_in_motion",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20067/",
+                    "roleName": "A1_dir_location_vacated",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20068/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q1760704",
+            "wd_label": "withdrawal",
+            "wd_description": "military operation",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10078/",
+            "description": "temporary stoppage of war",
+            "name": "ceasefire",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20069/",
+                    "roleName": "A0_pag__implementer_of_cease-fire",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20070/",
+                    "roleName": "A1_ppt__cease-fire_with_or_between_who",
+                    "entity": "resin:Entities/00038/"
+                },
+                {
+                    "@id": "resin:Participants/20071/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q208383",
+            "wd_label": "ceasefire",
+            "wd_description": "temporary stoppage of war",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10074/",
+            "description": "act of declining to accept an item for approval, consideration, marking etc.",
+            "name": "rejection",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20072/",
+                    "roleName": "A0_pag_agent_entity_refusing",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20073/",
+                    "roleName": "A2_gol_theme_anti_benefactive",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20074/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q98398200",
+            "wd_label": "rejection",
+            "wd_description": "act of declining to accept an item for approval, consideration, marking etc.",
+            "outlinks": [
+                "resin:Events/10012/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10019/",
+            "description": "in law, any of various forms of termination, as of a company, marriage, partnership, or adoption.",
+            "name": "dissolution",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20075/",
+                    "roleName": "A0_pag_causer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20076/",
+                    "roleName": "A1_ppt_thing_dissolving",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q5282797",
+            "wd_label": "dissolution",
+            "wd_description": "in law, any of various forms of termination, as of a company, marriage, partnership, or adoption",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10020/",
+            "description": "termination of employment decided unilaterally by employer",
+            "name": "dismissal",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20077/",
+                    "roleName": "A1_ppt_theme_ex_employee",
+                    "entity": "resin:Entities/00043/"
+                },
+                {
+                    "@id": "resin:Participants/20078/",
+                    "roleName": "A2_dir_source_job",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20079/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q17052147",
+            "wd_label": "dismissal",
+            "wd_description": "termination of employment decided unilaterally by employer",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10056/",
+            "description": "Government leader gives speech",
+            "name": "speech",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20080/",
+                    "roleName": "A0_pag_lecturer",
+                    "entity": "resin:Entities/00043/"
+                },
+                {
+                    "@id": "resin:Participants/20081/",
+                    "roleName": "A1_gol",
+                    "entity": "resin:Entities/00044/"
+                },
+                {
+                    "@id": "resin:Participants/20082/",
+                    "roleName": "A2_ppt",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20083/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q861911",
+            "wd_label": "speech",
+            "wd_description": "address delivered to an audience",
+            "outlinks": [
+                "resin:Events/10057/",
+                "resin:Events/10058/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10059/",
+            "description": "condemn at social media",
+            "name": "censure",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20084/",
+                    "roleName": "A0_pag_condemner",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20085/",
+                    "roleName": "A1_ppt_entity_censured",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20086/",
+                    "roleName": "A2_prd_for_what",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20087/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00006/"
+                }
+            ],
+            "wd_node": "wd:Q5058947",
+            "wd_label": "censure",
+            "wd_description": "expression of strong disapproval or harsh criticism",
+            "outlinks": [
+                "resin:Events/10057/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10057/",
+            "description": "Media coverage",
+            "name": "journalism",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20088/",
+                    "roleName": "A0_pag_media",
+                    "entity": "resin:Entities/00006/"
+                },
+                {
+                    "@id": "resin:Participants/20089/",
+                    "roleName": "A1_ppt_event",
+                    "entity": "resin:Entities/00030/"
+                }
+            ],
+            "wd_node": "wd:Q11030",
+            "wd_label": "journalism",
+            "wd_description": "investigation and reporting of events, issues and trends to a broad audience",
+            "outlinks": [
+                "resin:Events/10056/",
+                "resin:Events/10059/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10060/",
+            "description": "Demonstration against war",
+            "name": "demonstration",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20090/",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20091/",
+                    "roleName": "A1_ppt_theme_objectionable_thing",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20092/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "outlinks": [
+                "resin:Events/10057/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10058/",
+            "description": "Call for ceasefire",
+            "name": "advocacy",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20093/",
+                    "roleName": "A0_pag_advocate",
+                    "entity": "resin:Entities/00045/"
+                },
+                {
+                    "@id": "resin:Participants/20094/",
+                    "roleName": "A1_ppt_suggestion",
+                    "entity": "resin:Entities/00046/"
+                },
+                {
+                    "@id": "resin:Participants/20095/",
+                    "roleName": "A2_gol_recipient_of_advice",
+                    "entity": "resin:Entities/00008/"
+                }
+            ],
+            "wd_node": "wd:Q2509280",
+            "wd_label": "advocacy",
+            "wd_description": "political process by an individual or group which aims to influence public-policy and resource allocation decisions",
+            "outlinks": [
+                "resin:Events/10003/",
+                "resin:Events/10057/"
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00045/",
+                    "name": "peace advocator",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10061/",
+            "description": "economic benefit paid to persons who cannot support themselves",
+            "name": "economic_support",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20096/",
+                    "roleName": "A0_pag_helper",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20097/",
+                    "roleName": "A1_ppt_person",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20098/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00000/"
+                }
+            ],
+            "wd_node": "wd:Q11497309",
+            "wd_label": "economic_support",
+            "wd_description": "economic benefit paid to persons who cannot support themselves",
+            "outlinks": [
+                "resin:Events/10057/",
+                "resin:Events/10062/",
+                "resin:Events/10063/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10062/",
+            "description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+            "name": "donation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20099/",
+                    "roleName": "A0_pag_giver",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20100/",
+                    "roleName": "A1_ppt_thing_given",
+                    "entity": "resin:Entities/00022/"
+                },
+                {
+                    "@id": "resin:Participants/20101/",
+                    "roleName": "A2_gol_entity_given_to",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q1124860",
+            "wd_label": "donation",
+            "wd_description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10063/",
+            "description": "economic activity aimed at covering the consumption needs of an economic unit",
+            "name": "supply",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20102/",
+                    "roleName": "A0_pag_provider",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20103/",
+                    "roleName": "A1_ppt_thing_provided",
+                    "entity": "resin:Entities/00022/"
+                },
+                {
+                    "@id": "resin:Participants/20104/",
+                    "roleName": "A2_gol_entity_provided_for",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q5409930",
+            "wd_label": "supply",
+            "wd_description": "economic activity aimed at covering the consumption needs of an economic unit",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10064/",
+            "description": "Refugee migration",
+            "name": "human_migration",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20105/",
+                    "roleName": "A0_pag_population",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20106/",
+                    "roleName": "A1_ppt_destination",
+                    "entity": "resin:Entities/00021/"
+                },
+                {
+                    "@id": "resin:Participants/20107/",
+                    "roleName": "A2_dir_source",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q177626",
+            "wd_label": "human_migration",
+            "wd_description": "movement of people for resettlement",
+            "outlinks": [
+                "resin:Events/10057/",
+                "resin:Events/10065/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10065/",
+            "description": "Refugee housing",
+            "name": "housing",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20108/",
+                    "roleName": "A0_pag_provider_of_housing",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20109/",
+                    "roleName": "A1_ppt_entity_housed",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20110/",
+                    "roleName": "A2_gol_location",
+                    "entity": "resin:Entities/00021/"
+                }
+            ],
+            "wd_node": "wd:Q1247867",
+            "wd_label": "housing",
+            "wd_description": "construction and assignment of houses or buildings for sheltering people",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10066/",
+            "description": "use of force by a State over foreign territory",
+            "name": "military_intervention",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20111/",
+                    "roleName": "A0_pag_nosy_individual",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20112/",
+                    "roleName": "A1_ppt_intervene_in",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20113/",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20114/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00000/"
+                }
+            ],
+            "wd_node": "wd:Q5919191",
+            "wd_label": "military_intervention",
+            "wd_description": "None",
+            "outlinks": [
+                "resin:Events/10057/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10067/",
+            "description": "Purchase weapons",
+            "name": "arms_trade",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20115/",
+                    "roleName": "A0_pag_agent_purchaser",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20116/",
+                    "roleName": "A1_ppt_theme_thing_purchased",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20117/",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20118/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q2538907",
+            "wd_label": "arms_trade",
+            "wd_description": "trade involving weapons being bought and sold",
+            "outlinks": [
+                "resin:Events/10068/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10068/",
+            "description": "Transport weapons for support",
+            "name": "transport",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20119/",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20120/",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20121/",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20122/",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10069/",
+            "description": "International economic sanctions",
+            "name": "economic_sanctions",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20123/",
+                    "roleName": "A0_pag_applier_of_penalty",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20124/",
+                    "roleName": "A1_ppt_entity_penalized",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20125/",
+                    "roleName": "A2_prd_thing_penalized_for",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20126/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00000/"
+                }
+            ],
+            "wd_node": "wd:Q1248258",
+            "wd_label": "economic_sanctions",
+            "wd_description": "financial penalties applied by nations to persons, nations or companies to affect political change",
+            "outlinks": [
+                "resin:Events/10057/",
+                "resin:Events/10070/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10070/",
+            "description": "domestic and international financial crisis",
+            "name": "financial_crisis",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20127/",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "resin:Entities/00000/"
+                }
+            ],
+            "wd_node": "wd:Q114380",
+            "wd_label": "financial_crisis",
+            "wd_description": "situation in which financial assets suddenly lose a large part of their nominal value",
+            "outlinks": [
+                "resin:Events/10057/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10071/",
+            "description": "act of voluntarily abstaining from using, buying, or dealing with a person, organization, or country",
+            "name": "boycott",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20128/",
+                    "roleName": "A0_pag_boycotter",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20129/",
+                    "roleName": "A1_ppt_unpleasant_thing",
+                    "entity": "resin:Entities/00030/"
+                }
+            ],
+            "wd_node": "wd:Q179366",
+            "wd_label": "boycott",
+            "wd_description": "act of voluntarily abstaining from using, buying, or dealing with a person, organization, or country",
+            "outlinks": [
+                "resin:Events/10057/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10072/",
+            "description": "File a case for war crime",
+            "name": "filing",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20130/",
+                    "roleName": "A0_pag_filer",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20131/",
+                    "roleName": "A1_ppt_file",
+                    "entity": "resin:Entities/00049/"
+                },
+                {
+                    "@id": "resin:Participants/20132/",
+                    "roleName": "A2_gol_filed-with",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20133/",
+                    "roleName": "A3_gol_filed_against",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20134/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q17146064",
+            "wd_label": "filing",
+            "wd_description": "legal filing",
+            "outlinks": [
+                "resin:Events/10057/"
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00049/",
+                    "name": "lawsuit",
+                    "wd_label": "lawsuit",
+                    "wd_node": "wd:Q697327",
+                    "wd_description": "civil action brought in a court of law"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10049/",
+            "description": "Resource scarcity",
+            "name": "scarcity",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20135/",
+                    "roleName": "A2_gol_recipient_",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20136/",
+                    "roleName": "A1_ppt_theme_",
+                    "entity": "resin:Entities/00037/"
+                },
+                {
+                    "@id": "resin:Participants/20137/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q815758",
+            "wd_label": "scarcity",
+            "wd_description": "fundamental problem of economics where there are limited resources to fulfill society's unlimited wants",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00037/",
+                    "name": "goods",
+                    "wd_label": "good",
+                    "wd_node": "wd:Q28877",
+                    "wd_description": "tangible and intangible thing, except labor tied services, that satisfies human wants and provides utility"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10050/",
+            "description": "business cycle contraction; general slowdown in economic activity",
+            "name": "recession",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20138/",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q176494",
+            "wd_label": "recession",
+            "wd_description": "business cycle contraction; general slowdown in economic activity",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10051/",
+            "description": "abrupt instability in the banking industry",
+            "name": "banking_crisis",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20139/",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": "resin:Entities/00039/"
+                },
+                {
+                    "@id": "resin:Participants/20140/",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q806729",
+            "wd_label": "banking_crisis",
+            "wd_description": "abrupt instability in the banking industry",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00039/",
+                    "name": "banking industry",
+                    "wd_label": "banking_industry",
+                    "wd_node": "wd:Q806718",
+                    "wd_description": "industry for financial institutions such as banks and credit unions"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10052/",
+            "description": "a company ceasing operations following its inability to make a profit or to bring in enough revenue to cover its expenses",
+            "name": "business_failure",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20141/",
+                    "roleName": "A1_pag_agent_thing_failing",
+                    "entity": "resin:Entities/00038/"
+                },
+                {
+                    "@id": "resin:Participants/20142/",
+                    "roleName": "A2_ppt_task",
+                    "entity": "resin:Entities/00040/"
+                }
+            ],
+            "wd_node": "wd:Q5001874",
+            "wd_label": "business_failure",
+            "wd_description": "a company ceasing operations following its inability to make a profit or to bring in enough revenue to cover its expenses",
+            "outlinks": [
+                "resin:Events/10053/",
+                "resin:Events/10054/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10053/",
+            "description": "legal process through which people or other entities who cannot repay debts to creditors may seek relief from some or all of their debts",
+            "name": "bankruptcy",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20143/",
+                    "roleName": "A0_pag_causer",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20144/",
+                    "roleName": "A1_ppt_person_bankrupt",
+                    "entity": "resin:Entities/00040/"
+                },
+                {
+                    "@id": "resin:Participants/20145/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q152074",
+            "wd_label": "bankruptcy",
+            "wd_description": "legal process through which people or other entities who cannot repay debts to creditors may seek relief from some or all of their debts",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10054/",
+            "description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "name": "temporarily_closed",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20146/",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": "resin:Entities/00040/"
+                },
+                {
+                    "@id": "resin:Participants/20147/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q55653430",
+            "wd_label": "temporarily_closed",
+            "wd_description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10055/",
+            "description": "sudden dramatic decline of stock prices across a significant cross-section of a stock market",
+            "name": "stock market crash",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20148/",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": "resin:Entities/00041/"
+                },
+                {
+                    "@id": "resin:Participants/20149/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00042/"
+                }
+            ],
+            "wd_node": "wd:Q1020018",
+            "wd_label": "stock_market_crash",
+            "wd_description": "sudden dramatic decline of stock prices acros a significant cross-section of a stock market",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00041/",
+                    "name": "stock market",
+                    "wd_label": "stock_market",
+                    "wd_node": "wd:Q475000",
+                    "wd_description": "public entity for the trading of company stocks and shares"
+                },
+                {
+                    "@id": "resin:Entities/00042/",
+                    "name": "world",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10041/",
+            "description": "collective action by people in favor of a cause",
+            "name": "demonstration",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20150/",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20151/",
+                    "roleName": "A1_ppt_theme_objectionable_thing",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20152/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "outlinks": [
+                "resin:Events/10042/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10042/",
+            "description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "name": "arrest",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20153/",
+                    "roleName": "A0_pag__police",
+                    "entity": "resin:Entities/00016/"
+                },
+                {
+                    "@id": "resin:Participants/20154/",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20155/",
+                    "roleName": "A2_cau__crime",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20156/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "wd_node": "wd:Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10043/",
+            "children": [
+                "resin:Events/10079/",
+                "resin:Events/10080/",
+                "resin:Events/10081/",
+                "resin:Events/10082/"
+            ],
+            "children_gate": "or",
+            "description": "human-directed movement of things or people between locations",
+            "name": "transport",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20157/",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20158/",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20159/",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20160/",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/00018/"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10079/",
+            "description": "Seek shelter for bombing",
+            "name": "housing",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20161/",
+                    "roleName": "A0_pag_provider_of_housing",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20162/",
+                    "roleName": "A1_ppt_entity_housed",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20163/",
+                    "roleName": "A2_gol_location",
+                    "entity": "resin:Entities/00021/"
+                }
+            ],
+            "wd_node": "wd:Q1247867",
+            "wd_label": "housing",
+            "wd_description": "construction and assignment of houses or buildings for sheltering people",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10080/",
+            "description": "Evacuate Refugee",
+            "name": "medical_evacuation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20164/",
+                    "roleName": "A0_pag_causer_of_emptiness",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20165/",
+                    "roleName": "A1_dir_enclosure",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20166/",
+                    "roleName": "A2_ppt_people",
+                    "entity": "resin:Entities/00019/"
+                }
+            ],
+            "wd_node": "wd:Q655177",
+            "wd_label": "medical_evacuation",
+            "wd_description": "emergency evacuation for medical reasons",
+            "outlinks": [
+                "resin:Events/10081/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10081/",
+            "description": "seek asylum",
+            "name": "emergency_evacuation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20167/",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20168/",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20169/",
+                    "roleName": "A2_dir_initial_location_source",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20170/",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/00018/"
+                }
+            ],
+            "wd_node": "wd:Q606332",
+            "wd_label": "emergency_evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10082/",
+            "description": "flee",
+            "name": "escape",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20171/",
+                    "roleName": "A0_ppt_entity_escaping",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20172/",
+                    "roleName": "A1_loc_place_or_thing_escaped",
+                    "entity": "resin:Entities/00002/"
+                }
+            ],
+            "wd_node": "wd:Q50388354",
+            "wd_label": "escape",
+            "wd_description": "break free from confinement or control",
+            "outlinks": [
+                "resin:Events/10081/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10044/",
+            "description": "allocation of resources among possible uses",
+            "name": "resource_allocation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20173/",
+                    "roleName": "A0_pag_agent_granter",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20174/",
+                    "roleName": "A1_ppt_theme_thing_granted",
+                    "entity": "resin:Entities/00022/"
+                },
+                {
+                    "@id": "resin:Participants/20175/",
+                    "roleName": "A2_gol_goal_benefactive",
+                    "entity": "resin:Entities/00019/"
+                }
+            ],
+            "wd_node": "wd:Q287260",
+            "wd_label": "resource_allocation",
+            "wd_description": "allocation of resources among possible uses",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10045/",
+            "description": "process of gathering voluntary contributions of money or other resources",
+            "name": "fundraising",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20176/",
+                    "roleName": "A0_pag_raiser_of_funds",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20177/",
+                    "roleName": "A1_ppt_amount_raised",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20178/",
+                    "roleName": "A2_gol_beneficiary",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20179/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q1161355",
+            "wd_label": "fundraising",
+            "wd_description": "process of gathering voluntary contributions of money or other resources",
+            "outlinks": [
+                "resin:Events/10044/",
+                "resin:Events/10046/"
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00023/",
+                    "name": "economic value",
+                    "wd_label": "economic_value",
+                    "wd_node": "wd:Q868257",
+                    "wd_description": "measure of the benefit provided by a good or service to an economic agent"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10047/",
+            "description": "first and immediate assistance given to any person suffering from either a minor or serious illness or injury",
+            "name": "first_aid",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20180/",
+                    "roleName": "A0_pag_doctor",
+                    "entity": "resin:Entities/00025/"
+                },
+                {
+                    "@id": "resin:Participants/20181/",
+                    "roleName": "A1_ppt_patient",
+                    "entity": "resin:Entities/00012/"
+                },
+                {
+                    "@id": "resin:Participants/20182/",
+                    "roleName": "A2_ppt_illness_or_injury",
+                    "entity": "resin:Entities/00026/"
+                },
+                {
+                    "@id": "resin:Participants/20183/",
+                    "roleName": "A3_mnr_instrument",
+                    "entity": "resin:Entities/00027/"
+                },
+                {
+                    "@id": "resin:Participants/20184/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/"
+                }
+            ],
+            "wd_node": "wd:Q133981",
+            "wd_label": "first_aid",
+            "wd_description": "first and immediate assistance given to any person suffering from either a minor or serious illness or injury",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00012/",
+                    "name": "victim",
+                    "wd_label": "victim",
+                    "wd_node": "wd:Q1851760",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                },
+                {
+                    "@id": "resin:Entities/00025/",
+                    "name": "physician",
+                    "wd_label": "physician",
+                    "wd_node": "wd:Q39631",
+                    "wd_description": "professional who practices medicine"
+                },
+                {
+                    "@id": "resin:Entities/00026/",
+                    "name": "health problem",
+                    "wd_label": "health_problem",
+                    "wd_node": "wd:Q2057971",
+                    "wd_description": "condition negatively affecting the health of an organism"
+                },
+                {
+                    "@id": "resin:Entities/00027/",
+                    "name": "medical equipment",
+                    "wd_label": "tool",
+                    "wd_node": "wd:Q39546",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10048/",
+            "description": "Enlist for the army",
+            "name": "conscription",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20185/",
+                    "roleName": "A0_pag_entity_doing_the_choosing",
+                    "entity": "resin:Entities/00028/"
+                },
+                {
+                    "@id": "resin:Participants/20186/",
+                    "roleName": "A1_ppt_entity_chosen",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20187/",
+                    "roleName": "A2_prd_job_or_service_to_be_performed",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20188/",
+                    "roleName": "A3_dir_source",
+                    "entity": "resin:Entities/00018/"
+                },
+                {
+                    "@id": "resin:Participants/20189/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/"
+                }
+            ],
+            "wd_node": "wd:Q580750",
+            "wd_label": "conscription",
+            "wd_description": "compulsory enlistment into national or military service",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10046/",
+            "description": "Re-build infrastructure",
+            "name": "reconstruction",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20190/",
+                    "roleName": "A0_pag_agent_builder",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20191/",
+                    "roleName": "A1_prd_result_construction",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "resin:Participants/20192/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00032/"
+                }
+            ],
+            "wd_node": "wd:Q2478058",
+            "wd_label": "reconstruction",
+            "wd_description": "rebuilding or reassembling of a destroyed infrastructure",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00032/",
+                    "name": "war ruins",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10024/",
+            "description": "accusation or complaint against a person or group",
+            "name": "accusation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20193/",
+                    "roleName": "A0_pag_agent_speaker",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20194/",
+                    "roleName": "A1_ppt_theme_subject",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20195/",
+                    "roleName": "A2_prd_attribute_grounds",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20196/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q1189956",
+            "wd_label": "denunciation",
+            "wd_description": "accusation or complaint against a person or group",
+            "outlinks": [
+                "resin:Events/10025/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10025/",
+            "description": "announcement of war",
+            "name": "announcement",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20197/",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20198/",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20199/",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/00044/"
+                },
+                {
+                    "@id": "resin:Participants/20200/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10026/",
+            "description": "practice of suppressing speech or other public communication",
+            "name": "censorship",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20201/",
+                    "roleName": "A0_pag__censor",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20202/",
+                    "roleName": "A1_ppt__entity_censored",
+                    "entity": "resin:Entities/00006/"
+                },
+                {
+                    "@id": "resin:Participants/20203/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q543",
+            "wd_label": "censorship",
+            "wd_description": "practice of suppressing speech or other public communication",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10027/",
+            "description": "any crime that involves a computer and a network",
+            "name": "Cyber attack",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20204/",
+                    "roleName": "A0_pag__criminal",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20205/",
+                    "roleName": "A2_gol__antibenefactive",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20206/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q29137",
+            "wd_label": "cybercrime",
+            "wd_description": "any crime that involves a computer and a network",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10028/",
+            "description": "form of communication intended to sway the audience through presenting only one side of the argument",
+            "name": "Propaganda",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20207/",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20208/",
+                    "roleName": "A2_com_co_agent_other_communicator",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20209/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q7281",
+            "wd_label": "propaganda",
+            "wd_description": "form of communication intended to sway the audience through presenting only one side of the argument",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10029/",
+            "description": "one person's statement that they intend to harm another, or another's property",
+            "name": "Nuclear_threat",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20210/",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20211/",
+                    "roleName": "A1_ppt_threat",
+                    "entity": "resin:Entities/00052/"
+                },
+                {
+                    "@id": "resin:Participants/20212/",
+                    "roleName": "A2_gol_entity_threatened",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20213/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q707125",
+            "wd_label": "threat",
+            "wd_description": "one person's statement that they intend to harm another, or another's property",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00052/",
+                    "name": "nuclear hazard",
+                    "wd_label": "nuclear_hazard",
+                    "wd_node": "wd:Q87412590",
+                    "wd_description": "health and security hazards related to nuclear materials"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10030/",
+            "children": [
+                "resin:Events/10083/",
+                "resin:Events/10084/",
+                "resin:Events/10085/",
+                "resin:Events/10086/",
+                "resin:Events/10087/"
+            ],
+            "children_gate": "or",
+            "description": "assembling and readying troops and supplies for war",
+            "name": "Military Mobilization",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20214/",
+                    "roleName": "A0_pag_agent_mobilizer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20215/",
+                    "roleName": "A1_ppt_patient_thing_mobilized",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20216/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q242412",
+            "wd_label": "mobilization",
+            "wd_description": "assembling and readying troops and supplies for war",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10083/",
+            "description": "compulsory enlistment into national or military service",
+            "name": "conscription",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20217/",
+                    "roleName": "A0_pag_agent_signer",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20218/",
+                    "roleName": "A1_ppt_theme_impelled_agent",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20219/",
+                    "roleName": "A2_prd_attribute_impelled_action",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20220/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q580750",
+            "wd_label": "conscription",
+            "wd_description": "compulsory enlistment into national or military service",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10084/",
+            "description": "Assemble army",
+            "name": "convocation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20221/",
+                    "roleName": "A0_pag_agent_entity_causing_some_grouping",
+                    "entity": "resin:Entities/00043/"
+                },
+                {
+                    "@id": "resin:Participants/20222/",
+                    "roleName": "A1_ppt_theme_thing_being_included_in_some_group",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20223/",
+                    "roleName": "A2_prd__group",
+                    "entity": "resin:Entities/00028/"
+                },
+                {
+                    "@id": "resin:Participants/20224/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00024/"
+                }
+            ],
+            "wd_node": "wd:Q3765035",
+            "wd_label": "convocation",
+            "wd_description": "a group of people formally assembled for a special purpose, mostly ecclesiastical or academic",
+            "outlinks": [
+                "resin:Events/10085/",
+                "resin:Events/10086/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10085/",
+            "description": "Transport troops",
+            "name": "transport",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20225/",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20226/",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20227/",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20228/",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": [
+                "resin:Events/10087/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10086/",
+            "description": "Deploy troops",
+            "name": "military_deployment",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20229/",
+                    "roleName": "A0_pag_deployer",
+                    "entity": "resin:Entities/00028/"
+                },
+                {
+                    "@id": "resin:Participants/20230/",
+                    "roleName": "A1_ppt_deployed",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20231/",
+                    "roleName": "A2_loc_deployed_where",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q2423459",
+            "wd_label": "military_deployment",
+            "wd_description": "movement of armed forces and their logistical support infrastructure around the world",
+            "outlinks": [
+                "resin:Events/10087/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10087/",
+            "description": "Invasion / enter terrority",
+            "name": "invasion",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20232/",
+                    "roleName": "A0_pag_invader",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20233/",
+                    "roleName": "A1_ppt_place_invaded",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q467011",
+            "wd_label": "invasion",
+            "wd_description": "type of military offensive where armed forces of one polity forcibly enter another",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10031/",
+            "description": "Facility shutdown",
+            "name": "temporarily_closed",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20234/",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "resin:Participants/20235/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q55653430",
+            "wd_label": "temporarily_closed",
+            "wd_description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10032/",
+            "description": "warfare and military operations conducted by, amongst, and against aircraft and other aerial systems",
+            "name": "aerial warfare",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20236/",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20237/",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20238/",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20239/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q471145",
+            "wd_label": "aerial_warfare",
+            "wd_description": "warfare and military operations conducted by, amongst, and against aircraft and other aerial systems",
+            "outlinks": [
+                "resin:Events/10033/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10034/",
+            "description": "military mission utilizing aircraft to combat enemy forces on land or at sea",
+            "name": "air-to-surface warfare",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20240/",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20241/",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20242/",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20243/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00038/"
+                }
+            ],
+            "wd_node": "wd:Q76370269",
+            "wd_label": "air-to-surface_warfare",
+            "wd_description": "military mission utilizing aircraft to combat enemy forces on land or at sea",
+            "outlinks": [
+                "resin:Events/10033/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10035/",
+            "description": "shooting down of a civilian or military aircraft",
+            "name": "aircraft_shootdown",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20244/",
+                    "roleName": "A0_pag_shooter",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20245/",
+                    "roleName": "A1_ppt_planes",
+                    "entity": "resin:Entities/00053/"
+                },
+                {
+                    "@id": "resin:Participants/20246/",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20247/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q6539177",
+            "wd_label": "aircraft_shootdown",
+            "wd_description": "shooting down of a civilian or military aircraft",
+            "outlinks": [
+                "resin:Events/10033/"
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00053/",
+                    "name": "aircraft",
+                    "wd_label": "aircraft",
+                    "wd_node": "wd:Q11436",
+                    "wd_description": "machine that is able to fly by gaining support from the air"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10036/",
+            "children": [
+                "resin:Events/10088/",
+                "resin:Events/10089/"
+            ],
+            "children_gate": "or",
+            "description": "",
+            "name": "Bombardment",
+            "outlinks": [
+                "resin:Events/10033/"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10088/",
+            "description": "attack by artillery fire or by dropping bombs from aircraft",
+            "name": "bombing",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20248/",
+                    "roleName": "A0_pag_agent_violent_hitter",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20249/",
+                    "roleName": "A1_ppt_patient_thing_hit",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "resin:Participants/20250/",
+                    "roleName": "A2_gol_instrument_instrument",
+                    "entity": "resin:Entities/00003/"
+                },
+                {
+                    "@id": "resin:Participants/20251/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q678146",
+            "wd_label": "bombardment",
+            "wd_description": "attack by artillery fire or by dropping bombs from aircraft",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10089/",
+            "description": "conventional combat mission on an individual or small-scale basis",
+            "name": "drone strike",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20252/",
+                    "roleName": "A0_pag_agent_violent_hitter",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20253/",
+                    "roleName": "A1_ppt_patient_thing_hit",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "resin:Participants/20254/",
+                    "roleName": "A2_gol_instrument_instrument",
+                    "entity": "resin:Entities/00054/"
+                },
+                {
+                    "@id": "resin:Participants/20255/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q6857862",
+            "wd_label": "military_strike",
+            "wd_description": "conventional combat mission on an individual or small-scale basis",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00054/",
+                    "name": "unmanned aerial vehicle",
+                    "wd_label": "unmanned_aerial_vehicle",
+                    "wd_node": "wd:Q484000",
+                    "wd_description": "aircraft without a human pilot aboard"
+                }
+            ]
+        },
+        {
+            "@id": "resin:Events/10037/",
+            "description": "type of military action",
+            "name": "Landing operation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20256/",
+                    "roleName": "A0_pag_agent_pilot",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20257/",
+                    "roleName": "A1_ppt_theme_thing_landing",
+                    "entity": "resin:Entities/00003/"
+                },
+                {
+                    "@id": "resin:Participants/20258/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q646740",
+            "wd_label": "landing_operation",
+            "wd_description": "type of military action",
+            "outlinks": [
+                "resin:Events/10038/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10038/",
+            "description": "protection from attack in military operations",
+            "name": "defense",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20259/",
+                    "roleName": "A0_pag_agent_defender",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20260/",
+                    "roleName": "A1_ppt_theme_defended",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20261/",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20262/",
+                    "roleName": "A3_gol_entity_defended_against",
+                    "entity": "resin:Entities/00008/"
+                }
+            ],
+            "wd_node": "wd:Q1985622",
+            "wd_label": "defense",
+            "wd_description": "protection from attack in military operations",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10033/",
+            "children": [
+                "resin:Events/10090/",
+                "resin:Events/10091/",
+                "resin:Events/10092/",
+                "resin:Events/10093/"
+            ],
+            "children_gate": "or",
+            "description": "",
+            "name": "Result of Attack",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10090/",
+            "description": "damage to an object, system or an idea",
+            "name": "destruction",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20263/",
+                    "roleName": "A0_pag_agent_destroyer",
+                    "entity": "resin:Entities/00028/"
+                },
+                {
+                    "@id": "resin:Participants/20264/",
+                    "roleName": "A1_ppt_patient_thing_destroyed",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "resin:Participants/20265/",
+                    "roleName": "A2_mnr_instrument_instrument_of_destruction",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20266/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q17781833",
+            "wd_label": "destruction",
+            "wd_description": "concept of damage to an object, system or an idea",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10091/",
+            "description": "large and destructive fire that threatens human life, animal life, health, and/or property",
+            "name": "conflagration",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20267/",
+                    "roleName": "A0_pag_ignitor",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20268/",
+                    "roleName": "A1_ppt_thing_ignited",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20269/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q168983",
+            "wd_label": "conflagration",
+            "wd_description": "large and destructive fire that threatens human life, animal life, health, and/or property",
+            "outlinks": [
+                "resin:Events/10090/",
+                "resin:Events/10092/",
+                "resin:Events/10093/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10092/",
+            "description": "permanent cessation of vital functions",
+            "name": "die",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20270/",
+                    "roleName": "A1_ppt_patient_the_deceased",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20271/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10093/",
+            "description": "physiological wound caused by an external source",
+            "name": "injure",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20272/",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20273/",
+                    "roleName": "A1_ppt_injured_entity",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20274/",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20275/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10039/",
+            "children": [
+                "resin:Events/10094/"
+            ],
+            "children_gate": "or",
+            "description": "military blockade of a city or fortress",
+            "name": "Besiege",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20276/",
+                    "roleName": "A0_pag_causer",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20277/",
+                    "roleName": "A1_gol_entity_besieged",
+                    "entity": "resin:Entities/00055/"
+                },
+                {
+                    "@id": "resin:Participants/20278/",
+                    "roleName": "A2_ppt_entity_besieged_with",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20279/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q188055",
+            "wd_label": "siege",
+            "wd_description": "military blockade of a city or fortress",
+            "outlinks": [
+                "resin:Events/10038/",
+                "resin:Events/10040/"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/10094/",
+            "description": "effort to cut off supplies from a particular area by force",
+            "name": "blockade",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20280/",
+                    "roleName": "A0_pag_agent_impeder",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20281/",
+                    "roleName": "A1_gol_destination_impeded",
+                    "entity": "resin:Entities/00055/"
+                },
+                {
+                    "@id": "resin:Participants/20282/",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20283/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q273976",
+            "wd_label": "blockade",
+            "wd_description": "effort to cut off supplies from a particular area by force",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/10040/",
+            "description": "effective provisional control of a certain power over a territory",
+            "name": "military occupation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20284/",
+                    "roleName": "A0_pag_occupier",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20285/",
+                    "roleName": "A1_ppt_occupied",
+                    "entity": "resin:Entities/00055/"
+                },
+                {
+                    "@id": "resin:Participants/20286/",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00014/"
+                }
+            ],
+            "wd_node": "wd:Q188686",
+            "wd_label": "military_occupation",
+            "wd_description": "effective provisional control of a certain power over a territory",
+            "outlinks": [
+                "resin:Events/10038/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10095/",
+            "name": "trade war",
+            "description": "two or more states raising or creating tariffs or other trade barriers on each other in retaliation for other trade barriers",
+            "wd_node": "wd:Q692412",
+            "wd_label": "trade war",
+            "wd_description": "two or more states raising or creating tariffs or other trade barriers on each other in retaliation for other trade barriers",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/10069/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        }
+    ]
+}
