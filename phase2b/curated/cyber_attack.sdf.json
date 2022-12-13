@@ -446,7 +446,7 @@
         },
         {
             "@id": "resin:Events/10008",
-            "name": "System Compromised",
+            "name": "Compromise System",
             "description": "The target system is compromised.",
             "wd_node": "Q1174599",
             "wd_label": "attack",
@@ -481,7 +481,7 @@
         },
         {
             "@id": "resin:Events/10009",
-            "name": "Data Exfiltration",
+            "name": "Steal",
             "description": "The attacker exfiltrates data from the target system.",
             "wd_node": "Q2727213",
             "wd_label": "theft",
@@ -529,7 +529,7 @@
         },
         {
             "@id": "resin:Events/10010",
-            "name": "Denial of Service",
+            "name": "Deny Service",
             "description": "The attacker causes a denial of service of the target's service (website/database/etc.).",
             "wd_node": "Q1191925",
             "wd_label": "deprivation",
@@ -624,7 +624,7 @@
         },
         {
             "@id": "resin:Events/10111",
-            "name": "Data Destroyed",
+            "name": "Destroy",
             "description": "The attack destroys data.",
             "wd_node": "Q17781833",
             "wd_label": "destruction",
@@ -654,7 +654,7 @@
         },
         {
             "@id": "resin:Events/10112",
-            "name": "Backdoor Created",
+            "name": "Create Backdoor",
             "description": "The attacker creates a backdoor in the system for future access.",
             "wd_node": "Q57699905",
             "wd_label": "access",
@@ -704,7 +704,7 @@
         },
         {
             "@id": "resin:Events/10113",
-            "name": "Malware Spreads",
+            "name": "Infect with Malware",
             "description": "The attack infects the system with malware.",
             "wd_node": "Q166231",
             "wd_label": "infection",
@@ -876,7 +876,7 @@
         },
         {
             "@id": "resin:Events/10013",
-            "name": "Inspect Logs",
+            "name": "Inspect",
             "description": "The service owner inspects the logs related to the cyber attack.",
             "wd_node": "Q1137655",
             "wd_label": "inspection",
@@ -893,7 +893,7 @@
                 {
                     "@id": "resin:Participants/20131",
                     "roleName": "A1_ppt_entity_inspected",
-                    "entity": "resin:Entities/00005/"
+                    "entity": "resin:Entities/00016/"
                 }, 
                 {
                     "@id": "resin:Participants/20132",
@@ -906,7 +906,15 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00016/", 
+                    "name": "logs", 
+                    "wd_node": "Q29649691", 
+                    "wd_label": "logging", 
+                    "wd_description": "automatic creation of a log of a software process"
+                }
+            ],
             "relations": []
         },
         {
