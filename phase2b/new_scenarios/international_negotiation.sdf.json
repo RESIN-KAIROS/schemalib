@@ -1,886 +1,911 @@
 {
-  "@id": "resin:Schemas/international negotiation",
-  "sdfVersion": "3.0",
-  "version": "resin:Phase2b",
-  "events": [
-    {
-      "@id": "resin:Events/10000",
-      "name": "International Negotiation",
-      "description": "international negotiation news story.",
-      "wd_node": "Q202875",
-      "wd_label": "negotiation",
-      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
+    "@id": "resin:Schemas/international negotiation",
+    "sdfVersion": "3.0",
+    "version": "resin:Phase2b",
+    "events": [
         {
-          "@id": "resin:Participants/20000",
-          "roleName": "A0_pag_agent_negotiator",
-          "entity": ""
+            "@id": "resin:Events/10000",
+            "name": "International Negotiation",
+            "description": "international negotiation news story.",
+            "wd_node": "Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20001",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20002",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20003",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20004",
+                    "roleName": "AM_mnr__manner",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "resin:Events/10001",
+                "resin:Events/10002",
+                "resin:Events/10004",
+                "resin:Events/10005"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
         },
         {
-          "@id": "resin:Participants/20001",
-          "roleName": "A1_com_co_agent_explicit_other_party",
-          "entity": ""
+            "@id": "resin:Events/10001",
+            "name": "background",
+            "description": "background of the international situation that requires negotiation.",
+            "wd_node": "Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20010",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20011",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20012",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20013",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20014",
+                    "roleName": "AM_mnr__manner",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "resin:Events/10008",
+                "resin:Events/10009",
+                "resin:Events/10006",
+                "resin:Events/10007",
+                "resin:Events/11001",
+                "resin:Events/11006",
+                "resin:Events/11007",
+                "resin:Events/11009"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
         },
         {
-          "@id": "resin:Participants/20002",
-          "roleName": "AM_loc__location",
-          "entity": ""
+            "@id": "resin:Events/10002",
+            "name": "international meetings",
+            "description": "Meetings are set up between the countries and political organizations.",
+            "wd_node": "Q21170798",
+            "wd_label": "meeting",
+            "wd_description": "situation in which two or more persons meet",
+            "isSchema": true,
+            "repeatable": true,
+            "outlinks": [
+                "resin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20020",
+                    "roleName": "A0_pag_agent_one_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20021",
+                    "roleName": "A1_com_co_agent_other_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20022",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "resin:Events/11003",
+                "resin:Events/11004",
+                "resin:Events/11008",
+                "resin:Events/10010",
+                "resin:Events/10011",
+                "resin:Events/10012",
+                "resin:Events/10013"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
         },
         {
-          "@id": "resin:Participants/20003",
-          "roleName": "A2_ppt_theme_agreement",
-          "entity": ""
+            "@id": "resin:Events/10004",
+            "name": "declaration",
+            "description": "The participating countries announce joint statements about the outcome of the negotiation.",
+            "wd_node": "Q321839",
+            "wd_label": "agreement",
+            "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10005"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20040",
+                    "roleName": "A0_pag_agent_agreer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20041",
+                    "roleName": "A2_com_co_agent_other_entity_agreeing",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20042",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "resin:Events/10017",
+                "resin:Events/10014"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
         },
         {
-          "@id": "resin:Participants/20004",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
+            "@id": "resin:Events/10005",
+            "name": "international response",
+            "description": "Countries and other political organizations respond to the outcome of the negotiation.",
+            "wd_node": "Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20050",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20051",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20052",
+                    "roleName": "A2_prd_reaction",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20053",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "resin:Events/10020",
+                "resin:Events/10021",
+                "resin:Events/11002",
+                "resin:Events/11005"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10006",
+            "name": "War",
+            "description": "The outbreak of a war",
+            "wd_node": "Q198",
+            "wd_label": "war",
+            "wd_description": "organised and prolonged violent conflict between states",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10007",
+                "resin:Events/11006",
+                "resin:Events/11009"
+            ],
+            "children": [
+            ],
+            "children_gate": "or",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20060",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20061",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20062",
+                    "roleName": "A2_ppt_topic",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20063",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10007",
+            "name": "Humanitarian Crisis",
+            "description": "The war included a series of war crimes, violence, looting, which resulted in a humanitarian crisis",
+            "wd_node": "Q617059",
+            "wd_label": "humanitarian crisis",
+            "wd_description": "singular event or a series of events that are threatening in terms of health, safety or well being of a community or large group of people",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20070",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20071",
+                    "roleName": "A1_ppt_thing_collapsing",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20072",
+                    "roleName": "A2_ext_extent_of_collapse",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20073",
+                    "roleName": "A3_dir_starting_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20074",
+                    "roleName": "A4_gol_ending_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20075",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10008",
+            "name": "Natural Disaster",
+            "description": "A natural disaster",
+            "wd_node": "Q8065",
+            "wd_label": "natural_disaster",
+            "wd_description": "major adverse event resulting from natural processes of the Earth, which may cause loss of life or property",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10009"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20080",
+                    "roleName": "A0_pag_destroyer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20081",
+                    "roleName": "A1_ppt_thing_destroyed",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20082",
+                    "roleName": "A2_mnr_instrument_of_destruction",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20083",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10009",
+            "name": "Economic Crisis",
+            "description": "An economic crisis",
+            "wd_node": "Q176494",
+            "wd_label": "recession",
+            "wd_description": "business cycle contraction; general slowdown in economic activity",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20090",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20091",
+                    "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20092",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10010",
+            "name": "Negotiation",
+            "description": "Countries discuss and negotiate on various issues",
+            "wd_node": "Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10012"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20100",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20101",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20102",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20103",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20104",
+                    "roleName": "AM_mnr__manner",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10011",
+            "name": "Agreement",
+            "description": "Countries sign treaties and agreements.",
+            "wd_node": "Q321839",
+            "wd_label": "agreement",
+            "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20110",
+                    "roleName": "A0_pag_agent_agreer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20111",
+                    "roleName": "A2_com_co_agent_other_entity_agreeing",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20112",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10012",
+            "name": "Dispute",
+            "description": "The countries identify the areas where they agree and disagree with each other.",
+            "wd_node": "Q104813442",
+            "wd_label": "disagreement",
+            "wd_description": "absence of consensus",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10013"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20120",
+                    "roleName": "A0_pag_first_arguer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20121",
+                    "roleName": "A1_com_second_arguer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20122",
+                    "roleName": "A2_ppt_topic",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20123",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10013",
+            "name": "Settlement",
+            "description": "The countries work out a compromise solution that takes into account the interests of all parties involved.",
+            "wd_node": "Q202722",
+            "wd_label": "consensus",
+            "wd_description": "general agreement on a subject",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": ["resin:Events/10011"],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20130",
+                    "roleName": "A0_pag_agreer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20131",
+                    "roleName": "A1_ppt_proposition",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20132",
+                    "roleName": "A2_com_other_entity_agreeing",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10014",
+            "name": "Declaration",
+            "description": "The countries declare their joint commitment to the negotiation process and results",
+            "wd_node": "Q815005",
+            "wd_label": "commitment",
+            "wd_description": "public expression of facts concerning the actor",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20140",
+                    "roleName": "A0_pag_causal_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20141",
+                    "roleName": "A1_ppt_entity_committed",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20142",
+                    "roleName": "A2_gol_committed_to",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20143",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10017",
+            "name": "Ceasefire",
+            "description": "They agree to continue ceasefire to achieve a lasting and comprehensive peace in the region.",
+            "wd_node": "Q208383",
+            "wd_label": "ceasefire",
+            "wd_description": "emporary stoppage of war",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10014"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20170",
+                    "roleName": "A0_pag_worker",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20171",
+                    "roleName": "A1_ppt_job",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20172",
+                    "roleName": "A2_gol_employer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20173",
+                    "roleName": "A3_com_coworker",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20174",
+                    "roleName": "A4_mnr_instrumental",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20175",
+                    "roleName": "A5_prd_secondary-theme",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20176",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10020",
+            "name": "Responses",
+            "description": "The other countries take action based on their decision",
+            "wd_node": "Q106580797",
+            "wd_label": "authorial_decision",
+            "wd_description": "decision made by an author or team of authors about a work",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20200",
+                    "roleName": "A0_pag_decider",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20201",
+                    "roleName": "A1_ppt_the_decision_itself",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20202",
+                    "roleName": "A2_gol_beneficiary",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20203",
+                    "roleName": "A3_vsp_subject-matter_of_decision",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20204",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10021",
+            "name": "Protests",
+            "description": "Protests among civilians because they may believe that the outcome was not fair or just",
+            "wd_node": "Q273120",
+            "wd_label": "protest",
+            "wd_description": "expression of objection",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20210",
+                    "roleName": "A0_pag_believer",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20211",
+                    "roleName": "A1_ppt_believed",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20212",
+                    "roleName": "A2_prd_believed_to_be_what",
+                    "entity": ""
+                },
+                {
+                    "@id": "resin:Participants/20213",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11001",
+            "name": "General Election",
+            "description": "A general election in one country which brings a change in its political activities.",
+            "wd_node": "Q1076105",
+            "wd_label": "general election",
+            "wd_description": "A election in which all or most members of a given political body are chosen.",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11002",
+            "name": "Disputes",
+            "description": "Remaining disputes that are left unsolved after the negotiation",
+            "wd_node": "Q180684",
+            "wd_label": "conflict",
+            "wd_description": "friction, disagreement, or discord within a group or between different groups",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11003",
+            "name": "International Mediation",
+            "description": "Other countries mediate the conflicts between the parties",
+            "wd_node": "Q223871",
+            "wd_label": "mediation",
+            "wd_description": "dispute resolution with assistance of an impartial third party moderator through the use of communication and negotiation techniques",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/10010",
+                "resin:Events/11004",
+                "resin:Events/11008"
+            ],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11004",
+            "name": "Ceasefire",
+            "description": "Countries agree to ceasefire and negotiate",
+            "wd_node": "Q208383",
+            "wd_label": "ceasefire",
+            "wd_description": "temporary stoppage of war",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11005",
+            "name": "Humanitarian Aid",
+            "description": "International humanitarian aid to help the civilians in the conflict.",
+            "wd_node": "Q826745",
+            "wd_label": "humanitarian aid",
+            "wd_description": "material or logistical assistance for people in need",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11006",
+            "name": "State Formation",
+            "description": "The founding of a new country which resulted in a sequence of conflicts and contraversies.",
+            "wd_node": "Q4455079",
+            "wd_label": "state formation",
+            "wd_description": "development of a centralized government structure",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11007",
+            "name": "Independence Declaration",
+            "description": "One party declared independence, which might have got partial international recognition.",
+            "wd_node": "Q1464916",
+            "wd_label": "declaration of independence",
+            "wd_description": "assertion by a defined territory that it is independent and constitutes a state",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11008",
+            "name": "Arms Embargo",
+            "description": "International embargo of arms to reduce the conflict intensity.",
+            "wd_node": "Q4793859",
+            "wd_label": "arms embargo",
+            "wd_description": "embargo that applies to weaponry",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11009",
+            "name": "Peace Proposal",
+            "description": "Someone of some party propose a plan for peace",
+            "wd_node": "Q3918409",
+            "wd_label": "proposal",
+            "wd_description": "document or message proposing some course of action, or the process by which that action is considered",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11010",
+            "name": "War Declaration",
+            "description": "A nation declares war on another country or region",
+            "wd_node": "Q334516",
+            "wd_label": "declaration of war",
+            "wd_description": "formal announcement by which one state goes to war against another",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": ["resin:Events/11011"],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11011",
+            "name": "Military Offensive",
+            "description": "One army starts a major attack on the opponents.",
+            "wd_node": "Q2001676",
+            "wd_label": "military offensive",
+            "wd_description": "military operation that seeks through an aggressive projection of armed forces to occupy territory, gain an objective or achieve some larger strategic, operational, or tactical goal",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": ["resin:Events/11012"],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/11012",
+            "name": "Battle",
+            "description": "Two armies have military battles.",
+            "wd_node": "Q178561",
+            "wd_label": "battle",
+            "wd_description": "part of a war which is well defined in duration, area and force commitment",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
         }
-      ],
-      "children": [
-        "resin:Events/10001",
-        "resin:Events/10002",
-        "resin:Events/10003",
-        "resin:Events/10004",
-        "resin:Events/10005"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": [],
-      "importance": [],
-      "likelihood": []
-    },
-    {
-      "@id": "resin:Events/10001",
-      "name": "background",
-      "description": "background of the international situation that requires negotiation.",
-      "wd_node": "Q202875",
-      "wd_label": "negotiation",
-      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10002"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20010",
-          "roleName": "A0_pag_agent_negotiator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20011",
-          "roleName": "A1_com_co_agent_explicit_other_party",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20012",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20013",
-          "roleName": "A2_ppt_theme_agreement",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20014",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10008",
-        "resin:Events/10009",
-        "resin:Events/10006",
-        "resin:Events/10007"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10002",
-      "name": "intergovernmental meetings",
-      "description": "Meetings are set up between the countries.",
-      "wd_node": "Q21170798",
-      "wd_label": "meeting",
-      "wd_description": "situation in which two or more persons meet",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10003"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20020",
-          "roleName": "A0_pag_agent_one_party",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20021",
-          "roleName": "A1_com_co_agent_other_party",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20022",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10010",
-        "resin:Events/10011"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10003",
-      "name": "conditions and demands",
-      "description": "The participating countries publish their pre-conditions and demands for the negotiations.",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10004"
-      ],
-      "participants": [],
-      "children": [
-        "resin:Events/10012",
-        "resin:Events/10013"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10004",
-      "name": "declaration",
-      "description": "The participating countries announce joint statements about the outcome of the negotiation.",
-      "wd_node": "Q321839",
-      "wd_label": "agreement",
-      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10005"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20040",
-          "roleName": "A0_pag_agent_agreer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20041",
-          "roleName": "A2_com_co_agent_other_entity_agreeing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20042",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10016",
-        "resin:Events/10017",
-        "resin:Events/10014",
-        "resin:Events/10015"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10005",
-      "name": "international response",
-      "description": "Other countries respond to the outcome of the negotiation.",
-      "wd_node": "Q31983622",
-      "wd_label": "reaction",
-      "wd_description": "action or statement in response to a stimulus or other event",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20050",
-          "roleName": "A0_ppt_reactor",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20051",
-          "roleName": "A1_pag_reacted-to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20052",
-          "roleName": "A2_prd_reaction",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20053",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10018",
-        "resin:Events/10021",
-        "resin:Events/10022"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10006",
-      "name": "War",
-      "description": "The outbreak of a war",
-      "wd_node": "Q198",
-      "wd_label": "war",
-      "wd_description": "organised and prolonged violent conflict between states",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10007"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20060",
-          "roleName": "A0_pag_warmonger",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20061",
-          "roleName": "A1_com_war_against/with",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20062",
-          "roleName": "A2_ppt_topic",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20063",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10007",
-      "name": "Government Collapse",
-      "description": "The collapse of a government",
-      "wd_node": "Q18054140",
-      "wd_label": "collapse",
-      "wd_description": "medical symptom, a sudden and often unannounced loss of postural tone",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10008"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20070",
-          "roleName": "A0_pag_agent",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20071",
-          "roleName": "A1_ppt_thing_collapsing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20072",
-          "roleName": "A2_ext_extent_of_collapse",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20073",
-          "roleName": "A3_dir_starting_point",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20074",
-          "roleName": "A4_gol_ending_point",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20075",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10008",
-      "name": "Natural Disaster",
-      "description": "A natural disaster",
-      "wd_node": "Q8065",
-      "wd_label": "natural_disaster",
-      "wd_description": "major adverse event resulting from natural processes of the Earth, which may cause loss of life or property",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10009"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20080",
-          "roleName": "A0_pag_destroyer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20081",
-          "roleName": "A1_ppt_thing_destroyed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20082",
-          "roleName": "A2_mnr_instrument_of_destruction",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20083",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10009",
-      "name": "Economic Crisis",
-      "description": "An economic crisis",
-      "wd_node": "Q176494",
-      "wd_label": "recession",
-      "wd_description": "business cycle contraction; general slowdown in economic activity",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20090",
-          "roleName": "A1_ppt_entity_suffering_a_recession",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20091",
-          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20092",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10010",
-      "name": "Countries Negotiate",
-      "description": "Countries discuss and negotiate on various issues",
-      "wd_node": "Q202875",
-      "wd_label": "negotiation",
-      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10011"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20100",
-          "roleName": "A0_pag_agent_negotiator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20101",
-          "roleName": "A1_com_co_agent_explicit_other_party",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20102",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20103",
-          "roleName": "A2_ppt_theme_agreement",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20104",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10011",
-      "name": "International Agreement",
-      "description": "Countries sign treaties and agreements.",
-      "wd_node": "Q321839",
-      "wd_label": "agreement",
-      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20110",
-          "roleName": "A0_pag_agent_agreer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20111",
-          "roleName": "A2_com_co_agent_other_entity_agreeing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20112",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10012",
-      "name": "Political Differences",
-      "description": "The countries identify the areas where they agree and disagree with each other.",
-      "wd_node": "Q104813442",
-      "wd_label": "disagreement",
-      "wd_description": "absence of consensus",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10013"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20120",
-          "roleName": "A0_pag_first_arguer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20121",
-          "roleName": "A1_com_second_arguer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20122",
-          "roleName": "A2_ppt_topic",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20123",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10013",
-      "name": "Solution",
-      "description": "The countries work out a compromise solution that takes into account the interests of all parties involved.",
-      "wd_node": "Q202722",
-      "wd_label": "consensus",
-      "wd_description": "general agreement on a subject",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20130",
-          "roleName": "A0_pag_agreer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20131",
-          "roleName": "A1_ppt_proposition",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20132",
-          "roleName": "A2_com_other_entity_agreeing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20133",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10014",
-      "name": "Declaration of Cooperation",
-      "description": "The countries declare their joint commitment to the negotiation process",
-      "wd_node": "Q815005",
-      "wd_label": "commitment",
-      "wd_description": "public expression of facts concerning the actor",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10015"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20140",
-          "roleName": "A0_pag_causal_agent",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20141",
-          "roleName": "A1_ppt_entity_committed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20142",
-          "roleName": "A2_gol_committed_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20143",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10015",
-      "name": "Shared Objectives",
-      "description": "They reaffirm their shared objectives and principles.",
-      "wd_node": "Q321839",
-      "wd_label": "agreement",
-      "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10016"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20150",
-          "roleName": "A0_pag_agent_agreer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20151",
-          "roleName": "A2_com_co_agent_other_entity_agreeing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20152",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10016",
-      "name": "Renewal of Dedication",
-      "description": "They reaffirm their dedication to the negotiations and to finding a peaceful resolution to the conflict.",
-      "wd_node": "Q202875",
-      "wd_label": "negotiation",
-      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20160",
-          "roleName": "A0_pag_agent_negotiator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20161",
-          "roleName": "A1_com_co_agent_explicit_other_party",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20162",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20163",
-          "roleName": "A2_ppt_theme_agreement",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20164",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10017",
-      "name": "Peace Pledges",
-      "description": "They pledge to continue their work together in order to achieve a lasting and comprehensive peace in the region.",
-      "wd_node": "Q16532276",
-      "wd_label": "work",
-      "wd_description": "activity done by a person for economic gain",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10014"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20170",
-          "roleName": "A0_pag_worker",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20171",
-          "roleName": "A1_ppt_job",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20172",
-          "roleName": "A2_gol_employer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20173",
-          "roleName": "A3_com_coworker",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20174",
-          "roleName": "A4_mnr_instrumental",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20175",
-          "roleName": "A5_prd_secondary-theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20176",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10018",
-      "name": "Country Response",
-      "description": "-The other countries may respond positively or negatively to the outcome.",
-      "wd_node": "Q31983622",
-      "wd_label": "reaction",
-      "wd_description": "action or statement in response to a stimulus or other event",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10020",
-        "resin:Events/10021"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20180",
-          "roleName": "A0_ppt_reactor",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20181",
-          "roleName": "A1_pag_reacted-to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20182",
-          "roleName": "A2_prd_reaction",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20183",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10019",
-        "resin:Events/10020"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10019",
-      "name": "Assess the situation",
-      "description": "The other countries assess the situation",
-      "wd_node": "Q1379672",
-      "wd_label": "evaluation",
-      "wd_description": "systematic determination of a subject's merit, worth and significance",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20190",
-          "roleName": "A0_pag_evaluator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20191",
-          "roleName": "A1_ppt_thing_evaluated",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20192",
-          "roleName": "A2_prd_the_assessment_itself",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20193",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10020",
-      "name": "Other Countries' Response",
-      "description": "The other countries take action based on their decision",
-      "wd_node": "Q106580797",
-      "wd_label": "authorial_decision",
-      "wd_description": "decision made by an author or team of authors about a work",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20200",
-          "roleName": "A0_pag_decider",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20201",
-          "roleName": "A1_ppt_the_decision_itself",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20202",
-          "roleName": "A2_gol_beneficiary",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20203",
-          "roleName": "A3_vsp_subject-matter_of_decision",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20204",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10021",
-      "name": "Believe Outcome was Unfair",
-      "description": "They may believe that the outcome was not fair or just",
-      "wd_node": "Q34394",
-      "wd_label": "belief",
-      "wd_description": "psychological state in which an individual holds a proposition or premise to be true",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10019",
-        "resin:Events/10022"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20210",
-          "roleName": "A0_pag_believer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20211",
-          "roleName": "A1_ppt_believed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20212",
-          "roleName": "A2_prd_believed_to_be_what",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20213",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10022",
-      "name": "Oceania Response",
-      "description": "Oceania countries of New Zealand and Australia have knocked it out of the park in terms of initial response",
-      "wd_node": "Q1458711",
-      "wd_label": "harm_reduction",
-      "wd_description": "range of public health policies designed to lessen the negative social and/or physical consequences associated with various human behaviors, both legal and illegal",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20220",
-          "roleName": "A0_pag_reducer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20221",
-          "roleName": "A1_ppt_thing_reduced",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20222",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    }
-  ]
+    ]
 }
