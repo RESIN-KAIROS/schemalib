@@ -12,7 +12,9 @@
       "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
       "isSchema": true,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20000",
@@ -37,10 +39,18 @@
         "resin:Events/10004"
       ],
       "children_gate": "or",
-      "entities": [],
-      "relations": [],
-      "importance": [],
-      "likelihood": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ],
+      "importance": [
+
+      ],
+      "likelihood": [
+
+      ]
     },
     {
       "@id": "resin:Events/10001",
@@ -77,8 +87,12 @@
         "resin:Events/10007"
       ],
       "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10002",
@@ -120,8 +134,12 @@
         "resin:Events/10010"
       ],
       "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10003",
@@ -161,8 +179,12 @@
         "resin:Events/10011"
       ],
       "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10004",
@@ -173,7 +195,9 @@
       "wd_description": "expression of favor or disfavor toward a person, place, thing, or event",
       "isSchema": true,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20040",
@@ -196,28 +220,21 @@
           "entity": ""
         }
       ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ],
       "children": [
         "resin:Events/10012",
         "resin:Events/10013",
         "resin:Events/10014",
         "resin:Events/10015",
-        "resin:Events/10018",
-        "resin:Events/10019",
-        "resin:Events/10020",
-        "resin:Events/10021",
-        "resin:Events/10022",
-        "resin:Events/10023",
-        "resin:Events/10029",
-        "resin:Events/10030",
-        "resin:Events/10035",
-        "resin:Events/10037",
-        "resin:Events/10038",
-        "resin:Events/10044",
-        "resin:Events/10045"
+        "resin:Events/10016",
+        "resin:Events/10017"
       ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "children_gate": "or"
     },
     {
       "@id": "resin:Events/10005",
@@ -229,7 +246,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10006"
+        "resin:Events/10007"
       ],
       "participants": [
         {
@@ -248,8 +265,12 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10006",
@@ -275,8 +296,12 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10007",
@@ -287,7 +312,9 @@
       "wd_description": "forms of unrest arising from a mass act of civil disobedience in which the participants become hostile toward authority, and authorities incur difficulties in maintaining public safety and order, over the disorderly crowd",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20070",
@@ -305,12 +332,16 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10008",
-      "name": "Dangerous Border Crossing",
+      "name": "Cross Border",
       "description": "The refugees journey to another country, often crossing dangerous borders",
       "wd_node": "Q1800545",
       "wd_label": "migration",
@@ -342,8 +373,12 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10009",
@@ -354,7 +389,9 @@
       "wd_description": "movement of people into another country or region to which they are not native",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
+      "outlinks": [
+        "resin:Events/10010"
+      ],
       "participants": [
         {
           "@id": "resin:Participants/20090",
@@ -377,8 +414,12 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10010",
@@ -390,11 +431,17 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10009"
+
       ],
-      "participants": [],
-      "entities": [],
-      "relations": []
+      "participants": [
+
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10011",
@@ -405,10 +452,18 @@
       "wd_description": "",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
-      "participants": [],
-      "entities": [],
-      "relations": []
+      "outlinks": [
+
+      ],
+      "participants": [
+
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10012",
@@ -420,8 +475,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10037",
-        "resin:Events/10018"
+        "resin:Events/10013"
       ],
       "participants": [
         {
@@ -445,13 +499,12 @@
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10016",
-        "resin:Events/10017"
+      "entities": [
+
       ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10013",
@@ -463,9 +516,9 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10033",
-        "resin:Events/10035",
-        "resin:Events/10026"
+        "resin:Events/10015",
+        "resin:Events/10016",
+        "resin:Events/10017"
       ],
       "participants": [
         {
@@ -484,235 +537,15 @@
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10024",
-        "resin:Events/10025",
-        "resin:Events/10026",
-        "resin:Events/10027",
-        "resin:Events/10028"
+      "entities": [
+
       ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "relations": [
+
+      ]
     },
     {
       "@id": "resin:Events/10014",
-      "name": "Public Advocacy",
-      "description": "- The public begins to advocate for the refugees, either through online petitions or by contacting their representatives",
-      "wd_node": "Q2509280",
-      "wd_label": "advocacy",
-      "wd_description": "political process by an individual or group which aims to influence public-policy and resource allocation decisions",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10012",
-        "resin:Events/10015",
-        "resin:Events/10021"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20140",
-          "roleName": "A0_pag_advocate",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20141",
-          "roleName": "A1_ppt_suggestion",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20142",
-          "roleName": "A2_gol_recipient_of_advice",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20143",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10033"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10015",
-      "name": "Public Overwhelm",
-      "description": "- The public begins to feel overwhelmed by the crisis and begins to feel hopeless",
-      "wd_node": "Q381072",
-      "wd_label": "crisis",
-      "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10033",
-        "resin:Events/10035",
-        "resin:Events/10037",
-        "resin:Events/10041",
-        "resin:Events/10042"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20150",
-          "roleName": "A1_ppt_nature_of_the_crisis",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20151",
-          "roleName": "A2_gol_experiencer_of_crisis",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20152",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10041"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10016",
-      "name": "Policy Development",
-      "description": "The policy was clarified and the strategy bridge linking ends and means was developed.",
-      "wd_node": "Q2975598",
-      "wd_label": "clarification",
-      "wd_description": "means of removing suspended particles from a liquid",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20160",
-          "roleName": "A0_pag_causer_of_clarification",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20161",
-          "roleName": "A1_ppt_thing_becoming_clearer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20162",
-          "roleName": "A2_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20163",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10017",
-      "name": "Understanding the Crisis",
-      "description": "This creates a sense of empathy and understanding for the people involved in the crisis.",
-      "wd_node": "Q1412160",
-      "wd_label": "compassion",
-      "wd_description": "feeling of kindness and care for another",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10029"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20170",
-          "roleName": "A0_pag_tender",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20171",
-          "roleName": "A1_ppt_thing_tended",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20172",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10018",
-      "name": "Tensions Flare",
-      "description": "Tensions rise between different groups of people",
-      "wd_node": "Q11371169",
-      "wd_label": "incident",
-      "wd_description": "violent or disruptive occurrence that may precipitate a larger crisis",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10013",
-        "resin:Events/10022"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20180",
-          "roleName": "A0_pag_cause",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20181",
-          "roleName": "A1_ppt_problem",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20182",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10019",
-      "name": "Crisis of Confidence",
-      "description": "People begin to doubt their own abilities to cope with the crisis",
-      "wd_node": "Q34302",
-      "wd_label": "doubt",
-      "wd_description": "status between belief and disbelief, involves uncertainty or distrust in an alleged fact, action, motive, or decision",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10016",
-        "resin:Events/10024",
-        "resin:Events/10027"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20190",
-          "roleName": "A0_pag_disbeliever",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20191",
-          "roleName": "A1_ppt_disbelief",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10031"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10020",
       "name": "Media Attention",
       "description": "The media reports on the crisis",
       "wd_node": "",
@@ -721,198 +554,20 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10043"
-      ],
-      "participants": [],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10021",
-      "name": "News of Crisis",
-      "description": "Reporters told the director of nonproliferation and international security at Los Alamos National Laboratory in New Mexico about the crisis",
-      "wd_node": "Q381072",
-      "wd_label": "crisis",
-      "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10020"
+        "resin:Events/10012"
       ],
       "participants": [
-        {
-          "@id": "resin:Participants/20210",
-          "roleName": "A1_ppt_nature_of_the_crisis",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20211",
-          "roleName": "A2_gol_experiencer_of_crisis",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20212",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
+
       ],
-      "children": [
-        "resin:Events/10040"
+      "entities": [
+
       ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
+      "relations": [
+
+      ]
     },
     {
-      "@id": "resin:Events/10022",
-      "name": "Director's Double Life",
-      "description": "The director of nonproliferation and international security at Los Alamos National Laboratory in New Mexico stopped leading a double life when he quit drinking",
-      "wd_node": "Q38127868",
-      "wd_label": "recovery",
-      "wd_description": "process by which something is returned to its former status or position",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20220",
-          "roleName": "A0_pag_repairer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20221",
-          "roleName": "A1_ppt_entity_repaired",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20222",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10023",
-      "name": "Compassionate Welcome",
-      "description": "Syrians received a more compassionate welcome in Europe and the West if they were ",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [],
-      "children": [
-        "resin:Events/10036"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10024",
-      "name": "City of Sanctuary Movement",
-      "description": "The City of Sanctuary movement was set up.",
-      "wd_node": "Q102358908",
-      "wd_label": "support",
-      "wd_description": "help for a person in a difficult situation",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20240",
-          "roleName": "A0_pag_helper",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20241",
-          "roleName": "A1_ppt_person",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20242",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10025",
-      "name": "Emergency Planning",
-      "description": "The Home Office improved its emergency planning.",
-      "wd_node": "Q309100",
-      "wd_label": "planning",
-      "wd_description": "process of determining the activities required to achieve a desired goal",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20250",
-          "roleName": "A0_pag_planner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20251",
-          "roleName": "A1_ppt_thing_planned",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20252",
-          "roleName": "A2_cau_grounds_for_planning",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20253",
-          "roleName": "A3_gol_beneficiary",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20254",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10026",
-      "name": "Integration",
-      "description": "The Home Office increased its support for integration.",
-      "wd_node": "Q102358908",
-      "wd_label": "support",
-      "wd_description": "help for a person in a difficult situation",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20260",
-          "roleName": "A0_pag_helper",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20261",
-          "roleName": "A1_ppt_person",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20262",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10027",
+      "@id": "resin:Events/10015",
       "name": "Donation",
       "description": "People began to donate money to the cause.",
       "wd_node": "Q1161355",
@@ -921,9 +576,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10025",
-        "resin:Events/10026",
-        "resin:Events/10023"
+
       ],
       "participants": [
         {
@@ -947,11 +600,15 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
-      "@id": "resin:Events/10028",
+      "@id": "resin:Events/10016",
       "name": "Public Aid",
       "description": "The public begins to take action to help the refugees",
       "wd_node": "Q102358908",
@@ -960,8 +617,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10033",
-        "resin:Events/10035"
+
       ],
       "participants": [
         {
@@ -980,221 +636,15 @@
           "entity": ""
         }
       ],
-      "entities": [],
-      "relations": []
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
     },
     {
-      "@id": "resin:Events/10029",
-      "name": "Public Opinion",
-      "description": "The public may be more likely to support policies that welcome and integrate refugees into society",
-      "wd_node": "Q102358908",
-      "wd_label": "support",
-      "wd_description": "help for a person in a difficult situation",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10036"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20290",
-          "roleName": "A0_pag_helper",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20291",
-          "roleName": "A1_ppt_person",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20292",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10030",
-      "name": "Social Contact",
-      "description": "Social contact is very important in maintaining public support for refugees",
-      "wd_node": "Q1190277",
-      "wd_label": "socialization",
-      "wd_description": "citizen-based control of means of production, allowing for a collectivization of wealth",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10020"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20300",
-          "roleName": "A0_pag_government",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20301",
-          "roleName": "A1_ppt_industry",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20302",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10031",
-      "name": "Social Media Outreach",
-      "description": "The power of social media and peoples' compassion is amazing",
-      "wd_node": "Q1412160",
-      "wd_label": "compassion",
-      "wd_description": "feeling of kindness and care for another",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10043",
-        "resin:Events/10016",
-        "resin:Events/10025"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20310",
-          "roleName": "A0_pag_tender",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20311",
-          "roleName": "A1_ppt_thing_tended",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20312",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10039"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10032",
-      "name": "Renew Campaign",
-      "description": "They are renewing the campaign in light of the Ukrainian crisis",
-      "wd_node": "Q18812548",
-      "wd_label": "campaign",
-      "wd_description": "series of operations undertaken to achieve a defined goal",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10034",
-        "resin:Events/10030"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20320",
-          "roleName": "A0_pag_campaigner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20321",
-          "roleName": "A1_ppt_cause",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20322",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10033",
-      "name": "Call for Action",
-      "description": "They are calling on the government to take more action to help those affected",
-      "wd_node": "Q4026292",
-      "wd_label": "action",
-      "wd_description": "something an agent can do or perform",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10039",
-        "resin:Events/10030"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20330",
-          "roleName": "A0_pag_doer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20331",
-          "roleName": "A1_ppt_thing_done",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20332",
-          "roleName": "A2_vsp_type_of_act",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20333",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10034",
-      "name": "Sign Petition",
-      "description": "You can find out more about the campaign and sign the petition online",
-      "wd_node": "Q18812548",
-      "wd_label": "campaign",
-      "wd_description": "series of operations undertaken to achieve a defined goal",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10026",
-        "resin:Events/10039"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20340",
-          "roleName": "A0_pag_campaigner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20341",
-          "roleName": "A1_ppt_cause",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20342",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10042"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10035",
+      "@id": "resin:Events/10017",
       "name": "Public Support",
       "description": "More volunteers may be willing to help with the relief effort if they know there is public support for the refugees",
       "wd_node": "Q102358908",
@@ -1203,8 +653,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10034",
-        "resin:Events/10020"
+
       ],
       "participants": [
         {
@@ -1223,386 +672,12 @@
           "entity": ""
         }
       ],
-      "children": [
-        "resin:Events/10032"
+      "entities": [
+
       ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10036",
-      "name": "Public outcry",
-      "description": "The public is concerned about the humanitarian crisis and wants the government to do more to help",
-      "wd_node": "Q17955",
-      "wd_label": "criticism",
-      "wd_description": "practice of judging the merits and faults of something or someone",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10044"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20360",
-          "roleName": "A0_pag_critiquer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20361",
-          "roleName": "A1_ppt_entity_being_critiqued",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20362",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10034"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10037",
-      "name": "Security Risks",
-      "description": "The public is worried about the potential security risks posed by the refugees and wants the government to take action",
-      "wd_node": "Q169489",
-      "wd_label": "security",
-      "wd_description": "tradable financial asset",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10030"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20370",
-          "roleName": "A0_pag_agent",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20371",
-          "roleName": "A1_ppt_thing_being_traded",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20372",
-          "roleName": "A2_com_other_exchanger",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20373",
-          "roleName": "A3_ppt_other_item_in_exchange",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20374",
-          "roleName": "A4_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20375",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10038",
-      "name": "Refugee Campaign",
-      "description": "The Independent ran a campaign for Syrian refugees in 2015",
-      "wd_node": "Q102358908",
-      "wd_label": "support",
-      "wd_description": "help for a person in a difficult situation",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10014"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20380",
-          "roleName": "A0_pag_helper",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20381",
-          "roleName": "A1_ppt_person",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20382",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10043"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10039",
-      "name": "Offering Rides",
-      "description": "Volunteers are offering rides to refugees arriving from the border",
-      "wd_node": "Q133346",
-      "wd_label": "border",
-      "wd_description": "legal boundary between two geographic regions",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20390",
-          "roleName": "A0_pag_causer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20391",
-          "roleName": "A1_ppt_thing_on_the_edge",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20392",
-          "roleName": "A2_ppt_on_the_edge_of_what",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20393",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10040",
-      "name": "Government Coverup",
-      "description": "The government tries to cover up the crisis and downplay its severity",
-      "wd_node": "Q1229735",
-      "wd_label": "cover-up",
-      "wd_description": "attempt to conceal evidence",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10030"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20400",
-          "roleName": "A0_pag_coverer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20401",
-          "roleName": "A1_ppt_thing_covered",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20402",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10041",
-      "name": "Public Panic",
-      "description": "The public begins to panic and look for ways to cope with the crisis",
-      "wd_node": "Q1759895",
-      "wd_label": "coping",
-      "wd_description": "investing own conscious effort, to solve personal and interpersonal problems, in order to try to master, minimize or tolerate stress and conflict",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10044"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20410",
-          "roleName": "A0_pag_entity_coping",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20411",
-          "roleName": "A1_ppt_coping_with",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20412",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10042",
-      "name": "Government Response",
-      "description": "The government begins to take steps to mitigate the effects of the crisis",
-      "wd_node": "Q1168287",
-      "wd_label": "intervention",
-      "wd_description": "use of force by one country or sovereign state in the internal or external affairs of another",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10024",
-        "resin:Events/10025"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20420",
-          "roleName": "A0_pag_forcer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20421",
-          "roleName": "A1_ppt_impelled_agent",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20422",
-          "roleName": "A2_prd_impelled_action",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20423",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10043",
-      "name": "Anxiety and Stress",
-      "description": "People may become more anxious and stressed",
-      "wd_node": "Q123414",
-      "wd_label": "stress",
-      "wd_description": "organism's response to a stressor such as an environmental condition or a stimulus",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10017"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20430",
-          "roleName": "A0_pag_agent/cause_of_stress",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20431",
-          "roleName": "A1_ppt_entity_experiencing_stress",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20432",
-          "roleName": "A2_mnr_instrument",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20433",
-          "roleName": "A3_vsp_subject_matter_of_stress",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20434",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10044",
-      "name": "Feelings of being a burden",
-      "description": "Some may begin to feel like they are a burden to others",
-      "wd_node": "Q11714847",
-      "wd_label": "isolation",
-      "wd_description": "limitation or total lack of contacts between populations of the same species",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10042",
-        "resin:Events/10019",
-        "resin:Events/10031"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20440",
-          "roleName": "A0_pag_entity_causing_isolation",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20441",
-          "roleName": "A1_ppt_entity_isolated",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20442",
-          "roleName": "A2_dir_entity_that_patient_was_isolated_from",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20443",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10045",
-      "name": "Panic",
-      "description": "The panic that sets in among the Russian people when they see the government's reaction to the crisis",
-      "wd_node": "Q44619",
-      "wd_label": "fear",
-      "wd_description": "emotion induced by perceived danger or threat",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10038"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20450",
-          "roleName": "A0_ppt_scaredy_cat",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20451",
-          "roleName": "A1_ppt_afraid_of",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20452",
-          "roleName": "A2_gol_afraid_for",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20453",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
+      "relations": [
+
+      ]
     }
   ]
 }
