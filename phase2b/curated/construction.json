@@ -1,0 +1,1348 @@
+{
+    "@id": "resin:Schemas/construction",
+    "sdfVersion": "3.0",
+    "version": "resin:Phase2b",
+    "events": [
+        {
+            "@id": "resin:Events/10000",
+            "name": "Construction",
+            "description": "The root container node for the construction event.",
+            "wd_node": "Q385378",
+            "wd_label": "construction",
+            "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000",
+                    "roleName": "A0_pag_builder",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20001",
+                    "roleName": "A1_ppt_construction",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20002",
+                    "roleName": "A2_vsp_material",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20003",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "children": [
+                "resin:Events/10001",
+                "resin:Events/10002",
+                "resin:Events/10003"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00000/",
+                    "name": "investor_of_the_construction",
+                    "wd_node": "Q43229",
+                    "wd_label": "organization",
+                    "wd_description": "social entity established to meet needs or pursue goals"
+                },
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "constructed_object",
+                    "wd_node": "Q41176",
+                    "wd_label": "building",
+                    "wd_description": "structure, typically with a roof and walls, standing more or less permanently in one place"
+                },
+                {
+                    "@id": "resin:Entities/00002/",
+                    "name": "the_material_used_for_building",
+                    "wd_node": "Q206615",
+                    "wd_label": "building material",
+                    "wd_description": "material used for construction purposes"
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "location",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10001",
+            "name": "Planning",
+            "description": "The planning decision making procedures before the construction event begins.",
+            "wd_node": "Q309100",
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20010",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20011",
+                    "roleName": "A1_ppt_thing_planned",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20013",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "children": [
+                "resin:Events/10004",
+                "resin:Events/10005",
+                "resin:Events/10006",
+                "resin:Events/10007",
+                "resin:Events/10008"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00005/",
+                    "name": "construction_plan",
+                    "wd_node": "Q1371819",
+                    "wd_label": "plan",
+                    "wd_description": "outline of a strategy for achievement of an objective"
+                },
+                {
+                    "@id": "resin:Entities/00007/",
+                    "name": "planning_location",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10002",
+            "name": "Construction",
+            "description": "The building or facility is being constructed.",
+            "wd_node": "Q385378",
+            "wd_label": "construction",
+            "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20020",
+                    "roleName": "A0_pag_builder",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20021",
+                    "roleName": "A1_ppt_construction",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20022",
+                    "roleName": "A2_vsp_material",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20023",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "children": [
+                "resin:Events/10009",
+                "resin:Events/10010",
+                "resin:Events/10011"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "constructor",
+                    "wd_node": "Q43229",
+                    "wd_label": "organization",
+                    "wd_description": "social entity established to meet needs or pursue goals"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10003",
+            "name": "Operation",
+            "description": "The construction is complete and the building or facility is put into operation.",
+            "wd_node": "Q15051339",
+            "wd_label": "opening",
+            "wd_description": "moment when an institution starts operating",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20030",
+                    "roleName": "A0_pag_opener",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20031",
+                    "roleName": "A1_ppt_thing_opening",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20032",
+                    "roleName": "A3_gol_benefactive",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20033",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "children": [
+                "resin:Events/10026",
+                "resin:Events/10027",
+                "resin:Events/10028"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00014/",
+                    "name": "guests",
+                    "wd_node": "Q43229",
+                    "wd_label": "organization",
+                    "wd_description": "social entity established to meet needs or pursue goals"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10004",
+            "name": "Make Resolution",
+            "description": "The client makes the decision to start a project to construct a building.",
+            "wd_node": "\u00a0Q1331926",
+            "wd_label": "decision_making",
+            "wd_description": "cognitive process resulting in choosing a course of action among several alternative possibilities",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10005"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20040",
+                    "roleName": "A0_pag_decider",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20041",
+                    "roleName": "A1_ppt_the_decision_itself",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20042",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10005",
+            "name": "Announcement",
+            "description": "The client makes a public announcement to recruit teams to do the project of construction.",
+            "wd_node": "Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20050",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/00019/"
+                },
+                {
+                    "@id": "resin:Participants/20051",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20052",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/00021/"
+                },
+                {
+                    "@id": "resin:Participants/20053",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00022/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00019/",
+                    "name": "announcer",
+                    "wd_node": "Q1193236",
+                    "wd_label": "news media",
+                    "wd_description": "elements of the mass media that focus on delivering news"
+                },
+                {
+                    "@id": "resin:Entities/00021/",
+                    "name": "public",
+                    "wd_node": "Q2388316",
+                    "wd_label": "public",
+                    "wd_description": "grouping of individual people"
+                },
+                {
+                    "@id": "resin:Entities/00022/",
+                    "name": "announcement_location",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10006",
+            "name": "Design",
+            "description": "A participating team makes a concrete design of the building architecture.",
+            "wd_node": "Q150737",
+            "wd_label": "architectural_engineering",
+            "wd_description": "application of engineering principles and technology to building design and construction",
+            "isSchema": false,
+            "repeatable": true,
+            "outlinks": [
+                "resin:Events/10007"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20060",
+                    "roleName": "A0_pag_engineer",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20061",
+                    "roleName": "A1_ppt_engineered",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20062",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00025/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00023/",
+                    "name": "construction_company",
+                    "wd_node": "Q783794",
+                    "wd_label": "company",
+                    "wd_description": "legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective"
+                },
+                {
+                    "@id": "resin:Entities/00024/",
+                    "name": "construction_plan",
+                    "wd_node": "Q1371819",
+                    "wd_label": "plan",
+                    "wd_description": "outline of a strategy for achievement of an objective"
+                },
+                {
+                    "@id": "resin:Entities/00025/",
+                    "name": "designing_location",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10007",
+            "name": "Bidding",
+            "description": "The official bidding process to decide who to conduct the project.",
+            "wd_node": "Q177923",
+            "wd_label": "auction",
+            "wd_description": "process of buying and selling goods or services by offering them up for bid, taking bids, and then selling the item to the highest bidder",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10008"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20070",
+                    "roleName": "A0_pag_seller",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20071",
+                    "roleName": "A1_ppt_sold",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20072",
+                    "roleName": "A2_gol_highest_bidder",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20073",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00029/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00029/",
+                    "name": "bidding_location",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10008",
+            "name": "Approval",
+            "description": "The plan is approved and finalized.",
+            "wd_node": "Q29526855",
+            "wd_label": "approval",
+            "wd_description": "process of giving effect to documentation in international law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20080",
+                    "roleName": "A0_pag_approver",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20081",
+                    "roleName": "A1_ppt_thing_approved",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20082",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00029/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00030/",
+                    "name": "Approval/A0_pag_approver/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00031/",
+                    "name": "Approval/A1_ppt_thing_approved/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00032/",
+                    "name": "Approval/AM_loc/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10009",
+            "name": "Preparation",
+            "description": "The construction is being prepared.",
+            "wd_node": "Q19833559",
+            "wd_label": "preparation",
+            "wd_description": "activity of achieving readiness for some event or activity",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10010"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20090",
+                    "roleName": "A0_pag_preparer",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20091",
+                    "roleName": "A1_ppt_thing_made_ready",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20092",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "children": [
+                "resin:Events/10012",
+                "resin:Events/10013",
+                "resin:Events/10014"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10010",
+            "name": "Build",
+            "description": "The construction is being build.",
+            "wd_node": "Q385378",
+            "wd_label": "construction",
+            "wd_description": "process that consists of the building or assembling of a building or infrastructure",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10011"
+            ],
+            "children": [
+                "resin:Events/10015",
+                "resin:Events/10016",
+                "resin:Events/10017"
+            ],
+            "children_gate": "or",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20101",
+                    "roleName": "A0_pag_builder",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20101",
+                    "roleName": "A1_ppt_construction",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20102",
+                    "roleName": "A2_vsp_material",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10011",
+            "name": "Completion",
+            "description": "The construction process is completed.",
+            "wd_node": "Q83489981",
+            "wd_label": "finished",
+            "wd_description": "completed event",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20110",
+                    "roleName": "A0_pag_Intentional_agent",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20111",
+                    "roleName": "A1_ppt_Thing_finishing",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20112",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10012",
+            "name": "Recruit Workers",
+            "description": "The company is recruiting workers to build the architecture..",
+            "wd_node": "Q899277",
+            "wd_label": "recruitment",
+            "wd_description": "process of attracting, selecting and appointing candidates to a job or other organization",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10014"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20120",
+                    "roleName": "A0_pag_agent_employer",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20121",
+                    "roleName": "A1_ppt_theme_new_employee",
+                    "entity": "resin:Entities/00044/"
+                },
+                {
+                    "@id": "resin:Participants/20122",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00045/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00044/",
+                    "name": "workers",
+                    "wd_node": "Q811122",
+                    "wd_label": "construction worker",
+                    "wd_description": "person employed in the physical work during construction"
+                },
+                {
+                    "@id": "resin:Entities/00045/",
+                    "name": "recruiting_place",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10013",
+            "name": "Land Preparation",
+            "description": "Land cleaning and preparation before the construction begins.",
+            "wd_node": "Q17200001",
+            "wd_label": "cleaning",
+            "wd_description": "activity that purifies people, animals and objects of dirt and other particles",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10014"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20130",
+                    "roleName": "A0_pag_agent_agent_of_washing",
+                    "entity": "resin:Entities/00044/"
+                },
+                {
+                    "@id": "resin:Participants/20131",
+                    "roleName": "A1_ppt_theme_thing_being_washed",
+                    "entity": "resin:Entities/00003/"
+                },
+                {
+                    "@id": "resin:Participants/20132",
+                    "roleName": "A2_mnr__washing_liquid",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00048/",
+                    "name": "washing_liquid",
+                    "wd_node": "Q26270576",
+                    "wd_label": "cleaning tool",
+                    "wd_description": "object used for cleaning"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10014",
+            "name": "Evaluate Safety",
+            "description": "The company is evaluating whether the land is safe enough to start the construction.",
+            "wd_node": "Q851176",
+            "wd_label": "assessment",
+            "wd_description": "value judgement about a fact, an object or a person",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20140",
+                    "roleName": "A0_pag_assessor",
+                    "entity": "resin:Entities/00050/"
+                },
+                {
+                    "@id": "resin:Participants/20141",
+                    "roleName": "A1_ppt_entity_assessed",
+                    "entity": "resin:Entities/00003/"
+                },
+                {
+                    "@id": "resin:Participants/20142",
+                    "roleName": "A2_prd_value_or_attribute",
+                    "entity": "resin:Entities/00052/"
+                },
+                {
+                    "@id": "resin:Participants/20143",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00050/",
+                    "name": "evaluator",
+                    "wd_node": "Q43229",
+                    "wd_label": "organization",
+                    "wd_description": "social entity established to meet needs or pursue goals"
+                },
+                {
+                    "@id": "resin:Entities/00052/",
+                    "name": "evaluation_results",
+                    "wd_node": "Q2995644",
+                    "wd_label": "result",
+                    "wd_description": "final consequence or product of a sequence of actions or events"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10015",
+            "name": "Manufacturing Artifacts",
+            "description": "The workers manufactures and composes some artifacts for the construction event.",
+            "wd_node": "Q187939",
+            "wd_label": "manufacturing",
+            "wd_description": "industrial activity producing goods for sale using labor and machines",
+            "isSchema": false,
+            "repeatable": true,
+            "outlinks": [
+                "resin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20150",
+                    "roleName": "A0_pag_agent_creator",
+                    "entity": "resin:Entities/00054/"
+                },
+                {
+                    "@id": "resin:Participants/20151",
+                    "roleName": "A1_prd_result_creation",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20152",
+                    "roleName": "A2_vsp_material_created_from_thing_changed",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20153",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00057/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00054/",
+                    "name": "manufactorer",
+                    "wd_node": "Q83405",
+                    "wd_label": "factory",
+                    "wd_description": "facility where goods are industrially made, or processed"
+                },
+                {
+                    "@id": "resin:Entities/00056/",
+                    "name": "objects_used_for_construction",
+                    "wd_node": "Q206615",
+                    "wd_label": "building material",
+                    "wd_description": "material used for construction purposes"
+                },
+                {
+                    "@id": "resin:Entities/00057/",
+                    "name": "factory",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10016",
+            "name": "Transport Artifacts",
+            "description": "The client may be responsible for maintenance and repairs, and the company may no longer be liable for any problems with the building or facility.",
+            "wd_node": "Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "isSchema": false,
+            "repeatable": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20160",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00058/"
+                },
+                {
+                    "@id": "resin:Participants/20161",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "resin:Entities/00056/"
+                },
+                {
+                    "@id": "resin:Participants/20162",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "resin:Entities/00057/"
+                },
+                {
+                    "@id": "resin:Participants/20163",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/00003/"
+                },
+                {
+                    "@id": "resin:Participants/20164",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00062/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00058/",
+                    "name": "transporter",
+                    "wd_node": "Q43229",
+                    "wd_label": "organization",
+                    "wd_description": "social entity established to meet needs or pursue goals"
+                },
+                {
+                    "@id": "resin:Entities/00059/",
+                    "name": "Transport Artifacts/A1_ppt_theme_thing_transported/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00060/",
+                    "name": "Transport Artifacts/A2_dir_source_initial_location/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00061/",
+                    "name": "Transport Artifacts/A3_gol_destination_destination/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00062/",
+                    "name": "Transport Artifacts/AM_loc/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10017",
+            "name": "Accident",
+            "description": "Some unexpected accidents during the construction process.",
+            "wd_node": "Q171558",
+            "wd_label": "accident",
+            "wd_description": "unforeseen and unplanned event or circumstance, often with a negative outcome",
+            "isSchema": true,
+            "repeatable": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20170",
+                    "roleName": "A0_pag_causer_of_accident",
+                    "entity": "resin:Entities/00063/"
+                },
+                {
+                    "@id": "resin:Participants/20172",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00065/"
+                }
+            ],
+            "children": [
+                "resin:Events/10018",
+                "resin:Events/10019",
+                "resin:Events/10020",
+                "resin:Events/10021",
+                "resin:Events/10022",
+                "resin:Events/10023"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00063/",
+                    "name": "worker_involved_in_accident",
+                    "wd_node": "Q811122",
+                    "wd_label": "construction worker",
+                    "wd_description": "person employed in the physical work during construction"
+                },
+                {
+                    "@id": "resin:Entities/00065/",
+                    "name": "accident_place",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10018",
+            "name": "Incident",
+            "description": "The specific incident for the accident.",
+            "wd_node": "Q3149875",
+            "wd_label": "aviation_incident",
+            "wd_description": "an occurrence, other than an accident, associated with the operation of an aircraft which affects or could affect the safety of operation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10019"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20190",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00063/"
+                },
+                {
+                    "@id": "resin:Participants/20193",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00065/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10019",
+            "name": "Consequence",
+            "description": "The container node for consequence of the incident (with XOR on injury or death)",
+            "wd_node": "Q373752",
+            "wd_label": "victimization",
+            "wd_description": "process of being victimised or becoming a victim",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10020"
+            ],
+            "children": [
+                "resin:Events/10024",
+                "resin:Events/10025"
+            ],
+            "children_gate": "xor",
+            "participants": [
+                {
+                    "@id": "resin:Participants/20200",
+                    "roleName": "A1_ppt_victim",
+                    "entity": "resin:Entities/00063/"
+                },
+                {
+                    "@id": "resin:Participants/20192",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00065/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10020",
+            "name": "Public Concern",
+            "description": "The accident raises public concerns and discussions.",
+            "wd_node": "Q6501338",
+            "wd_label": "attention",
+            "wd_description": "behavioral and cognitive process of selectively concentrating on a discrete aspect of information, whether deemed subjective or objective, while ignoring other perceivable information",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10021"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20200",
+                    "roleName": "A0_pag_entity_paying_attention",
+                    "entity": "resin:Entities/00072/"
+                },
+                {
+                    "@id": "resin:Participants/20202",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00072/",
+                    "name": "public",
+                    "wd_node": "Q2388316",
+                    "wd_label": "public",
+                    "wd_description": "grouping of individual people"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10021",
+            "name": "Pause",
+            "description": "The construction project pauses to handle the accident.",
+            "wd_node": "Q337690",
+            "wd_label": "postponement",
+            "wd_description": "business or legal strategy decision",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10022"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20211",
+                    "roleName": "A1_ppt_event_delayed",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20212",
+                    "roleName": "A3_dir_original_time",
+                    "entity": "resin:Entities/00077/"
+                },
+                {
+                    "@id": "resin:Participants/20213",
+                    "roleName": "A4_gol_new_time",
+                    "entity": "resin:Entities/00078/"
+                },
+                {
+                    "@id": "resin:Participants/20214",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00077/",
+                    "name": "original_time",
+                    "wd_node": "Q11471",
+                    "wd_label": "time",
+                    "wd_description": "dimension in which events can be ordered from the past through the present into the future"
+                },
+                {
+                    "@id": "resin:Entities/00078/",
+                    "name": "new_time",
+                    "wd_node": "Q11471",
+                    "wd_label": "time",
+                    "wd_description": "dimension in which events can be ordered from the past through the present into the future"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10022",
+            "name": "Justice Procedure",
+            "description": "Justice Procedure for the accident.",
+            "wd_node": "Q1864008",
+            "wd_label": "legal_act",
+            "wd_description": "juridical fact in which the subject who made it happen acted under free will",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10023"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20220",
+                    "roleName": "A0_pag_doer",
+                    "entity": "resin:Entities/00080/"
+                },
+                {
+                    "@id": "resin:Participants/20222",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00082/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00080/",
+                    "name": "court",
+                    "wd_node": "Q41487",
+                    "wd_label": "court",
+                    "wd_description": "judicial institution with the authority to resolve legal disputes"
+                },
+                {
+                    "@id": "resin:Entities/00082/",
+                    "name": "place_of_the_legal_process",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10023",
+            "name": "Restart",
+            "description": "The construction site reopens and the constructing process continues.",
+            "wd_node": "Q529711",
+            "wd_label": "beginning",
+            "wd_description": "place where something begins",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20230",
+                    "roleName": "A1_ppt_Action_begun",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20232",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10024",
+            "name": "Injure",
+            "description": "The worker gets injured during the accident.",
+            "wd_node": "Q193078",
+            "wd_label": "injury",
+            "wd_description": "Physiological wound caused by an external source.",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10013"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20241",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/00063/"
+                },
+                {
+                    "@id": "resin:Participants/20242",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/00088/"
+                },
+                {
+                    "@id": "resin:Participants/20243",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00065/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00088/",
+                    "name": "instrument",
+                    "wd_node": "Q206615",
+                    "wd_label": "building material",
+                    "wd_description": "material used for construction purposes"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10025",
+            "name": "Die",
+            "description": "The worker dies during the accident.",
+            "wd_node": "Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20250",
+                    "roleName": "A1_ppt_the_deceased",
+                    "entity": "resin:Entities/00063/"
+                },
+                {
+                    "@id": "resin:Participants/20251",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00065/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00090/",
+                    "name": "Die/A1_ppt_the_deceased/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00091/",
+                    "name": "Die/AM_loc/",
+                    "wd_node": "",
+                    "wd_label": "",
+                    "wd_description": ""
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10026",
+            "name": "Opening Ceremony",
+            "description": "The opening ceremony of setting the building in use.",
+            "wd_node": "Q2627975",
+            "wd_label": "ceremony",
+            "wd_description": "event of ritual significance, performed on a special occasion",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10027"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20260",
+                    "roleName": "A0_pag_official",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20261",
+                    "roleName": "A1_prp_act",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20263",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00095/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00095/",
+                    "name": "location_of_the_ceremony",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10027",
+            "name": "Public Feedback",
+            "description": "The public feedbacks, comments and suggestions for the building.",
+            "wd_node": "Q183635",
+            "wd_label": "feedback",
+            "wd_description": "process in which information about the past or the present influences the same phenomenon in the present or future;occurs when outputs of a system are routed back as inputs as part of a chain of cause-and-effect that forms a circuit or loop",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10028"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20270",
+                    "roleName": "A0_pag_replier",
+                    "entity": "resin:Entities/00096/"
+                },
+                {
+                    "@id": "resin:Participants/20271",
+                    "roleName": "A1_ppt_topic",
+                    "entity": "resin:Entities/00097/"
+                },
+                {
+                    "@id": "resin:Participants/20272",
+                    "roleName": "A2_gol_recipient",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20273",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00099/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00096/",
+                    "name": "replier",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood (avoid use with P31; use Q5 for humans)"
+                },
+                {
+                    "@id": "resin:Entities/00097/",
+                    "name": "fault",
+                    "wd_node": "Q1095373",
+                    "wd_label": "fault",
+                    "wd_description": "abnormal condition or defect at the component, equipment, or sub-system level which may lead to an equipment failure\nedit"
+                },
+                {
+                    "@id": "resin:Entities/00099/",
+                    "name": "public_feedback_location",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10028",
+            "name": "Repair",
+            "description": "The repairing and improvements of the construction.",
+            "wd_node": "Q1043452",
+            "wd_label": "maintainence",
+            "wd_description": "operational and functional checks, servicing, repair or replacing of a product or technical system or parts thereof in order to keep their necessary technical condition",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20280",
+                    "roleName": "A0_pag_maintainer",
+                    "entity": "resin:Entities/00100/"
+                },
+                {
+                    "@id": "resin:Participants/20281",
+                    "roleName": "A1_ppt_thing_maintained",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20282",
+                    "roleName": "A2_prd_benefactive/attribute_of_Arg1",
+                    "entity": "resin:Entities/00097/"
+                },
+                {
+                    "@id": "resin:Participants/20283",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00100/",
+                    "name": "maintainence_group",
+                    "wd_node": "Q43229",
+                    "wd_label": "organization",
+                    "wd_description": "social entity established to meet needs or pursue goals"
+                }
+            ],
+            "relations": []
+        }
+    ]
+}
