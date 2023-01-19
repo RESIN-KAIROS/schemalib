@@ -157,7 +157,89 @@
                     "wd_node": "Q2221906"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30000/",
+                    "name": "amend trade agreement",
+                    "relationSubject": "resin:Entities/00007",
+                    "relationObject": "resin:Entities/00017",
+                    "wd_node": "P2567",
+                    "wd_description": "document is amended by specified other document",
+                    "wd_label": "amended by"
+                },
+                {
+                    "@id": "resin:Relations/30001/",
+                    "name": "negotiator 1 represents gpe 1",
+                    "relationSubject": "resin:Entities/00005",
+                    "relationObject": "resin:Entities/00001",
+                    "wd_node": "P1268",
+                    "wd_description": "organization, individual, or concept that an entity represents",
+                    "wd_label": "represents"
+                },
+                {
+                    "@id": "resin:Relations/30002/",
+                    "name": "negotiator 2 represents gpe 2",
+                    "relationSubject": "resin:Entities/00006",
+                    "relationObject": "resin:Entities/00002",
+                    "wd_node": "P1268",
+                    "wd_description": "organization, individual, or concept that an entity represents",
+                    "wd_label": "represents"
+                },
+                {
+                    "@id": "resin:Relations/30003/",
+                    "name": "legislative body represents gpe 1",
+                    "relationSubject": "resin:Entities/00011",
+                    "relationObject": "resin:Entities/00001",
+                    "wd_node": "P1268",
+                    "wd_description": "organization, individual, or concept that an entity represents",
+                    "wd_label": "represents"
+                },
+                {
+                    "@id": "resin:Relations/30004/",
+                    "name": "critics contributed to agreement 2",
+                    "relationSubject": "resin:Entities/00017",
+                    "relationObject": "resin:Entities/00015",
+                    "wd_node": "P1479",
+                    "wd_description": "thing that significantly influenced the effect, but did not directly cause it",
+                    "wd_label": "has contributing factor"
+                },
+                {
+                    "@id": "resin:Relations/30005/",
+                    "name": "negotiator 1 appointed by gpe 1",
+                    "relationSubject": "resin:Entities/00005",
+                    "relationObject": "resin:Entities/00001",
+                    "wd_node": "P1479",
+                    "wd_description": "who appointed the person to the office",
+                    "wd_label": "appointed by"
+                },
+                {
+                    "@id": "resin:Relations/30006/",
+                    "name": "negotiator 2 appointed by gpe 2",
+                    "relationSubject": "resin:Entities/00006",
+                    "relationObject": "resin:Entities/00002",
+                    "wd_node": "P1479",
+                    "wd_description": "who appointed the person to the office",
+                    "wd_label": "appointed by"
+                },
+                {
+                    "@id": "resin:Relations/30007/",
+                    "name": "agreement 1 created at location 1",
+                    "relationSubject": "resin:Entities/00007",
+                    "relationObject": "resin:Entities/00003",
+                    "wd_node": "P1071",
+                    "wd_description": "place where the item was made; where applicable, location of final assembly",
+                    "wd_label": "location of creation"
+                },
+                {
+                    "@id": "resin:Relations/30008/",
+                    "name": "agreement 2 created at location 2",
+                    "relationSubject": "resin:Entities/00017",
+                    "relationObject": "resin:Entities/00018",
+                    "wd_node": "P1071",
+                    "wd_description": "place where the item was made; where applicable, location of final assembly",
+                    "wd_label": "location of creation"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
