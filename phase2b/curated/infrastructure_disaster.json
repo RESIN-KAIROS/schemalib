@@ -465,13 +465,38 @@
       "@id": "resin:Events/10013",
       "name": "Public Comment",
       "description": "Public opinion comments, supports or criticizes the cause, involved persons and results of the event.",
-      "wd_node": "Q58897583",
+      "wd_node": "Q63248011",
       "wd_label": "comment",
-      "wd_description": "work consisting of a critical or explanatory note written to discuss, support, or dispute an article or other presentation previously published",
+      "wd_description": "None",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [],
       "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_commenter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "A3_vsp_attributive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20134",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
       ],
       "entities": [],
       "relations": []
@@ -480,13 +505,33 @@
       "@id": "resin:Events/10009",
       "name": "Damage Assessment",
       "description": "The government assesses the damage caused by the disaster.",
-      "wd_node": "Q98523538",
-      "wd_label": "damage assessment",
-      "wd_description": "set of approaches to determine whether something has been damaged, and to quantify the extent",
+      "wd_node": "Q851176",
+      "wd_label": "assessment",
+      "wd_description": "value judgement about a fact, an object or a person",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [],
       "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_assessor",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_entity_assessed",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A2_prd_value_or_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
       ],
       "entities": [],
       "relations": []
@@ -532,6 +577,31 @@
       "repeatable": false,
       "outlinks": [],
       "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_planner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_thing_planned",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "A2_cau_grounds_for_planning",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "A3_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20224",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
       ],
       "entities": [],
       "relations": []
