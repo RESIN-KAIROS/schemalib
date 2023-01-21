@@ -3,1148 +3,1800 @@
     "sdfVersion": "3.0",
     "version": "resin:Phase2b",
     "events": [
-      {
-        "@id": "resin:Events/10000",
-        "name": "Chemical Warfare",
-        "description": "chemical warfare news story.",
-        "wd_node": "Q483610",
-        "wd_label": "chemical_warfare",
-        "wd_description": "type of warfare that involves using the toxic properties of chemical substances as weapons",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20000",
-            "roleName": "A0_pag_agent_killer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20001",
-            "roleName": "A1_ppt_patient_corpse",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20002",
-            "roleName": "A2_mnr_instrument_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20003",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10001",
-          "resin:Events/10002",
-          "resin:Events/10003",
-          "resin:Events/10004",
-          "resin:Events/10005",
-          "resin:Events/10006"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": [],
-        "importance": [],
-        "likelihood": []
-      },
-      {
-        "@id": "resin:Events/10001",
-        "name": "preparations",
-        "description": "Preparations for the chemical warfare.",
-        "wd_node": "Q19833559",
-        "wd_label": "preparation",
-        "wd_description": "activity of achieving readiness for some event or activity",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10002"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20010",
-            "roleName": "A0_pag_preparer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20011",
-            "roleName": "A1_ppt_thing_made_ready",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20012",
-            "roleName": "A2_prp_ready_for",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20013",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10008",
-          "resin:Events/10009",
-          "resin:Events/10010",
-          "resin:Events/10011"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10002",
-        "name": "attack",
-        "description": "Attack by the country with the chemical weapons.",
-        "wd_node": "Q1174599",
-        "wd_label": "attack",
-        "wd_description": "action to injure another organism",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10003"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20020",
-            "roleName": "A0_pag_agent_assaulter",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20021",
-            "roleName": "A1_ppt_theme_entity_assaulted",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20022",
-            "roleName": "AM_mnr__manner",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20023",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10100"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10003",
-        "name": "victims",
-        "description": "People's lives are affected by the chemical warfare.",
-        "wd_node": "Q373752",
-        "wd_label": "victimization",
-        "wd_description": "process of being victimised or becoming a victim",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10004",
-          "resin:Events/10005",
-          "resin:Events/10006"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20030",
-            "roleName": "A0_pag_victimizer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20031",
-            "roleName": "A1_ppt_victim",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20032",
-            "roleName": "A2_cau_grounds",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20033",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10013",
-          "resin:Events/10014",
-          "resin:Events/10017",
-          "resin:Events/10101",
-          "resin:Events/10012"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10004",
-        "name": "government response",
-        "description": "The government responds to the chemical warfare.",
-        "wd_node": "Q1032176",
-        "wd_label": "countermeasure",
-        "wd_description": "specific action taken or system used to offset another action",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10029"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20040",
-            "roleName": "A0_pag_worker",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20041",
-            "roleName": "A1_ppt_action_or_object_being_prevented",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20042",
-            "roleName": "A3_mnr_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20043",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10018",
-          "resin:Events/10300",
-          "resin:Events/10020"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10005",
-        "name": "civilian response",
-        "description": "Civilian response to the chemical warfare.",
-        "wd_node": "Q31983622",
-        "wd_label": "reaction",
-        "wd_description": "action or statement in response to a stimulus or other event",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10029"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20050",
-            "roleName": "A0_pag_agent_killer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20051",
-            "roleName": "A1_ppt_patient_corpse",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20052",
-            "roleName": "A2_mnr_instrument_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20053",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10022",
-          "resin:Events/10023",
-          "resin:Events/10400"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10006",
-        "name": "international response",
-        "description": "People from other countries react to the chemical warfare.",
-        "wd_node": "Q31983622",
-        "wd_label": "reaction",
-        "wd_description": "action or statement in response to a stimulus or other event",
-        "isSchema": true,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10029"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20060",
-            "roleName": "A0_ppt_reactor",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20061",
-            "roleName": "A1_pag_reacted-to",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20062",
-            "roleName": "A2_prd_reaction",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20063",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10024",
-          "resin:Events/10026",
-          "resin:Events/10027",
-          "resin:Events/10028"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10008",
-        "name": "Targeting",
-        "description": "Choose the attack target.",
-        "wd_node": "Q7685924",
-        "wd_label": "targeting",
-        "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10009"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20080",
-            "roleName": "A0_pag_agent_targeter",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20081",
-            "roleName": "A1_ppt_theme_thing_aimed_at",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20082",
-            "roleName": "A2_mnr_instrument_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20083",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10009",
-        "name": "Attack Planning",
-        "description": "The time and place of the attack is decided.",
-        "wd_node": "Q2271896",
-        "wd_label": "scheduling",
-        "wd_description": "the process of arranging, controlling and optimizing work and workloads in a production process or manufacturing process; is used to allocate plant and machinery resources, plan human resources, plan production processes and purchase materials",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10010"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20090",
-            "roleName": "A0_pag_planner",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20091",
-            "roleName": "A1_prd_thing_scheduled",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20092",
-            "roleName": "A2_prd_scheduled_to",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20093",
-            "roleName": "A3_tmp_time_of_event",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20094",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10010",
-        "name": "Delivery",
-        "description": "The delivery system is prepared.",
-        "wd_node": "Q2334804",
-        "wd_label": "delivery",
-        "wd_description": "process of transporting goods from a source location to a predefined destination",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10011"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20100",
-            "roleName": "A0_pag_sender",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20101",
-            "roleName": "A1_ppt_sent",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20102",
-            "roleName": "A2_gol_sent-to",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20103",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10011",
-        "name": "Chemical Weapon Deployment",
-        "description": "The chemical weapon is deployed.",
-        "wd_node": "Q1308677",
-        "wd_label": "deployment",
-        "wd_description": "task-oriented activity of task forces",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20110",
-            "roleName": "A0_pag_Deployer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20111",
-            "roleName": "A1_ppt_Deployed",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20112",
-            "roleName": "A2_loc_deployed_where",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20113",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10012",
-        "name": "Injury",
-        "description": "Victim being injured",
-        "wd_node": "Q193078",
-        "wd_label": "injury",
-        "wd_description": "physiological wound caused by an external source",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20120",
-            "roleName": "A1_ppt_experiencer_injured_party",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20121",
-            "roleName": "A0_pag_stimulus_stimulus_of_injury",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20122",
-            "roleName": "A2_mnr__instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20123",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10100",
-        "name": "Chemical weapon attack",
-        "description": "One country attacks the other country using chemical weapon",
-        "wd_node": "Q1174599",
-        "wd_label": "attack",
-        "wd_description": "action to injure another organism",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/21001",
-            "roleName": "A0_pag_agent_assaulter",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/21002",
-            "roleName": "A1_ppt_theme_entity_assaulted",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/21003",
-            "roleName": "AM_mnr__manner",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/21004",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10013",
-        "name": "Exposure to Harmful Chemicals",
-        "description": "People are exposed to chemicals that can cause serious health effects",
-        "wd_node": "Q1384726",
-        "wd_label": "exposure",
-        "wd_description": "in medical context, environmental influence on an object or living thing",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10014"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20130",
-            "roleName": "A0_pag_exposer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20131",
-            "roleName": "A1_ppt_exposed_entity",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20132",
-            "roleName": "A2_gol_exposed_to",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20133",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10101",
-        "name": "Recovery",
-        "description": "Recover from illness caused by the chemical weapon",
-        "wd_node": "Q38127868",
-        "wd_label": "recovery",
-        "wd_description": "process by which something is returned to its former status or position",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/22001",
-            "roleName": "A0_pag_repairer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/22002",
-            "roleName": "A1_ppt_entity_repaired",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/22003",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10014",
-        "name": "Showing symptoms",
-        "description": "People may experience a range of medical problems",
-        "wd_node": "Q169872",
-        "wd_label": "symptom",
-        "wd_description": "departure from normal function or feeling which is noticed by a patient",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10101",
-          "resin:Events/10017",
-          "resin:Events/10012"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20140",
-            "roleName": "A1_ppt_sick/ill_one",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20141",
-            "roleName": "A2_cau_cause_or_disease",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20142",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10017",
-        "name": "Death",
-        "description": "People may die if they are exposed to high levels of chemicals or if they have a severe reaction",
-        "wd_node": "Q4",
-        "wd_label": "death",
-        "wd_description": "permanent cessation of vital functions",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20170",
-            "roleName": "A1_ppt_the_deceased",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20171",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20172",
-            "roleName": "AM_cau__cause",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10018",
-        "name": "Government Monitoring",
-        "description": "The government monitors the situation to ensure the response is effective.",
-        "wd_node": "Q2143522",
-        "wd_label": "monitoring",
-        "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20180",
-            "roleName": "A0_pag_observer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20181",
-            "roleName": "A1_loc_thing_looked_at",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20182",
-            "roleName": "A2_ppt_looking_for_what?",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20183",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10300",
-        "name": "Censure",
-        "description": "The government expression of strong disapproval or harsh criticism to the attacking.",
-        "wd_node": "Q5058947",
-        "wd_label": "censure",
-        "wd_description": "expression of strong disapproval or harsh criticism",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/23000",
-            "roleName": "A0_pag_condemner",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/23001",
-            "roleName": "A1_ppt_entity_censured",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/23002",
-            "roleName": "A2_prd_for_what?",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/23003",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10020",
-        "name": "Property Damage Assessment",
-        "description": "This includes checking for injuries and assessing the damage to property.",
-        "wd_node": "Q554774",
-        "wd_label": "property_damage",
-        "wd_description": "natural or intentional damage or destruction of public or private property",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20200",
-            "roleName": "A0_pag_agent",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20201",
-            "roleName": "A1_ppt_entity_damaged",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20202",
-            "roleName": "A2_mnr_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20203",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10022",
-        "name": "Decontaminate",
-        "description": "This includes decontaminating any areas that have been affected by the chemical warfare.",
-        "wd_node": "Q17008689",
-        "wd_label": "decontamination",
-        "wd_description": "instrument processing",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20220",
-            "roleName": "A0_pag_causer_of_improvement",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20221",
-            "roleName": "A1_ppt_thing_getting_better",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20222",
-            "roleName": "A2_mnr_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20223",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10400",
-        "name": "Protest",
-        "description": "Civilian express objection to the chemical warfare.",
-        "wd_node": "Q273120",
-        "wd_label": "protest",
-        "wd_description": "expression of objection",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/25000",
-            "roleName": "A0_pag_protester",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/25001",
-            "roleName": "A1_ppt_objectionable_thing",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/25002",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10023",
-        "name": "Support",
-        "description": "This includes providing psychological support and assistance with any financial needs.",
-        "wd_node": "Q102358908",
-        "wd_label": "support",
-        "wd_description": "help for a person in a difficult situation",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20230",
-            "roleName": "A0_pag_helper",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20231",
-            "roleName": "A1_ppt_person",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20232",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10024",
-        "name": "UN Meeting",
-        "description": "The United Nations holds an emergency meeting to discuss the chemical warfare",
-        "wd_node": "Q21170798",
-        "wd_label": "meeting",
-        "wd_description": "situation in which two or more persons meet",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10027"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20240",
-            "roleName": "A0_pag_agent_one_party",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20241",
-            "roleName": "A1_com_co_agent_other_party",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20242",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10026",
-        "name": "Organize Aid",
-        "description": "Aid organizations begin to mobilize to provide assistance to those affected by the chemical warfare.",
-        "wd_node": "Q3839081",
-        "wd_label": "disaster",
-        "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10027"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20260",
-            "roleName": "A1_ppt_nature_of_the_disaster",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20261",
-            "roleName": "A2_gol_experiencer_of_disaster",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20262",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10027",
-        "name": "Task Force",
-        "description": "The International Committee of the Red Cross sets up a task force to deal with the aftermath of the chemical warfare.",
-        "wd_node": "Q38127868",
-        "wd_label": "recovery",
-        "wd_description": "process by which something is returned to its former status or position",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10028"
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20270",
-            "roleName": "A0_pag_repairer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20271",
-            "roleName": "A1_ppt_entity_repaired",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20272",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10028",
-        "name": "Stop the fighting",
-        "description": "The United Nations Security Council passes a resolution condemning the use of chemical weapons and calling for an end to the fighting.",
-        "wd_node": "Q2751586",
-        "wd_label": "resolution",
-        "wd_description": "written declaration adopted by a deliberative body",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20280",
-            "roleName": "A0_pag_announcer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20281",
-            "roleName": "A1_ppt_utterance",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20282",
-            "roleName": "A2_gol_hearer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20283",
-            "roleName": "A3_prd_attributive",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20284",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10029",
-        "name": "Long-Term Effects",
-        "description": "Long-term effects may be felt by those affected by the warfare.",
-        "wd_node": "Q28791005",
-        "wd_label": "depression",
-        "wd_description": "movement in an inferior direction",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20290",
-            "roleName": "A0_pag_causer_of_depression",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20291",
-            "roleName": "A1_ppt_entity_getting_depressed",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20292",
-            "roleName": "A2_mnr_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20293",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "children": [
-          "resin:Events/10030",
-          "resin:Events/10031",
-          "resin:Events/10032"
-        ],
-        "children_gate": "or",
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10030",
-        "name": "Infrastructure Damage",
-        "description": "Damage to civilian buildings and critical infrastructure",
-        "wd_node": "Q481609",
-        "wd_label": "damage",
-        "wd_description": "changes introduced into a system that adversely affect its current or future performance",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [
-        ],
-        "participants": [
-          {
-            "@id": "resin:Participants/20300",
-            "roleName": "A0_pag_agent_agent_causer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20301",
-            "roleName": "A1_ppt_patient_entity_damaged",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20302",
-            "roleName": "A2_mnr_instrument_instrument",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20303",
-            "roleName": "AM_loc__location",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10031",
-        "name": "Rehabilitation",
-        "description": "Interference with services such as health care and education",
-        "wd_node": "Q2795791",
-        "wd_label": "rehabilitation",
-        "wd_description": "process to return a person to his formerly existing mental and health condition",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/20310",
-            "roleName": "A0_pag_restorer",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20311",
-            "roleName": "A1_ppt_patient_rehabilitated",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20312",
-            "roleName": "A2_ppt_affliction",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/20313",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      },
-      {
-        "@id": "resin:Events/10032",
-        "name": "Law Enactment",
-        "description": "Law enacted against chemical warfare",
-        "wd_node": "Q3406566",
-        "wd_label": "legislative_process",
-        "wd_description": "formal process leading to the approval of a law",
-        "isSchema": false,
-        "repeatable": false,
-        "outlinks": [],
-        "participants": [
-          {
-            "@id": "resin:Participants/26000",
-            "roleName": "A0_pag_agent_legislative_body",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/26001",
-            "roleName": "A1_ppt_thing_enacted",
-            "entity": ""
-          },
-          {
-            "@id": "resin:Participants/26002",
-            "roleName": "AM_loc",
-            "entity": ""
-          }
-        ],
-        "entities": [],
-        "relations": []
-      }
+        {
+            "@id": "resin:Events/10000",
+            "name": "Chemical Warfare",
+            "description": "chemical warfare news story.",
+            "wd_node": "Q483610",
+            "wd_label": "chemical_warfare",
+            "wd_description": "type of warfare that involves using the toxic properties of chemical substances as weapons",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000",
+                    "roleName": "A0_pag_agent_killer",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20001",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20002",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/00002/"
+                },
+                {
+                    "@id": "resin:Participants/20003",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00003/"
+                }
+            ],
+            "children": [
+                "resin:Events/10001",
+                "resin:Events/10002",
+                "resin:Events/10003",
+                "resin:Events/10004",
+                "resin:Events/10005",
+                "resin:Events/10006"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00000/",
+                    "name": "Chemical_Warfare/A0_pag_agent_killer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "Chemical_Warfare/A1_ppt_patient_corpse/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00002/",
+                    "name": "Chemical_Warfare/A2_mnr_instrument_instrument/",
+                    "wd_node": "Q170907",
+                    "wd_label": "biological_weapon",
+                    "wd_description": ""
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "Chemical_Warfare/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30000/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00012/",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                },
+                {
+                    "@id": "resin:Relations/30001/",
+                    "name": "partially coincident with",
+                    "relationSubject": "resin:Entities/00003/",
+                    "relationObject": "resin:Entities/00026/",
+                    "wd_node": "wd:P1382",
+                    "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+                    "wd_label": "partially coincident with"
+                }
+            ],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10001",
+            "name": "preparations",
+            "description": "Preparations for the chemical warfare.",
+            "wd_node": "Q19833559",
+            "wd_label": "preparation",
+            "wd_description": "activity of achieving readiness for some event or activity",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20010",
+                    "roleName": "A0_pag_preparer",
+                    "entity": "resin:Entities/00004/"
+                },
+                {
+                    "@id": "resin:Participants/20011",
+                    "roleName": "A1_ppt_thing_made_ready",
+                    "entity": "resin:Entities/00005/"
+                },
+                {
+                    "@id": "resin:Participants/20012",
+                    "roleName": "A2_prp_ready_for",
+                    "entity": "resin:Entities/00006/"
+                },
+                {
+                    "@id": "resin:Participants/20013",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "children": [
+                "resin:Events/10008",
+                "resin:Events/10009",
+                "resin:Events/10010",
+                "resin:Events/10011"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00004/",
+                    "name": "preparations/A0_pag_preparer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00005/",
+                    "name": "preparations/A1_ppt_thing_made_ready/",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete object"
+                },
+                {
+                    "@id": "resin:Entities/00006/",
+                    "name": "preparations/A2_prp_ready_for/",
+                    "wd_node": "Q483610",
+                    "wd_label": "chemical warfare",
+                    "wd_description": "type of warfare that involves using the toxic properties of chemical substances as weapons"
+                },
+                {
+                    "@id": "resin:Entities/00007/",
+                    "name": "preparations/AM_loc/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10002",
+            "name": "attack",
+            "description": "Attack by the country with the chemical weapons.",
+            "wd_node": "Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20020",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/20021",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "resin:Participants/20022",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00011/"
+                }
+            ],
+            "children": [
+                "resin:Events/10100"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "attack/A0_pag_agent_assaulter/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00009/",
+                    "name": "attack/A1_ppt_theme_entity_assaulted/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00010/",
+                    "name": "attack/AM_mnr__manner/",
+                    "wd_node": "Q728",
+                    "wd_label": "weapon",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/00011/",
+                    "name": "attack/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10003",
+            "name": "victims",
+            "description": "People's lives are affected by the chemical warfare.",
+            "wd_node": "Q373752",
+            "wd_label": "victimization",
+            "wd_description": "process of being victimised or becoming a victim",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10004",
+                "resin:Events/10005",
+                "resin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20030",
+                    "roleName": "A0_pag_victimizer",
+                    "entity": "resin:Entities/00012/"
+                },
+                {
+                    "@id": "resin:Participants/20031",
+                    "roleName": "A1_ppt_victim",
+                    "entity": "resin:Entities/00013/"
+                },
+                {
+                    "@id": "resin:Participants/20032",
+                    "roleName": "A2_cau_grounds",
+                    "entity": "resin:Entities/00014/"
+                },
+                {
+                    "@id": "resin:Participants/20033",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "children": [
+                "resin:Events/10013",
+                "resin:Events/10014",
+                "resin:Events/10017",
+                "resin:Events/10101",
+                "resin:Events/10012"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00012/",
+                    "name": "victims/A0_pag_victimizer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00013/",
+                    "name": "victims/A1_ppt_victim/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00014/",
+                    "name": "victims/A2_cau_grounds/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "location of physical or non-physical object in space"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10004",
+            "name": "government response",
+            "description": "The government responds to the chemical warfare.",
+            "wd_node": "Q1032176",
+            "wd_label": "countermeasure",
+            "wd_description": "specific action taken or system used to offset another action",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10029"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20040",
+                    "roleName": "A0_pag_worker",
+                    "entity": "resin:Entities/00015/"
+                },
+                {
+                    "@id": "resin:Participants/20041",
+                    "roleName": "A1_ppt_action_or_object_being_prevented",
+                    "entity": "resin:Entities/00016/"
+                },
+                {
+                    "@id": "resin:Participants/20042",
+                    "roleName": "A3_mnr_instrument",
+                    "entity": "resin:Entities/00017/"
+                },
+                {
+                    "@id": "resin:Participants/20043",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "children": [
+                "resin:Events/10018",
+                "resin:Events/10300",
+                "resin:Events/10020"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00015/",
+                    "name": "government_response/A0_pag_worker/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00016/",
+                    "name": "government_response/A1_ppt_action_or_object_being_prevented/",
+                    "wd_node": "Q483610",
+                    "wd_label": "chemical warfare",
+                    "wd_description": "type of warfare that involves using the toxic properties of chemical substances as weapons"
+                },
+                {
+                    "@id": "resin:Entities/00017/",
+                    "name": "government_response/A3_mnr_instrument/",
+                    "wd_node": "Q327333",
+                    "wd_label": "government_agency",
+                    "wd_description": "organization in the machinery of government responsible for specific functions"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10005",
+            "name": "civilian response",
+            "description": "Civilian response to the chemical warfare.",
+            "wd_node": "Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10029"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20050",
+                    "roleName": "A0_pag_agent_killer",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20051",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/00001/"
+                },
+                {
+                    "@id": "resin:Participants/20052",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/00018/"
+                },
+                {
+                    "@id": "resin:Participants/20053",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00019/"
+                }
+            ],
+            "children": [
+                "resin:Events/10022",
+                "resin:Events/10023",
+                "resin:Events/10400"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00018/",
+                    "name": "civilian_response/A2_mnr_instrument_instrument/",
+                    "wd_node": "Q340169",
+                    "wd_label": "media",
+                    "wd_description": "storage and delivering agent of information or data"
+                },
+                {
+                    "@id": "resin:Entities/00019/",
+                    "name": "civilian_response/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10006",
+            "name": "international response",
+            "description": "People from other countries react to the chemical warfare.",
+            "wd_node": "Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10029"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20060",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "resin:Entities/00020/"
+                },
+                {
+                    "@id": "resin:Participants/20061",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "resin:Entities/00021/"
+                },
+                {
+                    "@id": "resin:Participants/20062",
+                    "roleName": "A2_prd_reaction",
+                    "entity": "resin:Entities/00022/"
+                },
+                {
+                    "@id": "resin:Participants/20063",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "children": [
+                "resin:Events/10024",
+                "resin:Events/10026",
+                "resin:Events/10027",
+                "resin:Events/10028"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00020/",
+                    "name": "international_response/A0_ppt_reactor/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00021/",
+                    "name": "international_response/A1_pag_reacted-to/",
+                    "wd_node": "Q483610",
+                    "wd_label": "chemical warfare",
+                    "wd_description": "type of warfare that involves using the toxic properties of chemical substances as weapons"
+                },
+                {
+                    "@id": "resin:Entities/00022/",
+                    "name": "international_response/A2_prd_reaction/",
+                    "wd_node": "Q4026292",
+                    "wd_label": "action",
+                    "wd_description": "something an agent can do or perform"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10008",
+            "name": "Targeting",
+            "description": "Choose the attack target.",
+            "wd_node": "Q7685924",
+            "wd_label": "targeting",
+            "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10009"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20080",
+                    "roleName": "A0_pag_agent_targeter",
+                    "entity": "resin:Entities/00023/"
+                },
+                {
+                    "@id": "resin:Participants/20081",
+                    "roleName": "A1_ppt_theme_thing_aimed_at",
+                    "entity": "resin:Entities/00024/"
+                },
+                {
+                    "@id": "resin:Participants/20082",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/00025/"
+                },
+                {
+                    "@id": "resin:Participants/20083",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00026/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00023/",
+                    "name": "Targeting/A0_pag_agent_targeter/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00024/",
+                    "name": "Targeting/A1_ppt_theme_thing_aimed_at/",
+                    "wd_node": "object",
+                    "wd_label": "Q488383",
+                    "wd_description": "target object"
+                },
+                {
+                    "@id": "resin:Entities/00025/",
+                    "name": "Targeting/A2_mnr_instrument_instrument/",
+                    "wd_node": "Q728",
+                    "wd_label": "weapon",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/00026/",
+                    "name": "Targeting/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10009",
+            "name": "Attack Planning",
+            "description": "The time and place of the attack is decided.",
+            "wd_node": "Q2271896",
+            "wd_label": "scheduling",
+            "wd_description": "the process of arranging, controlling and optimizing work and workloads in a production process or manufacturing process; is used to allocate plant and machinery resources, plan human resources, plan production processes and purchase materials",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10010"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20090",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/00027/"
+                },
+                {
+                    "@id": "resin:Participants/20091",
+                    "roleName": "A1_prd_thing_scheduled",
+                    "entity": "resin:Entities/00028/"
+                },
+                {
+                    "@id": "resin:Participants/20092",
+                    "roleName": "A2_prd_scheduled_to",
+                    "entity": "resin:Entities/00029/"
+                },
+                {
+                    "@id": "resin:Participants/20093",
+                    "roleName": "A3_tmp_time_of_event",
+                    "entity": "resin:Entities/00030/"
+                },
+                {
+                    "@id": "resin:Participants/20094",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00027/",
+                    "name": "Attack_Planning/A0_pag_planner/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00028/",
+                    "name": "Attack_Planning/A1_prd_thing_scheduled/",
+                    "wd_node": "Q1371819",
+                    "wd_label": "plan",
+                    "wd_description": "outline of a strategy for achievement of an objective"
+                },
+                {
+                    "@id": "resin:Entities/00029/",
+                    "name": "Attack_Planning/A2_prd_scheduled_to/",
+                    "wd_node": "Q1371819",
+                    "wd_label": "plan",
+                    "wd_description": "outline of a strategy for achievement of an objective"
+                },
+                {
+                    "@id": "resin:Entities/00030/",
+                    "name": "Attack_Planning/A3_tmp_time_of_event/",
+                    "wd_node": "Q11471",
+                    "wd_label": "time",
+                    "wd_description": "dimension in which events can be ordered from the past through the present into the future"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10010",
+            "name": "Delivery",
+            "description": "The delivery system is prepared.",
+            "wd_node": "Q2334804",
+            "wd_label": "delivery",
+            "wd_description": "process of transporting goods from a source location to a predefined destination",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10011"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20100",
+                    "roleName": "A0_pag_sender",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "resin:Participants/20101",
+                    "roleName": "A1_ppt_sent",
+                    "entity": "resin:Entities/00032/"
+                },
+                {
+                    "@id": "resin:Participants/20102",
+                    "roleName": "A2_gol_sent-to",
+                    "entity": "resin:Entities/00033/"
+                },
+                {
+                    "@id": "resin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00031/",
+                    "name": "Delivery/A0_pag_sender/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00032/",
+                    "name": "Delivery/A1_ppt_sent/",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete object"
+                },
+                {
+                    "@id": "resin:Entities/00033/",
+                    "name": "Delivery/A2_gol_sent-to/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10011",
+            "name": "Chemical Weapon Deployment",
+            "description": "The chemical weapon is deployed.",
+            "wd_node": "Q1308677",
+            "wd_label": "deployment",
+            "wd_description": "task-oriented activity of task forces",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20110",
+                    "roleName": "A0_pag_Deployer",
+                    "entity": "resin:Entities/00034/"
+                },
+                {
+                    "@id": "resin:Participants/20111",
+                    "roleName": "A1_ppt_Deployed",
+                    "entity": "resin:Entities/00035/"
+                },
+                {
+                    "@id": "resin:Participants/20112",
+                    "roleName": "A2_loc_deployed_where",
+                    "entity": "resin:Entities/00036/"
+                },
+                {
+                    "@id": "resin:Participants/20113",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00034/",
+                    "name": "Chemical_Weapon_Deployment/A0_pag_Deployer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00035/",
+                    "name": "Chemical_Weapon_Deployment/A1_ppt_Deployed/",
+                    "wd_node": "Q728",
+                    "wd_label": "weapon",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/00036/",
+                    "name": "Chemical_Weapon_Deployment/A2_loc_deployed_where/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10012",
+            "name": "Injury",
+            "description": "Victim being injured",
+            "wd_node": "Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20120",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/00037/"
+                },
+                {
+                    "@id": "resin:Participants/20121",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/00038/"
+                },
+                {
+                    "@id": "resin:Participants/20122",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/00039/"
+                },
+                {
+                    "@id": "resin:Participants/20123",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00040/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00037/",
+                    "name": "Injury/A1_ppt_experiencer_injured_party/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00038/",
+                    "name": "Injury/A0_pag_stimulus_stimulus_of_injury/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00039/",
+                    "name": "Injury/A2_mnr__instrument/",
+                    "wd_node": "Q39546",
+                    "wd_label": "tool",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                },
+                {
+                    "@id": "resin:Entities/00040/",
+                    "name": "Injury/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10100",
+            "name": "Chemical weapon attack",
+            "description": "One country attacks the other country using chemical weapon",
+            "wd_node": "Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/21001",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "resin:Entities/00008/"
+                },
+                {
+                    "@id": "resin:Participants/21002",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "resin:Participants/21003",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/00010/"
+                },
+                {
+                    "@id": "resin:Participants/21004",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00041/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00041/",
+                    "name": "Chemical_weapon_attack/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10013",
+            "name": "Exposure to Harmful Chemicals",
+            "description": "People are exposed to chemicals that can cause serious health effects",
+            "wd_node": "Q1384726",
+            "wd_label": "exposure",
+            "wd_description": "in medical context, environmental influence on an object or living thing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10014"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20130",
+                    "roleName": "A0_pag_exposer",
+                    "entity": "resin:Entities/00042/"
+                },
+                {
+                    "@id": "resin:Participants/20131",
+                    "roleName": "A1_ppt_exposed_entity",
+                    "entity": "resin:Entities/00043/"
+                },
+                {
+                    "@id": "resin:Participants/20132",
+                    "roleName": "A2_gol_exposed_to",
+                    "entity": "resin:Entities/00044/"
+                },
+                {
+                    "@id": "resin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00042/",
+                    "name": "Exposure_to_Harmful_Chemicals/A0_pag_exposer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00043/",
+                    "name": "Exposure_to_Harmful_Chemicals/A1_ppt_exposed_entity/",
+                    "wd_node": "Q79529",
+                    "wd_label": "chemical substance",
+                    "wd_description": "matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of and characterized by physical properties like density"
+                },
+                {
+                    "@id": "resin:Entities/00044/",
+                    "name": "Exposure_to_Harmful_Chemicals/A2_gol_exposed_to/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10101",
+            "name": "Recovery",
+            "description": "Recover from illness caused by the chemical weapon",
+            "wd_node": "Q38127868",
+            "wd_label": "recovery",
+            "wd_description": "process by which something is returned to its former status or position",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/22001",
+                    "roleName": "A0_pag_repairer",
+                    "entity": "resin:Entities/00045/"
+                },
+                {
+                    "@id": "resin:Participants/22002",
+                    "roleName": "A1_ppt_entity_repaired",
+                    "entity": "resin:Entities/00046/"
+                },
+                {
+                    "@id": "resin:Participants/22003",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00045/",
+                    "name": "Recovery/A0_pag_repairer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00046/",
+                    "name": "Recovery/A1_ppt_entity_repaired/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10014",
+            "name": "Showing symptoms",
+            "description": "People may experience a range of medical problems",
+            "wd_node": "Q169872",
+            "wd_label": "symptom",
+            "wd_description": "departure from normal function or feeling which is noticed by a patient",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10101",
+                "resin:Events/10017",
+                "resin:Events/10012"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20140",
+                    "roleName": "A1_ppt_sick/ill_one",
+                    "entity": "resin:Entities/00047/"
+                },
+                {
+                    "@id": "resin:Participants/20141",
+                    "roleName": "A2_cau_cause_or_disease",
+                    "entity": "resin:Entities/00048/"
+                },
+                {
+                    "@id": "resin:Participants/20142",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00047/",
+                    "name": "Showing_symptoms/A1_ppt_sick/ill_one/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00048/",
+                    "name": "Showing_symptoms/A2_cau_cause_or_disease/",
+                    "wd_node": "Q12136",
+                    "wd_label": "disease",
+                    "wd_description": "abnormal condition negatively affecting organisms"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10017",
+            "name": "Death",
+            "description": "People may die if they are exposed to high levels of chemicals or if they have a severe reaction",
+            "wd_node": "Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20170",
+                    "roleName": "A1_ppt_the_deceased",
+                    "entity": "resin:Entities/00049/"
+                },
+                {
+                    "@id": "resin:Participants/20171",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00050/"
+                },
+                {
+                    "@id": "resin:Participants/20172",
+                    "roleName": "AM_cau__cause",
+                    "entity": "resin:Entities/00051/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00049/",
+                    "name": "Death/A1_ppt_the_deceased/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00050/",
+                    "name": "Death/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                },
+                {
+                    "@id": "resin:Entities/00051/",
+                    "name": "Death/AM_cau__cause/",
+                    "wd_node": "Q2574811",
+                    "wd_label": "cause",
+                    "wd_description": "entity which forms causality for an event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10018",
+            "name": "Government Monitoring",
+            "description": "The government monitors the situation to ensure the response is effective.",
+            "wd_node": "Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20180",
+                    "roleName": "A0_pag_observer",
+                    "entity": "resin:Entities/00052/"
+                },
+                {
+                    "@id": "resin:Participants/20181",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "resin:Entities/00053/"
+                },
+                {
+                    "@id": "resin:Participants/20182",
+                    "roleName": "A2_ppt_looking_for_what?",
+                    "entity": "resin:Entities/00054/"
+                },
+                {
+                    "@id": "resin:Participants/20183",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00052/",
+                    "name": "Government_Monitoring/A0_pag_observer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00053/",
+                    "name": "Government_Monitoring/A1_loc_thing_looked_at/",
+                    "wd_node": "Q2141565",
+                    "wd_label": "situation",
+                    "wd_description": "position with respect to conditions, circumstances and contexts"
+                },
+                {
+                    "@id": "resin:Entities/00054/",
+                    "name": "Government_Monitoring/A2_ppt_looking_for_what?/",
+                    "wd_node": "Q2141565",
+                    "wd_label": "situation",
+                    "wd_description": "position with respect to conditions, circumstances and contexts"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10300",
+            "name": "Censure",
+            "description": "The government expression of strong disapproval or harsh criticism to the attacking.",
+            "wd_node": "Q5058947",
+            "wd_label": "censure",
+            "wd_description": "expression of strong disapproval or harsh criticism",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/23000",
+                    "roleName": "A0_pag_condemner",
+                    "entity": "resin:Entities/00055/"
+                },
+                {
+                    "@id": "resin:Participants/23001",
+                    "roleName": "A1_ppt_entity_censured",
+                    "entity": "resin:Entities/00056/"
+                },
+                {
+                    "@id": "resin:Participants/23002",
+                    "roleName": "A2_prd_for_what?",
+                    "entity": "resin:Entities/00057/"
+                },
+                {
+                    "@id": "resin:Participants/23003",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00055/",
+                    "name": "Censure/A0_pag_condemner/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00056/",
+                    "name": "Censure/A1_ppt_entity_censured/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00057/",
+                    "name": "Censure/A2_prd_for_what?/",
+                    "wd_node": "Q2574811",
+                    "wd_label": "cause",
+                    "wd_description": "entity which forms causality for an event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10020",
+            "name": "Property Damage Assessment",
+            "description": "This includes checking for injuries and assessing the damage to property.",
+            "wd_node": "Q554774",
+            "wd_label": "property_damage",
+            "wd_description": "natural or intentional damage or destruction of public or private property",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20200",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00058/"
+                },
+                {
+                    "@id": "resin:Participants/20201",
+                    "roleName": "A1_ppt_entity_damaged",
+                    "entity": "resin:Entities/00059/"
+                },
+                {
+                    "@id": "resin:Participants/20202",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00060/"
+                },
+                {
+                    "@id": "resin:Participants/20203",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00058/",
+                    "name": "Property_Damage_Assessment/A0_pag_agent/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00059/",
+                    "name": "Property_Damage_Assessment/A1_ppt_entity_damaged/",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete object"
+                },
+                {
+                    "@id": "resin:Entities/00060/",
+                    "name": "Property_Damage_Assessment/A2_mnr_instrument/",
+                    "wd_node": "Q39546",
+                    "wd_label": "tool",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10022",
+            "name": "Decontaminate",
+            "description": "This includes decontaminating any areas that have been affected by the chemical warfare.",
+            "wd_node": "Q17008689",
+            "wd_label": "decontamination",
+            "wd_description": "instrument processing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20220",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": "resin:Entities/00061/"
+                },
+                {
+                    "@id": "resin:Participants/20221",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": "resin:Entities/00062/"
+                },
+                {
+                    "@id": "resin:Participants/20222",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00060/"
+                },
+                {
+                    "@id": "resin:Participants/20223",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00061/",
+                    "name": "Decontaminate/A0_pag_causer_of_improvement/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00062/",
+                    "name": "Decontaminate/A1_ppt_thing_getting_better/",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete object"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10400",
+            "name": "Protest",
+            "description": "Civilian express objection to the chemical warfare.",
+            "wd_node": "Q273120",
+            "wd_label": "protest",
+            "wd_description": "expression of objection",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/25000",
+                    "roleName": "A0_pag_protester",
+                    "entity": "resin:Entities/00063/"
+                },
+                {
+                    "@id": "resin:Participants/25001",
+                    "roleName": "A1_ppt_objectionable_thing",
+                    "entity": "resin:Entities/00064/"
+                },
+                {
+                    "@id": "resin:Participants/25002",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00063/",
+                    "name": "Protest/A0_pag_protester/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00064/",
+                    "name": "Protest/A1_ppt_objectionable_thing/",
+                    "wd_node": "Q483610",
+                    "wd_label": "chemical warfare",
+                    "wd_description": "type of warfare that involves using the toxic properties of chemical substances as weapons"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10023",
+            "name": "Support",
+            "description": "This includes providing psychological support and assistance with any financial needs.",
+            "wd_node": "Q102358908",
+            "wd_label": "support",
+            "wd_description": "help for a person in a difficult situation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20230",
+                    "roleName": "A0_pag_helper",
+                    "entity": "resin:Entities/00065/"
+                },
+                {
+                    "@id": "resin:Participants/20231",
+                    "roleName": "A1_ppt_person",
+                    "entity": "resin:Entities/00066/"
+                },
+                {
+                    "@id": "resin:Participants/20232",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00065/",
+                    "name": "Support/A0_pag_helper/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00066/",
+                    "name": "Support/A1_ppt_person/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10024",
+            "name": "UN Meeting",
+            "description": "The United Nations holds an emergency meeting to discuss the chemical warfare",
+            "wd_node": "Q21170798",
+            "wd_label": "meeting",
+            "wd_description": "situation in which two or more persons meet",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10027"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20240",
+                    "roleName": "A0_pag_agent_one_party",
+                    "entity": "resin:Entities/00067/"
+                },
+                {
+                    "@id": "resin:Participants/20241",
+                    "roleName": "A1_com_co_agent_other_party",
+                    "entity": "resin:Entities/00068/"
+                },
+                {
+                    "@id": "resin:Participants/20242",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00069/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00067/",
+                    "name": "UN_Meeting/A0_pag_agent_one_party/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00068/",
+                    "name": "UN_Meeting/A1_com_co_agent_other_party/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00069/",
+                    "name": "UN_Meeting/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10026",
+            "name": "Organize Aid",
+            "description": "Aid organizations begin to mobilize to provide assistance to those affected by the chemical warfare.",
+            "wd_node": "Q3839081",
+            "wd_label": "disaster",
+            "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10027"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20260",
+                    "roleName": "A1_ppt_nature_of_the_disaster",
+                    "entity": "resin:Entities/00070/"
+                },
+                {
+                    "@id": "resin:Participants/20261",
+                    "roleName": "A2_gol_experiencer_of_disaster",
+                    "entity": "resin:Entities/00071/"
+                },
+                {
+                    "@id": "resin:Participants/20262",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00070/",
+                    "name": "Organize_Aid/A1_ppt_nature_of_the_disaster/",
+                    "wd_node": "Q3839081",
+                    "wd_label": "disaster",
+                    "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death"
+                },
+                {
+                    "@id": "resin:Entities/00071/",
+                    "name": "Organize_Aid/A2_gol_experiencer_of_disaster/",
+                    "wd_node": "Q327333",
+                    "wd_label": "government_agency",
+                    "wd_description": "organization in the machinery of government responsible for specific functions"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10027",
+            "name": "Task Force",
+            "description": "The International Committee of the Red Cross sets up a task force to deal with the aftermath of the chemical warfare.",
+            "wd_node": "Q38127868",
+            "wd_label": "recovery",
+            "wd_description": "process by which something is returned to its former status or position",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10028"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20270",
+                    "roleName": "A0_pag_repairer",
+                    "entity": "resin:Entities/00045/"
+                },
+                {
+                    "@id": "resin:Participants/20271",
+                    "roleName": "A1_ppt_entity_repaired",
+                    "entity": "resin:Entities/00046/"
+                },
+                {
+                    "@id": "resin:Participants/20272",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10028",
+            "name": "Stop the fighting",
+            "description": "The United Nations Security Council passes a resolution condemning the use of chemical weapons and calling for an end to the fighting.",
+            "wd_node": "Q2751586",
+            "wd_label": "resolution",
+            "wd_description": "written declaration adopted by a deliberative body",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20280",
+                    "roleName": "A0_pag_announcer",
+                    "entity": "resin:Entities/00072/"
+                },
+                {
+                    "@id": "resin:Participants/20281",
+                    "roleName": "A1_ppt_utterance",
+                    "entity": "resin:Entities/00073/"
+                },
+                {
+                    "@id": "resin:Participants/20282",
+                    "roleName": "A2_gol_hearer",
+                    "entity": "resin:Entities/00074/"
+                },
+                {
+                    "@id": "resin:Participants/20283",
+                    "roleName": "A3_prd_attributive",
+                    "entity": "resin:Entities/00075/"
+                },
+                {
+                    "@id": "resin:Participants/20284",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00072/",
+                    "name": "Stop_the_fighting/A0_pag_announcer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00073/",
+                    "name": "Stop_the_fighting/A1_ppt_utterance/",
+                    "wd_node": "Q11028",
+                    "wd_label": "information",
+                    "wd_description": "that which informs; the answer to a question of some kind; that from which data and knowledge can be derived"
+                },
+                {
+                    "@id": "resin:Entities/00074/",
+                    "name": "Stop_the_fighting/A2_gol_hearer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00075/",
+                    "name": "Stop_the_fighting/A3_prd_attributive/",
+                    "wd_node": "Q2684591",
+                    "wd_label": "statement",
+                    "wd_description": "meaningful declarative sentence that is either true or false, or that which a true or false declarative sentence asserts"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10029",
+            "name": "Long-Term Effects",
+            "description": "Long-term effects may be felt by those affected by the warfare.",
+            "wd_node": "Q28791005",
+            "wd_label": "depression",
+            "wd_description": "movement in an inferior direction",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20290",
+                    "roleName": "A0_pag_causer_of_depression",
+                    "entity": "resin:Entities/00076/"
+                },
+                {
+                    "@id": "resin:Participants/20291",
+                    "roleName": "A1_ppt_entity_getting_depressed",
+                    "entity": "resin:Entities/00077/"
+                },
+                {
+                    "@id": "resin:Participants/20292",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00060/"
+                },
+                {
+                    "@id": "resin:Participants/20293",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "children": [
+                "resin:Events/10030",
+                "resin:Events/10031",
+                "resin:Events/10032"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "resin:Entities/00076/",
+                    "name": "Long-Term_Effects/A0_pag_causer_of_depression/",
+                    "wd_node": "Q2574811",
+                    "wd_label": "cause",
+                    "wd_description": "entity which forms causality for an event"
+                },
+                {
+                    "@id": "resin:Entities/00077/",
+                    "name": "Long-Term_Effects/A1_ppt_entity_getting_depressed/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10030",
+            "name": "Infrastructure Damage",
+            "description": "Damage to civilian buildings and critical infrastructure",
+            "wd_node": "Q481609",
+            "wd_label": "damage",
+            "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20300",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": "resin:Entities/00078/"
+                },
+                {
+                    "@id": "resin:Participants/20301",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": "resin:Entities/00079/"
+                },
+                {
+                    "@id": "resin:Participants/20302",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/00080/"
+                },
+                {
+                    "@id": "resin:Participants/20303",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00081/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00078/",
+                    "name": "Infrastructure_Damage/A0_pag_agent_agent_causer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00079/",
+                    "name": "Infrastructure_Damage/A1_ppt_patient_entity_damaged/",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete object"
+                },
+                {
+                    "@id": "resin:Entities/00080/",
+                    "name": "Infrastructure_Damage/A2_mnr_instrument_instrument/",
+                    "wd_node": "Q39546",
+                    "wd_label": "tool",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                },
+                {
+                    "@id": "resin:Entities/00081/",
+                    "name": "Infrastructure_Damage/AM_loc__location/",
+                    "wd_node": "Q17334923",
+                    "wd_label": "location",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10031",
+            "name": "Rehabilitation",
+            "description": "Interference with services such as health care and education",
+            "wd_node": "Q2795791",
+            "wd_label": "rehabilitation",
+            "wd_description": "process to return a person to his formerly existing mental and health condition",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20310",
+                    "roleName": "A0_pag_restorer",
+                    "entity": "resin:Entities/00082/"
+                },
+                {
+                    "@id": "resin:Participants/20311",
+                    "roleName": "A1_ppt_patient_rehabilitated",
+                    "entity": "resin:Entities/00083/"
+                },
+                {
+                    "@id": "resin:Participants/20312",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": "resin:Entities/00084/"
+                },
+                {
+                    "@id": "resin:Participants/20313",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00082/",
+                    "name": "Rehabilitation/A0_pag_restorer/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00083/",
+                    "name": "Rehabilitation/A1_ppt_patient_rehabilitated/",
+                    "wd_node": "Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00084/",
+                    "name": "Rehabilitation/A2_ppt_affliction/",
+                    "wd_node": "Q12136",
+                    "wd_label": "disease",
+                    "wd_description": "abnormal condition negatively affecting organisms"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10032",
+            "name": "Law Enactment",
+            "description": "Law enacted against chemical warfare",
+            "wd_node": "Q3406566",
+            "wd_label": "legislative_process",
+            "wd_description": "formal process leading to the approval of a law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/26000",
+                    "roleName": "A0_pag_agent_legislative_body",
+                    "entity": "resin:Entities/00085/"
+                },
+                {
+                    "@id": "resin:Participants/26001",
+                    "roleName": "A1_ppt_thing_enacted",
+                    "entity": "resin:Entities/00086/"
+                },
+                {
+                    "@id": "resin:Participants/26002",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00085/",
+                    "name": "Law_Enactment/A0_pag_agent_legislative_body/",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00086/",
+                    "name": "Law_Enactment/A1_ppt_thing_enacted/",
+                    "wd_node": "Q7748",
+                    "wd_label": "law",
+                    "wd_description": "system of rules and guidelines, generally backed by governmental authority"
+                }
+            ],
+            "relations": []
+        }
     ]
-  }
+}
