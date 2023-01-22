@@ -74,6 +74,7 @@
       ],
       "children": [
         "resin:Events/10008",
+        "resin:Events/10009",
         "resin:Events/10006",
         "resin:Events/10007"
       ],
@@ -118,7 +119,8 @@
       "children": [
         "resin:Events/10010",
         "resin:Events/10011",
-        "resin:Events/10012"
+        "resin:Events/10012",
+        "resin:Events/10013"
       ],
       "children_gate": "or",
       "entities": [],
@@ -155,9 +157,7 @@
         }
       ],
       "children": [
-        "resin:Events/10009",
-        "resin:Events/10013",
-        "resin:Events/10022"
+        "resin:Events/10014"
       ],
       "children_gate": "or",
       "entities": [],
@@ -198,8 +198,7 @@
       "children": [
         "resin:Events/10016",
         "resin:Events/10017",
-        "resin:Events/10015",
-        "resin:Events/10014"
+        "resin:Events/10015"
       ],
       "children_gate": "or",
       "entities": [],
@@ -236,7 +235,22 @@
         "resin:Events/10018",
         "resin:Events/10019",
         "resin:Events/10020",
-        "resin:Events/10021"
+        "resin:Events/10021",
+        "resin:Events/10026",
+        "resin:Events/10027",
+        "resin:Events/10028",
+        "resin:Events/10029",
+        "resin:Events/10035",
+        "resin:Events/10036",
+        "resin:Events/10037",
+        "resin:Events/10038",
+        "resin:Events/10043",
+        "resin:Events/10044",
+        "resin:Events/10045",
+        "resin:Events/10049",
+        "resin:Events/10050",
+        "resin:Events/10051",
+        "resin:Events/10052"
       ],
       "children_gate": "or",
       "entities": [],
@@ -252,7 +266,6 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10008",
         "resin:Events/10007"
       ],
       "participants": [
@@ -285,6 +298,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
+        "resin:Events/10008"
       ],
       "participants": [
         {
@@ -326,6 +340,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
+        "resin:Events/10009"
       ],
       "participants": [
         {
@@ -353,6 +368,36 @@
       "relations": []
     },
     {
+      "@id": "resin:Events/10009",
+      "name": "Recovery Efforts",
+      "description": "Recovery efforts begin.",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20090",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20091",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
       "@id": "resin:Events/10010",
       "name": "First Responders Arrive",
       "description": "The first responders arrive on the scene",
@@ -362,7 +407,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10011"
+        "resin:Events/10013"
       ],
       "participants": [
         {
@@ -463,30 +508,37 @@
     },
     {
       "@id": "resin:Events/10013",
-      "name": "Public Comment",
-      "description": "Public opinion comments, supports or criticizes the cause, involved persons and results of the event.",
-      "wd_node": "Q58897583",
-      "wd_label": "comment",
-      "wd_description": "work consisting of a critical or explanatory note written to discuss, support, or dispute an article or other presentation previously published",
+      "name": "Rescue Mission",
+      "description": "-   They continue to rescue people and/or property until the disaster is over.",
+      "wd_node": "Q1341429",
+      "wd_label": "rescue",
+      "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
       "isSchema": false,
       "repeatable": false,
-      "outlinks": [],
-      "participants": [
+      "outlinks": [
+        "resin:Events/10011"
       ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10009",
-      "name": "Damage Assessment",
-      "description": "The government assesses the damage caused by the disaster.",
-      "wd_node": "Q98523538",
-      "wd_label": "damage assessment",
-      "wd_description": "set of approaches to determine whether something has been damaged, and to quantify the extent",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
       "participants": [
+        {
+          "@id": "resin:Participants/20130",
+          "roleName": "A0_pag_rescuer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20131",
+          "roleName": "A1_ppt_entity_rescued",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20132",
+          "roleName": "A2_dir_rescued_from",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20133",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
       ],
       "entities": [],
       "relations": []
@@ -517,21 +569,6 @@
           "roleName": "AM_loc",
           "entity": ""
         }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10022",
-      "name": "Planning",
-      "description": "The government gives the future plan, including the recovery plan and investigation plan.",
-      "wd_node": "Q309100",
-      "wd_label": "planning",
-      "wd_description": "process of determining the activities required to achieve a desired goal",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
       ],
       "entities": [],
       "relations": []
@@ -578,8 +615,7 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10017",
-        "resin:Events/10014"
+        "resin:Events/10017"
       ],
       "participants": [
         {
@@ -646,7 +682,8 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10019"
+        "resin:Events/10027",
+        "resin:Events/10026"
       ],
       "participants": [
         {
@@ -670,6 +707,13 @@
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10024",
+        "resin:Events/10025",
+        "resin:Events/10022",
+        "resin:Events/10023"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
@@ -707,6 +751,14 @@
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10032",
+        "resin:Events/10033",
+        "resin:Events/10034",
+        "resin:Events/10030",
+        "resin:Events/10031"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
@@ -749,6 +801,11 @@
           "entity": ""
         }
       ],
+      "children": [
+        "resin:Events/10040",
+        "resin:Events/10041"
+      ],
+      "children_gate": "or",
       "entities": [],
       "relations": []
     },
@@ -762,6 +819,8 @@
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
+        "resin:Events/10048",
+        "resin:Events/10039"
       ],
       "participants": [
         {
@@ -781,6 +840,1206 @@
         },
         {
           "@id": "resin:Participants/20213",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10048",
+        "resin:Events/10046",
+        "resin:Events/10047"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10022",
+      "name": "Maintenance",
+      "description": "The team found that lack of maintenance was the main reason for the collapse",
+      "wd_node": "Q18054140",
+      "wd_label": "collapse",
+      "wd_description": "medical symptom, a sudden and often unannounced loss of postural tone",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10038",
+        "resin:Events/10047"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_thing_collapsing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20222",
+          "roleName": "A2_ext_extent_of_collapse",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20223",
+          "roleName": "A3_dir_starting_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20224",
+          "roleName": "A4_gol_ending_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20225",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10023",
+      "name": "Construction Collapse",
+      "description": "The team also found that vibration from the nearby Metro construction may have played a role in the collapse",
+      "wd_node": "Q18054140",
+      "wd_label": "collapse",
+      "wd_description": "medical symptom, a sudden and often unannounced loss of postural tone",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10041",
+        "resin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20230",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20231",
+          "roleName": "A1_ppt_thing_collapsing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20232",
+          "roleName": "A2_ext_extent_of_collapse",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20233",
+          "roleName": "A3_dir_starting_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20234",
+          "roleName": "A4_gol_ending_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20235",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10024",
+      "name": "Contributing Factors",
+      "description": "The team identifies the factors that contributed to the disaster",
+      "wd_node": "Q217602",
+      "wd_label": "analysis",
+      "wd_description": "process of applying analytical methods to existing data of a specific type, breaking a complex topic or substance into smaller parts in order to gain a better understanding of it",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038",
+        "resin:Events/10040"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20240",
+          "roleName": "A0_pag_student",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20241",
+          "roleName": "A1_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20242",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10025",
+      "name": "Recommendation",
+      "description": "The team recommends steps to prevent similar disasters in the future",
+      "wd_node": "Q1717246",
+      "wd_label": "prevention",
+      "wd_description": "causing an event or condition that would otherwise occur to not occur",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20250",
+          "roleName": "A0_pag_agent_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20251",
+          "roleName": "A1_ppt_theme_theme",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20252",
+          "roleName": "A2_ppt_secondary_predication_or_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20253",
+          "roleName": "A3_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20254",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10026",
+      "name": "Sinkhole",
+      "description": "The team concludes that the sinkhole is the result of a number of events",
+      "wd_node": "Q25496170",
+      "wd_label": "conclusion",
+      "wd_description": "final part of a narrative",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10041",
+        "resin:Events/10047",
+        "resin:Events/10025"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20260",
+          "roleName": "A0_pag_Intentional_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20261",
+          "roleName": "A1_ppt_Thing_ending",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20262",
+          "roleName": "A2_mnr_Explicit_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20263",
+          "roleName": "Am_tmp_point_at_which_something_ends",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20264",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10027",
+      "name": "Team Investigation",
+      "description": "The team investigates the matter further",
+      "wd_node": "Q42240",
+      "wd_label": "research",
+      "wd_description": "systematic study undertaken to increase knowledge",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10047"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20270",
+          "roleName": "A0_pag_agent_student",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20271",
+          "roleName": "A1_ppt_theme_subject",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20272",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20273",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10028",
+      "name": "Bridge Collapse",
+      "description": "The bridge collapsed",
+      "wd_node": "Q18054140",
+      "wd_label": "collapse",
+      "wd_description": "medical symptom, a sudden and often unannounced loss of postural tone",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10030",
+        "resin:Events/10034",
+        "resin:Events/10040",
+        "resin:Events/10043"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20280",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20281",
+          "roleName": "A1_ppt_thing_collapsing",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20282",
+          "roleName": "A2_ext_extent_of_collapse",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20283",
+          "roleName": "A3_dir_starting_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20284",
+          "roleName": "A4_gol_ending_point",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20285",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10029",
+      "name": "Lack of Maintenance",
+      "description": "An IIT Guwahati team inspected the bridge and found lack of maintenance to be the main issue",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10049"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20290",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20291",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20292",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20293",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10030",
+      "name": "Evaluate Search and Rescue",
+      "description": "The team evaluates the search and rescue teams that participated in activities at the accident site",
+      "wd_node": "Q1379672",
+      "wd_label": "evaluation",
+      "wd_description": "systematic determination of a subject's merit, worth and significance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10051",
+        "resin:Events/10045"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20300",
+          "roleName": "A0_pag_evaluator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20301",
+          "roleName": "A1_ppt_thing_evaluated",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20302",
+          "roleName": "A2_prd_the_assessment_itself",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20303",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10031",
+      "name": "Continue Processes",
+      "description": "The team recommends the continuation of such processes at the international level",
+      "wd_node": "Q102358908",
+      "wd_label": "support",
+      "wd_description": "help for a person in a difficult situation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10049"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20310",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20311",
+          "roleName": "A1_ppt_person",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20312",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10032",
+      "name": "Independent Oversight",
+      "description": "The team appointed a committee of independent experts to monitor the independence, effectiveness and genuineness of any domestic proceedings",
+      "wd_node": "Q2143522",
+      "wd_label": "monitoring",
+      "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20320",
+          "roleName": "A0_pag_observer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20321",
+          "roleName": "A1_loc_thing_looked_at",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20322",
+          "roleName": "A2_ppt_looking_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20323",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10033",
+      "name": "command investigations",
+      "description": "The team's report states that, according to available information, Israel has conducted some 400 command investigations into allegations",
+      "wd_node": "Q1665268",
+      "wd_label": "command",
+      "wd_description": "message conveying a requirement to perform a certain action",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10034",
+        "resin:Events/10031"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20330",
+          "roleName": "A0_pag_agent_commander",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20331",
+          "roleName": "A1_gol_recipient_impelled_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20332",
+          "roleName": "A2_ppt_topic_impelled_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20333",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20334",
+          "roleName": "AM_mnr__manner",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10042"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10034",
+      "name": "Report to ICAO",
+      "description": "The team submits the report to the ICAO Standards and Recommended Practices for review",
+      "wd_node": "Q196092",
+      "wd_label": "submission",
+      "wd_description": "type of grappling hold",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052",
+        "resin:Events/10039"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20340",
+          "roleName": "A0_pag_holder",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20341",
+          "roleName": "A1_ppt_thing_held",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20342",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20343",
+          "roleName": "A3_prd_secondary_attribute_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20344",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10035",
+      "name": "Negligence",
+      "description": "The team may have found evidence of negligence or wrongdoing on the part of the plant operator",
+      "wd_node": "Q6765918",
+      "wd_label": "wrongdoing",
+      "wd_description": "act that is illegal or immoral",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10041",
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20350",
+          "roleName": "A0_pag_wrong_do-er",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20351",
+          "roleName": "A1_ppt_deed_done",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20352",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10036",
+      "name": "Ineffective Search and Rescue",
+      "description": "The team may have found that the search and rescue teams did not operate effectively",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10040"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10037",
+      "name": "Interview",
+      "description": "2.The team interviews witnesses.",
+      "wd_node": "Q178651",
+      "wd_label": "interview",
+      "wd_description": "structured series of questions and answers",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20370",
+          "roleName": "A0_pag_interviewer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20371",
+          "roleName": "A1_gol_interviewee",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20372",
+          "roleName": "A2_ppt_purpose_or_subject_matter_of_interview",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20373",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10038",
+      "name": "Team Report",
+      "description": "7.The team submits a report to the UN human rights council.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20380",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20381",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20382",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20383",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10039",
+      "name": "Review Findings",
+      "description": "They discuss the findings and make sure that the final report is accurate.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20390",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20391",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20392",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20393",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10040",
+      "name": "Public Health Inspectors",
+      "description": "They also work with the inspectors to make sure that the standards are met and that the report is clear.",
+      "wd_node": "Q1137655",
+      "wd_label": "inspection",
+      "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10018"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20400",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20401",
+          "roleName": "A1_ppt_entity_inspected",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20402",
+          "roleName": "A2_ppt_inspected_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20403",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10041",
+      "name": "Report to the Director-General",
+      "description": "Finally, they submit the report to the Director-General.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10046",
+        "resin:Events/10039"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20410",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20411",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20412",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20413",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10042",
+      "name": "Finalize Report",
+      "description": "The report is finalized.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10021",
+        "resin:Events/10030"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20420",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20421",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20422",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20423",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10043",
+      "name": "Evaluate Report",
+      "description": "The findings of the report may be used to improve future reports",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10037",
+        "resin:Events/10038",
+        "resin:Events/10047"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20430",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20431",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20432",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20433",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10044",
+      "name": "Medical Report",
+      "description": "The report may be used as evidence in future legal proceedings",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20440",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20441",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20442",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20443",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10045",
+      "name": "Management Report",
+      "description": "The report may contain critical information that the senior management needs to be aware of.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20450",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20451",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20452",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20453",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10046",
+      "name": "Determine Cause",
+      "description": "The probable cause of the incident is being determined.",
+      "wd_node": "Q12778120",
+      "wd_label": "determination",
+      "wd_description": "establishment of a state or result or concept",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20460",
+          "roleName": "A0_pag_decider",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20461",
+          "roleName": "A1_ppt_thing_determined",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20462",
+          "roleName": "A2_dir_grounds",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20463",
+          "roleName": "A3_prd_attribute_of_arg1",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20464",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10047",
+      "name": "Meeting",
+      "description": "They discuss the findings and decide on a course of action to prevent future disasters",
+      "wd_node": "Q16947618",
+      "wd_label": "strategizing",
+      "wd_description": "method of planning by preemptively defining actions and reactions to reach a goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20470",
+          "roleName": "A0_pag_planner",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20471",
+          "roleName": "A1_ppt_thing_planned",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20472",
+          "roleName": "A2_cau_grounds_for_planning",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20473",
+          "roleName": "A3_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20474",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10048",
+      "name": "Implement Plan",
+      "description": "They implement the plan and monitor its effectiveness",
+      "wd_node": "Q245962",
+      "wd_label": "implementation",
+      "wd_description": "realization of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10051",
+        "resin:Events/10045"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20480",
+          "roleName": "A0_pag_implementer",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20481",
+          "roleName": "A1_ppt_thing_implemented",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20482",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20483",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10049",
+      "name": "Lack of Communication",
+      "description": "Poor communication",
+      "wd_node": "Q1066689",
+      "wd_label": "human_communication",
+      "wd_description": "any kind of communication between humans",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10038",
+        "resin:Events/10040",
+        "resin:Events/10042"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20490",
+          "roleName": "A0_pag_first",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20491",
+          "roleName": "A1_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20492",
+          "roleName": "A2_com_other_communicator",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20493",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10050",
+      "name": "Recommend Safety Precautions",
+      "description": "The NTSB issues safety recommendations to prevent similar events from happening in the future.",
+      "wd_node": "Q1717246",
+      "wd_label": "prevention",
+      "wd_description": "causing an event or condition that would otherwise occur to not occur",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "resin:Participants/20500",
+          "roleName": "A0_pag_agent_agent",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20501",
+          "roleName": "A1_ppt_theme_theme",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20502",
+          "roleName": "A2_ppt_secondary_predication_or_action",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20503",
+          "roleName": "A3_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20504",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10051",
+      "name": "Engine Collapse",
+      "description": "The National Transportation Safety Board (NTSB) was notified of an incident in which an engine collapsed.",
+      "wd_node": "Q28777323",
+      "wd_label": "breakdown",
+      "wd_description": "damage or breakage event that compromises the functioning of a system or a machine",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10052",
+        "resin:Events/10039"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20510",
+          "roleName": "A1_ppt_patient_thing_broken_down",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20511",
+          "roleName": "A0_pag_agent_cause_of_breaking",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20512",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "resin:Events/10039"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10052",
+      "name": "NTSB Assistance",
+      "description": "Three other investigators from the NTSB's Denver regional office are assisting.",
+      "wd_node": "Q1643184",
+      "wd_label": "help",
+      "wd_description": "cooperation between living things",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "resin:Events/10050"
+      ],
+      "participants": [
+        {
+          "@id": "resin:Participants/20520",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20521",
+          "roleName": "A1_ppt_project",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20522",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "resin:Participants/20523",
           "roleName": "AM_loc",
           "entity": ""
         }
