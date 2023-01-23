@@ -96,7 +96,44 @@
           "wd_description": "that which informs; the answer to a question; that from which data and knowledge can be derived"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "instance of",
+          "relationSubject": "resin:Entities/00003/",
+          "relationObject": "resin:Entities/00004/",
+          "wd_node": "Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "instance of",
+          "relationSubject": "resin:Entities/00005/",
+          "relationObject": "resin:Entities/00004/",
+          "wd_node": "Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "instance of",
+          "relationSubject": "resin:Entities/00007/",
+          "relationObject": "resin:Entities/00004/",
+          "wd_node": "Q21503252",
+          "wd_description": "relation of type constraints",
+          "wd_label": "instance of"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "partially coincident with",
+          "relationSubject": "resin:Entities/00006/",
+          "relationObject": "resin:Entities/00000/",
+          "wd_node": "P1382",
+          "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+          "wd_label": "partially coincident with"
+        }
+      ],
       "importance": [],
       "likelihood": []
     },
