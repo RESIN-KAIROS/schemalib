@@ -70,6 +70,90 @@
                     "wd_node": "Q17334923", 
                     "wd_label": "location", 
                     "wd_description": "location of physical or non-physical object in space"
+                }, 
+                {
+                    "@id": "resin:Entities/00005/", 
+                    "name": "computer system", 
+                    "wd_node": "Q4406616", 
+                    "wd_label": "concrete_object", 
+                    "wd_description": "concrete object"
+                }, 
+                {
+                    "@id": "resin:Entities/00006/", 
+                    "name": "reaction", 
+                    "wd_node": "Q31983622", 
+                    "wd_label": "reaction", 
+                    "wd_description": "action or statement in response to a stimulus or other event"
+                }, 
+                {
+                    "@id": "resin:Entities/00007/", 
+                    "name": "law enforcement agency", 
+                    "wd_node": "Q732717", 
+                    "wd_label": "law_enforcement_agency", 
+                    "wd_description": "government agency responsible for the enforcement of the laws"
+                }, 
+                {
+                    "@id": "resin:Entities/00008/", 
+                    "name": "target", 
+                    "wd_node": "Q7685924", 
+                    "wd_label": "targeting", 
+                    "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare"
+                }, 
+                {
+                    "@id": "resin:Entities/00009/", 
+                    "name": "system vulnerability", 
+                    "wd_node": "Q104493", 
+                    "wd_label": "risk", 
+                    "wd_description": "potential for uncontrolled loss due to underlying vulnerability or uncertainties"
+                }, 
+                {
+                    "@id": "resin:Entities/00010/", 
+                    "name": "data", 
+                    "wd_node": "Q42848", 
+                    "wd_label": "data", 
+                    "wd_description": "data"
+                }, 
+                {
+                    "@id": "resin:Entities/00011/", 
+                    "name": "ransom payment", 
+                    "wd_node": "Q1148747", 
+                    "wd_label": "payment", 
+                    "wd_description": "transfer of an item of value from one party (such as a person or company) to another in exchange for the provision of goods, services or both, or to fulfill a legal obligation"
+                }, 
+                {
+                    "@id": "resin:Entities/00012/", 
+                    "name": "deletion", 
+                    "wd_node": "Q18411409", 
+                    "wd_label": "deletion", 
+                    "wd_description": "generic term for deletion (computer science)"
+                }, 
+                {
+                    "@id": "resin:Entities/00013/", 
+                    "name": "evidence", 
+                    "wd_node": "Q788790", 
+                    "wd_label": "documentation", 
+                    "wd_description": "set of documents providing knowledge"
+                }, 
+                {
+                    "@id": "resin:Entities/00014/", 
+                    "name": "court", 
+                    "wd_node": "Q41487", 
+                    "wd_label": "court", 
+                    "wd_description": "judicial institution with the authority to resolve legal disputes"
+                }, 
+                {
+                    "@id": "resin:Entities/00015/", 
+                    "name": "warrant", 
+                    "wd_node": "Q2477326", 
+                    "wd_label": "warrant", 
+                    "wd_description": "an order that serves as a specific type of authorization"
+                }, 
+                {
+                    "@id": "resin:Entities/00016/", 
+                    "name": "logs", 
+                    "wd_node": "Q29649691", 
+                    "wd_label": "logging", 
+                    "wd_description": "automatic creation of a log of a software process"
                 }
             ],
             "relations": [],
@@ -164,15 +248,7 @@
                 "resin:Events/10113"
             ],
             "children_gate": "or",
-            "entities": [
-                {
-                    "@id": "resin:Entities/00005/", 
-                    "name": "computer system", 
-                    "wd_node": "Q4406616", 
-                    "wd_label": "concrete_object", 
-                    "wd_description": "concrete object"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -217,15 +293,7 @@
                 "resin:Events/10013"
             ],
             "children_gate": "or",
-            "entities": [
-                {
-                    "@id": "resin:Entities/00006/", 
-                    "name": "reaction", 
-                    "wd_node": "Q31983622", 
-                    "wd_label": "reaction", 
-                    "wd_description": "action or statement in response to a stimulus or other event"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -269,15 +337,7 @@
                 "resin:Events/10019" 
             ],
             "children_gate": "or",
-            "entities": [
-                {
-                    "@id": "resin:Entities/00007/", 
-                    "name": "law enforcement agency", 
-                    "wd_node": "Q732717", 
-                    "wd_label": "law_enforcement_agency", 
-                    "wd_description": "government agency responsible for the enforcement of the laws"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -314,15 +374,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00008/", 
-                    "name": "target", 
-                    "wd_node": "Q7685924", 
-                    "wd_label": "targeting", 
-                    "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -359,15 +411,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00009/", 
-                    "name": "system vulnerability", 
-                    "wd_node": "Q104493", 
-                    "wd_label": "risk", 
-                    "wd_description": "potential for uncontrolled loss due to underlying vulnerability or uncertainties"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -516,15 +560,7 @@
                     "entity": "resin:Entities/00010/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00010/", 
-                    "name": "data", 
-                    "wd_node": "Q42848", 
-                    "wd_label": "data", 
-                    "wd_description": "data"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -604,22 +640,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00011/", 
-                    "name": "ransom payment", 
-                    "wd_node": "Q1148747", 
-                    "wd_label": "payment", 
-                    "wd_description": "transfer of an item of value from one party (such as a person or company) to another in exchange for the provision of goods, services or both, or to fulfill a legal obligation"
-                }, 
-                {
-                    "@id": "resin:Entities/00012/", 
-                    "name": "deletion", 
-                    "wd_node": "Q18411409", 
-                    "wd_label": "deletion", 
-                    "wd_description": "generic term for deletion (computer science)"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -906,15 +927,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00016/", 
-                    "name": "logs", 
-                    "wd_node": "Q29649691", 
-                    "wd_label": "logging", 
-                    "wd_description": "automatic creation of a log of a software process"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -961,15 +974,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00013/", 
-                    "name": "evidence", 
-                    "wd_node": "Q788790", 
-                    "wd_label": "documentation", 
-                    "wd_description": "set of documents providing knowledge"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -1006,15 +1011,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00013/", 
-                    "name": "evidence", 
-                    "wd_node": "Q788790", 
-                    "wd_label": "documentation", 
-                    "wd_description": "set of documents providing knowledge"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -1078,15 +1075,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00015/", 
-                    "name": "warrant", 
-                    "wd_node": "Q2477326", 
-                    "wd_label": "warrant", 
-                    "wd_description": "an order that serves as a specific type of authorization"
-                }
-            ],
+            "entities": [],
             "relations": []
         },
         {
@@ -1163,15 +1152,7 @@
                     "entity": "resin:Entities/00004/"
                 }
             ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00014/", 
-                    "name": "court", 
-                    "wd_node": "Q41487", 
-                    "wd_label": "court", 
-                    "wd_description": "judicial institution with the authority to resolve legal disputes"
-                }
-            ],
+            "entities": [],
             "relations": []
         }
     ]
