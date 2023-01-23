@@ -1,1167 +1,1255 @@
 {
-    "@id": "resin:Submissions/TA1/schemas_quizlet9",
-    "sdfVersion": "3.0",
-    "version": "resin:disease-outbreak/quizlet9",
-    "events": [
-        {
-            "@id": "resin:Events/10000/resin:Events_civil-unrest",
-            "children": [
-                "resin:Events/10017/resin:Events_civil-unrest",
-                "resin:Events/10018/resin:Events_civil-unrest",
-                "resin:Events/10002/resin:Events_civil-unrest",
-                "resin:Events/10019/resin:Events_civil-unrest:Civil_Justice",
-                "resin:Events/10020/resin:Events_civil-unrest"
-            ],
-            "children_gate": "or",
-            "description": "Civil Unrest",
-            "name": "Civil Unrest",
-            "outlinks": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "police",
-                    "wd_label": "police",
-                    "wd_node": "wd:Q35535",
-                    "wd_description": "constituted body of persons empowered by the state to enforce the law"
-                },
-                {
-                    "@id": "resin:Entities/00002/",
-                    "name": "protesters",
-                    "wd_label": "street_protester",
-                    "wd_node": "wd:Q7623053",
-                    "wd_description": "person partaking in a public protest against a cause of concern"
-                },
-                {
-                    "@id": "resin:Entities/00003/",
-                    "name": "city",
-                    "wd_label": "city",
-                    "wd_node": "wd:Q515",
-                    "wd_description": "large permanent human settlement"
-                },
-                {
-                    "@id": "resin:Entities/00004/",
-                    "name": "person",
-                    "wd_label": "human",
-                    "wd_node": "wd:Q5",
-                    "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
-                },
-                {
-                    "@id": "resin:Entities/00008/",
-                    "name": "court",
-                    "wd_label": "court",
-                    "wd_node": "wd:Q41487",
-                    "wd_description": "judicial institution with the authority to resolve legal disputes"
-                },
-                {
-                    "@id": "resin:Entities/00013/",
-                    "name": "trigger",
-                    "wd_label": "cause",
-                    "wd_node": "wd:Q2574811",
-                    "wd_description": "entity which forms causality for an event"
-                },
-                {
-                    "@id": "resin:Entities/00015/",
-                    "name": "people",
-                    "wd_label": "group_of_humans",
-                    "wd_node": "wd:Q16334295",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "unrest location",
-                    "wd_label": "spatial_entity",
-                    "wd_node": "wd:Q58416391",
-                    "wd_description": "thing occupying some space, entity that can be contained within a region of space"
-                },
-                {
-                    "@id": "resin:Entities/00022/",
-                    "name": "crime",
-                    "wd_label": "crime",
-                    "wd_node": "wd:Q83267",
-                    "wd_description": "unlawful act forbidden and punishable by criminal law"
-                }
-            ],
-            "relations": [],
-            "isSchema": true
-        },
-        {
-            "@id": "resin:Events/10001/resin:Events_civil-unrest",
-            "description": "a crime of willfully and maliciously setting fire to property",
-            "name": "arson",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20000/resin:Events_civil-unrest_burner",
-                    "roleName": "A0_pag__fire_setter",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20002/resin:Events_civil-unrest_burned",
-                    "roleName": "A1_ppt__property_burned",
-                    "entity": "resin:Entities/00019/"
-                },
-                {
-                    "@id": "resin:Participants/20001/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q327541",
-            "wd_label": "arson",
-            "wd_description": "crime of willfully and maliciously setting fire to property",
-            "outlinks": [
-                "resin:Events/10006/resin:Events_civil-unrest",
-                "resin:Events/10015/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10002/resin:Events_civil-unrest",
-            "children": [
-                "resin:Events/10006/resin:Events_civil-unrest",
-                "resin:Events/10005/resin:Events_civil-unrest",
-                "resin:Events/10009/resin:Events_civil-unrest",
-                "resin:Events/10014/resin:Events_civil-unrest",
-                "resin:Events/10001/resin:Events_civil-unrest",
-                "resin:Events/10016/resin:Events_civil-unrest",
-                "resin:Events/10015/resin:Events_civil-unrest",
-                "resin:Events/10013/resin:Events_civil-unrest",
-                "resin:Events/10004/resin:Events_civil-unrest"
-            ],
-            "children_gate": "or",
-            "description": "a violent disturbance of the peace by a crowd",
-            "name": "Riot",
-            "participants": [],
-            "wd_node": "wd:Q124757",
-            "wd_label": "riot",
-            "wd_description": "form of civil disorder",
-            "outlinks": [
-                "resin:Events/10019/resin:Events_civil-unrest:Civil_Justice",
-                "resin:Events/10020/resin:Events_civil-unrest"
-            ],
-            "isSchema": true
-        },
-        {
-            "@id": "resin:Events/10004/resin:Events_civil-unrest",
-            "description": "physiological wound caused by an external source",
-            "name": "injury",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20008/resin:Events_civil-unrest_agent",
-                    "roleName": "A0_pag_agent_agent",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20009/resin:Events_civil-unrest_injured",
-                    "roleName": "A1_ppt_patient_injured_entity",
-                    "entity": "resin:Entities/00015/"
-                },
-                {
-                    "@id": "resin:Participants/20010/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q193078",
-            "wd_label": "injury",
-            "wd_description": "physiological wound caused by an external source",
-            "outlinks": [
-                "resin:Events/10013/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10005/resin:Events_civil-unrest",
-            "description": "a violent confrontation between police and protesters",
-            "name": "clash",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20010/resin:Events_civil-unrest_clasher",
-                    "roleName": "A0_pag_agent_clasher",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20011/resin:Events_civil-unrest_clashed",
-                    "roleName": "A1_com_co_agent_entity clashed_with_when_separat_constituent",
-                    "entity": "resin:Entities/00000/"
-                },
-                {
-                    "@id": "resin:Participants/20013/resin:Events_civil-unrest_topic",
-                    "roleName": "A2_ppt_topic_entity_clashed_over",
-                    "entity": "resin:Entities/00013/"
-                },
-                {
-                    "@id": "resin:Participants/20012/resin:Events_civil-unrest_against_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q180684",
-            "wd_label": "conflict",
-            "wd_description": "friction, disagreement, or discord within a group or between different groups",
-            "outlinks": [
-                "resin:Events/10009/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10006/resin:Events_civil-unrest",
-            "description": "violent actions to kill one or more people or to damage objects",
-            "name": "attack",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20014/resin:Events_civil-unrest_attacker",
-                    "roleName": "A0_pag_agent_hitter",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20015/resin:Events_civil-unrest_attacked",
-                    "roleName": "A1_ppt_patient_thing_hit",
-                    "entity": "resin:Entities/00000/"
-                },
-                {
-                    "@id": "resin:Participants/20016/resin:Events_civil-unrest_weapon",
-                    "roleName": "A2_mnr_instrument_instrument",
-                    "entity": "resin:Entities/00005/"
-                },
-                {
-                    "@id": "resin:Participants/20017/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q1174599",
-            "wd_label": "attack",
-            "wd_description": "action to injure another organism",
-            "outlinks": [
-                "resin:Events/10004/resin:Events_civil-unrest"
-            ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00005/",
-                    "name": "rocks",
-                    "wd_label": "rock",
-                    "wd_node": "wd:Q8063",
-                    "wd_description": "naturally occurring solid aggregate of one or more minerals or mineraloids"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10007/resin:Events_civil-unrest",
-            "description": "collective action by people in favor of a cause",
-            "name": "demonstration",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20017/resin:Events_civil-unrest_protester",
-                    "roleName": "A0_pag_agent_protester",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20018/resin:Events_civil-unrest_topic",
-                    "roleName": "A1_ppt_theme_objectionable_thing",
-                    "entity": "resin:Entities/00013/"
-                },
-                {
-                    "@id": "resin:Participants/20020/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q175331",
-            "wd_label": "demonstration",
-            "wd_description": "collective action by people in favor of a cause",
-            "outlinks": [
-                "resin:Events/10026/resin:Events_civil-unrest",
-                "resin:Events/10027/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10009/resin:Events_civil-unrest",
-            "description": "somebody uses a tool for a purpose",
-            "name": "disperse",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20023/resin:Events_civil-unrest_scatterer",
-                    "roleName": "A0_pag_agent_scatterer",
-                    "entity": "resin:Entities/00000/"
-                },
-                {
-                    "@id": "resin:Participants/20123/resin:Events_civil-unrest_dispersed",
-                    "roleName": "A1_ppt_patient_entity_dispersed",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20024/resin:Events_civil-unrest_instrument",
-                    "roleName": "AM_mnr__manner",
-                    "entity": "resin:Entities/00001/"
-                },
-                {
-                    "@id": "resin:Participants/20025/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q18511800",
-            "wd_label": "separation",
-            "wd_description": "act of separating one entity to form several",
-            "outlinks": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00001/",
-                    "name": "tear gas",
-                    "wd_label": "tear_gas",
-                    "wd_node": "wd:Q190512",
-                    "wd_description": "non-lethal chemical weapon"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10011/resin:Events_civil-unrest",
-            "description": "statement made for a public audience",
-            "name": "public_statement",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20027/resin:Events_civil-unrest_announcer",
-                    "roleName": "A0_pag_agent_announcer",
-                    "entity": "resin:Entities/00021/"
-                },
-                {
-                    "@id": "resin:Participants/20028/resin:Events_civil-unrest_hearer",
-                    "roleName": "A2_gol_recipient_hearer",
-                    "entity": "resin:Entities/00015/"
-                }
-            ],
-            "wd_node": "wd:Q52947181",
-            "wd_label": "public_statement",
-            "wd_description": "statement made for a public audience",
-            "outlinks": [
-                "resin:Events/10032/resin:Events_civil-unrest"
-            ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00021/",
-                    "name": "authorities",
-                    "wd_label": "public_administration",
-                    "wd_node": "wd:Q31728",
-                    "wd_description": "generic term for the administrations that perform tasks of the state, including bodies governed by public law"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10013/resin:Events_civil-unrest",
-            "description": "death caused by violence",
-            "name": "death",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20931/resin:Events_civil-unrest_killer",
-                    "roleName": "A0_pag_agent_killer",
-                    "entity": "resin:Entities/00000/"
-                },
-                {
-                    "@id": "resin:Participants/20932/resin:Events_civil-unrest_corpse",
-                    "roleName": "A1_ppt_patient_corpse",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20933/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q74948922",
-            "wd_label": "violent_death",
-            "wd_description": "death caused by violence",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10014/resin:Events_civil-unrest",
-            "description": "taking or attempting to take something of value by force or threat of force or by putting the victim in fear",
-            "name": "robbery",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20031/resin:Events_civil-unrest_robber",
-                    "roleName": "A0_pag_agent_robber",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20032/resin:Events_civil-unrest_robbed",
-                    "roleName": "A1_dir_source_person_robbed",
-                    "entity": "resin:Entities/00020/"
-                },
-                {
-                    "@id": "resin:Participants/20033/resin:Events_civil-unrest_location",
-                    "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q53706",
-            "wd_label": "robbery",
-            "wd_description": "taking or attempting to take something of value by force or threat of force or by putting the victim in fear",
-            "outlinks": [
-                "resin:Events/10006/resin:Events_civil-unrest"
-            ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00020/",
-                    "name": "businesses",
-                    "wd_label": "business",
-                    "wd_node": "wd:Q4830453",
-                    "wd_description": "organization involved in commercial, industrial, or professional activity"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10015/resin:Events_civil-unrest",
-            "description": "urgent movement of people away from the threat or actual occurrence of a hazard",
-            "name": "emergency_evacuation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20033/resin:Events_civil-unrest_transporter",
-                    "roleName": "A0_pag_agent_transporter",
-                    "entity": "resin:Entities/00000/"
-                },
-                {
-                    "@id": "resin:Participants/20034/resin:Events_civil-unrest_transported",
-                    "roleName": "A1_ppt_theme_thing_transported",
-                    "entity": "resin:Entities/00015/"
-                },
-                {
-                    "@id": "resin:Participants/20135/resin:Events_civil-unrest_source",
-                    "roleName": "A2_dir_initial_location_source",
-                    "entity": "resin:Entities/00019/"
-                }
-            ],
-            "wd_node": "wd:Q606332",
-            "wd_label": "emergency_evacuation",
-            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10016/resin:Events_civil-unrest",
-            "description": "concept of damage to an object, system or an idea",
-            "name": "destruction",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20035/resin:Events_civil-unrest_destroyer",
-                    "roleName": "A0_pag_agent_destroyer",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20036/resin:Events_civil-unrest_destroyed",
-                    "roleName": "A1_ppt_patient_thing_destroyed",
-                    "entity": "resin:Entities/00019/"
-                },
-                {
-                    "@id": "resin:Participants/20037/resin:Events_civil-unrest_cause",
-                    "roleName": "AM_cau__cause",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q17781833",
-            "wd_label": "destruction",
-            "wd_description": "concept of damage to an object, system or an idea",
-            "outlinks": [
-                "resin:Events/10006/resin:Events_civil-unrest",
-                "resin:Events/10015/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10017/resin:Events_civil-unrest",
-            "children": [
-                "resin:Events/10021/resin:Events_civil-unrest",
-                "resin:Events/10022/resin:Events_civil-unrest",
-                "resin:Events/10023/resin:Events_civil-unrest",
-                "resin:Events/10024/resin:Events_civil-unrest",
-                "resin:Events/10025/resin:Events_civil-unrest"
-            ],
-            "children_gate": "or",
-            "description": "the trigger or cause of the incident",
-            "name": "Contributing Factor",
-            "participants": [],
-            "wd_node": "wd:Q2574811",
-            "wd_label": "cause",
-            "wd_description": "entity which forms causality for an event",
-            "outlinks": [
-                "resin:Events/10018/resin:Events_civil-unrest"
-            ],
-            "isSchema": true
-        },
-        {
-            "@id": "resin:Events/10018/resin:Events_civil-unrest",
-            "children": [
-                "resin:Events/10029/resin:Events_civil-unrest",
-                "resin:Events/10030/resin:Events_civil-unrest",
-                "resin:Events/10028/resin:Events_civil-unrest",
-                "resin:Events/10007/resin:Events_civil-unrest",
-                "resin:Events/10027/resin:Events_civil-unrest",
-                "resin:Events/10026/resin:Events_civil-unrest"
-            ],
-            "children_gate": "or",
-            "description": "Protesters take peaceful and legal way to express dissatisfaction",
-            "name": "Peaceful Protest",
-            "participants": [],
-            "wd_node": "wd:Q273120",
-            "wd_label": "protest",
-            "wd_description": "expression of objection",
-            "outlinks": [
-                "resin:Events/10002/resin:Events_civil-unrest",
-                "resin:Events/10020/resin:Events_civil-unrest"
-            ],
-            "isSchema": true
-        },
-        {
-            "@id": "resin:Events/10020/resin:Events_civil-unrest",
-            "description": "Government response to civil unrest",
-            "name": "Response",
-            "participants": [],
-            "wd_node": "wd:Q31983622",
-            "wd_label": "reaction",
-            "wd_description": "action or statement in response to a stimulus or other event",
-            "outlinks": [],
-            "children": [
-                "resin:Events/10011/resin:Events_civil-unrest",
-                "resin:Events/10031/resin:Events_civil-unrest",
-                "resin:Events/10032/resin:Events_civil-unrest"
-            ],
-            "children_gate": "or",
-            "isSchema": true
-        },
-        {
-            "@id": "resin:Events/10021/resin:Events_civil-unrest",
-            "description": "formal process leading to the approval of a law",
-            "name": "legislation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20037/resin:Events_civil-unrest_lawmaker",
-                    "roleName": "A0_pag_agent_legislative_body",
-                    "entity": "resin:Entities/00012/"
-                },
-                {
-                    "@id": "resin:Participants/20038/resin:Events_civil_unrest_law",
-                    "roleName": "A1_ppt_thing_enacted",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q3406566",
-            "wd_label": "legislative_process",
-            "wd_description": "formal process leading to the approval of a law",
-            "outlinks": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00012/",
-                    "name": "legislature",
-                    "wd_label": "legislature",
-                    "wd_node": "wd:Q11204",
-                    "wd_description": "kind of deliberative assembly with the power to pass, amend, and repeal laws"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10022/resin:Events_civil-unrest",
-            "description": "unlawful act forbidden and punishable by criminal law",
-            "name": "crime",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20039/resin:Events_civil-unrest_perp",
-                    "roleName": "A0_pag__perp",
-                    "entity": "resin:Entities/00004/"
-                },
-                {
-                    "@id": "resin:Participants/20040/resin:Events_civil-unrest_victim",
-                    "roleName": "A2_gol__victim",
-                    "entity": "resin:Entities/00017/"
-                },
-                {
-                    "@id": "resin:Participants/20041/resin:Events_civil-unrest_crime",
-                    "roleName": "A1_ppt__crime",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q83267",
-            "wd_label": "crime",
-            "wd_description": "unlawful act forbidden and punishable by criminal law",
-            "outlinks": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00017/",
-                    "name": "victim",
-                    "wd_label": "victim",
-                    "wd_node": "wd:Q1851760",
-                    "wd_description": "person who suffers as a result of a crime or other event"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10023/resin:Events_civil-unrest",
-            "description": "a state of armed conflict between different nations",
-            "name": "war",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20041/resin:Events_civil-unrest_initiator",
-                    "roleName": "A0_pag_agent_warmonger",
-                    "entity": "resin:Entities/00016/"
-                },
-                {
-                    "@id": "resin:Participants/20042/resin:Events_civil-unrest_victim",
-                    "roleName": "A1_com_co-agent_war_against",
-                    "entity": "resin:Entities/00015/"
-                },
-                {
-                    "@id": "resin:Participants/20043/resin:Events_civil-unrest_trigger",
-                    "roleName": "A2_ppt_topic_topic",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q198",
-            "wd_label": "war",
-            "wd_description": "organised and prolonged violent conflict between states",
-            "outlinks": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "state",
-                    "wd_label": "state",
-                    "wd_node": "wd:Q7275",
-                    "wd_description": "organised community living under a system of government; either a sovereign state, constituent state, or federated state"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10024/resin:Events_civil-unrest",
-            "description": "coming together of parties to a dispute, to present information in a tribunal",
-            "name": "trial",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20943/resin:Events_civil-unrest_litigant",
-                    "roleName": "A0_pag__litigant",
-                    "entity": "resin:Entities/00013/"
-                },
-                {
-                    "@id": "resin:Participants/20944/resin:Events_civil-unrest_tried",
-                    "roleName": "A1_ppt__entity_tried",
-                    "entity": "resin:Entities/00004/"
-                },
-                {
-                    "@id": "resin:Participants/20945/resin:Events_civil-unrest_adjudicator",
-                    "roleName": "A2_gol__adjudicator",
-                    "entity": "resin:Entities/00008/"
-                }
-            ],
-            "wd_node": "wd:Q8016240",
-            "wd_label": "trial",
-            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10025/resin:Events_civil-unrest",
-            "description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
-            "name": "election",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20043/resin:Events_civil-unrest_voters",
-                    "roleName": "A0_pag_agent_voters",
-                    "entity": "resin:Entities/00004/"
-                },
-                {
-                    "@id": "resin:Participants/20044/resin:Events_civil-unrest_candidate",
-                    "roleName": "A1_ppt_theme_candidate",
-                    "entity": "resin:Entities/00014/"
-                },
-                {
-                    "@id": "resin:Participants/20045/resin:Events_civil-unrest_result",
-                    "roleName": "A2_prd_result_numerical_count_of_vote",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q40231",
-            "wd_label": "election",
-            "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
-            "outlinks": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00014/",
-                    "name": "candidate",
-                    "wd_label": "political_candidate",
-                    "wd_node": "wd:Q19772737",
-                    "wd_description": "candidate in an election for political office"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10026/resin:Events_civil-unrest",
-            "description": "work stoppage caused by the mass refusal of employees to work",
-            "name": "strike",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20045/resin:Events_civil-unrest_striker",
-                    "roleName": "A0_pag_agent_striker",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20046/resin:Events_civil-unrest_cause",
-                    "roleName": "AM_cau__cause",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q49776",
-            "wd_label": "strike",
-            "wd_description": "work stoppage caused by the mass refusal of employees to work",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10027/resin:Events_civil-unrest",
-            "description": "form of protest",
-            "name": "occupation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20046/resin:Events_civil-unrest_occupier",
-                    "roleName": "A0_pag_stimulus_occupier",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20047/resin:Events_civil-unrest_occupied",
-                    "roleName": "A1_ppt_experiencer_occupied",
-                    "entity": "resin:Entities/00019/"
-                },
-                {
-                    "@id": "resin:Participants/20048/resin:Events_civil-unrest_cause",
-                    "roleName": "AM_cau__cause",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q528892",
-            "wd_label": "occupation",
-            "wd_description": "form of protest",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10028/resin:Events_civil-unrest",
-            "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
-            "name": "negotiation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20050/resin:Events_civil_unrest_negotiator",
-                    "roleName": "A0_pag_agent_negotiator",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20051/resin:Events_civil-unrest_negotiatee",
-                    "roleName": "A1_com_co_agent_explicit_other_party",
-                    "entity": "resin:Entities/00018/"
-                },
-                {
-                    "@id": "resin:Participants/20052/resin:Events_civil-unrest_topic",
-                    "roleName": "A2_ppt_theme_agreement",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q202875",
-            "wd_label": "negotiation",
-            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
-            "outlinks": [
-                "resin:Events/10007/resin:Events_civil-unrest"
-            ],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00018/",
-                    "name": "opponent",
-                    "wd_label": "adversary",
-                    "wd_node": "wd:Q12829182",
-                    "wd_description": "someone who opposes someone else"
-                }
-            ]
-        },
-        {
-            "@id": "resin:Events/10029/resin:Events_civil-unrest",
-            "description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
-            "name": "inquiry",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20052/resin:Events_civil-unrest_examiner",
-                    "roleName": "A0_pag_agent_examiner",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20053/resin:Events_civil-unrest_examined",
-                    "roleName": "A1_ppt_location_thing_examined",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q21004260",
-            "wd_label": "inquiry",
-            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
-            "outlinks": [
-                "resin:Events/10028/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10030/resin:Events_civil-unrest",
-            "description": "process that attempts to determine the facts of a crime and circumstances",
-            "name": "investigation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20054/resin:Events_civil-unrest_examiner",
-                    "roleName": "A0_pag_agent_examiner",
-                    "entity": "resin:Entities/00002/"
-                },
-                {
-                    "@id": "resin:Participants/20055/resin:Events_civil-unrest_examined",
-                    "roleName": "A1_ppt_location_thing_examined",
-                    "entity": "resin:Entities/00013/"
-                }
-            ],
-            "wd_node": "wd:Q1964968",
-            "wd_label": "criminal_investigation",
-            "wd_description": "process that attempts to determine the facts of a crime and circumstances",
-            "outlinks": [
-                "resin:Events/10028/resin:Events_civil-unrest"
-            ]
-        },
-        {
-            "@id": "resin:Events/10031/resin:Events_civil-unrest",
-            "description": "act of giving up or quitting an office or position",
-            "name": "resignation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20056/resin:Events_civil-unrest_quitter",
-                    "roleName": "A0_pag_agent_quitter",
-                    "entity": "resin:Entities/00000/"
-                }
-            ],
-            "wd_node": "wd:Q796919",
-            "wd_label": "resignation",
-            "wd_description": "act of giving up or quitting an office or position",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10032/resin:Events_civil-unrest",
-            "description": "process that attempts to determine the facts of a crime and circumstances",
-            "name": "investigation",
-            "participants": [
-                {
-                    "@id": "resin:Participants/20057/resin:Events_civil-unrest_examiner",
-                    "roleName": "A0_pag_agent_examiner",
-                    "entity": "resin:Entities/00000/"
-                },
-                {
-                    "@id": "resin:Participants/20058/resin:Events_civil-unrest_examined",
-                    "roleName": "A1_ppt_location_thing_examined",
-                    "entity": "resin:Entities/00022/"
-                }
-            ],
-            "wd_node": "wd:Q1964968",
-            "wd_label": "criminal_investigation",
-            "wd_description": "process that attempts to determine the facts of a crime and circumstances",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10019/resin:Events_civil-unrest:Civil_Justice",
-            "children": [
-              "resin:Events/10100/Steps_kairos:Primitives_Events_Contact_Attorney",
-              "resin:Events/10101/Steps_kairos:Primitives_Events_File_Complaint",
-              "resin:Events/10102/Steps_kairos:Primitives_Events_Answer",
-              "resin:Events/10103/Steps_kairos:Primitives_Events_Discovery",
-              "resin:Events/10104/Steps_kairos:Primitives_Events_Motion",
-              "resin:Events/10112/Steps_kairos:Container:MotionOutcome",
-              "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement",
-              "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement",
-              "resin:Events/10123/Steps_kairos:Primitives_Events_Education",
-              "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal"
-            ],
-            "children_gate": "or",
-            "comment": "",
-            "description": "correct application of law as opposed to arbitrariness",
-            "name": "Civil Justice",
-            "participants": [],
-            "repeatable": false,
-            "wd_node": "wd:Q5167661",
-            "wd_label": "justice",
-            "wd_description": "correct application of law as opposed to arbitrariness",
-            "outlinks": [],
-            "isSchema": true
-          },
+  "@id": "resin:Submissions/TA1/schemas_quizlet9",
+  "sdfVersion": "3.0",
+  "version": "resin:disease-outbreak/quizlet9",
+  "events": [
+    {
+      "@id": "resin:Events/10000/resin:Events_civil-unrest",
+      "children": [
+        "resin:Events/10017/resin:Events_civil-unrest",
+        "resin:Events/10018/resin:Events_civil-unrest",
+        "resin:Events/10002/resin:Events_civil-unrest",
+        "resin:Events/10019/resin:Events_civil-unrest:Civil_Justice",
+        "resin:Events/10020/resin:Events_civil-unrest"
+      ],
+      "children_gate": "or",
+      "description": "Civil Unrest",
+      "name": "Civil Unrest",
+      "outlinks": [
 
-          {
-            "@id": "resin:Events/10100/Steps_kairos:Primitives_Events_Contact_Attorney",
-            "comment": "",
-            "description": "Plaintiff contacts attorney to begin filing a lawsuit",
-            "name": "Contact Attorney",
-            "participants": [
-              {
-                "@id": "resin:Participants/20093/Steps_kairos:Primitives_Events_File_Complaint_First_communicator",
-                "roleName": "A0_pag_agent_first_communicator",
-                "entity": "resin:Entities/00009/"
-              },
-              {
-                "@id": "resin:Participants/20094/Steps_kairos:Primitives_Events_File_Complaint_Topic",
-                "roleName": "A1_ppt_topic_utterance",
-                "entity": "resin:Entities/00007/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q11024",
-            "wd_label": "communication",
-            "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
-            "outlinks": [
-              "resin:Events/10101/Steps_kairos:Primitives_Events_File_Complaint"
-            ]
-          },
-          {
-            "@id": "resin:Events/10101/Steps_kairos:Primitives_Events_File_Complaint",
-            "comment": "",
-            "description": "Plaintiff files a complaint to initiate a lawsuit",
-            "name": "File Complaint",
-            "participants": [
-              {
-                "@id": "resin:Participants/20095/Steps_kairos:Primitives_Events_File_Complaint_Plaintif",
-                "roleName": "A0_pag_prosecutor_plaintif",
-                "entity": "resin:Entities/00009/"
-              },
-              {
-                "@id": "resin:Participants/20096/Steps_kairos:Primitives_Events_File_Complaint_Cause",
-                "roleName": "A2-cau_X_cause",
-                "entity": "resin:Entities/00007/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q836925",
-            "wd_label": "complaint",
-            "wd_description": "Legal document, the filing of which initiates a lawsuit",
-            "outlinks": [
-              "resin:Events/10102/Steps_kairos:Primitives_Events_Answer"
-            ]
-          },
-          {
-            "@id": "resin:Events/10102/Steps_kairos:Primitives_Events_Answer",
-            "comment": "",
-            "description": "In law, a solemn assertion in opposition to someone or something by the defendant",
-            "name": "Answer",
-            "participants": [
-              {
-                "@id": "resin:Participants/20097/Steps_kairos:Primitives_Events_Answer_Defendant",
-                "roleName": "A1_ppt_defendant",
-                "entity": "resin:Entities/00010/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q33622550",
-            "wd_label": "answer",
-            "wd_description": "in law a solemn assertion in opposition to someone or something",
-            "outlinks": [
-              "resin:Events/10103/Steps_kairos:Primitives_Events_Discovery"
-            ]
-          },
-          {
-            "@id": "resin:Events/10103/Steps_kairos:Primitives_Events_Discovery",
-            "comment": "",
-            "description": "Pre-trial procedure in common law countries for obtaining evidence",
-            "name": "Discovery",
-            "participants": [
-              {
-                "@id": "resin:Participants/20098/Steps_kairos:Primitives_Events_Discovery_Plaintif",
-                "roleName": "A0_pag_prosecutor_plaintif",
-                "entity": "resin:Entities/00009/"
-              },
-              {
-                "@id": "resin:Participants/20099/Steps_kairos:Primitives_Events_Discovery_Defendant",
-                "roleName": "A1_ppt_defendant",
-                "entity": "resin:Entities/00010/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q902342",
-            "wd_label": "discovery",
-            "wd_description": "pre-trial procedure in common law countries for obtaining evidence",
-            "outlinks": [
-              "resin:Events/10104/Steps_kairos:Primitives_Events_Motion"
-            ]
-          },
-          {
-            "@id": "resin:Events/10104/Steps_kairos:Primitives_Events_Motion",
-            "comment": "",
-            "description": "In US law, a procedural device to bring a limited, contested issue before a court for decision",
-            "name": "Motion",
-            "participants": [
-              {
-                "@id": "resin:Participants/20100/Steps_kairos:Primitives_Events_Motion_Plaintif",
-                "roleName": "A0_pag_prosecutor_plaintif",
-                "entity": "resin:Entities/00009/"
-              },
-              {
-                "@id": "resin:Participants/20101/Steps_kairos:Primitives_Events_Motion_Defendant",
-                "roleName": "A1_ppt_defendant",
-                "entity": "resin:Entities/00010/"
-              },
-              {
-                "@id": "resin:Participants/20102/Steps_kairos:Primitives_Events_Motion_Judgecourt",
-                "roleName": "A0-pag_X_judge",
-                "entity": "resin:Entities/00023/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q6917734",
-            "wd_label": "motion",
-            "wd_description": "in US law, a procedural device to bring a limited, contested issue before a court for decision",
-            "outlinks": [
-              "resin:Events/10112/Steps_kairos:Container:MotionOutcome"
-            ]
-          },
-          {
-            "@id": "resin:Events/10105/Steps_kairos:Primitives_Events_Mediation",
-            "comment": "",
-            "description": "Dispute resolution with assistance of an impartial third party moderator throughthe use of communication and negotiation techniques",
-            "name": "Mediation",
-            "participants": [
-              {
-                "@id": "resin:Participants/20103/Steps_kairos:Primitives_Events_Mediation_Plaintif",
-                "roleName": "A0_pag_prosecutor_plaintif",
-                "entity": "resin:Entities/00009/"
-              },
-              {
-                "@id": "resin:Participants/20104/Steps_kairos:Primitives_Events_Mediation_Defendant",
-                "roleName": "A1_ppt_defendant",
-                "entity": "resin:Entities/00010/"
-              },
-              {
-                "@id": "resin:Participants/20105/Steps_kairos:Primitives_Events_Mediation_Judgecourt",
-                "roleName": "A0-pag_X_judge",
-                "entity": "resin:Entities/00023/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q223871",
-            "wd_label": "mediation",
-            "wd_description": "dispute resolution with assistance of an impartial third party moderator through the use of communication and negotiation techniques",
-            "outlinks": [
-              "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement"
-            ]
-          },
-          {
-            "@id": "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement",
-            "comment": "",
-            "description": "The dispute is resolved through a payment of money.",
-            "name": "Settlement",
-            "participants": [
-              {
-                "@id": "resin:Participants/20106/Steps_kairos:Primitives_Events_Settlement_Agent",
-                "roleName": "A0-pag_agent_Agent",
-                "entity": "resin:Entities/00010/"
-              },
-              {
-                "@id": "resin:Participants/20107/Steps_kairos:Primitives_Events_Settlement_Receiver",
-                "roleName": "A2_com_co_agent_other_exchanger",
-                "entity": "resin:Entities/00009/"
-              },
-              {
-                "@id": "resin:Participants/20108/Steps_kairos:Primitives_Events_Settlement_Money",
-                "roleName": "A1_ppt_theme_thing_being_traded",
-                "entity": "resin:Entities/00011/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q21651837",
-            "wd_label": "exchange_of_goods",
-            "wd_description": "transfer of equivalent goods to each other",
-            "outlinks": [],
-            "entities": [
-              {
-                "@id": "resin:Entities/00011/",
-                "name": "settlement money",
-                "wd_label": "money",
-                "wd_node": "wd:Q1368",
-                "wd_description": "object or record accepted as payment"
-              }
-            ]
-          },
-          {
-            "@id": "resin:Events/10107/Steps_kairos:Primitives_Events_Trial",
-            "comment": "",
-            "description": "Coming together of parties to a dispute, to present information in a tribunal",
-            "name": "Trial",
-            "participants": [
-              {
-                "@id": "resin:Participants/20109/Steps_kairos:Primitives_Events_Trial_Judgecourt",
-                "roleName": "A0-pag_X_judge",
-                "entity": "resin:Entities/00023/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q8016240",
-            "wd_label": "trial",
-            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
-            "outlinks": [
-              "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement"
-            ]
-          },
-          {
-            "@id": "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement",
-            "comment": "",
-            "description": "The formal decision made by a court following a lawsuit",
-            "name": "Judgement",
-            "participants": [
-              {
-                "@id": "resin:Participants/20110/Steps_kairos:Primitives_Events_Judgement_Judgecourt",
-                "roleName": "A0-pag_X_judge",
-                "entity": "resin:Entities/00023/"
-              }
-            ],
-            "repeatable": false,
-            "wd_node": "wd:Q3769186",
-            "wd_label": "judgement",
-            "wd_description": "the formal decision made by a court following a lawsuit",
-            "outlinks": [
-              "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal",
-              "resin:Events/10123/Steps_kairos:Primitives_Events_Education"
-            ]
-          },
-          {
-            "@id": "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal",
-            "comment": "",
-            "description": "Resort to a superior court to review the decision of an inferior court or administrative agency",
-            "name": "Appeal",
-            "participants": [
-              {
-                "@id": "resin:Participants/20111/Steps_kairos:Primitives_Events_Appeal_Defendant",
-                "roleName": "A1_ppt_defendant",
-                "entity": "resin:Entities/00010/"
-              }
-            ],
-            "repeatable": true,
-            "wd_node": "wd:Q329777",
-            "wd_label": "appeal",
-            "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
-            "outlinks": []
-          },
-          {
-            "@id": "resin:Events/10112/Steps_kairos:Container:MotionOutcome",
-            "children": [
-              "resin:Events/10105/Steps_kairos:Primitives_Events_Mediation",
-              "resin:Events/10107/Steps_kairos:Primitives_Events_Trial"
-            ],
-            "children_gate": "xor",
-            "comment": "container node",
-            "description": "",
-            "name": "Motion outlinks",
-            "repeatable": false,
-            "outlinks": [],
-            "isSchema": true
-          },
-          {
-            "@id": "resin:Events/10123/Steps_kairos:Primitives_Events_Education",
-            "description": "learning in which knowledge and skills are transferred through teaching. The defendant is educated about regulations.",
-            "name": "Education",
-            "participants": [
-              {
-                "@id": "resin:Participants/20209/Steps_kairos:Primitives_Events_Education_Recipient",
-                "roleName": "A2_gol_recipient_student",
-                "entity": "resin:Entities/00010/"
-              },
-              {
-                "@id": "resin:Participants/20210/Steps_kairos:Primitives_Events_Education_Teacher",
-                "roleName": "A0_pag_agent_teacher",
-                "entity": "resin:Entities/00018/"
-              }
-            ],
-            "wd_node": "wd:Q8434",
-            "wd_label": "education",
-            "wd_description": "learning in which knowledge and skills are transferred through teaching",
-            "outlinks": []
-          }
-    ]
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000/",
+          "name": "police",
+          "wd_label": "police",
+          "wd_node": "wd:Q35535",
+          "wd_description": "constituted body of persons empowered by the state to enforce the law"
+        },
+        {
+          "@id": "resin:Entities/00002/",
+          "name": "protesters",
+          "wd_label": "street_protester",
+          "wd_node": "wd:Q7623053",
+          "wd_description": "person partaking in a public protest against a cause of concern"
+        },
+        {
+          "@id": "resin:Entities/00003/",
+          "name": "city",
+          "wd_label": "city",
+          "wd_node": "wd:Q515",
+          "wd_description": "large permanent human settlement"
+        },
+        {
+          "@id": "resin:Entities/00004/",
+          "name": "person",
+          "wd_label": "human",
+          "wd_node": "wd:Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "court",
+          "wd_label": "court",
+          "wd_node": "wd:Q41487",
+          "wd_description": "judicial institution with the authority to resolve legal disputes"
+        },
+        {
+          "@id": "resin:Entities/00013/",
+          "name": "trigger",
+          "wd_label": "cause",
+          "wd_node": "wd:Q2574811",
+          "wd_description": "entity which forms causality for an event"
+        },
+        {
+          "@id": "resin:Entities/00015/",
+          "name": "people",
+          "wd_label": "group_of_humans",
+          "wd_node": "wd:Q16334295",
+          "wd_description": "any set of human beings"
+        },
+        {
+          "@id": "resin:Entities/00019/",
+          "name": "unrest location",
+          "wd_label": "spatial_entity",
+          "wd_node": "wd:Q58416391",
+          "wd_description": "thing occupying some space, entity that can be contained within a region of space"
+        },
+        {
+          "@id": "resin:Entities/00022/",
+          "name": "crime",
+          "wd_label": "crime",
+          "wd_node": "wd:Q83267",
+          "wd_description": "unlawful act forbidden and punishable by criminal law"
+        }
+      ],
+      "relations": [
+        {
+          "@id": "resin:Relations/30000/",
+          "name": "has cause",
+          "relationSubject": "resin:Entities/00013/",
+          "relationObject": "resin:Entities/00022/",
+          "wd_node": "wd:P828",
+          "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+        },
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "has cause",
+          "relationSubject": "resin:Entities/00013/",
+          "relationObject": "resin:Entities/00002/",
+          "wd_node": "wd:P828",
+          "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+        },
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "location",
+          "relationSubject": "resin:Entities/00000/",
+          "relationObject": "resin:Entities/00019/",
+          "wd_node": "wd:P937",
+          "wd_description": "location where persons or organisations were actively participating in employment, business or other work"
+        },
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "location",
+          "relationSubject": "resin:Entities/00002/",
+          "relationObject": "resin:Entities/00019/",
+          "wd_node": "wd:P937",
+          "wd_description": "location where persons or organisations were actively participating in employment, business or other work"
+        },
+        {
+          "@id": "resin:Relations/30004/",
+          "name": "location",
+          "relationSubject": "resin:Entities/00015/",
+          "relationObject": "resin:Entities/00019/",
+          "wd_node": "wd:P937",
+          "wd_description": "location where persons or organisations were actively participating in employment, business or other work"
+        }
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10001/resin:Events_civil-unrest",
+      "description": "a crime of willfully and maliciously setting fire to property",
+      "name": "arson",
+      "participants": [
+        {
+          "@id": "resin:Participants/20000/resin:Events_civil-unrest_burner",
+          "roleName": "A0_pag__fire_setter",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20002/resin:Events_civil-unrest_burned",
+          "roleName": "A1_ppt__property_burned",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20001/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q327541",
+      "wd_label": "arson",
+      "wd_description": "crime of willfully and maliciously setting fire to property",
+      "outlinks": [
+        "resin:Events/10006/resin:Events_civil-unrest",
+        "resin:Events/10015/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10002/resin:Events_civil-unrest",
+      "children": [
+        "resin:Events/10006/resin:Events_civil-unrest",
+        "resin:Events/10005/resin:Events_civil-unrest",
+        "resin:Events/10009/resin:Events_civil-unrest",
+        "resin:Events/10014/resin:Events_civil-unrest",
+        "resin:Events/10001/resin:Events_civil-unrest",
+        "resin:Events/10016/resin:Events_civil-unrest",
+        "resin:Events/10015/resin:Events_civil-unrest",
+        "resin:Events/10013/resin:Events_civil-unrest",
+        "resin:Events/10004/resin:Events_civil-unrest"
+      ],
+      "children_gate": "or",
+      "description": "a violent disturbance of the peace by a crowd",
+      "name": "Riot",
+      "participants": [
+
+      ],
+      "wd_node": "wd:Q124757",
+      "wd_label": "riot",
+      "wd_description": "form of civil disorder",
+      "outlinks": [
+        "resin:Events/10019/resin:Events_civil-unrest:Civil_Justice",
+        "resin:Events/10020/resin:Events_civil-unrest"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10004/resin:Events_civil-unrest",
+      "description": "physiological wound caused by an external source",
+      "name": "injury",
+      "participants": [
+        {
+          "@id": "resin:Participants/20008/resin:Events_civil-unrest_agent",
+          "roleName": "A0_pag_agent_agent",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20009/resin:Events_civil-unrest_injured",
+          "roleName": "A1_ppt_patient_injured_entity",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20010/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q193078",
+      "wd_label": "injury",
+      "wd_description": "physiological wound caused by an external source",
+      "outlinks": [
+        "resin:Events/10013/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10005/resin:Events_civil-unrest",
+      "description": "a violent confrontation between police and protesters",
+      "name": "clash",
+      "participants": [
+        {
+          "@id": "resin:Participants/20010/resin:Events_civil-unrest_clasher",
+          "roleName": "A0_pag_agent_clasher",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20011/resin:Events_civil-unrest_clashed",
+          "roleName": "A1_com_co_agent_entity clashed_with_when_separat_constituent",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20013/resin:Events_civil-unrest_topic",
+          "roleName": "A2_ppt_topic_entity_clashed_over",
+          "entity": "resin:Entities/00013/"
+        },
+        {
+          "@id": "resin:Participants/20012/resin:Events_civil-unrest_against_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q180684",
+      "wd_label": "conflict",
+      "wd_description": "friction, disagreement, or discord within a group or between different groups",
+      "outlinks": [
+        "resin:Events/10009/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10006/resin:Events_civil-unrest",
+      "description": "violent actions to kill one or more people or to damage objects",
+      "name": "attack",
+      "participants": [
+        {
+          "@id": "resin:Participants/20014/resin:Events_civil-unrest_attacker",
+          "roleName": "A0_pag_agent_hitter",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20015/resin:Events_civil-unrest_attacked",
+          "roleName": "A1_ppt_patient_thing_hit",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20016/resin:Events_civil-unrest_weapon",
+          "roleName": "A2_mnr_instrument_instrument",
+          "entity": "resin:Entities/00005/"
+        },
+        {
+          "@id": "resin:Participants/20017/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q1174599",
+      "wd_label": "attack",
+      "wd_description": "action to injure another organism",
+      "outlinks": [
+        "resin:Events/10004/resin:Events_civil-unrest"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00005/",
+          "name": "rocks",
+          "wd_label": "rock",
+          "wd_node": "wd:Q8063",
+          "wd_description": "naturally occurring solid aggregate of one or more minerals or mineraloids"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10007/resin:Events_civil-unrest",
+      "description": "collective action by people in favor of a cause",
+      "name": "demonstration",
+      "participants": [
+        {
+          "@id": "resin:Participants/20017/resin:Events_civil-unrest_protester",
+          "roleName": "A0_pag_agent_protester",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20018/resin:Events_civil-unrest_topic",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": "resin:Entities/00013/"
+        },
+        {
+          "@id": "resin:Participants/20020/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "outlinks": [
+        "resin:Events/10026/resin:Events_civil-unrest",
+        "resin:Events/10027/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10009/resin:Events_civil-unrest",
+      "description": "somebody uses a tool for a purpose",
+      "name": "disperse",
+      "participants": [
+        {
+          "@id": "resin:Participants/20023/resin:Events_civil-unrest_scatterer",
+          "roleName": "A0_pag_agent_scatterer",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20123/resin:Events_civil-unrest_dispersed",
+          "roleName": "A1_ppt_patient_entity_dispersed",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20024/resin:Events_civil-unrest_instrument",
+          "roleName": "AM_mnr__manner",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20025/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q18511800",
+      "wd_label": "separation",
+      "wd_description": "act of separating one entity to form several",
+      "outlinks": [
+
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "tear gas",
+          "wd_label": "tear_gas",
+          "wd_node": "wd:Q190512",
+          "wd_description": "non-lethal chemical weapon"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10011/resin:Events_civil-unrest",
+      "description": "statement made for a public audience",
+      "name": "public_statement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20027/resin:Events_civil-unrest_announcer",
+          "roleName": "A0_pag_agent_announcer",
+          "entity": "resin:Entities/00021/"
+        },
+        {
+          "@id": "resin:Participants/20028/resin:Events_civil-unrest_hearer",
+          "roleName": "A2_gol_recipient_hearer",
+          "entity": "resin:Entities/00015/"
+        }
+      ],
+      "wd_node": "wd:Q52947181",
+      "wd_label": "public_statement",
+      "wd_description": "statement made for a public audience",
+      "outlinks": [
+        "resin:Events/10032/resin:Events_civil-unrest"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00021/",
+          "name": "authorities",
+          "wd_label": "public_administration",
+          "wd_node": "wd:Q31728",
+          "wd_description": "generic term for the administrations that perform tasks of the state, including bodies governed by public law"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10013/resin:Events_civil-unrest",
+      "description": "death caused by violence",
+      "name": "death",
+      "participants": [
+        {
+          "@id": "resin:Participants/20931/resin:Events_civil-unrest_killer",
+          "roleName": "A0_pag_agent_killer",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20932/resin:Events_civil-unrest_corpse",
+          "roleName": "A1_ppt_patient_corpse",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20933/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q74948922",
+      "wd_label": "violent_death",
+      "wd_description": "death caused by violence",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10014/resin:Events_civil-unrest",
+      "description": "taking or attempting to take something of value by force or threat of force or by putting the victim in fear",
+      "name": "robbery",
+      "participants": [
+        {
+          "@id": "resin:Participants/20031/resin:Events_civil-unrest_robber",
+          "roleName": "A0_pag_agent_robber",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20032/resin:Events_civil-unrest_robbed",
+          "roleName": "A1_dir_source_person_robbed",
+          "entity": "resin:Entities/00020/"
+        },
+        {
+          "@id": "resin:Participants/20033/resin:Events_civil-unrest_location",
+          "roleName": "AM_loc__location",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q53706",
+      "wd_label": "robbery",
+      "wd_description": "taking or attempting to take something of value by force or threat of force or by putting the victim in fear",
+      "outlinks": [
+        "resin:Events/10006/resin:Events_civil-unrest"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00020/",
+          "name": "businesses",
+          "wd_label": "business",
+          "wd_node": "wd:Q4830453",
+          "wd_description": "organization involved in commercial, industrial, or professional activity"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10015/resin:Events_civil-unrest",
+      "description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+      "name": "emergency_evacuation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20033/resin:Events_civil-unrest_transporter",
+          "roleName": "A0_pag_agent_transporter",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20034/resin:Events_civil-unrest_transported",
+          "roleName": "A1_ppt_theme_thing_transported",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20135/resin:Events_civil-unrest_source",
+          "roleName": "A2_dir_initial_location_source",
+          "entity": "resin:Entities/00019/"
+        }
+      ],
+      "wd_node": "wd:Q606332",
+      "wd_label": "emergency_evacuation",
+      "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10016/resin:Events_civil-unrest",
+      "description": "concept of damage to an object, system or an idea",
+      "name": "destruction",
+      "participants": [
+        {
+          "@id": "resin:Participants/20035/resin:Events_civil-unrest_destroyer",
+          "roleName": "A0_pag_agent_destroyer",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20036/resin:Events_civil-unrest_destroyed",
+          "roleName": "A1_ppt_patient_thing_destroyed",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20037/resin:Events_civil-unrest_cause",
+          "roleName": "AM_cau__cause",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q17781833",
+      "wd_label": "destruction",
+      "wd_description": "concept of damage to an object, system or an idea",
+      "outlinks": [
+        "resin:Events/10006/resin:Events_civil-unrest",
+        "resin:Events/10015/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10017/resin:Events_civil-unrest",
+      "children": [
+        "resin:Events/10021/resin:Events_civil-unrest",
+        "resin:Events/10022/resin:Events_civil-unrest",
+        "resin:Events/10023/resin:Events_civil-unrest",
+        "resin:Events/10024/resin:Events_civil-unrest",
+        "resin:Events/10025/resin:Events_civil-unrest"
+      ],
+      "children_gate": "or",
+      "description": "the trigger or cause of the incident",
+      "name": "Contributing Factor",
+      "participants": [
+
+      ],
+      "wd_node": "wd:Q2574811",
+      "wd_label": "cause",
+      "wd_description": "entity which forms causality for an event",
+      "outlinks": [
+        "resin:Events/10018/resin:Events_civil-unrest"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10018/resin:Events_civil-unrest",
+      "children": [
+        "resin:Events/10029/resin:Events_civil-unrest",
+        "resin:Events/10030/resin:Events_civil-unrest",
+        "resin:Events/10028/resin:Events_civil-unrest",
+        "resin:Events/10007/resin:Events_civil-unrest",
+        "resin:Events/10027/resin:Events_civil-unrest",
+        "resin:Events/10026/resin:Events_civil-unrest"
+      ],
+      "children_gate": "or",
+      "description": "Protesters take peaceful and legal way to express dissatisfaction",
+      "name": "Peaceful Protest",
+      "participants": [
+
+      ],
+      "wd_node": "wd:Q273120",
+      "wd_label": "protest",
+      "wd_description": "expression of objection",
+      "outlinks": [
+        "resin:Events/10002/resin:Events_civil-unrest",
+        "resin:Events/10020/resin:Events_civil-unrest"
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10020/resin:Events_civil-unrest",
+      "description": "Government response to civil unrest",
+      "name": "Response",
+      "participants": [
+
+      ],
+      "wd_node": "wd:Q31983622",
+      "wd_label": "reaction",
+      "wd_description": "action or statement in response to a stimulus or other event",
+      "outlinks": [
+
+      ],
+      "children": [
+        "resin:Events/10011/resin:Events_civil-unrest",
+        "resin:Events/10031/resin:Events_civil-unrest",
+        "resin:Events/10032/resin:Events_civil-unrest"
+      ],
+      "children_gate": "or",
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10021/resin:Events_civil-unrest",
+      "description": "formal process leading to the approval of a law",
+      "name": "legislation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20037/resin:Events_civil-unrest_lawmaker",
+          "roleName": "A0_pag_agent_legislative_body",
+          "entity": "resin:Entities/00012/"
+        },
+        {
+          "@id": "resin:Participants/20038/resin:Events_civil_unrest_law",
+          "roleName": "A1_ppt_thing_enacted",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q3406566",
+      "wd_label": "legislative_process",
+      "wd_description": "formal process leading to the approval of a law",
+      "outlinks": [
+
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00012/",
+          "name": "legislature",
+          "wd_label": "legislature",
+          "wd_node": "wd:Q11204",
+          "wd_description": "kind of deliberative assembly with the power to pass, amend, and repeal laws"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10022/resin:Events_civil-unrest",
+      "description": "unlawful act forbidden and punishable by criminal law",
+      "name": "crime",
+      "participants": [
+        {
+          "@id": "resin:Participants/20039/resin:Events_civil-unrest_perp",
+          "roleName": "A0_pag__perp",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20040/resin:Events_civil-unrest_victim",
+          "roleName": "A2_gol__victim",
+          "entity": "resin:Entities/00017/"
+        },
+        {
+          "@id": "resin:Participants/20041/resin:Events_civil-unrest_crime",
+          "roleName": "A1_ppt__crime",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q83267",
+      "wd_label": "crime",
+      "wd_description": "unlawful act forbidden and punishable by criminal law",
+      "outlinks": [
+
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00017/",
+          "name": "victim",
+          "wd_label": "victim",
+          "wd_node": "wd:Q1851760",
+          "wd_description": "person who suffers as a result of a crime or other event"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10023/resin:Events_civil-unrest",
+      "description": "a state of armed conflict between different nations",
+      "name": "war",
+      "participants": [
+        {
+          "@id": "resin:Participants/20041/resin:Events_civil-unrest_initiator",
+          "roleName": "A0_pag_agent_warmonger",
+          "entity": "resin:Entities/00016/"
+        },
+        {
+          "@id": "resin:Participants/20042/resin:Events_civil-unrest_victim",
+          "roleName": "A1_com_co-agent_war_against",
+          "entity": "resin:Entities/00015/"
+        },
+        {
+          "@id": "resin:Participants/20043/resin:Events_civil-unrest_trigger",
+          "roleName": "A2_ppt_topic_topic",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q198",
+      "wd_label": "war",
+      "wd_description": "organised and prolonged violent conflict between states",
+      "outlinks": [
+
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00016/",
+          "name": "state",
+          "wd_label": "state",
+          "wd_node": "wd:Q7275",
+          "wd_description": "organised community living under a system of government; either a sovereign state, constituent state, or federated state"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10024/resin:Events_civil-unrest",
+      "description": "coming together of parties to a dispute, to present information in a tribunal",
+      "name": "trial",
+      "participants": [
+        {
+          "@id": "resin:Participants/20943/resin:Events_civil-unrest_litigant",
+          "roleName": "A0_pag__litigant",
+          "entity": "resin:Entities/00013/"
+        },
+        {
+          "@id": "resin:Participants/20944/resin:Events_civil-unrest_tried",
+          "roleName": "A1_ppt__entity_tried",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20945/resin:Events_civil-unrest_adjudicator",
+          "roleName": "A2_gol__adjudicator",
+          "entity": "resin:Entities/00008/"
+        }
+      ],
+      "wd_node": "wd:Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10025/resin:Events_civil-unrest",
+      "description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+      "name": "election",
+      "participants": [
+        {
+          "@id": "resin:Participants/20043/resin:Events_civil-unrest_voters",
+          "roleName": "A0_pag_agent_voters",
+          "entity": "resin:Entities/00004/"
+        },
+        {
+          "@id": "resin:Participants/20044/resin:Events_civil-unrest_candidate",
+          "roleName": "A1_ppt_theme_candidate",
+          "entity": "resin:Entities/00014/"
+        },
+        {
+          "@id": "resin:Participants/20045/resin:Events_civil-unrest_result",
+          "roleName": "A2_prd_result_numerical_count_of_vote",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q40231",
+      "wd_label": "election",
+      "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+      "outlinks": [
+
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00014/",
+          "name": "candidate",
+          "wd_label": "political_candidate",
+          "wd_node": "wd:Q19772737",
+          "wd_description": "candidate in an election for political office"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10026/resin:Events_civil-unrest",
+      "description": "work stoppage caused by the mass refusal of employees to work",
+      "name": "strike",
+      "participants": [
+        {
+          "@id": "resin:Participants/20045/resin:Events_civil-unrest_striker",
+          "roleName": "A0_pag_agent_striker",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20046/resin:Events_civil-unrest_cause",
+          "roleName": "AM_cau__cause",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q49776",
+      "wd_label": "strike",
+      "wd_description": "work stoppage caused by the mass refusal of employees to work",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10027/resin:Events_civil-unrest",
+      "description": "form of protest",
+      "name": "occupation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20046/resin:Events_civil-unrest_occupier",
+          "roleName": "A0_pag_stimulus_occupier",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20047/resin:Events_civil-unrest_occupied",
+          "roleName": "A1_ppt_experiencer_occupied",
+          "entity": "resin:Entities/00019/"
+        },
+        {
+          "@id": "resin:Participants/20048/resin:Events_civil-unrest_cause",
+          "roleName": "AM_cau__cause",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q528892",
+      "wd_label": "occupation",
+      "wd_description": "form of protest",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10028/resin:Events_civil-unrest",
+      "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+      "name": "negotiation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20050/resin:Events_civil_unrest_negotiator",
+          "roleName": "A0_pag_agent_negotiator",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20051/resin:Events_civil-unrest_negotiatee",
+          "roleName": "A1_com_co_agent_explicit_other_party",
+          "entity": "resin:Entities/00018/"
+        },
+        {
+          "@id": "resin:Participants/20052/resin:Events_civil-unrest_topic",
+          "roleName": "A2_ppt_theme_agreement",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q202875",
+      "wd_label": "negotiation",
+      "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+      "outlinks": [
+        "resin:Events/10007/resin:Events_civil-unrest"
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00018/",
+          "name": "opponent",
+          "wd_label": "adversary",
+          "wd_node": "wd:Q12829182",
+          "wd_description": "someone who opposes someone else"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10029/resin:Events_civil-unrest",
+      "description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "name": "inquiry",
+      "participants": [
+        {
+          "@id": "resin:Participants/20052/resin:Events_civil-unrest_examiner",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20053/resin:Events_civil-unrest_examined",
+          "roleName": "A1_ppt_location_thing_examined",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q21004260",
+      "wd_label": "inquiry",
+      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "outlinks": [
+        "resin:Events/10028/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10030/resin:Events_civil-unrest",
+      "description": "process that attempts to determine the facts of a crime and circumstances",
+      "name": "investigation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20054/resin:Events_civil-unrest_examiner",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": "resin:Entities/00002/"
+        },
+        {
+          "@id": "resin:Participants/20055/resin:Events_civil-unrest_examined",
+          "roleName": "A1_ppt_location_thing_examined",
+          "entity": "resin:Entities/00013/"
+        }
+      ],
+      "wd_node": "wd:Q1964968",
+      "wd_label": "criminal_investigation",
+      "wd_description": "process that attempts to determine the facts of a crime and circumstances",
+      "outlinks": [
+        "resin:Events/10028/resin:Events_civil-unrest"
+      ]
+    },
+    {
+      "@id": "resin:Events/10031/resin:Events_civil-unrest",
+      "description": "act of giving up or quitting an office or position",
+      "name": "resignation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20056/resin:Events_civil-unrest_quitter",
+          "roleName": "A0_pag_agent_quitter",
+          "entity": "resin:Entities/00000/"
+        }
+      ],
+      "wd_node": "wd:Q796919",
+      "wd_label": "resignation",
+      "wd_description": "act of giving up or quitting an office or position",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10032/resin:Events_civil-unrest",
+      "description": "process that attempts to determine the facts of a crime and circumstances",
+      "name": "investigation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20057/resin:Events_civil-unrest_examiner",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": "resin:Entities/00000/"
+        },
+        {
+          "@id": "resin:Participants/20058/resin:Events_civil-unrest_examined",
+          "roleName": "A1_ppt_location_thing_examined",
+          "entity": "resin:Entities/00022/"
+        }
+      ],
+      "wd_node": "wd:Q1964968",
+      "wd_label": "criminal_investigation",
+      "wd_description": "process that attempts to determine the facts of a crime and circumstances",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10019/resin:Events_civil-unrest:Civil_Justice",
+      "children": [
+        "resin:Events/10100/Steps_kairos:Primitives_Events_Contact_Attorney",
+        "resin:Events/10101/Steps_kairos:Primitives_Events_File_Complaint",
+        "resin:Events/10102/Steps_kairos:Primitives_Events_Answer",
+        "resin:Events/10103/Steps_kairos:Primitives_Events_Discovery",
+        "resin:Events/10104/Steps_kairos:Primitives_Events_Motion",
+        "resin:Events/10112/Steps_kairos:Container:MotionOutcome",
+        "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement",
+        "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement",
+        "resin:Events/10123/Steps_kairos:Primitives_Events_Education",
+        "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal"
+      ],
+      "children_gate": "or",
+      "comment": "",
+      "description": "correct application of law as opposed to arbitrariness",
+      "name": "Civil Justice",
+      "participants": [
+
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q5167661",
+      "wd_label": "justice",
+      "wd_description": "correct application of law as opposed to arbitrariness",
+      "outlinks": [
+
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10100/Steps_kairos:Primitives_Events_Contact_Attorney",
+      "comment": "",
+      "description": "Plaintiff contacts attorney to begin filing a lawsuit",
+      "name": "Contact Attorney",
+      "participants": [
+        {
+          "@id": "resin:Participants/20093/Steps_kairos:Primitives_Events_File_Complaint_First_communicator",
+          "roleName": "A0_pag_agent_first_communicator",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20094/Steps_kairos:Primitives_Events_File_Complaint_Topic",
+          "roleName": "A1_ppt_topic_utterance",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q11024",
+      "wd_label": "communication",
+      "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "outlinks": [
+        "resin:Events/10101/Steps_kairos:Primitives_Events_File_Complaint"
+      ]
+    },
+    {
+      "@id": "resin:Events/10101/Steps_kairos:Primitives_Events_File_Complaint",
+      "comment": "",
+      "description": "Plaintiff files a complaint to initiate a lawsuit",
+      "name": "File Complaint",
+      "participants": [
+        {
+          "@id": "resin:Participants/20095/Steps_kairos:Primitives_Events_File_Complaint_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20096/Steps_kairos:Primitives_Events_File_Complaint_Cause",
+          "roleName": "A2-cau_X_cause",
+          "entity": "resin:Entities/00007/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q836925",
+      "wd_label": "complaint",
+      "wd_description": "Legal document, the filing of which initiates a lawsuit",
+      "outlinks": [
+        "resin:Events/10102/Steps_kairos:Primitives_Events_Answer"
+      ]
+    },
+    {
+      "@id": "resin:Events/10102/Steps_kairos:Primitives_Events_Answer",
+      "comment": "",
+      "description": "In law, a solemn assertion in opposition to someone or something by the defendant",
+      "name": "Answer",
+      "participants": [
+        {
+          "@id": "resin:Participants/20097/Steps_kairos:Primitives_Events_Answer_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q33622550",
+      "wd_label": "answer",
+      "wd_description": "in law a solemn assertion in opposition to someone or something",
+      "outlinks": [
+        "resin:Events/10103/Steps_kairos:Primitives_Events_Discovery"
+      ]
+    },
+    {
+      "@id": "resin:Events/10103/Steps_kairos:Primitives_Events_Discovery",
+      "comment": "",
+      "description": "Pre-trial procedure in common law countries for obtaining evidence",
+      "name": "Discovery",
+      "participants": [
+        {
+          "@id": "resin:Participants/20098/Steps_kairos:Primitives_Events_Discovery_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20099/Steps_kairos:Primitives_Events_Discovery_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q902342",
+      "wd_label": "discovery",
+      "wd_description": "pre-trial procedure in common law countries for obtaining evidence",
+      "outlinks": [
+        "resin:Events/10104/Steps_kairos:Primitives_Events_Motion"
+      ]
+    },
+    {
+      "@id": "resin:Events/10104/Steps_kairos:Primitives_Events_Motion",
+      "comment": "",
+      "description": "In US law, a procedural device to bring a limited, contested issue before a court for decision",
+      "name": "Motion",
+      "participants": [
+        {
+          "@id": "resin:Participants/20100/Steps_kairos:Primitives_Events_Motion_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20101/Steps_kairos:Primitives_Events_Motion_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20102/Steps_kairos:Primitives_Events_Motion_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q6917734",
+      "wd_label": "motion",
+      "wd_description": "in US law, a procedural device to bring a limited, contested issue before a court for decision",
+      "outlinks": [
+        "resin:Events/10112/Steps_kairos:Container:MotionOutcome"
+      ]
+    },
+    {
+      "@id": "resin:Events/10105/Steps_kairos:Primitives_Events_Mediation",
+      "comment": "",
+      "description": "Dispute resolution with assistance of an impartial third party moderator throughthe use of communication and negotiation techniques",
+      "name": "Mediation",
+      "participants": [
+        {
+          "@id": "resin:Participants/20103/Steps_kairos:Primitives_Events_Mediation_Plaintif",
+          "roleName": "A0_pag_prosecutor_plaintif",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20104/Steps_kairos:Primitives_Events_Mediation_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20105/Steps_kairos:Primitives_Events_Mediation_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q223871",
+      "wd_label": "mediation",
+      "wd_description": "dispute resolution with assistance of an impartial third party moderator through the use of communication and negotiation techniques",
+      "outlinks": [
+        "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement"
+      ]
+    },
+    {
+      "@id": "resin:Events/10106/Steps_kairos:Primitives_Events_Settlement",
+      "comment": "",
+      "description": "The dispute is resolved through a payment of money.",
+      "name": "Settlement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20106/Steps_kairos:Primitives_Events_Settlement_Agent",
+          "roleName": "A0-pag_agent_Agent",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20107/Steps_kairos:Primitives_Events_Settlement_Receiver",
+          "roleName": "A2_com_co_agent_other_exchanger",
+          "entity": "resin:Entities/00009/"
+        },
+        {
+          "@id": "resin:Participants/20108/Steps_kairos:Primitives_Events_Settlement_Money",
+          "roleName": "A1_ppt_theme_thing_being_traded",
+          "entity": "resin:Entities/00011/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q21651837",
+      "wd_label": "exchange_of_goods",
+      "wd_description": "transfer of equivalent goods to each other",
+      "outlinks": [
+
+      ],
+      "entities": [
+        {
+          "@id": "resin:Entities/00011/",
+          "name": "settlement money",
+          "wd_label": "money",
+          "wd_node": "wd:Q1368",
+          "wd_description": "object or record accepted as payment"
+        }
+      ]
+    },
+    {
+      "@id": "resin:Events/10107/Steps_kairos:Primitives_Events_Trial",
+      "comment": "",
+      "description": "Coming together of parties to a dispute, to present information in a tribunal",
+      "name": "Trial",
+      "participants": [
+        {
+          "@id": "resin:Participants/20109/Steps_kairos:Primitives_Events_Trial_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q8016240",
+      "wd_label": "trial",
+      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+      "outlinks": [
+        "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement"
+      ]
+    },
+    {
+      "@id": "resin:Events/10108/Steps_kairos:Primitives_Events_Judgement",
+      "comment": "",
+      "description": "The formal decision made by a court following a lawsuit",
+      "name": "Judgement",
+      "participants": [
+        {
+          "@id": "resin:Participants/20110/Steps_kairos:Primitives_Events_Judgement_Judgecourt",
+          "roleName": "A0-pag_X_judge",
+          "entity": "resin:Entities/00023/"
+        }
+      ],
+      "repeatable": false,
+      "wd_node": "wd:Q3769186",
+      "wd_label": "judgement",
+      "wd_description": "the formal decision made by a court following a lawsuit",
+      "outlinks": [
+        "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal",
+        "resin:Events/10123/Steps_kairos:Primitives_Events_Education"
+      ]
+    },
+    {
+      "@id": "resin:Events/10109/Steps_kairos:Primitives_Events_Appeal",
+      "comment": "",
+      "description": "Resort to a superior court to review the decision of an inferior court or administrative agency",
+      "name": "Appeal",
+      "participants": [
+        {
+          "@id": "resin:Participants/20111/Steps_kairos:Primitives_Events_Appeal_Defendant",
+          "roleName": "A1_ppt_defendant",
+          "entity": "resin:Entities/00010/"
+        }
+      ],
+      "repeatable": true,
+      "wd_node": "wd:Q329777",
+      "wd_label": "appeal",
+      "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
+      "outlinks": [
+
+      ]
+    },
+    {
+      "@id": "resin:Events/10112/Steps_kairos:Container:MotionOutcome",
+      "children": [
+        "resin:Events/10105/Steps_kairos:Primitives_Events_Mediation",
+        "resin:Events/10107/Steps_kairos:Primitives_Events_Trial"
+      ],
+      "children_gate": "xor",
+      "comment": "container node",
+      "description": "",
+      "name": "Motion outlinks",
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "isSchema": true
+    },
+    {
+      "@id": "resin:Events/10123/Steps_kairos:Primitives_Events_Education",
+      "description": "learning in which knowledge and skills are transferred through teaching. The defendant is educated about regulations.",
+      "name": "Education",
+      "participants": [
+        {
+          "@id": "resin:Participants/20209/Steps_kairos:Primitives_Events_Education_Recipient",
+          "roleName": "A2_gol_recipient_student",
+          "entity": "resin:Entities/00010/"
+        },
+        {
+          "@id": "resin:Participants/20210/Steps_kairos:Primitives_Events_Education_Teacher",
+          "roleName": "A0_pag_agent_teacher",
+          "entity": "resin:Entities/00018/"
+        }
+      ],
+      "wd_node": "wd:Q8434",
+      "wd_label": "education",
+      "wd_description": "learning in which knowledge and skills are transferred through teaching",
+      "outlinks": [
+
+      ]
+    }
+  ]
 }
