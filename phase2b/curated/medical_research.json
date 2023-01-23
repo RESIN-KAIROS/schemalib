@@ -6,60 +6,145 @@
     {
       "@id": "resin:Events/10000",
       "name": "Medical Research",
-      "description": "medical research news story.",
+      "description": "Root node for medical research schema.",
       "wd_node": "Q42240",
       "wd_label": "research",
       "wd_description": "systematic study undertaken to increase knowledge",
       "isSchema": true,
       "repeatable": false,
       "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20000",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20001",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20002",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20003",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
       "children": [
         "resin:Events/10001",
         "resin:Events/10002",
         "resin:Events/10003",
-        "resin:Events/10004",
-        "resin:Events/10005",
-        "resin:Events/10006",
-        "resin:Events/10007",
-        "resin:Events/10008",
-        "resin:Events/10009",
-        "resin:Events/10010"
+        "resin:Events/10004"
       ],
       "children_gate": "or",
-      "entities": [],
-      "relations": [],
+      "entities": [
+          {
+              "@id": "resin:Entities/00000/",
+              "name": "scientists",
+              "wd_label": "scientist",
+              "wd_node": "wd:Q901",
+              "wd_description": "person who conducts scientific research into an area of interest"
+          },
+          {
+              "@id": "resin:Entities/00001/",
+              "name": "research facility",
+              "wd_label": "geographic location",
+              "wd_node": "wd:Q2221906",
+              "wd_description": "point or an area on the Earth's surface or elsewhere"
+          },
+          {
+              "@id": "resin:Entities/00002/",
+              "name": "government / authorities",
+              "wd_label": "government agency",
+              "wd_node": "wd:Q327333",
+              "wd_description": "organization in the machinery of government responsible for specific functions"
+          },
+          {
+              "@id": "resin:Entities/00003/",
+              "name": "government location / facility",
+              "wd_label": "geographic location",
+              "wd_node": "wd:Q2221906",
+              "wd_description": "point or an area on the Earth's surface or elsewhere"
+          },
+          {
+              "@id": "resin:Entities/00004/",
+              "name": "research question",
+              "wd_label": "research question",
+              "wd_node": "wd:Q1438033",
+              "wd_description": "question that a research project sets out to answer"
+          },
+          {
+              "@id": "resin:Entities/00005/",
+              "name": "publication",
+              "wd_label": "publication",
+              "wd_node": "wd:Q732577",
+              "wd_description": "content made available to the general public"
+          },
+          {
+              "@id": "resin:Entities/00006/",
+              "name": "research data",
+              "wd_label": "research data",
+              "wd_node": "wd:Q15809982",
+              "wd_description": "collection of facts produced through systematic inquiry"
+          },
+          {
+              "@id": "resin:Entities/00007/",
+              "name": "participant",
+              "wd_label": "participant",
+              "wd_node": "wd:Q105906860",
+              "wd_description": "Person or institution that participates in an application by virtue of a letter of commitment."
+          },
+          {
+              "@id": "resin:Entities/00008/",
+              "name": "findings",
+              "wd_label": "finding",
+              "wd_node": "wd:Q37113105",
+              "wd_description": "result of research or an investigation."
+          },
+          {
+              "@id": "resin:Entities/00009/",
+              "name": "literature",
+              "wd_label": "literature",
+              "wd_node": "wd:Q8242",
+              "wd_description": "polysemous term referring to a written art form, and the set of literary work"
+          },
+          {
+              "@id": "resin:Entities/00010/",
+              "name": "proposal",
+              "wd_label": "proposal",
+              "wd_node": "wd:Q3918409",
+              "wd_description": "document or message proposing some course of action, or the process by which that action is considered"
+          },
+          {
+              "@id": "resin:Entities/00011/",
+              "name": "policy",
+              "wd_label": "policy",
+              "wd_node": "wd:Q1156854",
+              "wd_description": "principle or protocol to guide decisions and achieve rational outcomes"
+          }
+      ],
+      "relations": [
+          {
+              "@id": "resin:Relations/30000/",
+              "name": "proximity",
+              "relationSubject": "resin:Entities/00000/",
+              "relationObject": "resin:Entities/00001/",
+              "wd_node": "wd:Q19267375",
+              "wd_description": "state of being near as in space, time, or relationship",
+              "wd_label": "proximity"
+          },
+          {
+              "@id": "resin:Relations/30001/",
+              "name": "proximity",
+              "relationSubject": "resin:Entities/00002/",
+              "relationObject": "resin:Entities/00003/",
+              "wd_node": "wd:Q19267375",
+              "wd_description": "state of being near as in space, time, or relationship",
+              "wd_label": "proximity"
+          },
+          {
+              "@id": "resin:Relations/30002/",
+              "name": "partially coincident with",
+              "relationSubject": "resin:Entities/00008/",
+              "relationObject": "resin:Entities/00005/",
+              "wd_node": "wd:P1382",
+              "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+              "wd_label": "partially coincident with"
+          }
+      ],
       "importance": [],
       "likelihood": []
     },
     {
       "@id": "resin:Events/10001",
-      "name": "background",
-      "description": "the background of the research project, including the qualifications and background of the researchers.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
+      "name": "Planning",
+      "description": "the research is planned, including formulating a research question, conducting a literature review, designing the study, and obtaining ethical approval.",
+      "wd_node": "Q309100",
+      "wd_label": "planning",
+      "wd_description": "process of determining the activities required to achieve a desired goal",
       "isSchema": true,
       "repeatable": false,
       "outlinks": [
@@ -67,28 +152,16 @@
       ],
       "participants": [
         {
-          "@id": "resin:Participants/20010",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20011",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20012",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20013",
-          "roleName": "AM_loc__location",
-          "entity": ""
+          "@id": "resin:Participants/20020",
+          "roleName": "A0_pag_planner",
+          "entity": "resin:Entities/00000/"
         }
       ],
       "children": [
-        "resin:Events/10011"
+        "resin:Events/10005",
+        "resin:Events/10006",
+        "resin:Events/10007",
+        "resin:Events/10008"
       ],
       "children_gate": "or",
       "entities": [],
@@ -96,43 +169,36 @@
     },
     {
       "@id": "resin:Events/10002",
-      "name": "initiation",
-      "description": "the project is initiated, including defining the goals of the research.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
+      "name": "Data Collection",
+      "description": "The second step in medical research is Data collection, which includes recruiting participants, obtaining informed consent, and collecting data through various methods such as administering surveys, conducting interviews or collecting biological samples.",
+      "wd_node": "Q4929239",
+      "wd_label": "data_collection",
+      "wd_description": "process of gathering and measuring information",
       "isSchema": true,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10003"
+          "resin:Events/10003"
       ],
       "participants": [
         {
-          "@id": "resin:Participants/20020",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_agent",
+          "entity": "resin:Entities/00000/"
         },
         {
-          "@id": "resin:Participants/20021",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
+          "@id": "resin:Participants/20031",
+          "roleName": "A1_ppt_thing_acquired",
+          "entity": "resin:Entities/00006/"
         },
         {
-          "@id": "resin:Participants/20022",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20023",
-          "roleName": "AM_loc__location",
-          "entity": ""
+          "@id": "resin:Participants/20033",
+          "roleName": "A2_dir_source",
+          "entity": "resin:Entities/00007/"
         }
       ],
       "children": [
-        "resin:Events/10012",
-        "resin:Events/10013",
-        "resin:Events/10014",
-        "resin:Events/10015"
+        "resin:Events/10009",
+        "resin:Events/10010"
       ],
       "children_gate": "or",
       "entities": [],
@@ -140,89 +206,62 @@
     },
     {
       "@id": "resin:Events/10003",
-      "name": "plan",
-      "description": "the research is planned, including defining the various study components and determining which participants will be included in the study.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": true,
+      "name": "Data Analysis and Interpretation",
+      "description": "The third step in medical research is data analysis and interpretation, it involves using statistical techniques to analyze the data and interpreting the results, drawing conclusions from them.",
+      "wd_node": "Q1988917",
+      "wd_label": "data_analysis",
+      "wd_description": "activity for gaining insight from data",
+      "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10004"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20030",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20031",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20032",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20033",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10016",
-        "resin:Events/10017",
-        "resin:Events/10018",
-        "resin:Events/10019",
-        "resin:Events/10020",
-        "resin:Events/10021"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10004",
-      "name": "review",
-      "description": "the study is reviewed, including ensuring that all study components are as planned.",
-      "wd_node": "Q1782301",
-      "wd_label": "study",
-      "wd_description": "examining materials for the purpose of learning",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10005"
+          "resin:Events/10004"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20040",
           "roleName": "A0_pag_student",
-          "entity": ""
+          "entity": "resin:Entities/00000/"
         },
         {
           "@id": "resin:Participants/20041",
           "roleName": "A1_ppt_subject",
-          "entity": ""
+          "entity": "resin:Entities/00006/"
         },
         {
           "@id": "resin:Participants/20042",
-          "roleName": "A2_dir_teacher",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20043",
           "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00001/"
         }
       ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10004",
+      "name": "Dissemination",
+      "description": "The fourth step in medical research is Dissemination, which includes sharing the findings through publications and presentations, and translating the research findings into public health policies or clinical practices.",
+      "wd_node": "Q840576",
+      "wd_label": "dissemination",
+      "wd_description": "the spread of a piece of data, information or knowledge among individuals",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+      ],
+      "participants": [
+          {
+            "@id": "resin:Participants/20050",
+            "roleName": "A0_pag_scatterer",
+            "entity": "resin:Entities/00000/"
+          },
+          {
+            "@id": "resin:Participants/20051",
+            "roleName": "A1_ppt_thing_spread",
+            "entity": "resin:Entities/00008/"
+          }
+      ],
       "children": [
-        "resin:Events/10022",
-        "resin:Events/10023",
-        "resin:Events/10024",
-        "resin:Events/10025"
+          "resin:Events/10011",
+          "resin:Events/10012"
       ],
       "children_gate": "or",
       "entities": [],
@@ -230,2169 +269,219 @@
     },
     {
       "@id": "resin:Events/10005",
-      "name": "implementation",
-      "description": "the study is implemented, including the recruitment and retention of participants.",
-      "wd_node": "Q1782301",
-      "wd_label": "study",
-      "wd_description": "examining materials for the purpose of learning",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10006",
-        "resin:Events/10007"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20050",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20051",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20052",
-          "roleName": "A2_dir_teacher",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20053",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10026",
-        "resin:Events/10027"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10006",
-      "name": "analysis",
-      "description": "the data is analyzed and analyzed to determine the results of the study.",
-      "wd_node": "Q1782301",
-      "wd_label": "study",
-      "wd_description": "examining materials for the purpose of learning",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10009"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20060",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20061",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20062",
-          "roleName": "A2_dir_teacher",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20063",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10028"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10007",
-      "name": "clinical trial",
-      "description": "clinical trials of the research.",
-      "wd_node": "Q5133849",
-      "wd_label": "clinical_research",
-      "wd_description": "medical research using human test subjects",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10009",
-        "resin:Events/10006"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20070",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20071",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20072",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10029",
-        "resin:Events/10030",
-        "resin:Events/10031",
-        "resin:Events/10032"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10008",
-      "name": "public response",
-      "description": "the general public responds to the advancement of medications.",
-      "wd_node": "Q1595418",
-      "wd_label": "remedy",
-      "wd_description": "substance or procedure that ends a medical condition",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20080",
-          "roleName": "A0_pag_causer_doctor",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20081",
-          "roleName": "A1_dir_source_patient",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20082",
-          "roleName": "A2_ppt_theme_illness_or_injury",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20083",
-          "roleName": "A3_mnr__instrument_treatment",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20084",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10036",
-        "resin:Events/10033",
-        "resin:Events/10034",
-        "resin:Events/10035"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10009",
-      "name": "authority evaluation",
-      "description": "the authority evaluate the effects and potential side-effect of the medication.",
-      "wd_node": "Q1379672",
-      "wd_label": "evaluation",
-      "wd_description": "systematic determination of a subject's merit, worth and significance",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10010"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20090",
-          "roleName": "A0_pag_evaluator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20091",
-          "roleName": "A1_ppt_thing_evaluated",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20092",
-          "roleName": "A2_prd_the_assessment_itself",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20093",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10037"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10010",
-      "name": "release to public",
-      "description": "the new technology becomes publicly available.",
-      "wd_node": "Q52947181",
-      "wd_label": "public_statement",
-      "wd_description": "statement made for a public audience",
-      "isSchema": true,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10008"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20100",
-          "roleName": "A0_pag_agent_announcer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20101",
-          "roleName": "A2_gol_recipient_hearer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20102",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20103",
-          "roleName": "A1_ppt_topic_utterance",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20104",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10061",
-        "resin:Events/10062",
-        "resin:Events/10038",
-        "resin:Events/10039",
-        "resin:Events/10040",
-        "resin:Events/10049",
-        "resin:Events/10050"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10011",
-      "name": "Identify Need",
-      "description": "The first major event that happens in the background of a medical research is the identification of a problem or need that the research will aim to address",
-      "wd_node": "Q3265221",
-      "wd_label": "identification",
-      "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20110",
-          "roleName": "A0_pag_agent_caller",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20111",
-          "roleName": "A1_ppt_theme_item_being_labelled",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20112",
-          "roleName": "A2_prd_attribute_attribute",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20113",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10012",
       "name": "Define Research Question",
-      "description": "Identifying the research question.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10013"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20160",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20161",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20162",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20163",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10013",
-      "name": "Identify Population",
-      "description": "Identifying the population of interest.",
+      "description": "Formulation of a research question or hypothesis.",
       "wd_node": "Q3265221",
       "wd_label": "identification",
       "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10014"
+        "resin:Events/10006"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20170",
           "roleName": "A0_pag_agent_caller",
-          "entity": ""
+          "entity": "resin:Entities/00000/"
         },
         {
           "@id": "resin:Participants/20171",
           "roleName": "A1_ppt_theme_item_being_labelled",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20172",
-          "roleName": "A2_prd_attribute_attribute",
-          "entity": ""
+          "entity": "resin:Entities/00004/"
         },
         {
           "@id": "resin:Participants/20173",
           "roleName": "AM_loc__location",
-          "entity": ""
+          "entity": "resin:Entities/00001/"
         }
       ],
       "entities": [],
       "relations": []
     },
     {
-      "@id": "resin:Events/10014",
-      "name": "Allocate Funding",
-      "description": "Identifying the study budget.",
-      "wd_node": "Q41263",
-      "wd_label": "budget",
-      "wd_description": "balance sheet or statement of estimated receipts and expenditures",
+      "@id": "resin:Events/10006",
+      "name": "Conduct Literature Review",
+      "description": "Conducting a literature review to gather background information and identify gaps in knowledge.",
+      "wd_node": "Q265158",
+      "wd_label": "review",
+      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10015"
+        "resin:Events/10007"
       ],
       "participants": [
         {
           "@id": "resin:Participants/20180",
-          "roleName": "A0_pag_allocator",
-          "entity": ""
+          "roleName": "A0_pag_reviewer",
+          "entity": "resin:Entities/00000/"
         },
         {
           "@id": "resin:Participants/20181",
-          "roleName": "A1_ppt_money",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20182",
-          "roleName": "A2_prp_purpose",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20183",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10015",
-      "name": "Ethical Considerations",
-      "description": "Identifying the ethical considerations.",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10016",
-      "name": "Develop Hypotheses",
-      "description": "Develop hypotheses",
-      "wd_node": "Q6136054",
-      "wd_label": "guess",
-      "wd_description": "swift conclusion drawn from data directly at hand",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10017"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20200",
-          "roleName": "A0_pag_guesser",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20201",
-          "roleName": "A1_ppt_guess",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20202",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10017",
-      "name": "Randomized controlled trial",
-      "description": "Choose the study design",
-      "wd_node": "Q155207",
-      "wd_label": "case_study",
-      "wd_description": "intensive analysis of an individual unit stressing developmental factors in relation to context",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10018"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20210",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20211",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20212",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10018",
-      "name": "Study Population",
-      "description": "Select the study population",
-      "wd_node": "Q1782301",
-      "wd_label": "study",
-      "wd_description": "examining materials for the purpose of learning",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10019"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20220",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20221",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20222",
-          "roleName": "A2_dir_teacher",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20223",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10019",
-      "name": "Sample Size",
-      "description": "Determine the sample size",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10020"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20230",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20231",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20232",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20233",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10020",
-      "name": "Data Collection",
-      "description": "Develop the data collection instruments",
-      "wd_node": "Q26132748",
-      "wd_label": "development",
-      "wd_description": "process of developing; growth, directed change",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10021"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20240",
-          "roleName": "A0_pag_creator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20241",
-          "roleName": "A1_prd_thing_created",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20242",
-          "roleName": "A2_vsp_source",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20243",
-          "roleName": "A3_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20244",
-          "roleName": "A4_prd_attribute",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20245",
-          "roleName": "A5_vsp_specific_aspect_of_arg1_being_developed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20246",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10021",
-      "name": "Research Protocol",
-      "description": "Write the research protocol",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20250",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20251",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20252",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20253",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10022",
-      "name": "Review Protocol",
-      "description": "Review of the study protocol by an institutional review board ",
-      "wd_node": "Q265158",
-      "wd_label": "review",
-      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10023"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20260",
-          "roleName": "A0_pag_reviewer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20261",
           "roleName": "A1_ppt_thing_reviewed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20262",
-          "roleName": "A2_gol_beneficiary",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20263",
-          "roleName": "A3_vsp_secondary-theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20264",
-          "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00009/"
         }
       ],
       "entities": [],
       "relations": []
     },
     {
-      "@id": "resin:Events/10023",
-      "name": "Review by Sponsor",
-      "description": "2. Review of the study by the sponsor.",
-      "wd_node": "Q1782301",
-      "wd_label": "study",
-      "wd_description": "examining materials for the purpose of learning",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10024"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20270",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20271",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20272",
-          "roleName": "A2_dir_teacher",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20273",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10024",
-      "name": "Review by DMC",
-      "description": "3. Review of the study by an independent data monitoring committee (DMC).",
-      "wd_node": "Q265158",
-      "wd_label": "review",
-      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10025"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20280",
-          "roleName": "A0_pag_reviewer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20281",
-          "roleName": "A1_ppt_thing_reviewed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20282",
-          "roleName": "A2_gol_beneficiary",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20283",
-          "roleName": "A3_vsp_secondary-theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20284",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10025",
-      "name": "FDA Review",
-      "description": "4. Review of the study by the FDA.",
-      "wd_node": "Q265158",
-      "wd_label": "review",
-      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20290",
-          "roleName": "A0_pag_reviewer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20291",
-          "roleName": "A1_ppt_thing_reviewed",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20292",
-          "roleName": "A2_gol_beneficiary",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20293",
-          "roleName": "A3_vsp_secondary-theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20294",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10026",
-      "name": "Recruitment",
-      "description": "Recruitment of participants",
-      "wd_node": "Q102252225",
-      "wd_label": "enrollment",
-      "wd_description": "process of a person joining a group",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10027"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20300",
-          "roleName": "A0_pag_causer_of_enrollment",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20301",
-          "roleName": "A1_ppt_entity_enrolled",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20302",
-          "roleName": "A2_gol_enrolled_in_what",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20303",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10027",
-      "name": "Retention",
-      "description": "Retention of participants",
-      "wd_node": "Q1782301",
-      "wd_label": "study",
-      "wd_description": "examining materials for the purpose of learning",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20310",
-          "roleName": "A0_pag_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20311",
-          "roleName": "A1_ppt_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20312",
-          "roleName": "A2_dir_teacher",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20313",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10028",
-      "name": "Interpret Results",
-      "description": "The results of the study are interpreted and reported.",
-      "wd_node": "Q60050485",
-      "wd_label": "reporting",
-      "wd_description": "producing a report (oral or written)",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20320",
-          "roleName": "A0_pag_Reporter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20321",
-          "roleName": "A1_ppt_thing_reported",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20322",
-          "roleName": "A2_gol_entity_reported_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20323",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10029",
-      "name": "Develop Protocol",
-      "description": "The first major event in a clinical trial is the development of the research study protocol",
+      "@id": "resin:Events/10007",
+      "name": "Design Study",
+      "description": "Designing the study, including selecting the study population, determining the sample size, and outlining the methods to be used.",
       "wd_node": "Q1519454",
       "wd_label": "design",
       "wd_description": "creative process",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10030"
+          "resin:Events/10008"
+      ],
+      "participants": [
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "resin:Events/10008",
+      "name": "Obtain Approval",
+      "description": "Obtaining approval for the study",
+      "wd_node": "Q29526855",
+      "wd_label": "approval",
+      "wd_description": "process of giving effect to documentation in international law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
       ],
       "participants": [
         {
-          "@id": "resin:Participants/20330",
-          "roleName": "A0_pag_designer",
-          "entity": ""
+          "@id": "resin:Participants/20200",
+          "roleName": "A0_pag_approver",
+          "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20331",
-          "roleName": "A1_prd_thing_designed",
-          "entity": ""
+          "@id": "resin:Participants/20201",
+          "roleName": "A1_ppt_thing_approved",
+          "entity": "resin:Entities/00010/"
         },
         {
-          "@id": "resin:Participants/20332",
-          "roleName": "A2_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20333",
-          "roleName": "A3_prp_purpose",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20334",
+          "@id": "resin:Participants/20202",
           "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00003/"
         }
       ],
       "entities": [],
       "relations": []
     },
     {
-      "@id": "resin:Events/10030",
+      "@id": "resin:Events/10009",
       "name": "Recruit Participants",
-      "description": "The next major event is the recruitment of participants.",
+      "description": "Recruiting participants and obtaining informed consent",
       "wd_node": "Q899277",
       "wd_label": "recruitment",
       "wd_description": "process of attracting, selecting and appointing candidates to a job or other organization",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10031"
+        "resin:Events/10010"
       ],
       "participants": [
         {
-          "@id": "resin:Participants/20340",
+          "@id": "resin:Participants/20210",
           "roleName": "A1_ppt_theme_new_employee",
-          "entity": ""
+          "entity": "resin:Entities/00007/"
         },
         {
-          "@id": "resin:Participants/20341",
+          "@id": "resin:Participants/20211",
           "roleName": "A0_pag_agent_employer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20342",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20343",
-          "roleName": "A2_prd_attribute_job",
-          "entity": ""
+          "entity": "resin:Entities/00000/"
         }
       ],
       "entities": [],
       "relations": []
     },
     {
-      "@id": "resin:Events/10031",
-      "name": "Random Assignment",
-      "description": "Once enrolled, participants will be randomly assigned to either the experimental group or the control group.",
-      "wd_node": "Q21014657",
-      "wd_label": "assignment",
-      "wd_description": "moment or event when something is formally granted",
+      "@id": "resin:Events/10010",
+      "name": "Collect Data",
+      "description": "Collecting data, including administering surveys, conducting interviews, or collecting biological samples",
+      "wd_node": "Q4929239",
+      "wd_label": "data_collection",
+      "wd_description": "process of gathering and measuring information",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10032"
       ],
       "participants": [
         {
-          "@id": "resin:Participants/20350",
+          "@id": "resin:Participants/20220",
           "roleName": "A0_pag_agent",
-          "entity": ""
+          "entity": "resin:Entities/00000/"
         },
         {
-          "@id": "resin:Participants/20351",
-          "roleName": "A1_ppt_thing_assigned",
-          "entity": ""
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_thing_acquired",
+          "entity": "resin:Entities/00006/"
         },
         {
-          "@id": "resin:Participants/20352",
-          "roleName": "A2_gol_assigned_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20353",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10032",
-      "name": "Conduct Clinical Trial",
-      "description": "The trial will then be conducted according to the protocol, with regular check-ins and data collection from participants.",
-      "wd_node": "Q8016240",
-      "wd_label": "trial",
-      "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20360",
-          "roleName": "A0_pag__litigant",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20361",
-          "roleName": "A1_ppt__entity_tried",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20362",
-          "roleName": "A2_gol__adjudicator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20363",
-          "roleName": "A3_cau_tried_for",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20364",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10033",
-      "name": "Review Publication",
-      "description": "The research is published in a peer",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10034"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20370",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20371",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20372",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20373",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10034",
-      "name": "Research",
-      "description": "-The research is reported in the news.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10035"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20380",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20381",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20382",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20383",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10035",
-      "name": "Social Media Research",
-      "description": "-The research is discussed on social media.",
-      "wd_node": "Q3030248",
-      "wd_label": "discussion",
-      "wd_description": "conversation between two or more people in which they express their point of view on a choosen theme",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10036"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20390",
-          "roleName": "A0_pag_agent_discussant",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20391",
-          "roleName": "A2_gol_co_agent_conversation_partner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20392",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20393",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20394",
-          "roleName": "A1_ppt__topic",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10036",
-      "name": "Research and Development",
-      "description": "-The research is funded by government agencies.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20400",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20401",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20402",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20403",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10037",
-      "name": "Approve Research",
-      "description": "The authority decides whether the research should be approved.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20410",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20411",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20412",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20413",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10038",
-      "name": "Present Findings",
-      "description": "The findings are presented at a scientific conference.",
-      "wd_node": "Q604733",
-      "wd_label": "presentation",
-      "wd_description": "process of presenting a topic to an audience",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10039",
-        "resin:Events/10049"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20420",
-          "roleName": "A0_pag_giver",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20421",
-          "roleName": "A1_ppt_thing_given",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20422",
-          "roleName": "A2_gol_given_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20423",
-          "roleName": "A3_prd_secondary_attribute_of_thing_given",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20424",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10041",
-        "resin:Events/10042",
-        "resin:Events/10043",
-        "resin:Events/10044",
-        "resin:Events/10045",
-        "resin:Events/10046",
-        "resin:Events/10047",
-        "resin:Events/10048"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10039",
-      "name": "Research Picked Up By Press",
-      "description": "The research is picked up by the popular press.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10040"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20430",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20431",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20432",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20433",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10052",
-        "resin:Events/10053",
-        "resin:Events/10054",
-        "resin:Events/10051"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10040",
-      "name": "Publish Research",
-      "description": "The findings are published in a book or monograph.",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10062"
-      ],
-      "participants": [],
-      "children": [
-        "resin:Events/10055",
-        "resin:Events/10056",
-        "resin:Events/10057",
-        "resin:Events/10058",
-        "resin:Events/10059"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10041",
-      "name": "Scientific Assessment",
-      "description": "The SAB prepares a comprehensive report for submission to these conferences assessing developments in science and technology that are relevant to treaty implementation, with a focus on both benefits and challenges",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20450",
-          "roleName": "A0_pag_Reporter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20451",
-          "roleName": "A1_ppt_thing_reported",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20452",
-          "roleName": "A2_gol_entity_reported_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20453",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10042",
-      "name": "Conference",
-      "description": "Information presented at the Conference covered various topics",
-      "wd_node": "Q604733",
-      "wd_label": "presentation",
-      "wd_description": "process of presenting a topic to an audience",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10043",
-        "resin:Events/10045",
-        "resin:Events/10047",
-        "resin:Events/10048",
-        "resin:Events/10050",
-        "resin:Events/10053",
-        "resin:Events/10056",
-        "resin:Events/10058"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20460",
-          "roleName": "A0_pag_giver",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20461",
-          "roleName": "A1_ppt_thing_given",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20462",
-          "roleName": "A2_gol_given_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20463",
-          "roleName": "A3_prd_secondary_attribute_of_thing_given",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20464",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10043",
-      "name": "Work of the SAB",
-      "description": "The work of the SAB provides the OPCW with a connection to the greater scientific community",
-      "wd_node": "Q16532276",
-      "wd_label": "work",
-      "wd_description": "activity done by a person for economic gain",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10044"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20470",
-          "roleName": "A0_pag_worker",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20471",
-          "roleName": "A1_ppt_job",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20472",
-          "roleName": "A2_gol_employer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20473",
-          "roleName": "A3_com_coworker",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20474",
-          "roleName": "A4_mnr_instrumental",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20475",
-          "roleName": "A5_prd_secondary-theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20476",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10044",
-      "name": "Public Reports",
-      "description": "Reports are made publicly available through the OPCW website,",
-      "wd_node": "Q10429085",
-      "wd_label": "report",
-      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20480",
-          "roleName": "A0_pag_Reporter",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20481",
-          "roleName": "A1_ppt_thing_reported",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20482",
-          "roleName": "A2_gol_entity_reported_to",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20483",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10045",
-      "name": "SAB Recommendations",
-      "description": "SAB recommendations are considered by the director",
-      "wd_node": "Q1344851",
-      "wd_label": "consideration",
-      "wd_description": "concept of legal value in connection with contracts",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10060"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20490",
-          "roleName": "A0_pag_agent",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20491",
-          "roleName": "A1_ppt_entity_under_consideration",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20492",
-          "roleName": "A2_prd_for_what/secondary_predicate",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20493",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10046",
-      "name": "Scientific Research",
-      "description": "For example, suggestions on monitoring scientific developments have led to broader engagement of the OPCW with scientific communities",
-      "wd_node": "Q2143522",
-      "wd_label": "monitoring",
-      "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10044"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20500",
-          "roleName": "A0_pag_observer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20501",
-          "roleName": "A1_loc_thing_looked_at",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20502",
-          "roleName": "A2_ppt_looking_for_what?",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20503",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10047",
-      "name": "Enhance Science",
-      "description": "Recommendations on enhancing science",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20510",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20511",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20512",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20513",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10048",
-      "name": "States Parties Involvement",
-      "description": "When SAB recommendations have a potential impact on treaty implementation policies, the States Parties themselves become involved, moving a technical recommendation into the realm of multilateral diplomacy",
-      "wd_node": "Q36949023",
-      "wd_label": "involvement",
-      "wd_description": "state of being involved (e.g. in a process or event)",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20520",
-          "roleName": "A0_pag_causer_of_inclusion",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20521",
-          "roleName": "A1_ppt_theme",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20522",
-          "roleName": "A2_ppt_group",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20523",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "children": [
-        "resin:Events/10060"
-      ],
-      "children_gate": "or",
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10049",
-      "name": "Findings Reported",
-      "description": "The findings may be reported in a summarizing article",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20530",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20531",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20532",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20533",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10050",
-      "name": "Findings Disseminated",
-      "description": "The findings are disseminated through an informal science and technology newsletter",
-      "wd_node": "Q840576",
-      "wd_label": "dissemination",
-      "wd_description": "the spread of a piece of data, information or knowledge among individuals",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10038"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20540",
-          "roleName": "A0_pag_scatterer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20541",
-          "roleName": "A1_ppt_thing_spread",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20542",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10051",
-      "name": "Formal Publication",
-      "description": "The formal academic paper is published.",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10044"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20550",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20551",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20552",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20553",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10052",
-      "name": "Press Release",
-      "description": "The press release is distributed.",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10044"
-      ],
-      "participants": [],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10053",
-      "name": "Report",
-      "description": "The story is reported in the media.",
-      "wd_node": "Q38926",
-      "wd_label": "news",
-      "wd_description": "communication of selected information on current events",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10060"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20570",
-          "roleName": "A0_pag_first",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20571",
-          "roleName": "A1_ppt_utterance",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20572",
-          "roleName": "A2_com_other_communicator",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20573",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10054",
-      "name": "Public Health Research",
-      "description": "The research is read by the general public",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10056"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20580",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20581",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20582",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20583",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10055",
-      "name": "Download PDF",
-      "description": "The book is available in PDF format on this website",
-      "wd_node": "Q35127",
-      "wd_label": "website",
-      "wd_description": "set of related web pages served from a single web domain",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10043",
-        "resin:Events/10047",
-        "resin:Events/10056",
-        "resin:Events/10058"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20590",
-          "roleName": "A0_pag_writer",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20591",
-          "roleName": "A1_ppt_thing_written",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20592",
-          "roleName": "A2_gol_benefactive",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20593",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10056",
-      "name": "Published in English",
-      "description": "The book was published in English ",
-      "wd_node": "Q7553",
-      "wd_label": "translation",
-      "wd_description": "communication of the meaning of a source-language text by means of an equivalent target-language text",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10039",
-        "resin:Events/10041"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20600",
-          "roleName": "A0_pag_causer_of_transformation",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20601",
-          "roleName": "A1_ppt_thing_changing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20602",
-          "roleName": "A2_prd_end_state",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20603",
-          "roleName": "A3_vsp_start_state",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20604",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10057",
-      "name": "The Knock at the Door",
-      "description": "The writer of \u0432\u0402\u045aThe knock at the door\u0432\u0402\u045c is also winner of the New York Book Fair in the nomination of \u0432\u0402\u045aThe best historical memoirs\u0432\u0402\u045c",
-      "wd_node": "Q1229501",
-      "wd_label": "distinction",
-      "wd_description": "social phenomenon whereby members of one social group differentiate themselves intentionally or unintentionally from members of other social groups",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10038",
-        "resin:Events/10053",
-        "resin:Events/10055"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20610",
-          "roleName": "A0_pag_entity_causing_separation",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20611",
-          "roleName": "A1_ppt_thing",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20612",
+          "@id": "resin:Participants/20222",
           "roleName": "A2_dir_source",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20613",
-          "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00007/"
         }
       ],
       "entities": [],
       "relations": []
+  },
+  {
+    "@id": "resin:Events/10011",
+    "name": "Formal Publication",
+    "description": "Disseminating the findings through publications in peer-reviewed journals and/or presentations at conferences",
+    "wd_node": "Q3972943",
+    "wd_label": "publishing",
+    "wd_description": "process of production and dissemination of literature, music, or information",
+    "isSchema": false,
+    "repeatable": false,
+    "outlinks": [
+        "resin:Events/10012"
+    ],
+    "participants": [
+      {
+        "@id": "resin:Participants/20220",
+        "roleName": "A0_pag_publisher",
+        "entity": "resin:Entities/00000/"
+      },
+      {
+        "@id": "resin:Participants/20221",
+        "roleName": "A1_prd_book",
+        "entity": "resin:Entities/00005/"
+      }
+    ],
+    "entities": [],
+    "relations": []
     },
     {
-      "@id": "resin:Events/10058",
-      "name": "Discovered Photos",
-      "description": "Two rare original photos have been discovered by the Armenian Genocide Museum",
-      "wd_node": "Q38131096",
-      "wd_label": "rediscovery",
-      "wd_description": "second or subsequent discovery of something previously lost or forgotten",
+      "@id": "resin:Events/10012",
+      "name": "Implementation",
+      "description": "Translation of the research findings into public health policies or clinical practices",
+      "wd_node": "Q245962",
+      "wd_label": "implementation",
+      "wd_description": "realization of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy",
       "isSchema": false,
       "repeatable": false,
       "outlinks": [
-        "resin:Events/10044"
       ],
       "participants": [
         {
-          "@id": "resin:Participants/20620",
-          "roleName": "A0_pag_finder",
-          "entity": ""
+          "@id": "resin:Participants/20220",
+          "roleName": "A0_pag_implementer",
+          "entity": "resin:Entities/00002/"
         },
         {
-          "@id": "resin:Participants/20621",
-          "roleName": "A1_ppt_thing_found",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20622",
-          "roleName": "AM_loc",
-          "entity": ""
+          "@id": "resin:Participants/20221",
+          "roleName": "A1_ppt_thing_implemented",
+          "entity": "resin:Entities/00011/"
         }
       ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10059",
-      "name": "Checking Findings",
-      "description": "The findings are checked and verified for accuracy",
-      "wd_node": "Q953429",
-      "wd_label": "verification",
-      "wd_description": "process of proving that a suspected fact is true",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [],
-      "participants": [
-        {
-          "@id": "resin:Participants/20630",
-          "roleName": "A0_pag_verifier",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20631",
-          "roleName": "A1_ppt_verified",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20632",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10060",
-      "name": "Book Award",
-      "description": "The book is awarded ",
-      "wd_node": "Q21142755",
-      "wd_label": "recognition",
-      "wd_description": "mental process; the act of recognizing or the condition of being recognized",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10046"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20640",
-          "roleName": "A0_ppt_perceiver",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20641",
-          "roleName": "A1_pag_entity_perceived",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20642",
-          "roleName": "A2_prd_secondary_predication",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20643",
-          "roleName": "AM_loc",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10061",
-      "name": "Findings of General Interest",
-      "description": "The findings are of general interest and would be of value to a wider audience than just scholars in the field",
-      "wd_node": "Q42240",
-      "wd_label": "research",
-      "wd_description": "systematic study undertaken to increase knowledge",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10040"
-      ],
-      "participants": [
-        {
-          "@id": "resin:Participants/20650",
-          "roleName": "A0_pag_agent_student",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20651",
-          "roleName": "A1_ppt_theme_subject",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20652",
-          "roleName": "AM_mnr__manner",
-          "entity": ""
-        },
-        {
-          "@id": "resin:Participants/20653",
-          "roleName": "AM_loc__location",
-          "entity": ""
-        }
-      ],
-      "entities": [],
-      "relations": []
-    },
-    {
-      "@id": "resin:Events/10062",
-      "name": "Book Release",
-      "description": "The book is released to the public",
-      "wd_node": "",
-      "wd_label": "",
-      "wd_description": "",
-      "isSchema": false,
-      "repeatable": false,
-      "outlinks": [
-        "resin:Events/10060"
-      ],
-      "participants": [],
       "entities": [],
       "relations": []
     }
