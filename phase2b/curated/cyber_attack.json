@@ -156,7 +156,53 @@
                     "wd_description": "automatic creation of a log of a software process"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30000/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00003/",
+                    "relationObject": "resin:Entities/00004/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                },
+                {
+                    "@id": "resin:Relations/30001/",
+                    "name": "partially coincident with",
+                    "relationSubject": "resin:Entities/00016/",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wd:P1382",
+                    "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+                    "wd_label": "partially coincident with"
+                },
+                {
+                    "@id": "resin:Relations/30002/",
+                    "name": "partially coincident with",
+                    "relationSubject": "resin:Entities/00003/",
+                    "relationObject": "resin:Entities/00005/",
+                    "wd_node": "wd:P1382",
+                    "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+                    "wd_label": "partially coincident with"
+                },
+                {
+                    "@id": "resin:Relations/30003/",
+                    "name": "partially coincident with",
+                    "relationSubject": "resin:Entities/00005/",
+                    "relationObject": "resin:Entities/00009/",
+                    "wd_node": "wd:P1382",
+                    "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+                    "wd_label": "partially coincident with"
+                },
+                {
+                    "@id": "resin:Relations/30004/",
+                    "name": "instance of",
+                    "relationSubject": "resin:Entities/00010/",
+                    "relationObject": "resin:Entities/00005/",
+                    "wd_node": "wd:Q21503252",
+                    "wd_description": "relation of type constraints",
+                    "wd_label": "instance of"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
