@@ -17,22 +17,17 @@
                 {
                     "@id": "resin:Participants/20000",
                     "roleName": "A0_pag__agent_causer_of_damage",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20001",
                     "roleName": "A1_ppt_patient_entity_crashed",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20002",
-                    "roleName": "AM_gol__goal",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20003",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -44,7 +39,29 @@
                 "resin:Events/10006"
             ],
             "children_gate": "or",
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00000/",
+                    "name": "machine causing the accident",
+                    "wd_node": "Q11019",
+                    "wd_label": "machine",
+                    "wd_description": "machine"
+                },
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "object crash in the accident",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete_object"
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "location of the accident",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                }
+            ],
             "relations": [],
             "importance": [],
             "likelihood": []
@@ -65,22 +82,17 @@
                 {
                     "@id": "resin:Participants/20010",
                     "roleName": "A0_pag__agent_causer_of_damage",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20011",
                     "roleName": "A1_ppt_patient_entity_crashed",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20012",
-                    "roleName": "AM_gol__goal",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20013",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children": [
@@ -107,22 +119,17 @@
                 {
                     "@id": "resin:Participants/20020",
                     "roleName": "A0_pag_rescuer",
-                    "entity": ""
+                    "entity": "resin:Entities/00008/"
                 },
                 {
                     "@id": "resin:Participants/20021",
                     "roleName": "A1_ppt_entity_rescued",
-                    "entity": ""
+                    "entity": "resin:Entities/00009/"
                 },
                 {
                     "@id": "resin:Participants/20022",
                     "roleName": "A2_dir_rescued_from",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20023",
-                    "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00010/"
                 }
             ],
             "children": [
@@ -131,16 +138,46 @@
                 "resin:Events/10049"
             ],
             "children_gate": "or",
-            "entities": [],
-            "relations": []
+            "entities": [
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "rescuer/",
+                    "wd_node": "Q17126809",
+                    "wd_label": "rescuer",
+                    "wd_description": "rescuer"
+                },
+                {
+                    "@id": "resin:Entities/00009/",
+                    "name": "victim",
+                    "wd_label": "victim",
+                    "wd_node": "Q1851760",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                },
+                {
+                    "@id": "resin:Entities/00010/",
+                    "name": "location where victims are trapped",
+                    "wd_node": "Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                }
+            ],
+            "relations": [{
+                    "@id": "resin:Relations/20000/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00007/",
+                    "relationObject": "resin:Entities/00010/",
+                    "wd_node": "Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }]
         },
         {
             "@id": "resin:Events/10003",
             "name": "damage",
             "description": "The accident caused damage.",
-            "wd_node": "Q193078",
+            "wd_node": "Q481609",
             "wd_label": "injury",
-            "wd_description": "physiological wound caused by an external source",
+            "wd_description": "changes introduced into a system that adversely affect its current or future performance",
             "isSchema": true,
             "repeatable": false,
             "outlinks": [
@@ -151,23 +188,18 @@
             "participants": [
                 {
                     "@id": "resin:Participants/20030",
-                    "roleName": "A1_ppt_experiencer_injured_party",
-                    "entity": ""
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20031",
-                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20032",
-                    "roleName": "A2_mnr__instrument",
-                    "entity": ""
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20033",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children": [
@@ -196,17 +228,17 @@
                 {
                     "@id": "resin:Participants/20040",
                     "roleName": "A0_pag_agent_examiner",
-                    "entity": ""
+                    "entity": "resin:Entities/00016/"
                 },
                 {
                     "@id": "resin:Participants/20041",
                     "roleName": "A1_ppt_location_examined",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20042",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00018/"
                 }
             ],
             "children": [
@@ -214,7 +246,22 @@
                 "resin:Events/10051"
             ],
             "children_gate": "or",
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00016/",
+                    "name": "investigators",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00018/",
+                    "name": "location of the investigation process",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -231,19 +278,14 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/20050",
-                    "roleName": "A0_pag_Stimulus_of_outrage",
-                    "entity": ""
-                },
-                {
                     "@id": "resin:Participants/20051",
                     "roleName": "A1_ppt_enraged_entity",
-                    "entity": ""
+                    "entity": "resin:Entities/00020/"
                 },
                 {
                     "@id": "resin:Participants/20052",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00021/"
                 }
             ],
             "children": [
@@ -251,7 +293,22 @@
                 "resin:Events/10013"
             ],
             "children_gate": "or",
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00020/",
+                    "name": "people",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00021/",
+                    "name": "public response location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -268,27 +325,12 @@
                 {
                     "@id": "resin:Participants/20060",
                     "roleName": "A0_pag_agent_agent",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20061",
-                    "roleName": "A1_ppt_theme_theme",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20062",
-                    "roleName": "A2_ppt_secondary_predication_or_action",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20063",
-                    "roleName": "A3_mnr__instrument",
-                    "entity": ""
+                    "entity": "resin:Entities/00022/"
                 },
                 {
                     "@id": "resin:Participants/20064",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00026/"
                 }
             ],
             "children": [
@@ -301,7 +343,22 @@
                 "resin:Events/10023"
             ],
             "children_gate": "or",
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00022/",
+                    "name": "people",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00026/",
+                    "name": "aftermath location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -311,29 +368,19 @@
             "wd_node": "Q11822042",
             "wd_label": "transport_accident",
             "wd_description": "accident in transportation",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/20070",
-                    "roleName": "A0_ppt_theme",
-                    "entity": ""
-                },
-                {
                     "@id": "resin:Participants/20071",
                     "roleName": "A1_ppt_thing_hit",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20072",
-                    "roleName": "A2_ppt_Topic_collided_over_in_metaphorical_case",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20073",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "entities": [],
@@ -346,7 +393,7 @@
             "wd_node": "",
             "wd_label": "",
             "wd_description": "",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [
                 "resin:Events/10009",
@@ -354,24 +401,14 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/20080",
-                    "roleName": "A0_pag_rescuer",
-                    "entity": ""
-                },
-                {
                     "@id": "resin:Participants/20081",
-                    "roleName": "A1_ppt_entity_rescued",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20082",
-                    "roleName": "A2_dir_rescued_from",
-                    "entity": ""
+                    "roleName": "A0_ppt_entity_trapped",
+                    "entity": "resin:Entities/00009/"
                 },
                 {
                     "@id": "resin:Participants/20083",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "entities": [],
@@ -384,32 +421,42 @@
             "wd_node": "Q606332",
             "wd_label": "emergency_evacuation",
             "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20090",
-                    "roleName": "A0_pag_rescuer",
-                    "entity": ""
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00035/"
                 },
                 {
                     "@id": "resin:Participants/20091",
-                    "roleName": "A1_ppt_entity_rescued",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20092",
-                    "roleName": "A2_dir_rescued_from",
-                    "entity": ""
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "resin:Entities/00036/"
                 },
                 {
                     "@id": "resin:Participants/20093",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00035/",
+                    "name": "people operating evacuation",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00036/",
+                    "name": "people evacuated/",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                }
+            ],
             "relations": []
         },
         {
@@ -419,29 +466,24 @@
             "wd_node": "Q1341429",
             "wd_label": "rescue",
             "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20090",
                     "roleName": "A0_pag_rescuer",
-                    "entity": ""
+                    "entity": "resin:Entities/00008/"
                 },
                 {
                     "@id": "resin:Participants/20091",
                     "roleName": "A1_ppt_entity_rescued",
-                    "entity": ""
+                    "entity": "resin:Entities/00009/"
                 },
                 {
                     "@id": "resin:Participants/20092",
                     "roleName": "A2_dir_rescued_from",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20093",
-                    "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00010/"
                 }
             ],
             "entities": [],
@@ -454,7 +496,7 @@
             "wd_node": "Q481609",
             "wd_label": "damage",
             "wd_description": "changes introduced into a system that adversely affect its current or future performance",
-            "isSchema": false,
+            "isSchema": true,
             "optional": true,
             "repeatable": false,
             "outlinks": [],
@@ -462,25 +504,28 @@
                 {
                     "@id": "resin:Participants/20100",
                     "roleName": "A0_pag_agent_agent_causer",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20101",
                     "roleName": "A1_ppt_patient_entity_damaged",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20102",
-                    "roleName": "A2_mnr_instrument_instrument",
-                    "entity": ""
+                    "entity": "resin:Entities/00044/"
                 },
                 {
                     "@id": "resin:Participants/20103",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00044/",
+                    "name": "Environmental objects damaged",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete_object"
+                }
+            ],
             "relations": []
         },
         {
@@ -490,7 +535,7 @@
             "wd_node": "Q193078",
             "wd_label": "injury",
             "wd_description": "physiological wound caused by an external source",
-            "isSchema": false,
+            "isSchema": true,
             "optional": true,
             "repeatable": false,
             "outlinks": [
@@ -499,26 +544,41 @@
             "participants": [
                 {
                     "@id": "resin:Participants/20100",
-                    "roleName": "A0_pag_agent_agent_causer",
-                    "entity": ""
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/00009/"
                 },
                 {
                     "@id": "resin:Participants/20101",
-                    "roleName": "A1_ppt_patient_entity_damaged",
-                    "entity": ""
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/00048/"
                 },
                 {
                     "@id": "resin:Participants/20102",
-                    "roleName": "A2_mnr_instrument_instrument",
-                    "entity": ""
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/00049/"
                 },
                 {
                     "@id": "resin:Participants/20103",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00048/",
+                    "name": "stimulus of injury",
+                    "wd_node": "Q4936952",
+                    "wd_label": "anatomical_structure",
+                    "wd_description": "anatomical_structure"
+                },
+                {
+                    "@id": "resin:Entities/00049/",
+                    "name": "Injury instrument",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete_object"
+                }
+            ],
             "relations": []
         },
         {
@@ -528,34 +588,47 @@
             "wd_node": "Q4",
             "wd_label": "death",
             "wd_description": "permanent cessation of vital functions",
-            "isSchema": false,
+            "isSchema": true,
             "optional": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20100",
-                    "roleName": "A0_pag_agent_agent_causer",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20101",
-                    "roleName": "A1_ppt_patient_entity_damaged",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20102",
-                    "roleName": "A2_mnr_instrument_instrument",
-                    "entity": ""
+                    "roleName": "A1_ppt_the_deceased",
+                    "entity": "resin:Entities/00051/"
                 },
                 {
                     "@id": "resin:Participants/20103",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00054/"
                 }
             ],
-            "entities": [],
-            "relations": []
+            "entities": [
+                {
+                    "@id": "resin:Entities/00051/",
+                    "name": "people died of accident",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00054/",
+                    "name": "Death location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
+            "relations": [
+              {
+              "name": "member of",
+              "relationSubject": "resin:Entities/00051/",
+              "relationPredicate": "Q21503252",
+              "relationObject": "resin:Entities/00009/",
+              "@id": "resin:Relations/50000/"
+              }
+            ]
         },
         {
             "@id": "resin:Events/10048",
@@ -564,7 +637,7 @@
             "wd_node": "Q481609",
             "wd_label": "damage",
             "wd_description": "changes introduced into a system that adversely affect its current or future performance",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [
                 "resin:Events/10046",
@@ -574,25 +647,28 @@
                 {
                     "@id": "resin:Participants/20100",
                     "roleName": "A0_pag_agent_agent_causer",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20101",
                     "roleName": "A1_ppt_patient_entity_damaged",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20102",
-                    "roleName": "A2_mnr_instrument_instrument",
-                    "entity": ""
+                    "entity": "resin:Entities/00056/"
                 },
                 {
                     "@id": "resin:Participants/20103",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 }
             ],
-            "entities": [],
+            "entities": [
+              {
+                    "@id": "resin:Entities/00056/",
+                    "name": "destructed object in the accident",
+                    "wd_node": "Q4406616",
+                    "wd_label": "concrete_object",
+                    "wd_description": "concrete_object"
+                }
+            ],
             "relations": []
         },
         {
@@ -602,32 +678,42 @@
             "wd_node": "Q10429085",
             "wd_label": "report",
             "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20110",
                     "roleName": "A0_pag_Reporter",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20111",
-                    "roleName": "A1_ppt_thing_reported",
-                    "entity": ""
+                    "entity": "resin:Entities/00016/"
                 },
                 {
                     "@id": "resin:Participants/20112",
-                    "roleName": "A2_gol_entity_reported_to",
-                    "entity": ""
+                    "roleName": "A1_gol_entity_reported_to",
+                    "entity": "resin:Entities/00061/"
                 },
                 {
                     "@id": "resin:Participants/20113",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00062/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00061/",
+                    "name": "people reported to",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00062/",
+                    "name": "Report/AM_loc/",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -637,7 +723,7 @@
             "wd_node": "Q1964968",
             "wd_label": "criminal_investigation",
             "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [
                 "resin:Events/10011"
@@ -645,23 +731,18 @@
             "participants": [
                 {
                     "@id": "resin:Participants/20110",
-                    "roleName": "A0_pag_Reporter",
-                    "entity": ""
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": "resin:Entities/00016/"
                 },
                 {
                     "@id": "resin:Participants/20111",
-                    "roleName": "A1_ppt_thing_reported",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20112",
-                    "roleName": "A2_gol_entity_reported_to",
-                    "entity": ""
+                    "roleName": "A1_ppt_location_examined",
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20113",
-                    "roleName": "AM_loc",
-                    "entity": ""
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00018/"
                 }
             ],
             "entities": [],
@@ -674,27 +755,49 @@
             "wd_node": "Q102358908",
             "wd_label": "support",
             "wd_description": "help for a person in a difficult situation",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20120",
                     "roleName": "A0_pag_helper",
-                    "entity": ""
+                    "entity": "resin:Entities/00067/"
                 },
                 {
                     "@id": "resin:Participants/20121",
                     "roleName": "A1_ppt_person",
-                    "entity": ""
+                    "entity": "resin:Entities/00068/"
                 },
                 {
                     "@id": "resin:Participants/20122",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00069/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00067/",
+                    "name": "donator",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00068/",
+                    "name": "people receving the donation",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00069/",
+                    "name": "location of the donation",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -704,29 +807,19 @@
             "wd_node": "Q44619",
             "wd_label": "fear",
             "wd_description": "emotion induced by perceived danger or threat",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20130",
-                    "roleName": "A0_ppt_scaredy_cat",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20131",
-                    "roleName": "A1_ppt_afraid_of",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20132",
-                    "roleName": "A2_gol_afraid_for",
-                    "entity": ""
+                    "roleName": "people expressing concern",
+                    "entity": "resin:Entities/00020/"
                 },
                 {
                     "@id": "resin:Participants/20133",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00021/"
                 }
             ],
             "entities": [],
@@ -739,7 +832,7 @@
             "wd_node": "Q697327",
             "wd_label": "lawsuit",
             "wd_description": "civil action brought in a court of law",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [
                 "resin:Events/10039",
@@ -749,27 +842,44 @@
                 {
                     "@id": "resin:Participants/20140",
                     "roleName": "A0_pag_prosecutor",
-                    "entity": ""
+                    "entity": "resin:Entities/00074/"
                 },
                 {
                     "@id": "resin:Participants/20141",
                     "roleName": "A1_ppt_defendant",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20142",
-                    "roleName": "A2_vsp_type/grounds/accusation",
-                    "entity": ""
+                    "entity": "resin:Entities/00075/"
                 },
                 {
                     "@id": "resin:Participants/20143",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00077/"
                 }
             ],
             "children": [],
             "children_gate": "or",
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00074/",
+                    "name": "prosecutor",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00075/",
+                    "name": "defendant",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00077/",
+                    "name": "Justice location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -779,27 +889,49 @@
             "wd_node": "Q5135520",
             "wd_label": "closure",
             "wd_description": "actions taken when it is no longer necessary or possible for a business or other organization to continue to operate",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20230",
                     "roleName": "A0_pag_person_doing_the_closing",
-                    "entity": ""
+                    "entity": "resin:Entities/00078/"
                 },
                 {
                     "@id": "resin:Participants/20231",
                     "roleName": "A1_ppt_thing_closing",
-                    "entity": ""
+                    "entity": "resin:Entities/00079/"
                 },
                 {
                     "@id": "resin:Participants/20232",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00080/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00078/",
+                    "name": "Company Shutdown/A0_pag_person_doing_the_closing/",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00079/",
+                    "name": "Company Shutdown",
+                    "wd_node": "Q783794",
+                    "wd_label": "company",
+                    "wd_description": "legal entity representing an association of people"
+                },
+                {
+                    "@id": "resin:Entities/00080/",
+                    "name": "Company Shutdown location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": [],
             "optional": true
         },
@@ -810,42 +942,49 @@
             "wd_node": "Q12162227",
             "wd_label": "transportation",
             "wd_description": "None",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20280",
-                    "roleName": "A0_pag_transporter",
-                    "entity": ""
+                    "roleName": "A0_pag_law-giving_body",
+                    "entity": "resin:Entities/00081/"
                 },
                 {
                     "@id": "resin:Participants/20281",
-                    "roleName": "A1_ppt_thing_transported",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20282",
-                    "roleName": "A2_dir_source",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20283",
-                    "roleName": "A3_gol_destination",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20284",
-                    "roleName": "A4_loc_path",
-                    "entity": ""
+                    "roleName": "A1_ppt_thing_controlled",
+                    "entity": "resin:Entities/00082/"
                 },
                 {
                     "@id": "resin:Participants/20285",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00086/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00081/",
+                    "name": "people initiating the new law",
+                    "wd_node": "Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "group_of_humans"
+                },
+                {
+                    "@id": "resin:Entities/00082/",
+                    "name": "thing conrtolled by the law",
+                    "wd_node": "Q783794",
+                    "wd_label": "company",
+                    "wd_description": "legal entity representing an association of people"
+                },
+                {
+                    "@id": "resin:Entities/00086/",
+                    "name": "Legislation location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": [],
             "optional": true
         },
@@ -856,37 +995,49 @@
             "wd_node": "Q10566551",
             "wd_label": "safety",
             "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20320",
-                    "roleName": "A0_pag_agent/causer",
-                    "entity": ""
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00087/"
                 },
                 {
                     "@id": "resin:Participants/20321",
-                    "roleName": "A1_ppt_entity_who_is_protected",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20322",
-                    "roleName": "A2_vsp_specific_domain_in_which_arg1_is_safe",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20323",
-                    "roleName": "A3_gol_potential_danger",
-                    "entity": ""
+                    "roleName": "A1_ppt_entity_who_is_affected",
+                    "entity": "resin:Entities/00088/"
                 },
                 {
                     "@id": "resin:Participants/20324",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00091/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00087/",
+                    "name": "government",
+                    "wd_node": "Q2659904",
+                    "wd_label": "government_organization",
+                    "wd_description": "organization administrated by a government authority or agency"
+                },
+                {
+                    "@id": "resin:Entities/00088/",
+                    "name": "companies incentivize for safety",
+                    "wd_node": "Q783794",
+                    "wd_label": "company",
+                    "wd_description": "legal entity representing an association of people"
+                },
+                {
+                    "@id": "resin:Entities/00091/",
+                    "name": "location",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": [],
             "optional": true
         },
@@ -897,37 +1048,49 @@
             "wd_node": "Q10566551",
             "wd_label": "safety",
             "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20330",
-                    "roleName": "A0_pag_agent/causer",
-                    "entity": ""
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00092/"
                 },
                 {
                     "@id": "resin:Participants/20331",
-                    "roleName": "A1_ppt_entity_who_is_protected",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20332",
-                    "roleName": "A2_vsp_specific_domain_in_which_arg1_is_safe",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20333",
-                    "roleName": "A3_gol_potential_danger",
-                    "entity": ""
+                    "roleName": "A1_ppt_created_agency",
+                    "entity": "resin:Entities/00093/"
                 },
                 {
                     "@id": "resin:Participants/20334",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00096/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00092/",
+                    "name": "government",
+                    "wd_node": "Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "resin:Entities/00093/",
+                    "name": "created agency",
+                    "wd_node": "Q2659904",
+                    "wd_label": "government_organization",
+                    "wd_description": "organization administrated by a government authority or agency"
+                },
+                {
+                    "@id": "resin:Entities/00096/",
+                    "name": "location of Creating Agency",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": [],
             "optional": true
         },
@@ -938,37 +1101,35 @@
             "wd_node": "Q1498273",
             "wd_label": "compensation",
             "wd_description": "legal term",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20390",
                     "roleName": "A0_pag_payer_or_buyer",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20391",
-                    "roleName": "A1_ppt_thing_bought_or_paid_for",
-                    "entity": ""
+                    "entity": "resin:Entities/00079/"
                 },
                 {
                     "@id": "resin:Participants/20392",
                     "roleName": "A2_gol_seller_or_person_being_paid",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20393",
-                    "roleName": "A3_ppt_price_paid",
-                    "entity": ""
+                    "entity": "resin:Entities/00009/"
                 },
                 {
                     "@id": "resin:Participants/20394",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00101/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00101/",
+                    "name": "location where Company Pays Compensation",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
+            ],
             "relations": []
         },
         {
@@ -978,60 +1139,30 @@
             "wd_node": "Q10566551",
             "wd_label": "safety",
             "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes",
-            "isSchema": false,
+            "isSchema": true,
             "repeatable": false,
             "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20430",
-                    "roleName": "A0_pag_agent/causer",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20431",
-                    "roleName": "A1_ppt_entity_who_is_protected",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20432",
-                    "roleName": "A2_vsp_specific_domain_in_which_arg1_is_safe",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20433",
-                    "roleName": "A3_gol_potential_danger",
-                    "entity": ""
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00079/"
                 },
                 {
                     "@id": "resin:Participants/20434",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00106/"
                 }
             ],
-            "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "Events/10046/",
-            "name": "Injury",
-            "description": "",
-            "wd_node": [
-                "wd:Q1234567",
-                "wdt:P1234567"
+            "entities": [
+                {
+                    "@id": "resin:Entities/00106/",
+                    "name": "location where safety is improved",
+                    "wd_label": "geographic entity",
+                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                }
             ],
-            "wd_label": "",
-            "wd_description": "",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": false,
-            "outlinks": [
-                "resin:Events/10047"
-            ],
-            "participants": [],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
             "relations": []
         }
     ]
