@@ -17,17 +17,17 @@
                 {
                     "@id": "resin:Participants/20000",
                     "roleName": "A0_pag_getter",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20001",
                     "roleName": "A1_ppt_thing_gotten",
-                    "entity": ""
+                    "entity": "resin:Entities/00012/"
                 },
                 {
                     "@id": "resin:Participants/20002",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -38,8 +38,142 @@
                 "resin:Events/10005"
             ],
             "children_gate": "or",
-            "entities": [],
-            "relations": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00012/",
+                    "name": "concrete object",
+                    "wd_node": "wd:Q4406616",
+                    "wd_label": "concrete object",
+                    "wd_description": "object with a physical referent"
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "georaphic location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "georaphic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/00002/",
+                    "name": "money",
+                    "wd_node": "wd:Q1368",
+                    "wd_label": "money",
+                    "wd_description": "physical or virtual object or record accepted as payment"
+                },
+                {
+                    "@id": "resin:Entities/00004/",
+                    "name": "group of humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00005/",
+                    "name": "number",
+                    "wd_node": "wd:Q11563",
+                    "wd_label": "number",
+                    "wd_description": "mathematical object used to count, label, and measure"
+                },
+                {
+                    "@id": "resin:Entities/00006/",
+                    "name": "event",
+                    "wd_node": "wd:Q1656682",
+                    "wd_label": "event",
+                    "wd_description": "temporary and scheduled happening, like a conference, festival, competition or similar"
+                },
+                {
+                    "@id": "resin:Entities/00007/",
+                    "name": "object",
+                    "wd_node": "wd:Q488383",
+                    "wd_label": "object",
+                    "wd_description": "anything that exists and may be acted upon by a subject"
+                },
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "support",
+                    "wd_node": "wd:Q1058733",
+                    "wd_label": "support",
+                    "wd_description": "structural element sustaining the weight of a building"
+                },
+                {
+                    "@id": "resin:Entities/00009/",
+                    "name": "politician",
+                    "wd_node": "wd:Q82955",
+                    "wd_label": "politician",
+                    "wd_description": "person involved in politics; person who holds or seeks positions in government"
+                },
+                {
+                    "@id": "resin:Entities/00010/",
+                    "name": "crime",
+                    "wd_node": "wd:Q83267",
+                    "wd_label": "crime",
+                    "wd_description": "unlawful act forbidden and punishable by criminal law"
+                },
+                {
+                    "@id": "resin:Entities/00011/",
+                    "name": "government organization",
+                    "wd_node": "wd:Q2659904",
+                    "wd_label": "government_organization",
+                    "wd_description": "organization administrated by a government authority or agency"
+                },
+                {
+                    "@id": "resin:Entities/00013/",
+                    "name": "punishment",
+                    "wd_node": "wd:Q113594218",
+                    "wd_label": "punishment",
+                    "wd_description": "Q113594218"
+                },
+                {
+                    "@id": "resin:Entities/00014/",
+                    "name": "direction",
+                    "wd_node": "wd:Q2151613",
+                    "wd_label": "direction",
+                    "wd_description": "Q2151613"
+                },
+                {
+                    "@id": "resin:Entities/00015/",
+                    "name": "official",
+                    "wd_node": "wd:Q599151",
+                    "wd_label": "official",
+                    "wd_description": "someone who holds a government office"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30000/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00001/",
+                    "relationObject": "resin:Entities/00004/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_label": "proximity",
+                    "wd_description": "state of being near as in space, time, or relationship"
+                },
+                {
+                    "@id": "resin:Relations/30001/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00015/",
+                    "relationObject": "resin:Entities/00004/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_label": "proximity",
+                    "wd_description": "state of being near as in space, time, or relationship"
+                },
+                {
+                    "@id": "resin:Relations/30002/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00015/",
+                    "relationObject": "resin:Entities/00011/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_label": "proximity",
+                    "wd_description": "state of being near as in space, time, or relationship"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -59,27 +193,27 @@
                 {
                     "@id": "resin:Participants/20010",
                     "roleName": "A0_pag_agent/cause",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20011",
                     "roleName": "A1_ppt_entity_corrupted",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20012",
                     "roleName": "A2_mnr_instrument",
-                    "entity": ""
+                    "entity": "resin:Entities/00012/"
                 },
                 {
                     "@id": "resin:Participants/20013",
                     "roleName": "A3_vsp_specific_aspect_of_arg1_being_corrupted",
-                    "entity": ""
+                    "entity": "resin:Entities/00012/"
                 },
                 {
                     "@id": "resin:Participants/20014",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -106,22 +240,22 @@
                 {
                     "@id": "resin:Participants/20020",
                     "roleName": "A0_pag_exposer",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20021",
                     "roleName": "A1_ppt_exposed_entity",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20022",
                     "roleName": "A2_gol_exposed_to",
-                    "entity": ""
+                    "entity": "resin:Entities/00004/"
                 },
                 {
                     "@id": "resin:Participants/20023",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -152,7 +286,7 @@
                 {
                     "@id": "resin:Participants/20031",
                     "roleName": "A1_pag_reacted-to",
-                    "entity": "resin:Events/10001"
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20032",
@@ -191,17 +325,17 @@
                 {
                     "@id": "resin:Participants/20040",
                     "roleName": "A0_pag_agent_examiner",
-                    "entity": ""
+                    "entity": "resin:Entities/00004/"
                 },
                 {
                     "@id": "resin:Participants/20041",
                     "roleName": "A1_ppt_location_examined",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 },
                 {
                     "@id": "resin:Participants/20042",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -228,27 +362,27 @@
                 {
                     "@id": "resin:Participants/20050",
                     "roleName": "A0_pag_punisher",
-                    "entity": ""
+                    "entity": "resin:Entities/00004/"
                 },
                 {
                     "@id": "resin:Participants/20051",
                     "roleName": "A1_ppt_punished",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20052",
                     "roleName": "A2_cau_punished-for",
-                    "entity": ""
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20053",
                     "roleName": "A3_mnr_mention_of_punishment_itself",
-                    "entity": ""
+                    "entity": "resin:Entities/00013/"
                 },
                 {
                     "@id": "resin:Participants/20054",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -697,22 +831,22 @@
                 {
                     "@id": "resin:Participants/20170",
                     "roleName": "A0_pag_entity_enforcing_sanctions",
-                    "entity": ""
+                    "entity": "resin:Entities/00011/"
                 },
                 {
                     "@id": "resin:Participants/20171",
                     "roleName": "A1_ppt_entity_being_punished",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20172",
                     "roleName": "A2_mnr_sanctions",
-                    "entity": ""
+                    "entity": "resin:Entities/00013/"
                 },
                 {
                     "@id": "resin:Participants/20173",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -739,22 +873,22 @@
                 {
                     "@id": "resin:Participants/20180",
                     "roleName": "A0_pag_agent_quitter",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20181",
                     "roleName": "AM_dir__directional",
-                    "entity": ""
+                    "entity": "resin:Entities/00014/"
                 },
                 {
                     "@id": "resin:Participants/20182",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 },
                 {
                     "@id": "resin:Participants/20183",
                     "roleName": "A1_ppt_source_job",
-                    "entity": ""
+                    "entity": "resin:Entities/00015/"
                 }
             ],
             "children": [
@@ -812,16 +946,6 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/20264",
-                    "roleName": "A3_cau__crime",
-                    "entity": ""
-                },
-                {
-                    "@id": "resin:Participants/20265",
-                    "roleName": "A2_ppt_punishment",
-                    "entity": ""
-                },
-                {
                     "@id": "resin:Participants/20200",
                     "roleName": "A0_pag_criminal",
                     "entity": "resin:Entities/00001/"
@@ -838,8 +962,7 @@
                 }
             ],
             "entities": [],
-            "relations": [],
-            "": {}
+            "relations": []
         },
         {
             "@id": "resin:Events/10021",
@@ -926,12 +1049,12 @@
             "participants": [
                 {
                     "@id": "resin:Participants/20230",
-                    "roleName": "A0_pag_recommender",
+                    "roleName": "A0_pag_discipliner",
                     "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20231",
-                    "roleName": "A1_ppt_recommended_thing",
+                    "roleName": "A1_ppt_disciplined",
                     "entity": "resin:Entities/00001/"
                 },
                 {
@@ -1052,7 +1175,7 @@
                 {
                     "@id": "resin:Participants/20263",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
