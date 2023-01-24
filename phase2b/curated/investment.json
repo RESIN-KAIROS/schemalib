@@ -17,17 +17,17 @@
                 {
                     "@id": "resin:Participants/20000",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20001",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20002",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20003",
@@ -44,8 +44,81 @@
                 "resin:Events/10005"
             ],
             "children_gate": "or",
-            "entities": [],
-            "relations": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00000/",
+                    "name": "investor",
+                    "wd_label": "investor",
+                    "wd_node": "wd:Q557880",
+                    "wd_description": "person who allocates capital with the expectation of a financial return"
+                },
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "concrete object",
+                    "wd_label": "concrete object",
+                    "wd_node": "wd:Q4406616",
+                    "wd_description": "object with a physical referent"
+                },
+                {
+                    "@id": "resin:Entities/00002/",
+                    "name": "goal",
+                    "wd_label": "goal",
+                    "wd_node": "wd:Q4503831",
+                    "wd_description": "idea of the future or result that a person or group wants to achieve"
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "geographic entity",
+                    "wd_label": "geographic entity",
+                    "wd_node": "wd:Q27096213",
+                    "wd_description": "place or entity that could be a place"
+                },
+                {
+                    "@id": "resin:Entities/00011/",
+                    "name": "profit",
+                    "wd_label": "profit",
+                    "wd_node": "wd:Q2112073",
+                    "wd_description": "monetary income distributed to the owner of an enterprise"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30000/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00003/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                },
+                {
+                    "@id": "resin:Relations/30001/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00001/",
+                    "relationObject": "resin:Entities/00003/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                },
+                {
+                    "@id": "resin:Relations/30002/",
+                    "name": "partially coincident with",
+                    "relationSubject": "resin:Entities/00001/",
+                    "relationObject": "resin:Entities/00011/",
+                    "wd_node": "wd:P1382",
+                    "wd_description": "object that partially overlaps with the subject in its instances, parts, or members",
+                    "wd_label": "partially coincident with"
+                },
+                {
+                    "@id": "resin:Relations/30003/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00003/",
+                    "relationObject": "resin:Entities/00011/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -65,22 +138,22 @@
                 {
                     "@id": "resin:Participants/20010",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20011",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20012",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20013",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -106,22 +179,22 @@
                 {
                     "@id": "resin:Participants/20020",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20021",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20022",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20023",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -170,17 +243,17 @@
                 {
                     "@id": "resin:Participants/20040",
                     "roleName": "A0_pag_agent_thing_giving_way",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20041",
                     "roleName": "A2_gol_goal_recipient",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20042",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -204,22 +277,22 @@
                 {
                     "@id": "resin:Participants/20050",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20051",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20052",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20053",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -243,25 +316,40 @@
                 {
                     "@id": "resin:Participants/20060",
                     "roleName": "A0_pag_agent_student",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20061",
                     "roleName": "A1_ppt_theme_subject",
-                    "entity": ""
+                    "entity": "resin:Entities/00004/"
                 },
                 {
                     "@id": "resin:Participants/20062",
                     "roleName": "AM_mnr__manner",
-                    "entity": ""
+                    "entity": "resin:Entities/00005/"
                 },
                 {
                     "@id": "resin:Participants/20063",
                     "roleName": "AM_loc__location",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00004/",
+                    "name": "research",
+                    "wd_label": "research",
+                    "wd_node": "wd:Q42240",
+                    "wd_description": "systematic study undertaken to increase knowledge"
+                },
+                {
+                    "@id": "resin:Entities/00005/",
+                    "name": "technique",
+                    "wd_label": "technique",
+                    "wd_node": "wd:Q2695280",
+                    "wd_description": "sum of skills, methods, and processes used to accomplish objectives, such as scientific investigation or the production of goods or services"
+                }
+            ],
             "relations": []
         },
         {
@@ -281,25 +369,40 @@
                 {
                     "@id": "resin:Participants/20070",
                     "roleName": "A0_pag_negotiator",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20071",
                     "roleName": "A1_ppt_agreement",
-                    "entity": ""
+                    "entity": "resin:Entities/00006/"
                 },
                 {
                     "@id": "resin:Participants/20072",
                     "roleName": "A2_com_explicit_other_party",
-                    "entity": ""
+                    "entity": "resin:Entities/00007/"
                 },
                 {
                     "@id": "resin:Participants/20073",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00006/",
+                    "name": "agreement",
+                    "wd_label": "agreement",
+                    "wd_node": "wd:Q321839",
+                    "wd_description": "understanding, agreement between two or more contracting persons, parties or entities"
+                },
+                {
+                    "@id": "resin:Entities/00007/",
+                    "name": "person",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood (avoid use with P31; use Q5 for humans)"
+                }
+            ],
             "relations": []
         },
         {
@@ -316,22 +419,22 @@
                 {
                     "@id": "resin:Participants/20080",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20081",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20082",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20083",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -351,30 +454,52 @@
                 {
                     "@id": "resin:Participants/20090",
                     "roleName": "A0_pag_protector",
-                    "entity": ""
+                    "entity": "resin:Entities/00008/"
                 },
                 {
                     "@id": "resin:Participants/20091",
                     "roleName": "A1_ppt_protected",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20092",
                     "roleName": "A2_ppt_danger",
-                    "entity": ""
+                    "entity": "resin:Entities/00009/"
                 },
                 {
                     "@id": "resin:Participants/20093",
                     "roleName": "A3_mnr_instrument",
-                    "entity": ""
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20094",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "government",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "resin:Entities/00009/",
+                    "name": "financial risk",
+                    "wd_label": "financial risk",
+                    "wd_node": "wd:Q1337875",
+                    "wd_description": "any of various types of risk associated with financial transactions, financing or investment"
+                },
+                {
+                    "@id": "resin:Entities/00010/",
+                    "name": "concrete object",
+                    "wd_label": "concrete object",
+                    "wd_node": "wd:Q4406616",
+                    "wd_description": "object with a physical referent"
+                }
+            ],
             "relations": []
         },
         {
@@ -393,22 +518,22 @@
                 {
                     "@id": "resin:Participants/20100",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20101",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20102",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20103",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -428,22 +553,22 @@
                 {
                     "@id": "resin:Participants/20110",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20111",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20112",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20113",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -466,22 +591,22 @@
                 {
                     "@id": "resin:Participants/20120",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20121",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20122",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20123",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "children": [
@@ -508,22 +633,22 @@
                 {
                     "@id": "resin:Participants/20130",
                     "roleName": "A0_pag_observer",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20131",
                     "roleName": "A1_loc_thing_looked_at",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20132",
                     "roleName": "A2_ppt_looking_for_what?",
-                    "entity": ""
+                    "entity": "resin:Entities/00011/"
                 },
                 {
                     "@id": "resin:Participants/20133",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -551,25 +676,33 @@
                 {
                     "@id": "resin:Participants/20140",
                     "roleName": "A0_pag_evaluator",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20141",
                     "roleName": "A1_ppt_thing_evaluated",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20142",
                     "roleName": "A2_prd_the_assessment_itself",
-                    "entity": ""
+                    "entity": "resin:Entities/00012/"
                 },
                 {
                     "@id": "resin:Participants/20143",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00012/",
+                    "name": "evaluation",
+                    "wd_label": "evaluation",
+                    "wd_node": "wd:Q1379672",
+                    "wd_description": "systematic determination of a subject's merit, worth and significance"
+                }
+            ],
             "relations": []
         },
         {
@@ -586,22 +719,22 @@
                 {
                     "@id": "resin:Participants/20150",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20151",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20152",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20153",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -623,22 +756,22 @@
                 {
                     "@id": "resin:Participants/20160",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20161",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20162",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20163",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -650,7 +783,7 @@
             "description": "The project may be delayed",
             "wd_node": "Q337690",
             "wd_label": "postponement",
-            "wd_description": "business or legal strategy decision",
+            "wd_description": "business strategy which maximizes possible benefit and minimizes risk by delaying further investment into a product or service until the last possible moment",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
@@ -660,35 +793,57 @@
                 {
                     "@id": "resin:Participants/20170",
                     "roleName": "A0_pag_agent",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20171",
                     "roleName": "A1_ppt_event_delayed",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20172",
                     "roleName": "A2_ext_delay_itself",
-                    "entity": ""
+                    "entity": "resin:Entities/00015/"
                 },
                 {
                     "@id": "resin:Participants/20173",
                     "roleName": "A3_dir_original_time",
-                    "entity": ""
+                    "entity": "resin:Entities/00013/"
                 },
                 {
                     "@id": "resin:Participants/20174",
                     "roleName": "A4_gol_new_time",
-                    "entity": ""
+                    "entity": "resin:Entities/00014/"
                 },
                 {
                     "@id": "resin:Participants/20175",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00013/",
+                    "name": "time",
+                    "wd_label": "time",
+                    "wd_node": "wd:Q11471",
+                    "wd_description": "dimension in which events can be ordered from the past through the present into the future"
+                },
+                {
+                    "@id": "resin:Entities/00014/",
+                    "name": "time",
+                    "wd_label": "time",
+                    "wd_node": "wd:Q11471",
+                    "wd_description": "dimension in which events can be ordered from the past through the present into the future"
+                },
+                {
+                    "@id": "resin:Entities/00015/",
+                    "name": "delay",
+                    "wd_label": "delay",
+                    "wd_node": "wd:Q21075709",
+                    "wd_description": "period of time between when an event is expected to occur and the later time when it actually occurs"
+                }
+            ],
             "relations": []
         },
         {
@@ -705,22 +860,22 @@
                 {
                     "@id": "resin:Participants/20180",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20181",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20182",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20183",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -742,30 +897,38 @@
                 {
                     "@id": "resin:Participants/20190",
                     "roleName": "A0_pag_reviewer",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20191",
                     "roleName": "A1_ppt_thing_reviewed",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20192",
                     "roleName": "A2_gol_beneficiary",
-                    "entity": ""
+                    "entity": "resin:Entities/00011/"
                 },
                 {
                     "@id": "resin:Participants/20193",
                     "roleName": "A3_vsp_secondary-theme",
-                    "entity": ""
+                    "entity": "resin:Entities/00016/"
                 },
                 {
                     "@id": "resin:Participants/20194",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00016/",
+                    "name": "concrete object",
+                    "wd_label": "concrete object",
+                    "wd_node": "wd:Q4406616",
+                    "wd_description": "object with a physical referent"
+                }
+            ],
             "relations": []
         },
         {
@@ -784,22 +947,22 @@
                 {
                     "@id": "resin:Participants/20200",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20201",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20202",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20203",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -821,22 +984,22 @@
                 {
                     "@id": "resin:Participants/20210",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20211",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20212",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20213",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -858,22 +1021,22 @@
                 {
                     "@id": "resin:Participants/20220",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20221",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20222",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20223",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -893,22 +1056,22 @@
                 {
                     "@id": "resin:Participants/20230",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20231",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20232",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20233",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
@@ -928,22 +1091,22 @@
                 {
                     "@id": "resin:Participants/20240",
                     "roleName": "A0_pag_investor",
-                    "entity": ""
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20241",
                     "roleName": "A1_ppt_thing_invested",
-                    "entity": ""
+                    "entity": "resin:Entities/00001/"
                 },
                 {
                     "@id": "resin:Participants/20242",
                     "roleName": "A2_gol_invested_in",
-                    "entity": ""
+                    "entity": "resin:Entities/00002/"
                 },
                 {
                     "@id": "resin:Participants/20243",
                     "roleName": "AM_loc",
-                    "entity": ""
+                    "entity": "resin:Entities/00003/"
                 }
             ],
             "entities": [],
