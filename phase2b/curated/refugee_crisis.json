@@ -42,22 +42,22 @@
       "entities": [
         {
           "@id": "resin:Entities/00000/",
-          "name": "disaster",
-          "wd_node": "disaster",
-          "wd_label": "Q3839081",
-          "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death"
+          "name": "reason of the crisis",
+          "wd_label": "reason",
+          "wd_node": "Q1710397",
+          "wd_description": "consideration which justifies or explains"
         },
         {
           "@id": "resin:Entities/00001/",
-          "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "name": "refugee",
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00002/",
           "name": "location",
-          "wd_node": "wd:Q2221906",
+          "wd_node": "Q2221906",
           "wd_label": "geographic location",
           "wd_description": "point or an area on the Earth's surface or elsewhere"
         }
@@ -65,12 +65,12 @@
       "relations": [
         {
           "@id": "resin:Relations/30000/",
-          "name": "proximity",
+          "name": "location of",
           "relationSubject": "resin:Entities/00001/",
           "relationObject": "resin:Entities/00002/",
-          "wd_node": "wd:Q19267375",
-          "wd_description": "state of being near as in space, time, or relationship",
-          "wd_label": "proximity"
+          "wd_node": "P276",
+          "wd_description": "location of the object, structure or event",
+          "wd_label": "location"
         }
       ],
       "importance": [
@@ -102,11 +102,6 @@
           "@id": "resin:Participants/20011",
           "roleName": "A1_ppt_problem",
           "entity": "resin:Entities/00004/"
-        },
-        {
-          "@id": "resin:Participants/20012",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00002/"
         }
       ],
       "children": [
@@ -118,29 +113,30 @@
       "entities": [
         {
           "@id": "resin:Entities/00003/",
-          "name": "war",
-          "wd_node": "Q198",
-          "wd_label": "war",
-          "wd_description": "organised and prolonged violent conflict between states"
+          "name": "cause for the increased number of refugees",
+          "wd_label": "cause",
+          "wd_node": "Q2574811",
+          "wd_description": "entity which forms causality for an event"
         },
         {
           "@id": "resin:Entities/00004/",
-          "name": "problem",
+          "name": "problem of the increased number of refugees",
           "wd_node": "Q621184",
           "wd_label": "problem",
           "wd_description": "situation that invites resolution"
-        },
-        {
-          "@id": "resin:Entities/00002/",
-          "name": "location",
-          "wd_node": "wd:Q2221906",
-          "wd_label": "geographic location",
-          "wd_description": "point or an area on the Earth's surface or elsewhere"
         }
       ],
-      "relations": {
-
-      }
+      "relations": [
+        {
+          "@id": "resin:Relations/30001/",
+          "name": "caused by",
+          "relationSubject": "resin:Entities/00003/",
+          "relationObject": "resin:Entities/00004/",
+          "wd_node": "P276",
+          "wd_description": "nearest, proximate thing that directly resulted in the subject as outcome or effect",
+          "wd_label": "has immediate cause"
+        }
+      ]
     },
     {
       "@id": "resin:Events/10002",
@@ -169,11 +165,6 @@
           "@id": "resin:Participants/20022",
           "roleName": "A2_gol_destination",
           "entity": "resin:Entities/00008/"
-        },
-        {
-          "@id": "resin:Participants/20023",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00009/"
         }
       ],
       "children": [
@@ -186,9 +177,9 @@
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00007/",
@@ -199,22 +190,21 @@
         },
         {
           "@id": "resin:Entities/00008/",
-          "name": "different place",
+          "name": "a new place for refugees",
           "wd_node": "Q27096213",
           "wd_label": "geographic_entity",
           "wd_description": "place or entity that could be a place"
-        },
-        {
-          "@id": "resin:Entities/00009/",
-          "name": "Refugee Movement/AM_loc/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
         }
       ],
       "relations": [
         {
-          "\"@id\": \"resin:Relations/30002/\",\n\"name\": \"proximity\",\n\"relationSubject\": \"resin:Entities/00001/\",\n\"relationObject\": \"resin:Entities/00008/\",\n\"wd_node\": \"wd:Q19267375\",\n\"wd_description\": \"state of being near as in space, time, or relationship\",\n\"wd_label\": \"proximity\",}": ""
+          "@id": "resin:Relations/30002/",
+          "name": "location of",
+          "relationSubject": "resin:Entities/00001/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "P276",
+          "wd_description": "location of the object, structure or event",
+          "wd_label": "location"
         }
       ]
     },
@@ -240,16 +230,6 @@
           "@id": "resin:Participants/20031",
           "roleName": "A1_ppt_thing_done",
           "entity": "resin:Entities/00011/"
-        },
-        {
-          "@id": "resin:Participants/20032",
-          "roleName": "A2_vsp_type_of_act",
-          "entity": "resin:Entities/00012/"
-        },
-        {
-          "@id": "resin:Participants/20033",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00013/"
         }
       ],
       "children": [
@@ -259,37 +239,29 @@
       "entities": [
         {
           "@id": "resin:Entities/00010/",
-          "name": "Government",
-          "wd_node": "Q7188",
-          "wd_label": "government",
-          "wd_description": [
-            "system or group of people governing an organized community, often a state"
-          ]
+          "name": "government organization",
+          "wd_node": "Q2659904",
+          "wd_label": "government_organization",
+          "wd_description": "nearest, proximate thing that directly resulted in the subject as outcome or effect"
         },
         {
           "@id": "resin:Entities/00011/",
-          "name": "Government Action",
+          "name": "actions for refugee settlement",
           "wd_node": "action",
           "wd_label": "Q4026292",
           "wd_description": "something an agent can do or perform"
-        },
-        {
-          "@id": "resin:Entities/00012/",
-          "name": "emigration",
-          "wd_node": "Q486972",
-          "wd_label": "emigration",
-          "wd_description": "act of leaving one's country or region with the intent to settle permanently or temporarily in another"
-        },
-        {
-          "@id": "resin:Entities/00013/",
-          "name": "Government Action/A2_vsp_type_of_act/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
         }
       ],
       "relations": [
-
+        {
+          "@id": "resin:Relations/30003/",
+          "name": "objective of project or action",
+          "relationSubject": "resin:Entities/00010/",
+          "relationObject": "resin:Entities/00011/",
+          "wd_node": "P3712",
+          "wd_description": "desired result or outcome",
+          "wd_label": "objective of project or action"
+        }
       ]
     },
     {
@@ -319,41 +291,29 @@
           "@id": "resin:Participants/20042",
           "roleName": "A2_gol_hearer",
           "entity": "resin:Entities/00016/"
-        },
-        {
-          "@id": "resin:Participants/20043",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00017/"
         }
       ],
       "entities": [
         {
           "@id": "resin:Entities/00014/",
           "name": "speaker",
-          "wd_node": "Q823",
-          "wd_label": "speaker",
-          "wd_description": "person who is speaker for this event, ceremony, keynote, presentation or in a literary work"
+          "wd_node": "Q5",
+          "wd_label": "person",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00015/",
-          "name": "presentation",
-          "wd_node": "Q604733",
-          "wd_label": "presentation",
-          "wd_description": "process of presenting a topic to an audience"
+          "name": "details of public opinions",
+          "wd_node": "Q11028",
+          "wd_label": "information",
+          "wd_description": "that which informs; the answer to a question of some kind; that from which data and knowledge can be derived"
         },
         {
-          "@id": "resin:Entities/00001/",
-          "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
-        },
-        {
-          "@id": "resin:Entities/00017/",
-          "name": "Public Response/AM_loc/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
+          "@id": "resin:Entities/000016/",
+          "name": "public",
+          "wd_node": "Q5",
+          "wd_label": "person",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         }
       ],
       "relations": [
@@ -391,11 +351,6 @@
           "@id": "resin:Participants/20051",
           "roleName": "A2_vsp_mention_of_'economic'_or_similar",
           "entity": "resin:Entities/00019/"
-        },
-        {
-          "@id": "resin:Participants/20052",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00020/"
         }
       ],
       "entities": [
@@ -408,17 +363,10 @@
         },
         {
           "@id": "resin:Entities/00019/",
-          "name": "Economic Decline/A2_vsp_mention_of_'economic'_or_similar/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
-        },
-        {
-          "@id": "resin:Entities/00020/",
-          "name": "Economic Decline/AM_loc/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
+          "name": "economic decline problem",
+          "wd_node": "Q3539169",
+          "wd_label": "economic_problem",
+          "wd_description": "fundamental problem of economics, satisfying unlimited wants with limited resources"
         }
       ],
       "relations": [
@@ -442,27 +390,15 @@
           "@id": "resin:Participants/20060",
           "roleName": "A1_ppt_thing_trembling",
           "entity": "resin:Entities/00021/"
-        },
-        {
-          "@id": "resin:Participants/20061",
-          "roleName": "AM_loc",
-          "entity": "resin:Entities/00022/"
         }
       ],
       "entities": [
         {
           "@id": "resin:Entities/00021/",
-          "name": "aftershock",
-          "wd_node": "Q308442",
-          "wd_label": "aftershock",
-          "wd_description": "smaller earthquake that occurs after a previous large earthquake"
-        },
-        {
-          "@id": "resin:Entities/00022/",
-          "name": "Natural Disasters/AM_loc/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
+          "name": "earthquake",
+          "wd_node": "Q4406616",
+          "wd_label": "concrete_object",
+          "wd_description": "object with a physical referent"
         }
       ],
       "relations": [
@@ -491,10 +427,10 @@
       "entities": [
         {
           "@id": "resin:Entities/00023/",
-          "name": "Civil unrest/A0_pag_protester/",
-          "wd_node": "Q732717",
-          "wd_label": "law_enforcement_agency",
-          "wd_description": "government agency responsible for the enforcement of the laws"
+          "name": "protester",
+          "wd_node": "Q5",
+          "wd_label": "person",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         }
       ],
       "relations": [
@@ -517,7 +453,7 @@
         {
           "@id": "resin:Participants/20080",
           "roleName": "A0_pag_entity_in_motion",
-          "entity": "resin:Entities/00026/"
+          "entity": "resin:Entities/00001/"
         },
         {
           "@id": "resin:Participants/20081",
@@ -534,9 +470,9 @@
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00007/",
@@ -547,14 +483,22 @@
         },
         {
           "@id": "resin:Entities/00008/",
-          "name": "different place",
+          "name": "a new place for refugees",
           "wd_node": "Q27096213",
           "wd_label": "geographic_entity",
           "wd_description": "place or entity that could be a place"
         }
       ],
       "relations": [
-
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "location of",
+          "relationSubject": "resin:Entities/00001/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "P276",
+          "wd_description": "location of the object, structure or event",
+          "wd_label": "location"
+        }
       ]
     },
     {
@@ -585,20 +529,28 @@
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00008/",
-          "name": "different place",
+          "name": "a new place for refugees",
           "wd_node": "Q27096213",
           "wd_label": "geographic_entity",
           "wd_description": "place or entity that could be a place"
         }
       ],
       "relations": [
-
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "location of",
+          "relationSubject": "resin:Entities/00001/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "P276",
+          "wd_description": "location of the object, structure or event",
+          "wd_label": "location"
+        }
       ]
     },
     {
@@ -614,13 +566,44 @@
 
       ],
       "participants": [
+        {
+          "@id": "resin:Participants/20092",
+          "roleName": "A0_pag_population",
+          "entity": "resin:Entities/00001/"
+        },
+        {
+          "@id": "resin:Participants/20093",
+          "roleName": "A1_ppt_destination",
+          "entity": "resin:Entities/00008/"
+        }
 
       ],
       "entities": [
-
+        {
+          "@id": "resin:Entities/00001/",
+          "name": "refugees",
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+        },
+        {
+          "@id": "resin:Entities/00008/",
+          "name": "a new place for refugees",
+          "wd_node": "Q27096213",
+          "wd_label": "geographic_entity",
+          "wd_description": "place or entity that could be a place"
+        }
       ],
       "relations": [
-
+        {
+          "@id": "resin:Relations/30002/",
+          "name": "location of",
+          "relationSubject": "resin:Entities/00001/",
+          "relationObject": "resin:Entities/00008/",
+          "wd_node": "P276",
+          "wd_description": "location of the object, structure or event",
+          "wd_label": "location"
+        }
       ]
     },
     {
@@ -636,10 +619,20 @@
 
       ],
       "participants": [
-
+        {
+          "@id": "resin:Participants/20030",
+          "roleName": "A0_pag_doer",
+          "entity": "resin:Entities/00010/"
+        }
       ],
       "entities": [
-
+        {
+          "@id": "resin:Entities/00010/",
+          "name": "government organization",
+          "wd_node": "Q2659904",
+          "wd_label": "government_organization",
+          "wd_description": "nearest, proximate thing that directly resulted in the subject as outcome or effect"
+        }
       ],
       "relations": [
 
@@ -685,7 +678,7 @@
         {
           "@id": "resin:Participants/20130",
           "roleName": "A0_pag_tender",
-          "entity": "resin:Entities/00038/"
+          "entity": "resin:Entities/00016/"
         },
         {
           "@id": "resin:Participants/20131",
@@ -695,18 +688,18 @@
       ],
       "entities": [
         {
-          "@id": "resin:Entities/00038/",
-          "name": "Public Compassion/A0_pag_tender/",
-          "wd_node": "",
-          "wd_label": "",
-          "wd_description": ""
+          "@id": "resin:Entities/000016/",
+          "name": "public",
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         }
       ],
       "relations": [
@@ -751,7 +744,7 @@
         {
           "@id": "resin:Participants/20270",
           "roleName": "A0_pag_raiser_of_funds",
-          "entity": "resin:Entities/00041/"
+          "entity": "resin:Entities/00016/"
         },
         {
           "@id": "resin:Participants/20272",
@@ -761,18 +754,18 @@
       ],
       "entities": [
         {
-          "@id": "resin:Entities/00041/",
-          "name": "donator",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "@id": "resin:Entities/000016/",
+          "name": "public",
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         }
       ],
       "relations": [
@@ -795,7 +788,7 @@
         {
           "@id": "resin:Participants/20280",
           "roleName": "A0_pag_helper",
-          "entity": "resin:Entities/00041/"
+          "entity": "resin:Entities/00016/"
         },
         {
           "@id": "resin:Participants/20281",
@@ -805,18 +798,18 @@
       ],
       "entities": [
         {
-          "@id": "resin:Entities/00041/",
-          "name": "donator",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "@id": "resin:Entities/000016/",
+          "name": "public",
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         }
       ],
       "relations": [
@@ -839,7 +832,7 @@
         {
           "@id": "resin:Participants/20350",
           "roleName": "A0_pag_helper",
-          "entity": "resin:Entities/00048/"
+          "entity": "resin:Entities/00016/"
         },
         {
           "@id": "resin:Participants/20351",
@@ -849,18 +842,18 @@
       ],
       "entities": [
         {
-          "@id": "resin:Entities/00048/",
-          "name": "volunteer",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "@id": "resin:Entities/000016/",
+          "name": "public",
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         },
         {
           "@id": "resin:Entities/00001/",
           "name": "refugees",
-          "wd_node": "Q16334295",
-          "wd_label": "group_of_humans",
-          "wd_description": "any set of human beings"
+          "wd_label": "person",
+          "wd_node": "Q5",
+          "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
         }
       ],
       "relations": [
