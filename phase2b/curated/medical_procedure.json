@@ -17,22 +17,22 @@
         {
           "@id": "resin:Participants/20000",
           "roleName": "A0_pag_agent",
-          "entity": ""
+          "entity": "resin:Entities/00007"
         },
         {
           "@id": "resin:Participants/20001",
           "roleName": "A1_ppt_process_or_operation",
-          "entity": ""
+          "entity": "resin:Entities/00008"
         },
         {
           "@id": "resin:Participants/20002",
           "roleName": "A2_gol_benefactive",
-          "entity": ""
+          "entity": "resin:Entities/00000"
         },
         {
           "@id": "resin:Participants/20003",
           "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00003"
         }
       ],
       "children": [
@@ -41,8 +41,188 @@
         "resin:Events/10003"
       ],
       "children_gate": "or",
-      "entities": [],
-      "relations": [],
+      "entities": [
+        {
+          "@id": "resin:Entities/00000",
+          "name": "patient",
+          "wd_node": "wd:Q181600",
+          "wd_label": "petient",
+          "wd_description": "person who takes a medical treatment or is subject of a case study"
+        },
+        {
+          "@id": "resin:Entities/00001",
+          "name": "surgeon",
+          "wd_node": "wd:Q774306",
+          "wd_label": "surgeon",
+          "wd_description": "physician with surgical specialty"
+        },
+        {
+          "@id": "resin:Entities/00002",
+          "name": "nurse",
+          "wd_node": "wd:Q186360",
+          "wd_label": "nurse",
+          "wd_description": "type of health care provider"
+        },    
+        {
+          "@id": "resin:Entities/00003",
+          "name": "medical facility",
+          "wd_node": "wd:Q4260475",
+          "wd_label": "medical facility",
+          "wd_description": "any location at which medicine is practiced regularly"
+        },      
+        {
+          "@id": "resin:Entities/00004",
+          "name": "receptionist",
+          "wd_node": "wd:Q1722406",
+          "wd_label": "receptionist",
+          "wd_description": "profession"
+        },    
+        {
+          "@id": "resin:Entities/00005",
+          "name": "physician",
+          "wd_node": "wd:Q39631",
+          "wd_label": "physician",
+          "wd_description": "professional who practices medicine"
+        }, 
+        {
+          "@id": "resin:Entities/00006",
+          "name": "illness",
+          "wd_node": "wd:Q814207",
+          "wd_label": "illness",
+          "wd_description": "the state of being unwell"
+        },
+        {
+          "@id": "resin:Entities/00007",
+          "name": "agent",
+          "wd_node": "Q24229398",
+          "wd_label": "agent",
+          "wd_description": "distinct and identifiable entity capable of performing actions"
+        },
+        {
+          "@id": "resin:Entities/00008",
+          "name": "process",
+          "wd_node": "process",
+          "wd_label": "Q10843872",
+          "wd_description": "set of interrelated tasks that transform inputs into outputs, where the tasks may be carried out by people, nature or machines using various resources"
+        },
+        {
+          "@id": "resin:Entities/00009",
+          "name": "health",
+          "wd_node": "Q12147",
+          "wd_label": "health",
+          "wd_description": "desirable level of functional or metabolic efficiency of a living being"
+        },
+        {
+          "@id": "resin:Entities/00010",
+          "name": "medical device",
+          "wd_node": "medical device",
+          "wd_label": "Q6554101",
+          "wd_description": "any device intended to be used for medical purposes"
+        },
+        {
+          "@id": "resin:Entities/00011",
+          "name": "concrete_object",
+          "wd_node": "concrete_object",
+          "wd_label": "Q4406616",
+          "wd_description": "object with a physical referent"
+        },
+        {
+          "@id": "resin:Entities/00012",
+          "name": "property",
+          "wd_node": "Q937228",
+          "wd_label": "property",
+          "wd_description": "predominant feature that characterizes a being, a thing, a phenomenon, etc. and which differentiates one being from another, one thing from another"
+        },
+        {
+          "@id": "resin:Entities/00013",
+          "name": "motion",
+          "wd_node": "Q79782",
+          "wd_label": "motion",
+          "wd_description": "change in position of an object over time; a body is said to be in motion if it changes its position with respect to its immediate surroundings"
+        },
+        {
+          "@id": "resin:Entities/00014",
+          "name": "medical facility",
+          "wd_node": "wd:Q4260475",
+          "wd_label": "medical facility",
+          "wd_description": "any location at which medicine is practiced regularly"
+        },   
+        {
+          "@id": "resin:Entities/00015",
+          "name": "medicine",
+          "wd_node": "Q11190",
+          "wd_label": "medicine",
+          "wd_description": "field of study for diagnosing, treating and preventing disease"
+        },  
+        {
+          "@id": "resin:Entities/00016",
+          "name": "type",
+          "wd_node": "Q3707858",
+          "wd_label": "type",
+          "wd_description": "anchoring point (of a name) in taxonomy"
+        },
+        {
+          "@id": "resin:Entities/00017",
+          "name": "type",
+          "wd_node": "Q3707858",
+          "wd_label": "type",
+          "wd_description": "anchoring point (of a name) in taxonomy"
+        },
+        {
+          "@id": "resin:Entities/00018",
+          "name": "concrete_object",
+          "wd_node": "concrete_object",
+          "wd_label": "Q4406616",
+          "wd_description": "object with a physical referent"
+        }
+      ],
+      "relations": [
+        {
+            "@id": "resin:Relations/30000/",
+            "name": "part of",
+            "relationSubject": "resin:Entities/00014/",
+            "relationObject": "resin:Entities/00003/",
+            "wd_node": "P361",
+            "wd_description": "object of which the subject is a par",
+            "wd_label": "part of"
+        },
+        {
+            "@id": "resin:Relations/30001/",
+            "name": "work location",
+            "relationSubject": "resin:Entities/00001/",
+            "relationObject": "resin:Entities/00003/",
+            "wd_node": "P937",
+            "wd_description": "location where persons or organisations were actively participating in employment, business or other work",
+            "wd_label": "work location"
+        },
+        {
+            "@id": "resin:Relations/30002/",
+            "name": "work location",
+            "relationSubject": "resin:Entities/00002/",
+            "relationObject": "resin:Entities/00003/",
+            "wd_node": "P937",
+            "wd_description": "location where persons or organisations were actively participating in employment, business or other work",
+            "wd_label": "work location"
+        },
+        {
+            "@id": "resin:Relations/30003/",
+            "name": "work location",
+            "relationSubject": "resin:Entities/00004/",
+            "relationObject": "resin:Entities/00003/",
+            "wd_node": "P937",
+            "wd_description": "location where persons or organisations were actively participating in employment, business or other work",
+            "wd_label": "work location"
+        },
+        {
+            "@id": "resin:Relations/30004/",
+            "name": "work location",
+            "relationSubject": "resin:Entities/00005/",
+            "relationObject": "resin:Entities/00003/",
+            "wd_node": "P937",
+            "wd_description": "location where persons or organisations were actively participating in employment, business or other work",
+            "wd_label": "work location"
+        }
+      ],
       "importance": [],
       "likelihood": []
     },
@@ -62,22 +242,22 @@
         {
           "@id": "resin:Participants/20010",
           "roleName": "A0_pag_examiner",
-          "entity": ""
+          "entity": "resin:Entities/00002"
         },
         {
           "@id": "resin:Participants/20011",
           "roleName": "A1_loc_examined",
-          "entity": ""
+          "entity": "resin:Entities/00009"
         },
         {
           "@id": "resin:Participants/20012",
           "roleName": "A2_ppt_subject",
-          "entity": ""
+          "entity": "resin:Entities/00000"
         },
         {
           "@id": "resin:Participants/20013",
           "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00003"
         }
       ],
       "children": [
@@ -106,22 +286,22 @@
         {
           "@id": "resin:Participants/20020",
           "roleName": "A0_pag_doctor",
-          "entity": ""
+          "entity": "resin:Entities/00005"
         },
         {
           "@id": "resin:Participants/20021",
           "roleName": "A1_ppt_patient",
-          "entity": ""
+          "entity": "resin:Entities/00000"
         },
         {
           "@id": "resin:Participants/20022",
           "roleName": "A2_prd_illness",
-          "entity": ""
+          "entity": "resin:Entities/00006"
         },
         {
           "@id": "resin:Participants/20023",
           "roleName": "AM_loc",
-          "entity": ""
+          "entity": "resin:Entities/00003"
         }
       ],
       "children": [
@@ -148,27 +328,27 @@
         {
           "@id": "resin:Participants/20030",
           "roleName": "A0_pag__doctor",
-          "entity": ""
+          "entity": "resin:Entities/00005"
         },
         {
           "@id": "resin:Participants/20031",
           "roleName": "A1_ppt__patient",
-          "entity": ""
+          "entity": "resin:Entities/00000"
         },
         {
           "@id": "resin:Participants/20032",
           "roleName": "A2_ppt__illness_or_injury",
-          "entity": ""
+          "entity": "resin:Entities/00006"
         },
         {
           "@id": "resin:Participants/20033",
           "roleName": "A3_mnr__instrument",
-          "entity": ""
+          "entity": "resin:Entities/00010"
         },
         {
           "@id": "resin:Participants/20034",
           "roleName": "AM_loc__location",
-          "entity": ""
+          "entity": "resin:Entities/00003"
         }
       ],
       "children": [
@@ -198,22 +378,22 @@
         {
           "@id": "resin:Participants/20040",
           "roleName": "A0_pag_greeter",
-          "entity": ""
+          "entity": "resin:Entities/00004"
         },
         {
           "@id": "resin:Participants/20041",
           "roleName": "A1_ppt_thing_greeted",
-          "entity": ""
+          "entity": "resin:Entities/00011"
         },
         {
           "@id": "resin:Participants/20042",
           "roleName": "A2_cau_secondary_attribute",
-          "entity": ""
+          "entity": "resin:Entities/00012"
         },
         {
           "@id": "resin:Participants/20043",
           "roleName": "A3_mnr_specific_reaction",
-          "entity": ""
+          "entity": "resin:Entities/00013"
         },
         {
           "@id": "resin:Participants/20044",
@@ -250,7 +430,7 @@
         {
           "@id": "resin:Participants/20052",
           "roleName": "A2_gol_place_checked_into",
-          "entity": ""
+          "entity": "resin:Entities/00014"
         },
         {
           "@id": "resin:Participants/20053",
@@ -282,7 +462,7 @@
         {
           "@id": "resin:Participants/20061",
           "roleName": "A1_loc_examined",
-          "entity": ""
+          "entity": "resin:Entities/00009"
         },
         {
           "@id": "resin:Participants/20062",
@@ -292,7 +472,7 @@
         {
           "@id": "resin:Participants/20063",
           "roleName": "AM_loc",
-          "entity": "resin:Entities/00003"
+          "entity": "resin:Entities/00014"
         }
       ],
       "entities": [],
@@ -322,7 +502,7 @@
         {
           "@id": "resin:Participants/20072",
           "roleName": "A2_prp_ready_for",
-          "entity": ""
+          "entity": "resin:Entities/00005"
         },
         {
           "@id": "resin:Participants/20073",
@@ -359,7 +539,7 @@
         {
           "@id": "resin:Participants/20082",
           "roleName": "A2_ppt_purpose_or_subject_matter_of_interview",
-          "entity": ""
+          "entity": "resin:Entities/00006"
         },
         {
           "@id": "resin:Participants/20083",
@@ -391,17 +571,17 @@
         {
           "@id": "resin:Participants/20091",
           "roleName": "A1_loc_examined",
-          "entity": ""
+          "entity": "resin:Entities/00009"
         },
         {
           "@id": "resin:Participants/20092",
           "roleName": "A2_ppt_in_search_of",
-          "entity": ""
+          "entity": "resin:Entities/00006"
         },
         {
           "@id": "resin:Participants/20093",
           "roleName": "A3_prd_test_result",
-          "entity": ""
+          "entity": "resin:Entities/00006"
         },
         {
           "@id": "resin:Participants/20094",
@@ -433,7 +613,7 @@
         {
           "@id": "resin:Participants/20101",
           "roleName": "A1_loc_examined",
-          "entity": ""
+          "entity": "resin:Entities/00009"
         },
         {
           "@id": "resin:Participants/20102",
@@ -505,7 +685,7 @@
         {
           "@id": "resin:Participants/20121",
           "roleName": "A1_ppt_process_or_operation",
-          "entity": ""
+          "entity": "resin:Entities/00015"
         },
         {
           "@id": "resin:Participants/20122",
@@ -547,7 +727,7 @@
         {
           "@id": "resin:Participants/20162",
           "roleName": "A2_prp_ready_for",
-          "entity": ""
+          "entity": "resin:Entities/00001"
         },
         {
           "@id": "resin:Participants/20163",
@@ -586,7 +766,7 @@
         {
           "@id": "resin:Participants/20172",
           "roleName": "A2_vsp_type_of_surgery",
-          "entity": ""
+          "entity": "resin:Entities/00016"
         },
         {
           "@id": "resin:Participants/20173",
@@ -623,7 +803,7 @@
         {
           "@id": "resin:Participants/20192",
           "roleName": "A2_vsp_type_of_surgery",
-          "entity": ""
+          "entity": "resin:Entities/00017"
         },
         {
           "@id": "resin:Participants/20193",
@@ -650,17 +830,17 @@
         {
           "@id": "resin:Participants/20150",
           "roleName": "A0_pag_observer",
-          "entity": ""
+          "entity": "resin:Entities/00002"
         },
         {
           "@id": "resin:Participants/20151",
           "roleName": "A1_loc_thing_looked_at",
-          "entity": ""
+          "entity": "resin:Entities/00009"
         },
         {
           "@id": "resin:Participants/20152",
           "roleName": "A2_ppt_looking_for_what?",
-          "entity": ""
+          "entity": "resin:Entities/00006"
         },
         {
           "@id": "resin:Participants/20153",
@@ -689,12 +869,12 @@
         {
           "@id": "resin:Participants/20180",
           "roleName": "A0_pag_person_vomiting",
-          "entity": ""
+          "entity": "resin:Entities/00000"
         },
         {
           "@id": "resin:Participants/20181",
           "roleName": "A1_ppt_vomit",
-          "entity": ""
+          "entity": "resin:Entities/00018"
         },
         {
           "@id": "resin:Participants/20182",
@@ -772,57 +952,5 @@
       "entities": [],
       "relations": []
     }
-  ],
-  "entities": [
-    {
-      "@id": "resin:Entities/00000",
-      "name": "patient",
-      "wd_node": "wd:Q181600",
-      "wd_label": "petient",
-      "wd_description": "person who takes a medical treatment or is subject of a case study"
-    },
-    {
-      "@id": "resin:Entities/00001",
-      "name": "surgeon",
-      "wd_node": "wd:Q774306",
-      "wd_label": "surgeon",
-      "wd_description": "physician with surgical specialty"
-    },
-    {
-      "@id": "resin:Entities/00002",
-      "name": "nurse",
-      "wd_node": "wd:Q186360",
-      "wd_label": "nurse",
-      "wd_description": "type of health care provider"
-    },    
-    {
-      "@id": "resin:Entities/00003",
-      "name": "medical facility",
-      "wd_node": "wd:Q4260475",
-      "wd_label": "medical facility",
-      "wd_description": "any location at which medicine is practiced regularly"
-    },      
-    {
-      "@id": "resin:Entities/00004",
-      "name": "receptionist",
-      "wd_node": "wd:Q1722406",
-      "wd_label": "receptionist",
-      "wd_description": "profession"
-    },    
-    {
-      "@id": "resin:Entities/00005",
-      "name": "physician",
-      "wd_node": "wd:Q39631",
-      "wd_label": "physician",
-      "wd_description": "professional who practices medicine"
-    }, 
-    {
-      "@id": "resin:Entities/00006",
-      "name": "illness",
-      "wd_node": "wd:Q814207",
-      "wd_label": "illness",
-      "wd_description": "the state of being unwell"
-    } 
-  ],
-  "relations": []
+  ]
 }
