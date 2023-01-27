@@ -40,27 +40,37 @@
             "entities": [
                 {
                     "@id": "resin:Entities/00000/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
                     "@id": "resin:Entities/00001/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
                     "@id": "resin:Entities/00002/",
                     "name": "geographic_entity",
-                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place",
                     "wd_label": "geographic entity",
-                    "wd_description": "place or entity that could be a place"
+                    "wd_node": "Q27096213"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30000/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00002/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -80,12 +90,12 @@
                 {
                     "@id": "resin:Participants/20004",
                     "roleName": "A1_ppt_entity_now_in_context",
-                    "entity": "resin:Entities/00004/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20006",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/00006/"
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children": [
@@ -96,21 +106,31 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00004/",
-    		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
-                    "@id": "resin:Entities/00006/",
-		    "name": "geographic_entity",
-                    "wd_node": "Q27096213",
+                    "@id": "resin:Entities/00002/",
+                    "name": "geographic_entity",
+                    "wd_description": "place or entity that could be a place",
                     "wd_label": "geographic entity",
-                    "wd_description": "place or entity that could be a place"
+                    "wd_node": "Q27096213"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30001/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00002/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -130,12 +150,12 @@
                 {
                     "@id": "resin:Participants/20007",
                     "roleName": "A0_pag__transgressor",
-                    "entity": "resin:Entities/00007/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20009",
                     "roleName": "AM_loc__location",
-                    "entity": "resin:Entities/00009/"
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children": [
@@ -146,21 +166,31 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00007/",
-    		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
-                    "@id": "resin:Entities/00009/",
-		    "name": "geographic_entity",
-                    "wd_node": "Q27096213",
+                    "@id": "resin:Entities/00002/",
+                    "name": "geographic_entity",
+                    "wd_description": "place or entity that could be a place",
                     "wd_label": "geographic entity",
-                    "wd_description": "place or entity that could be a place"
+                    "wd_node": "Q27096213"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30002/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00002/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -185,7 +215,7 @@
                 {
                     "@id": "resin:Participants/20011",
                     "roleName": "A1_pag_reacted-to",
-                    "entity": "resin:Entities/00011/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20012",
@@ -202,17 +232,17 @@
             "entities": [
                 {
                     "@id": "resin:Entities/00010/",
-		    "name": "organization",
+                    "name": "organization",
                     "wd_node": "Q43229",
                     "wd_label": "organization",
                     "wd_description": "social entity established to meet needs or pursue goals"
                 },
                 {
-                    "@id": "resin:Entities/00011/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
                     "@id": "resin:Entities/00012/",
@@ -240,12 +270,12 @@
                 {
                     "@id": "resin:Participants/20014",
                     "roleName": "A0_pag_cause",
-                    "entity": "resin:Entities/00014/"
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20015",
                     "roleName": "A1_ppt_effect",
-                    "entity": "resin:Entities/00015/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children": [
@@ -256,18 +286,18 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00014/",
+                    "@id": "resin:Entities/00010/",
                     "name": "organization",
                     "wd_node": "Q43229",
                     "wd_label": "organization",
                     "wd_description": "social entity established to meet needs or pursue goals"
                 },
                 {
-                    "@id": "resin:Entities/00015/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
@@ -291,30 +321,30 @@
                 {
                     "@id": "resin:Participants/20017",
                     "roleName": "A0_pag_agentive_clasher",
-                    "entity": "resin:Entities/00017/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20018",
                     "roleName": "A1_com_entity_clashed_with",
-                    "entity": "resin:Entities/00018/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00017/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
-		},
+                    "wd_node": "Q6256"
+                },
                 {
-                    "@id": "resin:Entities/00018/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
-		}
+                    "wd_node": "Q6256"
+                }
             ],
             "relations": [],
             "importance": [],
@@ -372,17 +402,17 @@
                 {
                     "@id": "resin:Participants/20024",
                     "roleName": "A0_pag_rationalizer",
-                    "entity": "resin:Entities/00024/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00024/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
@@ -410,17 +440,17 @@
                 {
                     "@id": "resin:Participants/20030",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/00030/"
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00030/",
-		    "name": "geographic_entity",
-                    "wd_node": "Q27096213",
+                    "@id": "resin:Entities/00002/",
+                    "name": "geographic_entity",
+                    "wd_description": "place or entity that could be a place",
                     "wd_label": "geographic entity",
-                    "wd_description": "place or entity that could be a place"
+                    "wd_node": "Q27096213"
                 }
             ],
             "relations": [],
@@ -486,29 +516,29 @@
                 {
                     "@id": "resin:Participants/20031",
                     "roleName": "A0_pag_critiquer",
-                    "entity": "resin:Entities/00031/"
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20032",
                     "roleName": "A1_ppt_entity_being_critiqued",
-                    "entity": "resin:Entities/00032/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00031/",
+                    "@id": "resin:Entities/00010/",
                     "name": "organization",
                     "wd_node": "Q43229",
                     "wd_label": "organization",
                     "wd_description": "social entity established to meet needs or pursue goals"
                 },
                 {
-                    "@id": "resin:Entities/00032/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
@@ -530,29 +560,29 @@
                 {
                     "@id": "resin:Participants/20034",
                     "roleName": "A0_pag_applier_of_penalty",
-                    "entity": "resin:Entities/00034/"
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20035",
                     "roleName": "A1_ppt_entity_penalized",
-                    "entity": "resin:Entities/00035/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00034/",
+                    "@id": "resin:Entities/00010/",
                     "name": "organization",
                     "wd_node": "Q43229",
                     "wd_label": "organization",
                     "wd_description": "social entity established to meet needs or pursue goals"
                 },
                 {
-                    "@id": "resin:Entities/00035/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
@@ -574,29 +604,29 @@
                 {
                     "@id": "resin:Participants/20038",
                     "roleName": "A0_pag_warmonger",
-                    "entity": "resin:Entities/00038/"
+                    "entity": "resin:Entities/00010/"
                 },
                 {
                     "@id": "resin:Participants/20039",
                     "roleName": "A1_com_war_against/with",
-                    "entity": "resin:Entities/00039/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00038/",
+                    "@id": "resin:Entities/00010/",
                     "name": "organization",
                     "wd_node": "Q43229",
                     "wd_label": "organization",
                     "wd_description": "social entity established to meet needs or pursue goals"
                 },
                 {
-                    "@id": "resin:Entities/00039/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
@@ -614,11 +644,9 @@
             "isSchema": true,
             "repeatable": false,
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children_gate": "or",
-            "entities": [
-            ],
+            "entities": [],
             "relations": [],
             "importance": [],
             "likelihood": []
@@ -664,7 +692,7 @@
             "name": "Coup",
             "description": "The aggressing country had a change of national power structure",
             "wd_node": "Q45382",
-            "wd_label": "coup_d'état",
+            "wd_label": "coup_d'\u8305tat",
             "wd_description": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
             "isSchema": false,
             "repeatable": false,
@@ -673,7 +701,7 @@
                 {
                     "@id": "resin:Participants/20046",
                     "roleName": "A0_pag_agent_coup_stager",
-                    "entity": "resin:Entities/00046/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20047",
@@ -684,11 +712,11 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00046/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
                     "@id": "resin:Entities/00047/",
@@ -798,7 +826,7 @@
                 {
                     "@id": "resin:Participants/20053",
                     "roleName": "A0_pag_Deployer",
-                    "entity": "resin:Entities/00053/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20054",
@@ -808,17 +836,17 @@
                 {
                     "@id": "resin:Participants/20055",
                     "roleName": "A2_loc_deployed_where",
-                    "entity": "resin:Entities/00055/"
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00053/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
                     "@id": "resin:Entities/00054/",
@@ -828,14 +856,24 @@
                     "wd_description": "military branch for ground warfare"
                 },
                 {
-                    "@id": "resin:Entities/00055/",
+                    "@id": "resin:Entities/00002/",
                     "name": "geographic_entity",
-                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place",
                     "wd_label": "geographic entity",
-                    "wd_description": "place or entity that could be a place"
+                    "wd_node": "Q27096213"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30003/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00002/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -853,17 +891,17 @@
                 {
                     "@id": "resin:Participants/20057",
                     "roleName": "A0_pag_agent/entity_trying",
-                    "entity": "resin:Entities/00057/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00057/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
@@ -884,14 +922,14 @@
                 {
                     "@id": "resin:Participants/20061",
                     "roleName": "A0_pag_agent/entity_trying",
-                    "entity": "resin:Entities/00061/"
+                    "entity": "resin:Entities/00010/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00061/",
-		    "name": "organization",
+                    "@id": "resin:Entities/00010/",
+                    "name": "organization",
                     "wd_node": "Q43229",
                     "wd_label": "organization",
                     "wd_description": "social entity established to meet needs or pursue goals"
@@ -915,44 +953,54 @@
                 {
                     "@id": "resin:Participants/20065",
                     "roleName": "A0_pag_occupier",
-                    "entity": "resin:Entities/00065/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20066",
                     "roleName": "A1_ppt_occupied",
-                    "entity": "resin:Entities/00066/"
+                    "entity": "resin:Entities/00000/"
                 },
                 {
                     "@id": "resin:Participants/20068",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/00068/"
+                    "entity": "resin:Entities/00002/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00065/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
-                    "@id": "resin:Entities/00066/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 },
                 {
-                    "@id": "resin:Entities/00068/",
+                    "@id": "resin:Entities/00002/",
                     "name": "geographic_entity",
-                    "wd_node": "Q27096213",
+                    "wd_description": "place or entity that could be a place",
                     "wd_label": "geographic entity",
-                    "wd_description": "place or entity that could be a place"
+                    "wd_node": "Q27096213"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "resin:Relations/30004/",
+                    "name": "proximity",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00002/",
+                    "wd_node": "wd:Q19267375",
+                    "wd_description": "state of being near as in space, time, or relationship",
+                    "wd_label": "proximity"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -987,17 +1035,17 @@
                 {
                     "@id": "resin:Participants/20069",
                     "roleName": "A1_ppt_entity_suffering_a_recession",
-                    "entity": "resin:Entities/00069/"
+                    "entity": "resin:Entities/00000/"
                 }
             ],
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/00069/",
-		    "name": "country",
-            	    "wd_node": "Q6256",
+                    "@id": "resin:Entities/00000/",
+                    "name": "country",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions",
                     "wd_label": "country",
-            	    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                    "wd_node": "Q6256"
                 }
             ],
             "relations": [],
