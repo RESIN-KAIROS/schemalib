@@ -902,9 +902,9 @@
                 }
             ],
             "repeatable": false,
-            "wd_node": "wd:Q87745167",
-            "wd_label": "travel restriction",
-            "wd_description": "policy",
+            "wd_node": "wd:Q105766481",
+            "wd_label": "restriction",
+            "wd_description": "act of establishing a limitation, restriction or boundary",
             "outlinks": []
         },
         {
@@ -1069,7 +1069,8 @@
                 "resin:Events/10047/Steps_kairos:Primitives_Events_Donate",
                 "resin:Events/10045/Steps_kairos:Primitives_Events_CloseBorder",
                 "resin:Events/10046/Steps_kairos:Primitives_Events_Debunk_Misinformation",
-                "resin:Events/10031/Steps_kairos:Primitives_Events_Destruction"
+                "resin:Events/10031/Steps_kairos:Primitives_Events_Destruction",
+                "resin:Events/10134/"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -1139,7 +1140,8 @@
                 "resin:Events/10065/Steps_kairos:Primitives_Events_Social_Distancing",
                 "resin:Events/10064/Steps_kairos:Primitives_Events_Vaccinate",
                 "resin:Events/10057/Steps_kairos:Primitives_Events_Exchange",
-                "resin:Events/10133/Container"
+                "resin:Events/10133/Container",
+                "resin:Events/10058/Steps_kairos:Primitives_Events_Demonstrate"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -1210,7 +1212,8 @@
                 "resin:Events/10079/Steps_kairos:Primitives_Events_Food_Safety",
                 "resin:Events/10080/Steps_kairos:Primitives_Events_Drinking_Water",
                 "resin:Events/10076/Steps_kairos:Primitives_Events_Mutate_life",
-                "resin:Events/10129/"
+                "resin:Events/10129/",
+                "resin:Events/10130/"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -2310,7 +2313,7 @@
             ],
             "children_gate": "or",
             "comment": "",
-            "description": "",
+            "description": "Investigation of the cause of the outbreak.",
             "name": "Investigation",
             "participants": [],
             "repeatable": false,
