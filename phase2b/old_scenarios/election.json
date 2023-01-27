@@ -12,7 +12,7 @@
         "resin:Events/10004/Steps_kairos:Container:8"
       ],
       "children_gate": "or",
-      "description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+      "description": "An election news story.",
       "name": "Election",
       "wd_node": "wd:Q40231",
       "wd_label": "election",
@@ -214,7 +214,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "Nomination",
+      "description": "People declare candidacy and involve in the campaign for party nomination.",
       "name": "Nomination",
       "participants": [],
       "repeatable": false,
@@ -235,7 +235,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "Official campaign",
+      "description": "The party nominees participate in a compaign before voting.",
       "name": "Official campaign",
       "participants": [],
       "repeatable": false,
@@ -253,7 +253,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "Voting",
+      "description": "Voters vote for the candidate they support and determine the winner of the election.",
       "name": "Voting",
       "participants": [],
       "repeatable": false,
@@ -273,7 +273,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "Conclusion",
+      "description": "The winner and losers react to the results of the election.",
       "name": "Conclusion",
       "participants": [],
       "repeatable": false,
@@ -283,7 +283,7 @@
     {
       "@id": "resin:Events/10005/",
       "comment": "",
-      "description": "a candidate declares candidacy to begin their run for office",
+      "description": "A candidate declares candidacy to begin their run for office",
       "name": "Declare candidacy",
       "participants": [
         {
@@ -329,7 +329,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "Nomination campaign",
+      "description": "A candidate starts a compaign for nomination.",
       "name": "Nomination campaign",
       "repeatable": true,
       "outlinks": [
@@ -345,7 +345,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Result outlinks",
+      "description": "Possible outcomes of the election.",
       "name": "Result outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -563,7 +563,7 @@
     {
       "@id": "resin:Events/10016/Speech",
       "comment": "",
-      "description": "address delivered to an audience",
+      "description": "The candidate will give a speech to generate hype and support.",
       "name": "Speech",
       "participants": [
         {
@@ -591,7 +591,7 @@
     {
       "@id": "resin:Events/10017/",
       "comment": "",
-      "description": "process of gathering voluntary contributions of money or other resources",
+      "description": "Candidates will raise funds to support their campaign.",
       "name": "Fundraising",
       "participants": [
         {
@@ -614,7 +614,7 @@
     {
       "@id": "resin:Events/10018/",
       "comment": "",
-      "description": "form of communication for marketing, typically paid for",
+      "description": "The candidate will run advertisement to reach a wider audience.",
       "name": "Advertising",
       "participants": [
         {
@@ -637,7 +637,7 @@
     {
       "@id": "resin:Events/10019/",
       "comment": "",
-      "description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+      "description": "The candidate will appear in the media via interviews and events.",
       "name": "Media appearance",
       "participants": [
         {
@@ -699,7 +699,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Vote",
+      "description": "Different methods of voting.",
       "name": "Vote",
       "repeatable": false,
       "outlinks": [
@@ -743,7 +743,7 @@
     },
     {
       "@id": "resin:Events/10023/",
-      "description": "key event in election",
+      "description": "The winner of the election is declared.",
       "name": "Winner declared",
       "participants": [
         {
@@ -767,7 +767,7 @@
     },
     {
       "@id": "resin:Events/10032/",
-      "description": "method for a group such as a meeting or an electorate to make a decision or express an opinion",
+      "description": "The voter goes to the polling site for voting.",
       "name": "Go to polling site",
       "participants": [
         {
@@ -848,7 +848,7 @@
     {
       "@id": "resin:Events/10025/",
       "comment": "",
-      "description": "act of declining to accept an item for approval, consideration, marking etc.",
+      "description": "The loser of the election may deny the result of the election.",
       "name": "Reject result",
       "participants": [
         {
@@ -874,7 +874,7 @@
     {
       "@id": "resin:Events/10026/",
       "comment": "",
-      "description": "an incitement to commit an act of violence",
+      "description": "A loser of the election may incite violence to try to overturn the result.",
       "name": "Incite violence",
       "participants": [
         {
@@ -899,7 +899,7 @@
     {
       "@id": "resin:Events/10027/",
       "comment": "",
-      "description": "protests and riots lead to lawsuits",
+      "description": "A loser of the election may sue in order to attempt to overturn the result.",
       "name": "Lawsuit",
       "participants": [
         {
@@ -921,7 +921,7 @@
     },
     {
       "@id": "resin:Events/10028/",
-      "description": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
+      "description": "A loser of the election may attempt a coup.",
       "name": "Coup d'\u00e9tat",
       "participants": [
         {

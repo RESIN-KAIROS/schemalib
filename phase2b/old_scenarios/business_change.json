@@ -20,7 +20,7 @@
         "resin:Events/10012/Steps_kairos:Container:Antitrust_Investigation"
       ],
       "children_gate": "or",
-      "description": "Schema describing business change events, including fraud, mergers and acquisitions, antitrust investigations, and bankruptcy",
+      "description": "A news story about business change events, including fraud, mergers and acquisitions, antitrust investigations, and bankruptcy",
       "name": "Business Change",
       "outlinks": [],
       "entities": [
@@ -450,7 +450,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Restructure outlinks",
+      "description": "Possible outcomes of restructuring the company.",
       "name": "Restructure outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -817,7 +817,7 @@
     {
       "@id": "resin:Events/10025/Steps_kairos:Primitives_Events_detention:1",
       "comment": "",
-      "description": "removal of the freedom of liberty by a state",
+      "description": "suspects of the crime are detained by police.",
       "name": "Detention",
       "participants": [
         {
@@ -901,7 +901,7 @@
     {
       "@id": "resin:Events/10028/Steps_kairos:Primitives_Events_trial:1",
       "comment": "",
-      "description": "coming together of parties to a dispute, to present information in a tribunal",
+      "description": "The suspect of the crime goes to trial.",
       "name": "Trial",
       "participants": [
         {
@@ -951,7 +951,7 @@
     {
       "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_court_decision:1",
       "comment": "",
-      "description": "formal decision made by a court",
+      "description": "The court reaches a decision.",
       "name": "Court decision",
       "participants": [
         {
@@ -986,7 +986,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Court Decision outlinks",
+      "description": "Possible outcomes of the court decision.",
       "name": "Court Decision outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -994,7 +994,7 @@
     },
     {
       "@id": "resin:Events/10032/Steps_kairos:Primitives_Events_sentence:1",
-      "description": "decree of punishment in law",
+      "description": "The suspects are sentenced to jail.",
       "name": "Sentence",
       "participants": [
         {
@@ -1140,7 +1140,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Parole outlinks",
+      "description": "Possible outcomes of the parole. ",
       "name": "Parole outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -1449,7 +1449,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Reorganization Application outlinks",
+      "description": "Possible outcomes of the reorganization application.",
       "name": "Reorganization Application outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -1728,7 +1728,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "Possible outcomes of a court motion.",
       "name": "Motion outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -1877,7 +1877,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Bankruptcy Application outlinks",
+      "description": "The possible outcomes of the bankruptcy application.",
       "name": "Bankruptcy Application outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -1925,7 +1925,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "Bankruptcy Approval outlinks",
+      "description": "Possible outcomes of bankruptcy approval.",
       "name": "Bankruptcy Approval outlinks",
       "repeatable": false,
       "outlinks": [],

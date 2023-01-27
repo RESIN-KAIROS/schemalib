@@ -10,7 +10,7 @@
         "resin:Events/10637/Steps_kairos:Container:2"
       ],
       "children_gate": "or",
-      "description": "Natural Disaster and Rescue",
+      "description": "Natural Disaster and Rescue news story.",
       "name": "Natural Disaster and Rescue",
       "outlinks": [],
       "entities": [
@@ -69,7 +69,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "A disaster caused by humans.",
+      "description": "The natural disaster occurs.",
       "name": "Natural Disaster",
       "repeatable": false,
       "outlinks": [
@@ -93,7 +93,7 @@
       ],
       "children_gate": "or",
       "comment": "container node",
-      "description": "Rescuing the victims from the disaster.",
+      "description": "Rescue efforts for the natural disaster.",
       "name": "Rescue",
       "repeatable": false,
       "outlinks": [],
@@ -102,7 +102,7 @@
     {
       "@id": "resin:Events/10638/Steps_kairos:Primitives_Events_Tornado",
       "comment": "",
-      "description": "violently rotating column of air that is in contact with both the earth's surface and a cumulonimbus cloud in the air",
+      "description": "A tornado occurs.",
       "name": "tornado",
       "participants": [
         {
@@ -127,7 +127,7 @@
     {
       "@id": "resin:Events/10640/Steps_kairos:Primitives_Events_Flood",
       "comment": "",
-      "description": "overflow of water that submerges land",
+      "description": "A flood occurs.",
       "name": "flood",
       "participants": [
         {
@@ -152,7 +152,7 @@
     {
       "@id": "resin:Events/10641/Steps_kairos:Primitives_Events_Wildfire",
       "comment": "",
-      "description": "uncontrolled fire in an area of combustible vegetation that occurs in the countryside or a wilderness area",
+      "description": "A wildfire occurs.",
       "name": "wildfire",
       "participants": [
         {
@@ -177,7 +177,7 @@
     {
       "@id": "resin:Events/10657/Steps_kairos:Primitives_Events_Earthquake",
       "comment": "",
-      "description": "result of a sudden release of energy in the Earth's crust that creates seismic waves",
+      "description": "An earthquake occurs.",
       "name": "earthquake",
       "participants": [
         {
@@ -202,7 +202,7 @@
     {
       "@id": "resin:Events/10642/Steps_kairos:Primitives_Events_Tsunami",
       "comment": "",
-      "description": "series of water waves caused by the displacement of a large volume of a body of water",
+      "description": "A tsunami occurs.",
       "name": "tsunami",
       "participants": [
         {
@@ -227,7 +227,7 @@
     {
       "@id": "resin:Events/10643/Steps_kairos:Primitives_Events_Thunderstorm",
       "comment": "",
-      "description": "type of weather",
+      "description": "A thunderstorm occurs.",
       "name": "thunderstorm",
       "participants": [
         {
@@ -278,7 +278,7 @@
     {
       "@id": "resin:Events/10646/Steps_kairos:Primitives_Events_ArtifactExistence.DamageDestroyDisableDismantle.Damage",
       "comment": "",
-      "description": "changes introduced into a system that adversely affect its current or future performance",
+      "description": "The natural disaster causes causalties and damages.",
       "name": "damage",
       "participants": [
         {
@@ -312,7 +312,7 @@
     {
       "@id": "resin:Events/10644/Steps_kairos:Primitives_Events_Life.Injure.Unspecified",
       "comment": "",
-      "description": "physiological wound caused by an external source",
+      "description": "Victims of the natural disaster are injured.",
       "name": "injury",
       "participants": [
         {
@@ -335,7 +335,7 @@
     {
       "@id": "resin:Events/10645/Steps_kairos:Primitives_Events_Life.Die.Unspecified:1",
       "comment": "",
-      "description": "permanent cessation of vital functions",
+      "description": "Victims of the natural disaster die.",
       "name": "death",
       "participants": [
         {
@@ -587,7 +587,7 @@
       ],
       "children_gate": "xor",
       "comment": "container node",
-      "description": "",
+      "description": "possible outcomes of the medical treatment",
       "name": "treatment outlinks",
       "repeatable": false,
       "outlinks": [],
@@ -614,7 +614,7 @@
     {
       "@id": "resin:Events/10656/Steps_kairos:Primitives_Events_Life.Die.Unspecified:2",
       "comment": "",
-      "description": "permanent cessation of vital functions",
+      "description": "victims die from injuries after medical treatment.",
       "name": "death",
       "participants": [
         {
