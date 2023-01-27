@@ -447,7 +447,35 @@
             "wd_label": "illness",
             "wd_description": "the state of being unwell",
             "outlinks": [
+                "resin:Events/10135/"
+            ]
+        },
+        {
+            "@id": "resin:Events/10135/",
+            "name": "Contact Health Provider",
+            "description": "The sick contact their health provider for advice. ",
+            "wd_node": [
+                "wd:Q11024"
+            ],
+            "wd_label": "communication",
+            "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [
                 "resin:Events/10036/Steps_kairos:Container:3"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20219/",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "resin:Participants/20220/",
+                    "roleName": "A2_com_co_agent_other_communicators",
+                    "entity": "resin:Entities/00024/"
+                }
             ]
         },
         {
@@ -703,9 +731,9 @@
                 }
             ],
             "repeatable": false,
-            "wd_node": "wd:Q446078",
-            "wd_label": "Alert",
-            "wd_description": "Wikimedia disambiguation page",
+            "wd_node": "wd:Q11024",
+            "wd_label": "communication",
+            "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
             "outlinks": [
                 "resin:Events/10021/Steps_kairos:Primitives_Events_Contact.Contact.Broadcast:1",
                 "resin:Events/10029/Steps_kairos:Primitives_Events_GovDecree",
@@ -820,8 +848,41 @@
                 "resin:Events/10044/Steps_kairos:Primitives_Events_ExchangeBuySell",
                 "resin:Events/10045/Steps_kairos:Primitives_Events_CloseBorder",
                 "resin:Events/10125/Steps_kairos:Primitives_Events_Information_Campaign",
-                "resin:Events/10034/Steps_kairos:Primitives_Events_Transaction.AidBetweenGovernments.Unspecified:1"
+                "resin:Events/10034/Steps_kairos:Primitives_Events_Transaction.AidBetweenGovernments.Unspecified:1",
+                "resin:Events/10134/"
             ]
+        },
+        {
+            "@id": "resin:Events/10134/",
+            "name": "Prevent Contamination",
+            "description": "Measures to prevent the carrier of the disease from being distributed.",
+            "wd_node": [
+                "wd:Q1717246"
+            ],
+            "wd_label": "prevention",
+            "wd_description": "causing an event or condition that would otherwise occur to not occur",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20216/",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "resin:Entities/00016/"
+                },
+                {
+                    "@id": "resin:Participants/20217/",
+                    "roleName": "A1_ppt_theme_theme",
+                    "entity": "resin:Entities/00006/"
+                },
+                {
+                    "@id": "resin:Participants/20218/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00013/"
+                }
+            ],
+            "modality": []
         },
         {
             "@id": "resin:Events/10030/Steps_kairos:Primitives_Events_Movement.Transportation.PreventPassage:2",
@@ -982,7 +1043,8 @@
                 "resin:Events/10120/Steps_kairos:Primitives_Events_Purchase",
                 "resin:Events/10041/Steps_kairos:Primitives_Events_Consume",
                 "resin:Events/10042/Steps_kairos:Primitives_Events_Contamination",
-                "resin:Events/10130/"
+                "resin:Events/10130/",
+                "resin:Events/10135/"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -2252,9 +2314,9 @@
             "name": "Investigation",
             "participants": [],
             "repeatable": false,
-            "wd_node": "wd:Q21004260",
-            "wd_label": "inquiry",
-            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "wd_node": "wd:Q1964968",
+            "wd_label": "criminal_investigation",
+            "wd_description": "process that attempts to determine the facts of a crime and circumstances",
             "outlinks": [
                 "resin:Events/10009/Steps_kairos:Container:Civil_Justice"
             ],
