@@ -9,7 +9,6 @@
           "resin:Events/10001/Steps_kairos:Container:1",
           "resin:Events/10002/Steps_kairos:Container:2",
           "resin:Events/10019/Steps_kairos:Container:19",
-          "resin:Events/10005/Steps_kairos:Container:5",
           "resin:Events/10006/Steps_kairos:Container:6"
         ],
         "children_gate": "or",
@@ -132,7 +131,7 @@
           "resin:Events/10015/Steps_kairos:Primitives_Events_Plant_Undercover_Agents",
           "resin:Events/10016/Steps_kairos:Primitives_Events_Purchase_Weapons",
           "resin:Events/10017/Steps_kairos:Primitives_Events_Fundraising",
-          "resin:Events/10011/Steps_kairos:Primitives_Events_Recruitment"
+          "resin:Events/10039/Steps_kairos:Primitives_Events_Trade_Weapons"
         ],
         "children_gate": "or",
         "comment": "container node",
@@ -150,7 +149,9 @@
           "resin:Events/10022/Steps_kairos:Primitives_Events_Bombing",
           "resin:Events/10023/Steps_kairos:Primitives_Events_Shooting",
           "resin:Events/10037/Steps_kairos:Primitives_Events_Cyber_Attack",
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility"
+          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
+          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
+          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
         ],
         "children_gate": "or",
         "description": "Terrorist action to injure another organism.",
@@ -160,8 +161,7 @@
         "wd_label": "attack",
         "wd_description": "action to injure another organism",
         "outlinks": [
-          "resin:Events/10006/Steps_kairos:Container:6",
-          "resin:Events/10005/Steps_kairos:Container:5"
+          "resin:Events/10006/Steps_kairos:Container:6"
         ],
         "isSchema": true
       },
@@ -177,18 +177,6 @@
         "comment": "container node",
         "description": "Society Response",
         "name": "Society Response",
-        "repeatable": false,
-        "outlinks": [],
-        "isSchema": true
-      },
-      {
-        "@id": "resin:Events/10005/Steps_kairos:Container:5",
-        "children": [
-        ],
-        "children_gate": "or",
-        "comment": "container node",
-        "description": "Justice",
-        "name": "Justice",
         "repeatable": false,
         "outlinks": [],
         "isSchema": true
@@ -379,7 +367,8 @@
         "wd_label": "plan",
         "wd_description": "outline of a strategy for achievement of an objective",
         "outlinks": [
-          "resin:Events/10017/Steps_kairos:Primitives_Events_Fundraising"
+          "resin:Events/10017/Steps_kairos:Primitives_Events_Fundraising",
+          "resin:Events/10039/Steps_kairos:Primitives_Events_Trade_Weapons"
         ]
       },
       {
@@ -523,7 +512,9 @@
         "wd_label": "bomb attack",
         "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
         "outlinks": [
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility"
+          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
+          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
+          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
         ]
       },
       {
@@ -558,7 +549,9 @@
         "wd_label": "shooting",
         "wd_description": "act or process of firing firearms or other projectile weapons",
         "outlinks": [
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility"
+          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
+          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
+          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
         ]
       },
       {
@@ -686,12 +679,12 @@
         "name": "Claim Responsibility",
         "participants": [
           {
-            "@id": "resin:Participants/20079/kairos:Primitives_Events_Responsible_Party",
+            "@id": "resin:Participants/20084/kairos:Primitives_Events_Responsible_Party",
             "roleName": "A0",
             "entity": "resin:Entities/00001/TerroristGroup"
           },
           {
-            "@id": "resin:Participants/20080/kairos:Primitives_Events_Audience",
+            "@id": "resin:Participants/20085/kairos:Primitives_Events_Audience",
             "roleName": "A1",
             "entity": "resin:Entities/00008/GeneralPopulationGroup"
           }
@@ -726,7 +719,82 @@
         "wd_label": "cyberwarfare",
         "wd_description": "use of technological force within cyberspace",
         "outlinks": [
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility"
+          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
+          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
+          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
+        ]
+      },      
+      {
+        "@id": "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
+        "description": "permanent cessation of vital functions",
+        "name": "Death",
+        "participants": [
+          {
+            "@id": "resin:Participants/20086/kairos:Primitives_Events_Victim",
+            "roleName": "A1_ppt",
+            "entity": "resin:Entities/00004/PersonGeneric"
+          }
+        ],
+        "repeatable": false,
+        "optional": true,
+        "wd_node": "wd:Q4",
+        "wd_label": "death",
+        "wd_description": "permanent cessation of vital functions",
+        "outlinks": [
+        ]
+      },
+      {
+        "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Injury",
+        "description": "physiological wound caused by an external source",
+        "name": "Injury",
+        "participants": [
+          {
+            "@id": "resin:Participants/20087/kairos:Primitives_Events_Victim",
+            "roleName": "A1_ppt",
+            "entity": "resin:Entities/00004/PersonGeneric"
+          },
+          {
+            "@id": "resin:Participants/20088/kairos:Primitives_Events_Stimulus",
+            "roleName": "A0_pag",
+            "entity": "resin:Entities/00007/Weapon"
+          }
+        ],
+        "repeatable": false,
+        "optional": true,
+        "wd_node": "wd:Q193078",
+        "wd_label": "injury",
+        "wd_description": "physiological wound caused by an external source",
+        "outlinks": [
+        ]
+      },
+      {
+        "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Trade_Weapons",
+        "description": "immediate & direct reciprocal exchange of goods or services without use of money",
+        "name": "Exchange Goods",
+        "participants": [
+          {
+            "@id": "resin:Participants/20090/Steps_kairos:Primitives_Events_Purchase_Weapons_Purchaser",
+            "roleName": "A0_pag_agent",
+            "entity": "resin:Entities/00001/TerroristGroup"
+          },
+          {
+            "@id": "resin:Participants/20091/Steps_kairos:Primitives_Events_Purchase_Weapons_Thing_Purchased",
+            "roleName": "A1_ppt_thing_being_traded",
+            "entity": "resin:Entities/00007/Weapon"
+          },
+          {
+            "@id": "resin:Participants/20092/Steps_kairos:Primitives_Events_Purchase_Weapons_Seller",
+            "roleName": "A2_com_other_exchanger",
+            "entity": "resin:Entities/00006/BenefactorGroup"
+          }
+        ],
+        "repeatable": true,
+        "optional": true,
+        "wd_node": "wd:Q484830",
+        "wd_label": "barter",
+        "wd_description": "immediate & direct reciprocal exchange of goods or services without use of money",
+        "outlinks": [
+          "resin:Events/10014/Steps_kairos:Primitives_Events_Training"
         ]
       }
     ]
