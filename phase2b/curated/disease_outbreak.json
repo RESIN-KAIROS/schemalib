@@ -7,10 +7,9 @@
             "@id": "resin:Events/10000/resin:Events_disease-outbreak",
             "children": [
                 "resin:Events/10001/Steps_kairos:Container:Outbreak",
-                "resin:Events/10002/Steps_kairos:Container:OutbreakOutcome",
                 "resin:Events/10003/Steps_kairos:Container:AuthorityResponse",
-                "resin:Events/10005/Steps_kairos:Container:4",
-                "resin:Events/10006/Steps_kairos:Container:5",
+                "resin:Events/10005/Steps_kairos:Container:SocietyResponse",
+                "resin:Events/10006/Steps_kairos:Container:ResearchResponse",
                 "resin:Events/10007/Steps_kairos:Container:6",
                 "resin:Events/10004/Steps_kairos:Container:Investigation",
                 "resin:Events/10009/Steps_kairos:Container:Civil_Justice"
@@ -312,12 +311,14 @@
             "repeatable": false,
             "optional": false,
             "outlinks": [],
-            "participants": [],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
+            "participants": [
+                {
+                    "@id": "resin:Participants/20223/",
+                    "roleName": "A2_gol_ground",
+                    "entity": "resin:Entities/00013/"
+                }
+            ],
+            "modality": []
         },
         {
             "@id": "resin:Events/10127/",
@@ -331,12 +332,14 @@
             "isSchema": false,
             "repeatable": false,
             "modality": [],
-            "participants": [],
-            "outlinks": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
+            "participants": [
+                {
+                    "@id":"resin:Participants/20222/",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00013/"
+                }
+            ],
+            "outlinks": []
         },
         {
             "@id": "resin:Events/10126/",
@@ -351,7 +354,14 @@
             "repeatable": false,
             "optional": false,
             "outlinks": [],
-            "participants": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20221/",
+                    "roleName":"AM_loc__location",
+                    "entity": "resin:Entities/00013/"
+
+                }
+            ],
             "modality": []
         },
         {
@@ -370,7 +380,7 @@
             "wd_label": "Compliance",
             "wd_description": "submission to a request",
             "outlinks": [],
-            "modality": "['negated']"
+            "modality": ["negated"]
         },
         {
             "@id": "resin:Events/10011/Steps_kairos:Primitives_Events_GenericCrime.GenericCrime.GenericCrime:1",
@@ -1052,7 +1062,10 @@
             "name": "Outbreak",
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10002/Steps_kairos:Container:OutbreakOutcome"
+                "resin:Events/10003/Steps_kairos:Container:AuthorityResponse",
+                "resin:Events/10005/Steps_kairos:Container:SocietyResponse",
+                "resin:Events/10004/Steps_kairos:Container:Investigation",
+                "resin:Events/10006/Steps_kairos:Container:ResearchResponse"
             ],
             "isSchema": true
         },
@@ -1128,7 +1141,7 @@
             "likelihood": []
         },
         {
-            "@id": "resin:Events/10005/Steps_kairos:Container:4",
+            "@id": "resin:Events/10005/Steps_kairos:Container:SocietyResponse",
             "children": [
                 "resin:Events/10021/Steps_kairos:Primitives_Events_Contact.Contact.Broadcast:1",
                 "resin:Events/10030/Steps_kairos:Primitives_Events_Movement.Transportation.PreventPassage:2",
@@ -1152,7 +1165,7 @@
             "isSchema": true
         },
         {
-            "@id": "resin:Events/10006/Steps_kairos:Container:5",
+            "@id": "resin:Events/10006/Steps_kairos:Container:ResearchResponse",
             "children": [
                 "resin:Events/10033/Steps_kairos:Primitives_Events_Disease_Prevention",
                 "resin:Events/10032/Steps_kairos:Primitives_Events_Cognitive.Research.Unspecified:1",
@@ -1212,8 +1225,7 @@
                 "resin:Events/10079/Steps_kairos:Primitives_Events_Food_Safety",
                 "resin:Events/10080/Steps_kairos:Primitives_Events_Drinking_Water",
                 "resin:Events/10076/Steps_kairos:Primitives_Events_Mutate_life",
-                "resin:Events/10129/",
-                "resin:Events/10130/"
+                "resin:Events/10129/"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -2103,9 +2115,7 @@
             "wd_node": "wd:Q42918",
             "wd_label": "mutation",
             "wd_description": "change of the nucleotide sequence of the genome of an organism",
-            "outlinks": [
-                "resin:Events/10130/"
-            ]
+            "outlinks": []
         },
         {
             "@id": "resin:Events/10053/Steps_kairos:Primitives_Events_Recover",
@@ -2307,9 +2317,7 @@
                 "resin:Events/10095/Steps_kairos:Primitives_Events_Contact",
                 "resin:Events/10096/Steps_kairos:Primitives_Events_Arrest",
                 "resin:Events/10099/Steps_kairos:Primitives_Events_Inspect",
-                "resin:Events/10111/Steps_kairos:Primitives_Events_Interrogation",
-                "resin:Events/10097/Steps_kairos:Primitives_Events_Handcuffing",
-                "resin:Events/10098/Steps_kairos:Primitives_Events_Restrain"
+                "resin:Events/10111/Steps_kairos:Primitives_Events_Interrogation"
             ],
             "children_gate": "or",
             "comment": "",
@@ -2934,22 +2942,6 @@
             "wd_label": "bankruptcy",
             "wd_description": "legal process through which people or other entities who cannot repay debts to creditors may seek relief from some or all of their debts",
             "outlinks": []
-        },
-        {
-            "@id": "resin:Events/10002/Steps_kairos:Container:OutbreakOutcome",
-            "children": [
-                "resin:Events/10003/Steps_kairos:Container:AuthorityResponse",
-                "resin:Events/10005/Steps_kairos:Container:4",
-                "resin:Events/10004/Steps_kairos:Container:Investigation",
-                "resin:Events/10006/Steps_kairos:Container:5"
-            ],
-            "children_gate": "and",
-            "comment": "container node",
-            "description": "",
-            "name": "onset outlinks",
-            "repeatable": false,
-            "outlinks": [],
-            "isSchema": true
         },
         {
             "@id": "resin:Events/10049/Steps_kairos:Container:IllnessOutcome",
