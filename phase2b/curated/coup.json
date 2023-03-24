@@ -8,7 +8,7 @@
             "name": "Coup d'état",
             "description": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
             "wd_node": "wd:Q45382",
-            "wd_label": "Coup d'état",
+            "wd_label": "Coup d'etat",
             "wd_description": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
             "isSchema": true,
             "repeatable": false,
@@ -23,7 +23,302 @@
                 "resin:Events/00042/",
                 "resin:Events/00054/"
             ],
-            "entities": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00025/",
+                    "name": "Overthrown Leader",
+                    "wd_description": "chief officer of the executive branch of a government",
+                    "wd_label": "head_of_government",
+                    "wd_node": "wd:Q2285706"
+                },
+                {
+                    "@id": "resin:Entities/00003/",
+                    "name": "Legislation",
+                    "wd_description": "act, law, edict or proclamation defining with authority the law in a given jurisdiction",
+                    "wd_label": "legislative_enactment",
+                    "wd_node": "wd:Q14440634"
+                },
+                {
+                    "@id": "resin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose",
+                    "wd_label": "political_faction",
+                    "wd_node": "wd:Q1393724"
+                },
+                {
+                    "@id": "resin:Entities/00012/",
+                    "name": "Group Of Humans",
+                    "wd_description": "any set of human beings",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295"
+                },
+                {
+                    "@id": "resin:Entities/00031/",
+                    "name": "Foreign Interests",
+                    "wd_description": "support that one organization or individual bestows to another",
+                    "wd_label": "patronage",
+                    "wd_node": "wd:Q265939"
+                },
+                {
+                    "@id": "resin:Entities/00024/",
+                    "name": "Dictator",
+                    "wd_description": "absolutist or autocratic ruler who assumes sole power over the state",
+                    "wd_label": "dictator",
+                    "wd_node": "wd:Q183318"
+                },
+                {
+                    "@id": "resin:Entities/00010/",
+                    "name": "Military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war",
+                    "wd_label": "military",
+                    "wd_node": "wd:Q8473"
+                },
+                {
+                    "@id": "resin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_description": "chief officer of the executive branch of a government",
+                    "wd_label": "head_of_government",
+                    "wd_node": "wd:Q2285706"
+                },
+                {
+                    "@id": "resin:Entities/00020/",
+                    "name": "Regime Change",
+                    "wd_description": "replacement of one political regime (system) with another",
+                    "wd_label": "regime_change",
+                    "wd_node": "wd:Q1673271"
+                },
+                {
+                    "@id": "resin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_description": "any set of human beings",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295"
+                },
+                {
+                    "@id": "resin:Entities/00015/",
+                    "name": "Rioters",
+                    "wd_description": "any set of human beings",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295"
+                },
+                {
+                    "@id": "resin:Entities/00005/",
+                    "name": "Judge",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood (avoid use with P31; use Q5 for humans)",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627"
+                },
+                {
+                    "@id": "resin:Entities/00021/",
+                    "name": "Capital",
+                    "wd_description": "act of providing resources",
+                    "wd_label": "funding",
+                    "wd_node": "wd:Q6055890"
+                },
+                {
+                    "@id": "resin:Entities/00000/",
+                    "name": "Government",
+                    "wd_description": "system or group of people governing an organized community, often a state",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188"
+                },
+                {
+                    "@id": "resin:Entities/00002/",
+                    "name": "Legislature",
+                    "wd_description": "deliberative assembly acting as part of a legislature",
+                    "wd_label": "legislative_house",
+                    "wd_node": "wd:Q10553309"
+                },
+                {
+                    "@id": "resin:Entities/00022/",
+                    "name": "External Military Power",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835"
+                },
+                {
+                    "@id": "resin:Events/00032/",
+                    "name": "Government Overthrown",
+                    "wd_description": "replacement of one political regime (system) with another",
+                    "wd_label": "regime_change",
+                    "wd_node": "wd:Q1673271"
+                },
+                {
+                    "@id": "resin:Entities/00032/",
+                    "name": "External Military Power",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835"
+                },
+                {
+                    "@id": "Entities/10000/Goals or Values",
+                    "name": "Goals or Values",
+                    "wd_description": "psychological feature or underlying reason for people's actions, willingness and goals",
+                    "wd_label": "motivation",
+                    "wd_node": "Q644302"
+                },
+                {
+                    "@id": "resin:Entities/00017/",
+                    "name": "External Entity",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835"
+                },
+                {
+                    "@id": "resin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_description": "organization composed primarily of sovereign states",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_node": "wd:Q245065"
+                },
+                {
+                    "@id": "resin:Entities/00009/",
+                    "name": "Domestic Political Crisis",
+                    "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
+                    "wd_label": "crisis",
+                    "wd_node": "wd:Q381072"
+                },
+                {
+                    "@id": "resin:Entities/00013/",
+                    "name": "Group Of Humans",
+                    "wd_description": "any set of human beings",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295"
+                },
+                {
+                    "@id": "resin:Entities/00004/",
+                    "name": "Verdict",
+                    "wd_description": "formal decision made by a court",
+                    "wd_label": "court_decision",
+                    "wd_node": "wd:Q327000"
+                },
+                {
+                    "@id": "resin:Entities/00001/",
+                    "name": "General Election",
+                    "wd_description": "election in which all or most members of a given political body are chosen",
+                    "wd_label": "general_election",
+                    "wd_node": "wd:Q1076105"
+                },
+                {
+                    "@id": "resin:Entities/00007/",
+                    "name": "Leadership",
+                    "wd_description": "ability of an individual or organization to guide other individuals, teams, or entire organizations",
+                    "wd_label": "leadership",
+                    "wd_node": "wd:Q484275"
+                },
+                {
+                    "@id": "resin:Entities/00011/",
+                    "name": "Geographic Location",
+                    "wd_description": "point or an area on something's surface or elsewhere",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906"
+                },
+                {
+                    "@id": "resin:Entities/00006/",
+                    "name": "Constitution",
+                    "wd_description": "set of fundamental principles or established precedents according to which a state or other organization is governed",
+                    "wd_label": "constitution",
+                    "wd_node": "wd:Q7755"
+                },
+                {
+                    "@id": "resin:Entities/00006/",
+                    "name": "Constitution",
+                    "wd_description": "set of fundamental principles or established precedents according to which a state or other organization is governed",
+                    "wd_label": "constitution",
+                    "wd_node": "wd:Q3695759"
+                },
+                {
+                    "@id": "resin:Entities/00028/",
+                    "name": "Geographic Location",
+                    "wd_description": "point or an area on something's surface or elsewhere",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906"
+                },
+                {
+                    "@id": "resin:Entities/00018/",
+                    "name": "Military Officer",
+                    "wd_description": "member of an armed force or uniformed service who holds a position of authority",
+                    "wd_label": "military_officer",
+                    "wd_node": "wd:Q189290"
+                },
+                {
+                    "@id": "resin:Entities/00023/",
+                    "name": "Courts",
+                    "wd_description": "judicial institution with the authority to resolve legal disputes",
+                    "wd_label": "court",
+                    "wd_node": "wd:Q41487"
+                },
+                {
+                    "@id": "resin:Entities/00027/",
+                    "name": "Militia",
+                    "wd_description": "generally refers to an army or other fighting force that is composed of non-professional fighters",
+                    "wd_label": "militia",
+                    "wd_node": "wd:Q153936"
+                },
+                {
+                    "@id": "resin:Entities/00029/",
+                    "name": "External Military Power",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835"
+                },
+                {
+                    "@id": "resin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_description": "system or group of people governing an organized community, often a state",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188"
+                },
+                {
+                    "@id": "resin:Entities/00035/",
+                    "name": "Aid",
+                    "wd_description": "materials used for providing care in hospital",
+                    "wd_label": "hospital equipment and supplies",
+                    "wd_node": "wd:Q69016679"
+                },
+                {
+                    "@id": "resin:Entities/00030/",
+                    "name": "Martial Law",
+                    "wd_description": "imposition of direct military control of a government",
+                    "wd_label": "martial_law",
+                    "wd_node": "wd:Q715625"
+                },
+                {
+                    "@id": "resin:Entities/00008/",
+                    "name": "Domestic Political Crisis",
+                    "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
+                    "wd_label": "crisis",
+                    "wd_node": "wd:Q381072"
+                },
+                {
+                    "@id": "resin:Events/00007/",
+                    "name": "Government Response",
+                    "wd_description": "action or statement in response to a stimulus or other event",
+                    "wd_label": "reaction",
+                    "wd_node": "wd:Q31983622"
+                },
+                {
+                    "@id": "resin:Entities/00036/",
+                    "name": "Humanitarians",
+                    "wd_description": "any set of human beings",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295"
+                },
+                {
+                    "@id": "Entities/10001/Coup Detat",
+                    "name": "Coup Detat",
+                    "wd_description": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
+                    "wd_label": "coup_d'etat",
+                    "wd_node": "Q45382"
+                },
+                {
+                    "@id": "resin:Entities/00014/",
+                    "name": "Economic Loss",
+                    "wd_description": "negative difference between revenues and costs",
+                    "wd_label": "economic_loss",
+                    "wd_node": "wd:Q11896502"
+                }
+            ],
             "relations": [],
             "importance": [],
             "likelihood": []
@@ -95,22 +390,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00001/",
-                    "name": "General Election",
-                    "wd_node": "wd:Q1076105",
-                    "wd_label": "general_election",
-                    "wd_description": "election in which all or most members of a given political body are chosen"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "Relations/30000/",
@@ -158,29 +438,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00002/",
-                    "name": "Legislature",
-                    "wd_node": "wd:Q10553309",
-                    "wd_label": "legislative_house",
-                    "wd_description": "deliberative assembly acting as part of a legislature"
-                },
-                {
-                    "@id": "resin:Entities/00003/",
-                    "name": "Legislation",
-                    "wd_node": "wd:Q14440634",
-                    "wd_label": "legislative_enactment",
-                    "wd_description": "act, law, edict or proclamation defining with authority the law in a given jurisdiction"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30001/",
@@ -237,29 +495,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00004/",
-                    "name": "Verdict",
-                    "wd_node": "wd:Q327000",
-                    "wd_label": "court_decision",
-                    "wd_description": "formal decision made by a court"
-                },
-                {
-                    "@id": "resin:Entities/00005/",
-                    "name": "Judge",
-                    "wd_node": "wd:Q215627",
-                    "wd_label": "person",
-                    "wd_description": "being that has certain capacities or attributes constituting personhood (avoid use with P31; use Q5 for humans)"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "Relations/30003/",
@@ -311,22 +547,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00006/",
-                    "name": "Constitution",
-                    "wd_node": "wd:Q3695759",
-                    "wd_label": "constitution",
-                    "wd_description": "set of fundamental principles or established precedents according to which a state or other organization is governed"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30005/",
@@ -369,22 +590,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00007/",
-                    "name": "Leadership",
-                    "wd_node": "wd:Q484275",
-                    "wd_label": "leadership",
-                    "wd_description": "ability of an individual or organization to guide other individuals, teams, or entire organizations"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30007/",
@@ -428,22 +634,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00008/",
-                    "name": "Domestic Political Crisis",
-                    "wd_node": "wd:Q381072",
-                    "wd_label": "crisis",
-                    "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30008/",
@@ -489,29 +680,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Events/00007/",
-                    "name": "Government Response",
-                    "wd_node": "wd:Q31983622",
-                    "wd_label": "reaction",
-                    "wd_description": "action or statement in response to a stimulus or other event"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30009/",
@@ -566,29 +735,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Events/00007/",
-                    "name": "Government Response",
-                    "wd_node": "wd:Q31983622",
-                    "wd_label": "reaction",
-                    "wd_description": "action or statement in response to a stimulus or other event"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30011/",
@@ -640,22 +787,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00009/",
-                    "name": "Domestic Political Crisis",
-                    "wd_node": "wd:Q381072",
-                    "wd_label": "crisis",
-                    "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30013/",
@@ -698,22 +830,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00011/",
-                    "name": "Geographic Location",
-                    "wd_node": "wd:Q2221906",
-                    "wd_label": "geographic_location",
-                    "wd_description": "point or an area on something's surface or elsewhere"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30014/",
@@ -761,29 +878,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00012/",
-                    "name": "Group Of Humans",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00013/",
-                    "name": "Group Of Humans",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30015/",
@@ -844,22 +939,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00014/",
-                    "name": "Economic Loss",
-                    "wd_node": "wd:Q11896502",
-                    "wd_label": "economic_loss",
-                    "wd_description": "negative difference between revenues and costs"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30018/",
@@ -938,22 +1018,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30019/",
@@ -994,22 +1059,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00015/",
-                    "name": "Rioters",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30020/",
@@ -1053,22 +1103,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00017/",
-                    "name": "External Entity",
-                    "wd_node": "wd:Q1048835",
-                    "wd_label": "political_territorial_entity",
-                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30021/",
@@ -1111,22 +1146,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00018/",
-                    "name": "Military Officer",
-                    "wd_node": "wd:Q189290",
-                    "wd_label": "military_officer",
-                    "wd_description": "member of an armed force or uniformed service who holds a position of authority"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30022/",
@@ -1169,22 +1189,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "General Public",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30023/",
@@ -1227,22 +1232,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00020/",
-                    "name": "Regime Change",
-                    "wd_node": "wd:Q1673271",
-                    "wd_label": "regime_change",
-                    "wd_description": "replacement of one political regime (system) with another"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30024/",
@@ -1285,22 +1275,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Entities/00021/",
-                    "name": "Capital",
-                    "wd_node": "wd:Q6055890",
-                    "wd_label": "funding",
-                    "wd_description": "act of providing resources"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30025/",
@@ -1343,22 +1318,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Entities/00022/",
-                    "name": "External Military Power",
-                    "wd_node": "wd:Q1048835",
-                    "wd_label": "political_territorial_entity",
-                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30026/",
@@ -1404,29 +1364,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Entities/00020/",
-                    "name": "Regime Change",
-                    "wd_node": "wd:Q1673271",
-                    "wd_label": "regime_change",
-                    "wd_description": "replacement of one political regime (system) with another"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30027/",
@@ -1478,22 +1416,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00020/",
-                    "name": "Regime Change",
-                    "wd_node": "wd:Q1673271",
-                    "wd_label": "regime_change",
-                    "wd_description": "replacement of one political regime (system) with another"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30029/",
@@ -1536,7 +1459,11 @@
                 "resin:Events/00032/",
                 "resin:Events/00033/",
                 "resin:Events/00034/",
-                "resin:Events/00035/"
+                "resin:Events/00035/",
+                "Events/20000/Detain Leadership",
+                "Events/20001/Occupy Govt Buildings",
+                "Events/20002/Curfew",
+                "Events/20003/Censor Media"
             ],
             "modality": [],
             "entities": [],
@@ -1578,7 +1505,11 @@
                 "resin:Events/00029/",
                 "resin:Events/00030/",
                 "resin:Events/00031/",
-                "Events/10000/Container:xor"
+                "Events/10000/Container:xor",
+                "Events/20000/Detain Leadership",
+                "Events/20001/Occupy Govt Buildings",
+                "Events/20002/Curfew",
+                "Events/20003/Censor Media"
             ],
             "participants": [
                 {
@@ -1600,29 +1531,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Entities/00020/",
-                    "name": "Regime Change",
-                    "wd_node": "wd:Q1673271",
-                    "wd_label": "regime_change",
-                    "wd_description": "replacement of one political regime (system) with another"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30030/",
@@ -1674,22 +1583,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00003/",
-                    "name": "Legislation",
-                    "wd_node": "wd:Q14440634",
-                    "wd_label": "legislative_enactment",
-                    "wd_description": "act, law, edict or proclamation defining with authority the law in a given jurisdiction"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30032/",
@@ -1732,22 +1626,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00006/",
-                    "name": "Constitution",
-                    "wd_node": "wd:Q7755",
-                    "wd_label": "constitution",
-                    "wd_description": "set of fundamental principles or established precedents according to which a state or other organization is governed"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30033/",
@@ -1790,22 +1669,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00023/",
-                    "name": "Courts",
-                    "wd_node": "wd:Q41487",
-                    "wd_label": "court",
-                    "wd_description": "judicial institution with the authority to resolve legal disputes"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30034/",
@@ -1848,22 +1712,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00024/",
-                    "name": "Dictator",
-                    "wd_node": "wd:Q183318",
-                    "wd_label": "dictator",
-                    "wd_description": "absolutist or autocratic ruler who assumes sole power over the state"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30035/",
@@ -1906,22 +1755,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30036/",
@@ -1969,29 +1803,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30037/",
@@ -2041,22 +1853,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00025/",
-                    "name": "Overthrown Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30039/",
@@ -2104,29 +1901,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30040/",
@@ -2181,29 +1956,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                },
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30042/",
@@ -2282,22 +2035,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00027/",
-                    "name": "Militia",
-                    "wd_node": "wd:Q153936",
-                    "wd_label": "militia",
-                    "wd_description": "generally refers to an army or other fighting force that is composed of non-professional fighters"
-                },
-                {
-                    "@id": "resin:Events/00032/",
-                    "name": "Government Overthrown",
-                    "wd_node": "wd:Q1673271",
-                    "wd_label": "regime_change",
-                    "wd_description": "replacement of one political regime (system) with another"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30044/",
@@ -2338,22 +2076,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00027/",
-                    "name": "Militia",
-                    "wd_node": "wd:Q153936",
-                    "wd_label": "militia",
-                    "wd_description": "generally refers to an army or other fighting force that is composed of non-professional fighters"
-                },
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30045/",
@@ -2394,22 +2117,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "General Public",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30046/",
@@ -2450,22 +2158,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "General Public",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30047/",
@@ -2504,7 +2197,10 @@
                 "resin:Events/00050/",
                 "resin:Events/00051/",
                 "resin:Events/00052/",
-                "resin:Events/00053/"
+                "resin:Events/00053/",
+                "Events/20004/Deny Coup",
+                "Events/20005/Announce Agenda",
+                "Events/20006/Announce Coup Success"
             ],
             "modality": [],
             "entities": [],
@@ -2540,22 +2236,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00000/",
-                    "name": "Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30048/",
@@ -2570,7 +2251,7 @@
         },
         {
             "@id": "resin:Events/00044/",
-            "name": "Justice",
+            "name": "Justice to Old Govt",
             "description": "justice is brought to overthrown leader by new leader",
             "wd_node": [
                 "wd:Q545861"
@@ -2596,22 +2277,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00025/",
-                    "name": "Overthrown Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30049/",
@@ -2652,22 +2318,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00028/",
-                    "name": "Geographic Location",
-                    "wd_node": "wd:Q2221906",
-                    "wd_label": "geographic_location",
-                    "wd_description": "point or an area on something's surface or elsewhere"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30050/",
@@ -2708,22 +2359,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00016/",
-                    "name": "Political Faction",
-                    "wd_node": "wd:Q1393724",
-                    "wd_label": "political_faction",
-                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
-                },
-                {
-                    "@id": "resin:Entities/00010/",
-                    "name": "Military",
-                    "wd_node": "wd:Q8473",
-                    "wd_label": "military",
-                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30051/",
@@ -2764,22 +2400,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "General Public",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30052/",
@@ -2820,22 +2441,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00029/",
-                    "name": "External Military Power",
-                    "wd_node": "wd:Q1048835",
-                    "wd_label": "political_territorial_entity",
-                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30053/",
@@ -2876,22 +2482,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "General Public",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30054/",
@@ -2932,22 +2523,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00030/",
-                    "name": "Martial Law",
-                    "wd_node": "wd:Q715625",
-                    "wd_label": "martial_law",
-                    "wd_description": "imposition of direct military control of a government"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30055/",
@@ -2988,22 +2564,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00031/",
-                    "name": "Foreign Interests",
-                    "wd_node": "wd:Q265939",
-                    "wd_label": "patronage",
-                    "wd_description": "support that one organization or individual bestows to another"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30056/",
@@ -3044,22 +2605,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00032/",
-                    "name": "External Military Power",
-                    "wd_node": "wd:Q1048835",
-                    "wd_label": "political_territorial_entity",
-                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30057/",
@@ -3100,22 +2646,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00026/",
-                    "name": "New Leader",
-                    "wd_node": "wd:Q2285706",
-                    "wd_label": "head_of_government",
-                    "wd_description": "chief officer of the executive branch of a government"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30058/",
@@ -3192,22 +2723,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30059/",
@@ -3250,22 +2766,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30060/",
@@ -3309,22 +2810,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00036/",
-                    "name": "Humanitarians",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                },
-                {
-                    "@id": "resin:Entities/00019/",
-                    "name": "General Public",
-                    "wd_node": "wd:Q16334295",
-                    "wd_label": "group_of_humans",
-                    "wd_description": "any set of human beings"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30061/",
@@ -3370,29 +2856,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00035/",
-                    "name": "Aid",
-                    "wd_node": "wd:Q69016679",
-                    "wd_label": "hospital equipment and supplies",
-                    "wd_description": "materials used for providing care in hospital"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30062/",
@@ -3442,22 +2906,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30064/",
@@ -3503,22 +2952,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30065/",
@@ -3559,22 +2993,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30066/",
@@ -3615,22 +3034,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30067/",
@@ -3671,22 +3075,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30068/",
@@ -3727,22 +3116,7 @@
             "modality": [],
             "importance": [],
             "likelihood": [],
-            "entities": [
-                {
-                    "@id": "resin:Entities/00034/",
-                    "name": "International Organization",
-                    "wd_node": "wd:Q245065",
-                    "wd_label": "intergovernmental_organization",
-                    "wd_description": "organization composed primarily of sovereign states"
-                },
-                {
-                    "@id": "resin:Entities/00033/",
-                    "name": "New Government",
-                    "wd_node": "wd:Q7188",
-                    "wd_label": "government",
-                    "wd_description": "system or group of people governing an organized community, often a state"
-                }
-            ],
+            "entities": [],
             "relations": [
                 {
                     "@id": "resin:Relations/30069/",
@@ -3770,6 +3144,188 @@
             ],
             "optional": false,
             "comment": "container node"
+        },
+        {
+            "@id": "Events/20000/Detain Leadership",
+            "name": "Detain Leadership",
+            "description": "previous leadership is detained or controlled by coup party",
+            "wd_node": "Q841236",
+            "wd_label": "imprisonment",
+            "wd_description": "restraint of a person's liberty by judicial or other detention",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10000/Container:xorxor"
+            ],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Occupy Govt Buildings",
+            "name": "Occupy Govt Buildings",
+            "description": "government buildings are overtaken by the coup party",
+            "wd_node": "Q275038",
+            "wd_label": "confiscation",
+            "wd_description": "legal form of seizure by a public authority",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10000/Container:xorxor"
+            ],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/Curfew",
+            "name": "Curfew",
+            "description": "movement of the public is restricted by the coup party",
+            "wd_node": "Q223625",
+            "wd_label": "curfew",
+            "wd_description": "ban on entering public areas such as streets or squares at certain times",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10000/Container:xorxor"
+            ],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/Censor Media",
+            "name": "Censor Media",
+            "description": "media or communication are controlled by the coup party",
+            "wd_node": "Q543",
+            "wd_label": "censorship",
+            "wd_description": "practice of suppressing speech or other public communication",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10000/Container:xorxor"
+            ],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20004/Deny Coup",
+            "name": "Deny Coup",
+            "description": "claim that there was no coup",
+            "wd_node": "Q100268981",
+            "wd_label": "denial",
+            "wd_description": "explicit assertion that an allegation or other claim is false",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/New Leader",
+                    "roleName": "A0_pag_denier",
+                    "entity": "resin:Entities/00026/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Announce Agenda",
+            "name": "Announce Agenda",
+            "description": "public statement of goals and values",
+            "wd_node": "Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20001/announcer",
+                    "roleName": "A1_ppt_impelled_agent",
+                    "entity": "resin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20002/goals or values",
+                    "roleName": "A0_pag_motivation",
+                    "entity": "Entities/10000/Goals or Values"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": [
+                {
+                    "@id": "Relations/30000/announces",
+                    "name": "announces",
+                    "relationSubject": "resin:Entities/00026/",
+                    "relationObject": "Entities/10000/Goals or Values",
+                    "wd_node": "Q567303",
+                    "wd_label": "announcement",
+                    "wd_description": "printed, spoken, or published statement or notice of an event or other news"
+                }
+            ]
+        },
+        {
+            "@id": "Events/20006/Announce Coup Success",
+            "name": "Announce Coup",
+            "description": "public statement of the power change",
+            "wd_node": "Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20001/announcer",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20003/Coup Detat",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "Entities/10001/Coup Detat"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": [
+                {
+                    "@id": "Relations/30001/announces",
+                    "name": "announces",
+                    "relationSubject": "resin:Entities/00026/",
+                    "relationObject": "Entities/10001/Coup Detat",
+                    "wd_node": "Q567303",
+                    "wd_label": "announcement",
+                    "wd_description": "printed, spoken, or published statement or notice of an event or other news"
+                }
+            ]
         }
     ]
 }
