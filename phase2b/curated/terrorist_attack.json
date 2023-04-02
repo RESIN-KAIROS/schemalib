@@ -3,799 +3,1571 @@
     "sdfVersion": "3.0",
     "version": "resin:terrorist_attacks/quizlet9",
     "events": [
-      {
-        "@id": "resin:Events/10000/resin:Events_terrorist_attacks",
-        "children": [
-          "resin:Events/10001/Steps_kairos:Container:1",
-          "resin:Events/10002/Steps_kairos:Container:2",
-          "resin:Events/10019/Steps_kairos:Container:19",
-          "resin:Events/10006/Steps_kairos:Container:6"
-        ],
-        "children_gate": "or",
-        "description": "",
-        "name": "Terrorist attacks",
-        "repeatable": false,
-        "wd_node": "wd:Q2223653",
-        "wd_label": "terrorist attack",
-        "wd_description": "offensive action",
-        "outlinks": [],
-        "entities": [
-          {
-            "@id": "resin:Entities/00000/TargetGroup",
-            "name": "target group",
-            "wd_label": "group of humans",
-            "wd_node": "wd:Q16334295",
-            "wd_description": "any set of human beings"
-          },
-          {
-            "@id": "resin:Entities/00001/TerroristGroup",
-            "name": "terrorist group",
-            "wd_label": "terrorist group",
-            "wd_node": "wd:Q4456236",
-            "wd_description": "group of people working together to commit acts of terrorism"
-          },
-          {
-            "@id": "resin:Entities/00002/TargetLocation",
-            "name": "target location",
-            "wd_label": "geographic location",
-            "wd_node": "wd:Q2221906",
-            "wd_description": "point or an area on the Earth's surface or elsewhere"
-          },
-          {
-            "@id": "resin:Entities/00003/CauseForTerror",
-            "name": "cause for the terrorist group",
-            "wd_label": "cause",
-            "wd_node": "wd:Q2574811",
-            "wd_description": "entity which forms causality for an event"
-          },
-          {
-            "@id": "resin:Entities/00004/PersonGeneric",
-            "name": "person",
-            "wd_label": "person",
-            "wd_node": "wd:Q215627",
-            "wd_description": "being that has certain capacities or attributes constituting personhood"
-          },
-          {
-            "@id": "resin:Entities/00005/PersonTerrorist",
-            "name": "terrorist",
-            "wd_label": "person",
-            "wd_node": "wd:Q215627",
-            "wd_description": "being that has certain capacities or attributes constituting personhood"
-          },
-          {
-            "@id": "resin:Entities/00006/BenefactorGroup",
-            "name": "benefactor group",
-            "wd_label": "group of humans",
-            "wd_node": "wd:Q16334295",
-            "wd_description": "any set of human beings"
-          },
-          {
-            "@id": "resin:Entities/00007/Weapon",
-            "name": "weapon",
-            "wd_label": "weapon",
-            "wd_node": "wd:Q728",
-            "wd_description": "tool used to inflict damage or harm"
-          },
-          {
-            "@id": "resin:Entities/00008/GeneralPopulationGroup",
-            "name": "general population",
-            "wd_label": "group of humans",
-            "wd_node": "wd:Q16334295",
-            "wd_description": "any set of human beings"
-          },
-          {
-            "@id": "resin:Entities/00009/Government",
-            "name": "government",
-            "wd_label": "government",
-            "wd_node": "wd:Q7188",
-            "wd_description": "system or group of people governing an organized community, often a state"
-          }
-        ],
-        "relations": [
-          {
-            "@id": "resin:Relations/30000/",
-            "name": "member of",
-            "relationSubject": "resin:Entities/00005/PersonTerrorist",
-            "relationObject": "resin:Entities/00001/TerroristGroup",
-            "wd_node": "wd:Q21503252",
-            "wd_description": "relation of type constraints",
-            "wd_label": "instance of"
-          }
-        ],
-        "isSchema": true
-      },
-      {
-        "@id": "resin:Events/10001/Steps_kairos:Container:1",
-        "children": [
-          "resin:Events/10007/Steps_kairos:Primitives_Events_Injustice",
-          "resin:Events/10008/Steps_kairos:Primitives_Events_Propaganda",
-          "resin:Events/10009/Steps_kairos:Primitives_Events_Awareness_Campaign",
-          "resin:Events/10010/Steps_kairos:Primitives_Events_Terrorism",
-          "resin:Events/10012/Steps_kairos:Primitives_Events_Belief"
-        ],
-        "children_gate": "or",
-        "comment": "container node",
-        "description": "Motivation",
-        "name": "Motivation",
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10002/Steps_kairos:Container:2"
-        ],
-        "isSchema": true
-      },
-      {
-        "@id": "resin:Events/10002/Steps_kairos:Container:2",
-        "children": [
-          "resin:Events/10013/Steps_kairos:Primitives_Events_Plan",
-          "resin:Events/10014/Steps_kairos:Primitives_Events_Training",
-          "resin:Events/10015/Steps_kairos:Primitives_Events_Plant_Undercover_Agents",
-          "resin:Events/10016/Steps_kairos:Primitives_Events_Purchase_Weapons",
-          "resin:Events/10017/Steps_kairos:Primitives_Events_Fundraising",
-          "resin:Events/10039/Steps_kairos:Primitives_Events_Trade_Weapons"
-        ],
-        "children_gate": "or",
-        "comment": "container node",
-        "description": "Preparation",
-        "name": "Preparation",
-        "repeatable": false,
-        "outlinks": [
-          "resin:Events/10019/Steps_kairos:Container:19"
-        ],
-        "isSchema": true
-      },
-      {
-        "@id": "resin:Events/10019/Steps_kairos:Container:19",
-        "children": [
-          "resin:Events/10022/Steps_kairos:Primitives_Events_Bombing",
-          "resin:Events/10023/Steps_kairos:Primitives_Events_Shooting",
-          "resin:Events/10037/Steps_kairos:Primitives_Events_Cyber_Attack",
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
-          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
-          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
-        ],
-        "children_gate": "or",
-        "description": "Terrorist action to injure another organism.",
-        "name": "Conduct Attack",
-        "repeatable": false,
-        "wd_node": "wd:Q1174599",
-        "wd_label": "attack",
-        "wd_description": "action to injure another organism",
-        "outlinks": [
-          "resin:Events/10006/Steps_kairos:Container:6"
-        ],
-        "isSchema": true
-      },
-      {
-        "@id": "resin:Events/10006/Steps_kairos:Container:6",
-        "children": [
-          "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
-          "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism",
-          "resin:Events/10034/Steps_kairos:Primitives_Events_Protest",
-          "resin:Events/10035/Steps_kairos:Primitives_Events_Protest"
-        ],
-        "children_gate": "or",
-        "comment": "container node",
-        "description": "Society Response",
-        "name": "Society Response",
-        "repeatable": false,
-        "outlinks": [],
-        "isSchema": true
-      },
-      {
-        "@id": "resin:Events/10007/Steps_kairos:Primitives_Events_Injustice",
-        "description": "Injustice, whether objective or perceived, towards a group or individual.",
-        "name": "Injustice",
-        "participants": [
-          {
-            "@id": "resin:Participants/20000/Steps_kairos:Primitives_Events_Injustice_Agentive_Clasher",
-            "roleName": "A0_pag_agentive_clasher",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          },
-          {
-            "@id": "resin:Participants/20001/Steps_kairos:Primitives_Events_Injustice_Entity_Clashed_With",
-            "roleName": "A1_com_entity_clashed_with",
-            "entity": "resin:Entities/00000/TargetGroup"
-          },
-          {
-            "@id": "resin:Participants/20002/Steps_kairos:Primitives_Events_Injustice_Entity_Clashed_Over",
-            "roleName": "A2_ppt_entity_clashed_over",
-            "entity": "resin:Entities/00003/CauseForTerror"
-          },
-          {
-            "@id": "resin:Participants/20003/Steps_kairos:Primitives_Events_Injustice_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q180684",
-        "wd_label": "conflict",
-        "wd_description": "friction, disagreement, or discord within a group or between different groups",
-        "outlinks": []
-      },
-      {
-        "@id": "resin:Events/10008/Steps_kairos:Primitives_Events_Propaganda",
-        "description": "Crime as propaganda to inspire people for the cause.",
-        "name": "Propaganda",
-        "participants": [
-          {
-            "@id": "resin:Participants/20004/Steps_kairos:Primitives_Events_Propaganda_Campaigner",
-            "roleName": "A0_pag_campaigner",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20005/Steps_kairos:Primitives_Events_Propaganda_Cause",
-            "roleName": "A1_ppt_cause",
-            "entity": "resin:Entities/00003/CauseForTerror"
-          },
-          {
-            "@id": "resin:Participants/20006/Steps_kairos:Primitives_Events_Propaganda_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q7281",
-        "wd_label": "propaganda",
-        "wd_description": "form of communication intended to sway the audience through presenting only one side of the argument",
-        "outlinks": [
-          "resin:Events/10012/Steps_kairos:Primitives_Events_Belief"
-        ]
-      },
-      {
-        "@id": "resin:Events/10009/Steps_kairos:Primitives_Events_Awareness_Campaign",
-        "description": "Raise awareness and receive attention from the media on the cause.",
-        "name": "Awareness Campaign",
-        "participants": [
-          {
-            "@id": "resin:Participants/20007/Steps_kairos:Primitives_Events_Awareness_Campaign_Campaigner",
-            "roleName": "A0_pag_campaigner",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          },
-          {
-            "@id": "resin:Participants/20008/Steps_kairos:Primitives_Events_Awareness_Campaign_Cause",
-            "roleName": "A1_ppt_cause",
-            "entity": "resin:Entities/00003/CauseForTerror"
-          },
-          {
-            "@id": "resin:Participants/20009/Steps_kairos:Primitives_Events_Awareness_Campaign_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q99748589",
-        "wd_label": "awareness campaign",
-        "wd_description": "media campaign to raise awareness in the public for an issue",
-        "outlinks": []
-      },
-      {
-        "@id": "resin:Events/10010/Steps_kairos:Primitives_Events_Terrorism",
-        "description": "Incite fear in the general population.",
-        "name": "Terrorism",
-        "participants": [
-          {
-            "@id": "resin:Participants/20010/Steps_kairos:Primitives_Events_Terrorism_Intentional_Agent_of_Scaring",
-            "roleName": "A0_pag_intentional_agent_of_scaring",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20011/Steps_kairos:Primitives_Events_Terrorism_Scared_Entity",
-            "roleName": "A1_ppt_scared_entity",
-            "entity": "resin:Entities/00000/TargetGroup"
-          },
-          {
-            "@id": "resin:Participants/20012/Steps_kairos:Primitives_Events_Terrorism_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q7283",
-        "wd_label": "terrorism",
-        "wd_description": "use of violence as a form of political, economic and religious coercion",
-        "outlinks": []
-      },
-      {
-        "@id": "resin:Events/10011/Steps_kairos:Primitives_Events_Recruitment",
-        "description": "Inspire people to join the cause.",
-        "name": "Recruit Agents",
-        "participants": [
-          {
-            "@id": "resin:Participants/20013/Steps_kairos:Primitives_Events_Recruitment_Employer",
-            "roleName": "A0_pag_agent_employer",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20014/Steps_kairos:Primitives_Events_Recruitment_Employee",
-            "roleName": "A1_ppt_theme_new_employee",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q899277",
-        "wd_label": "recruitment",
-        "wd_description": "process of attracting, selecting and appointing candidates to a job or other organization",
-        "outlinks": [
-          "resin:Events/10014/Steps_kairos:Primitives_Events_Training"
-        ]
-      },
-      {
-        "@id": "resin:Events/10012/Steps_kairos:Primitives_Events_Belief",
-        "description": "Political beliefs that something about the world is inherently wrong.",
-        "name": "Political Belief",
-        "participants": [
-          {
-            "@id": "resin:Participants/20015/Steps_kairos:Primitives_Events_Belief_Speaker",
-            "roleName": "A0_pag_speaker",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20081/Steps_kairos:Primitives_Events_Belief_Listener",
-            "roleName": "A2_gol_listener",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q34394",
-        "wd_label": "belief",
-        "wd_description": "psychological state in which an individual holds a proposition or premise to be true",
-        "outlinks": [
-          "resin:Events/10009/Steps_kairos:Primitives_Events_Awareness_Campaign"
-        ]
-      },
-      {
-        "@id": "resin:Events/10013/Steps_kairos:Primitives_Events_Plan",
-        "description": "Plan the specifics of attack.",
-        "name": "Plan Attack",
-        "participants": [
-          {
-            "@id": "resin:Participants/20016/Steps_kairos:Primitives_Events_Plan_Planner",
-            "roleName": "A0",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q1371819",
-        "wd_label": "plan",
-        "wd_description": "outline of a strategy for achievement of an objective",
-        "outlinks": [
-          "resin:Events/10017/Steps_kairos:Primitives_Events_Fundraising",
-          "resin:Events/10039/Steps_kairos:Primitives_Events_Trade_Weapons"
-        ]
-      },
-      {
-        "@id": "resin:Events/10014/Steps_kairos:Primitives_Events_Training",
-        "description": "Train agents in the attack.",
-        "name": "Train Agents",
-        "participants": [
-          {
-            "@id": "resin:Participants/20017/Steps_kairos:Primitives_Events_Training_Trainer",
-            "roleName": "A0_pag_trainer",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20082/Steps_kairos:Primitives_Events_Training_Skill",
-            "roleName": "A1_prd_skill",
-            "entity": "resin:Entities/00007/Weapon"
-          },
-          {
-            "@id": "resin:Participants/20018/Steps_kairos:Primitives_Events_Training_Trainee",
-            "roleName": "A2_ppt_trainee",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q918385",
-        "wd_label": "training",
-        "wd_description": "acquisition of knowledge, skills, and competencies as a result of teaching",
-        "outlinks": [
-          "resin:Events/10015/Steps_kairos:Primitives_Events_Plant_Undercover_Agents"
-        ]
-      },
-      {
-        "@id": "resin:Events/10015/Steps_kairos:Primitives_Events_Plant_Undercover_Agents",
-        "description": "Plant agents in the target group in anticipation of attack and to obtain information.",
-        "name": "Plant Agents",
-        "participants": [
-          {
-            "@id": "resin:Participants/20019/Steps_kairos:Primitives_Events_Plant_Undercover_Agents_Secret_Agent",
-            "roleName": "A0_pag_agent_secret_agent",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          },
-          {
-            "@id": "resin:Participants/20020/Steps_kairos:Primitives_Events_Plant_Undercover_Agents_Entity_Spied",
-            "roleName": "A1_ppt_stimulus_entity_spied",
-            "entity": "resin:Entities/00000/TargetGroup"
-          },
-          {
-            "@id": "resin:Participants/20021/Steps_kairos:Primitives_Events_Plant_Undercover_Agents_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q165950",
-        "wd_label": "espionage",
-        "wd_description": "clandestine acquisition of confidential information",
-        "outlinks": []
-      },
-      {
-        "@id": "resin:Events/10016/Steps_kairos:Primitives_Events_Purchase_Weapons",
-        "description": "Obtaining supplies and weapons for the crime.",
-        "name": "Purchase Supplies",
-        "participants": [
-          {
-            "@id": "resin:Participants/20022/Steps_kairos:Primitives_Events_Purchase_Weapons_Purchaser",
-            "roleName": "A0_pag_purchaser",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20023/Steps_kairos:Primitives_Events_Purchase_Weapons_Thing_Purchased",
-            "roleName": "A1_ppt_thing_purchased",
-            "entity": "resin:Entities/00007/Weapon"
-          },
-          {
-            "@id": "resin:Participants/20024/Steps_kairos:Primitives_Events_Purchase_Weapons_Seller",
-            "roleName": "A2_dir_seller",
-            "entity": "resin:Entities/00006/BenefactorGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q1369832",
-        "wd_label": "purchasing",
-        "wd_description": "acquisition of goods or services by fiduciary exchange",
-        "outlinks": [
-          "resin:Events/10014/Steps_kairos:Primitives_Events_Training"
-        ]
-      },
-      {
-        "@id": "resin:Events/10017/Steps_kairos:Primitives_Events_Fundraising",
-        "description": "process of gathering voluntary contributions of money or other resources.",
-        "name": "Fundraising",
-        "participants": [
-          {
-            "@id": "resin:Participants/20025/Steps_kairos:Primitives_Events_Donation_Giver",
-            "roleName": "A0_pag_raiser_of_funds",
-            "entity": "resin:Entities/00008/GeneralPopulationGroup"
-          },
-          {
-            "@id": "resin:Participants/20026/Steps_kairos:Primitives_Events_Donation_Entity_Given_To",
-            "roleName": "A2_gol_beneficiary",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q1161355",
-        "wd_label": "fundraising",
-        "wd_description": "process of gathering voluntary contributions of money or other resources.",
-        "outlinks": [
-          "resin:Events/10011/Steps_kairos:Primitives_Events_Recruitment",
-          "resin:Events/10016/Steps_kairos:Primitives_Events_Purchase_Weapons"
-        ]
-      },
-      {
-        "@id": "resin:Events/10022/Steps_kairos:Primitives_Events_Bombing",
-        "description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
-        "name": "Bombing",
-        "participants": [
-          {
-            "@id": "resin:Participants/20037/Steps_kairos:Primitives_Events_Bombing_Attacker",
-            "roleName": "A0_pag_agent_attacker",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          },
-          {
-            "@id": "resin:Participants/20038/Steps_kairos:Primitives_Events_Bombing_Entity_Bombed",
-            "roleName": "A1_ppt_patient_entity_bombed",
-            "entity": "resin:Entities/00002/TargetLocation"
-          },
-          {
-            "@id": "resin:Participants/20039/Steps_kairos:Primitives_Events_Bombing_Manner",
-            "roleName": "AM_mnr__manner",
-            "entity": "resin:Entities/00007/Weapon"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q891854",
-        "wd_label": "bomb attack",
-        "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
-        "outlinks": [
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
-          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
-          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
-        ]
-      },
-      {
-        "@id": "resin:Events/10023/Steps_kairos:Primitives_Events_Shooting",
-        "description": "act or process of firing firearms or other projectile weapons",
-        "name": "Shooting",
-        "participants": [
-          {
-            "@id": "resin:Participants/20040/Steps_kairos:Primitives_Events_Shooting_Shooter",
-            "roleName": "A0_pag_agent_shooter",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          },
-          {
-            "@id": "resin:Participants/20041/Steps_kairos:Primitives_Events_Shooting_Corpse",
-            "roleName": "A1_ppt_patient_corpse",
-            "entity": "resin:Entities/00008/GeneralPopulationGroup"
-          },
-          {
-            "@id": "resin:Participants/20042/Steps_kairos:Primitives_Events_Shooting_Gun",
-            "roleName": "A2_mnr_instrument_gun",
-            "entity": "resin:Entities/00007/Weapon"
-          },
-          {
-            "@id": "resin:Participants/20043/Steps_kairos:Primitives_Events_Shooting_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q2252077",
-        "wd_label": "shooting",
-        "wd_description": "act or process of firing firearms or other projectile weapons",
-        "outlinks": [
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
-          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
-          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
-        ]
-      },
-      {
-        "@id": "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
-        "description": "interaction among people in which they create, share, and/or exchange information and ideas in virtual communities and networks",
-        "name": "Social Media",
-        "participants": [
-          {
-            "@id": "resin:Participants/20044/Steps_kairos:Primitives_Events_Social_Media_Reporter",
-            "roleName": "A0_pag_Reporter",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          },
-          {
-            "@id": "resin:Participants/20045/Steps_kairos:Primitives_Events_Social_Media_Thing_Reported",
-            "roleName": "A1_ppt_thing_reported",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20046/Steps_kairos:Primitives_Events_Social_Media_Entity_Reported_To",
-            "roleName": "A2_gol_entity_reported_to",
-            "entity": "resin:Entities/00008/GeneralPopulationGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q202833",
-        "wd_label": "social media",
-        "wd_description": "virtual internet communities",
-        "outlinks": [
-          "resin:Events/10035/Steps_kairos:Primitives_Events_Protest"
-        ]
-      },
-      {
-        "@id": "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism",
-        "description": "investigation and reporting of events, issues and trends to a broad audience",
-        "name": "Journalism",
-        "participants": [
-          {
-            "@id": "resin:Participants/20047/Steps_kairos:Primitives_Events_Journalism_Reporter",
-            "roleName": "A0_pag_Reporter",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          },
-          {
-            "@id": "resin:Participants/20048/Steps_kairos:Primitives_Events_Journalism_Thing_Reported",
-            "roleName": "A1_ppt_thing_reported",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20049/Steps_kairos:Primitives_Events_Journalism_Entity_Reported_To",
-            "roleName": "A2_gol_entity_reported_to",
-            "entity": "resin:Entities/00008/GeneralPopulationGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q11030",
-        "wd_label": "journalism",
-        "wd_description": "investigation and reporting of events, issues and trends to a broad audience",
-        "outlinks": [
-          "resin:Events/10035/Steps_kairos:Primitives_Events_Protest"
-        ]
-      },
-      {
-        "@id": "resin:Events/10034/Steps_kairos:Primitives_Events_Protest",
-        "description": "collective action by people to protest the terrorist attack and injustice",
-        "name": "Protest",
-        "participants": [
-          {
-            "@id": "resin:Participants/20066/kairos:Primitives_Events_Demonstration_Protester",
-            "roleName": "A0_pag_agent_protester",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          },
-          {
-            "@id": "resin:Participants/20067/kairos:Primitives_Events_Demonstration",
-            "roleName": "A1_ppt_theme_objectionable_thing",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20068/kairos:Primitives_Events_Demonstration_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q175331",
-        "wd_label": "demonstration",
-        "wd_description": "collective action by people in favor of a cause",
-        "outlinks": [
-          "resin:Events/10024/Steps_kairos:Primitives_Events_Social_Media",
-          "resin:Events/10025/Steps_kairos:Primitives_Events_Journalism"
-        ]
-      },
-      {
-        "@id": "resin:Events/10035/Steps_kairos:Primitives_Events_Protest",
-        "description": "collective action by people to protest the terrorist attack and injustice",
-        "name": "Protest Elsewhere",
-        "participants": [
-          {
-            "@id": "resin:Participants/20077/kairos:Primitives_Events_Demonstration_Protester",
-            "roleName": "A0_pag_agent_protester",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          },
-          {
-            "@id": "resin:Participants/20078/kairos:Primitives_Events_Demonstration",
-            "roleName": "A1_ppt_theme_objectionable_thing",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20083/kairos:Primitives_Events_Demonstration_Location",
-            "roleName": "AM_loc",
-            "entity": "resin:Entities/00002/TargetLocation"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q175331",
-        "wd_label": "demonstration",
-        "wd_description": "collective action by people in favor of a cause",
-        "outlinks": []
-      },
-      {
-        "@id": "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
-        "description": "claim responsibility",
-        "name": "Claim Responsibility",
-        "participants": [
-          {
-            "@id": "resin:Participants/20084/kairos:Primitives_Events_Responsible_Party",
-            "roleName": "A0",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20085/kairos:Primitives_Events_Audience",
-            "roleName": "A1",
-            "entity": "resin:Entities/00008/GeneralPopulationGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": false,
-        "wd_node": "wd:Q16189212",
-        "wd_label": "claim_responsibility",
-        "wd_description": "claim responsibility",
-        "outlinks": [
-        ]
-      },
-      {
-        "@id": "resin:Events/10037/Steps_kairos:Primitives_Events_Cyber_Attack",
-        "description": "use of technological force within cyberspace",
-        "name": "Cyber Attack",
-        "participants": [
-          {
-            "@id": "resin:Participants/20079/kairos:Primitives_Events_Attacker",
-            "roleName": "A0_pag",
-            "entity": "resin:Entities/00005/PersonTerrorist"
-          },
-          {
-            "@id": "resin:Participants/20080/kairos:Primitives_Events_Victim",
-            "roleName": "A1_ppt_entity_attacked",
-            "entity": "resin:Entities/00008/GeneralPopulationGroup"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q849340",
-        "wd_label": "cyberwarfare",
-        "wd_description": "use of technological force within cyberspace",
-        "outlinks": [
-          "resin:Events/10036/Steps_kairos:Primitives_Events_Claim_Responsibility",
-          "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
-          "resin:Events/10039/Steps_kairos:Primitives_Events_Injury"
-        ]
-      },      
-      {
-        "@id": "resin:Events/10038/Steps_kairos:Primitives_Events_Death",
-        "description": "permanent cessation of vital functions",
-        "name": "Death",
-        "participants": [
-          {
-            "@id": "resin:Participants/20086/kairos:Primitives_Events_Victim",
-            "roleName": "A1_ppt",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q4",
-        "wd_label": "death",
-        "wd_description": "permanent cessation of vital functions",
-        "outlinks": [
-        ]
-      },
-      {
-        "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Injury",
-        "description": "physiological wound caused by an external source",
-        "name": "Injury",
-        "participants": [
-          {
-            "@id": "resin:Participants/20087/kairos:Primitives_Events_Victim",
-            "roleName": "A1_ppt",
-            "entity": "resin:Entities/00004/PersonGeneric"
-          },
-          {
-            "@id": "resin:Participants/20088/kairos:Primitives_Events_Stimulus",
-            "roleName": "A0_pag",
-            "entity": "resin:Entities/00007/Weapon"
-          }
-        ],
-        "repeatable": false,
-        "optional": true,
-        "wd_node": "wd:Q193078",
-        "wd_label": "injury",
-        "wd_description": "physiological wound caused by an external source",
-        "outlinks": [
-        ]
-      },
-      {
-        "@id": "resin:Events/10039/Steps_kairos:Primitives_Events_Trade_Weapons",
-        "description": "immediate & direct reciprocal exchange of goods or services without use of money",
-        "name": "Exchange Goods",
-        "participants": [
-          {
-            "@id": "resin:Participants/20090/Steps_kairos:Primitives_Events_Purchase_Weapons_Purchaser",
-            "roleName": "A0_pag_agent",
-            "entity": "resin:Entities/00001/TerroristGroup"
-          },
-          {
-            "@id": "resin:Participants/20091/Steps_kairos:Primitives_Events_Purchase_Weapons_Thing_Purchased",
-            "roleName": "A1_ppt_thing_being_traded",
-            "entity": "resin:Entities/00007/Weapon"
-          },
-          {
-            "@id": "resin:Participants/20092/Steps_kairos:Primitives_Events_Purchase_Weapons_Seller",
-            "roleName": "A2_com_other_exchanger",
-            "entity": "resin:Entities/00006/BenefactorGroup"
-          }
-        ],
-        "repeatable": true,
-        "optional": true,
-        "wd_node": "wd:Q484830",
-        "wd_label": "barter",
-        "wd_description": "immediate & direct reciprocal exchange of goods or services without use of money",
-        "outlinks": [
-          "resin:Events/10014/Steps_kairos:Primitives_Events_Training"
-        ]
-      }
+        {
+            "@id": "resin:Events/20000/terrorist_attack",
+            "name": "Terrorist Attack",
+            "description": "terrorist attack",
+            "wd_node": "wd:Q2223653",
+            "wd_label": "terrorist_attack",
+            "wd_description": "offensive action",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/20001/Radicalization",
+                "Events/20001/Planning_Preparation",
+                "Events/20002/Execute Attack",
+                "Events/20003/Society Response"
+            ],
+            "modality": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/00000/TargetGroup",
+                    "name": "target group",
+                    "wd_label": "group of humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00001/TerroristGroup",
+                    "name": "terrorist group",
+                    "wd_label": "terrorist group",
+                    "wd_node": "wd:Q4456236",
+                    "wd_description": "group of people working together to commit acts of terrorism"
+                },
+                {
+                    "@id": "resin:Entities/00002/TargetLocation",
+                    "name": "target location",
+                    "wd_label": "geographic location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/00003/CauseForTerror",
+                    "name": "cause for the terrorist group",
+                    "wd_label": "cause",
+                    "wd_node": "wd:Q2574811",
+                    "wd_description": "entity which forms causality for an event"
+                },
+                {
+                    "@id": "resin:Entities/00004/PersonGeneric",
+                    "name": "person",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00005/PersonTerrorist",
+                    "name": "terrorist",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/00006/BenefactorGroup",
+                    "name": "benefactor group",
+                    "wd_label": "group of humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00007/Weapon",
+                    "name": "weapon",
+                    "wd_label": "weapon",
+                    "wd_node": "wd:Q728",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/00008/GeneralPopulationGroup",
+                    "name": "general population",
+                    "wd_label": "group of humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/00009/Government",
+                    "name": "government",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20001/Radicalization",
+            "name": "Radicalization",
+            "description": "Radicalization of views",
+            "wd_node": "wd:Q3416483",
+            "wd_label": "radicalization",
+            "wd_description": "social process by which people arrive at extreme views",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "Events/20001/Planning_Preparation"
+            ],
+            "participants": [],
+            "children": [
+                "Events/20004/Exposure",
+                "Events/20005/Membership",
+                "Events/20006/Indoctrination",
+                "Events/20007/Travel",
+                "Events/20008/Express Sentiment"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": "1",
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20001/Planning_Preparation",
+            "name": "Planning & Preparation",
+            "description": "planning and preparation phase of the terrorist attack",
+            "wd_node": "wd:Q19833559",
+            "wd_label": "preparation",
+            "wd_description": "activity of achieving readiness for some event or activity",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "Events/20002/Execute Attack"
+            ],
+            "participants": [],
+            "children": [
+                "Events/20009/Target Selection",
+                "Events/20010/Training",
+                "Events/20011/Acquisition",
+                "Events/20012/Communication",
+                "Events/20013/Assembly"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20002/Execute Attack",
+            "name": "Execute Attack",
+            "description": "terrorist attack chapter event",
+            "wd_node": "wd:Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "Events/20003/Society Response"
+            ],
+            "participants": [],
+            "children": [
+                "Events/20017/Transportation",
+                "Events/20018/Issue Threat",
+                "Events/20019/Emplacement",
+                "Events/20020/Shooting",
+                "Events/20021/Detonation",
+                "Events/20022/Broadcast",
+                "Events/20023/Injury",
+                "Events/20024/Death"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20003/Society Response",
+            "name": "Society Response",
+            "description": "society responds to the terrorist attack",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/20025/Emergency Declared",
+                "Events/20026/Crowd Control",
+                "Events/20027/Manhunt",
+                "Events/20028/Social Media Response",
+                "Events/20029/Journalism",
+                "Events/20030/Protest",
+                "Events/20000/Medical Evacuation"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20004/Exposure",
+            "name": "Access Extremist Ideology",
+            "description": "accessing extremist social networks, content, or lectures",
+            "wd_node": "wd:Q105994608",
+            "wd_label": "inspiration",
+            "wd_description": "earnest, unexplained perception of some ecstatic influence or presence, generally accompanied by the burning desire to impart to others the knowledge thence revealed",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20005/Membership"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20000/A0_cau_causer_of_inspiration",
+                    "roleName": "A0_cau_causer_of_inspiration",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20001/A1_ppt_person",
+                    "roleName": "A1_ppt_person",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Membership",
+            "name": "Join Organization",
+            "description": "acquire membership to an organization",
+            "wd_node": "wd:Q7091744",
+            "wd_label": "onboarding",
+            "wd_description": "mechanism through which new employees acquire the knowledge, skills, and behaviors necessary to become effective organizational members",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20006/Indoctrination"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20002/A0_pag_Agent",
+                    "roleName": "A0_pag_Agent",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20003/A1_ppt_Entity_inducted",
+                    "roleName": "A1_ppt_Entity_inducted",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20004/A2_gol_Inducted_into_what",
+                    "roleName": "A2_gol_Inducted_into_what",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20006/Indoctrination",
+            "name": "Indoctrination",
+            "description": "religious or political indoctrination",
+            "wd_node": "wd:Q375159",
+            "wd_label": "indoctrination",
+            "wd_description": "process of forcibly inculcating ideas, attitudes, cognitive strategies or a professional methodology by coercion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20008/Express Sentiment"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20007/A0_pag_brainwasher",
+                    "roleName": "A0_pag_brainwasher",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20001/A1_gol_victim",
+                    "roleName": "A1_gol_victim",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20007/Travel",
+            "name": "Travel",
+            "description": "increased travel, especially to areas known for terrorist training",
+            "wd_node": "travel",
+            "wd_label": "wd:Q61509",
+            "wd_description": "movement of people between geographical locations",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20008/A0_pag_traveler",
+                    "roleName": "A0_pag_traveler",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20002/A1_adj_type/purpose_of_trip",
+                    "roleName": "A1_adj_type/purpose_of_trip",
+                    "entity": "resin:Entities/00003/CauseForTerror"
+                },
+                {
+                    "@id": "Participants/20003/A2_gol_destination/location",
+                    "roleName": "A2_gol_destination/location",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20008/Express Sentiment",
+            "name": "Express Sentiment",
+            "description": "new sentiment is expressed on social media or a public space",
+            "wd_node": "wd:Q2509280",
+            "wd_label": "advocacy",
+            "wd_description": "political process by an individual or group which aims to influence public-policy and resource allocation decisions",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/A0_pag_advocate",
+                    "roleName": "A0_pag_advocate",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20005/A2_gol_recipient_of_advice",
+                    "roleName": "A2_gol_recipient_of_advice",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20009/Target Selection",
+            "name": "Target Selection",
+            "description": "target is selected, researched, and surveyed",
+            "wd_node": "wd:Q7685924",
+            "wd_label": "targeting",
+            "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/20014/Target Research",
+                "Events/20015/Scouting",
+                "Events/20016/Plan Transportation"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20010/Training",
+            "name": "Training",
+            "description": "weapons and combat training leading up to the attack",
+            "wd_node": "wd:Q918385",
+            "wd_label": "training",
+            "wd_description": "acquisition of knowledge, skills, and competencies as a result of teaching",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/20000/Combat Training",
+                "Events/20001/Dry Run Attack",
+                "Events/20002/Visit Shooting Range",
+                "Events/20003/Weapons Training"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20011/Acquisition",
+            "name": "Acquisition",
+            "description": "supplies and weapons are acuired",
+            "wd_node": "wd:Q3604747",
+            "wd_label": "acquisition",
+            "wd_description": "gaining posession of something, for example the acquisition of a company",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "Events/20013/Assembly"
+            ],
+            "participants": [],
+            "children": [
+                "Events/20004/Theft",
+                "Events/20005/Wire Transfer",
+                "Events/20006/Purchase Supplies"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20012/Communication",
+            "name": "Communication",
+            "description": "organization of a group is orchestrated",
+            "wd_node": "wd:Q11024",
+            "wd_label": "communication",
+            "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/20010/Group Forms",
+                "Events/20011/Phone Communication",
+                "Events/20012/Electronic Communication",
+                "Events/20013/In-person Communication"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20013/Assembly",
+            "name": "Assembly",
+            "description": "components of the explosives are assembled",
+            "wd_node": "wd:Q3625549",
+            "wd_label": "assembly",
+            "wd_description": "the act of combining components in manufacturing",
+            "isSchema": true,
+            "repeatable": true,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/20007/Assemble Explosive",
+                "Events/20008/Assemble Detonator",
+                "Events/20009/Concealment"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/20014/Target Research",
+            "name": "Target Research",
+            "description": "information is gathered",
+            "wd_node": "wd:Q42240",
+            "wd_label": "research",
+            "wd_description": "systematic study undertaken to increase knowledge",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20015/Scouting"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20006/A0_pag_agent_student",
+                    "roleName": "A0_pag_agent_student",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20007/A1_ppt_theme_subject",
+                    "roleName": "A1_ppt_theme_subject",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20015/Scouting",
+            "name": "Surveillance",
+            "description": "potential target location is scouted in planning efforts",
+            "wd_node": "wd:Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20016/Plan Transportation"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20008/A0_pag_observer",
+                    "roleName": "A0_pag_observer",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20009/A1_loc_thing_looked_at",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20016/Plan Transportation",
+            "name": "Plan Transportation",
+            "description": "logistics of transportation are determined depending on environment",
+            "wd_node": "wd:Q309100",
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20010/A0_pag_planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20011/A2_cau_grounds_for_planning",
+                    "roleName": "A2_cau_grounds_for_planning",
+                    "entity": "resin:Entities/00003/CauseForTerror"
+                },
+                {
+                    "@id": "Participants/20012/A3_gol_beneficiary",
+                    "roleName": "A3_gol_beneficiary",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20017/Transportation",
+            "name": "Transportation",
+            "description": "Persons and weapons are transported to site of attack",
+            "wd_node": "wd:Q12162227",
+            "wd_label": "transportation",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20019/Emplacement",
+                "Events/20020/Shooting"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20045/A0_pag_transporter",
+                    "roleName": "A0_pag_transporter",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20046/A1_ppt_thing_transported",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20047/A1_ppt_thing_transported2",
+                    "roleName": "A1_ppt_thing_transported2",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20048/A3_gol_destination",
+                    "roleName": "A3_gol_destination",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20018/Issue Threat",
+            "name": "Issue Threat",
+            "description": "threats are broadcasted from the terrorist(s)",
+            "wd_node": "wd:Q98463540",
+            "wd_label": "threat",
+            "wd_description": "condition that is appraised as a danger to one's self or well-being or to a group",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20047/A0_pag_agent",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20048/A1_ppt_threat",
+                    "roleName": "A1_ppt_threat",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20049/A2_gol_'benefactive'",
+                    "roleName": "A2_gol_'benefactive'",
+                    "entity": "resin:Entities/00006/BenefactorGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20019/Emplacement",
+            "name": "Emplacement",
+            "description": "explosives are strategically placed at the site of attack",
+            "wd_node": "wd:Q55237917",
+            "wd_label": "installation",
+            "wd_description": "process of installing materials or components into a system, such as a building",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20021/Detonation"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20050/A0_pag_putter",
+                    "roleName": "A0_pag_putter",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20051/A1_ppt_thing_put",
+                    "roleName": "A1_ppt_thing_put",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20052/A2_loc_installed_where_or_as",
+                    "roleName": "A2_loc_installed_where_or_as",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20020/Shooting",
+            "name": "Shooting",
+            "description": "a shooting terrorist attack on a targeted group",
+            "wd_node": "wd:Q21480300",
+            "wd_label": "mass_shooting",
+            "wd_description": "incident involving multiple victims of gun violence and typically where some victims are killed",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [
+                "Events/20022/Broadcast",
+                "Events/20023/Injury",
+                "Events/20024/Death"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20053/A0_pag_killer",
+                    "roleName": "A0_pag_killer",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20054/A1_ppt_corpse",
+                    "roleName": "A1_ppt_corpse",
+                    "entity": "resin:Entities/00000/TargetGroup"
+                },
+                {
+                    "@id": "Participants/20055/A2_mnr_instrument",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20058/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20021/Detonation",
+            "name": "Detonation",
+            "description": "explosive materials undergo combustion",
+            "wd_node": "wd:Q786054",
+            "wd_label": "detonation",
+            "wd_description": "supersonic combustion of an explosive material",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [
+                "Events/20022/Broadcast",
+                "Events/20023/Injury",
+                "Events/20024/Death"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20056/A0_pag_bomber",
+                    "roleName": "A0_pag_bomber",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20057/A1_ppt_bomb",
+                    "roleName": "A1_ppt_bomb",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20059/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20022/Broadcast",
+            "name": "Broadcast of Actions",
+            "description": "responsibility is claimed by the terrorist(s)",
+            "wd_node": "wd:Q16189212",
+            "wd_label": "claim_responsibility",
+            "wd_description": "none",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20060/A0",
+                    "roleName": "A0",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20061/resin:Entities/A1",
+                    "roleName": "A1",
+                    "entity": "resin:Entities/00000/TargetGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20023/Injury",
+            "name": "Injury",
+            "description": "victims of the attack are wounded",
+            "wd_node": "wd:Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20062/A1_ppt_experiencer_injured_party",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/00000/TargetGroup"
+                },
+                {
+                    "@id": "Participants/20063/A0_pag_stimulus_stimulus_of_injury",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20064/A2_mnr__instrument",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20065/AM_loc__location",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20024/Death",
+            "name": "Death",
+            "description": "victims of the attack are killed violently",
+            "wd_node": "wd:Q74948922",
+            "wd_label": "violent_death",
+            "wd_description": "death caused by violence",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20066/A0_pag_agent_killer",
+                    "roleName": "A0_pag_agent_killer",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20067/A1_ppt_patient_corpse",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/00000/TargetGroup"
+                },
+                {
+                    "@id": "Participants/20068/A2_mnr_instrument_instrument",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20069/AM_loc__location",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20025/Emergency Declared",
+            "name": "Emergency Declared",
+            "description": "A state of emergency effects the immediate area of attack",
+            "wd_node": "wd:Q5070802",
+            "wd_label": "emergency",
+            "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20026/Crowd Control",
+                "Events/20000/Medical Evacuation"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20073/A1_ppt_nature_of_the_crisis",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": "resin:Entities/00009/Government"
+                },
+                {
+                    "@id": "Participants/20074/A2_gol_experiencer_of_crisis",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20075/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20026/Crowd Control",
+            "name": "Crowd Control",
+            "description": "general public is moved away from the attack site",
+            "wd_node": "wd:Q606332",
+            "wd_label": "emergency_evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20076/A0_pag_agent_transporter",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/00009/Government"
+                },
+                {
+                    "@id": "Participants/20077/A1_ppt_thing_transported",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20078/A2_dir_initial_location_source",
+                    "roleName": "A2_dir_initial_location_source",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20027/Manhunt",
+            "name": "Manhunt",
+            "description": "terrorist(s) are searched for",
+            "wd_node": "wd:Q989278",
+            "wd_label": "manhunt",
+            "wd_description": "extensive and thorough search for a wanted fugitive",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20079/A0_pag_searcher",
+                    "roleName": "A0_pag_searcher",
+                    "entity": "resin:Entities/00009/Government"
+                },
+                {
+                    "@id": "Participants/20080/A1_loc_Area_searched",
+                    "roleName": "A1_loc_Area_searched",
+                    "entity": "esin:Entities/00002/TargetLocation"
+                },
+                {
+                    "@id": "Participants/20081/A2_ppt_searched_for",
+                    "roleName": "A2_ppt_searched_for",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20028/Social Media Response",
+            "name": "Social Media Response",
+            "description": "social media spreads information rapidly",
+            "wd_node": "wd:Q853710",
+            "wd_label": "mass_communication",
+            "wd_description": "mass media information exchange",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20030/Protest"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20082/A0_pag_first",
+                    "roleName": "A0_pag_first",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20083/A2_com_other_communicator",
+                    "roleName": "A2_com_other_communicator",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20029/Journalism",
+            "name": "Journalism",
+            "description": "media outlets cover news of the terrorist attack",
+            "wd_node": "wd:Q1962634",
+            "wd_label": "news_broadcasting",
+            "wd_description": "news published over radio or television",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "Events/20030/Protest"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20084/A0_pag_transmitter",
+                    "roleName": "A0_pag_transmitter",
+                    "entity": "resin:Entities/00004/PersonGeneric"
+                },
+                {
+                    "@id": "Participants/20085/A2_gol_audience",
+                    "roleName": "A2_gol_audience",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20086/A3_dir_source",
+                    "roleName": "A3_dir_source",
+                    "entity": "resin:Entities/00009/Government"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20030/Protest",
+            "name": "Protest",
+            "description": "the general public is in a state of civil disorder",
+            "wd_node": "wd:Q686984",
+            "wd_label": "civil_disorder",
+            "wd_description": "forms of unrest arising from a mass act of civil disobedience in which the participants become hostile toward authority, and authorities incur difficulties in maintaining public safety and order, over the disorderly crowd",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20087/A0_pag_protester",
+                    "roleName": "A0_pag_protester",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20088/A1_ppt_objectionable_thing",
+                    "roleName": "A1_ppt_objectionable_thing",
+                    "entity": "resin:Entities/00003/CauseForTerror"
+                },
+                {
+                    "@id": "Participants/20089/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Combat Training",
+            "name": "Combat Training",
+            "description": "increase in physical strength leading up to attack",
+            "wd_node": "wd:Q4813769",
+            "wd_label": "athletic_training",
+            "wd_description": "none",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20013/A0_pag_trainer",
+                    "roleName": "A0_pag_trainer",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20014/A2_ppt_trainee",
+                    "roleName": "A2_ppt_trainee",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Dry Run Attack",
+            "name": "Dry Run Attack",
+            "description": "attack is rehearsed to identify weaknesses",
+            "wd_node": "wd:Q10354783",
+            "wd_label": "practice",
+            "wd_description": "manifesting theory into physical action",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20015/A0_pag_practicer",
+                    "roleName": "A0_pag_practicer",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20016/A2_mnr_instrument",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/00007/Weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/Visit Shooting Range",
+            "name": "Visit Shooting Range",
+            "description": "precision is practiced at a shooting range",
+            "wd_node": "wd:Q206989",
+            "wd_label": "shooting_sport",
+            "wd_description": "sports involving firearms used to hit targets",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/20003/Weapons Training"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20017/A0_pag_shooter",
+                    "roleName": "A0_pag_shooter",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20018/A1_ppt_projectile",
+                    "roleName": "A1_ppt_projectile",
+                    "entity": "resin:Entities/00007/Weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/Weapons Training",
+            "name": "Weapons Training",
+            "description": "knowledge and experience of handling weapons is increased",
+            "wd_node": "wd:Q918385",
+            "wd_label": "training",
+            "wd_description": "acquisition of knowledge, skills, and competencies as a result of teaching",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20019/A0_pag_trainer",
+                    "roleName": "A0_pag_trainer",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20020/A1_prd_skill",
+                    "roleName": "A1_prd_skill",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20021/A2_ppt_trainee",
+                    "roleName": "A2_ppt_trainee",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20004/Theft",
+            "name": "Theft",
+            "description": "supplies or weapons are stolen",
+            "wd_node": "wd:Q2727213",
+            "wd_label": "theft",
+            "wd_description": "act of taking another's property without permission or consent",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20022/A0_pag_agent_thief",
+                    "roleName": "A0_pag_agent_thief",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20023/A2_dir_source_strolen_from",
+                    "roleName": "A2_dir_source_strolen_from",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                },
+                {
+                    "@id": "Participants/20024/A1_ppt_theme_thing_stolen",
+                    "roleName": "A1_ppt_theme_thing_stolen",
+                    "entity": "resin:Entities/00007/Weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Wire Transfer",
+            "name": "Wire Transfer",
+            "description": "funds are transferred for the attack",
+            "wd_node": "wd:Q13377609",
+            "wd_label": "money_transfer",
+            "wd_description": "the moving of wealth from one place or owner to another",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/20006/Purchase Supplies"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20025/A0_pag_sender",
+                    "roleName": "A0_pag_sender",
+                    "entity": "resin:Entities/00006/BenefactorGroup"
+                },
+                {
+                    "@id": "Participants/20026/A2_gol_sent-to",
+                    "roleName": "A2_gol_sent-to",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20006/Purchase Supplies",
+            "name": "Purchase Supplies",
+            "description": "supplies and weapons are purchased legally or illegally",
+            "wd_node": "wd:Q1369832",
+            "wd_label": "purchasing",
+            "wd_description": "acquisition of goods or services by fiduciary exchange",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20027/A0_pag_purchaser",
+                    "roleName": "A0_pag_purchaser",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20028/A1_ppt_thing_purchased",
+                    "roleName": "A1_ppt_thing_purchased",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20029/A4_gol_benefactive",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": "resin:Entities/00006/BenefactorGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20007/Assemble Explosive",
+            "name": "Assemble Explosive",
+            "description": "Explosive(s) are assembled",
+            "wd_node": "wd:Q3625549",
+            "wd_label": "assembly",
+            "wd_description": "the act of combining components in manufacturing",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20038/A0_pag_agent_builder",
+                    "roleName": "A0_pag_agent_builder",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20039/A1_prd_product_construction",
+                    "roleName": "A1_prd_product_construction",
+                    "entity": "resin:Entities/00007/Weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20008/Assemble Detonator",
+            "name": "Assemble Detonator",
+            "description": "Detonator(s) are assembled",
+            "wd_node": "wd:Q3625549",
+            "wd_label": "assembly",
+            "wd_description": "the act of combining components in manufacturing",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20040/A0_pag_agent_builder",
+                    "roleName": "A0_pag_agent_builder",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20041/A1_prd_product_construction",
+                    "roleName": "A1_prd_product_construction",
+                    "entity": "resin:Entities/00007/Weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20009/Concealment",
+            "name": "Concealment",
+            "description": "explosives are concealed",
+            "wd_node": "wd:Q100171002",
+            "wd_label": "concealment",
+            "wd_description": "process of preventing observation of something",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20042/A0_pag_hider",
+                    "roleName": "A0_pag_hider",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20043/A1_ppt_thing_hidden",
+                    "roleName": "A1_ppt_thing_hidden",
+                    "entity": "resin:Entities/00007/Weapon"
+                },
+                {
+                    "@id": "Participants/20044/A2_gol_hidden_from",
+                    "roleName": "A2_gol_hidden_from",
+                    "entity": "resin:Entities/00008/GeneralPopulationGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20010/Group Forms",
+            "name": "Group Forms",
+            "description": "co-conspirers form a group",
+            "wd_node": "wd:Q7269307",
+            "wd_label": "meeting",
+            "wd_description": "in parliamentary procedure, gathering of a group of people to make decisions",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/20011/Phone Communication",
+                "Events/20012/Electronic Communication",
+                "Events/20013/In-person Communication"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20030/A0_pag_one_party",
+                    "roleName": "A0_pag_one_party",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                },
+                {
+                    "@id": "Participants/20031/A1_com_other_party",
+                    "roleName": "A1_com_other_party",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20011/Phone Communication",
+            "name": "Phone Communication",
+            "description": "telecommunication between group members",
+            "wd_node": "wd:Q2996400",
+            "wd_label": "phone_conversation",
+            "wd_description": "conversation through telephone call",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20032/A0_pag_agent_making_a_call",
+                    "roleName": "A0_pag_agent_making_a_call",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20033/A1_gol_receiver",
+                    "roleName": "A1_gol_receiver",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20012/Electronic Communication",
+            "name": "Electronic Communication",
+            "description": "communication is done through the internet or a similar electronic network",
+            "wd_node": "wd:Q1472062",
+            "wd_label": "remote_communication",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20034/A0_pag_first_communicator",
+                    "roleName": "A0_pag_first_communicator",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20035/A2_com_other_communicator",
+                    "roleName": "A2_com_other_communicator",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20013/In-person Communication",
+            "name": "In-person Communication",
+            "description": "communication is done in person",
+            "wd_node": "wd:Q1875737",
+            "wd_label": "verbal_communication",
+            "wd_description": "communication by words",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20036/A0_pag_first",
+                    "roleName": "A0_pag_first",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20037/A2_com_other_communicator",
+                    "roleName": "A2_com_other_communicator",
+                    "entity": "resin:Entities/00001/TerroristGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Medical Evacuation",
+            "name": "Medical Evacuation",
+            "description": "first responders and paramedics evacuate injured victims",
+            "wd_node": "wd:Q655177",
+            "wd_label": "medical_evacuation",
+            "wd_description": "emergency evacuation for medical reasons",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20070/A0_pag_causer_of_emptiness",
+                    "roleName": "A0_pag_causer_of_emptiness",
+                    "entity": "resin:Entities/00005/PersonTerrorist"
+                },
+                {
+                    "@id": "Participants/20071/A1_dir_enclosure",
+                    "roleName": "A1_dir_enclosure",
+                    "entity": "resin:Entities/00002/TargetLocation"
+                },
+                {
+                    "@id": "Participants/20072/A2_ppt_people",
+                    "roleName": "A2_ppt_people",
+                    "entity": "resin:Entities/00000/TargetGroup"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        }
     ]
-  }
+}
