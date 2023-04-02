@@ -3311,14 +3311,26 @@
       "description": "Illness Outcome",
       "name": "Illness Outcome",
       "repeatable": false,
-      "isSchema": true,
+      "isSchema": false,
       "children_gate": "xor",
       "children": [
-        "resin:Events/10075/Die",
-        "resin:Events/10074/Recover",
-        "resin:Events/10076/Funeral"
+        "resin:Events/10122/Death_Outcome",
+        "resin:Events/10074/Recover"
       ],
       "outlinks": []
+    },
+    {
+        "@id": "resin:Events/10122/Death_Outcome",
+        "description": "The patient's condition worsens and cannot recover.",
+        "name": "Death Outcome",
+        "repeatable": false,
+        "isSchema": false,
+        "children_gate": "and",
+        "children":[
+            "resin:Events/10075/Die",
+            "resin:Events/10076/Funeral"
+        ],
+        "outlinks": []
     },
     {
       "@id": "resin:Events/10109/Motion_outlinks",
