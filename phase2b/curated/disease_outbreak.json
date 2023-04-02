@@ -461,8 +461,7 @@
       "children_gate": "or",
       "children": [
         "resin:Events/10112/Symptom",
-        "resin:Events/10108/Illness_Outcome",
-        "resin:Events/10076/Funeral"
+        "resin:Events/10108/Illness_Outcome"
       ],
       "outlinks": [
         "resin:Events/10031/Medical_Response"
@@ -495,7 +494,9 @@
                 "entity": "resin:Entities/00013/"
             }
         ],
-        "outlinks": []
+        "outlinks": [
+            "resin:Events/10108/Illness_Outcome"
+        ]
 
     },
     {
@@ -3314,7 +3315,8 @@
       "children_gate": "xor",
       "children": [
         "resin:Events/10075/Die",
-        "resin:Events/10074/Recover"
+        "resin:Events/10074/Recover",
+        "resin:Events/10076/Funeral"
       ],
       "outlinks": []
     },
