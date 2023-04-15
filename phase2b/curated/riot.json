@@ -7,7 +7,7 @@
             "@id": "resin:Events/10000/riot-event",
             "children": [
                 "Events/20000/Precursors",
-                "Events/20002/Riot",
+                "Events/20002/Civil Unrest",
                 "Events/20003/Post-Riot Authority Response",
                 "Events/20004/Post-Riot Government Response",
                 "Events/20005/Post-Riot Society Response",
@@ -18,7 +18,7 @@
             ],
             "children_gate": "or",
             "description": "A riot is defined by acts of collective violence. While peaceful protests may lead to riots, the peaceful protests themselves are not within the scope of KAIROS. The basic nature of a riot is unplanned and spontaneous, arising in a haphazard manner with the assembling of a crowd that turns violent and challenge the normative social order.",
-            "name": "Riot Event",
+            "name": "Riot",
             "entities": [
                 {
                     "@id": "Entities/00000/rioter",
@@ -228,10 +228,9 @@
             "optional": false,
             "children_gate": "or",
             "outlinks": [
-                "Events/20002/Riot"
+                "Events/20002/Civil Unrest"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20000/war",
                 "Events/20001/trial",
@@ -251,14 +250,14 @@
             "likelihood": []
         },
         {
-            "@id": "Events/20002/Riot",
-            "name": "Riot",
+            "@id": "Events/20002/Civil Unrest",
+            "name": "Civil Unrest",
             "description": "",
             "wd_label": "riot",
             "wd_node": "wd:Q124757",
             "wd_description": "form of civil disorder",
             "isSchema": true,
-            "repeatable": true,
+            "repeatable": false,
             "optional": false,
             "children_gate": "or",
             "outlinks": [
@@ -269,10 +268,9 @@
                 "Events/20007/Post-Riot Business Response",
                 "Events/20008/International Response"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
-                "Events/20010/Rioter Action",
+                "Events/20010/Riot Action",
                 "Events/20011/Society Response",
                 "Events/20012/Authority Response",
                 "Events/20013/Media Response",
@@ -299,8 +297,7 @@
             "outlinks": [
                 "Events/20009/Civil Justice"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20042/investigations",
                 "Events/20043/arrests",
@@ -326,8 +323,7 @@
             "outlinks": [
                 "Events/20009/Civil Justice"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20045/policy change",
                 "Events/20046/public statement",
@@ -356,8 +352,7 @@
             "outlinks": [
                 "Events/20009/Civil Justice"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20049/public petitions",
                 "Events/20050/society reconstruction"
@@ -382,8 +377,7 @@
             "outlinks": [
                 "Events/20009/Civil Justice"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20051/journalism",
                 "Events/20052/propaganda",
@@ -407,8 +401,7 @@
             "optional": true,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20054/reopening",
                 "Events/20055/augment services"
@@ -431,8 +424,7 @@
             "optional": true,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20056/travel alert",
                 "Events/20057/express support",
@@ -478,14 +470,14 @@
             "likelihood": []
         },
         {
-            "@id": "Events/20010/Rioter Action",
-            "name": "Rioter Action",
+            "@id": "Events/20010/Riot Action",
+            "name": "Riot Action",
             "description": "",
             "wd_label": "action",
             "wd_node": "wd:Q4026292",
             "wd_description": "something an agent can do or perform",
             "isSchema": true,
-            "repeatable": false,
+            "repeatable": true,
             "optional": false,
             "children_gate": "or",
             "outlinks": [
@@ -495,8 +487,7 @@
                 "Events/20014/Business Response",
                 "Events/20015/Government Response"
             ],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20008/escalation",
                 "Events/20009/social media sharing",
@@ -526,8 +517,7 @@
             "optional": true,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20017/vigilantism",
                 "Events/20018/copycat violence"
@@ -550,8 +540,7 @@
             "optional": false,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20017/containment measures",
                 "Events/20018/clash",
@@ -587,8 +576,7 @@
             "optional": true,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20030/public warning",
                 "Events/20031/propagate propaganda"
@@ -611,8 +599,7 @@
             "optional": true,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20032/business closure",
                 "Events/20033/reduce services"
@@ -635,8 +622,7 @@
             "optional": true,
             "children_gate": "or",
             "outlinks": [],
-            "participants": [
-            ],
+            "participants": [],
             "children": [
                 "Events/20034/shutdown",
                 "Events/20035/public statement",
@@ -2291,7 +2277,7 @@
                     "@id": "Participants/0040/evacuations/5",
                     "roleName": "A3_gol_destination_destination",
                     "entity": "Entities/00011/location-generic"
-                },                
+                },
                 {
                     "@id": "Participants/0040/evacuations/6",
                     "roleName": "AM_loc",
@@ -2755,31 +2741,33 @@
             "repeatable": false,
             "optional": true,
             "outlinks": [],
-            "participants": [{
-                "@id": "Participants/20053/notify public/1",
-                "roleName": "A0_pag_transmitter",
-                "entity": "Entities/00022/media-company"
-            },
-            {
-                "@id": "Participants/20053/notify public/2",
-                "roleName": "A1_ppt_message",
-                "entity": "Entities/00017/riot-reason"
-            },
-            {
-                "@id": "Participants/20053/notify public/3",
-                "roleName": "A2_gol_audience",
-                "entity": "Entities/00005/general-public"
-            },
-            {
-                "@id": "Participants/20053/notify public/4",
-                "roleName": "A3_dir_source",
-                "entity": "Entities/00009/government"
-            },
-            {
-                "@id": "Participants/20053/notify public/5",
-                "roleName": "AM_loc",
-                "entity": "Entities/00014/country"
-            }],
+            "participants": [
+                {
+                    "@id": "Participants/20053/notify public/1",
+                    "roleName": "A0_pag_transmitter",
+                    "entity": "Entities/00022/media-company"
+                },
+                {
+                    "@id": "Participants/20053/notify public/2",
+                    "roleName": "A1_ppt_message",
+                    "entity": "Entities/00017/riot-reason"
+                },
+                {
+                    "@id": "Participants/20053/notify public/3",
+                    "roleName": "A2_gol_audience",
+                    "entity": "Entities/00005/general-public"
+                },
+                {
+                    "@id": "Participants/20053/notify public/4",
+                    "roleName": "A3_dir_source",
+                    "entity": "Entities/00009/government"
+                },
+                {
+                    "@id": "Participants/20053/notify public/5",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/00014/country"
+                }
+            ],
             "modality": [],
             "importance": [],
             "likelihood": [],
