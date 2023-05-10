@@ -319,7 +319,143 @@
                     "wd_node": "wd:Q11896502"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "Relations/30000/reports to",
+                    "name": "reports to",
+                    "relationSubject": "resin:Entities/00036/",
+                    "relationObject": "resin:Entities/00034/",
+                    "wd_node": "wdt:P10645",
+                    "wd_label": "reports to",
+                    "wd_description": "The subject position reports to this position"
+                },
+                {
+                    "@id": "Relations/30001/reports to",
+                    "name": "reports to",
+                    "relationSubject": "resin:Entities/00036/",
+                    "relationObject": "resin:Entities/00034/",
+                    "wd_node": "wdt:P10645",
+                    "wd_label": "reports to",
+                    "wd_description": "the subject position reports to this position"
+                },
+                {
+                    "@id": "Relations/30002/reports on",
+                    "name": "reports on",
+                    "relationSubject": "resin:Entities/00036/",
+                    "relationObject": "resin:Entities/00020/",
+                    "wd_node": "wb:Q42240",
+                    "wd_label": "research",
+                    "wd_description": "systematic study undertaken to increase knowledge"
+                },
+                {
+                    "@id": "Relations/30003/opposed to",
+                    "name": "opposed to",
+                    "relationSubject": "resin:Entities/00034/",
+                    "relationObject": "resin:Entities/00020/",
+                    "wd_node": "wd:Q12829182",
+                    "wd_label": "adversary",
+                    "wd_description": "someone who opposes someone else"
+                },
+                {
+                    "@id": "Relations/30004/killed by",
+                    "name": "killed by",
+                    "relationSubject": "resin:Entities/00012/",
+                    "relationObject": "resin:Entities/00016/",
+                    "wd_node": "P157",
+                    "wd_label": "killed by",
+                    "wd_description": "person who killed the subject"
+                },
+                {
+                    "@id": "Relations/30005/react to",
+                    "name": "react to",
+                    "relationSubject": "resin:Entities/00012/",
+                    "relationObject": "resin:Entities/00033/",
+                    "wd_node": "wd:Q798455",
+                    "wd_label": "backlash",
+                    "wd_description": "adverse reaction to something which has gained popularity"
+                },
+                {
+                    "@id": "Relations/30006/provides resources to",
+                    "name": "provides resources to",
+                    "relationSubject": "resin:Entities/00016/",
+                    "relationObject": "resin:Entities/00031/",
+                    "wd_node": "wd:Q1554231",
+                    "wd_label": "resource",
+                    "wd_description": "source or supply from which benefit is produced"
+                },
+                {
+                    "@id": "Relations/30009/claims",
+                    "name": "claims",
+                    "relationSubject": "resin:Entities/00033/",
+                    "relationObject": "Entities/10000/Goals or Values",
+                    "wd_node": "wd:Q95972591",
+                    "wd_label": "claim",
+                    "wd_description": "statement about some entity"
+                },
+                {
+                    "@id": "Relations/30010/commands",
+                    "name": "commands",
+                    "relationSubject": "resin:Entities/00033/",
+                    "relationObject": "resin:Entities/00010/",
+                    "wd_node": "wd:Q2008856",
+                    "wd_label": "command",
+                    "wd_description": "military organizational unit under the responsibility of military commander"
+                },
+                {
+                    "@id": "Relations/30002/discusses",
+                    "name": "discusses",
+                    "relationSubject": "resin:Entities/00007/",
+                    "relationObject": "resin:Entities/00009/",
+                    "wd_node": "wd:Q103239474",
+                    "wd_label": "speak",
+                    "wd_description": "act of producing speech"
+                },
+                {
+                    "@id": "Relations/30003/led by",
+                    "name": "led by",
+                    "relationSubject": "resin:Entities/00000/",
+                    "relationObject": "resin:Entities/00007/",
+                    "wd_node": "wd:Q1251441",
+                    "wd_label": "leader",
+                    "wd_description": "someone with the authority to affect the conduct of others; who have the responsibility of leading"
+                },
+                {
+                    "@id": "Relations/30004/detained by",
+                    "name": "detained by",
+                    "relationSubject": "resin:Entities/00013/",
+                    "relationObject": "resin:Entities/00033/",
+                    "wd_node": "wd:Q1403016",
+                    "wd_label": "arrest",
+                    "wd_description": "detention of a person and taking them into custody"
+                },
+                {
+                    "@id": "Relations/30000/in opposition to",
+                    "name": "in opposition to",
+                    "relationSubject": "resin:Entities/00034/",
+                    "relationObject": "Entities/10000/Goals or Values",
+                    "wd_node": "wdt:P5004",
+                    "wd_label": "in opposition to",
+                    "wd_description": "object of a social action"
+                },
+                {
+                    "@id": "Relations/30001/moves to",
+                    "name": "moves to",
+                    "relationSubject": "resin:Entities/00025/",
+                    "relationObject": "resin:Entities/00011/",
+                    "wd_node": "wd:Q61509",
+                    "wd_label": "travel",
+                    "wd_description": "movement of people between geographic locations"
+                },
+                {
+                    "@id": "Relations/30002/in opposition to",
+                    "name": "in opposition to",
+                    "relationSubject": "resin:Entities/00033/",
+                    "relationObject": "resin:Entities/00025/",
+                    "wd_node": "wdt:P5004",
+                    "wd_label": "in opposition to",
+                    "wd_description": "object of a social action"
+                }
+            ],
             "importance": [],
             "likelihood": []
         },
@@ -352,7 +488,10 @@
                 "resin:Events/00010/",
                 "resin:Events/00011/",
                 "resin:Events/00012/",
-                "resin:Events/00013/"
+                "resin:Events/00013/",
+                "Events/20001/External Support",
+                "Events/20000/Discussion",
+                "Events/20001/Political Corruption"
             ],
             "modality": [],
             "entities": [],
@@ -770,7 +909,8 @@
             "repeatable": false,
             "optional": false,
             "outlinks": [
-                "resin:Events/00007/"
+                "resin:Events/00007/",
+                "Events/20000/Discussion"
             ],
             "participants": [
                 {
@@ -1463,7 +1603,11 @@
                 "Events/20000/Detain Leadership",
                 "Events/20001/Occupy Govt Buildings",
                 "Events/20002/Curfew",
-                "Events/20003/Censor Media"
+                "Events/20003/Censor Media",
+                "Events/20000/Killing",
+                "Events/20007/Military Control",
+                "Events/20002/False Imprisonment",
+                "Events/20001/Exile"
             ],
             "modality": [],
             "entities": [],
@@ -1781,7 +1925,10 @@
             "repeatable": false,
             "optional": false,
             "outlinks": [
-                "resin:Events/00033/"
+                "resin:Events/00033/",
+                "Events/20007/Military Control",
+                "Events/20002/False Imprisonment",
+                "Events/20001/Exile"
             ],
             "participants": [
                 {
@@ -1997,7 +2144,9 @@
                 "resin:Events/00038/",
                 "resin:Events/00039/",
                 "resin:Events/00040/",
-                "resin:Events/00041/"
+                "resin:Events/00041/",
+                "Events/20002/Violent Crime",
+                "Events/20000/Organizing"
             ],
             "modality": [],
             "entities": [],
@@ -2200,7 +2349,10 @@
                 "resin:Events/00053/",
                 "Events/20004/Deny Coup",
                 "Events/20005/Announce Agenda",
-                "Events/20006/Announce Coup Success"
+                "Events/20006/Announce Coup Success",
+                "Events/20005/Propaganda",
+                "Events/20006/Leader Takes Office",
+                "Events/20003/Economic Growth"
             ],
             "modality": [],
             "entities": [],
@@ -2685,7 +2837,11 @@
                 "resin:Events/00062/",
                 "resin:Events/00063/",
                 "resin:Events/00064/",
-                "Events/10000/Container:xor_2"
+                "Events/10000/Container:xor_2",
+                "Events/20000/Reporting",
+                "Events/20004/Accusation",
+                "Events/20000/Objection",
+                "Events/20000/Trial"
             ],
             "modality": [],
             "entities": [],
@@ -2749,7 +2905,9 @@
             "repeatable": false,
             "optional": true,
             "outlinks": [
-                "resin:Events/00060/"
+                "resin:Events/00060/",
+                "Events/20000/Reporting",
+                "Events/20004/Accusation"
             ],
             "participants": [
                 {
@@ -3326,6 +3484,485 @@
                     "wd_description": "printed, spoken, or published statement or notice of an event or other news"
                 }
             ]
+        },
+        {
+            "@id": "Events/20000/Reporting",
+            "name": "Reporting",
+            "description": "producing a report (oral or written)",
+            "wd_node": "wd:Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/International Organization",
+                    "roleName": "A2_gol_entity_reported_to",
+                    "entity": "resin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20001/Humanitarians",
+                    "roleName": "A0_pag_reporter",
+                    "entity": "resin:Entities/00036/"
+                },
+                {
+                    "@id": "Participants/20002/Regime Change",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "resin:Entities/00020/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Killing",
+            "name": "Killing",
+            "description": "act of killing a living being",
+            "wd_node": "wd:Q844482",
+            "wd_label": "killing",
+            "wd_description": "act of killing a living being",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/Political Faction",
+                    "roleName": "A0_pag_killer",
+                    "entity": "resin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20006/Group of Humans",
+                    "roleName": "A1_ppt_corpse",
+                    "entity": "resin:Entities/00012/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/External Support",
+            "name": "External Support",
+            "description": "Some form of support given by foreign interest",
+            "wd_node": "wd:Q1643184",
+            "wd_label": "help",
+            "wd_description": "cooperation between living beings",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20007/Foreign Interest",
+                    "roleName": "A0_pag_helper",
+                    "entity": "resin:Entities/00031/"
+                },
+                {
+                    "@id": "Participants/20008/Political Faction",
+                    "roleName": "A1_ppt_group",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/Violent Crime",
+            "name": "Violent Crime",
+            "description": "crime in which an offender uses or threatens force upon a victim",
+            "wd_node": "wd:1520311",
+            "wd_label": "violent_crime",
+            "wd_description": "crime in which an offender uses or threatens force upon a victim",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20020/Group of Humans",
+                    "roleName": "A1_ppt_threat",
+                    "entity": "resin:Entities/00012/"
+                },
+                {
+                    "@id": "Participants/20021/New Government",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20004/Accusation",
+            "name": "Accusation",
+            "description": "act of accusing or charging another with a crime or transgression",
+            "wd_node": "wd:Q19357312",
+            "wd_label": "accusation",
+            "wd_description": "act of accusing or charging another with a crime or transgression",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/20000/Trial"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20022/International Organization",
+                    "roleName": "A0_pag_agent_accuser",
+                    "entity": "resin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20023/New Government",
+                    "roleName": "A1_ppt_theme_accused",
+                    "entity": "resin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Propaganda",
+            "name": "False Information",
+            "description": "claims wrongly presented as scientific",
+            "wd_node": "wd:Q483677",
+            "wd_label": "pseudoscience",
+            "wd_description": "unscientific claims wrongly presented as scientific",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20024/New Government",
+                    "roleName": "A0_pag_claimer",
+                    "entity": "resin:Entities/00033/"
+                },
+                {
+                    "@id": "Participants/20025/False Claims",
+                    "roleName": "A1_ppt_thing_claimed",
+                    "entity": "Entities/10000/Goals or Values"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20006/Leader Takes Office",
+            "name": "Leader Takes Office",
+            "description": "procedure, start work in the post",
+            "wd_node": "wd:Q28530236",
+            "wd_label": "taking_office",
+            "wd_description": "procedure, start work in the post",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20026/New Leader",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20027/Goals or Values",
+                    "roleName": "A0_ppt_theme",
+                    "entity": "Entities/10000/Goals or Values"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20007/Military Control",
+            "name": "Military Control",
+            "description": "complete authority over military",
+            "wd_node": "wd:Q29017603",
+            "wd_label": "control",
+            "wd_description": "complete authority over something",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20028/New Government",
+                    "roleName": "A0_pag_controller",
+                    "entity": "resin:Entities/00033/"
+                },
+                {
+                    "@id": "Participants/20029/Military",
+                    "roleName": "A1_ppt_controlled",
+                    "entity": "resin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Discussion",
+            "name": "Discussion",
+            "description": "conversation between two or more people in which they express their point of view on a chosen theme",
+            "wd_node": "wd:Q3030248",
+            "wd_label": "discussion",
+            "wd_description": "conversation between two or more people in which they express their point of view on a chosen theme",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/00007/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20000/Domestic Political Crisis",
+                    "roleName": "A1_ppt_topic",
+                    "entity": "resin:Entities/00009/"
+                },
+                {
+                    "@id": "Participants/20001/Leadership",
+                    "roleName": "A1_ppt_agent_discussant",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Political Corruption",
+            "name": "Political Corruption",
+            "description": "use of power by government officials for illegitimate private gain",
+            "wd_node": "wd:Q10858400",
+            "wd_label": "political_corruption",
+            "wd_description": "use of power by government officials for illegitimate private gain",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20002/Government",
+                    "roleName": "A1_ppt_entity_corrupted",
+                    "entity": "resin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20003/Leadership",
+                    "roleName": "A1_ppt_cause",
+                    "entity": "resin:Entities/00007/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/False Imprisonment",
+            "name": "False Imprisonment",
+            "description": "illegal restraint of a person in a bounded area without justification or consent",
+            "wd_node": "wd:Q694752",
+            "wd_label": "false_imprisonment",
+            "wd_description": "illegal restraint of a person in a bounded area without justification or consent",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/Group of Humans",
+                    "roleName": "A1_ppt_criminal",
+                    "entity": "resin:Entities/00013/"
+                },
+                {
+                    "@id": "Participants/20005/New Government",
+                    "roleName": "A0_pag_captor",
+                    "entity": "resin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/Economic Growth",
+            "name": "Economic Growth",
+            "description": "increase in economic prosperity",
+            "wd_node": "wd:Q1342838",
+            "wd_label": "growth",
+            "wd_description": "the increase in size or mass of an entire organism",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/Capital",
+                    "roleName": "A1_ppt_thing_grown",
+                    "entity": "resin:Entities/00021/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Organizing",
+            "name": "Organizing",
+            "description": "organizing a group with a common political goal",
+            "wd_node": "Q25931691",
+            "wd_label": "organizing",
+            "wd_description": "term in management",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/00039/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20001/Political Faction",
+                    "roleName": "A1_ppt_thing_organized",
+                    "entity": "resin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Objection",
+            "name": "Objection",
+            "description": "reason arguing against a premise, argument, or conclusion; expression of disagreement",
+            "wd_node": "wd:Q2090618",
+            "wd_label": "objection",
+            "wd_description": "reason arguing against a premise, argument, or conclusion; expression of disagreement",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/00056/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20000/International Organization",
+                    "roleName": "A0_pag_complainer",
+                    "entity": "resin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20001/Goals or Values",
+                    "roleName": "A1_ppt_thing_objected_to",
+                    "entity": "Entities/10000/Goals or Values"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Exile",
+            "name": "Exile",
+            "description": "event by which a person is forced away from home",
+            "wd_node": "wd:Q188863",
+            "wd_label": "exile",
+            "wd_description": "event by which a person is forced away from home",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20002/Geographic Location",
+                    "roleName": "A2_ppt_exiled_from",
+                    "entity": "resin:Entities/00011/"
+                },
+                {
+                    "@id": "Participants/20004/New Government",
+                    "roleName": "A0_pag_sender_away",
+                    "entity": "resin:Entities/00033/"
+                },
+                {
+                    "@id": "Participants/20005/Overthrown Leader",
+                    "roleName": "A1_com_exile",
+                    "entity": "resin:Entities/00025/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Trial",
+            "name": "Trial",
+            "description": "coming together of parties to a dispute, to present information in a tribunal",
+            "wd_node": "wd:Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/Group of Humans",
+                    "roleName": "A0_pag_litigant",
+                    "entity": "resin:Entities/00013/"
+                },
+                {
+                    "@id": "Participants/20001/New Government",
+                    "roleName": "A1_ppt_entity_tried",
+                    "entity": "resin:Entities/00033/"
+                },
+                {
+                    "@id": "Participants/20002/International Organization",
+                    "roleName": "A2_gol_adjudicator",
+                    "entity": "resin:Entities/00034/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
         }
     ]
 }
