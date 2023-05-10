@@ -1,0 +1,3637 @@
+{
+    "@id": "resin:Schemas/radioactive spill",
+    "sdfVersion": "3.0",
+    "version": "resin:Phase2b",
+    "events": [
+        {
+            "@id": "resin:Events/10000",
+            "name": "Radioactive Spill",
+            "description": "radioactive spill news story.",
+            "wd_node": "Q817114",
+            "wd_label": "radioactive contamination",
+            "wd_description": "presence of radioactive substances where they are undesirable",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20000",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20001",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20002",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20003",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10001",
+                "resin:Events/10002",
+                "resin:Events/10003",
+                "resin:Events/10004",
+                "resin:Events/10005",
+                "resin:Events/10006",
+                "resin:Events/10007",
+                "resin:Events/10008"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "Entities/20001/",
+                    "name": "enviroment",
+                    "wd_node": "wd:Q2249676",
+                    "wd_label": "enviroment",
+                    "wd_description": "surrounding of an organism or population"
+                },
+                {
+                    "@id": "Entities/20002/",
+                    "name": "contaminated location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                },
+                {
+                    "@id": "Entities/20000/",
+                    "name": "conaminant",
+                    "wd_node": "wd:Q2995424",
+                    "wd_label": "contaminant",
+                    "wd_description": "harmful impurity\nedit\n"
+                },
+                {
+                    "@id": "Entities/20710/",
+                    "name": "liquid",
+                    "wd_node": "wd:Q11435",
+                    "wd_label": "liquid",
+                    "wd_description": "nearly incompressible fluid that conforms to the shape of its container but retains a nearly constant volume independent of pressure"
+                },
+                {
+                    "@id": "Entities/20711/",
+                    "name": "gas",
+                    "wd_node": "wd:Q11432",
+                    "wd_label": "gas",
+                    "wd_description": "one of the four fundamental states of matter"
+                },
+                {
+                    "@id": "Entities/20712/",
+                    "name": "sterilizer",
+                    "wd_node": "wd:Q191618",
+                    "wd_label": "sterilization",
+                    "wd_description": "process that eliminates or kills all biological agents on an object or in a volume"
+                },
+                {
+                    "@id": "Entities/20713/",
+                    "name": "surveillance",
+                    "wd_node": "wd:Q334401",
+                    "wd_label": "surveillance",
+                    "wd_description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing"
+                },
+                {
+                    "@id": "Entities/20714/",
+                    "name": "safety",
+                    "wd_node": "wd:Q10566551",
+                    "wd_label": "safety",
+                    "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes"
+                },
+                {
+                    "@id": "Entities/20715/",
+                    "name": "doctor",
+                    "wd_node": "wd:Q11974939",
+                    "wd_label": "health_professional",
+                    "wd_description": "individual who systematically provides health care services"
+                },
+                {
+                    "@id": "Entities/20716/",
+                    "name": "patient",
+                    "wd_node": "wd:Q181600",
+                    "wd_label": "patient",
+                    "wd_description": "person who takes a medical treatment or is subject of a case study"
+                },
+                {
+                    "@id": "Entities/20717/",
+                    "name": "disease",
+                    "wd_node": "wd:Q12136",
+                    "wd_label": "disease",
+                    "wd_description": "abnormal condition negatively affecting organisms"
+                },
+                {
+                    "@id": "Entities/20718/",
+                    "name": "public education",
+                    "wd_node": "wd:Q1319035",
+                    "wd_label": "adult_education",
+                    "wd_description": "form of learning adults engage in beyond traditional schooling"
+                },
+                {
+                    "@id": "Entities/20719/",
+                    "name": "educated location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                },
+                {
+                    "@id": "Entities/20720/",
+                    "name": "court location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                },
+                {
+                    "@id": "Entities/20721/",
+                    "name": "disinfection",
+                    "wd_node": "wd:Q24887418",
+                    "wd_label": "disinfection",
+                    "wd_description": "rendering pathogens harmless through methods including use of heat, antiseptics and antibacterial agents"
+                },
+                {
+                    "@id": "Entities/20722/",
+                    "name": "destination from removal",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "geographic location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/10001",
+            "name": "Background",
+            "description": "Background of the radioactive spill.",
+            "wd_node": "Q29078596",
+            "wd_label": "background information",
+            "wd_description": "contextual information in news item",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20010",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20011",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20012",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20013",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "children": [
+                "resin:Events/10074",
+                "resin:Events/10075",
+                "Events/20006/Development",
+                "Events/20021/Drilling"
+            ],
+            "children_gate": "or",
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10002",
+            "name": "Release of substance",
+            "description": "Radioactive materials are spilled into the environment.",
+            "wd_node": "Q70436326",
+            "wd_label": "radioactive hazard release",
+            "wd_description": "uncontrolled release of radioactive material from its containment",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20020",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20021",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20022",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10017",
+                "resin:Events/10010",
+                "resin:Events/10009",
+                "Events/20013/Environmental exposure",
+                "Events/20015/Detection",
+                "Events/20016/Loss"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10003",
+            "name": "Hazards",
+            "description": "The spill causes other hazards such as fire or explosion.",
+            "wd_node": "Q1132455",
+            "wd_label": "hazard",
+            "wd_description": "situation that poses a potential threat",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10004",
+                "resin:Events/10005"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20030",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20031",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20032",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10022",
+                "resin:Events/10023",
+                "resin:Events/10024",
+                "resin:Events/10025",
+                "resin:Events/10026",
+                "Events/20005/Collateral damage",
+                "Events/20007/Working conditions",
+                "Events/20008/Death"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "Entities/20012/",
+                    "name": "radiation",
+                    "wd_node": "wd:Q18335",
+                    "wd_label": "radiation",
+                    "wd_description": "waves or particles propagating through space or through a medium, carrying energy"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10004",
+            "name": "Emergency Response",
+            "description": "Actions are performed to prevent or mitigate short-term threats of the radioactive spill to human health and well-being.",
+            "wd_node": "Q1460420",
+            "wd_label": "emergency management",
+            "wd_description": "discipline of dealing with and avoiding both natural and man-made disasters, with the goal of reducing the harmful effects",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10008",
+                "resin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20040",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20041",
+                    "roleName": "A1_ppt_theme_theme",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20042",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10027",
+                "resin:Events/10028",
+                "resin:Events/10029",
+                "resin:Events/10030",
+                "resin:Events/10013",
+                "resin:Events/10018",
+                "resin:Events/10012",
+                "resin:Events/10011",
+                "resin:Events/10019",
+                "Events/20002/Reception",
+                "Events/20000/Work",
+                "Events/20002/Amenity",
+                "Events/20004/Test",
+                "Events/20009/Planning",
+                "Events/20011/Confirmation",
+                "Events/20012/Identification",
+                "Events/20014/Emergency evacuation",
+                "Events/20020/Control",
+                "Events/20022/Shutdown"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10005",
+            "name": "Public response",
+            "description": "The public responds to reports of the radioactive spill.",
+            "wd_node": "Q1920566",
+            "wd_label": "answer",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20050",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20051",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "Entities/20016/"
+                },
+                {
+                    "@id": "resin:Participants/20052",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10032",
+                "resin:Events/10033",
+                "resin:Events/10034",
+                "resin:Events/10035",
+                "resin:Events/10036",
+                "resin:Events/10037",
+                "resin:Events/10031",
+                "Events/20000/Reporting",
+                "Events/20003/Social inclusion",
+                "Events/20017/Explanation",
+                "Events/20019/Announcement"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "Entities/20016/",
+                    "name": "report",
+                    "wd_node": "wd:Q10870555",
+                    "wd_label": "report",
+                    "wd_description": "informational, formal, and detailed text"
+                },
+                {
+                    "@id": "Entities/20015/",
+                    "name": "public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group of humans",
+                    "wd_description": "any set of human beings"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10006",
+            "name": "Investigation",
+            "description": "The cause of the radioactive spill is investigated.",
+            "wd_node": "Q21004260",
+            "wd_label": "investigation",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10007"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20060",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20061",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20062",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20063",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10038",
+                "resin:Events/10039",
+                "resin:Events/10040",
+                "resin:Events/10041",
+                "resin:Events/10042",
+                "resin:Events/10043",
+                "Events/20010/Estimation"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10007",
+            "name": "Legal Actions",
+            "description": "Legal action is taken against the people responsible for the radioactive spill.",
+            "wd_node": "Q697327",
+            "wd_label": "lawsuit",
+            "wd_description": "civil action brought in a court of law",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20070",
+                    "roleName": "A0_pag_prosecutor",
+                    "entity": "Entities/20017/"
+                },
+                {
+                    "@id": "resin:Participants/20071",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "Entities/20018/"
+                },
+                {
+                    "@id": "resin:Participants/20072",
+                    "roleName": "A2_vsp_type/grounds/accusation",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20073",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10044",
+                "resin:Events/10045",
+                "resin:Events/10046",
+                "resin:Events/10047",
+                "resin:Events/10048",
+                "Events/20001/Involvement"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "Entities/20018/",
+                    "name": "defandant",
+                    "wd_node": "wd:Q159394",
+                    "wd_label": "defendant",
+                    "wd_description": "accused person"
+                },
+                {
+                    "@id": "Entities/20017/",
+                    "name": "prosecutor",
+                    "wd_node": "wd:Q600751",
+                    "wd_label": "prosecutor",
+                    "wd_description": "legal representative of the state in criminal trials"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10008",
+            "name": "Restoration",
+            "description": "Efforts in removing, neutralizing the substance and repairing damage.",
+            "wd_node": "Q2144962",
+            "wd_label": "repair",
+            "wd_description": "activity to fix any broken or inoperable equipment",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20080",
+                    "roleName": "A0_pag_repairer",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20081",
+                    "roleName": "A1_ppt_entity_repaired",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20082",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10050",
+                "resin:Events/10051",
+                "resin:Events/10052",
+                "resin:Events/10053",
+                "resin:Events/10054",
+                "resin:Events/10055",
+                "resin:Events/10060",
+                "resin:Events/10061",
+                "resin:Events/10062",
+                "resin:Events/10063",
+                "resin:Events/10064",
+                "resin:Events/10065",
+                "resin:Events/10066",
+                "resin:Events/10067",
+                "resin:Events/10068",
+                "resin:Events/10069",
+                "resin:Events/10070",
+                "resin:Events/10071",
+                "resin:Events/10072",
+                "resin:Events/10016",
+                "resin:Events/10073",
+                "resin:Events/10019",
+                "resin:Events/10020",
+                "resin:Events/10021",
+                "Events/20001/Use",
+                "Events/20018/Maintenance"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10009",
+            "name": "Radioactive Release",
+            "description": "Release of radioactive material into the environment",
+            "wd_node": "Q70436326",
+            "wd_label": "radioactive hazard release",
+            "wd_description": "uncontrolled release of radioactive material from its containment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10010",
+                "resin:Events/10017"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20090",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20091",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20092",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10010",
+            "name": "Exposure to Radiation",
+            "description": "Exposure of people and animals to the radiation",
+            "wd_node": "Q1384726",
+            "wd_label": "exposure",
+            "wd_description": "in medical context, environmental influence on an object or living thing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20101",
+                    "roleName": "A1_ppt_exposed_entity",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20102",
+                    "roleName": "A2_gol_exposed_to",
+                    "entity": "Entities/20030/"
+                },
+                {
+                    "@id": "resin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20030/",
+                    "name": "radiation",
+                    "wd_node": "wd:Q18335",
+                    "wd_label": "radiation",
+                    "wd_description": "waves or particles propagating through space or through a medium, carrying energy"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10011",
+            "name": "Contain and Clean",
+            "description": "Containment and clean",
+            "wd_node": "Q191618",
+            "wd_label": "sterilization",
+            "wd_description": "process that eliminates or kills all biological agents on an object or in a volume",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10012"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20110",
+                    "roleName": "A0_pag_sterilizer",
+                    "entity": "Entities/20712/"
+                },
+                {
+                    "@id": "resin:Participants/20111",
+                    "roleName": "A1_gol_entity_sterilized",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20112",
+                    "roleName": "A2_ppt_germs_removed",
+                    "entity": "Entities/20030/"
+                },
+                {
+                    "@id": "resin:Participants/20113",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10012",
+            "name": "Monitor Radiation",
+            "description": "Monitoring of radiation levels in the area",
+            "wd_node": "Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20120",
+                    "roleName": "A0_pag_observer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20121",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "Entities/20030/"
+                },
+                {
+                    "@id": "resin:Participants/20122",
+                    "roleName": "A2_ppt_looking_for_what?",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20123",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10013",
+            "name": "Public Health Protection",
+            "description": "Health and safety measures taken to protect the public ",
+            "wd_node": "Q2251595",
+            "wd_label": "protection",
+            "wd_description": "action or precaution against a threat against an uncertainty or possible unpleasant events",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20130",
+                    "roleName": "A0_pag_protector",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20131",
+                    "roleName": "A1_ppt_protected",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20132",
+                    "roleName": "A2_ppt_danger",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10014",
+            "name": "Investigate Spill",
+            "description": "Investigation into the cause of the spill",
+            "wd_node": "Q42240",
+            "wd_label": "research",
+            "wd_description": "systematic study undertaken to increase knowledge",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20140",
+                    "roleName": "A0_pag_agent_student",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20141",
+                    "roleName": "A1_ppt_theme_subject",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20142",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "Entities/20016/"
+                },
+                {
+                    "@id": "resin:Participants/20143",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10015",
+            "name": "Take Legal Action",
+            "description": "Possible legal action against responsible parties",
+            "wd_node": "Q697327",
+            "wd_label": "lawsuit",
+            "wd_description": "civil action brought in a court of law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20150",
+                    "roleName": "A0_pag_prosecutor",
+                    "entity": "Entities/20031/"
+                },
+                {
+                    "@id": "resin:Participants/20151",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20152",
+                    "roleName": "A2_vsp_type/grounds/accusation",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20153",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20031/",
+                    "name": "prosecutor",
+                    "wd_node": "wd: Q600751",
+                    "wd_label": "prosecutor",
+                    "wd_description": "legal representative of the state in criminal trials"
+                },
+                {
+                    "@id": "Entities/20032/",
+                    "name": "defendant",
+                    "wd_node": "wd: Q159394",
+                    "wd_label": "defendant",
+                    "wd_description": "accused person"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10016",
+            "name": "Implement Long-Term Plan",
+            "description": "Implementation of long",
+            "wd_node": "Q245962",
+            "wd_label": "implementation",
+            "wd_description": "realization of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20160",
+                    "roleName": "A0_pag_implementer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20161",
+                    "roleName": "A1_ppt_thing_implemented",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20162",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "Entities/20016/"
+                },
+                {
+                    "@id": "resin:Participants/20163",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10017",
+            "name": "Increase Radiation",
+            "description": "Radiation levels in the environment increase",
+            "wd_node": "Q1384726",
+            "wd_label": "exposure",
+            "wd_description": "in medical context, environmental influence on an object or living thing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20171",
+                    "roleName": "A1_ppt_exposed_entity",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20172",
+                    "roleName": "A2_gol_exposed_to",
+                    "entity": "Entities/20030/"
+                },
+                {
+                    "@id": "resin:Participants/20173",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10018",
+            "name": "Assess Environmental Impact",
+            "description": "The environmental impacts of the spill are assessed",
+            "wd_node": "Q851176",
+            "wd_label": "assessment",
+            "wd_description": "value judgement about a fact, an object or a person",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10019"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20180",
+                    "roleName": "A0_pag_assessor",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20181",
+                    "roleName": "A1_ppt_entity_assessed",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20182",
+                    "roleName": "A2_prd_value_or_attribute",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20183",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10019",
+            "name": "Decontaminate",
+            "description": "Decontamination of the affected area is performed",
+            "wd_node": "Q17008689",
+            "wd_label": "decontamination",
+            "wd_description": "instrument processing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10021"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20190",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20191",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20192",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "Entities/20016/"
+                },
+                {
+                    "@id": "resin:Participants/20193",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10020",
+            "name": "Monitor Wildlife",
+            "description": "Any affected wildlife is monitored and",
+            "wd_node": "Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20200",
+                    "roleName": "A0_pag_observer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20201",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20202",
+                    "roleName": "A2_ppt_looking_for_what?",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20203",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10021",
+            "name": "Declare Safe for Human Use",
+            "description": "The affected area is declared safe for human use",
+            "wd_node": "Q2620826",
+            "wd_label": "declaration",
+            "wd_description": "authoritative establishment of fact",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10020"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20210",
+                    "roleName": "A0_pag_announcer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20211",
+                    "roleName": "A1_ppt_utterance",
+                    "entity": "Entities/20714/"
+                },
+                {
+                    "@id": "resin:Participants/20212",
+                    "roleName": "A2_gol_hearer",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20213",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10022",
+            "name": "Radioactive Contamination",
+            "description": "Spread of radioactive particles in air, water, or soil ",
+            "wd_node": "Q817114",
+            "wd_label": "radioactive contamination",
+            "wd_description": "presence of radioactive substances where they are undesirable",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10023"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20220",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20221",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20222",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10023",
+            "name": "Potential for Long-Term Impact",
+            "description": "Potential for long",
+            "wd_node": "Q2995644",
+            "wd_label": "result",
+            "wd_description": "final consequence or product of a sequence of actions or events",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20230",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20231",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20232",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10024",
+            "name": "Radiation Risk",
+            "description": "Risk of health effects from radiation exposure ",
+            "wd_node": "Q104493",
+            "wd_label": "risk",
+            "wd_description": "potential for uncontrolled loss due to underlying vulnerability or uncertainties",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10025",
+                "resin:Events/10022"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20240",
+                    "roleName": "A0_pag_entity_risking",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20241",
+                    "roleName": "A1_ppt_thing_risked",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20242",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10025",
+            "name": "Combustion Reaction",
+            "description": "Fire or explosion due to a reaction between the spilled material and oxygen in the air ",
+            "wd_node": "Q179057",
+            "wd_label": "explosion",
+            "wd_description": "sudden release of energy through high temperatures and gas expansion",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10026"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20250",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20251",
+                    "roleName": "A1_ppt_patient_bomb_thing_exploding",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20252",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10026",
+            "name": "Contamination Spread",
+            "description": "Possible spread of contamination to other areas",
+            "wd_node": "Q60528603",
+            "wd_label": "contamination",
+            "wd_description": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20260",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20261",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20262",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20263",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10027",
+            "name": "Contain Spill",
+            "description": "Containment of the spill",
+            "wd_node": "Q7443876",
+            "wd_label": "Secondary spill containment",
+            "wd_description": "technique for dealing with hazardous spills",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10028"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20270",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10028",
+            "name": "Provide Medical Care",
+            "description": "Provision of medical care to affected individuals",
+            "wd_node": "Q179661",
+            "wd_label": "treatment",
+            "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10029"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20280",
+                    "roleName": "A0_pag__doctor",
+                    "entity": "Entities/20715/"
+                },
+                {
+                    "@id": "resin:Participants/20281",
+                    "roleName": "A1_ppt__patient",
+                    "entity": "Entities/20716/"
+                },
+                {
+                    "@id": "resin:Participants/20282",
+                    "roleName": "A2_ppt__illness_or_injury",
+                    "entity": "Entities/20717/"
+                },
+                {
+                    "@id": "resin:Participants/20283",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10029",
+            "name": "Public Education and Outreach",
+            "description": "Public education and outreach on the risks posed by the spill",
+            "wd_node": "Q11640",
+            "wd_label": "outreach",
+            "wd_description": "activity of providing services to populations who might not otherwise have access to those services",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10030"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20290",
+                    "roleName": "A0_pag_entity_offering",
+                    "entity": "Entities/20718/"
+                },
+                {
+                    "@id": "resin:Participants/20291",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20719/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10030",
+            "name": "Implement Safety Protocols",
+            "description": "Review and implementation of safety protocols to prevent future spills",
+            "wd_node": "Q265158",
+            "wd_label": "review",
+            "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10013"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20300",
+                    "roleName": "A0_pag_reviewer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20301",
+                    "roleName": "A1_ppt_thing_reviewed",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20302",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10031",
+            "name": "Demand Information",
+            "description": "Public outcry and demand for information on the scope of the spill and potential health risks",
+            "wd_node": "Q21004260",
+            "wd_label": "inquiry",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10032"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20310",
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20311",
+                    "roleName": "A1_ppt_location_examined",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20312",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10032",
+            "name": "Issue Statements",
+            "description": "Government agencies issue statements and updates on the spill and its potential impact",
+            "wd_node": "Q2684591",
+            "wd_label": "statement",
+            "wd_description": "meaningful declarative sentence that is either true or false, or that which a true or false declarative sentence asserts",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10033"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20320",
+                    "roleName": "A0_pag_notifier",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20321",
+                    "roleName": "A1_gol_entity_notified",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20322",
+                    "roleName": "A2_ppt_utterance",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20323",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20720/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10033",
+            "name": "Cover Story",
+            "description": "Local and national media cover the story, providing updates and analysis of the spill",
+            "wd_node": "Q17561485",
+            "wd_label": "media coverage",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10034"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20330",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10034",
+            "name": "Call for Accountability",
+            "description": "Calls for accountability from the responsible party or parties",
+            "wd_node": "Q2798912",
+            "wd_label": "accountability",
+            "wd_description": "concept of responsibility in ethics, governance and decision-making, which encompasses answerability, blameworthiness, liability, and the expectation of account-giving",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10035"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20340",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20720/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10035",
+            "name": "Rally for Support",
+            "description": "Protests and rallies in support of those affected by the spill",
+            "wd_node": "Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10036"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20350",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "Entities/20050/"
+                },
+                {
+                    "@id": "resin:Participants/20351",
+                    "roleName": "A1_ppt_theme_objectionable_thing",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20352",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20050/",
+                    "name": "protester",
+                    "wd_node": "wd:Q7623053",
+                    "wd_label": "street protester",
+                    "wd_description": "person partaking in a public protest against a cause of concern"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10036",
+            "name": "Offer Support",
+            "description": "Organizations offering support to victims of the spill",
+            "wd_node": "Q102358908",
+            "wd_label": "support",
+            "wd_description": "help for a person in a difficult situation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10037"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20360",
+                    "roleName": "A0_pag_helper",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20361",
+                    "roleName": "A1_ppt_person",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20362",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10037",
+            "name": "Discuss Nuclear Regulation",
+            "description": "Public conversations about the implications of the spill and the need for better regulation of nuclear materials",
+            "wd_node": "Q3030248",
+            "wd_label": "discussion",
+            "wd_description": "conversation between two or more people in which they express their point of view on a choosen theme",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20370",
+                    "roleName": "A0_pag_agent_discussant",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20371",
+                    "roleName": "A2_gol_co_agent_conversation_partner",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20372",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                },
+                {
+                    "@id": "resin:Participants/20373",
+                    "roleName": "A1_ppt__topic",
+                    "entity": "Entities/20000/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10038",
+            "name": "Interview Witnesses",
+            "description": "Interviewing witnesses",
+            "wd_node": "Q178651",
+            "wd_label": "interview",
+            "wd_description": "structured series of questions and answers",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10039"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20380",
+                    "roleName": "A0_pag_interviewer",
+                    "entity": "Entities/20017/"
+                },
+                {
+                    "@id": "resin:Participants/20381",
+                    "roleName": "A1_gol_interviewee",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20382",
+                    "roleName": "A2_ppt_purpose_or_subject_matter_of_interview",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20383",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10039",
+            "name": "Analyze Samples",
+            "description": "Analyzing any samples collected from the spill",
+            "wd_node": "Q210868",
+            "wd_label": "sampling",
+            "wd_description": "measurement of a signal at discrete time intervals",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10040"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20390",
+                    "roleName": "A0_pag_sampler",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20391",
+                    "roleName": "A1_ppt_thing_sampled",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20392",
+                    "roleName": "A2_dir_source_of_the_samples",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20393",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10040",
+            "name": "Risk Assessment",
+            "description": "Performing a risk assessment",
+            "wd_node": "Q1058438",
+            "wd_label": "risk_assessment",
+            "wd_description": "The comparison of the results of a risk analysis with risk acceptance criteria or other decision parameters.",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10041"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20400",
+                    "roleName": "A0_pag_assessor",
+                    "entity": "Entities/20031/"
+                },
+                {
+                    "@id": "resin:Participants/20401",
+                    "roleName": "A1_ppt_entity_assessed",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20402",
+                    "roleName": "A2_prd_value_or_attribute",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20403",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10041",
+            "name": "Cleanup Plan",
+            "description": "Developing a plan to clean up the spill",
+            "wd_node": "Q14255687",
+            "wd_label": "remediation",
+            "wd_description": "process by which new media is constantly remediating its predecessors",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10042"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20410",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20411",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20412",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10042",
+            "name": "Document Investigation",
+            "description": "Documenting the investigation results",
+            "wd_node": "Q21004260",
+            "wd_label": "investigation",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10043"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20420",
+                    "roleName": "A0_pag_provider_of_evidence",
+                    "entity": "Entities/20031/"
+                },
+                {
+                    "@id": "resin:Participants/20421",
+                    "roleName": "A1_ppt_thing_documented",
+                    "entity": "Entities/20016/"
+                },
+                {
+                    "@id": "resin:Participants/20422",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10043",
+            "name": "Report Findings",
+            "description": "Reporting the findings to the relevant authorities",
+            "wd_node": "Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20430",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "Entities/20031/"
+                },
+                {
+                    "@id": "resin:Participants/20431",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20432",
+                    "roleName": "A2_gol_entity_reported_to",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20433",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10044",
+            "name": "File Complaints",
+            "description": "Filing of civil or criminal complaints against those responsible for the spill",
+            "wd_node": "Q836925",
+            "wd_label": "complaint",
+            "wd_description": "Legal document, the filing of which initiates a lawsuit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10045"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20440",
+                    "roleName": "A0_pag_complainer",
+                    "entity": "Entities/20031/"
+                },
+                {
+                    "@id": "resin:Participants/20441",
+                    "roleName": "A1_ppt_cause",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20442",
+                    "roleName": "A2_gol_hearer",
+                    "entity": "Entities/20045/"
+                },
+                {
+                    "@id": "resin:Participants/20443",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10045",
+            "name": "Argue Motions",
+            "description": "Arguing motions before a judge",
+            "wd_node": "Q186619",
+            "wd_label": "argument",
+            "wd_description": "attempt to persuade or to determine the truth of a conclusion",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10049",
+                "resin:Events/10046"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20450",
+                    "roleName": "A0_pag_first_arguer",
+                    "entity": "Entities/20017/"
+                },
+                {
+                    "@id": "resin:Participants/20451",
+                    "roleName": "A1_com_second_arguer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20452",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20453",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20720/"
+                }
+            ],
+            "children": [
+                "resin:Events/10049"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10046",
+            "name": "Alternative Dispute Resolution",
+            "description": "Participating in mediations, arbitrations, and other alternative dispute resolution processes",
+            "wd_node": "Q2751586",
+            "wd_label": "resolution",
+            "wd_description": "written declaration adopted by a deliberative body",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10047"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20460",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20461",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20720/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10047",
+            "name": "Take Depositions",
+            "description": "Taking depositions of witnesses",
+            "wd_node": "Q104215654",
+            "wd_label": "deposition",
+            "wd_description": "involuntary removal from a position",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10048"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20470",
+                    "roleName": "A0_pag_deposer",
+                    "entity": "Entities/20017/"
+                },
+                {
+                    "@id": "resin:Participants/20471",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10048",
+            "name": "Negotiate Settlements",
+            "description": "Negotiating settlements",
+            "wd_node": "Q79085745",
+            "wd_label": "renegotiation",
+            "wd_description": "negotiation again about something earlier agreed",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10049"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20480",
+                    "roleName": "A0_pag_negotiator",
+                    "entity": "Entities/20040/"
+                },
+                {
+                    "@id": "resin:Participants/20481",
+                    "roleName": "A1_ppt_agreement",
+                    "entity": "Entities/20041/"
+                },
+                {
+                    "@id": "resin:Participants/20482",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20720/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20040/",
+                    "name": "negotiator",
+                    "wd_node": "wd:Q10335982",
+                    "wd_label": "negotiator",
+                    "wd_description": "person who negotiates"
+                },
+                {
+                    "@id": "Entities/20041/",
+                    "name": "settlement",
+                    "wd_node": "wd:Q167412",
+                    "wd_label": "settlement",
+                    "wd_description": "resolution between disputing parties about a legal case"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10049",
+            "name": "Stand Trial",
+            "description": "Trying the case before a jury or judge",
+            "wd_node": "Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20490",
+                    "roleName": "A0_pag__litigant",
+                    "entity": "Entities/20044/"
+                },
+                {
+                    "@id": "resin:Participants/20491",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "Entities/20018/"
+                },
+                {
+                    "@id": "resin:Participants/20492",
+                    "roleName": "A2_gol__adjudicator",
+                    "entity": "Entities/20045/"
+                },
+                {
+                    "@id": "resin:Participants/20493",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20494",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20044/",
+                    "name": "litigant",
+                    "wd_node": "wd:Q24571167",
+                    "wd_label": "litigant",
+                    "wd_description": "party involved in a lawsuit"
+                },
+                {
+                    "@id": "Entities/20045/",
+                    "name": "adjudicator",
+                    "wd_node": "wd:Q2234405",
+                    "wd_label": "adjudicator",
+                    "wd_description": "someone who presides, judges and arbitrates during a formal dispute"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10050",
+            "name": "Identify Spill",
+            "description": "Identifying the extent and characteristics of the spill",
+            "wd_node": "Q2493413",
+            "wd_label": "identification",
+            "wd_description": "psychological process whereby the subject assimilates an aspect, property, or attribute of the other and is transformed, wholly or partially, by the model the other provides",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10051"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20500",
+                    "roleName": "A0_pag_assessor",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20501",
+                    "roleName": "A1_ppt_entity_assessed",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20502",
+                    "roleName": "A2_prd_value_or_attribute",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20503",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10051",
+            "name": "Establish Safety Perimeter",
+            "description": "Setting up a safety perimeter and controlling access",
+            "wd_node": "Q169489",
+            "wd_label": "security",
+            "wd_description": "tradable financial asset",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10064"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20510",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20511",
+                    "roleName": "A1_ppt_thing_being_traded",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20512",
+                    "roleName": "A2_com_other_exchanger",
+                    "entity": "Entities/20017/"
+                },
+                {
+                    "@id": "resin:Participants/20513",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "resin:Participants/20514",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10052",
+            "name": "Neutralize Spill",
+            "description": "Neutralizing the spilled material",
+            "wd_node": "Q14255687",
+            "wd_label": "remediation",
+            "wd_description": "process by which new media is constantly remediating its predecessors",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10065",
+                "resin:Events/10068",
+                "resin:Events/10069",
+                "resin:Events/10057",
+                "resin:Events/10059",
+                "resin:Events/10061"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20520",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20521",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20522",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "resin:Participants/20523",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "children": [
+                "resin:Events/10056",
+                "resin:Events/10057",
+                "resin:Events/10058",
+                "resin:Events/10059"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10053",
+            "name": "Repair Environmental Damage",
+            "description": "Repairing any damage to the environment",
+            "wd_node": "Q14255687",
+            "wd_label": "remediation",
+            "wd_description": "process by which new media is constantly remediating its predecessors",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20530",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20531",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20532",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "resin:Participants/20533",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10054",
+            "name": "Monitor Area",
+            "description": "Monitoring the area to ensure the restoration is successful",
+            "wd_node": "Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10057"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20540",
+                    "roleName": "A0_pag_observer",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20541",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20542",
+                    "roleName": "A2_ppt_looking_for_what?",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20543",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10055",
+            "name": "Replant Vegetation",
+            "description": "Replanting vegetation and restoring habitats",
+            "wd_node": "Q651385",
+            "wd_label": "revegetation",
+            "wd_description": "process of replanting and rebuilding the soil of disturbed land",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10062"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20550",
+                    "roleName": "A0_pag_restorer",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20551",
+                    "roleName": "A1_ppt_thing_restored",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20552",
+                    "roleName": "A2_prd_end_state",
+                    "entity": "Entities/20714/"
+                },
+                {
+                    "@id": "resin:Participants/20553",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10056",
+            "name": "Neutralize Contaminated Water",
+            "description": "Contaminated water was collected and neutralized using lime",
+            "wd_node": "Q17008689",
+            "wd_label": "decontamination",
+            "wd_description": "instrument processing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10053",
+                "resin:Events/10071"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20560",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20561",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20562",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "resin:Participants/20563",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10057",
+            "name": "Spray with Water",
+            "description": "The area was sprayed with water to reduce the dust created by the spill",
+            "wd_node": "Q2864210",
+            "wd_label": "spraying",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10064",
+                "resin:Events/10055"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20570",
+                    "roleName": "A0_pag_applier",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20571",
+                    "roleName": "A1_ppt_liquid",
+                    "entity": "Entities/20710/"
+                },
+                {
+                    "@id": "resin:Participants/20572",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10058",
+            "name": "Collect Spilled Material",
+            "description": "Collecting the spilled material ",
+            "wd_node": "Q2668072",
+            "wd_label": "collection",
+            "wd_description": "set of purposefully gathered physical or digital objects with some common characteristics",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10067",
+                "resin:Events/10050",
+                "resin:Events/10057",
+                "resin:Events/10061"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20580",
+                    "roleName": "A0_pag_repairer",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20581",
+                    "roleName": "A1_ppt_entity_repaired",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20582",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10059",
+            "name": "Dispose of Material",
+            "description": "Disposing of the neutralized material properly",
+            "wd_node": "Q23009442",
+            "wd_label": "removal",
+            "wd_description": "dissociation of the original object with its old part; moving an object on distance of disconnect; process of moving, or the fact of being removed",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20590",
+                    "roleName": "A0_pag_entity_removing",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20591",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10060",
+            "name": "Neutralize Chromic Acid",
+            "description": "The chromic acid will be neutralized, meaning it will no longer cause harm to the environment",
+            "wd_node": "Q22271429",
+            "wd_label": "detoxification",
+            "wd_description": "Any process that reduces or removes the toxicity of a toxic substance. These may include transport of the toxic substance away from sensitive areas and to compartments or complexes whose purpose is sequestration of the toxic substance.",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10056"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20600",
+                    "roleName": "A0_pag_cause",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20601",
+                    "roleName": "A1_gol_contaminated_thing",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20602",
+                    "roleName": "A2_ppt_impurities/contaminants",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20603",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10061",
+            "name": "Restore STP Treatment",
+            "description": "The STP's ability to treat sewage will be restored",
+            "wd_node": "Q107036510",
+            "wd_label": "restoration",
+            "wd_description": "event of something being returned to a prior state",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10062"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20610",
+                    "roleName": "A0_pag_restorer",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20611",
+                    "roleName": "A1_ppt_thing_restored",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20612",
+                    "roleName": "A2_prd_end_state",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "resin:Participants/20613",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10062",
+            "name": "Add Chelating Agent",
+            "description": "Adding a chelating agent, such as ethylenediaminetetraacetic acid ",
+            "wd_node": "Q319827",
+            "wd_label": "chelation",
+            "wd_description": "chemical reaction of forming chelate",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10063"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20620/",
+                    "roleName": "chelating_agent",
+                    "entity": "Entities/20062/"
+                },
+                {
+                    "@id": "resin:Participants/20621",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20062/",
+                    "name": "chelating agent",
+                    "wd_node": "wd:Q50315890",
+                    "wd_label": "chelating agent",
+                    "wd_description": "any organic compound capable of forming a complex with a metal ion with more than one coordination bond"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10063",
+            "name": "Add Surfactant",
+            "description": "Adding a surfactant, such as sodium lauryl sulfate, to help dissolve the chromic acid and keep it from re",
+            "wd_node": "Q3133701",
+            "wd_label": "dissolution",
+            "wd_description": "process of a solute dissolving in a solvent",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10056"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20630/",
+                    "roleName": "A0_pag_causer",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "resin:Participants/20631/",
+                    "roleName": "A1_ppt_thing_dissolving",
+                    "entity": "Entities/20000/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10064",
+            "name": "Dilute Acid",
+            "description": "Diluting the chromic acid with water to reduce its concentration and make it more manageable",
+            "wd_node": "Q1971485",
+            "wd_label": "reduction",
+            "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10066",
+                "resin:Events/10062"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20640",
+                    "roleName": "A0_pag_Agent",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20641",
+                    "roleName": "A4_gol_End_point",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "resin:Participants/20642",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10065",
+            "name": "Stabilize with Lime",
+            "description": "Stabilization of the area with a lime solution",
+            "wd_node": "Q7595734",
+            "wd_label": "stabilization",
+            "wd_description": "in architecture, retrofitting of platforms or foundations as constructed to improve the bearing capacity and levelness of the supported building.",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10067"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20650",
+                    "roleName": "A0_pag_cause_of_stability",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20651",
+                    "roleName": "A1_ppt_thing_stabilized",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20652",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10066",
+            "name": "Residue",
+            "description": "Collection of solid material remaining after neutralization",
+            "wd_node": "Q903495",
+            "wd_label": "residue",
+            "wd_description": "in chemistry, whatever remains or acts as a contaminant after a given class of events",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10056"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20660",
+                    "roleName": "A1_ppt_thing_removed",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20661",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10067",
+            "name": "Dispose of Hazardous Waste",
+            "description": "Disposal of the solid material at a hazardous waste facility",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10060"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20670",
+                    "roleName": "A1_ppt_thing_removed",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20671",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10068",
+            "name": "Test for Safety",
+            "description": "Testing of the area to ensure it is safe",
+            "wd_node": "Q1137655",
+            "wd_label": "inspection",
+            "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20680",
+                    "roleName": "A0_pag_examiner",
+                    "entity": "Entities/20713/"
+                },
+                {
+                    "@id": "resin:Participants/20681",
+                    "roleName": "A1_ppt_entity_inspected",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20682",
+                    "roleName": "A2_ppt_inspected_for_what?",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20683",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10069",
+            "name": "Restore Site",
+            "description": "Restoration of the site to its original condition",
+            "wd_node": "Q2142602",
+            "wd_label": "rehabilitation",
+            "wd_description": "penological process to make a person again a functional part of society",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10056"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20690",
+                    "roleName": "A0_pag_restorer",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20691",
+                    "roleName": "A1_ppt_patient_rehabilitated",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20692",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20693",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10070",
+            "name": "Acid Spill",
+            "description": "The chromic acid spill ",
+            "wd_node": "Q1349983",
+            "wd_label": "leak",
+            "wd_description": "process of fluid escaping containment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10052"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20700",
+                    "roleName": "A0_dir_thing_leaking",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20701",
+                    "roleName": "A1_ppt_substance_leaked",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20702",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10071",
+            "name": "Transfer Liquid",
+            "description": "Pumping most of the liquid out of the single shell tanks into the double shell tanks ",
+            "wd_node": "Q1811518",
+            "wd_label": "transfer",
+            "wd_description": "sports action in which a player moves between clubs",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20710",
+                    "roleName": "A0_pag_sender",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20711",
+                    "roleName": "A1_ppt_sent",
+                    "entity": "Entities/20710/"
+                },
+                {
+                    "@id": "resin:Participants/20712",
+                    "roleName": "A2_gol_sent-to",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10072",
+            "name": "Retrieve Waste",
+            "description": "Retrieving the waste from the tanks ",
+            "wd_node": "Q23009442",
+            "wd_label": "removal",
+            "wd_description": "dissociation of the original object with its old part; moving an object on distance of disconnect; process of moving, or the fact of being removed",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10052"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20720",
+                    "roleName": "A0_pag_entity_removing",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "resin:Participants/20721",
+                    "roleName": "A1_ppt_thing_being_removed",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20722",
+                    "roleName": "A2_dir_removed_from",
+                    "entity": "Entities/20002/"
+                },
+                {
+                    "@id": "resin:Participants/20723",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20722/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10073",
+            "name": "Sort Waste",
+            "description": "Separating the waste into two waste streams ",
+            "wd_node": "Q2303697",
+            "wd_label": "sorting",
+            "wd_description": "action of arranging objects into order",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10070"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20730",
+                    "roleName": "A0_pag_sorter",
+                    "entity": "Entities/20032/"
+                },
+                {
+                    "@id": "resin:Participants/20731",
+                    "roleName": "A1_ppt_thing_being_sorted",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "resin:Participants/20732",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10074",
+            "name": "Crash",
+            "description": "crash during radioactivity",
+            "wd_node": "Q238053",
+            "wd_label": "collision",
+            "wd_description": "physical event where two or more bodies exert forces on each other for a short time",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/10075"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20740",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20002/"
+                },
+                {
+                    "@id": "resin:Participants/20741/",
+                    "roleName": "A0_dir_thing_contaminated",
+                    "entity": "Entities/20000/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/10075",
+            "name": "Leak",
+            "description": "Radioactive substances leak from the crash",
+            "wd_node": "Q1349983",
+            "wd_label": "leak",
+            "wd_description": "process of fluid escaping containment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/20750/",
+                    "roleName": "AM_loc",
+                    "entity": "Entities/20002/"
+                },
+                {
+                    "@id": "resin:Participants/20751/",
+                    "roleName": "A0_dir_thing_leaking",
+                    "entity": "Entities/20000/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Reporting",
+            "name": "Reporting",
+            "description": "Spill is reported",
+            "wd_node": "Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/reporter",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20001/reported",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "Entities/20016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Use",
+            "name": "Use",
+            "description": "Spill is sterilized",
+            "wd_node": "Q1724915",
+            "wd_label": "use",
+            "wd_description": "use of a resource to perform a task",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20002/user",
+                    "roleName": "A0_pag_User",
+                    "entity": "Entities/20712/"
+                },
+                {
+                    "@id": "Participants/20003/thing_used",
+                    "roleName": "A1_ppt_thing_used",
+                    "entity": "Entities/20062/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/Reception",
+            "name": "Reception",
+            "description": "Patient is disinfected",
+            "wd_node": "Q76664785",
+            "wd_label": "getting",
+            "wd_description": "to get something or someone, to receive something or someone",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/receiver",
+                    "roleName": "A0_pag_receiver",
+                    "entity": "Entities/20716/"
+                },
+                {
+                    "@id": "Participants/20005/thing_gotten",
+                    "roleName": "A1_ppt_thing_gotten",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "Participants/20006/source",
+                    "roleName": "A2_dir_source",
+                    "entity": "Entities/20715/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Work",
+            "name": "Work",
+            "description": "Contamination is cleaned",
+            "wd_node": "Q6958747",
+            "wd_label": "work",
+            "wd_description": "activities performed as a means of support",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/worker",
+                    "roleName": "A0_pag_worker",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20001/job",
+                    "roleName": "A1_ppt_job",
+                    "entity": "Entities/20712/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Involvement",
+            "name": "Involvement",
+            "description": "Defendant is involved in spill",
+            "wd_node": "Q36949023",
+            "wd_label": "involvement",
+            "wd_description": "state of being involved (e.g. in a process or event)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20002/causer",
+                    "roleName": "A0_pag_causer_of_inclusion",
+                    "entity": "Entities/20018/"
+                },
+                {
+                    "@id": "Participants/20003/group",
+                    "roleName": "A2_ppt_group",
+                    "entity": "Entities/20015/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/Amenity",
+            "name": "Amenity",
+            "description": "",
+            "wd_node": "Q867393",
+            "wd_label": "amenity",
+            "wd_description": "infrastructure available for use and improving quality of life",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/provided",
+                    "roleName": "A1_ppt_thing_provided",
+                    "entity": "Entities/20718/"
+                },
+                {
+                    "@id": "Participants/20005/provided",
+                    "roleName": "A2_gol_entity_provided_for",
+                    "entity": "Entities/20015/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/Social inclusion",
+            "name": "Social inclusion",
+            "description": "",
+            "wd_node": "Q3149923",
+            "wd_label": "Social inclusion",
+            "wd_description": "affirmative action to change the circumstances and habits that lead to (or have led to) social exclusion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20006/group",
+                    "roleName": "A2_gol_group",
+                    "entity": "Entities/20015/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20004/Test",
+            "name": "Test",
+            "description": "Patients undergo tests for radiation",
+            "wd_node": "Q1003030",
+            "wd_label": "test",
+            "wd_description": "way of checking something for quality or attributes",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20007/examiner",
+                    "roleName": "A0_pag_examiner",
+                    "entity": "Entities/20715/"
+                },
+                {
+                    "@id": "Participants/20008/examined",
+                    "roleName": "A1_loc_examined",
+                    "entity": "Entities/20716/"
+                },
+                {
+                    "@id": "Participants/20009/result",
+                    "roleName": "A3_prd_test_result",
+                    "entity": "Entities/20012/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Collateral damage",
+            "name": "Collateral damage",
+            "description": "",
+            "wd_node": "Q45939",
+            "wd_label": "collateral damage",
+            "wd_description": "damage to things that are incidental to the intended target",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20010/agent",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/20012/"
+                },
+                {
+                    "@id": "Participants/20011/damaged",
+                    "roleName": "A1_ppt_entity_damaged",
+                    "entity": "Entities/20001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20006/Development",
+            "name": "Development",
+            "description": "Development occurs at contamination site",
+            "wd_node": "Q7562091",
+            "wd_label": "development",
+            "wd_description": "process of developing; growth, directed change",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20012/location",
+                    "roleName": "A1_loc_location",
+                    "entity": "Entities/20001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20007/Working conditions",
+            "name": "Working conditions",
+            "description": "Hazardous work environment",
+            "wd_node": "Q7268795",
+            "wd_label": "quality of working life",
+            "wd_description": "a person's broader employment-related experience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20013/worker",
+                    "roleName": "A0_pag_worker",
+                    "entity": "Entities/20015/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20008/Death",
+            "name": "Death",
+            "description": "Contaminated individuals die",
+            "wd_node": "Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20014/deceased",
+                    "roleName": "A1_ppt_the_deceased",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20015/cause",
+                    "roleName": "AM_cau__cause",
+                    "entity": "Entities/20012/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20009/Planning",
+            "name": "Planning",
+            "description": "Safety education program is planned",
+            "wd_node": "Q309100",
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20016/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "Entities/20718/"
+                },
+                {
+                    "@id": "Participants/20017/planned",
+                    "roleName": "A1_ppt_thing_planned",
+                    "entity": "Entities/20714/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20010/Estimation",
+            "name": "Estimation",
+            "description": "Settlement is negociated",
+            "wd_node": "Q791801",
+            "wd_label": "estimation",
+            "wd_description": "process of finding an estimate, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20018/estimator",
+                    "roleName": "A0_pag_agent_estimator",
+                    "entity": "Entities/20040/"
+                },
+                {
+                    "@id": "Participants/20019/estimated",
+                    "roleName": "A1_ppt_theme_thing_estimated",
+                    "entity": "Entities/20041/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20011/Confirmation",
+            "name": "Confirmation",
+            "description": "Damage is confirmed",
+            "wd_node": "Q106425867",
+            "wd_label": "validation",
+            "wd_description": "the testing of a previous observation with an expectation of confirmation",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20020/confirmer",
+                    "roleName": "A0_pag_confirmer",
+                    "entity": "Entities/20017/"
+                },
+                {
+                    "@id": "Participants/20021/confirmed",
+                    "roleName": "A1_ppt_thing_confirmed",
+                    "entity": "Entities/20016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20012/Identification",
+            "name": "Identification",
+            "description": "",
+            "wd_node": "Q3265221",
+            "wd_label": "identification",
+            "wd_description": "mapping of an entity known or recognizable by certain features to an abstract conventional entity by which it will be known and designated without ambiguity",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20022/causer",
+                    "roleName": "A0_pag_causer_of_change",
+                    "entity": "Entities/20000/"
+                },
+                {
+                    "@id": "Participants/20023/changing",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "Entities/20001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20013/Environmental exposure",
+            "name": "Environmental exposure",
+            "description": "Environment is exposed",
+            "wd_node": "Q26897695",
+            "wd_label": "environmental exposure",
+            "wd_description": "exposure to potentially harmful chemical, physical, or biological agents in the environment or to environmental factors such as radiation, pathogens or toxic chemicals",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20024/exposed",
+                    "roleName": "A1_ppt_exposed_entity",
+                    "entity": "Entities/20001/"
+                },
+                {
+                    "@id": "Participants/20025/exposed_to",
+                    "roleName": "A2_gol_exposed_to",
+                    "entity": "Entities/20000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20014/Emergency evacuation",
+            "name": "Emergency evacuation",
+            "description": "Area is evacuated",
+            "wd_node": "Q606332",
+            "wd_label": "emergency evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20026/transporter",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "Entities/20715/"
+                },
+                {
+                    "@id": "Participants/20027/transported",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20028/loc",
+                    "roleName": "A2_dir_initial_location_source",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20015/Detection",
+            "name": "Detection",
+            "description": "Spill is detected",
+            "wd_node": "Q5720030",
+            "wd_label": "detection",
+            "wd_description": "action of accessing information without specific cooperation from or synchronization with the sender",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20029/detector",
+                    "roleName": "A0_ppt_detector",
+                    "entity": "Entities/20712/"
+                },
+                {
+                    "@id": "Participants/20030/detected",
+                    "roleName": "A1_pag_detected",
+                    "entity": "Entities/20030/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20016/Loss",
+            "name": "Loss",
+            "description": "Radioactive substance is lost",
+            "wd_node": "Q3030513",
+            "wd_label": "disappearance",
+            "wd_description": "action of disappearing or vanishing",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20031/loser",
+                    "roleName": "A0_pag_entity_losing_something",
+                    "entity": "Entities/20721/"
+                },
+                {
+                    "@id": "Participants/20032/thing_lost",
+                    "roleName": "A1_ppt_thing_lost",
+                    "entity": "Entities/20012/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20017/Explanation",
+            "name": "Explanation",
+            "description": "Event is publicly explained",
+            "wd_node": "Q7958",
+            "wd_label": "eplanation",
+            "wd_description": "set of statements constructed to describe a set of facts",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20033/explainer",
+                    "roleName": "A0_pag_explainer",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20034/explained",
+                    "roleName": "A1_ppt_thing_explained",
+                    "entity": "Entities/20016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20018/Maintenance",
+            "name": "Maintenance",
+            "description": "Site is maintained",
+            "wd_node": "Q1043452",
+            "wd_label": "maintenance",
+            "wd_description": "Involves functional checks, servicing, repairing or replacing of necessary devices, equipment, machinery, building infrastructure, and supporting utilities in industrial, business, and residential installations",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20035/maintainer",
+                    "roleName": "A0_pag_maintainer",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20036/maintained",
+                    "roleName": "A1_ppt_thing_maintained",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20019/Announcement",
+            "name": "Announcement",
+            "description": "Spill event is announced",
+            "wd_node": "Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20037/announcer",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20038/utterance",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "Entities/20016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20020/Control",
+            "name": "Control",
+            "description": "Situation is controlled",
+            "wd_node": "Q29017603",
+            "wd_label": "control",
+            "wd_description": "complete authority over something; ability to fully direct the operation of a device, system, or process",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20039/controller",
+                    "roleName": "A0_pag_controller",
+                    "entity": "Entities/20712/"
+                },
+                {
+                    "@id": "Participants/20040/controlled",
+                    "roleName": "A1_ppt_controlled",
+                    "entity": "Entities/20000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20021/Drilling",
+            "name": "Drilling",
+            "description": "Drilling prompts spill",
+            "wd_node": "Q890886",
+            "wd_label": "drilling",
+            "wd_description": "cutting process that uses a drill bit to cut a hole of circular cross-section in solid materials",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20041/driller",
+                    "roleName": "A0_pag_driller",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20042/drilled",
+                    "roleName": "A1_ppt_thing_drilled",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20022/Shutdown",
+            "name": "Shutdown",
+            "description": "System is shut down",
+            "wd_node": "Q68133333",
+            "wd_label": "shutdown process",
+            "wd_description": "procedure of shutting down a running system",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20043/shutdown",
+                    "roleName": "A0_pag_Intentional_agent",
+                    "entity": "Entities/20015/"
+                },
+                {
+                    "@id": "Participants/20044/thing_ending",
+                    "roleName": "A1_ppt_Thing_ending",
+                    "entity": "Entities/20002/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}
