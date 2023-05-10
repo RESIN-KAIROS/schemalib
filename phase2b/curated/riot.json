@@ -1,13 +1,13 @@
 {
-    "@id": "resin:Submissions/TA2/schemas_riot-events",
+    "@id": "Submissions/TA2/schemas_riot-events",
     "sdfVersion": "3.0",
-    "version": "resin:riot-events/20230414",
+    "version": "riot-events/20230414",
     "events": [
         {
-            "@id": "resin:Events/10000/riot-event",
+            "@id": "Events/10000/riot-event",
             "children": [
                 "Events/20000/Precursors",
-                "Events/20002/Civil Unrest",
+                "Events/20002/Riot",
                 "Events/20003/Post-Riot Authority Response",
                 "Events/20004/Post-Riot Government Response",
                 "Events/20005/Post-Riot Society Response",
@@ -18,7 +18,7 @@
             ],
             "children_gate": "or",
             "description": "A riot is defined by acts of collective violence. While peaceful protests may lead to riots, the peaceful protests themselves are not within the scope of KAIROS. The basic nature of a riot is unplanned and spontaneous, arising in a haphazard manner with the assembling of a crowd that turns violent and challenge the normative social order.",
-            "name": "Riot",
+            "name": "Riot Event",
             "entities": [
                 {
                     "@id": "Entities/00000/rioter",
@@ -209,7 +209,72 @@
                     "wd_description": "distinct region in geography; a broad term that can include political divisions"
                 }
             ],
-            "relations": [],
+            "relations": [
+                {
+                    "@id": "Relations/30000/",
+                    "name": "location",
+                    "relationSubject": "Entities/00000/rioter",
+                    "relationObject": "Entities/00006/riot-location",
+                    "wd_node": "wd:P276",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30001/",
+                    "name": "location",
+                    "relationSubject": "Entities/00001/police",
+                    "relationObject": "Entities/00006/riot-location",
+                    "wd_node": "wd:P276",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30002/",
+                    "name": "location",
+                    "relationSubject": "Entities/00003/riot-group",
+                    "relationObject": "Entities/00006/riot-location",
+                    "wd_node": "wd:P276",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30003/",
+                    "name": "part of",
+                    "relationSubject": "Entities/00000/rioter",
+                    "relationObject": "Entities/00003/riot-group",
+                    "wd_node": "wd:P361",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "Relations/30004/",
+                    "name": "item operated",
+                    "relationSubject": "Entities/00019/riot-weapon",
+                    "relationObject": "Entities/00000/rioter",
+                    "wd_node": "wd:P121",
+                    "wd_description": "equipment, installation or service operated by the subject"
+                },
+                {
+                    "@id": "Relations/30005/",
+                    "name": "item operated",
+                    "relationSubject": "Entities/00020/public-weapon",
+                    "relationObject": "Entities/00005/general-public",
+                    "wd_node": "wd:P121",
+                    "wd_description": "equipment, installation or service operated by the subject"
+                },
+                {
+                    "@id": "Relations/30006/",
+                    "name": "item operated",
+                    "relationSubject": "Entities/00021/police-weapon",
+                    "relationObject": "Entities/00001/police",
+                    "wd_node": "wd:P121",
+                    "wd_description": "equipment, installation or service operated by the subject"
+                },
+                {
+                    "@id": "Relations/30007/",
+                    "name": "member of",
+                    "relationSubject": "Entities/000013/politician",
+                    "relationObject": "Entities/00009/government",
+                    "wd_node": "wd:P463",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ],
             "wd_label": "event",
             "wd_node": "Q1656682",
             "wd_description": "temporary and scheduled happening, like a conference, festival or competition",
@@ -228,7 +293,7 @@
             "optional": false,
             "children_gate": "or",
             "outlinks": [
-                "Events/20002/Civil Unrest"
+                "Events/20002/Riot"
             ],
             "participants": [],
             "children": [
@@ -241,7 +306,12 @@
                 "Events/20006/economic issue",
                 "Events/20007/demographic issue",
                 "Events/20008/public grievance",
-                "Events/20009/crowd assembly"
+                "Events/20009/crowd assembly",
+                "Events/20003/Taking office",
+                "Events/20007/Work",
+                "Events/20001/gathering",
+                "Events/20008/planning",
+                "Events/20000/organizing"
             ],
             "modality": [],
             "entities": [],
@@ -250,14 +320,14 @@
             "likelihood": []
         },
         {
-            "@id": "Events/20002/Civil Unrest",
-            "name": "Civil Unrest",
+            "@id": "Events/20002/Riot",
+            "name": "Riot",
             "description": "",
             "wd_label": "riot",
             "wd_node": "wd:Q124757",
             "wd_description": "form of civil disorder",
             "isSchema": true,
-            "repeatable": false,
+            "repeatable": true,
             "optional": false,
             "children_gate": "or",
             "outlinks": [
@@ -270,7 +340,7 @@
             ],
             "participants": [],
             "children": [
-                "Events/20010/Riot Action",
+                "Events/20010/Rioter Action",
                 "Events/20011/Society Response",
                 "Events/20012/Authority Response",
                 "Events/20013/Media Response",
@@ -301,7 +371,8 @@
             "children": [
                 "Events/20042/investigations",
                 "Events/20043/arrests",
-                "Events/20044/curfew"
+                "Events/20044/curfew",
+                "Events/20006/Leadership"
             ],
             "modality": [],
             "entities": [],
@@ -330,7 +401,8 @@
                 "Events/20047/election",
                 "Events/20048/resignation",
                 "Events/20003/shutdown",
-                "Events/20004/condemnation"
+                "Events/20004/condemnation",
+                "Events/20010/Succession"
             ],
             "modality": [],
             "entities": [],
@@ -355,7 +427,9 @@
             "participants": [],
             "children": [
                 "Events/20049/public petitions",
-                "Events/20050/society reconstruction"
+                "Events/20050/society reconstruction",
+                "Events/20004/Social inclusion",
+                "Events/20006/change"
             ],
             "modality": [],
             "entities": [],
@@ -381,7 +455,9 @@
             "children": [
                 "Events/20051/journalism",
                 "Events/20052/propaganda",
-                "Events/20053/notify public"
+                "Events/20053/notify public",
+                "Events/20000/Announcement",
+                "Events/20003/Accusation"
             ],
             "modality": [],
             "entities": [],
@@ -404,7 +480,8 @@
             "participants": [],
             "children": [
                 "Events/20054/reopening",
-                "Events/20055/augment services"
+                "Events/20055/augment services",
+                "Events/20015/Loss"
             ],
             "modality": [],
             "entities": [],
@@ -429,7 +506,8 @@
                 "Events/20056/travel alert",
                 "Events/20057/express support",
                 "Events/20058/condemn actions",
-                "Events/20059/international petitions"
+                "Events/20059/international petitions",
+                "Events/20008/support"
             ],
             "modality": [],
             "entities": [],
@@ -457,11 +535,11 @@
                 "Events/20063/discovery",
                 "Events/20064/motion",
                 "Events/20065/motionOutlinks",
-                "Events/20067/mediation",
                 "Events/20068/settlement",
-                "Events/20069/trial",
                 "Events/20070/judgement",
-                "Events/20071/appeal"
+                "Events/20071/appeal",
+                "Events/20009/Amenity",
+                "Events/20002/reception"
             ],
             "modality": [],
             "entities": [],
@@ -470,14 +548,14 @@
             "likelihood": []
         },
         {
-            "@id": "Events/20010/Riot Action",
-            "name": "Riot Action",
+            "@id": "Events/20010/Rioter Action",
+            "name": "Rioter Action",
             "description": "",
             "wd_label": "action",
             "wd_node": "wd:Q4026292",
             "wd_description": "something an agent can do or perform",
             "isSchema": true,
-            "repeatable": true,
+            "repeatable": false,
             "optional": false,
             "children_gate": "or",
             "outlinks": [
@@ -497,7 +575,19 @@
                 "Events/20013/taunting",
                 "Events/20014/harassment",
                 "Events/20015/property damage",
-                "Events/20016/trespassing"
+                "Events/20016/trespassing",
+                "Events/20001/Use",
+                "Events/20002/Killing",
+                "Events/20005/Involvement",
+                "Events/20011/Riot",
+                "Events/20012/Walking",
+                "Events/20013/throwing",
+                "Events/20014/Knife fight",
+                "Events/20005/Public speaking",
+                "Events/20007/collateral damage",
+                "Events/20000/violent crime",
+                "Events/20001/meeting",
+                "Events/20002/shooting"
             ],
             "modality": [],
             "entities": [],
@@ -579,7 +669,9 @@
             "participants": [],
             "children": [
                 "Events/20030/public warning",
-                "Events/20031/propagate propaganda"
+                "Events/20031/propagate propaganda",
+                "Events/20000/Reporting",
+                "Events/20003/speech"
             ],
             "modality": [],
             "entities": [],
@@ -626,7 +718,8 @@
             "children": [
                 "Events/20034/shutdown",
                 "Events/20035/public statement",
-                "Events/20036/resignation"
+                "Events/20036/resignation",
+                "Events/20004/control"
             ],
             "modality": [],
             "entities": [],
@@ -3424,6 +3517,891 @@
                     "@id": "Participants/20004/condemnation/4",
                     "roleName": "AM_loc",
                     "entity": "Entities/00014/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Reporting",
+            "name": "Reporting",
+            "description": "Riot event is reported on media outlets",
+            "wd_node": "Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/media",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "Entities/00022/media-company"
+                },
+                {
+                    "@id": "Participants/20001/reported",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "Entities/00003/riot-group"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/Use",
+            "name": "Use",
+            "description": "Rioter uses a weapon",
+            "wd_node": "Q1724915",
+            "wd_label": "use",
+            "wd_description": "use of a resource to perform a task",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20002/user",
+                    "roleName": "A0_pag_User",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20003/weapon",
+                    "roleName": "A1_ppt_thing_used",
+                    "entity": "Entities/00019/riot-weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/Killing",
+            "name": "Killing",
+            "description": "Someone is killed by a rioter",
+            "wd_node": "Q844482",
+            "wd_label": "killing",
+            "wd_description": "act of killing a living being",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/killer",
+                    "roleName": "A0_pag_killer",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20005/corpse",
+                    "roleName": "A1_ppt_corpse",
+                    "entity": "Entities/00005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/Taking office",
+            "name": "Taking office",
+            "description": "Official is elected",
+            "wd_node": "Q28530236",
+            "wd_label": "taking_office",
+            "wd_description": "procedure, event start work in the post",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20006/agent",
+                    "roleName": "A0_pag_Agent",
+                    "entity": "Entities/000013/politician"
+                },
+                {
+                    "@id": "Participants/20007/result",
+                    "roleName": "A1_ppt_Theme",
+                    "entity": "Entities/00015/electoral-result"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20004/Social inclusion",
+            "name": "Social inclusion",
+            "description": "Rioters are stigmatized",
+            "wd_node": "Q3149923",
+            "wd_label": "social inclusion",
+            "wd_description": "affirmative action to change the circumstances and habits that lead to (or have led to) social exclusion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20008/theme",
+                    "roleName": "A1_ppt_theme",
+                    "entity": "Entities/00005/general-public"
+                },
+                {
+                    "@id": "Participants/20009/group",
+                    "roleName": "A2_gol_group",
+                    "entity": "Entities/00000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Involvement",
+            "name": "Involvement",
+            "description": "Rioters are involved in riot",
+            "wd_node": "Q36949023",
+            "wd_label": "involvement",
+            "wd_description": "state of being involved (e.g. in a process or event)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20010/cause",
+                    "roleName": "A0_pag_causer_of_inclusion",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20011/public",
+                    "roleName": "A2_ppt_group",
+                    "entity": "Entities/00005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20006/Leadership",
+            "name": "Leadership",
+            "description": "leadership takes charge",
+            "wd_node": "Q484275",
+            "wd_label": "leadership",
+            "wd_description": "ability of an individual or organization to guide other individuals, teams, or entire organizations",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20012/leader",
+                    "roleName": "A0_pag_leader",
+                    "entity": "Entities/000013/politician"
+                },
+                {
+                    "@id": "Participants/20013/public",
+                    "roleName": "A1_ppt_entity_lead",
+                    "entity": "Entities/00005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20007/Work",
+            "name": "Work",
+            "description": "Rioters rebel at work",
+            "wd_node": "Q6958747",
+            "wd_label": "work",
+            "wd_description": "activities performed as a means of support",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20014/worker",
+                    "roleName": "A0_pag_worker",
+                    "entity": "Entities/00000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20008/support",
+            "name": "support",
+            "description": "External governments get involved",
+            "wd_node": "Q1643184",
+            "wd_label": "help",
+            "wd_description": "cooperation between living beings",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20015/support",
+                    "roleName": "A0_pag_helper",
+                    "entity": "Entities/00023/foreign-gov"
+                },
+                {
+                    "@id": "Participants/20016/rioter",
+                    "roleName": "A1_ppt_person",
+                    "entity": "Entities/00000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20009/Amenity",
+            "name": "Amenity",
+            "description": "Government provides an amenity",
+            "wd_node": "Q867393",
+            "wd_label": "amenity",
+            "wd_description": "infrastructure available for use and improving quality of life",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20017/provider",
+                    "roleName": "A0_pag_provider",
+                    "entity": "Entities/00009/government"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20010/Succession",
+            "name": "Succession",
+            "description": "Position of power is inherited",
+            "wd_node": "Q200303",
+            "wd_label": "inheritance",
+            "wd_description": "practice of passing on property upon the death of individuals",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20018/thing_following",
+                    "roleName": "A1_ppt_thing_following",
+                    "entity": "Entities/00009/government"
+                },
+                {
+                    "@id": "Participants/20019/followed",
+                    "roleName": "A2_ppt_thing_followed",
+                    "entity": "Entities/000013/politician"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20011/Riot",
+            "name": "Riot",
+            "description": "Riot ensues",
+            "wd_node": "Q124757",
+            "wd_label": "riot",
+            "wd_description": "violent public disturbance against authority, property or people",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20020/rioter",
+                    "roleName": "A0_pag__rioter",
+                    "entity": "Entities/00003/riot-group"
+                },
+                {
+                    "@id": "Participants/20021/cause",
+                    "roleName": "A1_cau__who/what_the_riot_is_against",
+                    "entity": "Entities/00010/ideology-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20012/Walking",
+            "name": "Walking",
+            "description": "A march is organized in protest",
+            "wd_node": "Q6537379",
+            "wd_label": "walking",
+            "wd_description": "one of the main gaits of locomotion among legged animals, typically slower than running and other gaits; characterized by a 'vaulting' movement of the body over the legs, frequently described as an inverted pendulum",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20022/walker",
+                    "roleName": "A0_pag_walker",
+                    "entity": "Entities/00003/riot-group"
+                },
+                {
+                    "@id": "Participants/20023/path",
+                    "roleName": "A2_loc_path/_underspecified_location_walked",
+                    "entity": "Entities/00006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20013/throwing",
+            "name": "throwing",
+            "description": "Something is thrown by the rioters at police",
+            "wd_node": "Q12898216",
+            "wd_label": "throwing",
+            "wd_description": "launching of a ballistic projectile by hand",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20024/thrower",
+                    "roleName": "A0_pag_thrower",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20025/thrown",
+                    "roleName": "A1_ppt_thing_thrown",
+                    "entity": "Entities/00019/riot-weapon"
+                },
+                {
+                    "@id": "Participants/20026/targer",
+                    "roleName": "A2_gol_thrown_at",
+                    "entity": "Entities/00001/police"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20014/Knife fight",
+            "name": "Knife fight",
+            "description": "A fight breaks out which involves knives",
+            "wd_node": "Q2235801",
+            "wd_label": "knife fight",
+            "wd_description": "violent physical confrontation involving knives",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20027/figher",
+                    "roleName": "A0_pag_fighter",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20028/weapon",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "Entities/00019/riot-weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20015/Loss",
+            "name": "Loss",
+            "description": "One or more businesses loses property",
+            "wd_node": "Q3030513",
+            "wd_label": "disappearance",
+            "wd_description": "action of disappearing or vanishing",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20029/loser",
+                    "roleName": "A0_pag_entity_losing_something",
+                    "entity": "Entities/00002/business"
+                },
+                {
+                    "@id": "Participants/20030/property",
+                    "roleName": "A1_ppt_thing_lost",
+                    "entity": "Entities/00007/building-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/Announcement",
+            "name": "Announcement",
+            "description": "An announcement is made regarding a political election",
+            "wd_node": "Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/announcer",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "Entities/00022/media-company"
+                },
+                {
+                    "@id": "Participants/20001/results",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "Entities/00015/electoral-result"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/gathering",
+            "name": "gathering",
+            "description": "People gather",
+            "wd_node": "Q108634029",
+            "wd_label": "gathering",
+            "wd_description": "act of bringing items together",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20002/Entities/00000/rioter",
+                    "roleName": "A0_pag_agent_or_causer",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20003/group",
+                    "roleName": "A1_ppt_entity_gathered",
+                    "entity": "Entities/00003/riot-group"
+                },
+                {
+                    "@id": "Participants/20004/loc",
+                    "roleName": "A2_gol_gathered_into",
+                    "entity": "Entities/00006/riot-location"
+                },
+                {
+                    "@id": "Participants/20018/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "Entities/00000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/reception",
+            "name": "reception",
+            "description": "Civil justice is received",
+            "wd_node": "Q76664785",
+            "wd_label": "getting",
+            "wd_description": "to get something or someone, to receive something or someone",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20005/receiver",
+                    "roleName": "A0_pag_receiver",
+                    "entity": "Entities/00005/general-public"
+                },
+                {
+                    "@id": "Participants/20006/law",
+                    "roleName": "A1_ppt_thing_gotten",
+                    "entity": "Entities/00016/law-generic"
+                },
+                {
+                    "@id": "Participants/20007/source",
+                    "roleName": "A2_dir_source",
+                    "entity": "Entities/00012/court-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/Accusation",
+            "name": "Accusation",
+            "description": "The police are accused of brutality",
+            "wd_node": "Q19357312",
+            "wd_label": "accusation",
+            "wd_description": "act of accusing or charging another with a crime or transgression",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20008/accuser",
+                    "roleName": "A0_pag_agent_accuser",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20009/police",
+                    "roleName": "A1_ppt_theme_accused",
+                    "entity": "Entities/00001/police"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20004/control",
+            "name": "control",
+            "description": "police take control of the riot",
+            "wd_node": "Q29017603",
+            "wd_label": "control",
+            "wd_description": "complete authority over something; ability to fully direct the operation of a device, system, or process",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20010/police",
+                    "roleName": "A0_pag_controller",
+                    "entity": "Entities/00001/police"
+                },
+                {
+                    "@id": "Participants/20011/controlled",
+                    "roleName": "A1_ppt_controlled",
+                    "entity": "Entities/00003/riot-group"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20005/Public speaking",
+            "name": "Public speaking",
+            "description": "politicians make a public address",
+            "wd_node": "Q18342738",
+            "wd_label": "public_speaking",
+            "wd_description": "process and act of speaking or giving a lecture to a group of people in a structured, deliberate manner intended to inform, influence, or entertain a listening audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20012/politician",
+                    "roleName": "A0_pag_talker",
+                    "entity": "Entities/000013/politician"
+                },
+                {
+                    "@id": "Participants/20013/topic",
+                    "roleName": "A1_ppt_subject",
+                    "entity": "Entities/00010/ideology-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20006/change",
+            "name": "change",
+            "description": "Change is enacted by the courts",
+            "wd_node": "Q1150070",
+            "wd_label": "change",
+            "wd_description": "process, event or action that deviates from the present state",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20014/causer",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "Entities/00012/court-generic"
+                },
+                {
+                    "@id": "Participants/20015/law",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "Entities/00016/law-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20007/collateral damage",
+            "name": "collateral damage",
+            "description": "Damage is caused to bystanders of the riot",
+            "wd_node": "Q45939",
+            "wd_label": "collateral damage",
+            "wd_description": "damage to things that are incidental to the intended target",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20016/damage",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/00003/riot-group"
+                },
+                {
+                    "@id": "Participants/20017/damaged",
+                    "roleName": "A1_ppt_entity_damaged",
+                    "entity": "Entities/00007/building-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20008/planning",
+            "name": "planning",
+            "description": "location of riot is planned",
+            "wd_node": "Q309100",
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20019/planned",
+                    "roleName": "A1_ppt_thing_planned",
+                    "entity": "Entities/00006/riot-location"
+                },
+                {
+                    "@id": "Participants/20000/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "Entities/00000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/violent crime",
+            "name": "violent crime",
+            "description": "violence is committed during the riot",
+            "wd_node": "Q1520311",
+            "wd_label": "violent_crime",
+            "wd_description": "crime in which an offender uses or threatens force upon a victim",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20001/agent",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/00000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20000/organizing",
+            "name": "organizing",
+            "description": "riot event is planned",
+            "wd_node": "Q25931691",
+            "wd_label": "organizing",
+            "wd_description": "term in management",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20000/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20001/location",
+                    "roleName": "A1_ppt_thing_organized",
+                    "entity": "Entities/00006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20001/meeting",
+            "name": "meeting",
+            "description": "two parties involved meet",
+            "wd_node": "Q2761147",
+            "wd_label": "meeting",
+            "wd_description": "event in which two or more people assemble, planned in advance to facilitate discussion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20002/party_1",
+                    "roleName": "A0_pag_one_party",
+                    "entity": "Entities/00008/state1"
+                },
+                {
+                    "@id": "Participants/20003/party_2",
+                    "roleName": "A1_com_other_party",
+                    "entity": "Entities/00009/state2"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20002/shooting",
+            "name": "shooting",
+            "description": "a shooter attacks",
+            "wd_node": "Q2252077",
+            "wd_label": "shooting",
+            "wd_description": "act or process of firing firearms or other projectile weapons",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20004/shooter",
+                    "roleName": "A0_pag_agent_shooter",
+                    "entity": "Entities/00000/rioter"
+                },
+                {
+                    "@id": "Participants/20005/corpse",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "Entities/00005/general-public"
+                },
+                {
+                    "@id": "Participants/20006/weapon",
+                    "roleName": "A2_mnr_instrument_gun",
+                    "entity": "Entities/00020/public-weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/20003/speech",
+            "name": "speech",
+            "description": "a politician speaks at the riot",
+            "wd_node": "Q861911",
+            "wd_label": "oration",
+            "wd_description": "address delivered to an audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20007/lecturer",
+                    "roleName": "A0_pag_lecturer",
+                    "entity": "Entities/000013/politician"
+                },
+                {
+                    "@id": "Participants/20008/public",
+                    "roleName": "A1_gol_audience",
+                    "entity": "Entities/00005/general-public"
+                },
+                {
+                    "@id": "Participants/20009/utterance",
+                    "roleName": "A2_ppt_topic_or_utterance",
+                    "entity": "Entities/00017/riot-reason"
                 }
             ],
             "modality": [],
