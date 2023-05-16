@@ -7,7 +7,7 @@
             "@id": "resin:Events/10000",
             "name": "Chemical Spills",
             "description": "chemical spills news story.",
-            "wd_node": "Q1349983",
+            "wd_node": "wd:Q1349983",
             "wd_label": "leak",
             "wd_description": "process of fluid escaping containment",
             "isSchema": true,
@@ -253,13 +253,13 @@
             "@id": "resin:Events/10001",
             "name": "Background",
             "description": "Background of the site of the chemical spill.",
-            "wd_node": "Q1349983",
+            "wd_node": "wd:Q1349983",
             "wd_label": "leak",
             "wd_description": "process of fluid escaping containment",
             "isSchema": true,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10002"
+                "resin:Events/10003"
             ],
             "participants": [
                 {
@@ -290,13 +290,16 @@
             "@id": "resin:Events/10002",
             "name": "Chemical spill",
             "description": "Chemicals are spilled into the environment.",
-            "wd_node": "Q60528603",
+            "wd_node": "wd:Q60528603",
             "wd_label": "contamination",
             "wd_description": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
             "isSchema": true,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10003"
+                "resin:Events/10004",
+                "resin:Events/10007",
+                "resin:Events/10006",
+                "resin:Events/10005"
             ],
             "participants": [
                 {
@@ -335,15 +338,13 @@
             "@id": "resin:Events/10003",
             "name": "Hazards",
             "description": "The spill causes other hazards such as fire.",
-            "wd_node": "Q1132455",
+            "wd_node": "wd:Q1132455",
             "wd_label": "hazard",
             "wd_description": "situation that poses a potential threat to life, health, property, or environment",
             "isSchema": true,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10004",
-                "resin:Events/10005",
-                "resin:Events/10007"
+                "resin:Events/10002"
             ],
             "participants": [
                 {
@@ -374,14 +375,12 @@
             "@id": "resin:Events/10004",
             "name": "Investigation",
             "description": "The cause of the spill is investigated.",
-            "wd_node": "Q21004260",
+            "wd_node": "wd:Q21004260",
             "wd_label": "inquiry",
             "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
             "isSchema": true,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10006"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20040",
@@ -415,7 +414,7 @@
             "@id": "resin:Events/10005",
             "name": "Recovery",
             "description": "The area of the spill recovers to normal.",
-            "wd_node": "Q38127868",
+            "wd_node": "wd:Q38127868",
             "wd_label": "recovery",
             "wd_description": "process by which something is returned to its former status or position",
             "isSchema": true,
@@ -454,7 +453,7 @@
             "@id": "resin:Events/10006",
             "name": "Consequences",
             "description": "The chemical spill leads to changes in regulations and legislation.",
-            "wd_node": "Q49371",
+            "wd_node": "wd:Q49371",
             "wd_label": "legislation",
             "wd_description": "law enacted by a legislature or other governing body",
             "isSchema": true,
@@ -494,7 +493,7 @@
             "@id": "resin:Events/10007",
             "name": "Public response",
             "description": "The public responds to reports of the chemical spill.",
-            "wd_node": "Q51158748",
+            "wd_node": "wd:Q51158748",
             "wd_label": "outrage",
             "wd_description": "serious insult in fact or in speech",
             "isSchema": true,
@@ -540,14 +539,12 @@
             "@id": "resin:Events/10008",
             "name": "Contamination",
             "description": "This can happen accidentally or deliberately.",
-            "wd_node": "Q171558",
+            "wd_node": "wd:Q171558",
             "wd_label": "accident",
             "wd_description": "unforeseen and unplanned event or circumstance, often with a negative outcome",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10009"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20080",
@@ -573,7 +570,7 @@
             "@id": "resin:Events/10009",
             "name": "Water and Soil Contamination",
             "description": "It can also contaminate water and soil.",
-            "wd_node": "Q60528603",
+            "wd_node": "wd:Q60528603",
             "wd_label": "contamination",
             "wd_description": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
             "isSchema": false,
@@ -606,16 +603,14 @@
         },
         {
             "@id": "resin:Events/10010",
-            "name": "Description: Decontaminate",
+            "name": "Decontaminate",
             "description": "The chemicals can cause harm to people, animals, and plants.",
-            "wd_node": "Q114953",
+            "wd_node": "wd:Q114953",
             "wd_label": "poisoning",
             "wd_description": "toxic effect of a biological or chemical agent",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10011"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20100",
@@ -646,7 +641,7 @@
             "@id": "resin:Events/10011",
             "name": "Air Pollution",
             "description": "The chemicals can pollute the air.",
-            "wd_node": "Q10711575",
+            "wd_node": "wd:Q10711575",
             "wd_label": "emissions",
             "wd_description": "None",
             "isSchema": false,
@@ -677,7 +672,7 @@
             "@id": "resin:Events/10012",
             "name": "Toxic Gas",
             "description": "- The chemical spill causes a toxic gas to be released.",
-            "wd_node": "Q1349983",
+            "wd_node": "wd:Q1349983",
             "wd_label": "leak",
             "wd_description": "process of fluid escaping containment",
             "isSchema": false,
@@ -708,7 +703,7 @@
             "@id": "resin:Events/10013",
             "name": "Environmental Monitoring",
             "description": "The affected area is monitored for environmental impact.",
-            "wd_node": "Q2143522",
+            "wd_node": "wd:Q2143522",
             "wd_label": "monitoring",
             "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
             "isSchema": false,
@@ -744,12 +739,14 @@
             "@id": "resin:Events/10014",
             "name": "Cleanup",
             "description": "The area is cleaned up and any contaminated materials are removed",
-            "wd_node": "Q17008689",
+            "wd_node": "wd:Q17008689",
             "wd_label": "decontamination",
             "wd_description": "instrument processing",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20001/Use cleaners"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/20140",
@@ -780,13 +777,13 @@
             "@id": "resin:Events/10015",
             "name": "Increased Safety Measures",
             "description": "-Increased safety measures",
-            "wd_node": "Q2251595",
+            "wd_node": "wd:Q2251595",
             "wd_label": "protection",
             "wd_description": "action or precaution against a threat against an uncertainty or possible unpleasant events",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10016"
+                "resin:Events/10017"
             ],
             "participants": [
                 {
@@ -823,13 +820,14 @@
             "@id": "resin:Events/10016",
             "name": "Decontaminate",
             "description": "-Cleanup of the spill",
-            "wd_node": "Q107036510",
+            "wd_node": "wd:Q107036510",
             "wd_label": "restoration",
             "wd_description": "event of something being returned to a prior state",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10017"
+                "Events/20012/Maintenance",
+                "Events/20008/Collateral damage"
             ],
             "participants": [
                 {
@@ -856,7 +854,7 @@
             "@id": "resin:Events/10017",
             "name": "Compensate",
             "description": "-Compensation for victims",
-            "wd_node": "Q1498273",
+            "wd_node": "wd:Q1498273",
             "wd_label": "compensation",
             "wd_description": "legal term",
             "isSchema": false,
@@ -892,14 +890,13 @@
             "@id": "resin:Events/10018",
             "name": "Alarm",
             "description": "People become aware of the spill",
-            "wd_node": "Q1349983",
+            "wd_node": "wd:Q1349983",
             "wd_label": "leak",
             "wd_description": "process of fluid escaping containment",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10027",
-                "resin:Events/10019"
+                "resin:Events/10027"
             ],
             "participants": [
                 {
@@ -931,15 +928,12 @@
             "@id": "resin:Events/10019",
             "name": "Evacuate",
             "description": "People evacuate the area",
-            "wd_node": "Q5070802",
+            "wd_node": "wd:Q5070802",
             "wd_label": "emergency",
             "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10033",
-                "resin:Events/10020"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20190",
@@ -971,15 +965,13 @@
             "@id": "resin:Events/10020",
             "name": "Crying for help",
             "description": "People call for help",
-            "wd_node": "Q5070802",
+            "wd_node": "wd:Q5070802",
             "wd_label": "emergency",
             "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10038",
-                "resin:Events/10042",
-                "resin:Events/10021"
+                "resin:Events/10026"
             ],
             "participants": [
                 {
@@ -1013,14 +1005,13 @@
             "@id": "resin:Events/10021",
             "name": "Clean up Spill",
             "description": "People clean up the spill",
-            "wd_node": "Q17008689",
+            "wd_node": "wd:Q17008689",
             "wd_label": "decontamination",
             "wd_description": "instrument processing",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10024",
-                "resin:Events/10023"
+                "Events/20000/reporting"
             ],
             "participants": [
                 {
@@ -1052,14 +1043,13 @@
             "@id": "resin:Events/10022",
             "name": "Oil Spill",
             "description": "Officials said the total amount of oil spilled was still being calculated",
-            "wd_node": "Q13065634",
+            "wd_node": "wd:Q13065634",
             "wd_label": "environmental_pollution",
             "wd_description": "contamination of the natural environment with pollutants",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10036",
-                "resin:Events/10037"
+                "resin:Events/10024"
             ],
             "participants": [
                 {
@@ -1086,7 +1076,7 @@
             "@id": "resin:Events/10023",
             "name": "Cleanup Notice",
             "description": "The public becomes aware of a spill when a notice of intent to restore habitats is released.",
-            "wd_node": "Q107036510",
+            "wd_node": "wd:Q107036510",
             "wd_label": "restoration",
             "wd_description": "event of something being returned to a prior state",
             "isSchema": false,
@@ -1117,12 +1107,14 @@
             "@id": "resin:Events/10024",
             "name": "Spill Response",
             "description": "This only happens after a spill has made it through the damage assessment pipeline.",
-            "wd_node": "Q851176",
+            "wd_node": "wd:Q851176",
             "wd_label": "assessment",
             "wd_description": "value judgement about a fact, an object or a person",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/10023"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/20240",
@@ -1153,16 +1145,12 @@
             "@id": "resin:Events/10025",
             "name": "First Reported",
             "description": "A domestic blogging site first reported it",
-            "wd_node": "Q21124681",
+            "wd_node": "wd:Q21124681",
             "wd_label": "blogging",
             "wd_description": "action of writing articles or maintaining a weblog",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10036",
-                "resin:Events/10041",
-                "resin:Events/10018"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20250",
@@ -1193,13 +1181,13 @@
             "@id": "resin:Events/10026",
             "name": "Outrage",
             "description": "They are outraged",
-            "wd_node": "Q51158748",
+            "wd_node": "wd:Q51158748",
             "wd_label": "outrage",
             "wd_description": "serious insult in fact or in speech",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10025"
+                "resin:Events/10042"
             ],
             "participants": [
                 {
@@ -1229,14 +1217,13 @@
             "@id": "resin:Events/10027",
             "name": "Wait for Instructions",
             "description": "They wait for a public notice",
-            "wd_node": "Q52947181",
+            "wd_node": "wd:Q52947181",
             "wd_label": "public_statement",
             "wd_description": "statement made for a public audience",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10042",
-                "resin:Events/10037"
+                "resin:Events/10019"
             ],
             "participants": [
                 {
@@ -1276,15 +1263,12 @@
             "@id": "resin:Events/10028",
             "name": "Evacuate Mariupol",
             "description": "About 100,000 people evacuated Mariupol",
-            "wd_node": "Q2918584",
+            "wd_node": "wd:Q2918584",
             "wd_label": "relocation",
             "wd_description": "process of vacating a fixed location (such as a residence or business) and settling in a different one",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10024",
-                "resin:Events/10023"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20280",
@@ -1320,17 +1304,12 @@
             "@id": "resin:Events/10029",
             "name": "Homelessness",
             "description": "Thousands left on foot",
-            "wd_node": "Q1228954",
+            "wd_node": "wd:Q1228954",
             "wd_label": "displacement",
             "wd_description": "change in morphological alignment",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10032",
-                "resin:Events/10033",
-                "resin:Events/10022",
-                "resin:Events/10028"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20290",
@@ -1361,14 +1340,12 @@
             "@id": "resin:Events/10030",
             "name": "Crowded Transportation",
             "description": "Some crammed nine or 10 to a vehicle",
-            "wd_node": "Q12162227",
+            "wd_node": "wd:Q12162227",
             "wd_label": "transportation",
             "wd_description": "None",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10035"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20300",
@@ -1404,14 +1381,12 @@
             "@id": "resin:Events/10031",
             "name": "Windscreens smashed",
             "description": "Windscreens were smashed in and side panels were dented by explosions",
-            "wd_node": "Q193078",
+            "wd_node": "wd:Q193078",
             "wd_label": "injury",
             "wd_description": "physiological wound caused by an external source",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10024"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20310",
@@ -1440,14 +1415,12 @@
             "@id": "resin:Events/10032",
             "name": "Leave the country",
             "description": "Gabriel Aduda said three jets chartered from local carriers would leave the country on Wednesday",
-            "wd_node": "Q376880",
+            "wd_node": "wd:Q376880",
             "wd_label": "air_travel",
             "wd_description": "form of travel in flying vehicles",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10026"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20320",
@@ -1478,15 +1451,12 @@
             "@id": "resin:Events/10033",
             "name": "People Violate Zone",
             "description": "The evacuated people often violated the zone",
-            "wd_node": "Q21256745",
+            "wd_node": "wd:Q21256745",
             "wd_label": "disobedience",
             "wd_description": "neglect or refusal to obey",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10038",
-                "resin:Events/10023"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20330",
@@ -1512,14 +1482,12 @@
             "@id": "resin:Events/10034",
             "name": "Human Rights Watch Interviews",
             "description": "Human Rights Watch spoke to nine people who organized, participated in, or witnessed the protests or were community volunteers, all of whom had been detained by Russian forces",
-            "wd_node": "Q273120",
+            "wd_node": "wd:Q273120",
             "wd_label": "protest",
             "wd_description": "expression of objection",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10024"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20340",
@@ -1548,14 +1516,12 @@
             "@id": "resin:Events/10035",
             "name": "Call for Help",
             "description": "Protesters in Kherson called for outside help",
-            "wd_node": "Q273120",
+            "wd_node": "wd:Q273120",
             "wd_label": "protest",
             "wd_description": "expression of objection",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10029"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20350",
@@ -1581,9 +1547,9 @@
             "@id": "resin:Events/10036",
             "name": "Respond to Death",
             "description": "Minneapolis Mayor Jacob Frey and Police Chief Medaria Arradondo held a press conference responding to Floyd",
-            "wd_node": "",
-            "wd_label": "",
-            "wd_description": "",
+            "wd_node": "wd:Q1920566",
+            "wd_label": "answer",
+            "wd_description": "response to a question",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [],
@@ -1596,14 +1562,12 @@
             "@id": "resin:Events/10037",
             "name": "Frey condemns police officers",
             "description": "Frey condemned the police officers",
-            "wd_node": "Q17955",
+            "wd_node": "wd:Q17955",
             "wd_label": "criticism",
             "wd_description": "practice of judging the merits and faults of something or someone",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10024"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20370",
@@ -1629,14 +1593,12 @@
             "@id": "resin:Events/10038",
             "name": "Administrative Leave",
             "description": "Initially, the officers involved were placed on paid administrative leave pending investigation, which is standard procedure for the department",
-            "wd_node": "Q105387498",
+            "wd_node": "wd:Q105387498",
             "wd_label": "suspension",
             "wd_description": "halt of implementation of a legal action",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10037"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20380",
@@ -1657,15 +1619,13 @@
             "@id": "resin:Events/10039",
             "name": "Notice Symptomps",
             "description": "Someone notices that help is needed",
-            "wd_node": "Q1643184",
+            "wd_node": "wd:Q1643184",
             "wd_label": "help",
             "wd_description": "cooperation between living things",
             "isSchema": false,
             "repeatable": false,
             "outlinks": [
-                "resin:Events/10041",
-                "resin:Events/10037",
-                "resin:Events/10023"
+                "resin:Events/10040"
             ],
             "participants": [
                 {
@@ -1692,14 +1652,12 @@
             "@id": "resin:Events/10040",
             "name": "Seek Help",
             "description": "They contact someone who can provide help",
-            "wd_node": "Q102358908",
+            "wd_node": "wd:Q102358908",
             "wd_label": "support",
             "wd_description": "help for a person in a difficult situation",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10023"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20400",
@@ -1725,7 +1683,7 @@
             "@id": "resin:Events/10041",
             "name": "Medical Professionals",
             "description": "They provide the necessary assistance",
-            "wd_node": "Q102358908",
+            "wd_node": "wd:Q102358908",
             "wd_label": "support",
             "wd_description": "help for a person in a difficult situation",
             "isSchema": false,
@@ -1756,14 +1714,12 @@
             "@id": "resin:Events/10042",
             "name": "Hold Press Conference",
             "description": "The mayor and police chief hold a press conference",
-            "wd_node": "Q2045234",
+            "wd_node": "wd:Q2045234",
             "wd_label": "briefing",
             "wd_description": "None",
             "isSchema": false,
             "repeatable": false,
-            "outlinks": [
-                "resin:Events/10024"
-            ],
+            "outlinks": [],
             "participants": [
                 {
                     "@id": "resin:Participants/20420",
@@ -1792,7 +1748,7 @@
             "@id": "Events/20000/reporting",
             "name": "reporting",
             "description": "chemical spill is reported",
-            "wd_node": "Q60050485",
+            "wd_node": "wd:Q60050485",
             "wd_label": "reporting",
             "wd_description": "producing a report (oral or written)",
             "isSchema": false,
@@ -1821,7 +1777,7 @@
             "@id": "Events/20001/Use cleaners",
             "name": "Use cleaners",
             "description": "Cleaners use chemicals to clean spill",
-            "wd_node": "Q1724915",
+            "wd_node": "wd:Q1724915",
             "wd_label": "use",
             "wd_description": "use of a resource to perform a task",
             "isSchema": false,
@@ -1850,7 +1806,7 @@
             "@id": "Events/20002/receive",
             "name": "Reception",
             "description": "Victims are evacuated",
-            "wd_node": "Q76664785",
+            "wd_node": "wd:Q76664785",
             "wd_label": "getting",
             "wd_description": "to get something or someone, to receive something or someone",
             "isSchema": false,
@@ -1879,7 +1835,7 @@
             "@id": "Events/20003/work",
             "name": "work",
             "description": "work is done to resolve chemical spill",
-            "wd_node": "Q6958747",
+            "wd_node": "wd:Q6958747",
             "wd_label": "work",
             "wd_description": "activities performed as a means of support",
             "isSchema": false,
@@ -1913,7 +1869,7 @@
             "@id": "Events/20004/Medical assistance",
             "name": "Medical assistance",
             "description": "Authority deploys medical assistance",
-            "wd_node": "Q36949023",
+            "wd_node": "wd:Q36949023",
             "wd_label": "involvement",
             "wd_description": "state of being involved (e.g. in a process or event)",
             "isSchema": false,
@@ -1942,7 +1898,7 @@
             "@id": "Events/20005/Safety measures",
             "name": "Safety measures",
             "description": "Authority provides an emergency evacuation",
-            "wd_node": "Q867393",
+            "wd_node": "wd:Q867393",
             "wd_label": "amenity",
             "wd_description": "infrastructure available for use and improving quality of life",
             "isSchema": false,
@@ -1971,7 +1927,7 @@
             "@id": "Events/20006/Awareness",
             "name": "Awareness",
             "description": "Public is made aware by human rights watch",
-            "wd_node": "Q3149923",
+            "wd_node": "wd:Q3149923",
             "wd_label": "social inclusion",
             "wd_description": "affirmative action to change the circumstances and habits that lead to (or have led to) social exclusion",
             "isSchema": false,
@@ -2000,13 +1956,15 @@
             "@id": "Events/20007/testing",
             "name": "Testing",
             "description": "Environment is examined for danger",
-            "wd_node": "Q1003030",
+            "wd_node": "wd:Q1003030",
             "wd_label": "test",
             "wd_description": "way of checking something for quality or attributes",
             "isSchema": false,
             "repeatable": false,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/10013"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20015/examiner",
@@ -2029,7 +1987,7 @@
             "@id": "Events/20008/Collateral damage",
             "name": "Collateral damage",
             "description": "",
-            "wd_node": "Q45939",
+            "wd_node": "wd:Q45939",
             "wd_label": "collateral damage",
             "wd_description": "damage to things that are incidental to the intended target",
             "isSchema": false,
@@ -2058,7 +2016,7 @@
             "@id": "Events/20000/Development",
             "name": "Development",
             "description": "contamination site undergoes development",
-            "wd_node": "Q7562091",
+            "wd_node": "wd:Q7562091",
             "wd_label": "development",
             "wd_description": "process of developing; growth, directed change",
             "isSchema": false,
@@ -2082,13 +2040,15 @@
             "@id": "Events/20001/Working conditions",
             "name": "Working conditions",
             "description": "employees environment becomes dangerous",
-            "wd_node": "Q7268795",
+            "wd_node": "wd:Q7268795",
             "wd_label": "quality of working life",
             "wd_description": "a person's broader employment-related experience",
             "isSchema": false,
             "repeatable": false,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/10015"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20001/worker",
@@ -2111,7 +2071,7 @@
             "@id": "Events/20002/Death",
             "name": "Death",
             "description": "Casualties of the chemical spill",
-            "wd_node": "Q4",
+            "wd_node": "wd:Q4",
             "wd_label": "Death",
             "wd_description": "permanent cessation of vital functions",
             "isSchema": false,
@@ -2140,13 +2100,15 @@
             "@id": "Events/20003/planning",
             "name": "Planning",
             "description": "Emergency evacuation is planned",
-            "wd_node": "Q309100",
+            "wd_node": "wd:Q309100",
             "wd_label": "planning",
             "wd_description": "process of determining the activities required to achieve a desired goal",
             "isSchema": false,
             "repeatable": false,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20014/Control"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20005/planner",
@@ -2174,13 +2136,15 @@
             "@id": "Events/20004/Estimation",
             "name": "Estimation",
             "description": "",
-            "wd_node": "Q791801",
+            "wd_node": "wd:Q791801",
             "wd_label": "estimation",
             "wd_description": "process of finding an estimate, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable",
             "isSchema": false,
             "repeatable": false,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20005/Confirmation"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20008/estimator",
@@ -2203,7 +2167,7 @@
             "@id": "Events/20005/Confirmation",
             "name": "Confirmation",
             "description": "",
-            "wd_node": "Q106425867",
+            "wd_node": "wd:Q106425867",
             "wd_label": "validation",
             "wd_description": "the testing of a previous observation with an expectation of confirmation",
             "isSchema": false,
@@ -2232,13 +2196,15 @@
             "@id": "Events/20006/Identification",
             "name": "Identification",
             "description": "",
-            "wd_node": "Q3265221",
+            "wd_node": "wd:Q3265221",
             "wd_label": "identification",
             "wd_description": "mapping of an entity known or recognizable by certain features to an abstract conventional entity by which it will be known and designated without ambiguity",
             "isSchema": false,
             "repeatable": false,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20004/Estimation"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20012/causer",
@@ -2261,7 +2227,7 @@
             "@id": "Events/20007/Environmental exposure",
             "name": "Environmental exposure",
             "description": "Environment is damaged",
-            "wd_node": "Q26897695",
+            "wd_node": "wd:Q26897695",
             "wd_label": "environmental exposure",
             "wd_description": "exposure to potentially harmful chemical, physical, or biological agents in the environment or to environmental factors such as radiation, pathogens or toxic chemicals",
             "isSchema": false,
@@ -2290,13 +2256,15 @@
             "@id": "Events/20008/Emergency evacuation",
             "name": "Emergency evacuation",
             "description": "Victims are evacuated",
-            "wd_node": "Q606332",
+            "wd_node": "wd:Q606332",
             "wd_label": "Emergency evacuation",
             "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
             "isSchema": false,
             "repeatable": true,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20002/receive"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20016/transporter",
@@ -2324,13 +2292,16 @@
             "@id": "Events/20009/Detection",
             "name": "Detection",
             "description": "",
-            "wd_node": "Q5720030",
+            "wd_node": "wd:Q5720030",
             "wd_label": "detection",
             "wd_description": "action of accessing information without specific cooperation from or synchronization with the sender",
             "isSchema": false,
             "repeatable": true,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/10004",
+                "Events/20004/Estimation"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20019/detector",
@@ -2353,7 +2324,7 @@
             "@id": "Events/20010/Loss",
             "name": "Loss",
             "description": "",
-            "wd_node": "Q3030513",
+            "wd_node": "wd:Q3030513",
             "wd_label": "disappearance",
             "wd_description": "action of disappearing or vanishing",
             "isSchema": false,
@@ -2382,13 +2353,15 @@
             "@id": "Events/20011/Explaination",
             "name": "Explaination",
             "description": "Damage is reported on",
-            "wd_node": "Q7958",
+            "wd_node": "wd:Q7958",
             "wd_label": "explanation",
             "wd_description": "set of statements constructed to describe a set of facts",
             "isSchema": false,
             "repeatable": true,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20006/Awareness"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20023/explainer",
@@ -2411,7 +2384,7 @@
             "@id": "Events/20012/Maintenance",
             "name": "Maintenance",
             "description": "",
-            "wd_node": "Q1043452",
+            "wd_node": "wd:Q1043452",
             "wd_label": "Maintenance",
             "wd_description": "Involves functional checks, servicing, repairing or replacing of necessary devices, equipment, machinery, building infrastructure, and supporting utilities in industrial, business, and residential installations",
             "isSchema": false,
@@ -2440,13 +2413,15 @@
             "@id": "Events/20013/announcement",
             "name": "Announcement",
             "description": "",
-            "wd_node": "Q567303",
+            "wd_node": "wd:Q567303",
             "wd_label": "announcement",
             "wd_description": "printed, spoken, or published statement or notice of an event or other news",
             "isSchema": false,
             "repeatable": true,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "Events/20011/Explaination"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20027/announcer",
@@ -2469,7 +2444,7 @@
             "@id": "Events/20014/Control",
             "name": "Control",
             "description": "Situation becomes under control",
-            "wd_node": "Q29017603",
+            "wd_node": "wd:Q29017603",
             "wd_label": "control",
             "wd_description": "complete authority over something; ability to fully direct the operation of a device, system, or process",
             "isSchema": false,
@@ -2498,13 +2473,15 @@
             "@id": "Events/20015/Drilling",
             "name": "Drilling",
             "description": "Drilling causes chemical spill",
-            "wd_node": "Q890886",
+            "wd_node": "wd:Q890886",
             "wd_label": "drilling",
             "wd_description": "cutting process that uses a drill bit to cut a hole of circular cross-section in solid materials",
             "isSchema": false,
             "repeatable": true,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/10008"
+            ],
             "participants": [
                 {
                     "@id": "Participants/20031/driller",
@@ -2527,7 +2504,7 @@
             "@id": "Events/20016/Shutdown",
             "name": "Shutdown",
             "description": "System is shut down",
-            "wd_node": "Q68133333",
+            "wd_node": "wd:Q68133333",
             "wd_label": "shutdown process",
             "wd_description": "procedure of shutting down a running system",
             "isSchema": false,
