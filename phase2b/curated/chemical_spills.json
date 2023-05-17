@@ -247,7 +247,197 @@
                     "wd_description": "elements of the mass media that focus on delivering news"
                 }
             ],
-            "relations": []
+            "relations": [
+                {
+                    "@id": "Relations/30000/contains",
+                    "name": "contains",
+                    "relationSubject": "Entities/20000",
+                    "relationObject": "Entities/20001",
+                    "wd_node": "wdt:P4330",
+                    "wd_label": "contains",
+                    "wd_description": "item or substance located within this item but not part of it"
+                },
+                {
+                    "@id": "Relations/30001/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20001",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30002/made from material",
+                    "name": "made from material",
+                    "relationSubject": "Entities/20001",
+                    "relationObject": "Entities/20005",
+                    "wd_node": "wdt:P186",
+                    "wd_label": "made from material",
+                    "wd_description": "material the subject or the object is made of or derived from (do not confuse with P10672 which is used for processes)"
+                },
+                {
+                    "@id": "Relations/30003/contains",
+                    "name": "contains",
+                    "relationSubject": "Entities/20004",
+                    "relationObject": "Entities/20001",
+                    "wd_node": "wdt:P4330",
+                    "wd_label": "contains",
+                    "wd_description": "item or substance located within this item but not part of it"
+                },
+                {
+                    "@id": "Relations/30004/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20020",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30006/contains",
+                    "name": "contains",
+                    "relationSubject": "Entities/20003",
+                    "relationObject": "Entities/20005",
+                    "wd_node": "wdt:P4330",
+                    "wd_label": "contains",
+                    "wd_description": "item or substance located within this item but not part of it"
+                },
+                {
+                    "@id": "Relations/30000/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20003",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30001/contains",
+                    "name": "contains",
+                    "relationSubject": "Entities/20000",
+                    "relationObject": "Entities/20011",
+                    "wd_node": "wdt:P4330",
+                    "wd_label": "contains",
+                    "wd_description": "item or substance located within this item but not part of it"
+                },
+                {
+                    "@id": "Relations/30002/assist",
+                    "name": "assist",
+                    "relationSubject": "resin:Entities/00024/",
+                    "relationObject": "resin:Entities/00001/",
+                    "wd_node": "wd:Q1643184",
+                    "wd_label": "help",
+                    "wd_description": "cooperation between living things"
+                },
+                {
+                    "@id": "Relations/30003/exposition",
+                    "name": "exposition",
+                    "relationSubject": "resin:Entities/00001/",
+                    "relationObject": "Entities/20005",
+                    "wd_node": "wd:Q108197922",
+                    "wd_label": "exposition",
+                    "wd_description": "act of exposing something or oneself to external agents of any nature"
+                },
+                {
+                    "@id": "Relations/30000/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20004",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30001/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20021",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30002/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20021",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30003/discard",
+                    "name": "discard",
+                    "relationSubject": "Entities/20013",
+                    "relationObject": "Entities/20004",
+                    "wd_node": "wd:Q110458569",
+                    "wd_label": "discarding",
+                    "wd_description": "getting rid of something no longer wanted"
+                },
+                {
+                    "@id": "Relations/30000/discard",
+                    "name": "discard",
+                    "relationSubject": "Entities/20013",
+                    "relationObject": "Entities/20004",
+                    "wd_node": "wd:Q110458569",
+                    "wd_label": "discarding",
+                    "wd_description": "getting rid of something no longer wanted"
+                },
+                {
+                    "@id": "Relations/30001/examined",
+                    "name": "examined",
+                    "relationSubject": "Entities/20012",
+                    "relationObject": "Entities/20006",
+                    "wd_node": "wdt:P4032",
+                    "wd_label": "reviewed by",
+                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
+                },
+                {
+                    "@id": "Relations/30002/located",
+                    "name": "located",
+                    "relationSubject": "Entities/20006",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30003/reviewed by",
+                    "name": "reviewed by",
+                    "relationSubject": "Entities/20015",
+                    "relationObject": "Entities/20017",
+                    "wd_node": "wdt:P4032",
+                    "wd_label": "reviewed by",
+                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
+                },
+                {
+                    "@id": "Relations/30004/helps",
+                    "name": "helps",
+                    "relationSubject": "Entities/20013",
+                    "relationObject": "Entities/20003",
+                    "wd_node": "wd:Q1643184",
+                    "wd_label": "help",
+                    "wd_description": "cooperation between living things"
+                },
+                {
+                    "@id": "Relations/30005/reviewed by",
+                    "name": "reviewed by",
+                    "relationSubject": "Entities/20008",
+                    "relationObject": "Entities/20007",
+                    "wd_node": "wdt:P4032",
+                    "wd_label": "reviewed by",
+                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
+                },
+                {
+                    "@id": "Relations/30006/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20007",
+                    "relationObject": "resin:Entities/00013/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                }
+            ]
         },
         {
             "@id": "resin:Events/10001",
@@ -332,7 +522,16 @@
                 "Events/20016/Shutdown"
             ],
             "children_gate": "or",
-            "relations": []
+            "relations": [
+                {
+                    "@id": "Relations/30000/",
+                    "name": "location",
+                    "relationSubject": "Entities/20002",
+                    "relationObject": "Entities/20003",
+                    "wd_node": "wd:P276",
+                    "wd_description": "location of the object, structure or event"
+                }
+            ]
         },
         {
             "@id": "resin:Events/10003",
