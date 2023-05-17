@@ -454,6 +454,42 @@
                     "wd_node": "wdt:P5004",
                     "wd_label": "in opposition to",
                     "wd_description": "object of a social action"
+                },
+                {
+                    "@id": "Relations/30000/threat",
+                    "name": "threat",
+                    "relationSubject": "resin:Entities/00008/",
+                    "relationObject": "resin:Entities/00000/",
+                    "wd_node": "wd:Q98463540",
+                    "wd_label": "threat",
+                    "wd_description": "condition that is appraised as a danger to one's self or well-being or to a group"
+                },
+                {
+                    "@id": "Relations/30000/shares ideology",
+                    "name": "shares ideology",
+                    "relationSubject": "resin:Entities/00010/",
+                    "relationObject": "resin:Entities/00019/",
+                    "wd_node": "wdt:P1142",
+                    "wd_label": "political ideology",
+                    "wd_description": "political ideology of an organizaion or person"
+                },
+                {
+                    "@id": "Relations/30001/shares ideology",
+                    "name": "shares ideology",
+                    "relationSubject": "resin:Entities/00024/",
+                    "relationObject": "resin:Entities/00016/",
+                    "wd_node": "wdt:P1142",
+                    "wd_label": "political ideology",
+                    "wd_description": "political ideology of an organization or person"
+                },
+                {
+                    "@id": "Relations/30002/opposed to",
+                    "name": "opposed to",
+                    "relationSubject": "resin:Entities/00016/",
+                    "relationObject": "resin:Entities/00000/",
+                    "wd_node": "wd:Q192852",
+                    "wd_label": "political opposition",
+                    "wd_description": "political force against majority"
                 }
             ],
             "importance": [],
@@ -2188,7 +2224,7 @@
             "relations": [
                 {
                     "@id": "resin:Relations/30044/",
-                    "name": "disent",
+                    "name": "dissent",
                     "relationSubject": "resin:Entities/00027/",
                     "relationObject": "resin:Events/00032/",
                     "wd_node": "wd:Q19509099",
@@ -2229,7 +2265,7 @@
             "relations": [
                 {
                     "@id": "resin:Relations/30045/",
-                    "name": "disent",
+                    "name": "dissent",
                     "relationSubject": "resin:Entities/00027/",
                     "relationObject": "resin:Entities/00026/",
                     "wd_node": "wd:Q19509099",
@@ -2270,7 +2306,7 @@
             "relations": [
                 {
                     "@id": "resin:Relations/30046/",
-                    "name": "disent",
+                    "name": "dissent",
                     "relationSubject": "resin:Entities/00019/",
                     "relationObject": "resin:Entities/00026/",
                     "wd_node": "wd:Q19509099",
@@ -2928,7 +2964,7 @@
             "relations": [
                 {
                     "@id": "resin:Relations/30060/",
-                    "name": "disent",
+                    "name": "dissent",
                     "relationSubject": "resin:Entities/00034/",
                     "relationObject": "resin:Entities/00033/",
                     "wd_node": "wd:Q19509099",
