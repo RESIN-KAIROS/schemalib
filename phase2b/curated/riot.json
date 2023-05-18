@@ -154,7 +154,7 @@
                 },
                 {
                     "@id": "Entities/00017/riot-reason",
-                    "name": "ideology (generic)",
+                    "name": "riot reason",
                     "wd_label": "ideology",
                     "wd_node": "Q7257",
                     "wd_description": "set of ideas that form one's aims, expectations and actions"
@@ -216,6 +216,7 @@
                     "relationSubject": "Entities/00000/rioter",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
@@ -224,6 +225,7 @@
                     "relationSubject": "Entities/00001/police",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
@@ -232,6 +234,7 @@
                     "relationSubject": "Entities/00003/riot-group",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
@@ -240,6 +243,7 @@
                     "relationSubject": "Entities/00000/rioter",
                     "relationObject": "Entities/00003/riot-group",
                     "wd_node": "wd:P361",
+                    "wd_label": "part of",
                     "wd_description": "object of which the subject is a part"
                 },
                 {
@@ -248,6 +252,7 @@
                     "relationSubject": "Entities/00019/riot-weapon",
                     "relationObject": "Entities/00000/rioter",
                     "wd_node": "wd:P121",
+                    "wd_label": "item operated",
                     "wd_description": "equipment, installation or service operated by the subject"
                 },
                 {
@@ -256,6 +261,7 @@
                     "relationSubject": "Entities/00020/public-weapon",
                     "relationObject": "Entities/00005/general-public",
                     "wd_node": "wd:P121",
+                    "wd_label": "item operated",
                     "wd_description": "equipment, installation or service operated by the subject"
                 },
                 {
@@ -264,6 +270,7 @@
                     "relationSubject": "Entities/00021/police-weapon",
                     "relationObject": "Entities/00001/police",
                     "wd_node": "wd:P121",
+                    "wd_label": "item operated",
                     "wd_description": "equipment, installation or service operated by the subject"
                 },
                 {
@@ -272,6 +279,7 @@
                     "relationSubject": "Entities/000013/politician",
                     "relationObject": "Entities/00009/government",
                     "wd_node": "wd:P463",
+                    "wd_label": "member of",
                     "wd_description": "organization, club or musical group to which the subject belongs"
                 },
                 {
@@ -280,14 +288,16 @@
                     "relationSubject": "Entities/00005/general-public",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
                     "@id": "Relations/30009/",
                     "name": "location",
                     "relationSubject": "Entities/00005/general-public",
-                    "relationObject": "Entities/00011/location-generic",
+                    "relationObject": "Entities/00014/country",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
@@ -296,22 +306,25 @@
                     "relationSubject": "Entities/00015/victim-generic",
                     "relationObject": "Entities/00011/location-generic",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
                     "@id": "Relations/30011/",
                     "name": "location",
                     "relationSubject": "Entities/00022/media-company",
-                    "relationObject": "Entities/00008/state1",
+                    "relationObject": "Entities/00014/country",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
                     "@id": "Relations/30012/",
                     "name": "location",
                     "relationSubject": "Entities/00012/court-generic",
-                    "relationObject": "Entities/00008/state1",
+                    "relationObject": "Entities/00011/location-generic",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
@@ -320,6 +333,7 @@
                     "relationSubject": "Entities/000013/politician",
                     "relationObject": "Entities/00009/government",
                     "wd_node": "wd:P1416",
+                    "wd_label":"affiliation",
                     "wd_description": "organization that a person or organization is affiliated with"
                 },
                 {
@@ -328,6 +342,7 @@
                     "relationSubject": "Entities/00000/rioter",
                     "relationObject": "Entities/00003/riot-group",
                     "wd_node": "wd:P1416",
+                    "wd_label": "affiliation",
                     "wd_description": "organization that a person or organization is affiliated with"
                 },
                 {
@@ -336,6 +351,7 @@
                     "relationSubject": "Entities/00015/victim-generic",
                     "relationObject": "Entities/00005/general-public",
                     "wd_node": "wd:P1416",
+                    "wd_label": "affiliation",
                     "wd_description": "organization that a person or organization is affiliated with"
                 },
                 {
@@ -344,6 +360,7 @@
                     "relationSubject": "Entities/00015/victim-generic",
                     "relationObject": "Entities/00005/general-public",
                     "wd_node": "wd:P1416",
+                    "wd_label": "affiliation",
                     "wd_description": "organization that a person or organization is affiliated with"
                 },
                 {
@@ -352,6 +369,7 @@
                     "relationSubject": "Entities/00001/police",
                     "relationObject": "Entities/00009/government",
                     "wd_node": "wd:P1416",
+                    "wd_label": "affiliation",
                     "wd_description": "organization that a person or organization is affiliated with"
                 },
                 {
@@ -360,31 +378,35 @@
                     "relationSubject": "Entities/00023/foreign-gov",
                     "relationObject": "Entities/00024/foreign-country",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 },
                 {
                     "@id": "Relations/30019/",
-                    "name": "has immediate cause",
+                    "name": "has cause",
                     "relationSubject": "Entities/00000/rioter",
                     "relationObject": "Entities/00017/riot-reason",
-                    "wd_node": "wd:P1478",
-                    "wd_description": "nearest, proximate thing that directly resulted in the subject as outcome or effect"
+                    "wd_node": "wd:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
                 },
                 {
                     "@id": "Relations/30020/",
-                    "name": "has immediate cause",
+                    "name": "has cause",
                     "relationSubject": "Entities/00001/police",
                     "relationObject": "Entities/00003/riot-group",
-                    "wd_node": "wd:P1478",
-                    "wd_description": "nearest, proximate thing that directly resulted in the subject as outcome or effect"
+                    "wd_node": "wd:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
                 },
                 {
                     "@id": "Relations/30021/",
-                    "name": "has immediate cause",
+                    "name": "has cause",
                     "relationSubject": "Entities/00001/police",
                     "relationObject": "Entities/00019/riot-weapon",
-                    "wd_node": "wd:P1478",
-                    "wd_description": "nearest, proximate thing that directly resulted in the subject as outcome or effect"
+                    "wd_node": "wd:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
                 },
                 {
                     "@id": "Relations/30022/",
@@ -392,6 +414,7 @@
                     "relationSubject": "Entities/00000/rioter",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P466",
+                    "wd_label": "occupant",
                     "wd_description": "person or organization occupying property"
                 },
                 {
@@ -400,6 +423,7 @@
                     "relationSubject": "Entities/00001/police",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P466",
+                    "wd_label": "occupant",
                     "wd_description": "person or organization occupying property"
                 },
                 {
@@ -408,7 +432,107 @@
                     "relationSubject": "Entities/00003/riot-group",
                     "relationObject": "Entities/00006/riot-location",
                     "wd_node": "wd:P466",
+                    "wd_label": "occupant",
                     "wd_description": "person or organization occupying property"
+                },
+                {
+                    "@id": "Relations/30025/",
+                    "name": "has cause",
+                    "relationSubject": "Entities/00001/police",
+                    "relationObject": "Entities/00000/rioter",
+                    "wd_node": "wd:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "Relations/30026/",
+                    "name": "has cause",
+                    "relationSubject": "Entities/00003/riot-group",
+                    "relationObject": "Entities/00017/riot-reason",
+                    "wd_node": "wd:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "Relations/30027/",
+                    "name": "location",
+                    "relationSubject": "Entities/00000/rioter",
+                    "relationObject": "Entities/00014/country",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30028/",
+                    "name": "location",
+                    "relationSubject": "Entities/00001/police",
+                    "relationObject": "Entities/00014/country",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30029/",
+                    "name": "location",
+                    "relationSubject": "Entities/00003/riot-group",
+                    "relationObject": "Entities/00014/country",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30030/",
+                    "name": "location",
+                    "relationSubject": "Entities/00016/law-generic",
+                    "relationObject": "Entities/00014/country",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30031/",
+                    "name": "location",
+                    "relationSubject": "Entities/00004/person-generic",
+                    "relationObject": "Entities/00011/location-generic",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30032/",
+                    "name": "location",
+                    "relationSubject": "Entities/00010/ideology-generic",
+                    "relationObject": "Entities/00011/location-generic",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30033/",
+                    "name": "location",
+                    "relationSubject": "Entities/000013/politician",
+                    "relationObject": "Entities/00014/country",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30034/",
+                    "name": "location",
+                    "relationSubject": "Entities/00002/business",
+                    "relationObject": "Entities/00006/riot-location",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "Relations/30035/",
+                    "name": "location",
+                    "relationSubject": "Entities/00007/building-generic",
+                    "relationObject": "Entities/00006/riot-location",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
                 }
                 
             ],
