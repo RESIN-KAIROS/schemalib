@@ -137,7 +137,7 @@
                     "wd_node": "wd:Q1048835"
                 },
                 {
-                    "@id": "resin:Entities/00199/",
+                    "@id": "resin:Entities/11032/",
                     "name": "Government Overthrown",
                     "wd_description": "replacement of one political regime (system) with another",
                     "wd_label": "regime_change",
@@ -330,13 +330,40 @@
                     "wd_description": "The subject position reports to this position"
                 },
                 {
-                    "@id": "Relations/30001/reports to",
-                    "name": "reports to",
-                    "relationSubject": "resin:Entities/00036/",
-                    "relationObject": "resin:Entities/00034/",
-                    "wd_node": "wdt:P10645",
-                    "wd_label": "reports to",
-                    "wd_description": "the subject position reports to this position"
+                    "@id": "Relations/30000/threat",
+                    "name": "threat",
+                    "relationSubject": "resin:Entities/00008/",
+                    "relationObject": "resin:Entities/00000/",
+                    "wd_node": "wd:Q98463540",
+                    "wd_label": "threat",
+                    "wd_description": "condition that is appraised as a danger to one's self or well-being or to a group"
+                },
+                {
+                    "@id": "Relations/30000/shares ideology",
+                    "name": "shares ideology",
+                    "relationSubject": "resin:Entities/00010/",
+                    "relationObject": "resin:Entities/00019/",
+                    "wd_node": "wdt:P1142",
+                    "wd_label": "political ideology",
+                    "wd_description": "political ideology of an organizaion or person"
+                },
+                {
+                    "@id": "Relations/30001/shares ideology",
+                    "name": "shares ideology",
+                    "relationSubject": "resin:Entities/00024/",
+                    "relationObject": "resin:Entities/00016/",
+                    "wd_node": "wdt:P1142",
+                    "wd_label": "political ideology",
+                    "wd_description": "political ideology of an organization or person"
+                },
+                {
+                    "@id": "Relations/30002/opposed to",
+                    "name": "opposed to",
+                    "relationSubject": "resin:Entities/00016/",
+                    "relationObject": "resin:Entities/00000/",
+                    "wd_node": "wd:Q192852",
+                    "wd_label": "political opposition",
+                    "wd_description": "political force against majority"
                 },
                 {
                     "@id": "Relations/30002/reports on",
@@ -454,42 +481,6 @@
                     "wd_node": "wdt:P5004",
                     "wd_label": "in opposition to",
                     "wd_description": "object of a social action"
-                },
-                {
-                    "@id": "Relations/30000/threat",
-                    "name": "threat",
-                    "relationSubject": "resin:Entities/00008/",
-                    "relationObject": "resin:Entities/00000/",
-                    "wd_node": "wd:Q98463540",
-                    "wd_label": "threat",
-                    "wd_description": "condition that is appraised as a danger to one's self or well-being or to a group"
-                },
-                {
-                    "@id": "Relations/30000/shares ideology",
-                    "name": "shares ideology",
-                    "relationSubject": "resin:Entities/00010/",
-                    "relationObject": "resin:Entities/00019/",
-                    "wd_node": "wdt:P1142",
-                    "wd_label": "political ideology",
-                    "wd_description": "political ideology of an organizaion or person"
-                },
-                {
-                    "@id": "Relations/30001/shares ideology",
-                    "name": "shares ideology",
-                    "relationSubject": "resin:Entities/00024/",
-                    "relationObject": "resin:Entities/00016/",
-                    "wd_node": "wdt:P1142",
-                    "wd_label": "political ideology",
-                    "wd_description": "political ideology of an organization or person"
-                },
-                {
-                    "@id": "Relations/30002/opposed to",
-                    "name": "opposed to",
-                    "relationSubject": "resin:Entities/00016/",
-                    "relationObject": "resin:Entities/00000/",
-                    "wd_node": "wd:Q192852",
-                    "wd_label": "political opposition",
-                    "wd_description": "political force against majority"
                 }
             ],
             "importance": [],
@@ -1632,9 +1623,7 @@
                 "resin:Events/00029/",
                 "resin:Events/00030/",
                 "resin:Events/00031/",
-                "resin:Events/00032/",
                 "resin:Events/00033/",
-                "resin:Events/00034/",
                 "resin:Events/00035/",
                 "Events/20000/Detain Leadership",
                 "Events/20001/Occupy Govt Buildings",
@@ -1654,6 +1643,7 @@
         {
             "@id": "Events/10000/Container:xor",
             "name": "Event outlinks",
+            "description": "The results of government intervention",
             "isSchema": false,
             "outlinks": [
                 "resin:Events/00032/",
@@ -2214,7 +2204,7 @@
                 {
                     "@id": "Participants/20075/",
                     "roleName": "A1_ppt_instigating_entity_or_act",
-                    "entity": "resin:Entities/00199/"
+                    "entity": "resin:Entities/11032/"
                 }
             ],
             "modality": [],
@@ -2226,7 +2216,7 @@
                     "@id": "resin:Relations/30044/",
                     "name": "dissent",
                     "relationSubject": "resin:Entities/00027/",
-                    "relationObject": "resin:Entities/00199/",
+                    "relationObject": "resin:Entities/11032/",
                     "wd_node": "wd:Q19509099",
                     "wd_label": "dissidence",
                     "wd_description": "actively challenging an established doctrine, policy, or institution"
@@ -2865,10 +2855,8 @@
             "children": [
                 "resin:Events/00055/",
                 "resin:Events/00056/",
-                "resin:Events/00057/",
                 "resin:Events/00058/",
                 "resin:Events/00059/",
-                "resin:Events/00060/",
                 "resin:Events/00061/",
                 "resin:Events/00062/",
                 "resin:Events/00063/",
@@ -3326,6 +3314,7 @@
         {
             "@id": "Events/10000/Container:xor_2",
             "name": "Event outlinks",
+            "description": "The international influence of the coup.",
             "isSchema": false,
             "outlinks": [
                 "resin:Events/00060/",
@@ -3350,7 +3339,7 @@
             "repeatable": false,
             "optional": true,
             "outlinks": [
-                "Events/10000/Container:xorxor"
+                "Events/10000/Container:xor"
             ],
             "participants": [],
             "modality": [],
@@ -3370,7 +3359,7 @@
             "repeatable": false,
             "optional": true,
             "outlinks": [
-                "Events/10000/Container:xorxor"
+                "Events/10000/Container:xor"
             ],
             "participants": [],
             "modality": [],
@@ -3390,7 +3379,7 @@
             "repeatable": false,
             "optional": true,
             "outlinks": [
-                "Events/10000/Container:xorxor"
+                "Events/10000/Container:xor"
             ],
             "participants": [],
             "modality": [],
@@ -3410,7 +3399,7 @@
             "repeatable": false,
             "optional": true,
             "outlinks": [
-                "Events/10000/Container:xorxor"
+                "Events/10000/Container:xor"
             ],
             "participants": [],
             "modality": [],
