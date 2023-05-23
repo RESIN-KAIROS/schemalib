@@ -4,7 +4,7 @@
     "version": "resin:Phase2b",
     "events": [
         {
-            "@id": "resin:Events/10000",
+            "@id": "resin:Events/10000/radioactive",
             "name": "Radioactive Spill",
             "description": "radioactive spill news story.",
             "wd_node": "wd:Q817114",
@@ -67,6 +67,20 @@
                     "wd_node": "wd:Q2995424",
                     "wd_label": "contaminant",
                     "wd_description": "harmful impurity\nedit\n"
+                },
+                {
+                    "@id": "Entities/20031/",
+                    "name": "investigator",
+                    "wd_node": "wd:Q30093123",
+                    "wd_label": "investigator",
+                    "wd_description": "person who acquires information through inquiries or investigation"
+                },
+                {
+                    "@id": "Entities/20032/",
+                    "name": "worker",
+                    "wd_node": "wd:Q327055",
+                    "wd_label": "worker",
+                    "wd_description": "person who works"
                 },
                 {
                     "@id": "Entities/20710/",
@@ -214,6 +228,51 @@
                     "wd_node": "wd:Q1643184",
                     "wd_label": "help",
                     "wd_description": "cooperation between living things"
+                },
+                {
+                    "@id": "Relations/30004/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20012/",
+                    "relationObject": "Entities/20002/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30005/exposed to",
+                    "name": "exposed to",
+                    "relationSubject": "Entities/20015/",
+                    "relationObject": "Entities/20012/",
+                    "wd_node": "wd:Q108197922",
+                    "wd_label": "exposition",
+                    "wd_description": "act of exposing something or oneself to external agents of any nature"
+                },
+                {
+                    "@id": "Relations/30006/reviewed by",
+                    "name": "reviewed by",
+                    "relationSubject": "Entities/20016/",
+                    "relationObject": "Entities/20015/",
+                    "wd_node": "wdt:P4032",
+                    "wd_label": "reviewed by",
+                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
+                },
+                {
+                    "@id": "Relations/30000/location",
+                    "name": "location",
+                    "relationSubject": "Entities/20016/",
+                    "relationObject": "Entities/20002/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "Relations/30003/reviewed by",
+                    "name": "reviewed by",
+                    "relationSubject": "Entities/20018/",
+                    "relationObject": "Entities/20017/",
+                    "wd_node": "wdt:P4032",
+                    "wd_label": "reviewed by",
+                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
                 }
             ],
             "importance": [],
@@ -354,17 +413,7 @@
                     "wd_description": "waves or particles propagating through space or through a medium, carrying energy"
                 }
             ],
-            "relations": [
-                {
-                    "@id": "Relations/30004/location",
-                    "name": "location",
-                    "relationSubject": "Entities/20012/",
-                    "relationObject": "Entities/20002/",
-                    "wd_node": "wdt:P276",
-                    "wd_label": "location",
-                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
-                }
-            ]
+            "relations": []
         },
         {
             "@id": "resin:Events/10004",
@@ -478,35 +527,7 @@
                     "wd_description": "any set of human beings"
                 }
             ],
-            "relations": [
-                {
-                    "@id": "Relations/30005/exposed to",
-                    "name": "exposed to",
-                    "relationSubject": "Entities/20015/",
-                    "relationObject": "Entities/20012/",
-                    "wd_node": "wd:Q108197922",
-                    "wd_label": "exposition",
-                    "wd_description": "act of exposing something or oneself to external agents of any nature"
-                },
-                {
-                    "@id": "Relations/30006/reviewed by",
-                    "name": "reviewed by",
-                    "relationSubject": "Entities/20016/",
-                    "relationObject": "Entities/20015/",
-                    "wd_node": "wdt:P4032",
-                    "wd_label": "reviewed by",
-                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
-                },
-                {
-                    "@id": "Relations/30000/location",
-                    "name": "location",
-                    "relationSubject": "Entities/20016/",
-                    "relationObject": "Entities/20002/",
-                    "wd_node": "wdt:P276",
-                    "wd_label": "location",
-                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
-                }
-            ]
+            "relations": []
         },
         {
             "@id": "resin:Events/10006",
@@ -612,17 +633,7 @@
                     "wd_description": "legal representative of the state in criminal trials"
                 }
             ],
-            "relations": [
-                {
-                    "@id": "Relations/30003/reviewed by",
-                    "name": "reviewed by",
-                    "relationSubject": "Entities/20018/",
-                    "relationObject": "Entities/20017/",
-                    "wd_node": "wdt:P4032",
-                    "wd_label": "reviewed by",
-                    "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
-                }
-            ]
+            "relations": []
         },
         {
             "@id": "resin:Events/10008",
@@ -673,7 +684,6 @@
                 "resin:Events/10072",
                 "resin:Events/10016",
                 "resin:Events/10073",
-                "resin:Events/10019",
                 "resin:Events/10020",
                 "resin:Events/10021",
                 "Events/20001/Use",
@@ -859,91 +869,6 @@
                 }
             ],
             "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "resin:Events/10014",
-            "name": "Investigate Spill",
-            "description": "Investigation into the cause of the spill",
-            "wd_node": "wd:Q42240",
-            "wd_label": "research",
-            "wd_description": "systematic study undertaken to increase knowledge",
-            "isSchema": false,
-            "repeatable": false,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/20140",
-                    "roleName": "A0_pag_agent_student",
-                    "entity": "Entities/20713/"
-                },
-                {
-                    "@id": "resin:Participants/20141",
-                    "roleName": "A1_ppt_theme_subject",
-                    "entity": "Entities/20000/"
-                },
-                {
-                    "@id": "resin:Participants/20142",
-                    "roleName": "AM_mnr__manner",
-                    "entity": "Entities/20016/"
-                },
-                {
-                    "@id": "resin:Participants/20143",
-                    "roleName": "AM_loc__location",
-                    "entity": "Entities/20002/"
-                }
-            ],
-            "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "resin:Events/10015",
-            "name": "Take Legal Action",
-            "description": "Possible legal action against responsible parties",
-            "wd_node": "wd:Q697327",
-            "wd_label": "lawsuit",
-            "wd_description": "civil action brought in a court of law",
-            "isSchema": false,
-            "repeatable": false,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/20150",
-                    "roleName": "A0_pag_prosecutor",
-                    "entity": "Entities/20031/"
-                },
-                {
-                    "@id": "resin:Participants/20151",
-                    "roleName": "A1_ppt_defendant",
-                    "entity": "Entities/20032/"
-                },
-                {
-                    "@id": "resin:Participants/20152",
-                    "roleName": "A2_vsp_type/grounds/accusation",
-                    "entity": "Entities/20000/"
-                },
-                {
-                    "@id": "resin:Participants/20153",
-                    "roleName": "AM_loc",
-                    "entity": "Entities/20002/"
-                }
-            ],
-            "entities": [
-                {
-                    "@id": "Entities/20031/",
-                    "name": "prosecutor",
-                    "wd_node": "wd: Q600751",
-                    "wd_label": "prosecutor",
-                    "wd_description": "legal representative of the state in criminal trials"
-                },
-                {
-                    "@id": "Entities/20032/",
-                    "name": "defendant",
-                    "wd_node": "wd: Q159394",
-                    "wd_label": "defendant",
-                    "wd_description": "accused person"
-                }
-            ],
             "relations": []
         },
         {
