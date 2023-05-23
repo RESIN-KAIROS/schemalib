@@ -4,7 +4,7 @@
     "version": "resin:Phase2b",
     "events": [
         {
-            "@id": "resin:Events/10000",
+            "@id": "resin:Events/10000/chemical",
             "name": "Chemical Spills",
             "description": "chemical spills news story.",
             "wd_node": "wd:Q1349983",
@@ -529,6 +529,7 @@
                     "relationSubject": "Entities/20002",
                     "relationObject": "Entities/20003",
                     "wd_node": "wd:P276",
+                    "wd_label": "location",
                     "wd_description": "location of the object, structure or event"
                 }
             ]
