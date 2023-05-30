@@ -14,9 +14,19 @@
             "wd_description": "sudden increase in occurrences of a disease in a particular time and place",
             "participants": [
                 {
-                    "@id": "resin:Participants/30000/kairos:Primitives_Events_Disaster.Diseaseoutbreak.Unspecified:1_victim",
-                    "roleName": "A2-GOL_location_victims",
+                    "@id": "resin:Participants/30000/victim",
+                    "roleName": "A2_gol_location_victims",
                     "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30261/disease",
+                    "roleName": "A1_ppt_theme_disease",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30262/loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10010/"
                 }
             ],
             "entities": [
@@ -310,7 +320,9 @@
             ],
             "modality": [],
             "children_gate": "or",
-            "outlinks": []
+            "outlinks": [
+                "resin:Events/20054/Poor_Hygiene"
+            ]
         },
         {
             "@id": "resin:Events/20002/HVAC_System_Fault",
@@ -332,7 +344,9 @@
             ],
             "modality": [],
             "children_gate": "or",
-            "outlinks": []
+            "outlinks": [
+                "resin:Events/20054/Poor_Hygiene"
+            ]
         },
         {
             "@id": "resin:Events/20003/Water_Main_Break",
@@ -354,7 +368,9 @@
             ],
             "modality": [],
             "children_gate": "or",
-            "outlinks": []
+            "outlinks": [
+                "resin:Events/20054/Poor_Hygiene"
+            ]
         },
         {
             "@id": "resin:Events/20004/Violations",
@@ -400,7 +416,9 @@
                 }
             ],
             "children_gate": "or",
-            "outlinks": []
+            "outlinks": [
+                "resin:Events/20004/Violations"
+            ]
         },
         {
             "@id": "resin:Events/20006/Infections",
@@ -582,7 +600,7 @@
             ],
             "children_gate": "or",
             "outlinks": [
-                "resin:Events/20013/Treatment",
+                "resin:Events/20140/Hospitalization",
                 "resin:Events/20012/Disinfect",
                 "resin:Events/20015/Quarantine",
                 "resin:Events/20073/Tracing",
@@ -842,6 +860,7 @@
             ],
             "children_gate": "or",
             "outlinks": [
+                "resin:Events/20128/Involvement",
                 "resin:Events/20030/Aid",
                 "resin:Events/20023/Alert_Population",
                 "resin:Events/20024/Gov_Health_Decree",
@@ -1187,7 +1206,6 @@
                 "resin:Events/20085/Social_Gathering",
                 "resin:Events/20114/Mode_of_Transmission",
                 "resin:Events/20006/Infections",
-                "resin:Events/20126/Contraction",
                 "resin:Events/20130/Selling"
             ],
             "outlinks": [
@@ -1208,6 +1226,7 @@
                 "resin:Events/20009/Contact_Health_Provider",
                 "resin:Events/20010/Transport_Patient",
                 "resin:Events/20013/Treatment",
+                "resin:Events/20140/Hospitalization",
                 "resin:Events/20014/Travel",
                 "resin:Events/20012/Disinfect",
                 "resin:Events/20015/Quarantine",
@@ -1236,11 +1255,8 @@
                 "resin:Events/20018/Analyze_Data",
                 "resin:Events/20019/Identify_Outbreak",
                 "resin:Events/20057/IdentifyDiseaseSource",
-                "resin:Events/20127/Use_Vaccine",
-                "resin:Events/20132/Social_Isolation",
                 "resin:Events/20138/Detection",
-                "resin:Events/20140/Hospitalization",
-                "resin:Events/20143/Monitering"
+                "resin:Events/20143/Monitoring"
             ],
             "outlinks": [
                 "resin:Events/20039/Research_Response",
@@ -1350,7 +1366,7 @@
         },
         {
             "@id": "resin:Events/20040/Outbreak_Preconditions",
-            "description": "Enabling events for the disease, including social factors and environmental factors.",
+            "description": "Enabling preconditions for the disease.",
             "name": "Outbreak Preconditions",
             "repeatable": false,
             "isSchema": true,
@@ -1359,57 +1375,23 @@
             "wd_description": "requirement for something else to happen and to generate some effects or results",
             "children_gate": "or",
             "children": [
-                "resin:Events/20042/Environmental_Factors",
-                "resin:Events/20041/Social_Factors"
-            ],
-            "outlinks": [
-                "resin:Events/20032/Outbreak"
-            ]
-        },
-        {
-            "@id": "resin:Events/20041/Social_Factors",
-            "description": "Social factors that enable the disease.",
-            "name": "Social Factors",
-            "repeatable": false,
-            "isSchema": true,
-            "wd_node": "wd:Q114757092",
-            "wd_label": "social factors",
-            "wd_description": "social and cultural phenomena and influences that affect behavior",
-            "children_gate": "or",
-            "children": [
+                "resin:Events/20078/Virus_Mutates",
+                "resin:Events/20053/Lack_of_Sanitation",
+                "resin:Events/20052/Climate_Change",
+                "resin:Events/20077/Habitat_Change",
+                "resin:Events/20054/Poor_Hygiene",
+                "resin:Events/20139/Development",
                 "resin:Events/20001/Unsafe_Burial",
                 "resin:Events/20003/Water_Main_Break",
                 "resin:Events/20076/Biological_Warfare",
                 "resin:Events/20002/HVAC_System_Fault",
                 "resin:Events/20051/Create_Pathogen",
                 "resin:Events/20005/Generic_Crime",
-                "resin:Events/20004/Violations",
-                "resin:Events/20134/Sharing",
-                "resin:Events/20135/purchasing"
+                "resin:Events/20004/Violations"
             ],
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/20042/Environmental_Factors",
-            "description": "Environmental factors that enable the disease.",
-            "name": "Environmental Factors",
-            "repeatable": false,
-            "isSchema": true,
-            "wd_node": "wd:Q2249676",
-            "wd_label": "environment",
-            "wd_description": "surrounding of an organism or population",
-            "children_gate": "or",
-            "children": [
-                "resin:Events/20078/Virus_Mutates",
-                "resin:Events/20056/Unclean_Drinking_Water",
-                "resin:Events/20053/Lack_of_Sanitation",
-                "resin:Events/20052/Climate_Change",
-                "resin:Events/20077/Habitat_Change",
-                "resin:Events/20054/Poor_Hygiene",
-                "resin:Events/20055/Inadequate_Food_Safety",
-                "resin:Events/20139/Development"
-            ],
-            "outlinks": []
+            "outlinks": [
+                "resin:Events/20032/Outbreak"
+            ]
         },
         {
             "@id": "resin:Events/20043/Inspection",
@@ -1566,7 +1548,8 @@
             ],
             "children_gate": "or",
             "outlinks": [
-                "resin:Events/20043/Inspection"
+                "resin:Events/20043/Inspection",
+                "resin:Events/20133/Taking_Office"
             ]
         },
         {
@@ -1688,8 +1671,7 @@
             ],
             "children_gate": "or",
             "outlinks": [
-                "resin:Events/20055/Inadequate_Food_Safety",
-                "resin:Events/20056/Unclean_Drinking_Water"
+                "resin:Events/20054/Poor_Hygiene"
             ]
         },
         {
@@ -1707,50 +1689,6 @@
                     "roleName": "A0_pag_agent",
                     "entity": "resin:Entities/10000/"
                 }
-            ],
-            "children_gate": "or",
-            "outlinks": [
-                "resin:Events/20055/Inadequate_Food_Safety",
-                "resin:Events/20056/Unclean_Drinking_Water"
-            ]
-        },
-        {
-            "@id": "resin:Events/20055/Inadequate_Food_Safety",
-            "description": "Negated, showing lack of measures that prevent foodborne illness.",
-            "name": "Inadequate Food Safety",
-            "repeatable": false,
-            "isSchema": false,
-            "wd_node": "wd:Q909821",
-            "wd_label": "food safety",
-            "wd_description": "scientific discipline describing handling, preparation, and storage of food in ways that prevent foodborne illness",
-            "participants": [
-                {
-                    "@id": "resin:Participants/30091/Steps_kairos:Primitives_Events_Food_Safety_Agent",
-                    "roleName": "A0_pag_agent",
-                    "entity": "resin:Entities/10022/"
-                }
-            ],
-            "children_gate": "or",
-            "outlinks": []
-        },
-        {
-            "@id": "resin:Events/20056/Unclean_Drinking_Water",
-            "description": "Negated, showing state of unclean water.",
-            "name": "Unclean Drinking Water",
-            "repeatable": false,
-            "isSchema": false,
-            "wd_node": "wd:Q7892",
-            "wd_label": "drinking water",
-            "wd_description": "water safe for consumption",
-            "participants": [
-                {
-                    "@id": "resin:Participants/30092/Steps_kairos:Primitives_Events_Drinking_Water_Drinker",
-                    "roleName": "A0_pag_drinker",
-                    "entity": "resin:Entities/10000/"
-                }
-            ],
-            "modality": [
-                "negated"
             ],
             "children_gate": "or",
             "outlinks": []
@@ -2231,8 +2169,7 @@
             ],
             "children_gate": "or",
             "outlinks": [
-                "resin:Events/20075/Quarantine_Exposed_Group",
-                "resin:Events/20132/Social_Isolation"
+                "resin:Events/20075/Quarantine_Exposed_Group"
             ]
         },
         {
@@ -2262,9 +2199,7 @@
                 }
             ],
             "children_gate": "or",
-            "outlinks": [
-                "resin:Events/20140/Hospitalization"
-            ]
+            "outlinks": []
         },
         {
             "@id": "resin:Events/20076/Biological_Warfare",
@@ -2288,7 +2223,9 @@
                 }
             ],
             "children_gate": "or",
-            "outlinks": []
+            "outlinks": [
+                "resin:Events/20051/Create_Pathogen"
+            ]
         },
         {
             "@id": "resin:Events/20077/Habitat_Change",
@@ -2510,9 +2447,7 @@
                 }
             ],
             "outlinks": [
-                "resin:Events/20114/Mode_of_Transmission",
-                "resin:Events/20126/Contraction"
-            ]
+                "resin:Events/20114/Mode_of_Transmission"]
         },
         {
             "@id": "resin:Events/20086/Construction",
@@ -3368,8 +3303,7 @@
             "children_gate": "xor",
             "children": [
                 "resin:Events/20120/Death_Outcome",
-                "resin:Events/20079/Recover",
-                "resin:Events/20142/Dying"
+                "resin:Events/20079/Recover"
             ],
             "outlinks": [
                 "resin:Events/20125/Confirmation"
@@ -3525,69 +3459,6 @@
             "relations": []
         },
         {
-            "@id": "resin:Events/20126/Contraction",
-            "name": "Contraction",
-            "description": "Illness is contracted",
-            "wd_node": "wd:Q76664785",
-            "wd_label": "getting",
-            "wd_description": "to get something or someone, to receive something or someone",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": false,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30218/receiver",
-                    "roleName": "A0_pag_receiver",
-                    "entity": "resin:Entities/10001/"
-                },
-                {
-                    "@id": "resin:Participants/30219/thing_gotten",
-                    "roleName": "A1_ppt_thing_gotten",
-                    "entity": "resin:Entities/10007/"
-                },
-                {
-                    "@id": "resin:Participants/30220/received_from",
-                    "roleName": "A2_dir_received_from",
-                    "entity": "resin:Entities/10005/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "resin:Events/20127/Use_Vaccine",
-            "name": "Use Vaccine",
-            "description": "Vaccine is used.",
-            "wd_node": "wd:Q1724915",
-            "wd_label": "use",
-            "wd_description": "use of a resource to perform a task",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": false,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30221/user",
-                    "roleName": "A0_pag_User",
-                    "entity": "resin:Entities/10021/"
-                },
-                {
-                    "@id": "resin:Participants/30222/thing_used",
-                    "roleName": "A1_ppt_thing_used",
-                    "entity": "resin:Entities/10018/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
             "@id": "resin:Events/20128/Involvement",
             "name": "Involvement",
             "description": "Authority is involved in the situation.",
@@ -3660,7 +3531,9 @@
             "isSchema": false,
             "repeatable": false,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/20085/Social_Gathering"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/30228/seller",
@@ -3714,42 +3587,6 @@
             "relations": []
         },
         {
-            "@id": "resin:Events/20132/Social_Isolation",
-            "name": "Social Isolation",
-            "description": "Infected persons are isolated.",
-            "wd_node": "wd:Q3149923",
-            "wd_label": "social inclusion",
-            "wd_description": "affirmative action to change the circumstances and habits that lead to (or have led to) social exclusion",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": false,
-            "outlinks": [
-                "resin:Events/20127/Use_Vaccine"
-            ],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30233/cause",
-                    "roleName": "A0_pag_entity_causing_isolation",
-                    "entity": "resin:Entities/10006/"
-                },
-                {
-                    "@id": "resin:Participants/30234/entity_isolated",
-                    "roleName": "A1_ppt_entity_isolated",
-                    "entity": "resin:Entities/10001/"
-                },
-                {
-                    "@id": "resin:Participants/30235/isolated_from",
-                    "roleName": "A2_dir_entity_that_patient_was_isolated_from",
-                    "entity": "resin:Entities/10019/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
             "@id": "resin:Events/20133/Taking_Office",
             "name": "Taking Office",
             "description": "New authority takes office",
@@ -3770,74 +3607,6 @@
                     "@id": "resin:Participants/30237/theme",
                     "roleName": "A1_ppt_Theme",
                     "entity": "resin:Entities/10015/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "resin:Events/20134/Sharing",
-            "name": "Sharing",
-            "description": "Food or some transmitting agent is shared.",
-            "wd_node": "wd:Q459221",
-            "wd_label": "sharing",
-            "wd_description": "joint use of a resource or space",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": true,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30238/sharer",
-                    "roleName": "A0_pag_sharer",
-                    "entity": "resin:Entities/10005/"
-                },
-                {
-                    "@id": "resin:Participants/30239/thing_shared",
-                    "roleName": "A1_ppt_thing_shared",
-                    "entity": "resin:Entities/10022/"
-                },
-                {
-                    "@id": "resin:Participants/30240/shared_with",
-                    "roleName": "A2_com_shared_with",
-                    "entity": "resin:Entities/10001/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "resin:Events/20135/purchasing",
-            "name": "purchasing",
-            "description": "Contaminated product is purchased.",
-            "wd_node": "wd:Q1369832",
-            "wd_label": "purchasing",
-            "wd_description": "acquisition of goods or services by fiduciary exchange",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": true,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30241/buyer",
-                    "roleName": "A0_pag_buyer",
-                    "entity": "resin:Entities/10001/"
-                },
-                {
-                    "@id": "resin:Participants/30242/thing_bought",
-                    "roleName": "A1_ppt_thing_bought",
-                    "entity": "resin:Entities/10022/"
-                },
-                {
-                    "@id": "resin:Participants/30243/seller",
-                    "roleName": "A2_dir_seller",
-                    "entity": "resin:Entities/10005/"
                 }
             ],
             "modality": [],
@@ -3881,35 +3650,6 @@
             "relations": []
         },
         {
-            "@id": "resin:Events/20137/Description",
-            "name": "Description",
-            "description": "Disease is described by medical professionals.",
-            "wd_node": "wd:Q1200750",
-            "wd_label": "description",
-            "wd_description": "description of something, written down or verbal",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": false,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30247/describer",
-                    "roleName": "A0_pag_describer",
-                    "entity": "resin:Entities/10011/"
-                },
-                {
-                    "@id": "resin:Participants/30248/described",
-                    "roleName": "A1_ppt_thing_described",
-                    "entity": "resin:Entities/10007/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
             "@id": "resin:Events/20138/Detection",
             "name": "Detection",
             "description": "Full scale of outbreak is detected.",
@@ -3919,7 +3659,9 @@
             "isSchema": false,
             "repeatable": false,
             "optional": false,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/20143/Monitoring"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/30249/detector",
@@ -3946,9 +3688,11 @@
             "wd_label": "development",
             "wd_description": "process of developing; growth, directed change",
             "isSchema": false,
-            "repeatable": true,
+            "repeatable": false,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/20077/Habitat_Change"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/30251/location",
@@ -3975,9 +3719,11 @@
             "wd_label": "hospitalization",
             "wd_description": "admission of a patient to a hospital",
             "isSchema": false,
-            "repeatable": true,
-            "optional": false,
-            "outlinks": [],
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20013/Treatment"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/30253/sender",
@@ -4031,32 +3777,8 @@
             "relations": []
         },
         {
-            "@id": "resin:Events/20142/Dying",
-            "name": "Dying",
-            "description": "Infected persons begin the death process.",
-            "wd_node": "wd:Q267505",
-            "wd_label": "dying",
-            "wd_description": "final process of life",
-            "isSchema": false,
-            "repeatable": false,
-            "optional": true,
-            "outlinks": [],
-            "participants": [
-                {
-                    "@id": "resin:Participants/30258/dying",
-                    "roleName": "A1_ppt_the_deceased",
-                    "entity": "resin:Entities/10001/"
-                }
-            ],
-            "modality": [],
-            "importance": [],
-            "likelihood": [],
-            "entities": [],
-            "relations": []
-        },
-        {
-            "@id": "resin:Events/20143/Monitering",
-            "name": "Monitering",
+            "@id": "resin:Events/20143/Monitoring",
+            "name": "Monitoring",
             "description": "Infected persons are monitored.",
             "wd_node": "wd:Q2143522",
             "wd_label": "monitering",
@@ -4064,7 +3786,9 @@
             "isSchema": false,
             "repeatable": false,
             "optional": true,
-            "outlinks": [],
+            "outlinks": [
+                "resin:Events/20073/Tracing"
+            ],
             "participants": [
                 {
                     "@id": "resin:Participants/30259/observer",
