@@ -481,6 +481,78 @@
                     "wd_node": "wdt:P5004",
                     "wd_label": "in opposition to",
                     "wd_description": "object of a social action"
+                },
+                {
+                    "@id": "resin:Relations/40018/faction-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10002/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40019/group-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10003/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40020/dictator-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10005/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40021/public-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10009/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40022/rioter-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10010/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40023/govt-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10013/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40024/group-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10022/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40025/newGovt-location",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10034/",
+                    "relationObject": "resin:Entities/10026/",
+                    "wd_node": "wd:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
                 }
             ],
             "importance": [],
@@ -551,6 +623,11 @@
                     "@id": "resin:Participants/30001/",
                     "roleName": "A1_ppt_message",
                     "entity": "resin:Entities/10024/"
+                },
+                {
+                    "@id": "resin:Participants/30002/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -559,7 +636,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40018/",
+                    "@id": "resin:Relations/40026/",
                     "name": "announcement",
                     "relationSubject": "resin:Entities/10013/",
                     "relationObject": "resin:Entities/10024/",
@@ -586,19 +663,24 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30002/",
+                    "@id": "resin:Participants/30003/",
                     "roleName": "A0_pag_agent_legislative_body",
                     "entity": "resin:Entities/10014/"
                 },
                 {
-                    "@id": "resin:Participants/30003/",
+                    "@id": "resin:Participants/30004/",
                     "roleName": "A1_ppt_thing_enacted",
                     "entity": "resin:Entities/10001/"
                 },
                 {
-                    "@id": "resin:Participants/30004/",
+                    "@id": "resin:Participants/30005/",
                     "roleName": "A2_gol_benefactive",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30006/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -607,7 +689,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40019/",
+                    "@id": "resin:Relations/40027/",
                     "name": "approved by",
                     "relationSubject": "resin:Entities/10014/",
                     "relationObject": "resin:Entities/10001/",
@@ -616,7 +698,7 @@
                     "wd_description": "item is approved by other item(s)"
                 },
                 {
-                    "@id": "resin:Relations/40020/",
+                    "@id": "resin:Relations/40028/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10014/",
                     "relationObject": "resin:Entities/10013/",
@@ -643,19 +725,24 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30005/",
+                    "@id": "resin:Participants/30007/",
                     "roleName": "A1_ppt_theme_judged",
                     "entity": "resin:Entities/10023/"
                 },
                 {
-                    "@id": "resin:Participants/30006/",
+                    "@id": "resin:Participants/30008/",
                     "roleName": "A0_pag_agent_judge",
                     "entity": "resin:Entities/10011/"
                 },
                 {
-                    "@id": "resin:Participants/30007/",
+                    "@id": "resin:Participants/30009/",
                     "roleName": "A2_gol_benefactive",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30010/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10031/"
                 }
             ],
             "modality": [],
@@ -664,7 +751,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40021/",
+                    "@id": "resin:Relations/40029/",
                     "name": "approved by",
                     "relationSubject": "resin:Entities/10023/",
                     "relationObject": "resin:Entities/10011/",
@@ -673,7 +760,7 @@
                     "wd_description": "item is approved by other item(s)"
                 },
                 {
-                    "@id": "resin:Relations/40022/",
+                    "@id": "resin:Relations/40030/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10011/",
                     "relationObject": "resin:Entities/10013/",
@@ -700,14 +787,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30008/",
+                    "@id": "resin:Participants/30011/",
                     "roleName": "A1_ppt_thing_changing",
                     "entity": "resin:Entities/10028/"
                 },
                 {
-                    "@id": "resin:Participants/30009/",
+                    "@id": "resin:Participants/30012/",
                     "roleName": "A0_pag_causer_of_transformation",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30013/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -716,7 +808,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40023/",
+                    "@id": "resin:Relations/40031/",
                     "name": "ammended",
                     "relationSubject": "resin:Entities/10013/",
                     "relationObject": "resin:Entities/10028/",
@@ -743,14 +835,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30010/",
+                    "@id": "resin:Participants/30014/",
                     "roleName": "A1_pag_group/entity_unable_to_pay",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30011/",
+                    "@id": "resin:Participants/30015/",
                     "roleName": "A2_ppt_what_they_can't_pay_for",
                     "entity": "resin:Entities/10025/"
+                },
+                {
+                    "@id": "resin:Participants/30016/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -759,7 +856,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40024/",
+                    "@id": "resin:Relations/40032/",
                     "name": "maintained by",
                     "relationSubject": "resin:Entities/10025/",
                     "relationObject": "resin:Entities/10013/",
@@ -787,14 +884,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30012/",
+                    "@id": "resin:Participants/30017/",
                     "roleName": "A0_ppt_reactor",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30013/",
+                    "@id": "resin:Participants/30018/",
                     "roleName": "A1_pag_reacted-to",
                     "entity": "resin:Entities/10037/"
+                },
+                {
+                    "@id": "resin:Participants/30019/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -803,7 +905,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40025/",
+                    "@id": "resin:Relations/40033/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10013/",
                     "relationObject": "resin:Entities/10037/",
@@ -828,19 +930,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30014/",
+                    "@id": "resin:Participants/30020/",
                     "roleName": "A0_ppt_reactor",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30015/",
+                    "@id": "resin:Participants/30021/",
                     "roleName": "A1_pag_reacted-to",
                     "entity": "resin:Events/10038/"
                 },
                 {
-                    "@id": "resin:Participants/30016/",
+                    "@id": "resin:Participants/30022/",
                     "roleName": "A2_gol_experiencer_of_crisis",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30023/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -849,7 +956,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40026/",
+                    "@id": "resin:Relations/40034/",
                     "name": "reply to",
                     "relationSubject": "resin:Events/10038/",
                     "relationObject": "resin:Entities/10006/",
@@ -858,7 +965,7 @@
                     "wd_description": "the intellectual work to which the subsequent work is a direct reply"
                 },
                 {
-                    "@id": "resin:Relations/40027/",
+                    "@id": "resin:Relations/40035/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10013/",
@@ -883,19 +990,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30017/",
+                    "@id": "resin:Participants/30024/",
                     "roleName": "A0_ppt_reactor",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30018/",
+                    "@id": "resin:Participants/30025/",
                     "roleName": "A1_pag_reacted-to",
                     "entity": "resin:Events/10038/"
                 },
                 {
-                    "@id": "resin:Participants/30019/",
+                    "@id": "resin:Participants/30026/",
                     "roleName": "A2_gol_experiencer_of_crisis",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30027/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -904,7 +1016,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40028/",
+                    "@id": "resin:Relations/40036/",
                     "name": "reply to",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Events/10038/",
@@ -913,7 +1025,7 @@
                     "wd_description": "the intellectual work to which the subsequent work is a direct reply"
                 },
                 {
-                    "@id": "resin:Relations/40029/",
+                    "@id": "resin:Relations/40037/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10013/",
@@ -941,14 +1053,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30020/",
+                    "@id": "resin:Participants/30028/",
                     "roleName": "A1_gol_experiencer_of_crisis",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30021/",
+                    "@id": "resin:Participants/30029/",
                     "roleName": "A0_crisis",
                     "entity": "resin:Entities/10021/"
+                },
+                {
+                    "@id": "resin:Participants/30030/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -957,7 +1074,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40030/",
+                    "@id": "resin:Relations/40038/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10013/",
                     "relationObject": "resin:Entities/10021/",
@@ -984,12 +1101,12 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30022/",
+                    "@id": "resin:Participants/30031/",
                     "roleName": "A1_ppt_claimed_by",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30023/",
+                    "@id": "resin:Participants/30032/",
                     "roleName": "A0_loc",
                     "entity": "resin:Entities/10026/"
                 }
@@ -1000,7 +1117,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40031/",
+                    "@id": "resin:Relations/40039/",
                     "name": "territory claimed by",
                     "relationSubject": "resin:Entities/10013/",
                     "relationObject": "resin:Entities/10026/",
@@ -1027,19 +1144,24 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30024/",
+                    "@id": "resin:Participants/30033/",
                     "roleName": "A0_pag_agent_of_violent_behavior",
                     "entity": "resin:Entities/10003/"
                 },
                 {
-                    "@id": "resin:Participants/30025/",
+                    "@id": "resin:Participants/30034/",
                     "roleName": "A2_gol_target_of_violent_behavior",
                     "entity": "resin:Entities/10022/"
                 },
                 {
-                    "@id": "resin:Participants/30026/",
+                    "@id": "resin:Participants/30035/",
                     "roleName": "A1",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30036/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1048,7 +1170,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40032/",
+                    "@id": "resin:Relations/40040/",
                     "name": "perpetrator ",
                     "relationSubject": "resin:Entities/10003/",
                     "relationObject": "resin:Entities/10022/",
@@ -1057,7 +1179,7 @@
                     "wd_description": "person or organization who carried out a harmful, illegal, or immoral act"
                 },
                 {
-                    "@id": "resin:Relations/40033/",
+                    "@id": "resin:Relations/40041/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10003/",
                     "relationObject": "resin:Entities/10013/",
@@ -1066,7 +1188,7 @@
                     "wd_description": "object of which the subject is a part"
                 },
                 {
-                    "@id": "resin:Relations/40034/",
+                    "@id": "resin:Relations/40042/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10022/",
                     "relationObject": "resin:Entities/10013/",
@@ -1093,14 +1215,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30027/",
+                    "@id": "resin:Participants/30037/",
                     "roleName": "A1_ppt_nature_of_the_crisis",
                     "entity": "resin:Entities/10041/"
                 },
                 {
-                    "@id": "resin:Participants/30028/",
+                    "@id": "resin:Participants/30038/",
                     "roleName": "A2_gol_experiencer_of_crisis",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30039/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1109,7 +1236,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40035/",
+                    "@id": "resin:Relations/40043/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10013/",
                     "relationObject": "resin:Entities/10041/",
@@ -1172,14 +1299,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30029/",
+                    "@id": "resin:Participants/30040/",
                     "roleName": "A0_pag_first",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30030/",
+                    "@id": "resin:Participants/30041/",
                     "roleName": "A1_com_second_arguer",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30042/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1188,7 +1320,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40036/",
+                    "@id": "resin:Relations/40044/",
                     "name": "member of",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10013/",
@@ -1213,14 +1345,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30031/",
+                    "@id": "resin:Participants/30043/",
                     "roleName": "A0_pag__rioter",
                     "entity": "resin:Entities/10010/"
                 },
                 {
-                    "@id": "resin:Participants/30032/",
+                    "@id": "resin:Participants/30044/",
                     "roleName": "A1_cau__who/what_the_riot_is_against",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30045/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1229,7 +1366,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40037/",
+                    "@id": "resin:Relations/40045/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10010/",
                     "relationObject": "resin:Entities/10013/",
@@ -1257,12 +1394,12 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30033/",
+                    "@id": "resin:Participants/30046/",
                     "roleName": "A0_pag_agent_persuasive_entity",
                     "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30034/",
+                    "@id": "resin:Participants/30047/",
                     "roleName": "A1_ppt_patient_impelled_entity",
                     "entity": "resin:Entities/10013/"
                 }
@@ -1273,7 +1410,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40038/",
+                    "@id": "resin:Relations/40046/",
                     "name": "interested in",
                     "relationSubject": "resin:Entities/10019/",
                     "relationObject": "resin:Entities/10013/",
@@ -1300,14 +1437,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30035/",
+                    "@id": "resin:Participants/30048/",
                     "roleName": "A0_pag_disagreer",
                     "entity": "resin:Entities/10030/"
                 },
                 {
-                    "@id": "resin:Participants/30036/",
+                    "@id": "resin:Participants/30049/",
                     "roleName": "A1_ppt_disagreement",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30050/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1316,7 +1458,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40039/",
+                    "@id": "resin:Relations/40047/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10030/",
                     "relationObject": "resin:Entities/10013/",
@@ -1343,14 +1485,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30037/",
+                    "@id": "resin:Participants/30051/",
                     "roleName": "A1_ppt_Enthusiastic_entity",
                     "entity": "resin:Entities/10009/"
                 },
                 {
-                    "@id": "resin:Participants/30038/",
+                    "@id": "resin:Participants/30052/",
                     "roleName": "A0_pag_Inspiration_of_enthusiasm",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30053/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1359,7 +1506,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40040/",
+                    "@id": "resin:Relations/40048/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10009/",
                     "relationObject": "resin:Entities/10006/",
@@ -1386,14 +1533,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30039/",
+                    "@id": "resin:Participants/30054/",
                     "roleName": "A1_ppt_proposition",
                     "entity": "resin:Entities/10008/"
                 },
                 {
-                    "@id": "resin:Participants/30040/",
+                    "@id": "resin:Participants/30055/",
                     "roleName": "A0_pag_agreer",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30056/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1402,7 +1554,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40041/",
+                    "@id": "resin:Relations/40049/",
                     "name": "perpetrator ",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10008/",
@@ -1429,14 +1581,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30041/",
+                    "@id": "resin:Participants/30057/",
                     "roleName": "A0_pag_causer_of_increase",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30042/",
+                    "@id": "resin:Participants/30058/",
                     "roleName": "A1_ppt_thing_increasing",
                     "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30059/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1445,7 +1602,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40042/",
+                    "@id": "resin:Relations/40050/",
                     "name": "budget change",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10012/",
@@ -1472,12 +1629,12 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30043/",
+                    "@id": "resin:Participants/30060/",
                     "roleName": "A0_pag_focussed_party",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30044/",
+                    "@id": "resin:Participants/30061/",
                     "roleName": "A1_com_second_party",
                     "entity": "resin:Entities/10015/"
                 }
@@ -1488,7 +1645,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40043/",
+                    "@id": "resin:Relations/40051/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10015/",
@@ -1513,19 +1670,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30045/",
+                    "@id": "resin:Participants/30062/",
                     "roleName": "A0_pag_planner",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30046/",
+                    "@id": "resin:Participants/30063/",
                     "roleName": "A0_pag_planner",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30047/",
+                    "@id": "resin:Participants/30064/",
                     "roleName": "A1_ppt_thing_planned",
                     "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30065/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1534,7 +1696,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40044/",
+                    "@id": "resin:Relations/40052/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10008/",
@@ -1543,7 +1705,7 @@
                     "wd_description": "object of which the subject is a part"
                 },
                 {
-                    "@id": "resin:Relations/40045/",
+                    "@id": "resin:Relations/40053/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10008/",
@@ -1570,14 +1732,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30048/",
+                    "@id": "resin:Participants/30066/",
                     "roleName": "A1_ppt_proposition",
                     "entity": "resin:Entities/10008/"
                 },
                 {
-                    "@id": "resin:Participants/30049/",
+                    "@id": "resin:Participants/30067/",
                     "roleName": "A0_pag_agreer",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30068/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1586,7 +1753,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40046/",
+                    "@id": "resin:Relations/40054/",
                     "name": "perpetrator ",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10008/",
@@ -1683,19 +1850,24 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30050/",
+                    "@id": "resin:Participants/30069/",
                     "roleName": "A0_pag_Agent/Entity_Trying",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30051/",
+                    "@id": "resin:Participants/30070/",
                     "roleName": "A0_pag_Agent/Entity_Trying",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30052/",
+                    "@id": "resin:Participants/30071/",
                     "roleName": "A1_ppt_thing_tried",
                     "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30072/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1704,7 +1876,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40047/",
+                    "@id": "resin:Relations/40055/",
                     "name": "objective of project or action",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10008/",
@@ -1713,7 +1885,7 @@
                     "wd_description": "desired result or outcome"
                 },
                 {
-                    "@id": "resin:Relations/40048/",
+                    "@id": "resin:Relations/40056/",
                     "name": "objective of project or action",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10008/",
@@ -1740,14 +1912,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30053/",
+                    "@id": "resin:Participants/30073/",
                     "roleName": "A1_ppt_thing_done_to",
                     "entity": "resin:Entities/10001/"
                 },
                 {
-                    "@id": "resin:Participants/30054/",
+                    "@id": "resin:Participants/30074/",
                     "roleName": "A0_pag_doer",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30075/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1756,7 +1933,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40049/",
+                    "@id": "resin:Relations/40057/",
                     "name": "dissolve",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10001/",
@@ -1783,14 +1960,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30055/",
+                    "@id": "resin:Participants/30076/",
                     "roleName": "A1_ppt_thing_done_to",
                     "entity": "resin:Entities/10028/"
                 },
                 {
-                    "@id": "resin:Participants/30056/",
+                    "@id": "resin:Participants/30077/",
                     "roleName": "A0_pag_doer",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30078/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1799,7 +1981,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40050/",
+                    "@id": "resin:Relations/40058/",
                     "name": "annul",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10028/",
@@ -1826,14 +2008,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30057/",
+                    "@id": "resin:Participants/30079/",
                     "roleName": "A1_ppt_thing_regulated",
                     "entity": "resin:Entities/10031/"
                 },
                 {
-                    "@id": "resin:Participants/30058/",
+                    "@id": "resin:Participants/30080/",
                     "roleName": "A0_pag_regulator",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30081/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1842,7 +2029,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40051/",
+                    "@id": "resin:Relations/40059/",
                     "name": "regulated by",
                     "relationSubject": "resin:Entities/10031/",
                     "relationObject": "resin:Entities/10002/",
@@ -1869,14 +2056,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30059/",
+                    "@id": "resin:Participants/30082/",
                     "roleName": "A1_ppt_thing_claimed",
                     "entity": "resin:Entities/10005/"
                 },
                 {
-                    "@id": "resin:Participants/30060/",
+                    "@id": "resin:Participants/30083/",
                     "roleName": "A0_pag_announcer",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30084/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1885,7 +2077,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40052/",
+                    "@id": "resin:Relations/40060/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10005/",
@@ -1912,14 +2104,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30061/",
+                    "@id": "resin:Participants/30085/",
                     "roleName": "A0_pag_agent_of_violent_behavior",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30062/",
+                    "@id": "resin:Participants/30086/",
                     "roleName": "A2_gol_target_of_violent_behavior",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30087/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1928,7 +2125,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40053/",
+                    "@id": "resin:Relations/40061/",
                     "name": "Member of",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10013/",
@@ -1958,19 +2155,24 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30063/",
+                    "@id": "resin:Participants/30088/",
                     "roleName": "A1_ppt_theme_overthrown_government",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30064/",
+                    "@id": "resin:Participants/30089/",
                     "roleName": "A0_pag_revolting_entity",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30065/",
+                    "@id": "resin:Participants/30090/",
                     "roleName": "A0_pag_revolting_entity",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30091/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -1979,7 +2181,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40054/",
+                    "@id": "resin:Relations/40062/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10013/",
@@ -1988,7 +2190,7 @@
                     "wd_description": "object of which the subject is a part"
                 },
                 {
-                    "@id": "resin:Relations/40055/",
+                    "@id": "resin:Relations/40063/",
                     "name": "member of",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10013/",
@@ -2013,14 +2215,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30066/",
+                    "@id": "resin:Participants/30092/",
                     "roleName": "A1_ppt_old_thing",
                     "entity": "resin:Entities/10000/"
                 },
                 {
-                    "@id": "resin:Participants/30067/",
+                    "@id": "resin:Participants/30093/",
                     "roleName": "A0_pag_replacer",
                     "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30094/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2029,7 +2236,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40056/",
+                    "@id": "resin:Relations/40064/",
                     "name": "replaced by",
                     "relationSubject": "resin:Entities/10000/",
                     "relationObject": "resin:Entities/10007/",
@@ -2056,19 +2263,24 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30068/",
+                    "@id": "resin:Participants/30095/",
                     "roleName": "A0_pag_agent_coup_stager",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30069/",
+                    "@id": "resin:Participants/30096/",
                     "roleName": "A0_pag_agent_coup_stager",
                     "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30070/",
+                    "@id": "resin:Participants/30097/",
                     "roleName": "A1_ppt_patient_victim",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30098/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2077,7 +2289,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40057/",
+                    "@id": "resin:Relations/40065/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10013/",
@@ -2086,7 +2298,7 @@
                     "wd_description": "object of which the subject is a part"
                 },
                 {
-                    "@id": "resin:Relations/40058/",
+                    "@id": "resin:Relations/40066/",
                     "name": "member of",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10013/",
@@ -2111,19 +2323,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30071/",
+                    "@id": "resin:Participants/30099/",
                     "roleName": "A0_pag__police",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30072/",
+                    "@id": "resin:Participants/30100/",
                     "roleName": "A1_ppt__criminal",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30073/",
+                    "@id": "resin:Participants/30101/",
                     "roleName": "A1_ppt__criminal",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30102/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2132,7 +2349,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40059/",
+                    "@id": "resin:Relations/40067/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10002/",
                     "relationObject": "resin:Entities/10013/",
@@ -2141,7 +2358,7 @@
                     "wd_description": "object of which the subject is a part"
                 },
                 {
-                    "@id": "resin:Relations/40060/",
+                    "@id": "resin:Relations/40068/",
                     "name": "member of",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10013/",
@@ -2197,14 +2414,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30074/",
+                    "@id": "resin:Participants/30103/",
                     "roleName": "A0_pag_violent_entity",
                     "entity": "resin:Entities/10032/"
                 },
                 {
-                    "@id": "resin:Participants/30075/",
+                    "@id": "resin:Participants/30104/",
                     "roleName": "A1_ppt_instigating_entity_or_act",
                     "entity": "resin:Entities/10016/"
+                },
+                {
+                    "@id": "resin:Participants/30105/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2213,7 +2435,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40061/",
+                    "@id": "resin:Relations/40069/",
                     "name": "dissent",
                     "relationSubject": "resin:Entities/10032/",
                     "relationObject": "resin:Entities/10016/",
@@ -2238,14 +2460,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30076/",
+                    "@id": "resin:Participants/30106/",
                     "roleName": "A0_pag_agentive_clasher",
                     "entity": "resin:Entities/10032/"
                 },
                 {
-                    "@id": "resin:Participants/30077/",
+                    "@id": "resin:Participants/30107/",
                     "roleName": "A1_com_entity_clashed_with",
                     "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30108/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2254,7 +2481,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40062/",
+                    "@id": "resin:Relations/40070/",
                     "name": "dissent",
                     "relationSubject": "resin:Entities/10032/",
                     "relationObject": "resin:Entities/10007/",
@@ -2279,14 +2506,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30078/",
+                    "@id": "resin:Participants/30109/",
                     "roleName": "A0_pag__rioter",
                     "entity": "resin:Entities/10009/"
                 },
                 {
-                    "@id": "resin:Participants/30079/",
+                    "@id": "resin:Participants/30110/",
                     "roleName": "A1_cau__who/what_the_riot_is_against",
                     "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30111/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2295,7 +2527,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40063/",
+                    "@id": "resin:Relations/40071/",
                     "name": "dissent",
                     "relationSubject": "resin:Entities/10009/",
                     "relationObject": "resin:Entities/10007/",
@@ -2320,14 +2552,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30080/",
+                    "@id": "resin:Participants/30112/",
                     "roleName": "A0_pag_modernizer",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30081/",
+                    "@id": "resin:Participants/30113/",
                     "roleName": "A1_ppt_thing_being_modernized",
                     "entity": "resin:Entities/10009/"
+                },
+                {
+                    "@id": "resin:Participants/30114/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2336,7 +2573,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40064/",
+                    "@id": "resin:Relations/40072/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10009/",
                     "relationObject": "resin:Entities/10007/",
@@ -2401,14 +2638,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30082/",
+                    "@id": "resin:Participants/30115/",
                     "roleName": "A0_pag_modernizer",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30083/",
+                    "@id": "resin:Participants/30116/",
                     "roleName": "A1_ppt_thing_being_modernized",
                     "entity": "resin:Entities/10013/"
+                },
+                {
+                    "@id": "resin:Participants/30117/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2417,7 +2659,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40065/",
+                    "@id": "resin:Relations/40073/",
                     "name": "head of government",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10013/",
@@ -2442,14 +2684,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30084/",
+                    "@id": "resin:Participants/30118/",
                     "roleName": "A1_ppt__person_on_trial",
                     "entity": "resin:Entities/10000/"
                 },
                 {
-                    "@id": "resin:Participants/30085/",
+                    "@id": "resin:Participants/30119/",
                     "roleName": "A0_pag__judge",
                     "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30120/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10031/"
                 }
             ],
             "modality": [],
@@ -2458,7 +2705,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40066/",
+                    "@id": "resin:Relations/40074/",
                     "name": "replaced by",
                     "relationSubject": "resin:Entities/10000/",
                     "relationObject": "resin:Entities/10007/",
@@ -2483,13 +2730,18 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30086/",
+                    "@id": "resin:Participants/30121/",
                     "roleName": "A1_ppt_claimed_by",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30087/",
+                    "@id": "resin:Participants/30122/",
                     "roleName": "A0_loc",
+                    "entity": "resin:Entities/10029/"
+                },
+                {
+                    "@id": "resin:Participants/30123/AM_loc",
+                    "roleName": "AM_loc",
                     "entity": "resin:Entities/10029/"
                 }
             ],
@@ -2499,7 +2751,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40067/",
+                    "@id": "resin:Relations/40075/",
                     "name": "territory claimed by",
                     "relationSubject": "resin:Entities/10029/",
                     "relationObject": "resin:Entities/10007/",
@@ -2524,14 +2776,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30088/",
+                    "@id": "resin:Participants/30124/",
                     "roleName": "A1_com_second_arguer",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30089/",
+                    "@id": "resin:Participants/30125/",
                     "roleName": "A0_pag_first",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30126/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2540,7 +2797,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40068/",
+                    "@id": "resin:Relations/40076/",
                     "name": "member of",
                     "relationSubject": "resin:Entities/10006/",
                     "relationObject": "resin:Entities/10002/",
@@ -2565,14 +2822,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30090/",
+                    "@id": "resin:Participants/30127/",
                     "roleName": "A0_pag_represser",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30091/",
+                    "@id": "resin:Participants/30128/",
                     "roleName": "A1_ppt_repressed",
                     "entity": "resin:Entities/10009/"
+                },
+                {
+                    "@id": "resin:Participants/30129/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2581,7 +2843,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40069/",
+                    "@id": "resin:Relations/40077/",
                     "name": "head of government",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10009/",
@@ -2606,14 +2868,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30092/",
+                    "@id": "resin:Participants/30130/",
                     "roleName": "A0_pag_warmonger",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30093/",
+                    "@id": "resin:Participants/30131/",
                     "roleName": "A1_com_war_against/with",
                     "entity": "resin:Entities/10033/"
+                },
+                {
+                    "@id": "resin:Participants/30132/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2622,7 +2889,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40070/",
+                    "@id": "resin:Relations/40078/",
                     "name": "affiliation",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10033/",
@@ -2647,14 +2914,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30094/",
+                    "@id": "resin:Participants/30133/",
                     "roleName": "A0_pag_abuser",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30095/",
+                    "@id": "resin:Participants/30134/",
                     "roleName": "A1_ppt_entity_abused",
                     "entity": "resin:Entities/10009/"
+                },
+                {
+                    "@id": "resin:Participants/30135/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2663,7 +2935,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40071/",
+                    "@id": "resin:Relations/40079/",
                     "name": "head of government",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10009/",
@@ -2688,14 +2960,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30096/",
+                    "@id": "resin:Participants/30136/",
                     "roleName": "A0_pag_enforcer",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30097/",
+                    "@id": "resin:Participants/30137/",
                     "roleName": "A1_ppt_rule",
                     "entity": "resin:Entities/10036/"
+                },
+                {
+                    "@id": "resin:Participants/30138/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2704,7 +2981,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40072/",
+                    "@id": "resin:Relations/40080/",
                     "name": "maintained by",
                     "relationSubject": "resin:Entities/10036/",
                     "relationObject": "resin:Entities/10007/",
@@ -2729,14 +3006,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30098/",
+                    "@id": "resin:Participants/30139/",
                     "roleName": "A1_pag_group/entity_unable_to_pay",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30099/",
+                    "@id": "resin:Participants/30140/",
                     "roleName": "A3_gol_loaner_of_money",
                     "entity": "resin:Entities/10004/"
+                },
+                {
+                    "@id": "resin:Participants/30141/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2745,7 +3027,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40073/",
+                    "@id": "resin:Relations/40081/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10004/",
@@ -2770,12 +3052,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30100/",
+                    "@id": "resin:Participants/30142/",
                     "roleName": "A0_pag_focussed_party",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30101/",
+                    "@id": "resin:Participants/30143/",
                     "roleName": "A1_com_second_party",
                     "entity": "resin:Entities/10017/"
                 }
@@ -2786,7 +3068,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40074/",
+                    "@id": "resin:Relations/40082/",
                     "name": "partially coincident with",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10017/",
@@ -2811,14 +3093,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30102/",
+                    "@id": "resin:Participants/30144/",
                     "roleName": "A0_pag_agent_of_liberalization",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30103/",
+                    "@id": "resin:Participants/30145/",
                     "roleName": "A1_ppt_thing_becoming_more_liberal",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30146/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2827,7 +3114,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40075/",
+                    "@id": "resin:Relations/40083/",
                     "name": "head of government",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10034/",
@@ -2890,14 +3177,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30104/",
+                    "@id": "resin:Participants/30147/",
                     "roleName": "A0_pag_entity_furnishing_credentials",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30105/",
+                    "@id": "resin:Participants/30148/",
                     "roleName": "A1_ppt_entity_credited",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30149/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -2906,7 +3198,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40076/",
+                    "@id": "resin:Relations/40084/",
                     "name": "member of",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -2935,14 +3227,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30106/",
+                    "@id": "resin:Participants/30150/",
                     "roleName": "A0_pag_speaker",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30107/",
+                    "@id": "resin:Participants/30151/",
                     "roleName": "A1_ppt_subject",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30152/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -2951,7 +3248,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40077/",
+                    "@id": "resin:Relations/40085/",
                     "name": "dissent",
                     "relationSubject": "resin:Entities/10020/",
                     "relationObject": "resin:Entities/10034/",
@@ -2979,14 +3276,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30108/",
+                    "@id": "resin:Participants/30153/",
                     "roleName": "A0_pag_assistant",
                     "entity": "resin:Entities/10039/"
                 },
                 {
-                    "@id": "resin:Participants/30109/",
+                    "@id": "resin:Participants/30154/",
                     "roleName": "A1_gol_assisted",
                     "entity": "resin:Entities/10009/"
+                },
+                {
+                    "@id": "resin:Participants/30155/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -2995,7 +3297,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40078/",
+                    "@id": "resin:Relations/40086/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10009/",
                     "relationObject": "resin:Entities/10039/",
@@ -3020,19 +3322,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30110/",
+                    "@id": "resin:Participants/30156/",
                     "roleName": "A0_pag_agent_giver",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30111/",
+                    "@id": "resin:Participants/30157/",
                     "roleName": "A1_ppt_theme_thing_given",
                     "entity": "resin:Entities/10035/"
                 },
                 {
-                    "@id": "resin:Participants/30112/",
+                    "@id": "resin:Participants/30158/",
                     "roleName": "A2_gol_recipient_entity_given_to",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30159/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -3041,7 +3348,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40079/",
+                    "@id": "resin:Relations/40087/",
                     "name": "approved by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10035/",
@@ -3050,7 +3357,7 @@
                     "wd_description": "item is approved by other item(s)"
                 },
                 {
-                    "@id": "resin:Relations/40080/",
+                    "@id": "resin:Relations/40088/",
                     "name": "donated by",
                     "relationSubject": "resin:Entities/10020/",
                     "relationObject": "resin:Entities/10035/",
@@ -3075,14 +3382,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30113/",
+                    "@id": "resin:Participants/30160/",
                     "roleName": "A0_pag_agent_asker",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30114/",
+                    "@id": "resin:Participants/30161/",
                     "roleName": "A2_gol_recipient_hearer",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30162/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -3091,7 +3403,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40081/",
+                    "@id": "resin:Relations/40089/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -3121,14 +3433,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30115/",
+                    "@id": "resin:Participants/30163/",
                     "roleName": "A0_pag_entity_enforcing_sanctions",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30116/",
+                    "@id": "resin:Participants/30164/",
                     "roleName": "A1_ppt_entity_being_punished",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30165/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -3137,7 +3454,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40082/",
+                    "@id": "resin:Relations/40090/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -3162,14 +3479,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30117/",
+                    "@id": "resin:Participants/30166/",
                     "roleName": "A0_pag_blocker",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30118/",
+                    "@id": "resin:Participants/30167/",
                     "roleName": "A1_ppt_foiled",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30168/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -3178,7 +3500,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40083/",
+                    "@id": "resin:Relations/40091/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -3203,14 +3525,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30119/",
+                    "@id": "resin:Participants/30169/",
                     "roleName": "A0_pag_entity_removing",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30120/",
+                    "@id": "resin:Participants/30170/",
                     "roleName": "A2_dir_removed_from",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30171/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10029/"
                 }
             ],
             "modality": [],
@@ -3219,7 +3546,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40084/",
+                    "@id": "resin:Relations/40092/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -3244,14 +3571,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30121/",
+                    "@id": "resin:Participants/30172/",
                     "roleName": "A0_pag_seller",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30122/",
+                    "@id": "resin:Participants/30173/",
                     "roleName": "A2_gol_buyer",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30174/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3260,7 +3592,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40085/",
+                    "@id": "resin:Relations/40093/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -3285,14 +3617,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30123/",
+                    "@id": "resin:Participants/30175/",
                     "roleName": "A0_pag_applier_of_penalty",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30124/",
+                    "@id": "resin:Participants/30176/",
                     "roleName": "A1_ppt_entity_penalized",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30177/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3301,7 +3638,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40086/",
+                    "@id": "resin:Relations/40094/",
                     "name": "influenced by",
                     "relationSubject": "resin:Entities/10034/",
                     "relationObject": "resin:Entities/10020/",
@@ -3341,7 +3678,13 @@
             "outlinks": [
                 "resin:Events/20026/Container:xor"
             ],
-            "participants": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30178/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
+                }
+            ],
             "modality": [],
             "importance": [],
             "likelihood": [],
@@ -3361,7 +3704,13 @@
             "outlinks": [
                 "resin:Events/20026/Container:xor"
             ],
-            "participants": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30179/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
+                }
+            ],
             "modality": [],
             "importance": [],
             "likelihood": [],
@@ -3381,7 +3730,13 @@
             "outlinks": [
                 "resin:Events/20026/Container:xor"
             ],
-            "participants": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30180/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
+                }
+            ],
             "modality": [],
             "importance": [],
             "likelihood": [],
@@ -3401,7 +3756,13 @@
             "outlinks": [
                 "resin:Events/20026/Container:xor"
             ],
-            "participants": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30181/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
+                }
+            ],
             "modality": [],
             "importance": [],
             "likelihood": [],
@@ -3421,9 +3782,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30125/New_Leader",
+                    "@id": "resin:Participants/30182/New_Leader",
                     "roleName": "A0_pag_denier",
                     "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30183/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3445,14 +3811,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30126/announcer",
+                    "@id": "resin:Participants/30184/announcer",
                     "roleName": "A1_ppt_impelled_agent",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30127/goals_or_values",
+                    "@id": "resin:Participants/30185/goals_or_values",
                     "roleName": "A0_pag_motivation",
                     "entity": "resin:Entities/10018/Goals_or_Values"
+                },
+                {
+                    "@id": "resin:Participants/30186/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3461,7 +3832,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40087/announces",
+                    "@id": "resin:Relations/40095/announces",
                     "name": "announces",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10018/Goals_or_Values",
@@ -3484,14 +3855,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30128/announcer",
+                    "@id": "resin:Participants/30187/announcer",
                     "roleName": "A0_pag_agent_announcer",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30129/Coup_Detat",
+                    "@id": "resin:Participants/30188/Coup_Detat",
                     "roleName": "A1_ppt_topic_utterance",
                     "entity": "resin:Entities/10040/Coup_Detat"
+                },
+                {
+                    "@id": "resin:Participants/30189/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3500,7 +3876,7 @@
             "entities": [],
             "relations": [
                 {
-                    "@id": "resin:Relations/40088/announces",
+                    "@id": "resin:Relations/40096/announces",
                     "name": "announces",
                     "relationSubject": "resin:Entities/10007/",
                     "relationObject": "resin:Entities/10040/Coup_Detat",
@@ -3523,19 +3899,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30130/International_Organization",
+                    "@id": "resin:Participants/30190/International_Organization",
                     "roleName": "A2_gol_entity_reported_to",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30131/Humanitarians",
+                    "@id": "resin:Participants/30191/Humanitarians",
                     "roleName": "A0_pag_reporter",
                     "entity": "resin:Entities/10039/"
                 },
                 {
-                    "@id": "resin:Participants/30132/Regime_Change",
+                    "@id": "resin:Participants/30192/Regime_Change",
                     "roleName": "A1_ppt_thing_reported",
                     "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30193/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3557,14 +3938,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30133/Political_Faction",
+                    "@id": "resin:Participants/30194/Political_Faction",
                     "roleName": "A0_pag_killer",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30134/Group_of_Humans",
+                    "@id": "resin:Participants/30195/Group_of_Humans",
                     "roleName": "A1_ppt_corpse",
                     "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30196/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3586,14 +3972,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30135/Foreign_Interest",
+                    "@id": "resin:Participants/30197/Foreign_Interest",
                     "roleName": "A0_pag_helper",
                     "entity": "resin:Entities/10004/"
                 },
                 {
-                    "@id": "resin:Participants/30136/Political_Faction",
+                    "@id": "resin:Participants/30198/Political_Faction",
                     "roleName": "A1_ppt_group",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30199/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3615,14 +4006,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30137/Group_of_Humans",
+                    "@id": "resin:Participants/30200/Group_of_Humans",
                     "roleName": "A1_ppt_threat",
                     "entity": "resin:Entities/10003/"
                 },
                 {
-                    "@id": "resin:Participants/30138/New_Government",
+                    "@id": "resin:Participants/30201/New_Government",
                     "roleName": "A0_pag_agent",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30202/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3646,14 +4042,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30139/International_Organization",
+                    "@id": "resin:Participants/30203/International_Organization",
                     "roleName": "A0_pag_agent_accuser",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30140/New_Government",
+                    "@id": "resin:Participants/30204/New_Government",
                     "roleName": "A1_ppt_theme_accused",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30205/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3675,14 +4076,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30141/New_Government",
+                    "@id": "resin:Participants/30206/New_Government",
                     "roleName": "A0_pag_claimer",
                     "entity": "resin:Entities/10034/"
                 },
                 {
-                    "@id": "resin:Participants/30142/False_Claims",
+                    "@id": "resin:Participants/30207/False_Claims",
                     "roleName": "A1_ppt_thing_claimed",
                     "entity": "resin:Entities/10018/Goals_or_Values"
+                },
+                {
+                    "@id": "resin:Participants/30208/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3704,14 +4110,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30143/New_Leader",
+                    "@id": "resin:Participants/30209/New_Leader",
                     "roleName": "A0_pag_agent",
                     "entity": "resin:Entities/10007/"
                 },
                 {
-                    "@id": "resin:Participants/30144/Goals_or_Values",
+                    "@id": "resin:Participants/30210/Goals_or_Values",
                     "roleName": "A0_ppt_theme",
                     "entity": "resin:Entities/10018/Goals_or_Values"
+                },
+                {
+                    "@id": "resin:Participants/30211/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3733,14 +4144,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30145/New_Government",
+                    "@id": "resin:Participants/30212/New_Government",
                     "roleName": "A0_pag_controller",
                     "entity": "resin:Entities/10034/"
                 },
                 {
-                    "@id": "resin:Participants/30146/Military",
+                    "@id": "resin:Participants/30213/Military",
                     "roleName": "A1_ppt_controlled",
                     "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30214/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3764,14 +4180,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30147/Domestic_Political_Crisis",
+                    "@id": "resin:Participants/30215/Domestic_Political_Crisis",
                     "roleName": "A1_ppt_topic",
                     "entity": "resin:Entities/10021/"
                 },
                 {
-                    "@id": "resin:Participants/30148/Leadership",
+                    "@id": "resin:Participants/30216/Leadership",
                     "roleName": "A1_ppt_agent_discussant",
                     "entity": "resin:Entities/10025/"
+                },
+                {
+                    "@id": "resin:Participants/30217/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3795,14 +4216,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30149/Government",
+                    "@id": "resin:Participants/30218/Government",
                     "roleName": "A1_ppt_entity_corrupted",
                     "entity": "resin:Entities/10013/"
                 },
                 {
-                    "@id": "resin:Participants/30150/Leadership",
+                    "@id": "resin:Participants/30219/Leadership",
                     "roleName": "A1_ppt_cause",
                     "entity": "resin:Entities/10025/"
+                },
+                {
+                    "@id": "resin:Participants/30220/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3824,14 +4250,19 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30151/Group_of_Humans",
+                    "@id": "resin:Participants/30221/Group_of_Humans",
                     "roleName": "A1_ppt_criminal",
                     "entity": "resin:Entities/10022/"
                 },
                 {
-                    "@id": "resin:Participants/30152/New_Government",
+                    "@id": "resin:Participants/30222/New_Government",
                     "roleName": "A0_pag_captor",
                     "entity": "resin:Entities/10034/"
+                },
+                {
+                    "@id": "resin:Participants/30223/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3853,9 +4284,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30153/Capital",
+                    "@id": "resin:Participants/30224/Capital",
                     "roleName": "A1_ppt_thing_grown",
                     "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30225/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3879,9 +4315,14 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30154/Political_Faction",
+                    "@id": "resin:Participants/30226/Political_Faction",
                     "roleName": "A1_ppt_thing_organized",
                     "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30227/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3905,14 +4346,19 @@
             ],
             "participants": [
                 {
-                    "@id": "resin:Participants/30155/International_Organization",
+                    "@id": "resin:Participants/30228/International_Organization",
                     "roleName": "A0_pag_complainer",
                     "entity": "resin:Entities/10020/"
                 },
                 {
-                    "@id": "resin:Participants/30156/Goals_or_Values",
+                    "@id": "resin:Participants/30229/Goals_or_Values",
                     "roleName": "A1_ppt_thing_objected_to",
                     "entity": "resin:Entities/10018/Goals_or_Values"
+                },
+                {
+                    "@id": "resin:Participants/30230/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3934,19 +4380,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30157/Geographic_Location",
+                    "@id": "resin:Participants/30231/Geographic_Location",
                     "roleName": "A2_ppt_exiled_from",
                     "entity": "resin:Entities/10026/"
                 },
                 {
-                    "@id": "resin:Participants/30158/New_Government",
+                    "@id": "resin:Participants/30232/New_Government",
                     "roleName": "A0_pag_sender_away",
                     "entity": "resin:Entities/10034/"
                 },
                 {
-                    "@id": "resin:Participants/30159/Overthrown_Leader",
+                    "@id": "resin:Participants/30233/Overthrown_Leader",
                     "roleName": "A1_com_exile",
                     "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30234/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/"
                 }
             ],
             "modality": [],
@@ -3968,19 +4419,24 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30160/Group_of_Humans",
+                    "@id": "resin:Participants/30235/Group_of_Humans",
                     "roleName": "A0_pag_litigant",
                     "entity": "resin:Entities/10022/"
                 },
                 {
-                    "@id": "resin:Participants/30161/New_Government",
+                    "@id": "resin:Participants/30236/New_Government",
                     "roleName": "A1_ppt_entity_tried",
                     "entity": "resin:Entities/10034/"
                 },
                 {
-                    "@id": "resin:Participants/30162/International_Organization",
+                    "@id": "resin:Participants/30237/International_Organization",
                     "roleName": "A2_gol_adjudicator",
                     "entity": "resin:Entities/10020/"
+                },
+                {
+                    "@id": "resin:Participants/30238/AM_loc",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10031/"
                 }
             ],
             "modality": [],
