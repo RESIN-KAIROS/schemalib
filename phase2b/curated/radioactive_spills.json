@@ -91,83 +91,76 @@
                 },
                 {
                     "@id": "resin:Entities/10006/",
-                    "name": "gas",
-                    "wd_node": "wd:Q11432",
-                    "wd_label": "gas",
-                    "wd_description": "one of the four fundamental states of matter"
-                },
-                {
-                    "@id": "resin:Entities/10007/",
                     "name": "sterilizer",
                     "wd_node": "wd:Q191618",
                     "wd_label": "sterilization",
                     "wd_description": "process that eliminates or kills all biological agents on an object or in a volume"
                 },
                 {
-                    "@id": "resin:Entities/10008/",
+                    "@id": "resin:Entities/10007/",
                     "name": "surveillance",
                     "wd_node": "wd:Q334401",
                     "wd_label": "surveillance",
                     "wd_description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing"
                 },
                 {
-                    "@id": "resin:Entities/10009/",
+                    "@id": "resin:Entities/10008/",
                     "name": "safety",
                     "wd_node": "wd:Q10566551",
                     "wd_label": "safety",
                     "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes"
                 },
                 {
-                    "@id": "resin:Entities/10010/",
+                    "@id": "resin:Entities/10009/",
                     "name": "doctor",
                     "wd_node": "wd:Q11974939",
                     "wd_label": "health_professional",
                     "wd_description": "individual who systematically provides health care services"
                 },
                 {
-                    "@id": "resin:Entities/10011/",
+                    "@id": "resin:Entities/10010/",
                     "name": "patient",
                     "wd_node": "wd:Q181600",
                     "wd_label": "patient",
                     "wd_description": "person who takes a medical treatment or is subject of a case study"
                 },
                 {
-                    "@id": "resin:Entities/10012/",
+                    "@id": "resin:Entities/10011/",
                     "name": "disease",
                     "wd_node": "wd:Q12136",
                     "wd_label": "disease",
                     "wd_description": "abnormal condition negatively affecting organisms"
                 },
                 {
-                    "@id": "resin:Entities/10013/",
+                    "@id": "resin:Entities/10012/",
                     "name": "public education",
                     "wd_node": "wd:Q1319035",
                     "wd_label": "adult_education",
                     "wd_description": "form of learning adults engage in beyond traditional schooling"
                 },
                 {
-                    "@id": "resin:Entities/10014/",
+                    "@id": "resin:Entities/10013/",
                     "name": "educated location",
                     "wd_node": "wd:Q2221906",
                     "wd_label": "geographic location",
                     "wd_description": "point or an area on something's surface or elsewhere"
                 },
                 {
-                    "@id": "resin:Entities/10015/",
+                    "@id": "resin:Entities/10014/",
                     "name": "court location",
                     "wd_node": "wd:Q2221906",
                     "wd_label": "geographic location",
                     "wd_description": "point or an area on something's surface or elsewhere"
                 },
                 {
-                    "@id": "resin:Entities/10016/",
+                    "@id": "resin:Entities/10015/",
                     "name": "disinfection",
                     "wd_node": "wd:Q24887418",
                     "wd_label": "disinfection",
                     "wd_description": "rendering pathogens harmless through methods including use of heat, antiseptics and antibacterial agents"
                 },
                 {
-                    "@id": "resin:Entities/10017/",
+                    "@id": "resin:Entities/10016/",
                     "name": "destination from removal",
                     "wd_node": "wd:Q2221906",
                     "wd_label": "geographic location",
@@ -196,8 +189,8 @@
                 {
                     "@id": "resin:Relations/40002/discards",
                     "name": "discards",
-                    "relationSubject": "resin:Entities/10007/",
-                    "relationObject": "resin:Entities/10023/",
+                    "relationSubject": "resin:Entities/10006/",
+                    "relationObject": "resin:Entities/10022/",
                     "wd_node": "wd:Q110458569",
                     "wd_label": "discarding",
                     "wd_description": "getting rid of something no longer wanted"
@@ -205,8 +198,8 @@
                 {
                     "@id": "resin:Relations/40003/discard",
                     "name": "discard",
-                    "relationSubject": "resin:Entities/10016/",
-                    "relationObject": "resin:Entities/10018/",
+                    "relationSubject": "resin:Entities/10015/",
+                    "relationObject": "resin:Entities/10017/",
                     "wd_node": "wd:Q110458569",
                     "wd_label": "discarding",
                     "wd_description": "getting rid of something no logner wanted"
@@ -214,8 +207,8 @@
                 {
                     "@id": "resin:Relations/40004/help",
                     "name": "help",
-                    "relationSubject": "resin:Entities/10010/",
-                    "relationObject": "resin:Entities/10011/",
+                    "relationSubject": "resin:Entities/10009/",
+                    "relationObject": "resin:Entities/10010/",
                     "wd_node": "wd:Q1643184",
                     "wd_label": "help",
                     "wd_description": "cooperation between living things"
@@ -223,8 +216,8 @@
                 {
                     "@id": "resin:Relations/40005/help",
                     "name": "help",
-                    "relationSubject": "resin:Entities/10010/",
-                    "relationObject": "resin:Entities/10020/",
+                    "relationSubject": "resin:Entities/10009/",
+                    "relationObject": "resin:Entities/10019/",
                     "wd_node": "wd:Q1643184",
                     "wd_label": "help",
                     "wd_description": "cooperation between living things"
@@ -232,7 +225,7 @@
                 {
                     "@id": "resin:Relations/40006/location",
                     "name": "location",
-                    "relationSubject": "resin:Entities/10018/",
+                    "relationSubject": "resin:Entities/10017/",
                     "relationObject": "resin:Entities/10001/",
                     "wd_node": "wdt:P276",
                     "wd_label": "location",
@@ -241,8 +234,8 @@
                 {
                     "@id": "resin:Relations/40007/exposed_to",
                     "name": "exposed to",
-                    "relationSubject": "resin:Entities/10020/",
-                    "relationObject": "resin:Entities/10018/",
+                    "relationSubject": "resin:Entities/10019/",
+                    "relationObject": "resin:Entities/10017/",
                     "wd_node": "wd:Q108197922",
                     "wd_label": "exposition",
                     "wd_description": "act of exposing something or oneself to external agents of any nature"
@@ -250,8 +243,8 @@
                 {
                     "@id": "resin:Relations/40008/reviewed_by",
                     "name": "reviewed by",
-                    "relationSubject": "resin:Entities/10019/",
-                    "relationObject": "resin:Entities/10020/",
+                    "relationSubject": "resin:Entities/10018/",
+                    "relationObject": "resin:Entities/10019/",
                     "wd_node": "wdt:P4032",
                     "wd_label": "reviewed by",
                     "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
@@ -259,7 +252,7 @@
                 {
                     "@id": "resin:Relations/40009/location",
                     "name": "location",
-                    "relationSubject": "resin:Entities/10019/",
+                    "relationSubject": "resin:Entities/10018/",
                     "relationObject": "resin:Entities/10001/",
                     "wd_node": "wdt:P276",
                     "wd_label": "location",
@@ -268,11 +261,29 @@
                 {
                     "@id": "resin:Relations/40010/reviewed_by",
                     "name": "reviewed by",
-                    "relationSubject": "resin:Entities/10021/",
-                    "relationObject": "resin:Entities/10022/",
+                    "relationSubject": "resin:Entities/10020/",
+                    "relationObject": "resin:Entities/10021/",
                     "wd_node": "wdt:P4032",
                     "wd_label": "reviewed by",
                     "wd_description": "person who reviewed/refereed the work, e.g., scientific peer-reviewer"
+                },
+                {
+                    "@id": "resin:Relations/40011/infected_by",
+                    "name": "infected by",
+                    "relationSubject": "resin:Entities/10010/",
+                    "relationObject": "resin:Entities/10011/",
+                    "wd_node": "wd:Q111796726",
+                    "wd_label": "invasive disease",
+                    "wd_description": "disease involving pathogenic agents not physiologically present in the affected organ"
+                },
+                {
+                    "@id": "resin:Relations/40012/goal",
+                    "name": "goal",
+                    "relationSubject": "resin:Entities/10004/",
+                    "relationObject": "resin:Entities/10008/",
+                    "wd_node": "wd:Q4503831",
+                    "wd_label": "goal",
+                    "wd_description": "idea of the future or result that a group wants to achieve"
                 }
             ],
             "importance": [],
@@ -385,7 +396,7 @@
                 {
                     "@id": "resin:Participants/30012",
                     "roleName": "A0_pag_agent",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30013",
@@ -406,14 +417,24 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/10018/",
+                    "@id": "resin:Entities/10017/",
                     "name": "radiation",
                     "wd_node": "wd:Q18335",
                     "wd_label": "radiation",
                     "wd_description": "waves or particles propagating through space or through a medium, carrying energy"
                 }
             ],
-            "relations": []
+            "relations": [
+                {
+                    "@id": "resin:Relations/40013/threat_to",
+                    "name": "threat to",
+                    "relationSubject": "resin:Entities/10017/",
+                    "relationObject": "resin:Entities/10000/",
+                    "wd_node": "wd:Q98463540",
+                    "wd_label": "threat",
+                    "wd_description": "condition that is appraised as a danger to a group"
+                }
+            ]
         },
         {
             "@id": "resin:Events/20004",
@@ -432,7 +453,7 @@
                 {
                     "@id": "resin:Participants/30014",
                     "roleName": "A0_pag_agent_agent",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30015",
@@ -484,12 +505,12 @@
                 {
                     "@id": "resin:Participants/30017",
                     "roleName": "A0_ppt_reactor",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30018",
                     "roleName": "A1_pag_reacted-to",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 },
                 {
                     "@id": "resin:Participants/30019",
@@ -513,21 +534,31 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/10019/",
+                    "@id": "resin:Entities/10018/",
                     "name": "report",
                     "wd_node": "wd:Q10870555",
                     "wd_label": "report",
                     "wd_description": "informational, formal, and detailed text"
                 },
                 {
-                    "@id": "resin:Entities/10020/",
+                    "@id": "resin:Entities/10019/",
                     "name": "public",
                     "wd_node": "wd:Q16334295",
                     "wd_label": "group of humans",
                     "wd_description": "any set of human beings"
                 }
             ],
-            "relations": []
+            "relations": [
+                {
+                    "@id": "resin:Relations/40014/informed_by",
+                    "name": "informed by",
+                    "relationSubject": "resin:Entities/10018/",
+                    "relationObject": "resin:Entities/10007/",
+                    "wd_node": "wd:Q11028",
+                    "wd_label": "information",
+                    "wd_description": "that which informs"
+                }
+            ]
         },
         {
             "@id": "resin:Events/20006",
@@ -545,7 +576,7 @@
                 {
                     "@id": "resin:Participants/30020",
                     "roleName": "A0_pag_agent_causer_of_contamination",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30021",
@@ -590,12 +621,12 @@
                 {
                     "@id": "resin:Participants/30024",
                     "roleName": "A0_pag_prosecutor",
-                    "entity": "resin:Entities/10022/"
+                    "entity": "resin:Entities/10021/"
                 },
                 {
                     "@id": "resin:Participants/30025",
                     "roleName": "A1_ppt_defendant",
-                    "entity": "resin:Entities/10021/"
+                    "entity": "resin:Entities/10020/"
                 },
                 {
                     "@id": "resin:Participants/30026",
@@ -619,14 +650,14 @@
             "children_gate": "or",
             "entities": [
                 {
-                    "@id": "resin:Entities/10021/",
+                    "@id": "resin:Entities/10020/",
                     "name": "defandant",
                     "wd_node": "wd:Q159394",
                     "wd_label": "defendant",
                     "wd_description": "accused person"
                 },
                 {
-                    "@id": "resin:Entities/10022/",
+                    "@id": "resin:Entities/10021/",
                     "name": "prosecutor",
                     "wd_node": "wd:Q600751",
                     "wd_label": "prosecutor",
@@ -745,7 +776,7 @@
                 {
                     "@id": "resin:Participants/30035",
                     "roleName": "A2_gol_exposed_to",
-                    "entity": "resin:Entities/10023/"
+                    "entity": "resin:Entities/10022/"
                 },
                 {
                     "@id": "resin:Participants/30036",
@@ -755,7 +786,7 @@
             ],
             "entities": [
                 {
-                    "@id": "resin:Entities/10023/",
+                    "@id": "resin:Entities/10022/",
                     "name": "radiation",
                     "wd_node": "wd:Q18335",
                     "wd_label": "radiation",
@@ -780,7 +811,7 @@
                 {
                     "@id": "resin:Participants/30037",
                     "roleName": "A0_pag_sterilizer",
-                    "entity": "resin:Entities/10007/"
+                    "entity": "resin:Entities/10006/"
                 },
                 {
                     "@id": "resin:Participants/30038",
@@ -790,7 +821,7 @@
                 {
                     "@id": "resin:Participants/30039",
                     "roleName": "A2_ppt_germs_removed",
-                    "entity": "resin:Entities/10023/"
+                    "entity": "resin:Entities/10022/"
                 },
                 {
                     "@id": "resin:Participants/30040",
@@ -815,12 +846,12 @@
                 {
                     "@id": "resin:Participants/30041",
                     "roleName": "A0_pag_observer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30042",
                     "roleName": "A1_loc_thing_looked_at",
-                    "entity": "resin:Entities/10023/"
+                    "entity": "resin:Entities/10022/"
                 },
                 {
                     "@id": "resin:Participants/30043",
@@ -850,7 +881,7 @@
                 {
                     "@id": "resin:Participants/30045",
                     "roleName": "A0_pag_protector",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30046",
@@ -885,7 +916,7 @@
                 {
                     "@id": "resin:Participants/30049",
                     "roleName": "A0_pag_implementer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30050",
@@ -895,7 +926,7 @@
                 {
                     "@id": "resin:Participants/30051",
                     "roleName": "A2_mnr_instrument",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 },
                 {
                     "@id": "resin:Participants/30052",
@@ -925,7 +956,7 @@
                 {
                     "@id": "resin:Participants/30054",
                     "roleName": "A2_gol_exposed_to",
-                    "entity": "resin:Entities/10023/"
+                    "entity": "resin:Entities/10022/"
                 },
                 {
                     "@id": "resin:Participants/30055",
@@ -952,7 +983,7 @@
                 {
                     "@id": "resin:Participants/30056",
                     "roleName": "A0_pag_assessor",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30057",
@@ -999,7 +1030,7 @@
                 {
                     "@id": "resin:Participants/30062",
                     "roleName": "A2_mnr_instrument",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 },
                 {
                     "@id": "resin:Participants/30063",
@@ -1024,7 +1055,7 @@
                 {
                     "@id": "resin:Participants/30064",
                     "roleName": "A0_pag_observer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30065",
@@ -1061,17 +1092,17 @@
                 {
                     "@id": "resin:Participants/30068",
                     "roleName": "A0_pag_announcer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30069",
                     "roleName": "A1_ppt_utterance",
-                    "entity": "resin:Entities/10009/"
+                    "entity": "resin:Entities/10008/"
                 },
                 {
                     "@id": "resin:Participants/30070",
                     "roleName": "A2_gol_hearer",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30071",
@@ -1193,7 +1224,7 @@
                 {
                     "@id": "resin:Participants/30081",
                     "roleName": "A0_pag_agent",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30082",
@@ -1223,7 +1254,7 @@
                 {
                     "@id": "resin:Participants/30084",
                     "roleName": "A0_pag_agent_causer_of_contamination",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30085",
@@ -1282,17 +1313,17 @@
                 {
                     "@id": "resin:Participants/30089",
                     "roleName": "A0_pag__doctor",
-                    "entity": "resin:Entities/10010/"
+                    "entity": "resin:Entities/10009/"
                 },
                 {
                     "@id": "resin:Participants/30090",
                     "roleName": "A1_ppt__patient",
-                    "entity": "resin:Entities/10011/"
+                    "entity": "resin:Entities/10010/"
                 },
                 {
                     "@id": "resin:Participants/30091",
                     "roleName": "A2_ppt__illness_or_injury",
-                    "entity": "resin:Entities/10012/"
+                    "entity": "resin:Entities/10011/"
                 },
                 {
                     "@id": "resin:Participants/30092",
@@ -1319,12 +1350,12 @@
                 {
                     "@id": "resin:Participants/30093",
                     "roleName": "A0_pag_entity_offering",
-                    "entity": "resin:Entities/10013/"
+                    "entity": "resin:Entities/10012/"
                 },
                 {
                     "@id": "resin:Participants/30094",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10014/"
+                    "entity": "resin:Entities/10013/"
                 }
             ],
             "entities": [],
@@ -1346,7 +1377,7 @@
                 {
                     "@id": "resin:Participants/30095",
                     "roleName": "A0_pag_reviewer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30096",
@@ -1378,7 +1409,7 @@
                 {
                     "@id": "resin:Participants/30098",
                     "roleName": "A0_pag_agent_examiner",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30099",
@@ -1410,12 +1441,12 @@
                 {
                     "@id": "resin:Participants/30101",
                     "roleName": "A0_pag_notifier",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30102",
                     "roleName": "A1_gol_entity_notified",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30103",
@@ -1425,7 +1456,7 @@
                 {
                     "@id": "resin:Participants/30104",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10015/"
+                    "entity": "resin:Entities/10014/"
                 }
             ],
             "entities": [],
@@ -1469,7 +1500,7 @@
                 {
                     "@id": "resin:Participants/30106",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10015/"
+                    "entity": "resin:Entities/10014/"
                 }
             ],
             "entities": [],
@@ -1491,7 +1522,7 @@
                 {
                     "@id": "resin:Participants/30107",
                     "roleName": "A0_pag_agent_protester",
-                    "entity": "resin:Entities/10024/"
+                    "entity": "resin:Entities/10023/"
                 },
                 {
                     "@id": "resin:Participants/30108",
@@ -1506,7 +1537,7 @@
             ],
             "entities": [
                 {
-                    "@id": "resin:Entities/10024/",
+                    "@id": "resin:Entities/10023/",
                     "name": "protester",
                     "wd_node": "wd:Q7623053",
                     "wd_label": "street protester",
@@ -1531,12 +1562,12 @@
                 {
                     "@id": "resin:Participants/30110",
                     "roleName": "A0_pag_helper",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30111",
                     "roleName": "A1_ppt_person",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30112",
@@ -1561,12 +1592,12 @@
                 {
                     "@id": "resin:Participants/30113",
                     "roleName": "A0_pag_agent_discussant",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30114",
                     "roleName": "A2_gol_co_agent_conversation_partner",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30115",
@@ -1598,7 +1629,7 @@
                 {
                     "@id": "resin:Participants/30117",
                     "roleName": "A0_pag_interviewer",
-                    "entity": "resin:Entities/10022/"
+                    "entity": "resin:Entities/10021/"
                 },
                 {
                     "@id": "resin:Participants/30118",
@@ -1635,7 +1666,7 @@
                 {
                     "@id": "resin:Participants/30121",
                     "roleName": "A0_pag_sampler",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30122",
@@ -1746,7 +1777,7 @@
                 {
                     "@id": "resin:Participants/30133",
                     "roleName": "A1_ppt_thing_documented",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 },
                 {
                     "@id": "resin:Participants/30134",
@@ -1781,7 +1812,7 @@
                 {
                     "@id": "resin:Participants/30137",
                     "roleName": "A2_gol_entity_reported_to",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30138",
@@ -1818,7 +1849,7 @@
                 {
                     "@id": "resin:Participants/30141",
                     "roleName": "A2_gol_hearer",
-                    "entity": "resin:Entities/10028/"
+                    "entity": "Entities/20045/"
                 },
                 {
                     "@id": "resin:Participants/30142",
@@ -1846,12 +1877,12 @@
                 {
                     "@id": "resin:Participants/30143",
                     "roleName": "A0_pag_first_arguer",
-                    "entity": "resin:Entities/10022/"
+                    "entity": "resin:Entities/10021/"
                 },
                 {
                     "@id": "resin:Participants/30144",
                     "roleName": "A1_com_second_arguer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30145",
@@ -1861,7 +1892,7 @@
                 {
                     "@id": "resin:Participants/30146",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10015/"
+                    "entity": "resin:Entities/10014/"
                 }
             ],
             "children": [
@@ -1892,7 +1923,7 @@
                 {
                     "@id": "resin:Participants/30148",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10015/"
+                    "entity": "resin:Entities/10014/"
                 }
             ],
             "entities": [],
@@ -1914,7 +1945,7 @@
                 {
                     "@id": "resin:Participants/30149",
                     "roleName": "A0_pag_deposer",
-                    "entity": "resin:Entities/10022/"
+                    "entity": "resin:Entities/10021/"
                 },
                 {
                     "@id": "resin:Participants/30150",
@@ -1941,36 +1972,46 @@
                 {
                     "@id": "resin:Participants/30151",
                     "roleName": "A0_pag_negotiator",
-                    "entity": "resin:Entities/10025/"
+                    "entity": "resin:Entities/10024/"
                 },
                 {
                     "@id": "resin:Participants/30152",
                     "roleName": "A1_ppt_agreement",
-                    "entity": "resin:Entities/10026/"
+                    "entity": "resin:Entities/10025/"
                 },
                 {
                     "@id": "resin:Participants/30153",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10015/"
+                    "entity": "resin:Entities/10014/"
                 }
             ],
             "entities": [
                 {
-                    "@id": "resin:Entities/10025/",
+                    "@id": "resin:Entities/10024/",
                     "name": "negotiator",
                     "wd_node": "wd:Q10335982",
                     "wd_label": "negotiator",
                     "wd_description": "person who negotiates"
                 },
                 {
-                    "@id": "resin:Entities/10026/",
+                    "@id": "resin:Entities/10025/",
                     "name": "settlement",
                     "wd_node": "wd:Q167412",
                     "wd_label": "settlement",
                     "wd_description": "resolution between disputing parties about a legal case"
                 }
             ],
-            "relations": []
+            "relations": [
+                {
+                    "@id": "resin:Relations/40015/facilitates",
+                    "name": "facilitates",
+                    "relationSubject": "resin:Entities/10024/",
+                    "relationObject": "resin:Entities/10025/",
+                    "wd_node": "wd:Q2761147",
+                    "wd_label": "meeting",
+                    "wd_description": "eent in which two or more people assemble, planned in advance to facilitate discussion"
+                }
+            ]
         },
         {
             "@id": "resin:Events/20047",
@@ -1986,17 +2027,17 @@
                 {
                     "@id": "resin:Participants/30154",
                     "roleName": "A0_pag__litigant",
-                    "entity": "resin:Entities/10027/"
+                    "entity": "resin:Entities/10026/"
                 },
                 {
                     "@id": "resin:Participants/30155",
                     "roleName": "A1_ppt__entity_tried",
-                    "entity": "resin:Entities/10021/"
+                    "entity": "resin:Entities/10020/"
                 },
                 {
                     "@id": "resin:Participants/30156",
                     "roleName": "A2_gol__adjudicator",
-                    "entity": "resin:Entities/10028/"
+                    "entity": "resin:Entities/10027/"
                 },
                 {
                     "@id": "resin:Participants/30157",
@@ -2011,21 +2052,31 @@
             ],
             "entities": [
                 {
-                    "@id": "resin:Entities/10027/",
+                    "@id": "resin:Entities/10026/",
                     "name": "litigant",
                     "wd_node": "wd:Q24571167",
                     "wd_label": "litigant",
                     "wd_description": "party involved in a lawsuit"
                 },
                 {
-                    "@id": "resin:Entities/10028/",
+                    "@id": "resin:Entities/10027/",
                     "name": "adjudicator",
                     "wd_node": "wd:Q2234405",
                     "wd_label": "adjudicator",
                     "wd_description": "someone who presides, judges and arbitrates during a formal dispute"
                 }
             ],
-            "relations": []
+            "relations": [
+                {
+                    "@id": "resin:Relations/40016/seeking_compensation",
+                    "name": "seeking compensation",
+                    "relationSubject": "resin:Entities/10026/",
+                    "relationObject": "resin:Entities/10020/",
+                    "wd_node": "wd:Q308922",
+                    "wd_label": "damages",
+                    "wd_description": "legal term for compensation awarded for loss or injury"
+                }
+            ]
         },
         {
             "@id": "resin:Events/20048",
@@ -2043,7 +2094,7 @@
                 {
                     "@id": "resin:Participants/30159",
                     "roleName": "A0_pag_assessor",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30160",
@@ -2080,7 +2131,7 @@
                 {
                     "@id": "resin:Participants/30163",
                     "roleName": "A0_pag_agent",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30164",
@@ -2090,12 +2141,12 @@
                 {
                     "@id": "resin:Participants/30165",
                     "roleName": "A2_com_other_exchanger",
-                    "entity": "resin:Entities/10022/"
+                    "entity": "resin:Entities/10021/"
                 },
                 {
                     "@id": "resin:Participants/30166",
                     "roleName": "A4_gol_benefactive",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30167",
@@ -2137,7 +2188,7 @@
                 {
                     "@id": "resin:Participants/30170",
                     "roleName": "A2_mnr_instrument",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
                     "@id": "resin:Participants/30171",
@@ -2181,7 +2232,7 @@
                 {
                     "@id": "resin:Participants/30174",
                     "roleName": "A2_mnr_instrument",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
                     "@id": "resin:Participants/30175",
@@ -2208,7 +2259,7 @@
                 {
                     "@id": "resin:Participants/30176",
                     "roleName": "A0_pag_observer",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30177",
@@ -2255,7 +2306,7 @@
                 {
                     "@id": "resin:Participants/30182",
                     "roleName": "A2_prd_end_state",
-                    "entity": "resin:Entities/10009/"
+                    "entity": "resin:Entities/10008/"
                 },
                 {
                     "@id": "resin:Participants/30183",
@@ -2293,7 +2344,7 @@
                 {
                     "@id": "resin:Participants/30186",
                     "roleName": "A2_mnr_instrument",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
                     "@id": "resin:Participants/30187",
@@ -2413,7 +2464,7 @@
                 {
                     "@id": "resin:Participants/30196",
                     "roleName": "A0_pag_cause",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30197",
@@ -2460,7 +2511,7 @@
                 {
                     "@id": "resin:Participants/30202",
                     "roleName": "A2_prd_end_state",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
                     "@id": "resin:Participants/30203",
@@ -2487,7 +2538,7 @@
                 {
                     "@id": "resin:Participants/30204/",
                     "roleName": "chelating_agent",
-                    "entity": "resin:Entities/10029/"
+                    "entity": "resin:Entities/10028/"
                 },
                 {
                     "@id": "resin:Participants/30205",
@@ -2497,7 +2548,7 @@
             ],
             "entities": [
                 {
-                    "@id": "resin:Entities/10029/",
+                    "@id": "resin:Entities/10028/",
                     "name": "chelating agent",
                     "wd_node": "wd:Q50315890",
                     "wd_label": "chelating agent",
@@ -2522,7 +2573,7 @@
                 {
                     "@id": "resin:Participants/30206/",
                     "roleName": "A0_pag_causer",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30207/",
@@ -2555,7 +2606,7 @@
                 {
                     "@id": "resin:Participants/30209",
                     "roleName": "A4_gol_End_point",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
                     "@id": "resin:Participants/30210",
@@ -2666,7 +2717,7 @@
                 {
                     "@id": "resin:Participants/30218",
                     "roleName": "A0_pag_examiner",
-                    "entity": "resin:Entities/10008/"
+                    "entity": "resin:Entities/10007/"
                 },
                 {
                     "@id": "resin:Participants/30219",
@@ -2817,7 +2868,7 @@
                 {
                     "@id": "resin:Participants/30235",
                     "roleName": "AM_loc",
-                    "entity": "resin:Entities/10017/"
+                    "entity": "resin:Entities/10016/"
                 }
             ],
             "entities": [],
@@ -2922,12 +2973,12 @@
                 {
                     "@id": "resin:Participants/30243/reporter",
                     "roleName": "A0_pag_Reporter",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30244/reported",
                     "roleName": "A1_ppt_thing_reported",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 }
             ],
             "modality": [],
@@ -2951,12 +3002,12 @@
                 {
                     "@id": "resin:Participants/30245/user",
                     "roleName": "A0_pag_User",
-                    "entity": "resin:Entities/10007/"
+                    "entity": "resin:Entities/10006/"
                 },
                 {
                     "@id": "resin:Participants/30246/thing_used",
                     "roleName": "A1_ppt_thing_used",
-                    "entity": "resin:Entities/10029/"
+                    "entity": "resin:Entities/10028/"
                 }
             ],
             "modality": [],
@@ -2980,17 +3031,17 @@
                 {
                     "@id": "resin:Participants/30247/receiver",
                     "roleName": "A0_pag_receiver",
-                    "entity": "resin:Entities/10011/"
+                    "entity": "resin:Entities/10010/"
                 },
                 {
                     "@id": "resin:Participants/30248/thing_gotten",
                     "roleName": "A1_ppt_thing_gotten",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
                     "@id": "resin:Participants/30249/source",
                     "roleName": "A2_dir_source",
-                    "entity": "resin:Entities/10010/"
+                    "entity": "resin:Entities/10009/"
                 }
             ],
             "modality": [],
@@ -3014,12 +3065,12 @@
                 {
                     "@id": "resin:Participants/30250/worker",
                     "roleName": "A0_pag_worker",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
                     "@id": "resin:Participants/30251/job",
                     "roleName": "A1_ppt_job",
-                    "entity": "resin:Entities/10007/"
+                    "entity": "resin:Entities/10006/"
                 }
             ],
             "modality": [],
@@ -3043,12 +3094,12 @@
                 {
                     "@id": "resin:Participants/30252/causer",
                     "roleName": "A0_pag_causer_of_inclusion",
-                    "entity": "resin:Entities/10021/"
+                    "entity": "resin:Entities/10020/"
                 },
                 {
                     "@id": "resin:Participants/30253/group",
                     "roleName": "A2_ppt_group",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 }
             ],
             "modality": [],
@@ -3072,12 +3123,12 @@
                 {
                     "@id": "resin:Participants/30254/provided",
                     "roleName": "A1_ppt_thing_provided",
-                    "entity": "resin:Entities/10013/"
+                    "entity": "resin:Entities/10012/"
                 },
                 {
                     "@id": "resin:Participants/30255/provided",
                     "roleName": "A2_gol_entity_provided_for",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 }
             ],
             "modality": [],
@@ -3101,7 +3152,7 @@
                 {
                     "@id": "resin:Participants/30256/group",
                     "roleName": "A2_gol_group",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 }
             ],
             "modality": [],
@@ -3125,17 +3176,17 @@
                 {
                     "@id": "resin:Participants/30257/examiner",
                     "roleName": "A0_pag_examiner",
-                    "entity": "resin:Entities/10010/"
+                    "entity": "resin:Entities/10009/"
                 },
                 {
                     "@id": "resin:Participants/30258/examined",
                     "roleName": "A1_loc_examined",
-                    "entity": "resin:Entities/10011/"
+                    "entity": "resin:Entities/10010/"
                 },
                 {
                     "@id": "resin:Participants/30259/result",
                     "roleName": "A3_prd_test_result",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 }
             ],
             "modality": [],
@@ -3159,7 +3210,7 @@
                 {
                     "@id": "resin:Participants/30260/agent",
                     "roleName": "A0_pag_agent",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 },
                 {
                     "@id": "resin:Participants/30261/damaged",
@@ -3212,7 +3263,12 @@
                 {
                     "@id": "resin:Participants/30263/worker",
                     "roleName": "A0_pag_worker",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
+                },
+                {
+                    "@id": "resin:Participants/30264/workplace",
+                    "roleName": "A1_loc_location",
+                    "entity": "resin:Entities/10001/"
                 }
             ],
             "modality": [],
@@ -3234,14 +3290,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30264/deceased",
+                    "@id": "resin:Participants/30265/deceased",
                     "roleName": "A1_ppt_the_deceased",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30265/cause",
+                    "@id": "resin:Participants/30266/cause",
                     "roleName": "AM_cau__cause",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 }
             ],
             "modality": [],
@@ -3263,14 +3319,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30266/planner",
+                    "@id": "resin:Participants/30267/planner",
                     "roleName": "A0_pag_planner",
-                    "entity": "resin:Entities/10013/"
+                    "entity": "resin:Entities/10012/"
                 },
                 {
-                    "@id": "resin:Participants/30267/planned",
+                    "@id": "resin:Participants/30268/planned",
                     "roleName": "A1_ppt_thing_planned",
-                    "entity": "resin:Entities/10009/"
+                    "entity": "resin:Entities/10008/"
                 }
             ],
             "modality": [],
@@ -3292,14 +3348,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30268/estimator",
+                    "@id": "resin:Participants/30269/estimator",
                     "roleName": "A0_pag_agent_estimator",
-                    "entity": "resin:Entities/10025/"
+                    "entity": "resin:Entities/10024/"
                 },
                 {
-                    "@id": "resin:Participants/30269/estimated",
+                    "@id": "resin:Participants/30270/estimated",
                     "roleName": "A1_ppt_theme_thing_estimated",
-                    "entity": "resin:Entities/10026/"
+                    "entity": "resin:Entities/10025/"
                 }
             ],
             "modality": [],
@@ -3321,14 +3377,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30270/confirmer",
+                    "@id": "resin:Participants/30271/confirmer",
                     "roleName": "A0_pag_confirmer",
-                    "entity": "resin:Entities/10022/"
+                    "entity": "resin:Entities/10021/"
                 },
                 {
-                    "@id": "resin:Participants/30271/confirmed",
+                    "@id": "resin:Participants/30272/confirmed",
                     "roleName": "A1_ppt_thing_confirmed",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 }
             ],
             "modality": [],
@@ -3350,12 +3406,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30272/causer",
+                    "@id": "resin:Participants/30273/causer",
                     "roleName": "A0_pag_causer_of_change",
                     "entity": "resin:Entities/10002/"
                 },
                 {
-                    "@id": "resin:Participants/30273/changing",
+                    "@id": "resin:Participants/30274/changing",
                     "roleName": "A1_ppt_thing_changing",
                     "entity": "resin:Entities/10000/"
                 }
@@ -3379,12 +3435,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30274/exposed",
+                    "@id": "resin:Participants/30275/exposed",
                     "roleName": "A1_ppt_exposed_entity",
                     "entity": "resin:Entities/10000/"
                 },
                 {
-                    "@id": "resin:Participants/30275/exposed_to",
+                    "@id": "resin:Participants/30276/exposed_to",
                     "roleName": "A2_gol_exposed_to",
                     "entity": "resin:Entities/10002/"
                 }
@@ -3408,17 +3464,17 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30276/transporter",
+                    "@id": "resin:Participants/30277/transporter",
                     "roleName": "A0_pag_agent_transporter",
-                    "entity": "resin:Entities/10010/"
+                    "entity": "resin:Entities/10009/"
                 },
                 {
-                    "@id": "resin:Participants/30277/transported",
+                    "@id": "resin:Participants/30278/transported",
                     "roleName": "A1_ppt_thing_transported",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30278/loc",
+                    "@id": "resin:Participants/30279/loc",
                     "roleName": "A2_dir_initial_location_source",
                     "entity": "resin:Entities/10001/"
                 }
@@ -3442,14 +3498,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30279/detector",
+                    "@id": "resin:Participants/30280/detector",
                     "roleName": "A0_ppt_detector",
-                    "entity": "resin:Entities/10007/"
+                    "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30280/detected",
+                    "@id": "resin:Participants/30281/detected",
                     "roleName": "A1_pag_detected",
-                    "entity": "resin:Entities/10023/"
+                    "entity": "resin:Entities/10022/"
                 }
             ],
             "modality": [],
@@ -3471,14 +3527,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30281/loser",
+                    "@id": "resin:Participants/30282/loser",
                     "roleName": "A0_pag_entity_losing_something",
-                    "entity": "resin:Entities/10016/"
+                    "entity": "resin:Entities/10015/"
                 },
                 {
-                    "@id": "resin:Participants/30282/thing_lost",
+                    "@id": "resin:Participants/30283/thing_lost",
                     "roleName": "A1_ppt_thing_lost",
-                    "entity": "resin:Entities/10018/"
+                    "entity": "resin:Entities/10017/"
                 }
             ],
             "modality": [],
@@ -3500,14 +3556,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30283/explainer",
+                    "@id": "resin:Participants/30284/explainer",
                     "roleName": "A0_pag_explainer",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30284/explained",
+                    "@id": "resin:Participants/30285/explained",
                     "roleName": "A1_ppt_thing_explained",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 }
             ],
             "modality": [],
@@ -3529,12 +3585,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30285/maintainer",
+                    "@id": "resin:Participants/30286/maintainer",
                     "roleName": "A0_pag_maintainer",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30286/maintained",
+                    "@id": "resin:Participants/30287/maintained",
                     "roleName": "A1_ppt_thing_maintained",
                     "entity": "resin:Entities/10001/"
                 }
@@ -3558,14 +3614,14 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30287/announcer",
+                    "@id": "resin:Participants/30288/announcer",
                     "roleName": "A0_pag_agent_announcer",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30288/utterance",
+                    "@id": "resin:Participants/30289/utterance",
                     "roleName": "A1_ppt_topic_utterance",
-                    "entity": "resin:Entities/10019/"
+                    "entity": "resin:Entities/10018/"
                 }
             ],
             "modality": [],
@@ -3587,12 +3643,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30289/controller",
+                    "@id": "resin:Participants/30290/controller",
                     "roleName": "A0_pag_controller",
-                    "entity": "resin:Entities/10007/"
+                    "entity": "resin:Entities/10006/"
                 },
                 {
-                    "@id": "resin:Participants/30290/controlled",
+                    "@id": "resin:Participants/30291/controlled",
                     "roleName": "A1_ppt_controlled",
                     "entity": "resin:Entities/10002/"
                 }
@@ -3616,12 +3672,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30291/driller",
+                    "@id": "resin:Participants/30292/driller",
                     "roleName": "A0_pag_driller",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30292/drilled",
+                    "@id": "resin:Participants/30293/drilled",
                     "roleName": "A1_ppt_thing_drilled",
                     "entity": "resin:Entities/10001/"
                 }
@@ -3645,12 +3701,12 @@
             "outlinks": [],
             "participants": [
                 {
-                    "@id": "resin:Participants/30293/shutdown",
+                    "@id": "resin:Participants/30294/shutdown",
                     "roleName": "A0_pag_Intentional_agent",
-                    "entity": "resin:Entities/10020/"
+                    "entity": "resin:Entities/10019/"
                 },
                 {
-                    "@id": "resin:Participants/30294/thing_ending",
+                    "@id": "resin:Participants/30295/thing_ending",
                     "roleName": "A1_ppt_Thing_ending",
                     "entity": "resin:Entities/10001/"
                 }
