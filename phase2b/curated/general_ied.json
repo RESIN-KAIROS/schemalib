@@ -243,6 +243,132 @@
                     "wd_node": "wdt:P276",
                     "wd_label": "location",
                     "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "resin:Relations/40011/ensures_safety_of",
+                    "name": "ensures safety of",
+                    "relationSubject": "resin:Entities/10007/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wd:Q21010924",
+                    "wd_label": "safety precaution",
+                    "wd_description": "preventative measure taken to ensure health"
+                },
+                {
+                    "@id": "resin:Relations/40012/treated_at",
+                    "name": "treated at",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wd:Q179661",
+                    "wd_label": "treatment",
+                    "wd_description": "attempted medical remediation of a health problem"
+                },
+                {
+                    "@id": "resin:Relations/40013/treated_by",
+                    "name": "treated by",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10010/",
+                    "wd_node": "wd:Q179661",
+                    "wd_label": "treatment",
+                    "wd_description": "attempted medical remediation of a health problem"
+                },
+                {
+                    "@id": "resin:Relations/40014/employed_at",
+                    "name": "employed at",
+                    "relationSubject": "resin:Entities/10010/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wd:Q656365",
+                    "wd_label": "employment",
+                    "wd_description": "relationship between the employee and employer"
+                },
+                {
+                    "@id": "resin:Relations/40015/relocated_to",
+                    "name": "relocated to",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10009/",
+                    "wd_node": "wd:Q2918584",
+                    "wd_label": "relocation",
+                    "wd_description": "process of vacating a fixed location and settling in a different one"
+                },
+                {
+                    "@id": "resin:Relations/40016/removed_from",
+                    "name": "removed from",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10002/",
+                    "wd_node": "wd:Q23009442",
+                    "wd_label": "removal",
+                    "wd_description": "taking away, separation, or removal of an item"
+                },
+                {
+                    "@id": "resin:Relations/40017/perpetrator_of",
+                    "name": "perpetrator of",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10006/",
+                    "wd_node": "wd:Q18028810",
+                    "wd_label": "perpetrator",
+                    "wd_description": "person who carries out the active part of an act"
+                },
+                {
+                    "@id": "resin:Relations/40018/imprisoned_at",
+                    "name": "imprisoned at",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10013/",
+                    "wd_node": "wd:Q841236",
+                    "wd_label": "restraint of a person's liberty by judicial or other detention",
+                    "wd_description": null
+                },
+                {
+                    "@id": "resin:Relations/40019/imprisoned_at",
+                    "name": "imprisoned at",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10013/",
+                    "wd_node": "wd:Q841236",
+                    "wd_label": "imprisonment",
+                    "wd_description": "restraint of a person's liberty by judicial or other detention"
+                },
+                {
+                    "@id": "resin:Relations/40020/seek to control/abuse",
+                    "name": "seek to control/abuse",
+                    "relationSubject": "resin:Entities/10016/",
+                    "relationObject": "resin:Entities/10002/",
+                    "wd_node": "wd:Q17009621",
+                    "wd_label": "abusive power and control",
+                    "wd_description": "behavior of an abusive person seeking to gain and maintain power and control"
+                },
+                {
+                    "@id": "resin:Relations/40021/commands",
+                    "name": "commands",
+                    "relationSubject": "resin:Entities/10005/",
+                    "relationObject": "resin:Entities/10001/",
+                    "wd_node": "wd:Q1665268",
+                    "wd_label": "command",
+                    "wd_description": "instruction that carries a duty to obey"
+                },
+                {
+                    "@id": "resin:Relations/40022/works_at",
+                    "name": "works at",
+                    "relationSubject": "resin:Entities/10001/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wdt:P108",
+                    "wd_label": "employer",
+                    "wd_description": "person or organization for which the subject works"
+                },
+                {
+                    "@id": "resin:Relations/40023/provide_verdict",
+                    "name": "provide verdict",
+                    "relationSubject": "resin:Entities/10015/",
+                    "relationObject": "resin:Entities/10012/",
+                    "wd_node": "Q:13370881",
+                    "wd_label": "verdict",
+                    "wd_description": "legal term; guilty or not guilty"
+                },
+                {
+                    "@id": "resin:Relations/40024/hears_case",
+                    "name": "hears case",
+                    "relationSubject": "resin:Entities/10015/",
+                    "relationObject": "resin:Entities/10006/",
+                    "wd_node": "wd:Q545861",
+                    "wd_label": "legal hearing",
+                    "wd_description": "proceeding before a court or other decision-making body or officer"
                 }
             ],
             "isSchema": true
@@ -251,7 +377,8 @@
             "@id": "resin:Events/20001/Steps_kairos:Container:Contributory_Factors",
             "children": [
                 "resin:Events/20006/Conflict-Demonstrate-Unspecified",
-                "resin:Events/20007/Conflict-Attack-Unspecified"
+                "resin:Events/20007/Conflict-Attack-Unspecified",
+                "resin:Events/20069/Ideological_Conflict"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -329,7 +456,9 @@
                 "resin:Events/20062/Amenity_offered",
                 "resin:Events/20063/Control",
                 "resin:Events/20064/Involvement",
-                "resin:Events/20065/Announcement"
+                "resin:Events/20065/Announcement",
+                "resin:Events/20067/Protection",
+                "resin:Events/20068/Hospitalization"
             ],
             "children_gate": "or",
             "comment": "container node",
@@ -949,7 +1078,8 @@
                 "resin:Events/20030/Cognitive-Inspection-SensoryObserve",
                 "resin:Events/20031/Medical-Intervention-Unspecified",
                 "resin:Events/20051/Leadership",
-                "resin:Events/20059/governance"
+                "resin:Events/20059/governance",
+                "resin:Events/20067/Protection"
             ]
         },
         {
@@ -1061,7 +1191,8 @@
             "wd_label": "treatment",
             "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
             "outlinks": [
-                "resin:Events/20032/Steps_kairos:Container:103"
+                "resin:Events/20032/Steps_kairos:Container:103",
+                "resin:Events/20068/Hospitalization"
             ]
         },
         {
@@ -2067,6 +2198,98 @@
                     "@id": "resin:Participants/30151/searched_for",
                     "roleName": "A2_ppt_searched_for",
                     "entity": "resin:Entities/10001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20067/Protection",
+            "name": "Protection",
+            "description": "action or precaution against a threat",
+            "wd_node": "wd:Q2251595",
+            "wd_label": "protection",
+            "wd_description": "action or precaution against a threat",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30152/Police",
+                    "roleName": "A0_pag_protector",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30153/Mosque",
+                    "roleName": "A1_ppt_entity_protected",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20068/Hospitalization",
+            "name": "Hospitalization",
+            "description": "admission of a patient to a hospital",
+            "wd_node": "wd:Q3140971",
+            "wd_label": "hospitalization",
+            "wd_description": "admission of a patient to a hospital",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30154/hospital",
+                    "roleName": "A2_loc_location",
+                    "entity": "resin:Entities/10004/"
+                },
+                {
+                    "@id": "resin:Participants/30155/victims",
+                    "roleName": "A1_ppt_patient",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30156/medical_staff",
+                    "roleName": "A0_pag_doctor",
+                    "entity": "resin:Entities/10010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20069/Ideological_Conflict",
+            "name": "Ideological Conflict",
+            "description": "",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30157/group_of_humans",
+                    "roleName": "A0_pag_clasher",
+                    "entity": "resin:Entities/10016/"
+                },
+                {
+                    "@id": "resin:Participants/30158/geographic_region",
+                    "roleName": "A2_ppt_entity_clashed_over",
+                    "entity": "resin:Entities/10002/"
                 }
             ],
             "modality": [],
